@@ -1,6 +1,7 @@
 """Fail-closed experiment provenance and split checks."""
 import hashlib
 import json
+import math
 from pathlib import Path
 
 
@@ -33,6 +34,13 @@ def validate_physics_label(record):
         raise ValueError('Missing physics provenance: '+','.join(missing))
     if record['controller_kind'] != 'learned_tracking':
         raise ValueError('PD/open-loop diagnostics are not learned-tracker critic labels')
+    if record.get('robot_actor_count') != 2:
+        raise ValueError('Dual-robot critic requires two-robot rollout labels')
+    if not math.isfinite(float(record['tracking_error_m'])) or record['tracking_error_m']<0:
+        raise ValueError('Invalid tracking error')
+    for name in ('fall','contact_success','invalid_collision'):
+        if record[name] not in (0,1,False,True):
+            raise ValueError('Invalid binary target: '+name)
     if record['simulator'] not in ('IsaacLab','MuJoCo'):
         raise ValueError('Unrecognized simulator')
     if len(record['source_ids']) == 0:

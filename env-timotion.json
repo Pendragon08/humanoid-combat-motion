@@ -1,0 +1,11 @@
+{
+  "base": "Python 3.10.21, Torch 2.5.1+cu121, torchvision 0.20.1+cu121 (existing read-only base)",
+  "overlay": ".venv-timotion",
+  "borrowed_interpreter": "/data/code/ouyanghao/oyh/world-model-risk-planning/.env/bin/python",
+  "pip_phases": [["yacs==0.1.8", "ftfy==6.3.1", "regex==2024.11.6", "wcwidth==0.2.13"], ["./third_party/CLIP --no-deps"]],
+  "source_pins": {"CLIP":"d05afc436d78f1c48dc0dbf8e5980a9d471f35f6", "TIMotion":"172580fd7f2551a7cc10fde1f15ff73315742e65"},
+  "env": {"OMP_NUM_THREADS":"4", "MKL_NUM_THREADS":"4", "OPENBLAS_NUM_THREADS":"4", "MPLBACKEND":"Agg"},
+  "tier": {"cpus":4,"gpus":1,"maximum_new_environment_gib":2},
+  "deviation": "Compatibility inference environment; not the original Torch1.13.1 training environment. Official checkpoint strict-load and reproduction still required.",
+  "smoke": {"command":"bash scripts/run_timotion.sh scripts/smoke_timotion.py", "expect":"TIMOTION_CUDA_WITNESS"}
+}

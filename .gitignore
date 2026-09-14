@@ -7,3 +7,8 @@ audit/
 .aris/
 __pycache__/
 *.pyc
+.venv-*/
+third_party/
+*.partial
+*.pt
+*.ckpt
