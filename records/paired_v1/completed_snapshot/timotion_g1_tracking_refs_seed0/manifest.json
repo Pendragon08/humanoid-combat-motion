@@ -1,0 +1,73 @@
+{
+  "records": [
+    {
+      "sample": "sample_000",
+      "actor": 0,
+      "source_sha256": "d5fc705d90c750f9350deaf6d67cef61885083cd741db55de7861474a593685d",
+      "output": "sample_000_actor0.npz",
+      "sha256": "ecc9fe89cff01da45b2fb6be8f4eac8c74a245bfa5c49e472a250938e5af42d9",
+      "frames": 249
+    },
+    {
+      "sample": "sample_000",
+      "actor": 1,
+      "source_sha256": "d5fc705d90c750f9350deaf6d67cef61885083cd741db55de7861474a593685d",
+      "output": "sample_000_actor1.npz",
+      "sha256": "e19ef23b9dfc19c870a0dd841047ffe2517b1bd88794c78cdb6a907d9ae63782",
+      "frames": 249
+    },
+    {
+      "sample": "sample_001",
+      "actor": 0,
+      "source_sha256": "fdd1821e0b42babc06e4ae85fd4bc5f6cb149e948e937d44103790ab7fd22694",
+      "output": "sample_001_actor0.npz",
+      "sha256": "741097e9e571c0ca299dc6de0f3b676613d46c55190e7ed4007137dfefbd3c94",
+      "frames": 249
+    },
+    {
+      "sample": "sample_001",
+      "actor": 1,
+      "source_sha256": "fdd1821e0b42babc06e4ae85fd4bc5f6cb149e948e937d44103790ab7fd22694",
+      "output": "sample_001_actor1.npz",
+      "sha256": "ae7117b746a985cc0cdec40077def2c299080803804670cdf753ef3a1fa116d8",
+      "frames": 249
+    },
+    {
+      "sample": "sample_002",
+      "actor": 0,
+      "source_sha256": "fd6571d87dfce2ef0ef55181d0259b895154191fd1f512b08fed78345f546cdd",
+      "output": "sample_002_actor0.npz",
+      "sha256": "d5ea5f7eab782b3e4440271ed2c7fe8114e893f3c2d2bcf4664c3a79c08265c0",
+      "frames": 249
+    },
+    {
+      "sample": "sample_002",
+      "actor": 1,
+      "source_sha256": "fd6571d87dfce2ef0ef55181d0259b895154191fd1f512b08fed78345f546cdd",
+      "output": "sample_002_actor1.npz",
+      "sha256": "89adf58bf009663213b1799ef4a901d241feaf9070b6d744d598c20d7fe00bbf",
+      "frames": 249
+    },
+    {
+      "sample": "sample_003",
+      "actor": 0,
+      "source_sha256": "df5f2519d4b18193e21c2adc2c9ce9058b00601d53576d9bcea71441cd09bfe9",
+      "output": "sample_003_actor0.npz",
+      "sha256": "faa2dba5d05f777a95f33a65309f58e34c6d312bab4e22385abf3c9aae33f460",
+      "frames": 249
+    },
+    {
+      "sample": "sample_003",
+      "actor": 1,
+      "source_sha256": "df5f2519d4b18193e21c2adc2c9ce9058b00601d53576d9bcea71441cd09bfe9",
+      "output": "sample_003_actor1.npz",
+      "sha256": "a833047686b73fa3aad0cce510cbb48c87df1ba24c51ab2fbcedcdbd2c6d56a9",
+      "frames": 249
+    }
+  ],
+  "output_fps": 50,
+  "upstream_interpolation_source_sha256": "98793d2d7209341fd801f1bf04c3685bd6a18a512a143c8bd03fe754bfa6f717",
+  "simulation_steps": 0,
+  "shared_world_preserved": true,
+  "purpose": "reference conversion; not dynamic validation"
+}

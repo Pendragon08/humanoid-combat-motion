@@ -1,0 +1,63 @@
+{
+  "checkpoint_sha256": "2ee7335f688699362d7d5786a398d6ca0c768dcef7f94acd1c81a0bb88e93fea",
+  "source_commit": "172580fd7f2551a7cc10fde1f15ff73315742e65",
+  "architecture": "TIMotion-Transformer-no-LPA",
+  "cfg": {
+    "heads": 16,
+    "layers": 5,
+    "latent": 512
+  },
+  "strict_load": true,
+  "torch": "2.5.1+cu121",
+  "seed": 0,
+  "frames": 150,
+  "samples": [
+    {
+      "sample_id": "sample_000",
+      "text": "In a boxing practice, one person punches while the other dodges.",
+      "seed": 0,
+      "seconds": 0.5195463728159666,
+      "sha256": "a9c47c41ef49f407d5efd6619db79e8fce29fd4cdba8a07332bb50d4b6c55a14",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_001",
+      "text": "Two people practice martial arts, one kicks while the other steps back and blocks.",
+      "seed": 0,
+      "seconds": 0.37680938094854355,
+      "sha256": "7744e60445f82754ce5479ff034dec9342076510932cca07a5c4371f69c689af",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_002",
+      "text": "One person throws a punch, the other blocks it and then counterattacks.",
+      "seed": 0,
+      "seconds": 0.37558323703706264,
+      "sha256": "c721506a097a6bfba612630c52ca0d10748111c4d296c6c86a5174e14f9bb6dc",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_003",
+      "text": "Two people spar in a boxing match, moving around and defending against punches.",
+      "seed": 0,
+      "seconds": 0.3758979346603155,
+      "sha256": "6da33ab58c6d65f0208cee025b6edba43b0f18f33db0ee45084535559fbb3440",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    }
+  ],
+  "adapter_sha256": null,
+  "conditions": null,
+  "claim": "qualitative inference only; not official FID or robot tracking evaluation"
+}

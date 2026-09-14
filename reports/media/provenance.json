@@ -1,0 +1,17 @@
+{
+  "source_evaluations": [
+    "runs/g1_tracking_eval_iter99_primed",
+    "runs/g1_tracking_eval_iter1098_primed"
+  ],
+  "selection": "environment 0, predetermined; no success selection",
+  "alive_frames": [
+    5,
+    22
+  ],
+  "completion_fraction": [
+    0.0,
+    0.0
+  ],
+  "rendering": "MuJoCo forward-kinematic visualization of Isaac states, not cross-simulator control",
+  "speed": "quarter speed; frozen at first tracking failure; excludes automatic resets"
+}

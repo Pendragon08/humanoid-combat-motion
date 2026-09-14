@@ -1,0 +1,60 @@
+{
+  "method": "position-only Mink IK with GMR G1 assets; not default GMR",
+  "scale": 0.75,
+  "scale_source": "fixed research setting, not measured human height",
+  "iterations_per_frame": 8,
+  "gmr_commit": "bb1bbe40774794fceb2a7c579a3464a28e68c844",
+  "rotation_channels_used": false,
+  "root_orientation": "anatomical hip/spine frame",
+  "shared_world_preserved": true,
+  "learned_tracking": false,
+  "dynamic_feasibility_verified": false,
+  "limitations": [
+    "twist ambiguity",
+    "no pair collision constraints",
+    "no ground force balance constraint",
+    "iterative IK time is solver time, not a joint-velocity certificate"
+  ],
+  "samples": [
+    {
+      "sample": "sample_000",
+      "source_sha256": "ac9f117a2c557dd6ece7b8bf909a4670e20e18337319636e1d246c69db5382d6",
+      "mean_body_target_error_m": 0.07920047794485686,
+      "max_joint_limit_violation_rad": 1.1102230246251565e-16,
+      "max_joint_speed_rad_s": 27.14455082583632,
+      "common_floor_offset_m": 0.010103462263941765,
+      "frames": 150,
+      "sha256": "d5fc705d90c750f9350deaf6d67cef61885083cd741db55de7861474a593685d"
+    },
+    {
+      "sample": "sample_001",
+      "source_sha256": "2f02e70a0bbab91e4e52959b5583942d79ed0b257f0dac01f6b0b3a0742f6776",
+      "mean_body_target_error_m": 0.05703475670791685,
+      "max_joint_limit_violation_rad": 0.0,
+      "max_joint_speed_rad_s": 39.82886852597831,
+      "common_floor_offset_m": 0.014685038477182388,
+      "frames": 150,
+      "sha256": "fdd1821e0b42babc06e4ae85fd4bc5f6cb149e948e937d44103790ab7fd22694"
+    },
+    {
+      "sample": "sample_002",
+      "source_sha256": "cfaee0be14b40f7c278ed24260f4478c15fa435060dc421e43f7c1c3975443f8",
+      "mean_body_target_error_m": 0.07323027417517379,
+      "max_joint_limit_violation_rad": 1.1102230246251565e-16,
+      "max_joint_speed_rad_s": 45.40737093157276,
+      "common_floor_offset_m": 0.008902578614652157,
+      "frames": 150,
+      "sha256": "fd6571d87dfce2ef0ef55181d0259b895154191fd1f512b08fed78345f546cdd"
+    },
+    {
+      "sample": "sample_003",
+      "source_sha256": "949bc15d03fa52989f6bd8692059b87ddd1b9fcb965a3b93ee1aba8ea7a2afb2",
+      "mean_body_target_error_m": 0.08779075358222105,
+      "max_joint_limit_violation_rad": 2.220446049250313e-16,
+      "max_joint_speed_rad_s": 39.45042129022886,
+      "common_floor_offset_m": 0.011379548348486423,
+      "frames": 150,
+      "sha256": "df5f2519d4b18193e21c2adc2c9ce9058b00601d53576d9bcea71441cd09bfe9"
+    }
+  ]
+}

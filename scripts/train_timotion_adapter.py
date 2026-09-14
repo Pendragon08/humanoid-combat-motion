@@ -12,13 +12,28 @@ import os
 from pathlib import Path
 import random
 import time
+from contextlib import contextmanager
 
 import numpy as np
 import torch
 from combat.paired_models import CombatConditionAdapter
 from combat.protocol import check_artifact, load_manifest
+from combat.annotations import read_annotation
 
 TAGS = ('boxing', 'defense', 'kick', 'martial_arts', 'punch')
+
+
+@contextmanager
+def fixed_validation_rng(seed=1729):
+    # Upstream schedule sampling uses NumPy; masking/noise use Torch.
+    # Resetting Torch alone does not create a paired evaluation.
+    numpy_state=np.random.get_state();python_state=random.getstate()
+    try:
+        with torch.random.fork_rng(devices=[torch.cuda.current_device()] if torch.cuda.is_available() else []):
+            torch.manual_seed(seed);np.random.seed(seed);random.seed(seed)
+            yield
+    finally:
+        np.random.set_state(numpy_state);random.setstate(python_state)
 
 
 def main():
@@ -31,8 +46,10 @@ def main():
     parser.add_argument('--batch-size', type=int, default=4)
     parser.add_argument('--frames', type=int, default=120)
     parser.add_argument('--validate-every', type=int, default=100)
+    parser.add_argument('--evaluate-adapter',type=Path,help='Evaluate zero adapter vs saved adapter; do not train')
     args = parser.parse_args()
     checkpoint, manifest, output = (p.resolve() for p in (args.checkpoint, args.manifest, args.output))
+    evaluation_path=args.evaluate_adapter.resolve() if args.evaluate_adapter else None
     if output.exists(): raise FileExistsError(output)
     if not 15 <= args.frames <= 300 or min(args.steps,args.batch_size,args.validate_every) < 1:
         raise ValueError('Invalid run budget')
@@ -65,10 +82,12 @@ def main():
     for record in train+val:
         check_artifact(record['annotation_path'],record['annotation_sha256'])
         paths = record['motion_paths']
+        for path,digest in zip(paths,record.get('motion_sha256',[])):check_artifact(path,digest)
         arrays = [load_motion(p, 16, swap=False)[0] for p in paths]
         if any(a is None for a in arrays) or len(arrays[0]) != len(arrays[1]):
             raise ValueError('Missing, too short or unsynchronized source: '+record['sample_id'])
-        texts = [t.strip() for t in Path(record['annotation_path']).read_text(encoding='utf-8').splitlines() if t.strip()]
+        text,_ = read_annotation(record['annotation_path'])
+        texts = [t.strip() for t in text.splitlines() if t.strip()]
         if not texts: raise ValueError('No official annotation')
         cache[record['sample_id']] = (arrays,texts)
 
@@ -100,12 +119,38 @@ def main():
     provenance = {'seed':args.seed,'steps':args.steps,'batch_size':args.batch_size,'frames':args.frames,
         'model':'official TIMotion Transformer no-LPA, frozen; trainable condition adapter',
         'condition_semantics':'weak keyword presence only; no verified attack/defender/contact roles',
+        'validation_rng':'Torch+NumPy+Python fixed and restored, including diffusion timestep sampling',
         'upstream_commit':'172580fd7f2551a7cc10fde1f15ff73315742e65',
         'checkpoint_sha256':checkpoint_hash,
         'manifest_sha256':hashlib.sha256(manifest.read_bytes()).hexdigest(),
         'training_sources':[r['source_ids'] for r in train], 'validation_sources':[r['source_ids'] for r in val],
         'torch':torch.__version__, 'trainable_parameters':sum(p.numel() for p in adapter.parameters())}
     (output/'config.json').write_text(json.dumps(provenance,indent=2),encoding='utf-8')
+    if evaluation_path is not None:
+        results={}
+        for name in ('zero_adapter','trained_adapter'):
+            if name=='trained_adapter':
+                saved=torch.load(evaluation_path,map_location='cpu',weights_only=False)
+                if saved['provenance']['checkpoint_sha256']!=checkpoint_hash:raise ValueError('Wrong backbone')
+                adapter.load_state_dict(saved['adapter'],strict=True)
+            adapter.eval();values=[];weights=[]
+            with fixed_validation_rng():
+                vrng=random.Random(1729)
+                with torch.no_grad():
+                    for index in range(0,len(val),args.batch_size):
+                        rows=val[index:index+args.batch_size]
+                        value=float(model.decoder.compute_loss(batch(rows,vrng))['total'])
+                        if not np.isfinite(value):raise FloatingPointError('Invalid evaluation loss')
+                        values.append(value);weights.append(len(rows))
+            results[name]={'mean_loss':float(np.average(values,weights=weights)),'batch_losses':values,'batch_sizes':weights}
+        result={'metric':'upstream diffusion reconstruction objective on validation split',
+                'sources':len(val),'same_crops_and_noise':True,'results':results,
+                'checkpoint_sha256':hashlib.sha256(evaluation_path.read_bytes()).hexdigest(),
+                'test_set':False,'generation_quality_verified':False,'robot_utility_verified':False,
+                'caveat':'validation checkpoint selection; not an independent test of improvement'}
+        (output/'evaluation.json').write_text(json.dumps(result,indent=2))
+        print('ADAPTER_EVALUATION '+json.dumps(result),flush=True)
+        return
     rng=random.Random(args.seed);best=float('inf');begin=time.monotonic()
     with (output/'loss.jsonl').open('w',encoding='utf-8') as log:
         for step in range(1,args.steps+1):
@@ -118,8 +163,8 @@ def main():
             if step % args.validate_every == 0 or step == args.steps:
                 adapter.eval(); values=[]
                 # Same noise/mask/crops each checkpoint; restore training RNG state.
-                with torch.random.fork_rng(devices=[torch.cuda.current_device()]):
-                    torch.manual_seed(1729);vrng=random.Random(1729)
+                with fixed_validation_rng():
+                    vrng=random.Random(1729)
                     with torch.no_grad():
                         for index in range(0,min(len(val),32),args.batch_size):
                             values.append(float(model.decoder.compute_loss(batch(val[index:index+args.batch_size],vrng))['total']))

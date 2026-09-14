@@ -1,0 +1,29 @@
+==================== Replication 0 ====================
+Time: 2026-09-14 12:28:34.003102
+---> [ground truth] MM Distance: 3.7857
+---> [ground truth] R_precision: (top 1): 0.4328 (top 2): 0.6042 (top 3): 0.7121 
+---> [TIMotion] MM Distance: 3.7718
+---> [TIMotion] R_precision: (top 1): 0.4991 (top 2): 0.6411 (top 3): 0.7301 
+Time: 2026-09-14 12:28:42.679065
+---> [ground truth] FID: 0.3427
+---> [TIMotion] FID: 5.3755
+Time: 2026-09-14 12:28:47.958122
+---> [ground truth] Diversity: 7.8485
+---> [TIMotion] Diversity: 8.0917
+Time: 2026-09-14 12:28:47.960055
+---> [TIMotion] Multimodality: 0.9272
+!!! DONE !!!
+========== MM Distance Summary ==========
+---> [ground truth] Mean: 3.7857 CInterval: 0.0000
+---> [TIMotion] Mean: 3.7718 CInterval: 0.0000
+========== R_precision Summary ==========
+---> [ground truth](top 1) Mean: 0.4328 CInt: 0.0000;(top 2) Mean: 0.6042 CInt: 0.0000;(top 3) Mean: 0.7121 CInt: 0.0000;
+---> [TIMotion](top 1) Mean: 0.4991 CInt: 0.0000;(top 2) Mean: 0.6411 CInt: 0.0000;(top 3) Mean: 0.7301 CInt: 0.0000;
+========== FID Summary ==========
+---> [ground truth] Mean: 0.3427 CInterval: 0.0000
+---> [TIMotion] Mean: 5.3755 CInterval: 0.0000
+========== Diversity Summary ==========
+---> [ground truth] Mean: 7.8485 CInterval: 0.0000
+---> [TIMotion] Mean: 8.0917 CInterval: 0.0000
+========== MultiModality Summary ==========
+---> [TIMotion] Mean: 0.9272 CInterval: 0.0000

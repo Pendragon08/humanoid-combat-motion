@@ -1,0 +1,453 @@
+{
+  "checkpoint_sha256": "2ee7335f688699362d7d5786a398d6ca0c768dcef7f94acd1c81a0bb88e93fea",
+  "source_commit": "172580fd7f2551a7cc10fde1f15ff73315742e65",
+  "architecture": "TIMotion-Transformer-no-LPA",
+  "cfg": {
+    "heads": 16,
+    "layers": 5,
+    "latent": 512
+  },
+  "strict_load": true,
+  "torch": "2.5.1+cu121",
+  "seed": 2026,
+  "frames": 150,
+  "samples": [
+    {
+      "sample_id": "sample_000",
+      "text": "In a boxing practice, one person punches while the other dodges.",
+      "seed": 2026,
+      "seconds": 0.4815142694860697,
+      "sha256": "80cb0ab09f54d03b1471e3d90233307429e3a3bd16bcff380e1e0bfdda789e5c",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_001",
+      "text": "Two people practice martial arts, one kicks while the other steps back and blocks.",
+      "seed": 2026,
+      "seconds": 0.383194612339139,
+      "sha256": "fda88519954b0f2fbb50b8f7f00abf5b19b45b9ef81298ce288baa523aa2e469",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_002",
+      "text": "One person throws a punch, the other blocks it and then counterattacks.",
+      "seed": 2026,
+      "seconds": 0.3825739473104477,
+      "sha256": "c07917200e00c70232bcdfcc0eec4febbf03598d7d67a78ce028a2acd8486dcb",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_003",
+      "text": "Two people spar in a boxing match, moving around and defending against punches.",
+      "seed": 2026,
+      "seconds": 0.38265315629541874,
+      "sha256": "8e185d2d4e3de26d8d705e3beb75bc6d5edfe81c3709efde2edec481a46abacc",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_004",
+      "text": "In a boxing practice, one person punches while the other dodges.",
+      "seed": 2026,
+      "seconds": 0.38218676298856735,
+      "sha256": "4868526f7217ed2ccadaff0bfaeb058cce20dd24a7daa14b730d53d451dd9bcd",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_005",
+      "text": "Two people practice martial arts, one kicks while the other steps back and blocks.",
+      "seed": 2026,
+      "seconds": 0.3825998716056347,
+      "sha256": "4e23fa03ff2bbd3fdec62cf4e57a8014fc7684989d053ba6f029275e42fd16df",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_006",
+      "text": "One person throws a punch, the other blocks it and then counterattacks.",
+      "seed": 2026,
+      "seconds": 0.38184676691889763,
+      "sha256": "b616d509f1080fb889ea48ccafbffe4915abc1ed1871639184e9857881d1a926",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_007",
+      "text": "Two people spar in a boxing match, moving around and defending against punches.",
+      "seed": 2026,
+      "seconds": 0.3820467125624418,
+      "sha256": "279baeb5521a50d635c6ce43ca01d4c9490120c8f4322995c6b8c6c97036ca8d",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_008",
+      "text": "In a boxing practice, one person punches while the other dodges.",
+      "seed": 2026,
+      "seconds": 0.3829878270626068,
+      "sha256": "88e7f3bd4ffd3ca59d839d4f5391ca34d9ba055fa2585c722c651ec402a69a51",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_009",
+      "text": "Two people practice martial arts, one kicks while the other steps back and blocks.",
+      "seed": 2026,
+      "seconds": 0.3827304244041443,
+      "sha256": "3c495e38a9ba0b579376f2e7294323d4bd01ef89cc8e63678c8a295bbb81f14c",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_010",
+      "text": "One person throws a punch, the other blocks it and then counterattacks.",
+      "seed": 2026,
+      "seconds": 0.3823359850794077,
+      "sha256": "33f4d2b6a1d24b83ff0c1bb19a28f25a4bc44cf5e0b2a58d05696215b4aa6319",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_011",
+      "text": "Two people spar in a boxing match, moving around and defending against punches.",
+      "seed": 2026,
+      "seconds": 0.38254022784531116,
+      "sha256": "2aebe596158164457326a87b9653331bec5b128781173a63f3944e5474d6dacf",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_012",
+      "text": "In a boxing practice, one person punches while the other dodges.",
+      "seed": 2026,
+      "seconds": 0.38318713940680027,
+      "sha256": "95beb8eecda5abcad145b56810cca88b0fbe07dc8adcb3a6a1dbeb00edc2d22c",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_013",
+      "text": "Two people practice martial arts, one kicks while the other steps back and blocks.",
+      "seed": 2026,
+      "seconds": 0.3833406325429678,
+      "sha256": "60b39b48bf3cec9c24ab98226564de02a0a682cf93582f65b31d2ecf9421b7ce",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_014",
+      "text": "One person throws a punch, the other blocks it and then counterattacks.",
+      "seed": 2026,
+      "seconds": 0.3829040639102459,
+      "sha256": "ba3758d85bc1dc818d1ea1c9c34eefb4aaf3e2e4dbe2c663a5cc053016a99ddf",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_015",
+      "text": "Two people spar in a boxing match, moving around and defending against punches.",
+      "seed": 2026,
+      "seconds": 0.3834837693721056,
+      "sha256": "0838a2349f23f24b552698d4fe7236cdd8e61e6ad755c618546beae437823ace",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_016",
+      "text": "In a boxing practice, one person punches while the other dodges.",
+      "seed": 2026,
+      "seconds": 0.3831858690828085,
+      "sha256": "b88aee60ae349a7c72c0f4f219b39e39e68e1c463f2f3e3b85ceeaed11c5e707",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_017",
+      "text": "Two people practice martial arts, one kicks while the other steps back and blocks.",
+      "seed": 2026,
+      "seconds": 0.383364450186491,
+      "sha256": "0e75878d5d3ec09595a0d710295b7078524394e8cf4676d6f210c45e4ffa2ade",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_018",
+      "text": "One person throws a punch, the other blocks it and then counterattacks.",
+      "seed": 2026,
+      "seconds": 0.38330307975411415,
+      "sha256": "e97295e3a3d8cc6e9b112d741e1b861cc6129a24199973a1c3155c9560e1f224",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_019",
+      "text": "Two people spar in a boxing match, moving around and defending against punches.",
+      "seed": 2026,
+      "seconds": 0.38369376584887505,
+      "sha256": "22858cc7736661ad95fe5fcde1cc8319d0bfbf7911a87b45d83db0910b806235",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_020",
+      "text": "In a boxing practice, one person punches while the other dodges.",
+      "seed": 2026,
+      "seconds": 0.38328941725194454,
+      "sha256": "10c7e98f29b10c0ae913b775ac94d9de7b4450fd4ea6a3325b0b9dbfe73913e7",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_021",
+      "text": "Two people practice martial arts, one kicks while the other steps back and blocks.",
+      "seed": 2026,
+      "seconds": 0.3843640424311161,
+      "sha256": "3e0cc315abf8f9932816f7f42439687c655d1392c916025fe504476232f41a85",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_022",
+      "text": "One person throws a punch, the other blocks it and then counterattacks.",
+      "seed": 2026,
+      "seconds": 0.3842959739267826,
+      "sha256": "a1dadf651321cd11760d42d8a8a95efcd0b566c470680d780bb371bdce9aad63",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    },
+    {
+      "sample_id": "sample_023",
+      "text": "Two people spar in a boxing match, moving around and defending against punches.",
+      "seed": 2026,
+      "seconds": 0.3842444457113743,
+      "sha256": "e7a40715b9a49bb3d293cd7e323f5374f5f722746304712d1dd29d1f37807b33",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false
+    }
+  ],
+  "adapter_sha256": "2e976830ab496d64167227cec9cef2b4a98e40e302f588fff4f99c58248d90dd",
+  "conditions": [
+    {
+      "boxing": 1,
+      "defense": 1,
+      "kick": 0,
+      "martial_arts": 0,
+      "punch": 1
+    },
+    {
+      "boxing": 0,
+      "defense": 1,
+      "kick": 1,
+      "martial_arts": 1,
+      "punch": 0
+    },
+    {
+      "boxing": 0,
+      "defense": 1,
+      "kick": 0,
+      "martial_arts": 0,
+      "punch": 1
+    },
+    {
+      "boxing": 1,
+      "defense": 1,
+      "kick": 0,
+      "martial_arts": 0,
+      "punch": 1
+    },
+    {
+      "boxing": 1,
+      "defense": 1,
+      "kick": 0,
+      "martial_arts": 0,
+      "punch": 1
+    },
+    {
+      "boxing": 0,
+      "defense": 1,
+      "kick": 1,
+      "martial_arts": 1,
+      "punch": 0
+    },
+    {
+      "boxing": 0,
+      "defense": 1,
+      "kick": 0,
+      "martial_arts": 0,
+      "punch": 1
+    },
+    {
+      "boxing": 1,
+      "defense": 1,
+      "kick": 0,
+      "martial_arts": 0,
+      "punch": 1
+    },
+    {
+      "boxing": 1,
+      "defense": 1,
+      "kick": 0,
+      "martial_arts": 0,
+      "punch": 1
+    },
+    {
+      "boxing": 0,
+      "defense": 1,
+      "kick": 1,
+      "martial_arts": 1,
+      "punch": 0
+    },
+    {
+      "boxing": 0,
+      "defense": 1,
+      "kick": 0,
+      "martial_arts": 0,
+      "punch": 1
+    },
+    {
+      "boxing": 1,
+      "defense": 1,
+      "kick": 0,
+      "martial_arts": 0,
+      "punch": 1
+    },
+    {
+      "boxing": 1,
+      "defense": 1,
+      "kick": 0,
+      "martial_arts": 0,
+      "punch": 1
+    },
+    {
+      "boxing": 0,
+      "defense": 1,
+      "kick": 1,
+      "martial_arts": 1,
+      "punch": 0
+    },
+    {
+      "boxing": 0,
+      "defense": 1,
+      "kick": 0,
+      "martial_arts": 0,
+      "punch": 1
+    },
+    {
+      "boxing": 1,
+      "defense": 1,
+      "kick": 0,
+      "martial_arts": 0,
+      "punch": 1
+    },
+    {
+      "boxing": 1,
+      "defense": 1,
+      "kick": 0,
+      "martial_arts": 0,
+      "punch": 1
+    },
+    {
+      "boxing": 0,
+      "defense": 1,
+      "kick": 1,
+      "martial_arts": 1,
+      "punch": 0
+    },
+    {
+      "boxing": 0,
+      "defense": 1,
+      "kick": 0,
+      "martial_arts": 0,
+      "punch": 1
+    },
+    {
+      "boxing": 1,
+      "defense": 1,
+      "kick": 0,
+      "martial_arts": 0,
+      "punch": 1
+    },
+    {
+      "boxing": 1,
+      "defense": 1,
+      "kick": 0,
+      "martial_arts": 0,
+      "punch": 1
+    },
+    {
+      "boxing": 0,
+      "defense": 1,
+      "kick": 1,
+      "martial_arts": 1,
+      "punch": 0
+    },
+    {
+      "boxing": 0,
+      "defense": 1,
+      "kick": 0,
+      "martial_arts": 0,
+      "punch": 1
+    },
+    {
+      "boxing": 1,
+      "defense": 1,
+      "kick": 0,
+      "martial_arts": 0,
+      "punch": 1
+    }
+  ],
+  "sampling_rng_reset_after_model_initialization": true,
+  "claim": "qualitative inference only; not official FID or robot tracking evaluation"
+}

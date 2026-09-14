@@ -5,31 +5,77 @@
     "paired_text_conditioned_inference": "4 prompts x 150 frames, seed 0",
     "g1_isaaclab_independent_validation": "passed: exit0, 4 robots, 200 steps, 29 joints, finite GPU backward",
     "beyondmimic_training_integration": "100 PPO iterations, 614400 environment steps, one training-source crop",
-    "actor_identity_diagnostic": "framewise identity switches found; raw samples retained; Viterbi correspondence derivative saved"
+    "actor_identity_diagnostic": "framewise identity switches found; raw samples retained; Viterbi correspondence derivative saved",
+    "interhuman_archive_and_split_audit": {
+      "valid_pairs": 7196,
+      "minimum_frames": 16,
+      "excluded_short": 581
+    },
+    "official_metrics_single_repeat": {
+      "FID": 5.3755,
+      "R_precision_top1": 0.4991,
+      "Diversity": 8.0917,
+      "Multimodality": 0.9272,
+      "test_loaded": 1099,
+      "paper_default_repetitions_complete": false
+    },
+    "condition_adapter": "3 seeds x 1000 steps, fixed Torch/NumPy/Python validation RNG; weak keywords only",
+    "paired_generation": "24 generic + 24 adapted pairs, common sampling seed2026",
+    "paired_position_ik": "GMR G1 assets + Mink, common world; not default GMR orientation retargeting",
+    "paired_reference_conversion": "first4 pairs, 50Hz249frames, actual Isaac FK; no physics integration",
+    "dual_robot_learned_diagnostic": {
+      "environments": 4,
+      "robots_per_env": 2,
+      "completion": 0,
+      "failure_steps": [
+        14,
+        14,
+        14,
+        12
+      ]
+    },
+    "retarget_environment_independent_witness": "exit0, error2.24cm to2.31e-16m; no dynamics claim"
   },
-  "running": ["1000 additional PPO iterations from model_99.pt", "official motion archive transfer"],
+  "running": [
+    "1024-environment G1 PPO, 2000 additional updates from model_1098, GPU0",
+    "48 paired-reference conversions and frozen-controller dual-G1 diagnoses, GPU1"
+  ],
   "not_completed": [
-    "official full-dataset generation benchmark",
-    "combat subset adapter training",
+    "paper-default20-repetition official benchmark",
+    "stable multi-reference learned tracking controller",
     "attacker-conditioned causal reaction training",
-    "paired generated human-to-G1 retargeting",
-    "contact-guided learned generation validation",
-    "dual-robot rollout dataset",
-    "trained physics critic and K-candidate selection",
-    "equal-budget multi-seed downstream utility comparisons"
+    "contact-guided generation validation",
+    "reliable balanced dual-robot physics-label dataset",
+    "trained physics critic and candidate reranking",
+    "equal-budget >=3-seed downstream utility and generalization comparisons"
   ],
   "invalid_runs": {
     "g1_tracking_eval_iter99_seed123": "Missing initial relative-reference cache priming caused false first-step termination. Exclude from all scientific comparisons.",
-    "g1_tracking_eval_iter99_diagnostic": "Diagnostic confirmed zero-initialized reference cache. Exclude from all scientific comparisons."
+    "g1_tracking_eval_iter99_diagnostic": "Diagnostic confirmed zero-initialized reference cache. Exclude from all scientific comparisons.",
+    "timotion_adapter_seed0_validation": "Torch noise reset but NumPy timestep sampler not reset: invalid as paired fixed-randomness comparison; excluded. New fixedrng_seed0/1/2 results supersede it."
   },
   "corrected_diagnostic": {
     "run": "g1_tracking_eval_iter99_primed",
     "environments": 32,
     "horizon_steps": 117,
     "completion_fraction": 0.0,
-    "first_failure_step_range": [3, 5],
+    "first_failure_step_range": [
+      3,
+      5
+    ],
     "scope": "training-reference diagnostic after 100 iterations; not a held-out or paired combat result"
   },
   "annotation_source": "Unofficial transport mirror: 50/50 annotation files byte-identical to official Drive checks. Remaining files not individually verified. Original license retained; mirror MIT tag rejected.",
-  "scientific_conclusion": "Generation and learned-control engineering paths run. No evidence yet that synthetic combat data improves imitation or generalization."
+  "scientific_conclusion": "Engineering chain from paired generation to physical two-robot learned-policy evaluation runs. No downstream synthetic-data utility evidence; stable control and causal/contact modules remain unfinished.",
+  "corrected_extended_diagnostic": {
+    "run": "g1_tracking_eval_iter1098_primed",
+    "environments": 32,
+    "horizon_steps": 117,
+    "completion_fraction": 0,
+    "first_failure_step_range": [
+      10,
+      30
+    ],
+    "scope": "single training-reference diagnostic; controller coverage insufficient"
+  }
 }

@@ -1,0 +1,32 @@
+{
+  "counts": {
+    "train": {
+      "official_ids": 6022,
+      "complete_pairs": 6021,
+      "weak_combat_pairs": 963
+    },
+    "val": {
+      "official_ids": 580,
+      "complete_pairs": 580,
+      "weak_combat_pairs": 88
+    },
+    "test": {
+      "official_ids": 1177,
+      "complete_pairs": 1176,
+      "weak_combat_pairs": 153
+    }
+  },
+  "official_split_sha256": {
+    "train": "d20765b028920fa2eeda0e9c73f66ea222348d3b36735562ee81fdeee630701b",
+    "val": "4182c70efb124bf167018d0586af20348e405af16ee98e48f36d50503ec51df2",
+    "test": "c34e91a66e51ec1c9283b026e632ae330431e568ece0821858c5b2fb212f1dd1"
+  },
+  "missing_pairs": 2,
+  "official_dataset_complete": false,
+  "split_check": {
+    "samples": 7777,
+    "sources": 7777,
+    "source_disjoint": true
+  },
+  "labels": "weak keywords; not jab/cross/attack-defense ground truth"
+}

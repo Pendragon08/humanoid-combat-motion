@@ -68,6 +68,8 @@ def main():
         adapter=CombatConditionAdapter(adapted['cardinalities']).cuda().eval()
         adapter.load_state_dict(adapted['adapter'],strict=True)
     normalizer=MotionNormalizer()
+    # Pair noise across baseline/adapter arms regardless of adapter initialization.
+    random.seed(args.seed);np.random.seed(args.seed);torch.manual_seed(args.seed)
     output.mkdir(parents=True)
     records=[]
     for index,text in enumerate(texts):
@@ -95,6 +97,7 @@ def main():
             'architecture':'TIMotion-Transformer-no-LPA','cfg':dict(heads=args.heads,layers=args.layers,latent=args.latent),
             'strict_load':True,'torch':torch.__version__,'seed':args.seed,'frames':args.frames,'samples':records,
             'adapter_sha256':sha(adapter_path) if adapter_path else None,'conditions':conditions,
+            'sampling_rng_reset_after_model_initialization':True,
             'claim':'qualitative inference only; not official FID or robot tracking evaluation'}
     (output/'manifest.json').write_text(json.dumps(report,indent=2,ensure_ascii=False),encoding='utf-8')
 

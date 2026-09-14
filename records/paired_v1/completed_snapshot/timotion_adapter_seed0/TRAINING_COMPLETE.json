@@ -1,0 +1,6 @@
+{
+  "steps": 1000,
+  "best_validation_loss": 0.07471856009215117,
+  "official_generation_metrics_run": false,
+  "tracking_utility_verified": false
+}

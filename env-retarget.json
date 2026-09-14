@@ -1,0 +1,11 @@
+{
+  "base": "/data/code/ouyanghao/oyh/world-model-risk-planning/.env/bin/python",
+  "environment": ".venv-retarget; system-site-packages read-only borrowed base",
+  "python": "3.10.21",
+  "pip_phases": [["numpy==1.26.4", "scipy==1.15.3", "mujoco==3.3.7", "mink==0.0.13", "qpsolvers==4.8.1", "daqp==0.7.2", "rich==13.9.4", "loop-rate-limiters==1.1.2"]],
+  "gmr_commit": "bb1bbe40774794fceb2a7c579a3464a28e68c844",
+  "robot": "official GMR assets/unitree_g1/g1_mocap_29dof.xml",
+  "scope": "CPU inverse kinematics; no robot dynamics or learned tracking claims",
+  "env": {"OMP_NUM_THREADS": "4", "OPENBLAS_NUM_THREADS": "4", "MUJOCO_GL": "egl"},
+  "smoke": {"command": "bash scripts/run_retarget.sh scripts/smoke_retarget.py", "expect": "GMR_IK_WITNESS"}
+}

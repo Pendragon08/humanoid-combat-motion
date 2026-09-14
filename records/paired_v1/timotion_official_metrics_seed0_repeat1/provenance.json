@@ -1,0 +1,27 @@
+{
+  "seed": 0,
+  "repeats": 1,
+  "paper_default_repeats": 20,
+  "batch_size": 96,
+  "mm_samples": 100,
+  "mm_repeats": 30,
+  "test_samples_loaded": 1099,
+  "raw_test_ids": 1177,
+  "missing_original_motion_id": "4106",
+  "short_sequences_skipped_by_upstream": true,
+  "annotation_source": "mirror; 50/50 official byte comparisons, remainder not individually verified",
+  "adaptations": [
+    "verified array-only model transport; strict key loading",
+    "bypass unused Lightning DataModule initialization",
+    "GB18030 decode only original annotation IDs 4642 and 5834"
+  ],
+  "identity_postprocess": false,
+  "contact_guidance": false,
+  "upstream_commit": "172580fd7f2551a7cc10fde1f15ff73315742e65",
+  "source_sha256": {
+    "datasets/interhuman.py": "58f0426053dc28c3d7326205be6f0ac977609eed826be3804e7739cefe43f954",
+    "datasets/evaluator.py": "37dc066ee72200716f4119d1261d135e669c8c448a57fa6705ac029904f0ff57",
+    "tools/eval.py": "627ee96e7422d775091ab4c88c13396c4727b0a3baf648611c7a4e0cae87abc5"
+  },
+  "claim": "upstream metrics on available test subset, reduced repetitions; not full published benchmark replication"
+}

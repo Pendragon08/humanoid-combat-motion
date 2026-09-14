@@ -15,7 +15,7 @@ def sha(path):
     return h.hexdigest()
 
 
-def unpack(path,dest,expected,pattern):
+def unpack(path,dest,expected,pattern,ignore_pattern=None):
     if sha(path)!=expected:raise ValueError('Archive hash mismatch: '+str(path))
     with zipfile.ZipFile(path) as z:
         members=[m for m in z.infolist() if not m.is_dir()]
@@ -23,8 +23,14 @@ def unpack(path,dest,expected,pattern):
         if shutil.disk_usage(dest).free < required+8*1024**3:
             raise RuntimeError('Insufficient disk headroom (8GiB reserve)')
         if z.testzip() is not None:raise ValueError('ZIP CRC failure')
+        ignored=[];extracted=0
         for m in members:
             p=PurePosixPath(m.filename)
+            if ignore_pattern and re.fullmatch(ignore_pattern,m.filename):
+                raw=z.read(m)
+                ignored.append({'path':m.filename,'sha256':hashlib.sha256(raw).hexdigest(),
+                                'reason':'Noncanonical duplicate filename; not used as an independent source or annotation.'})
+                continue
             if p.is_absolute() or '..' in p.parts or not re.fullmatch(pattern,m.filename):
                 raise ValueError('Unexpected archive path: '+m.filename)
             target=(dest/str(p)).resolve()
@@ -35,7 +41,8 @@ def unpack(path,dest,expected,pattern):
                     raise ValueError('Existing file differs: '+str(target))
             else:
                 target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(raw)
-    return len(members)
+            extracted+=1
+    return {'files':extracted,'ignored':ignored}
 
 
 def main():
@@ -47,7 +54,7 @@ def main():
         raise ValueError('Annotation transport audit incomplete')
     a.data.mkdir(parents=True,exist_ok=True)
     n=unpack(a.motions,a.data,'ad951d24f95fff550d964c8f977eb99da47264b81e3080312c95046e69fd6325',r'motions_processed/person[12]/\d+\.npy')
-    k=unpack(a.annots,a.data,audit['mirror_sha256'],r'annots/\d+\.txt')
+    k=unpack(a.annots,a.data,audit['mirror_sha256'],r'annots/\d+\.txt',r'annots/\d+ ?\(\d+\)\.txt')
     record={'motion_files':n,'annotation_files':k,'motion_archive_sha256':sha(a.motions),
             'motion_source':'official InterHuman Google Drive','annotation_transport':audit,
             'annotation_verification':'50/50 official files byte-identical; remaining mirror files not individually verified',

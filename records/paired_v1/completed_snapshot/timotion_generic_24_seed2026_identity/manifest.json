@@ -1,0 +1,502 @@
+{
+  "checkpoint_sha256": "2ee7335f688699362d7d5786a398d6ca0c768dcef7f94acd1c81a0bb88e93fea",
+  "source_commit": "172580fd7f2551a7cc10fde1f15ff73315742e65",
+  "architecture": "TIMotion-Transformer-no-LPA",
+  "cfg": {
+    "heads": 16,
+    "layers": 5,
+    "latent": 512
+  },
+  "strict_load": true,
+  "torch": "2.5.1+cu121",
+  "seed": 2026,
+  "frames": 150,
+  "samples": [
+    {
+      "sample_id": "sample_000",
+      "text": "In a boxing practice, one person punches while the other dodges.",
+      "seed": 2026,
+      "seconds": 0.47834690660238266,
+      "sha256": "44eedd8d98a415272726d90da666d50f6f4fd2b09b8733ded215a89d0739c678",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "52e81f2eb058ff8b0552305cf1833173a4b94883e93924707652b190b5e9299c",
+      "identity_audit": {
+        "frames_permuted": 75,
+        "identity_switches_corrected": 79,
+        "raw_continuity_cost": 33.32709503173828,
+        "corrected_continuity_cost": 0.037834306745935464,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_001",
+      "text": "Two people practice martial arts, one kicks while the other steps back and blocks.",
+      "seed": 2026,
+      "seconds": 0.3817826434969902,
+      "sha256": "81169950a74b481f17ae5d108817b30640e9ede0bf7bbd30e161a306883346f1",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "c333290e07a845f7d00bcc5ca70bc9e11193ca42cf2e215e93e483073fb0e7d0",
+      "identity_audit": {
+        "frames_permuted": 67,
+        "identity_switches_corrected": 85,
+        "raw_continuity_cost": 66.54277801513672,
+        "corrected_continuity_cost": 0.08772631932515651,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_002",
+      "text": "One person throws a punch, the other blocks it and then counterattacks.",
+      "seed": 2026,
+      "seconds": 0.38183060847222805,
+      "sha256": "837c5bf16f2529e00377a9928a634f3751e43d6a7422292a0254c9ecf4681061",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "9bfa238db03a410470f76f077c016f3cd11ac82c081cf80d7ac9c368a0dedaf5",
+      "identity_audit": {
+        "frames_permuted": 79,
+        "identity_switches_corrected": 81,
+        "raw_continuity_cost": 31.68225860595703,
+        "corrected_continuity_cost": 0.04972994763011229,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_003",
+      "text": "Two people spar in a boxing match, moving around and defending against punches.",
+      "seed": 2026,
+      "seconds": 0.3813155386596918,
+      "sha256": "8aed0aa02615ca42e509d2fe723900882bbbbbe963d788626753d3bc90fe1db0",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "6cb512d6aa7b5504d1f8f4da879c5fd2dac10b6538b5d526b41e7de31f25dcef",
+      "identity_audit": {
+        "frames_permuted": 76,
+        "identity_switches_corrected": 76,
+        "raw_continuity_cost": 20.626026153564453,
+        "corrected_continuity_cost": 0.06826577939136769,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_004",
+      "text": "In a boxing practice, one person punches while the other dodges.",
+      "seed": 2026,
+      "seconds": 0.38107919692993164,
+      "sha256": "9ce6396c8fb39e70677d1e65c590aa7a07a7a77d1fe69bb6798591b7583ecc54",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "0e978b7bdbf3fc7c2a8e479811a8241c987be748e3d29de7a40ec14719f61e47",
+      "identity_audit": {
+        "frames_permuted": 64,
+        "identity_switches_corrected": 72,
+        "raw_continuity_cost": 20.28866195678711,
+        "corrected_continuity_cost": 0.06358573025499936,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_005",
+      "text": "Two people practice martial arts, one kicks while the other steps back and blocks.",
+      "seed": 2026,
+      "seconds": 0.3811401166021824,
+      "sha256": "4793959b427ecf430990e7710d0afdda5d809376acb96a898faf969c374c4def",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "cbdc7e6790363be8a356d2438e7fe28947d76f331939702ee3f5f6c299fe0b18",
+      "identity_audit": {
+        "frames_permuted": 68,
+        "identity_switches_corrected": 81,
+        "raw_continuity_cost": 44.278717041015625,
+        "corrected_continuity_cost": 0.1035290958971018,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_006",
+      "text": "One person throws a punch, the other blocks it and then counterattacks.",
+      "seed": 2026,
+      "seconds": 0.38047192618250847,
+      "sha256": "397cfe842e75e7396f97a318536200424940a05046b5c230b6d9f6aba73b5afc",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "35a81a102a8eedcc4961c60032129940c9da1902b94ca4122f8453c697c7191b",
+      "identity_audit": {
+        "frames_permuted": 81,
+        "identity_switches_corrected": 77,
+        "raw_continuity_cost": 32.119483947753906,
+        "corrected_continuity_cost": 0.0372452688679914,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_007",
+      "text": "Two people spar in a boxing match, moving around and defending against punches.",
+      "seed": 2026,
+      "seconds": 0.3811828810721636,
+      "sha256": "b59bc8b79999ffb0b6b8d3365283468ef70f9d30e032a6d36a8f6893838ecebf",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "4414ff590451e8d1e0092296441c9c8f1959c78da8d011fd47dbe65c942db6e8",
+      "identity_audit": {
+        "frames_permuted": 75,
+        "identity_switches_corrected": 83,
+        "raw_continuity_cost": 21.199316024780273,
+        "corrected_continuity_cost": 0.0591562362278637,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_008",
+      "text": "In a boxing practice, one person punches while the other dodges.",
+      "seed": 2026,
+      "seconds": 0.38105273246765137,
+      "sha256": "7da57d8922e7828386b0798fa018b9dcd3ff6fe0aa3e45ff6d7d30df9a02b192",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "8507fce6d58ca0a41b235f2edf58c719b70b482a24f2dcc861ca149b6c67a344",
+      "identity_audit": {
+        "frames_permuted": 78,
+        "identity_switches_corrected": 77,
+        "raw_continuity_cost": 28.670597076416016,
+        "corrected_continuity_cost": 0.047394997458468424,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_009",
+      "text": "Two people practice martial arts, one kicks while the other steps back and blocks.",
+      "seed": 2026,
+      "seconds": 0.3808692265301943,
+      "sha256": "b623eb7e7414552db99914e2b935a75b6489f11491dee14b65e4b6f242c80e75",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "3dd0fbb7486d96c757a3f7446ef62b0cae3b4f35c8faaa59f397a968bfe6d4db",
+      "identity_audit": {
+        "frames_permuted": 75,
+        "identity_switches_corrected": 77,
+        "raw_continuity_cost": 43.633140563964844,
+        "corrected_continuity_cost": 0.10736239710240625,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_010",
+      "text": "One person throws a punch, the other blocks it and then counterattacks.",
+      "seed": 2026,
+      "seconds": 0.3818005621433258,
+      "sha256": "39f3453013834e262e241fcc1be3c283103eb447976a6aab0914ed14838b0d01",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "a11db7d2da01402284184ab3215ea43ba948fb7b18f122a7f0be4e5c5581fb8d",
+      "identity_audit": {
+        "frames_permuted": 82,
+        "identity_switches_corrected": 74,
+        "raw_continuity_cost": 27.577014923095703,
+        "corrected_continuity_cost": 0.03903281534985581,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_011",
+      "text": "Two people spar in a boxing match, moving around and defending against punches.",
+      "seed": 2026,
+      "seconds": 0.3819401990622282,
+      "sha256": "6ed10c5cdee4d767ac8a664d29209eb4b1c3ea3997a2c518c21707ce7d6b8aeb",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "efe2c42f9e19bbe22f83d36cd5609f6e4c404a60cae6b91365d3f070f97cc7cb",
+      "identity_audit": {
+        "frames_permuted": 62,
+        "identity_switches_corrected": 71,
+        "raw_continuity_cost": 18.849868774414062,
+        "corrected_continuity_cost": 0.05343793974316213,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_012",
+      "text": "In a boxing practice, one person punches while the other dodges.",
+      "seed": 2026,
+      "seconds": 0.3822907395660877,
+      "sha256": "f9b86785f404526503586b11d2d5cc904b67419faabf0ec19fa658cc2028dfec",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "847d577c862385db76ca392ee9866de9b6737623790f4c9853c5660a543a1357",
+      "identity_audit": {
+        "frames_permuted": 63,
+        "identity_switches_corrected": 75,
+        "raw_continuity_cost": 28.05881118774414,
+        "corrected_continuity_cost": 0.08554860968069988,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_013",
+      "text": "Two people practice martial arts, one kicks while the other steps back and blocks.",
+      "seed": 2026,
+      "seconds": 0.381601320579648,
+      "sha256": "002849641ede1811bba927d54987392c1492c3f3934ca8966fe2f48ba2bcc022",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "d4f19de4b57779d112f6eff50e9bfab1e3933e27f40083cdf98d9069749a47e9",
+      "identity_audit": {
+        "frames_permuted": 80,
+        "identity_switches_corrected": 75,
+        "raw_continuity_cost": 40.49558639526367,
+        "corrected_continuity_cost": 0.09177090444427449,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_014",
+      "text": "One person throws a punch, the other blocks it and then counterattacks.",
+      "seed": 2026,
+      "seconds": 0.38206701911985874,
+      "sha256": "5cdd346b2d10b21156795810bbf4a2b1806e2f0dd9ef058d818b88098dd94ed5",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "2df502949b9ec656abfe4a63ad612012e73bc7376de57903bcbd6b50477fc57c",
+      "identity_audit": {
+        "frames_permuted": 76,
+        "identity_switches_corrected": 76,
+        "raw_continuity_cost": 30.592670440673828,
+        "corrected_continuity_cost": 0.03825912713909929,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_015",
+      "text": "Two people spar in a boxing match, moving around and defending against punches.",
+      "seed": 2026,
+      "seconds": 0.38212332688272,
+      "sha256": "37265832967b5e295671c39ded220fee466867fbddaf2478f956f105f32fffda",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "0c70f2597572037e6c5ba8d78dc452bc581c160ec5e1d73e2837dc481c5d71df",
+      "identity_audit": {
+        "frames_permuted": 83,
+        "identity_switches_corrected": 69,
+        "raw_continuity_cost": 26.064838409423828,
+        "corrected_continuity_cost": 0.04735564807924675,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_016",
+      "text": "In a boxing practice, one person punches while the other dodges.",
+      "seed": 2026,
+      "seconds": 0.3823807556182146,
+      "sha256": "d599d1702cda8b0c71f1ee0cc4b7e7dd199cb7af2e00636cc1e3a7ee9c8fab27",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "c151d198fb3144e1d464b25f46c9d293106a69308832ba127fd3a93d4324a0c0",
+      "identity_audit": {
+        "frames_permuted": 72,
+        "identity_switches_corrected": 75,
+        "raw_continuity_cost": 28.536901473999023,
+        "corrected_continuity_cost": 0.04709992155403597,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_017",
+      "text": "Two people practice martial arts, one kicks while the other steps back and blocks.",
+      "seed": 2026,
+      "seconds": 0.3831707201898098,
+      "sha256": "da00c68378b5b992dcb0dde90c3d2f832115f6b6a9641fb90c232c06a488a0d3",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "d09acaa8559d1890c66bf89315bbfa99a49f0dbfd8ec4f1dbd589150552b779d",
+      "identity_audit": {
+        "frames_permuted": 73,
+        "identity_switches_corrected": 77,
+        "raw_continuity_cost": 55.230289459228516,
+        "corrected_continuity_cost": 0.09085216200401192,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_018",
+      "text": "One person throws a punch, the other blocks it and then counterattacks.",
+      "seed": 2026,
+      "seconds": 0.3818946573883295,
+      "sha256": "3d05d684a71c5c4320b138afcb2d09b3c938333536f0004e1eeec206ed937db0",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "ce53943470e03d462480fc0c3be057a589db6bbdf73faaefc1f5d8f1bd154865",
+      "identity_audit": {
+        "frames_permuted": 76,
+        "identity_switches_corrected": 81,
+        "raw_continuity_cost": 32.44369888305664,
+        "corrected_continuity_cost": 0.0527673146516463,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_019",
+      "text": "Two people spar in a boxing match, moving around and defending against punches.",
+      "seed": 2026,
+      "seconds": 0.3821564316749573,
+      "sha256": "fe1984aa659a82865283911d9ad73e76b649a204d0a9336da7dfe9ea89dcbdf4",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "a10a709c7ff4bd05edb995a724c2d8e8364868b593d8bc7ade86907597962dbb",
+      "identity_audit": {
+        "frames_permuted": 74,
+        "identity_switches_corrected": 77,
+        "raw_continuity_cost": 25.896713256835938,
+        "corrected_continuity_cost": 0.053120824888537754,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_020",
+      "text": "In a boxing practice, one person punches while the other dodges.",
+      "seed": 2026,
+      "seconds": 0.38212865591049194,
+      "sha256": "495a9eeba48702a5f936bc66a10cd2649a8a5b7859316a3e4c23bb6e94afe838",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "e080687ad5c86b7b49c922b9fdf6903dac7ea1eb26bbad5033372faaaeca9172",
+      "identity_audit": {
+        "frames_permuted": 71,
+        "identity_switches_corrected": 74,
+        "raw_continuity_cost": 23.544191360473633,
+        "corrected_continuity_cost": 0.046577455490478314,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_021",
+      "text": "Two people practice martial arts, one kicks while the other steps back and blocks.",
+      "seed": 2026,
+      "seconds": 0.3819796182215214,
+      "sha256": "87008fb761dfb3d954fc30d3d86c3ab5af96d0f3dad4a6ce823f371e89e331ea",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "5f38db34d3c196b9f264d988e6ac4d9b904772bffe5df7b80f097275c8cdd18d",
+      "identity_audit": {
+        "frames_permuted": 73,
+        "identity_switches_corrected": 84,
+        "raw_continuity_cost": 69.99050903320312,
+        "corrected_continuity_cost": 0.10679635251290165,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_022",
+      "text": "One person throws a punch, the other blocks it and then counterattacks.",
+      "seed": 2026,
+      "seconds": 0.3820382133126259,
+      "sha256": "145e178da33fa694c17dfa7c66fb2fada8b2c9b742c0b2b906564c0053ad12a7",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "4d2776ee4dfe13696699f7d093be67872b895db7ca72d578fa23ddf8585cc301",
+      "identity_audit": {
+        "frames_permuted": 78,
+        "identity_switches_corrected": 65,
+        "raw_continuity_cost": 23.8657283782959,
+        "corrected_continuity_cost": 0.04297608370688977,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    },
+    {
+      "sample_id": "sample_023",
+      "text": "Two people spar in a boxing match, moving around and defending against punches.",
+      "seed": 2026,
+      "seconds": 0.38216968439519405,
+      "sha256": "f6637ddda90826a3679c1b1b6f80f28e2dd5e2bf8a1f89ada6f31f3602610fe4",
+      "motion_kind": "synthetic_human",
+      "coordinate_system": "upstream_interhuman_y_up",
+      "robot_ready": false,
+      "official_benchmark": false,
+      "raw_sha256": "17eae91b3c12b18f2c4048c6b068512be7552e1a76ddda856ad8d8ecd3b78147",
+      "identity_audit": {
+        "frames_permuted": 78,
+        "identity_switches_corrected": 78,
+        "raw_continuity_cost": 27.473770141601562,
+        "corrected_continuity_cost": 0.042685854707087856,
+        "semantics": "geometric actor correspondence anchored to frame0; not causal or attack-role labels",
+        "limitation": "Close overlap can be ambiguous. This is deterministic engineering postprocessing, not physics validation."
+      }
+    }
+  ],
+  "adapter_sha256": null,
+  "conditions": null,
+  "sampling_rng_reset_after_model_initialization": true,
+  "claim": "qualitative inference only; not official FID or robot tracking evaluation",
+  "postprocess": "two-state Viterbi actor correspondence; no smoothing or physical optimization",
+  "raw_run": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/timotion_generic_24_seed2026"
+}

@@ -1,0 +1,23 @@
+{
+  "input_manifest_sha256": "d6025e40d9de4c24050ace824ec57092fd5e5323872f1108c589607310d529a0",
+  "minimum_raw_frames": 16,
+  "counts": {
+    "train": 5579,
+    "train_weak_combat": 922,
+    "val": 535,
+    "val_weak_combat": 82,
+    "test": 1082,
+    "test_weak_combat": 142
+  },
+  "excluded_count": 581,
+  "exclusion_reasons": {
+    "too_short": 581
+  },
+  "source_split_check": {
+    "samples": 7196,
+    "sources": 7196,
+    "source_disjoint": true
+  },
+  "raw_motion_modified": false,
+  "scope": "shape/finite-value data integrity only; not contact or physical feasibility"
+}

@@ -1,0 +1,195 @@
+{
+  "records": [
+    {
+      "origin": "runs/timotion_adapted_24_seed2026/manifest.json",
+      "file": "timotion_adapted_24_seed2026/manifest.json",
+      "sha256": "03b48ae61461e7af6d7983d7258fc88b95261c741898833f56d576b36d7687fe"
+    },
+    {
+      "origin": "runs/timotion_adapted_24_seed2026_g1ik/manifest.json",
+      "file": "timotion_adapted_24_seed2026_g1ik/manifest.json",
+      "sha256": "520b966960c3611a2c4a3cae08c99611a123f08063ffba20404644445817417b"
+    },
+    {
+      "origin": "runs/timotion_adapted_24_seed2026_identity/manifest.json",
+      "file": "timotion_adapted_24_seed2026_identity/manifest.json",
+      "sha256": "fe01dd3beefb228a27b1cb0d400863fd78b295e4a000f7ebdf7688321e23c26b"
+    },
+    {
+      "origin": "runs/timotion_adapter_fixedrng_seed0/TRAINING_COMPLETE.json",
+      "file": "timotion_adapter_fixedrng_seed0/TRAINING_COMPLETE.json",
+      "sha256": "6b98da67338a0bf2ccfb49be03ab5e34c0ce483bdae4dfce2468bedc0ae34076"
+    },
+    {
+      "origin": "runs/timotion_adapter_fixedrng_seed0/config.json",
+      "file": "timotion_adapter_fixedrng_seed0/config.json",
+      "sha256": "8f29ab84443df4a67c27c13cc2d025e717f03ff9ea72a2d10e153a2e4e3c05ae"
+    },
+    {
+      "origin": "runs/timotion_adapter_fixedrng_seed0/loss.jsonl",
+      "file": "timotion_adapter_fixedrng_seed0/loss.jsonl",
+      "sha256": "100f43ed161b9a6ac47cc1c067ca086cf7d361b2d29609206f5ce2f653a01d58"
+    },
+    {
+      "origin": "runs/timotion_adapter_fixedrng_seed0_validation/config.json",
+      "file": "timotion_adapter_fixedrng_seed0_validation/config.json",
+      "sha256": "8f29ab84443df4a67c27c13cc2d025e717f03ff9ea72a2d10e153a2e4e3c05ae"
+    },
+    {
+      "origin": "runs/timotion_adapter_fixedrng_seed0_validation/evaluation.json",
+      "file": "timotion_adapter_fixedrng_seed0_validation/evaluation.json",
+      "sha256": "fa9ddf8561296983c21bc6121037370641774b6046053350dde6c9360437fcf1"
+    },
+    {
+      "origin": "runs/timotion_adapter_fixedrng_seed1/TRAINING_COMPLETE.json",
+      "file": "timotion_adapter_fixedrng_seed1/TRAINING_COMPLETE.json",
+      "sha256": "27ac3d5e663690b22706741e3f6f758f94f099be098aa9cb7b1c400adc23545b"
+    },
+    {
+      "origin": "runs/timotion_adapter_fixedrng_seed1/config.json",
+      "file": "timotion_adapter_fixedrng_seed1/config.json",
+      "sha256": "b26383910e82371542a83008608c3f61af9bf7308c06f7b05b772ade4d01fe26"
+    },
+    {
+      "origin": "runs/timotion_adapter_fixedrng_seed1/loss.jsonl",
+      "file": "timotion_adapter_fixedrng_seed1/loss.jsonl",
+      "sha256": "38f322eb193701843e656307ba96350e3f8882571c4ce70516c54d4370530c7c"
+    },
+    {
+      "origin": "runs/timotion_adapter_fixedrng_seed1_validation/config.json",
+      "file": "timotion_adapter_fixedrng_seed1_validation/config.json",
+      "sha256": "b26383910e82371542a83008608c3f61af9bf7308c06f7b05b772ade4d01fe26"
+    },
+    {
+      "origin": "runs/timotion_adapter_fixedrng_seed1_validation/evaluation.json",
+      "file": "timotion_adapter_fixedrng_seed1_validation/evaluation.json",
+      "sha256": "0f4f6bb67ce8dc5f900ae1d0cb0d02074dda91febbe0b2f12f45441e25ebc091"
+    },
+    {
+      "origin": "runs/timotion_adapter_fixedrng_seed2/TRAINING_COMPLETE.json",
+      "file": "timotion_adapter_fixedrng_seed2/TRAINING_COMPLETE.json",
+      "sha256": "dbbdee36ac3d62ba063418e62cd39653b0ae89aa337eed8f245e6d6fb45e65d2"
+    },
+    {
+      "origin": "runs/timotion_adapter_fixedrng_seed2/config.json",
+      "file": "timotion_adapter_fixedrng_seed2/config.json",
+      "sha256": "944fa772b081c530faa117a953e22bea6d596190061601045d604ff8f301c5b5"
+    },
+    {
+      "origin": "runs/timotion_adapter_fixedrng_seed2/loss.jsonl",
+      "file": "timotion_adapter_fixedrng_seed2/loss.jsonl",
+      "sha256": "4b9b7c934b6ad6d45ecf30f80d7b62ddf411340a5bec89e3f6bab73ddf4f583a"
+    },
+    {
+      "origin": "runs/timotion_adapter_fixedrng_seed2_validation/config.json",
+      "file": "timotion_adapter_fixedrng_seed2_validation/config.json",
+      "sha256": "944fa772b081c530faa117a953e22bea6d596190061601045d604ff8f301c5b5"
+    },
+    {
+      "origin": "runs/timotion_adapter_fixedrng_seed2_validation/evaluation.json",
+      "file": "timotion_adapter_fixedrng_seed2_validation/evaluation.json",
+      "sha256": "6b779445166a3323a9ee21ed65810ab8a93cae2838d4282505c001aae6bb898b"
+    },
+    {
+      "origin": "runs/timotion_adapter_seed0/TRAINING_COMPLETE.json",
+      "file": "timotion_adapter_seed0/TRAINING_COMPLETE.json",
+      "sha256": "78ad2f33d8ccda095bd3f233981d375261ff37f813018be8da186e193fd6d1ce"
+    },
+    {
+      "origin": "runs/timotion_adapter_seed0/config.json",
+      "file": "timotion_adapter_seed0/config.json",
+      "sha256": "ef310d16ba6b0c08eba2564bcded01171f5edf26c3c581a41c8504b4abc62498"
+    },
+    {
+      "origin": "runs/timotion_adapter_seed0/loss.jsonl",
+      "file": "timotion_adapter_seed0/loss.jsonl",
+      "sha256": "ae0f35f55ee517078fd9faf2ad5cbd5682f8def7f347cf44bf0bb11a94cd2d16"
+    },
+    {
+      "origin": "runs/timotion_adapter_seed0_validation/config.json",
+      "file": "timotion_adapter_seed0_validation/config.json",
+      "sha256": "ef310d16ba6b0c08eba2564bcded01171f5edf26c3c581a41c8504b4abc62498"
+    },
+    {
+      "origin": "runs/timotion_adapter_seed0_validation/evaluation.json",
+      "file": "timotion_adapter_seed0_validation/evaluation.json",
+      "sha256": "7a7598f2ea4114d548719ee8ea6c191a06a3de5b9d91aac1eccb6f5ca2bb702c"
+    },
+    {
+      "origin": "runs/timotion_g1_position_ik_seed0/manifest.json",
+      "file": "timotion_g1_position_ik_seed0/manifest.json",
+      "sha256": "ed8945729cdcc9e26fda7282874751f84820ebd03bb39d1b4361a9adb19b157d"
+    },
+    {
+      "origin": "runs/timotion_g1_tracking_refs_seed0/manifest.json",
+      "file": "timotion_g1_tracking_refs_seed0/manifest.json",
+      "sha256": "27266cc159d1047a93b111c147eadc17bc3e09c5f94078dcf72956686f265fcd"
+    },
+    {
+      "origin": "runs/timotion_generic_24_seed2026/manifest.json",
+      "file": "timotion_generic_24_seed2026/manifest.json",
+      "sha256": "c76793083e4d6c54daee15d9edf9ce5cfd4a6643b3a0809d5598b6e65af4d436"
+    },
+    {
+      "origin": "runs/timotion_generic_24_seed2026_g1ik/manifest.json",
+      "file": "timotion_generic_24_seed2026_g1ik/manifest.json",
+      "sha256": "2d7a5b9e58b8054480ef89dfbd43a7451793472fdab1b314071756e4a4cf06ec"
+    },
+    {
+      "origin": "runs/timotion_generic_24_seed2026_identity/manifest.json",
+      "file": "timotion_generic_24_seed2026_identity/manifest.json",
+      "sha256": "aaaffe9ac3d1bc87d86dc9e72d5d4ffd1b4c87c25609fa59dca85db860173182"
+    },
+    {
+      "origin": "runs/timotion_official_metrics_seed0_repeat1/EVALUATION_COMPLETE.json",
+      "file": "timotion_official_metrics_seed0_repeat1/EVALUATION_COMPLETE.json",
+      "sha256": "895b8c4c6b52115fa61d373f1d729044fd7a2cad339f29805ad3d2a755da85c8"
+    },
+    {
+      "origin": "runs/timotion_official_metrics_seed0_repeat1/evaluation.log",
+      "file": "timotion_official_metrics_seed0_repeat1/evaluation.log",
+      "sha256": "a3499a4f67d26a9af41400fde2f496eba96fb83720d73ef93795085c7ac6b7cf"
+    },
+    {
+      "origin": "runs/timotion_official_metrics_seed0_repeat1/provenance.json",
+      "file": "timotion_official_metrics_seed0_repeat1/provenance.json",
+      "sha256": "9087210e15fb3506b2cc6dac024946c40e87c2883195bf80b550d634d1743c31"
+    },
+    {
+      "origin": "runs/timotion_pretrained_seed0/manifest.json",
+      "file": "timotion_pretrained_seed0/manifest.json",
+      "sha256": "a0172ad02a4d74632eaae8e2c23ef23e642a66cf7a7219865693add607fa7455"
+    },
+    {
+      "origin": "runs/timotion_pretrained_seed0_identity_corrected/manifest.json",
+      "file": "timotion_pretrained_seed0_identity_corrected/manifest.json",
+      "sha256": "69ebb416a3f8bc6acffad43b0e06d286a9c6ae2068aebd22a0de640db310b4cb"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_iter1098_primed/metrics.json",
+      "file": "g1_tracking_eval_iter1098_primed/metrics.json",
+      "sha256": "6f374d699b61feaccce3007182a51c445c1c3344d02cfc8a112074adc6c42ea6"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_iter99_diagnostic/metrics.json",
+      "file": "g1_tracking_eval_iter99_diagnostic/metrics.json",
+      "sha256": "f09eb50642f00527790bcb8a0ac506a9a61f908ad087275740d684659892f7e5"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_iter99_primed/metrics.json",
+      "file": "g1_tracking_eval_iter99_primed/metrics.json",
+      "sha256": "959ea575975f2cbf31a1fdceb5a853d044d6db5ecbd8332e780a969d6b33947d"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_iter99_seed123/metrics.json",
+      "file": "g1_tracking_eval_iter99_seed123/metrics.json",
+      "sha256": "70c82266b42cae03d68e42feadf84ff0f004b9cb87bdb603f94508d9b3a7bbb3"
+    },
+    {
+      "origin": "runs/dual_g1_sample000_iter1098/metrics.json",
+      "file": "dual_g1_sample000_iter1098/metrics.json",
+      "sha256": "f9c6f273d38f8901052a42ac5d89e038179ecf62e64ac8fec32550488c9f553b"
+    }
+  ],
+  "excludes": "raw datasets, checkpoints, credentials"
+}

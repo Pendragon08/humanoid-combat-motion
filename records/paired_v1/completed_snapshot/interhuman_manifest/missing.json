@@ -1,0 +1,18 @@
+[
+  {
+    "source": "3945",
+    "split": "train",
+    "missing": [
+      "data/interhuman/motions_processed/person1/3945.npy",
+      "data/interhuman/motions_processed/person2/3945.npy"
+    ]
+  },
+  {
+    "source": "4106",
+    "split": "test",
+    "missing": [
+      "data/interhuman/motions_processed/person1/4106.npy",
+      "data/interhuman/motions_processed/person2/4106.npy"
+    ]
+  }
+]

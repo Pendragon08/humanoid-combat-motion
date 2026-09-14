@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import re
 from combat.protocol import source_split_check
+from combat.annotations import read_annotation
 
 
 def main():
@@ -31,11 +32,12 @@ def main():
             absent=[str(x) for x in files+[annotation] if not x.exists()]
             if absent:
                 missing.append({'source':name,'split':split,'missing':absent});continue
-            text=annotation.read_text(encoding='utf-8')
+            text,encoding=read_annotation(annotation)
             tags=[key for key,pattern in patterns.items() if re.search(pattern,text,re.I)]
             records.append({'sample_id':'interhuman_'+name,'source_ids':['interhuman:'+name],
                             'split':split,'synthetic':False,'paired':True,'motion_paths':[str(f.resolve()) for f in files],
                             'annotation_path':str(annotation.resolve()),'annotation_sha256':hashlib.sha256(annotation.read_bytes()).hexdigest(),
+                            'annotation_encoding':encoding,
                             'weak_tags':tags,'label_quality':'keyword_candidate_requires_review',
                             'attack_type':'unknown','attack_actor':'unknown','defender_actor':'unknown','contact_verified':False})
             counts[split]['complete_pairs']+=1
