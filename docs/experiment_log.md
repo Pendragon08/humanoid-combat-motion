@@ -9,3 +9,9 @@
 5. 官方模型和数据仍在获取中；首次 Python 下载没有有效数据进展，停止后改用限时、限速检查的 curl 下载。下载文件尚未通过完整性验证前不得使用。
 
 未执行项目：正式 TIMotion 指标复现、格斗子集微调、双机器人学习型跟踪、物理 critic 训练、三种子下游数据效用比较。
+
+6. 新增条件/接触梯度/critic 测试，服务器 18/18 全部通过（约1.28秒）。
+7. TIMotion CUDA kernel 独立复核通过，loss=7.947015285491943。
+8. Isaac Sim 4.5 官方包 CRC 与大小校验通过；默认无界面配置卡在 _wait_for_viewport，按堆栈定位后改用 Isaac Lab 官方 headless experience。实际方块重力碰撞240步通过，最终 z=0.050010327m。该测试不是机器人跟踪。
+9. 清理已验证的临时 Isaac 安装压缩包，回收7,208,817,125字节；安装和验证记录保留。
+10. 创建私有 GitHub 仓库 Pendragon08/humanoid-combat-motion 并完成推送。
