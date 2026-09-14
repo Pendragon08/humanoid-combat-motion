@@ -1,0 +1,13 @@
+{
+  "complete_policy_runs": 9,
+  "reused_policy_runs": 1,
+  "new_policy_runs": 8,
+  "new_environment_steps": 98304000,
+  "evaluation_records": 36,
+  "different_checkpoint_hashes": 9,
+  "compressed_records_verified": 150,
+  "html_ids_and_links_valid": true,
+  "video_rollout_hashes_valid": true,
+  "full_physics_critic_or_paired_combat_validated": false,
+  "pilot_execution_complete": true
+}

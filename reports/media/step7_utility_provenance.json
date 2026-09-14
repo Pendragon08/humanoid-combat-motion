@@ -1,0 +1,21 @@
+{
+  "source_evaluations": [
+    "runs/g1_tracking_eval_multiref_test4_sample_000_primed",
+    "runs/step7_eval_generic_seed0_sample_000",
+    "runs/step7_eval_contact_seed0_sample_000"
+  ],
+  "source_rollout_sha256": [
+    "1379ba5e4f2d996762929ff8da9dd97d1f112314c4099029b3995e2be5ba63b1",
+    "558f8adabe724549aee794f8b96abfaf6c1160bb785489ed1440c9b424d0cfa7",
+    "85f9d23def47282ede448e3463ed7de9abc2c3293011e64c1fb0ddd490f02301"
+  ],
+  "selection": "first sorted held-out clip, fixed environment0, controller seed0; no success selection",
+  "alive_frames": [
+    84,
+    97,
+    82
+  ],
+  "playback_speed": 0.25,
+  "freeze_after_first_failure": true,
+  "rendering": "MuJoCo rendering of actual recorded Isaac states; not MuJoCo policy deployment"
+}

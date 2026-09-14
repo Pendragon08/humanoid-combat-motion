@@ -47,23 +47,7 @@
     "unit_tests": "38 passed, including coverage feature height/sign integrity and physics-label refusal",
     "step7_coverage_diagnostic": "Three predictor seeds and K=6 retrospective ranking completed; not approved as a physics feasibility filter"
   },
-  "running": [
-    {
-      "pid": 2107819,
-      "output": "runs/step7_utility_contact_seed0",
-      "kind": "training"
-    },
-    {
-      "pid": 2110600,
-      "output": "runs/step7_utility_contact_seed2",
-      "kind": "training"
-    },
-    {
-      "pid": 2112343,
-      "output": "runs/step7_utility_generic_seed2",
-      "kind": "training"
-    }
-  ],
+  "running": [],
   "not_completed": [
     "paper-default20-repetition official benchmark",
     "stable multi-reference learned tracking controller",
@@ -71,7 +55,7 @@
     "robot physical contact success beyond exploratory human geometry optimization",
     "reliable balanced dual-robot physics-label dataset",
     "trained physics critic and candidate reranking",
-    "equal-budget >=3-seed downstream utility and generalization comparisons"
+    "confirmatory utility of physics-critic-filtered paired combat data on independent source groups; current 3x3 pilot is contact-only, single-robot, one development video group"
   ],
   "invalid_runs": {
     "g1_tracking_eval_iter99_seed123": "Missing initial relative-reference cache priming caused false first-step termination. Exclude from all scientific comparisons.",
@@ -90,7 +74,7 @@
     "scope": "training-reference diagnostic after 100 iterations; not a held-out or paired combat result"
   },
   "annotation_source": "Unofficial transport mirror: 50/50 annotation files byte-identical to official Drive checks. Remaining files not individually verified. Original license retained; mirror MIT tag rejected.",
-  "scientific_conclusion": "Engineering chain plus explicit history attention and bone-preserving contact refinement executed. Twenty-source control remains weak and contact-refined robot pairs fail early. No validated physics critic or downstream synthetic-data utility; do not claim full plan completion or positive feasibility.",
+  "scientific_conclusion": "Nine equal-budget component utility runs completed; see step7 summary for measured effects. Full physics filtering and paired combat executability remain unvalidated; do not claim full plan success.",
   "corrected_extended_diagnostic": {
     "run": "g1_tracking_eval_iter1098_primed",
     "environments": 32,
@@ -103,9 +87,9 @@
     "scope": "single training-reference diagnostic; controller coverage insufficient"
   },
   "step7": {
-    "completed_policy_runs": 6,
+    "completed_policy_runs": 9,
     "expected_policy_runs": 9,
-    "component_utility_pilot_complete": false,
+    "component_utility_pilot_complete": true,
     "full_physics_pipeline_validated": false,
     "report": "records/step7/summary.json",
     "contact_retargeting": "20 train cases; geometric contact 19/20 in humans and 4/20 with toe helper robot proxy; not force certification"

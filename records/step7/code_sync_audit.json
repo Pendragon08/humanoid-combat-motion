@@ -699,11 +699,11 @@
     },
     {
       "path": "scripts/summarize_step7.py",
-      "local_sha256": "b4455de5455da06b422c5d37e33aa79ada171a0b30fc85c32b66b50d349a942c",
-      "remote_sha256": "b4455de5455da06b422c5d37e33aa79ada171a0b30fc85c32b66b50d349a942c",
+      "local_sha256": "50de28993b25e63f5a7e057fc945dbe0beed3967e382800a354b5d6863ff6cbf",
+      "remote_sha256": "50de28993b25e63f5a7e057fc945dbe0beed3967e382800a354b5d6863ff6cbf",
       "match": true,
       "lf_normalized_match": true,
-      "lf_normalized_sha256": "b4455de5455da06b422c5d37e33aa79ada171a0b30fc85c32b66b50d349a942c"
+      "lf_normalized_sha256": "50de28993b25e63f5a7e057fc945dbe0beed3967e382800a354b5d6863ff6cbf"
     },
     {
       "path": "scripts/train.py",
@@ -764,5 +764,6 @@
   ],
   "all_raw_bytes_match": false,
   "all_lf_normalized_match": true,
-  "explanation": "Only env-isaaclab.json and scripts/build_report.py differ in CRLF/LF line endings. All 95 normalized source files agree; canonical Isaac environment hash remains 072cb4cb."
+  "explanation": "Only env-isaaclab.json and scripts/build_report.py differ in CRLF/LF line endings. All 95 normalized source files agree; canonical Isaac environment hash remains 072cb4cb.",
+  "final_report_script_reverified": "2026-09-15; remote sha256sum after deployment matches local source"
 }

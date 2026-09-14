@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-14T15:30:26.143717+00:00",
+  "generated_at_utc": "2026-09-14T16:09:32.366835+00:00",
   "rows": [
     {
       "arm": "real",
@@ -366,16 +366,144 @@
       "seed": 2,
       "reused": false,
       "run": "runs/step7_utility_generic_seed2",
-      "status": "training_or_incomplete",
-      "evaluations": []
+      "status": "complete",
+      "evaluations": [
+        {
+          "sample": "sample_000",
+          "path": "runs/step7_eval_generic_seed2_sample_000/metrics.json",
+          "sha256": "26767e34058b080e22d4faf6e52bb5d1a2e8b59b1c7a7452863b765ba411f3ff",
+          "completion": 0.0,
+          "strict": 0.0,
+          "failure_time_s": 0.9918750000000001,
+          "joint_error_rad": 0.11899946662864373,
+          "root_error_m": 0.216811797381499,
+          "body_error_m": 0.19594755034515823,
+          "aligned_body_error_m": 0.0837874988113925,
+          "return_to_first_failure": 3.5279907150543295
+        },
+        {
+          "sample": "sample_001",
+          "path": "runs/step7_eval_generic_seed2_sample_001/metrics.json",
+          "sha256": "ef39d36561586e82d3433a0fd2f3b85abd30f83bcd672f13b7ac5413a6c07f46",
+          "completion": 0.0,
+          "strict": 0.0,
+          "failure_time_s": 0.585,
+          "joint_error_rad": 0.23661805476006278,
+          "root_error_m": 0.2253575587692933,
+          "body_error_m": 0.2226009755116752,
+          "aligned_body_error_m": 0.12225931315308708,
+          "return_to_first_failure": 1.151582180056721
+        },
+        {
+          "sample": "sample_002",
+          "path": "runs/step7_eval_generic_seed2_sample_002/metrics.json",
+          "sha256": "9ec36a58937a64f8d85debfe6c3eee1d2d5bba642e6b3805219c95b3ab86890c",
+          "completion": 0.0,
+          "strict": 0.0,
+          "failure_time_s": 1.13875,
+          "joint_error_rad": 0.1232267609183011,
+          "root_error_m": 0.20443413305197536,
+          "body_error_m": 0.18680976017998813,
+          "aligned_body_error_m": 0.07978084386948958,
+          "return_to_first_failure": 4.170695291890297
+        },
+        {
+          "sample": "sample_003",
+          "path": "runs/step7_eval_generic_seed2_sample_003/metrics.json",
+          "sha256": "f2caf6f03ecbb27d3f5e3484c8d3449e7c9ed92b8a8dc4c6d203d3143cf07080",
+          "completion": 0.0,
+          "strict": 0.0,
+          "failure_time_s": 0.764375,
+          "joint_error_rad": 0.21463771501916992,
+          "root_error_m": 0.1351199626727662,
+          "body_error_m": 0.138084658129919,
+          "aligned_body_error_m": 0.08962794746030868,
+          "return_to_first_failure": 2.39635511348024
+        }
+      ],
+      "model_sha256": "06fce3b3553637a2836a430078b396304d7e5c984ec5f1381d91b61a8627cb95",
+      "macro": {
+        "completion": 0.0,
+        "strict": 0.0,
+        "failure_time_s": 0.87,
+        "joint_error_rad": 0.1733704993315444,
+        "root_error_m": 0.19543086296888346,
+        "body_error_m": 0.18586073604168513,
+        "aligned_body_error_m": 0.09386390082356946,
+        "return_to_first_failure": 2.811655825120397
+      }
     },
     {
       "arm": "contact",
       "seed": 0,
       "reused": false,
       "run": "runs/step7_utility_contact_seed0",
-      "status": "training_or_incomplete",
-      "evaluations": []
+      "status": "complete",
+      "evaluations": [
+        {
+          "sample": "sample_000",
+          "path": "runs/step7_eval_contact_seed0_sample_000/metrics.json",
+          "sha256": "293c4f435d20c13a716b39385240497bca3ae4b2932f72f3c92a19d0e3aee40b",
+          "completion": 0.0,
+          "strict": 0.0,
+          "failure_time_s": 1.120625,
+          "joint_error_rad": 0.12167256540316014,
+          "root_error_m": 0.19723434484477023,
+          "body_error_m": 0.1875595307788966,
+          "aligned_body_error_m": 0.08206270551189522,
+          "return_to_first_failure": 4.100986664998345
+        },
+        {
+          "sample": "sample_001",
+          "path": "runs/step7_eval_contact_seed0_sample_001/metrics.json",
+          "sha256": "b1143e5ddce06a014660ddf54406f9f6125fb5145a30cab39da1020cb4a679a3",
+          "completion": 0.0,
+          "strict": 0.0,
+          "failure_time_s": 0.383125,
+          "joint_error_rad": 0.17958646378256563,
+          "root_error_m": 0.1483237190600515,
+          "body_error_m": 0.16431585049065253,
+          "aligned_body_error_m": 0.08498354927069988,
+          "return_to_first_failure": 0.8244260099600068
+        },
+        {
+          "sample": "sample_002",
+          "path": "runs/step7_eval_contact_seed0_sample_002/metrics.json",
+          "sha256": "90ad63b267265bd1525cb3360fb1d811bb3f4a32c9b22731e33380213119b3ab",
+          "completion": 0.03125,
+          "strict": 0.03125,
+          "failure_time_s": 1.274375,
+          "joint_error_rad": 0.1104504216193802,
+          "root_error_m": 0.1813663533427892,
+          "body_error_m": 0.17109916665029035,
+          "aligned_body_error_m": 0.07645653532804257,
+          "return_to_first_failure": 4.833723110030405
+        },
+        {
+          "sample": "sample_003",
+          "path": "runs/step7_eval_contact_seed0_sample_003/metrics.json",
+          "sha256": "f37fe2ae3474992ec38b05c5b0bf248a8020ab6074e056568733dfeb249e516d",
+          "completion": 0.0,
+          "strict": 0.0,
+          "failure_time_s": 0.745,
+          "joint_error_rad": 0.21499341261266863,
+          "root_error_m": 0.15087744227341757,
+          "body_error_m": 0.15210357797175847,
+          "aligned_body_error_m": 0.09659963028017907,
+          "return_to_first_failure": 2.206301643513143
+        }
+      ],
+      "model_sha256": "52cdddf1394ee20c0f5c93d96b904009551a7ea0c3b944e836dea53f62cccfb5",
+      "macro": {
+        "completion": 0.0078125,
+        "strict": 0.0078125,
+        "failure_time_s": 0.88078125,
+        "joint_error_rad": 0.15667571585444365,
+        "root_error_m": 0.1694504648802571,
+        "body_error_m": 0.16876953147289947,
+        "aligned_body_error_m": 0.08502560509770418,
+        "return_to_first_failure": 2.991359357125475
+      }
     },
     {
       "arm": "contact",
@@ -454,8 +582,72 @@
       "seed": 2,
       "reused": false,
       "run": "runs/step7_utility_contact_seed2",
-      "status": "training_or_incomplete",
-      "evaluations": []
+      "status": "complete",
+      "evaluations": [
+        {
+          "sample": "sample_000",
+          "path": "runs/step7_eval_contact_seed2_sample_000/metrics.json",
+          "sha256": "22c5e3488a352dfbad9a59e168ec400d0a290a43efabe47a5ff04d4f472c085d",
+          "completion": 0.0,
+          "strict": 0.0,
+          "failure_time_s": 1.0206250000000001,
+          "joint_error_rad": 0.12987718400382878,
+          "root_error_m": 0.21073907606454254,
+          "body_error_m": 0.18761490795485314,
+          "aligned_body_error_m": 0.08600565362254024,
+          "return_to_first_failure": 3.630562572972849
+        },
+        {
+          "sample": "sample_001",
+          "path": "runs/step7_eval_contact_seed2_sample_001/metrics.json",
+          "sha256": "9b044a0c977d281b18d85cc26db36f73d17307281d9dc20dcd638e7280b625d9",
+          "completion": 0.0,
+          "strict": 0.0,
+          "failure_time_s": 0.60875,
+          "joint_error_rad": 0.2561709465003846,
+          "root_error_m": 0.22936419113032383,
+          "body_error_m": 0.2254080714110966,
+          "aligned_body_error_m": 0.12031427184138944,
+          "return_to_first_failure": 1.1587450569495559
+        },
+        {
+          "sample": "sample_002",
+          "path": "runs/step7_eval_contact_seed2_sample_002/metrics.json",
+          "sha256": "55b03c8f5ca90d61c37f04cdf55a2f4399cf1165a46970adb44fc0e828fd8f4f",
+          "completion": 0.03125,
+          "strict": 0.03125,
+          "failure_time_s": 1.205625,
+          "joint_error_rad": 0.13001851525839406,
+          "root_error_m": 0.19037238418468852,
+          "body_error_m": 0.17105918958929922,
+          "aligned_body_error_m": 0.08047220657423657,
+          "return_to_first_failure": 4.472893483703956
+        },
+        {
+          "sample": "sample_003",
+          "path": "runs/step7_eval_contact_seed2_sample_003/metrics.json",
+          "sha256": "3200074b9a349517cf5b782343e7523a7419c251acac6a588d7af9fa4a556d0e",
+          "completion": 0.0,
+          "strict": 0.0,
+          "failure_time_s": 0.690625,
+          "joint_error_rad": 0.21464388251844035,
+          "root_error_m": 0.12974053648262543,
+          "body_error_m": 0.12684737309071814,
+          "aligned_body_error_m": 0.08952180708155913,
+          "return_to_first_failure": 2.346717423759401
+        }
+      ],
+      "model_sha256": "e6f76f00d03248d856bf4cf8fca11beae94e541611f0fd539bcf02ab59a60713",
+      "macro": {
+        "completion": 0.0078125,
+        "strict": 0.0078125,
+        "failure_time_s": 0.8814062500000001,
+        "joint_error_rad": 0.18267763207026194,
+        "root_error_m": 0.19005404696554506,
+        "body_error_m": 0.17773238551149179,
+        "aligned_body_error_m": 0.09407848477993135,
+        "return_to_first_failure": 2.9022296343464404
+      }
     }
   ],
   "groups": {
@@ -503,18 +695,117 @@
     "generic": {
       "completed_seeds": [
         0,
-        1
-      ]
+        1,
+        2
+      ],
+      "metrics": {
+        "completion": {
+          "mean": 0.0078125,
+          "sample_std": 0.0078125
+        },
+        "strict": {
+          "mean": 0.0078125,
+          "sample_std": 0.0078125
+        },
+        "failure_time_s": {
+          "mean": 0.8760416666666667,
+          "sample_std": 0.0648987592973343
+        },
+        "joint_error_rad": {
+          "mean": 0.1698596186261359,
+          "sample_std": 0.006870518543063063
+        },
+        "root_error_m": {
+          "mean": 0.1784448790863098,
+          "sample_std": 0.020803357210940978
+        },
+        "body_error_m": {
+          "mean": 0.17295152980924527,
+          "sample_std": 0.01378136835575562
+        },
+        "aligned_body_error_m": {
+          "mean": 0.0871657871019166,
+          "sample_std": 0.0062047400569552906
+        },
+        "return_to_first_failure": {
+          "mean": 2.8836581035138806,
+          "sample_std": 0.2026300842714848
+        }
+      }
     },
     "contact": {
       "completed_seeds": [
-        1
-      ]
+        0,
+        1,
+        2
+      ],
+      "metrics": {
+        "completion": {
+          "mean": 0.0078125,
+          "sample_std": 0.0
+        },
+        "strict": {
+          "mean": 0.0078125,
+          "sample_std": 0.0
+        },
+        "failure_time_s": {
+          "mean": 0.8858854166666666,
+          "sample_std": 0.00830529136053237
+        },
+        "joint_error_rad": {
+          "mean": 0.17733839381542202,
+          "sample_std": 0.01857769536418211
+        },
+        "root_error_m": {
+          "mean": 0.1808347772329751,
+          "sample_std": 0.010471029359456159
+        },
+        "body_error_m": {
+          "mean": 0.17323339411158306,
+          "sample_std": 0.004481530280124922
+        },
+        "aligned_body_error_m": {
+          "mean": 0.09017173005518013,
+          "sample_std": 0.004651955133655466
+        },
+        "return_to_first_failure": {
+          "mean": 2.9495978805886502,
+          "sample_std": 0.04482860437894326
+        }
+      }
     }
   },
-  "completed_runs": 6,
+  "completed_runs": 9,
   "expected_runs": 9,
-  "paired_differences": {},
+  "paired_differences": {
+    "generic minus real": {
+      "per_seed_strict_difference": [
+        -0.03125,
+        -0.0234375,
+        -0.0234375
+      ],
+      "mean": -0.026041666666666668,
+      "sample_std": 0.004510548978043951
+    },
+    "contact minus real": {
+      "per_seed_strict_difference": [
+        -0.03125,
+        -0.03125,
+        -0.015625
+      ],
+      "mean": -0.026041666666666668,
+      "sample_std": 0.009021097956087902
+    },
+    "contact minus generic": {
+      "per_seed_strict_difference": [
+        0.0,
+        -0.0078125,
+        0.0078125
+      ],
+      "mean": 0.0,
+      "sample_std": 0.0078125
+    }
+  },
   "contact_retargeting_audit": {
     "generic": {
       "mapped_cases": 20,
@@ -527,7 +818,7 @@
       "sha256": "89d91caaf005b345235a38308ca562b61e467feaee9f762f2e67af3d5479af3d"
     }
   },
-  "pilot_runs_complete": false,
+  "pilot_runs_complete": true,
   "full_step7_physics_pipeline_validated": false,
   "critic": {
     "report_sha256": "3fd992d7ae9ccbd9615d627c460c0764ab6376502fd0a488e5c2d4e811e7de6e",

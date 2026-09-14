@@ -1,5 +1,13 @@
 # Results summary / 结果状态
 
+## 2026-09-15 当前结果
+
+第七步首轮组件实验已完成：3个数据组×3个控制器种子、每次12,288,000环境步，共36条留出评估记录。严格跟踪通过率（均值±种子间样本标准差）：视频来源3.39%±0.90%，加普通生成0.78%±0.78%，加适配器与几何接触优化0.78%±0.00%。当前未发现合成数据收益；4条开发留出动作仅来自1个视频标题组，不能作为最终独立确认。几何接触优化组未通过可靠物理筛选，且本比较只验证单机器人跟踪。
+
+完整物理critic（物理评价网络）仍缺可靠标签。固定控制器覆盖预测及K=6历史排序已执行，但预测误差接近常量基线、候选均提前失配，不允许用作物理可执行性认证。38个单元测试及最终产物校验通过，只说明对应软件与证据检查通过。最新记录见 `records/step7/summary.json`、`records/step7/artifact_check.json`，完整历史见 `reports/experiment_progress_20260914.html`。
+
+## 历史启动记录（下表不是当前进度）
+
 | Experiment | Status | Meaning |
 |---|---|---|
 | Earlier single-person pilot | completed, negative physical result | 不能说明 synthetic data 提升 imitation |

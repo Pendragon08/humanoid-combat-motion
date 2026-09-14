@@ -83,6 +83,10 @@ if a.html:
         section+='<h3>三个控制器种子的配对差值</h3><table><tr><th>比较</th><th>严格通过率平均差值</th><th>种子间标准差</th></tr>'+''.join('<tr><td>'+html.escape(k)+'</td><td>%.2f 个百分点</td><td>%.2f 个百分点</td></tr>'%(100*v['mean'],100*v['sample_std']) for k,v in differences.items())+'</table><p>这是固定预算下的小规模开发结果；不把3个种子或32个环境当作独立数据来源，也不由此宣称完整双人格斗方案成功。</p>'
     if contact_audits:
         section+='<h3>接触经过重定向后是否保留？</h3><p>从固定版本GMR模型核对并加入已有脚尖辅助坐标后，20条训练条件均可进行几何检查；旧版不含脚尖的审计结果仍保留。普通生成组重定向后近似接触通过率为 '+str(round(100*contact_audits['generic']['robot_proxy_contact_fraction'],1))+'%，接触约束组为 '+str(round(100*contact_audits['contact']['robot_proxy_contact_fraction'],1))+'%。这只是球体及辅助坐标的几何近似，不是碰撞网格或接触力认证。训练数据没有因此改变。</p>'
+    if differences:
+        improved=any(differences[k]['mean']>0 for k in ('generic minus real','contact minus real'))
+        verdict='至少一组合成数据的平均通过率高于基线，仍需独立确认。' if improved else '本轮两组合成数据均未提高平均严格跟踪通过率。'
+        section+='<p class="notice"><b>本轮结论：</b>'+verdict+'基线本身也较弱，当前证据不能区分控制器覆盖不足、数据分布差异和接触重定向损失的贡献，不能据此断言合成数据路线不可行。完整物理评价网络与双人格斗验证仍未通过。</p>'
     if (a.html.parent/'media/step7_utility.mp4').exists():
         section+='<h3>相同留出动作的实际执行对比</h3><video controls preload="metadata" poster="media/step7_utility_preview.png"><source src="media/step7_utility.mp4" type="video/mp4"></video><p>左上参考、右上A真实来源、左下B普通生成、右下C接触约束。统一控制器种子0、第一条留出动作和环境0；首次失配后冻结，4倍慢放。MuJoCo只负责渲染Isaac实际轨迹，不是跨仿真器策略部署。</p>'
     section+='<p><a href="../records/step7/summary.json">完整结果与来源校验</a> · <a href="../docs/step7_protocol.md">实验协议及范围</a></p></section>'+end
