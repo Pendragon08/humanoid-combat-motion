@@ -26,6 +26,10 @@ def source_split_check(records):
 
 
 def validate_physics_label(record):
+    if record.get('critic_training_labels_approved') is not True:
+        raise ValueError('Unapproved diagnostic records cannot train the full physics critic')
+    if record.get('contact_observation_complete') is not True or record.get('full_collision_audit') is not True:
+        raise ValueError('Contact censoring/full collision coverage must be audited')
     required = ('sample_id','source_ids','split','simulator','simulator_version','robot_model_sha256',
                 'controller_kind','controller_checkpoint_sha256','seed','tracking_error_m','fall',
                 'contact_success','invalid_collision','rollout_path','rollout_sha256')

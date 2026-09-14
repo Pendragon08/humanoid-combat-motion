@@ -14,6 +14,7 @@ p.add_argument('--output',type=Path,required=True)
 p.add_argument('--num_envs',type=int,default=32)
 p.add_argument('--seed',type=int,default=123)
 p.add_argument('--task',default='Tracking-Flat-G1-v0')
+p.add_argument('--held-out',action='store_true')
 AppLauncher.add_app_launcher_args(p)
 a=p.parse_args()
 launcher=AppLauncher(a,sync_loads=False,multi_gpu=False);app=launcher.app
@@ -119,7 +120,7 @@ def main():
                 'joint_names':np.asarray(robot.joint_names)}
         a.output.mkdir(parents=True)
         np.savez_compressed(a.output/'rollout_env0.npz',**arrays)
-        result={'evaluation':'fixed_start_training_reference_diagnostic','checkpoint_sha256':hashlib.sha256(checkpoint.read_bytes()).hexdigest(),
+        result={'evaluation':'fixed_start_held_out_reference' if a.held_out else 'fixed_start_training_reference_diagnostic','checkpoint_sha256':hashlib.sha256(checkpoint.read_bytes()).hexdigest(),
                 'motion_sha256':hashlib.sha256(motion_path.read_bytes()).hexdigest(),'checkpoint':str(checkpoint),
                 'seed':a.seed,'environments':a.num_envs,'control_dt':raw.step_dt,'horizon_steps':horizon,
                 'completion_fraction':float(alive.float().mean()),'first_failure_steps':first_failure.cpu().tolist(),
@@ -132,7 +133,7 @@ def main():
                     'scope':'declared research diagnostic thresholds, not original BeyondMimic success definition'},
                 'valid_active_env_steps':counts,'mean_alive_error':{k:v/max(counts,1) for k,v in totals.items()},
                 'first_step_diagnostic':first_step_diagnostic,
-                'learned_tracking':True,'held_out_motion':False,'robots_per_environment':1,
+                'learned_tracking':True,'held_out_motion':a.held_out,'robots_per_environment':1,
                 'observation_noise':False,'training_reset_and_dynamics_randomization':True,
                 'initial_reference_alignment_cache_primed':True,
                 'metric_caveat':'Errors averaged only before first termination; always interpret together with completion fraction. Termination is tracking failure, not necessarily a fall.',

@@ -1,0 +1,228 @@
+{
+  "rows": [
+    {
+      "arm": "real",
+      "seed": 0,
+      "reused": true,
+      "run": "runs/multireference_kungfu20_seed0",
+      "status": "complete",
+      "evaluations": [
+        {
+          "sample": "sample_000",
+          "path": "runs/g1_tracking_eval_multiref_test4_sample_000_primed/metrics.json",
+          "sha256": "194a10b8c0bdcf0cf00df2f5777730bc120577d73bfb020f8e8bea088134e4ee",
+          "completion": 0.0,
+          "strict": 0.0,
+          "failure_time_s": 1.30125,
+          "joint_error_rad": 0.15120438945825918,
+          "root_error_m": 0.18577551247335533
+        },
+        {
+          "sample": "sample_001",
+          "path": "runs/g1_tracking_eval_multiref_test4_sample_001_primed/metrics.json",
+          "sha256": "c86f02891bca819f0906ca2120890d0c323a680aec8cc36172178248bd95ac8e",
+          "completion": 0.0,
+          "strict": 0.0,
+          "failure_time_s": 0.7025,
+          "joint_error_rad": 0.2172414806151093,
+          "root_error_m": 0.24699127723154649
+        },
+        {
+          "sample": "sample_002",
+          "path": "runs/g1_tracking_eval_multiref_test4_sample_002_primed/metrics.json",
+          "sha256": "152d025a47924e144ab8cfad673329eefb448127639255093afb1788419357c3",
+          "completion": 0.15625,
+          "strict": 0.15625,
+          "failure_time_s": 1.52,
+          "joint_error_rad": 0.14055849763711817,
+          "root_error_m": 0.17190516945955
+        },
+        {
+          "sample": "sample_003",
+          "path": "runs/g1_tracking_eval_multiref_test4_sample_003_primed/metrics.json",
+          "sha256": "a055a6398c959c7ef3b0fab4a5fc07c5703f46debad31e41d42bb5c5d31495e5",
+          "completion": 0.0,
+          "strict": 0.0,
+          "failure_time_s": 0.720625,
+          "joint_error_rad": 0.20570615014095256,
+          "root_error_m": 0.15716162078399196
+        }
+      ],
+      "model_sha256": "aa079a2d09ef5e7e6dd85e669c8dce679d9d2e631dd33c58ee4306fd913dc4b8",
+      "macro": {
+        "completion": 0.0390625,
+        "strict": 0.0390625,
+        "failure_time_s": 1.06109375,
+        "joint_error_rad": 0.1786776294628598,
+        "root_error_m": 0.19045839498711095
+      }
+    },
+    {
+      "arm": "real",
+      "seed": 1,
+      "reused": false,
+      "run": "runs/step7_utility_real_seed1",
+      "status": "training_or_incomplete",
+      "evaluations": []
+    },
+    {
+      "arm": "real",
+      "seed": 2,
+      "reused": false,
+      "run": "runs/step7_utility_real_seed2",
+      "status": "not_started",
+      "evaluations": []
+    },
+    {
+      "arm": "generic",
+      "seed": 0,
+      "reused": false,
+      "run": "runs/step7_utility_generic_seed0",
+      "status": "training_or_incomplete",
+      "evaluations": []
+    },
+    {
+      "arm": "generic",
+      "seed": 1,
+      "reused": false,
+      "run": "runs/step7_utility_generic_seed1",
+      "status": "not_started",
+      "evaluations": []
+    },
+    {
+      "arm": "generic",
+      "seed": 2,
+      "reused": false,
+      "run": "runs/step7_utility_generic_seed2",
+      "status": "not_started",
+      "evaluations": []
+    },
+    {
+      "arm": "contact",
+      "seed": 0,
+      "reused": false,
+      "run": "runs/step7_utility_contact_seed0",
+      "status": "not_started",
+      "evaluations": []
+    },
+    {
+      "arm": "contact",
+      "seed": 1,
+      "reused": false,
+      "run": "runs/step7_utility_contact_seed1",
+      "status": "not_started",
+      "evaluations": []
+    },
+    {
+      "arm": "contact",
+      "seed": 2,
+      "reused": false,
+      "run": "runs/step7_utility_contact_seed2",
+      "status": "not_started",
+      "evaluations": []
+    }
+  ],
+  "groups": {
+    "real": {
+      "completed_seeds": [
+        0
+      ]
+    },
+    "generic": {
+      "completed_seeds": []
+    },
+    "contact": {
+      "completed_seeds": []
+    }
+  },
+  "completed_runs": 1,
+  "expected_runs": 9,
+  "paired_differences": {},
+  "pilot_runs_complete": false,
+  "full_step7_physics_pipeline_validated": false,
+  "critic": {
+    "report_sha256": "64a5073ea7deaee229b1f988b6b33f388377dabc0d3259e8319384099311d981",
+    "decision": "ABSTAIN: no full-horizon successful calibration examples and no complete physics labels",
+    "results": [
+      {
+        "seed": 0,
+        "validation_mae_s": 0.03199964016675949,
+        "test_mae_s": 0.02941310591995716,
+        "test_constant_baseline_mae_s": 0.027916664257645607,
+        "retrospective_reranking": [
+          {
+            "arm": "generic",
+            "K": 6,
+            "selected_id": "generic_sample_003",
+            "selected_actual_failure_s": 0.1599999964237213,
+            "uniform_random_expected_failure_s": 0.17666666209697723,
+            "oracle_actual_failure_s": 0.25999999046325684,
+            "selected_completion_fraction": 0.0
+          },
+          {
+            "arm": "adapted",
+            "K": 6,
+            "selected_id": "adapted_sample_003",
+            "selected_actual_failure_s": 0.125,
+            "uniform_random_expected_failure_s": 0.15416665375232697,
+            "oracle_actual_failure_s": 0.2199999988079071,
+            "selected_completion_fraction": 0.0
+          }
+        ]
+      },
+      {
+        "seed": 1,
+        "validation_mae_s": 0.03206152841448784,
+        "test_mae_s": 0.027556290850043297,
+        "test_constant_baseline_mae_s": 0.027916664257645607,
+        "retrospective_reranking": [
+          {
+            "arm": "generic",
+            "K": 6,
+            "selected_id": "generic_sample_003",
+            "selected_actual_failure_s": 0.1599999964237213,
+            "uniform_random_expected_failure_s": 0.17666666209697723,
+            "oracle_actual_failure_s": 0.25999999046325684,
+            "selected_completion_fraction": 0.0
+          },
+          {
+            "arm": "adapted",
+            "K": 6,
+            "selected_id": "adapted_sample_003",
+            "selected_actual_failure_s": 0.125,
+            "uniform_random_expected_failure_s": 0.15416665375232697,
+            "oracle_actual_failure_s": 0.2199999988079071,
+            "selected_completion_fraction": 0.0
+          }
+        ]
+      },
+      {
+        "seed": 2,
+        "validation_mae_s": 0.03192673996090889,
+        "test_mae_s": 0.028194015845656395,
+        "test_constant_baseline_mae_s": 0.027916664257645607,
+        "retrospective_reranking": [
+          {
+            "arm": "generic",
+            "K": 6,
+            "selected_id": "generic_sample_011",
+            "selected_actual_failure_s": 0.25999999046325684,
+            "uniform_random_expected_failure_s": 0.17666666209697723,
+            "oracle_actual_failure_s": 0.25999999046325684,
+            "selected_completion_fraction": 0.0
+          },
+          {
+            "arm": "adapted",
+            "K": 6,
+            "selected_id": "adapted_sample_015",
+            "selected_actual_failure_s": 0.14000000059604645,
+            "uniform_random_expected_failure_s": 0.15416665375232697,
+            "oracle_actual_failure_s": 0.2199999988079071,
+            "selected_completion_fraction": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "interpretation": "Development pilot; C is contact-constrained but not physics-certified; single-robot utility, one held-out video group; positive or negative results do not validate paired robot physics."
+}

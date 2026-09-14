@@ -26,11 +26,13 @@ def main():
     p.add_argument('--events',type=Path,required=True);p.add_argument('--adapter',type=Path,required=True)
     p.add_argument('--output',type=Path,required=True);p.add_argument('--limit',type=int,default=20)
     p.add_argument('--seed',type=int,default=123)
+    p.add_argument('--split',choices=['train','val','test'],default='test')
     a=p.parse_args();out=a.output.resolve();adapter_path=a.adapter.resolve()
     if out.exists():raise FileExistsError(out)
     records={r['sample_id']:r for r in load_manifest(a.manifest.resolve())}
     events=[json.loads(line) for line in a.events.resolve().read_text().splitlines() if line]
-    cases=sorted([r for r in events if r['split']=='test'],key=lambda r:r['sample_id'])[:a.limit]
+    cases=sorted([r for r in events if r['split']==a.split],key=lambda r:r['sample_id'])[:a.limit]
+    if not cases:raise ValueError('No cases in requested split')
     root=Path(__file__).resolve().parents[1];import clip
     clip.load=functools.partial(clip.load,download_root=str(root/'cache/clip'));os.chdir(root/'third_party/TIMotion')
     from configs import get_config
@@ -46,7 +48,9 @@ def main():
     history_only=checkpoint['provenance'].get('history_only',False)
     if checkpoint['provenance']['backbone_sha256']!=sha:raise ValueError('Backbone mismatch')
     training=set(checkpoint['provenance']['source_ids']['train']);validation=set(checkpoint['provenance']['source_ids']['val'])
-    if any(c['sample_id'] in training|validation for c in cases):raise ValueError('Test-source leakage')
+    if a.split=='test' and any(c['sample_id'] in training|validation for c in cases):raise ValueError('Test-source leakage')
+    if a.split=='train' and any(c['sample_id'] not in training for c in cases):raise ValueError('Augmentation must use training conditions only')
+    if a.split=='val' and any(c['sample_id'] in training for c in cases):raise ValueError('Validation-source leakage')
     adapter=ActorMotionAdapter().cuda().eval();adapter.load_state_dict(checkpoint['adapter'],strict=True)
     reaction=CausalReactionResidual().cuda().eval() if checkpoint.get('reaction') is not None else None
     if reaction is not None:reaction.load_state_dict(checkpoint['reaction'],strict=True)
@@ -129,7 +133,8 @@ def main():
                     'contact':evaluate_event(refined,radii,30,event),'final_optimization':history[-1]}
         results.append(row);print('REACTION_CASE '+json.dumps(row),flush=True)
     (out/'evaluation.json').write_text(json.dumps({'cases':results,'adapter_sha256':hashlib.sha256(adapter_path.read_bytes()).hexdigest(),
-        'test_source_disjoint':True,'selection':'first sorted test pseudo-event sources, independent of output',
+        'split':a.split,'test_source_disjoint':a.split=='test','training_augmentation':a.split=='train',
+        'selection':'first sorted '+a.split+' pseudo-event sources, independent of output',
         'conditions':'observed actor prefix plus caption and supplied pseudo-event contact type/time' if history_only else 'complete actor trajectory plus caption and supplied pseudo-event contact type/time',
         'history_only':history_only,'observed_frames':'min(30, length//2)' if history_only else 'all',
         'cross_attention':reaction is not None,

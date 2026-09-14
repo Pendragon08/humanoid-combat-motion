@@ -1,0 +1,86 @@
+{
+  "experiment": "Step 7 component-level synthetic-data utility pilot",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "training": {
+    "iterations": 1000,
+    "num_envs": 512,
+    "steps_per_env": 24,
+    "env_steps_per_run": 12288000,
+    "initialization": "from scratch",
+    "selection": "final model_999; no selection on test",
+    "sampling": "uniform clip and valid frame"
+  },
+  "real": {
+    "clips": 20,
+    "type": "video-reconstructed KungFuAthlete G1, not optical MoCap"
+  },
+  "generic": {
+    "real_clips": 20,
+    "synthetic_clips": 20,
+    "method": "frozen TIMotion, complete attacker inpainting; defender reference"
+  },
+  "contact": {
+    "real_clips": 20,
+    "synthetic_clips": 20,
+    "method": "actor adapter plus bone-preserving contact optimization; defender reference",
+    "physics_critic_used": false,
+    "dynamics_guaranteed": false
+  },
+  "matched_generation_seed": 7100,
+  "sources": [
+    "interhuman_1188",
+    "interhuman_1189",
+    "interhuman_1195",
+    "interhuman_1203",
+    "interhuman_1205",
+    "interhuman_1211",
+    "interhuman_1216",
+    "interhuman_1223",
+    "interhuman_1224",
+    "interhuman_1236",
+    "interhuman_1244",
+    "interhuman_1247",
+    "interhuman_1263",
+    "interhuman_1265",
+    "interhuman_1271",
+    "interhuman_1287",
+    "interhuman_1298",
+    "interhuman_1321",
+    "interhuman_1329",
+    "interhuman_1351"
+  ],
+  "test": {
+    "clips": 4,
+    "independent_video_title_groups": 1,
+    "groups": [
+      "段位制长拳三段单练套路"
+    ],
+    "envs_per_clip": 32,
+    "reset_seed": 123,
+    "source_group_disjoint": true,
+    "caveat": "Existing four clips are development holdouts already inspected before this protocol; not untouched confirmatory data."
+  },
+  "seed0_real_reuse": {
+    "run": "runs/multireference_kungfu20_seed0",
+    "reason": "identical 20-clip bundle, PPO settings, seed, and step budget; no new training"
+  },
+  "claims_allowed": [
+    "effect at this fixed training budget on these development holdouts"
+  ],
+  "claims_not_allowed": [
+    "full contact/physics pipeline validated",
+    "paired combat utility",
+    "critic-selected data utility",
+    "broad population generalization"
+  ],
+  "confounds": [
+    "generic vs contact compares adapter plus contact package, not contact-only ablation",
+    "real vs augmented changes source distribution and per-clip exposure; fixed total optimization budget",
+    "generator is trained once; seeds vary controller initialization, not generator dataset",
+    "single-robot downstream policies do not retain physical attacker interaction"
+  ]
+}

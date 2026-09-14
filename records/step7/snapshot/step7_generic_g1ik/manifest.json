@@ -1,0 +1,220 @@
+{
+  "method": "position-only Mink IK with GMR G1 assets; not default GMR",
+  "scale": 0.75,
+  "scale_source": "fixed research setting, not measured human height",
+  "iterations_per_frame": 8,
+  "gmr_commit": "bb1bbe40774794fceb2a7c579a3464a28e68c844",
+  "rotation_channels_used": false,
+  "root_orientation": "anatomical hip/spine frame",
+  "shared_world_preserved": true,
+  "learned_tracking": false,
+  "dynamic_feasibility_verified": false,
+  "limitations": [
+    "twist ambiguity",
+    "no pair collision constraints",
+    "no ground force balance constraint",
+    "iterative IK time is solver time, not a joint-velocity certificate"
+  ],
+  "samples": [
+    {
+      "sample": "sample_000",
+      "source_sha256": "62c0f763033baa54fc3ca3679b1aa4f203c274178e2f775675f0a0009a8c3401",
+      "mean_body_target_error_m": 0.05333644315194961,
+      "max_joint_limit_violation_rad": 0.0,
+      "max_joint_speed_rad_s": 35.20163814357903,
+      "common_floor_offset_m": 0.0,
+      "frames": 99,
+      "sha256": "ecb4ae3667f0045d936d9bf95c969b3a1e726603f72179534a7252528b67c313"
+    },
+    {
+      "sample": "sample_001",
+      "source_sha256": "94ccad7daa6c830d526fa5661bf60940ecdaf136c31ab0a885f4017534bb4af3",
+      "mean_body_target_error_m": 0.05835259377050517,
+      "max_joint_limit_violation_rad": 0.0,
+      "max_joint_speed_rad_s": 41.56212751993546,
+      "common_floor_offset_m": 0.0,
+      "frames": 120,
+      "sha256": "221414b7c037f9b6456e7fc0ce6ca9217f68bc955a76a2cb952c8cb3fdd76518"
+    },
+    {
+      "sample": "sample_002",
+      "source_sha256": "917d33b4b6c84eb9feae828c94650a0e30c8eb8dd7a26b2d0d7909bab9598ce9",
+      "mean_body_target_error_m": 0.06447349822042654,
+      "max_joint_limit_violation_rad": 1.3877787807814457e-17,
+      "max_joint_speed_rad_s": 30.566601021914256,
+      "common_floor_offset_m": 0.0,
+      "frames": 120,
+      "sha256": "e8bb58547b871d151e4972bf3966d7fc3a24128d3ed90660c797b0c34b0fb4f7"
+    },
+    {
+      "sample": "sample_003",
+      "source_sha256": "8e31dab42dbcce99118f6dca2bfc3e71461d8d1860524f5a965bf24ee21d5c2d",
+      "mean_body_target_error_m": 0.05500347604171409,
+      "max_joint_limit_violation_rad": 0.0,
+      "max_joint_speed_rad_s": 49.5871661615237,
+      "common_floor_offset_m": 0.0,
+      "frames": 120,
+      "sha256": "2f4e28243a2b5219bd77d7167f41866a60bbe7bb3a3197e5c0c38515fe63347c"
+    },
+    {
+      "sample": "sample_004",
+      "source_sha256": "89a2046255f94f3fcf1782300a8850893d1f8cf8c1fa1706e59fcce0e444ff31",
+      "mean_body_target_error_m": 0.07954341198053165,
+      "max_joint_limit_violation_rad": 1.1102230246251565e-16,
+      "max_joint_speed_rad_s": 31.205726122780042,
+      "common_floor_offset_m": 0.0,
+      "frames": 120,
+      "sha256": "ef1169139e949000cf1ba714e33413547dd4fa1fabfec9eb757938b6ff588547"
+    },
+    {
+      "sample": "sample_005",
+      "source_sha256": "0e1a7813e9fa4897ba263878b83a59a87a37d1edc78f8f518ba22de1a3d2218e",
+      "mean_body_target_error_m": 0.053774520841828315,
+      "max_joint_limit_violation_rad": 2.220446049250313e-16,
+      "max_joint_speed_rad_s": 39.18792743643194,
+      "common_floor_offset_m": 0.0,
+      "frames": 120,
+      "sha256": "25c57ec49771e9fc2d6939c12f07c45ec937b30c9bb4ab68860c681ef12089c1"
+    },
+    {
+      "sample": "sample_006",
+      "source_sha256": "3da7f0c4613468a1f59801c102abda21a291ffe7738d0d7417b9529e1ebffdda",
+      "mean_body_target_error_m": 0.05845618820573182,
+      "max_joint_limit_violation_rad": 0.0,
+      "max_joint_speed_rad_s": 36.2532418008666,
+      "common_floor_offset_m": 0.0,
+      "frames": 39,
+      "sha256": "51fcf7b513b893a7c9a2d827ff2e2c2cf0e880556118f6f0410655ac69941113"
+    },
+    {
+      "sample": "sample_007",
+      "source_sha256": "544577ac12d0d78936c018a4852e3982ceeddc41be68e26eeb9237656ad71397",
+      "mean_body_target_error_m": 0.052947871695040366,
+      "max_joint_limit_violation_rad": 0.0,
+      "max_joint_speed_rad_s": 26.53497354278461,
+      "common_floor_offset_m": 0.0,
+      "frames": 83,
+      "sha256": "7ce1ad0301a178ffb450bdb9732880068bf7308cdbcd736423dbda4051770f19"
+    },
+    {
+      "sample": "sample_008",
+      "source_sha256": "36415f7baf368324fb635ec57e8b0d6431aa65a5b3d63e02434e5a8ce48efabc",
+      "mean_body_target_error_m": 0.055306854497151295,
+      "max_joint_limit_violation_rad": 0.0,
+      "max_joint_speed_rad_s": 36.9005242532119,
+      "common_floor_offset_m": 0.0,
+      "frames": 48,
+      "sha256": "1c3d98799413d0c42b69f364c75b65cc9ab5e30960635f5662c4ebbaee74a751"
+    },
+    {
+      "sample": "sample_009",
+      "source_sha256": "0ff0f2cc2bee6593b9bce29d158fe6990545a63414e8563e99a4faa52323bba8",
+      "mean_body_target_error_m": 0.06937394984202672,
+      "max_joint_limit_violation_rad": 2.559590780992771e-07,
+      "max_joint_speed_rad_s": 26.014485878674357,
+      "common_floor_offset_m": 0.0,
+      "frames": 120,
+      "sha256": "bcc0c9058d68e9a208b24008cf74e8fb21130db8f176ac4fd9b6d90b94ac70a7"
+    },
+    {
+      "sample": "sample_010",
+      "source_sha256": "b5572065da42ba6640291d502f9dcb3f449bb0a72f60c0ec73ed50a434cb0471",
+      "mean_body_target_error_m": 0.057730206608403375,
+      "max_joint_limit_violation_rad": 1.1102230246251565e-16,
+      "max_joint_speed_rad_s": 28.608331836469716,
+      "common_floor_offset_m": 0.0,
+      "frames": 120,
+      "sha256": "cd6aa0d8562d928a07408f38191cf2ed66deeed16737948a93cdd8b82ea01e1a"
+    },
+    {
+      "sample": "sample_011",
+      "source_sha256": "4e6ef05289b7ae1c347af074e0c665422df6e73b537e4b48a87ab056f951f9d9",
+      "mean_body_target_error_m": 0.05551093006363734,
+      "max_joint_limit_violation_rad": 1.3877787807814457e-17,
+      "max_joint_speed_rad_s": 33.694190526561776,
+      "common_floor_offset_m": 0.0,
+      "frames": 120,
+      "sha256": "8f8d35b51debf406492b81fbc882e7e3964a0fab10fd82f00a42c72c7cef6bbc"
+    },
+    {
+      "sample": "sample_012",
+      "source_sha256": "4365a06cf4e67a6ceb2308fe956505fb1555880eb712227c8247ca4d9243fce2",
+      "mean_body_target_error_m": 0.056081406983651334,
+      "max_joint_limit_violation_rad": 1.3877787807814457e-17,
+      "max_joint_speed_rad_s": 31.722427257873292,
+      "common_floor_offset_m": 0.0,
+      "frames": 120,
+      "sha256": "48601d48c71cf506cab8fcd2d8f9ab15cef1b93198105d3c0b5d3ef5e36fd38a"
+    },
+    {
+      "sample": "sample_013",
+      "source_sha256": "1d386475d0a026b34bf80feec60f4f1411835a3eaecce9cdfdd8e969128222c9",
+      "mean_body_target_error_m": 0.0629855686336851,
+      "max_joint_limit_violation_rad": 2.7755575615628914e-17,
+      "max_joint_speed_rad_s": 25.52302617297854,
+      "common_floor_offset_m": 0.0,
+      "frames": 120,
+      "sha256": "4bbded020e71f7f3947a21f7f1c338ab6540b49d202923011fc116a0f8bed4f3"
+    },
+    {
+      "sample": "sample_014",
+      "source_sha256": "3f41ba6b861df0515d778f01d5179ff5ef69b615631fb59187533bfcf8433574",
+      "mean_body_target_error_m": 0.05340565934254451,
+      "max_joint_limit_violation_rad": 7.486366574438463e-07,
+      "max_joint_speed_rad_s": 31.72241527045365,
+      "common_floor_offset_m": 0.0,
+      "frames": 120,
+      "sha256": "63bbcee1355197df9a2c2ea91107e22a6e4185d4df3e95feec112dbb4066ffa6"
+    },
+    {
+      "sample": "sample_015",
+      "source_sha256": "e2139b67c20a0dae3699eda26def9709bf01385e11db7ed5902d8ab862f13e1f",
+      "mean_body_target_error_m": 0.05735503249129905,
+      "max_joint_limit_violation_rad": 0.0,
+      "max_joint_speed_rad_s": 42.743600512107434,
+      "common_floor_offset_m": 0.0,
+      "frames": 71,
+      "sha256": "782186c5693c6217c3243d64a3c61287be5760c9f728aa36228c10cf1ef1dc45"
+    },
+    {
+      "sample": "sample_016",
+      "source_sha256": "e1563701e8f2aac5cde472e9ed4f4007d6a2bc739c5f0e7525dd25734382b830",
+      "mean_body_target_error_m": 0.05437722218529769,
+      "max_joint_limit_violation_rad": 1.3877787807814457e-17,
+      "max_joint_speed_rad_s": 36.71735070910278,
+      "common_floor_offset_m": 0.0,
+      "frames": 76,
+      "sha256": "264f4500aef55b88b548678387d0d22fc20dc8674e776681d302064fc795073e"
+    },
+    {
+      "sample": "sample_017",
+      "source_sha256": "a7a3b144386e60b089672d3370ccbee3efbb13589f3160f0a97a1c3cd1c8ce47",
+      "mean_body_target_error_m": 0.0547864999559283,
+      "max_joint_limit_violation_rad": 1.1102230246251565e-16,
+      "max_joint_speed_rad_s": 26.66396956225905,
+      "common_floor_offset_m": 0.0,
+      "frames": 120,
+      "sha256": "f51cdcb50efbe996154769182aaecd572e3d768e0f3c54655aa98d14e4d286c5"
+    },
+    {
+      "sample": "sample_018",
+      "source_sha256": "f8a916b7462c50bad48bbc942b66067dfb929307972e9e5af5e0388d335acfe2",
+      "mean_body_target_error_m": 0.060061879006669046,
+      "max_joint_limit_violation_rad": 0.0,
+      "max_joint_speed_rad_s": 37.027125436920855,
+      "common_floor_offset_m": 0.0,
+      "frames": 46,
+      "sha256": "134a3dbeeb7609ae31512cb3a8277fecb5bd78f8525cc9f6574f7924da33cf91"
+    },
+    {
+      "sample": "sample_019",
+      "source_sha256": "c0f820716b3779c292d8a87f9f43b6393279dd2cc3611e0bc9d7e270d1f99a00",
+      "mean_body_target_error_m": 0.0596593356157037,
+      "max_joint_limit_violation_rad": 2.7755575615628914e-17,
+      "max_joint_speed_rad_s": 36.861278147427264,
+      "common_floor_offset_m": 0.0,
+      "frames": 97,
+      "sha256": "36f3347a882ce012d4f90c671e84568c59be560762cdb20647c32d1f088f9883"
+    }
+  ]
+}
