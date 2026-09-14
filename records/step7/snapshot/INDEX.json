@@ -16,6 +16,16 @@
       "sha256": "2356f29f9283b3b7a2c3e7ce3b980cca45556ef69ad9cfffbe6d98da162fa045"
     },
     {
+      "source": "runs/step7_contact_g1ik/contact_audit.json",
+      "saved": "records/step7/snapshot/step7_contact_g1ik/contact_audit.json",
+      "sha256": "76923cc06e70351bc863d1c72be278b0a17b3d4c0f23f551d9f2632c94a3ab21"
+    },
+    {
+      "source": "runs/step7_contact_g1ik/contact_audit_toes.json",
+      "saved": "records/step7/snapshot/step7_contact_g1ik/contact_audit_toes.json",
+      "sha256": "89d91caaf005b345235a38308ca562b61e467feaee9f762f2e67af3d5479af3d"
+    },
+    {
       "source": "runs/step7_contact_g1ik/manifest.json",
       "saved": "records/step7/snapshot/step7_contact_g1ik/manifest.json",
       "sha256": "352b2103ac520ad084f02d6728f9210da0c9d62385f0c0e02cbbaaaf313cbe0f"
@@ -46,6 +56,56 @@
       "sha256": "64a5073ea7deaee229b1f988b6b33f388377dabc0d3259e8319384099311d981"
     },
     {
+      "source": "runs/step7_coverage_critic_v2/history_seed0.json",
+      "saved": "records/step7/snapshot/step7_coverage_critic_v2/history_seed0.json",
+      "sha256": "5d2a2854823b3b8e99e3769a0790ef99de0152a0915bbf734b2bb8f8277a0a25"
+    },
+    {
+      "source": "runs/step7_coverage_critic_v2/history_seed1.json",
+      "saved": "records/step7/snapshot/step7_coverage_critic_v2/history_seed1.json",
+      "sha256": "e43d4c4d541980a5098cf28a56b106a14e86c139efd75199efe83ed7acec4f92"
+    },
+    {
+      "source": "runs/step7_coverage_critic_v2/history_seed2.json",
+      "saved": "records/step7/snapshot/step7_coverage_critic_v2/history_seed2.json",
+      "sha256": "af84f796e372f5efb7eaf1cedcbd079dfa55ea98eddc0a54c1d393c5d9a820ed"
+    },
+    {
+      "source": "runs/step7_coverage_critic_v2/report.json",
+      "saved": "records/step7/snapshot/step7_coverage_critic_v2/report.json",
+      "sha256": "3fd992d7ae9ccbd9615d627c460c0764ab6376502fd0a488e5c2d4e811e7de6e"
+    },
+    {
+      "source": "runs/step7_eval_real_seed1_sample_000/metrics.json",
+      "saved": "records/step7/snapshot/step7_eval_real_seed1_sample_000/metrics.json",
+      "sha256": "56e96abcc4136dc39452f491dae5d761598de9a27cf2e9b8a98d1baf7b1ecb6c"
+    },
+    {
+      "source": "runs/step7_eval_real_seed1_sample_001/metrics.json",
+      "saved": "records/step7/snapshot/step7_eval_real_seed1_sample_001/metrics.json",
+      "sha256": "ba566fd29f1efdbe65cb946b7e5e251b87a16110d18f12c323b89159224ea58a"
+    },
+    {
+      "source": "runs/step7_eval_real_seed1_sample_002/metrics.json",
+      "saved": "records/step7/snapshot/step7_eval_real_seed1_sample_002/metrics.json",
+      "sha256": "96ed5d0de88bb3f980462dd96a8d72481d6500107d5afc24e94ea7f97f79a9a3"
+    },
+    {
+      "source": "runs/step7_eval_real_seed1_sample_003/metrics.json",
+      "saved": "records/step7/snapshot/step7_eval_real_seed1_sample_003/metrics.json",
+      "sha256": "43675ff9f593e3ee48d25421b6a002929726421975e99b8c3dff4ed4d2bc275d"
+    },
+    {
+      "source": "runs/step7_generic_g1ik/contact_audit.json",
+      "saved": "records/step7/snapshot/step7_generic_g1ik/contact_audit.json",
+      "sha256": "76923cc06e70351bc863d1c72be278b0a17b3d4c0f23f551d9f2632c94a3ab21"
+    },
+    {
+      "source": "runs/step7_generic_g1ik/contact_audit_toes.json",
+      "saved": "records/step7/snapshot/step7_generic_g1ik/contact_audit_toes.json",
+      "sha256": "f464f1ad8e7d398b6f3bd796333f4f8e4dc4c62490eedb08b5d0e5497df81e23"
+    },
+    {
       "source": "runs/step7_generic_g1ik/manifest.json",
       "saved": "records/step7/snapshot/step7_generic_g1ik/manifest.json",
       "sha256": "8aa385faaac4ffe26259c3937ac17f59d2411720b540ad43d390d4f989fe15ad"
@@ -66,6 +126,21 @@
       "sha256": "7bbc9a6f217fd855da8d698cd465481715bc5d85e21e4cea6eb7bcaeed695aea"
     },
     {
+      "source": "runs/step7_utility_contact_seed1/agent.yaml",
+      "saved": "records/step7/snapshot/step7_utility_contact_seed1/agent.yaml",
+      "sha256": "95eb148f377e2d40fa1f7a00d0624d620d7b8be7cb2fbd8df64d1268ef1e99fe"
+    },
+    {
+      "source": "runs/step7_utility_contact_seed1/config.json",
+      "saved": "records/step7/snapshot/step7_utility_contact_seed1/config.json",
+      "sha256": "d17dd416e841cce9db227fdcb275d000621063e5a2d1e3d65260d69db65eacc7"
+    },
+    {
+      "source": "runs/step7_utility_contact_seed1/env.yaml",
+      "saved": "records/step7/snapshot/step7_utility_contact_seed1/env.yaml",
+      "sha256": "eb851029270408a2d85aac31213215e5af85ee1ca30a2f56e53dca073c133abc"
+    },
+    {
       "source": "runs/step7_utility_generic_seed0/agent.yaml",
       "saved": "records/step7/snapshot/step7_utility_generic_seed0/agent.yaml",
       "sha256": "09dd27e421ccfdcd07b77636723df00f39716f8c2e906c3ee614fcd92d69c243"
@@ -79,6 +154,26 @@
       "source": "runs/step7_utility_generic_seed0/env.yaml",
       "saved": "records/step7/snapshot/step7_utility_generic_seed0/env.yaml",
       "sha256": "c41692470f98e7d631d8b5c23aa2c87cdfa3536d49db4b85fea3a4ab132bb84a"
+    },
+    {
+      "source": "runs/step7_utility_generic_seed1/agent.yaml",
+      "saved": "records/step7/snapshot/step7_utility_generic_seed1/agent.yaml",
+      "sha256": "8bb354b144695db7637901ed7fc9a3d6df69a2b0047459153be9a3927a8e9024"
+    },
+    {
+      "source": "runs/step7_utility_generic_seed1/config.json",
+      "saved": "records/step7/snapshot/step7_utility_generic_seed1/config.json",
+      "sha256": "4b04dab0a4b849e3df19d7ab43e325da8f0db43966812de831012ab2ea752294"
+    },
+    {
+      "source": "runs/step7_utility_generic_seed1/env.yaml",
+      "saved": "records/step7/snapshot/step7_utility_generic_seed1/env.yaml",
+      "sha256": "df1fedae1e0695cde46e735f2809c3bad4e21d1e33cdd02306c10aaf1c15b3f0"
+    },
+    {
+      "source": "runs/step7_utility_real_seed1/TRAINING_COMPLETE.json",
+      "saved": "records/step7/snapshot/step7_utility_real_seed1/TRAINING_COMPLETE.json",
+      "sha256": "a58de10de0483aa5285967eaf7103ae9b1455521121c4fdec22699b5ee1eb298"
     },
     {
       "source": "runs/step7_utility_real_seed1/agent.yaml",
@@ -96,10 +191,37 @@
       "sha256": "368bf16ac31f7bd8e993a9efa7a7bb2761993cf01c8d9a2dad1c77a69e318d5d"
     },
     {
+      "source": "runs/step7_utility_real_seed2/agent.yaml",
+      "saved": "records/step7/snapshot/step7_utility_real_seed2/agent.yaml",
+      "sha256": "0948f80f76ac87ff41b7470862a9c239e7cd1b87e3278ba0bc4856090257ccde"
+    },
+    {
+      "source": "runs/step7_utility_real_seed2/config.json",
+      "saved": "records/step7/snapshot/step7_utility_real_seed2/config.json",
+      "sha256": "ea96cc292f8fb45302fd6e26147ca62cca8e1dbe635a3b938dd7b4b68eb2c21f"
+    },
+    {
+      "source": "runs/step7_utility_real_seed2/env.yaml",
+      "saved": "records/step7/snapshot/step7_utility_real_seed2/env.yaml",
+      "sha256": "13ed03385605550303c84e5d3938cf5ff5f41bf8a03f5fb4988d271336354deb"
+    },
+    {
       "source": "records/step7/bundles.log",
       "saved": "records/step7/snapshot/logs/bundles.log.gz",
       "uncompressed_sha256": "caeb3dacfe44e7e376b36d18e63b804c1691b572e8251d38e01b637bd742d341",
       "snapshot_bytes": 2291
+    },
+    {
+      "source": "records/step7/contact_contact_audit.log",
+      "saved": "records/step7/snapshot/logs/contact_contact_audit.log.gz",
+      "uncompressed_sha256": "7c614c6e4b65aeea140c4e262380ce14ed10ac24b2d40d92e6a2c1c911d1eb2a",
+      "snapshot_bytes": 486
+    },
+    {
+      "source": "records/step7/contact_contact_toes.log",
+      "saved": "records/step7/snapshot/logs/contact_contact_toes.log.gz",
+      "uncompressed_sha256": "dfefc1eac23e067145b7eac015fa784e9298d86d9874c6a1a77b7846487a7c84",
+      "snapshot_bytes": 684
     },
     {
       "source": "records/step7/convert_contact.log",
@@ -120,6 +242,72 @@
       "snapshot_bytes": 20149
     },
     {
+      "source": "records/step7/coverage_critic_v2.log",
+      "saved": "records/step7/snapshot/logs/coverage_critic_v2.log.gz",
+      "uncompressed_sha256": "642681634eafca763b10e21e40c8a7872c566ec9d11f1182fa192218e4863bbe",
+      "snapshot_bytes": 20150
+    },
+    {
+      "source": "records/step7/eval_real_1_sample_000.log",
+      "saved": "records/step7/snapshot/logs/eval_real_1_sample_000.log.gz",
+      "uncompressed_sha256": "725a6970d201d3e6bddf7935b4658184e5d6ae5e523e4320912b0a27cc2db105",
+      "snapshot_bytes": 23065
+    },
+    {
+      "source": "records/step7/eval_real_1_sample_001.log",
+      "saved": "records/step7/snapshot/logs/eval_real_1_sample_001.log.gz",
+      "uncompressed_sha256": "1e3c5275a670b2c09375f97b410c7a4c04150de166913b7ccf9cc5dd825058eb",
+      "snapshot_bytes": 23087
+    },
+    {
+      "source": "records/step7/eval_real_1_sample_002.log",
+      "saved": "records/step7/snapshot/logs/eval_real_1_sample_002.log.gz",
+      "uncompressed_sha256": "9faf36f652c663263a40ef8155147fbee31f169b23814ebc30bcd91deb350e81",
+      "snapshot_bytes": 23084
+    },
+    {
+      "source": "records/step7/eval_real_1_sample_003.log",
+      "saved": "records/step7/snapshot/logs/eval_real_1_sample_003.log.gz",
+      "uncompressed_sha256": "b12944009d6c3822a77af0ff3e8b1d30db89030923c608659ebf36ff5eb737b1",
+      "snapshot_bytes": 23073
+    },
+    {
+      "source": "records/step7/extra_contact_queue.log",
+      "saved": "records/step7/snapshot/logs/extra_contact_queue.log.gz",
+      "uncompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot_bytes": 0
+    },
+    {
+      "source": "records/step7/extra_generic_queue.log",
+      "saved": "records/step7/snapshot/logs/extra_generic_queue.log.gz",
+      "uncompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot_bytes": 0
+    },
+    {
+      "source": "records/step7/finalize.log",
+      "saved": "records/step7/snapshot/logs/finalize.log.gz",
+      "uncompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot_bytes": 0
+    },
+    {
+      "source": "records/step7/finalize_v2.log",
+      "saved": "records/step7/snapshot/logs/finalize_v2.log.gz",
+      "uncompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot_bytes": 0
+    },
+    {
+      "source": "records/step7/generic_contact_audit.log",
+      "saved": "records/step7/snapshot/logs/generic_contact_audit.log.gz",
+      "uncompressed_sha256": "7c614c6e4b65aeea140c4e262380ce14ed10ac24b2d40d92e6a2c1c911d1eb2a",
+      "snapshot_bytes": 486
+    },
+    {
+      "source": "records/step7/generic_contact_toes.log",
+      "saved": "records/step7/snapshot/logs/generic_contact_toes.log.gz",
+      "uncompressed_sha256": "4f96d32b83e3d37f0ca3af2e63a779d5ce92d6cc4c6d8ed315aa5f3fb8a1945e",
+      "snapshot_bytes": 684
+    },
+    {
       "source": "records/step7/gpu0_queue.log",
       "saved": "records/step7/snapshot/logs/gpu0_queue.log.gz",
       "uncompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -128,8 +316,8 @@
     {
       "source": "records/step7/gpu1_queue.log",
       "saved": "records/step7/snapshot/logs/gpu1_queue.log.gz",
-      "uncompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "snapshot_bytes": 0
+      "uncompressed_sha256": "eee488c10ca0b0e1fe893257ded47e974667e07794806da9ba488fc82196164b",
+      "snapshot_bytes": 26
     },
     {
       "source": "records/step7/retarget_contact.log",
@@ -150,10 +338,22 @@
       "snapshot_bytes": 136
     },
     {
+      "source": "records/step7/tests_v2.log",
+      "saved": "records/step7/snapshot/logs/tests_v2.log.gz",
+      "uncompressed_sha256": "aa2a0090084558d99d4ee217551c434c70815f3230f22bd1f9e9a216ad326942",
+      "snapshot_bytes": 137
+    },
+    {
       "source": "records/step7/train_contact.log",
       "saved": "records/step7/snapshot/logs/train_contact.log.gz",
       "uncompressed_sha256": "75e0066cb91204a0a96b5712443f868f4776f9ec7e1dbe76f0b62b1425c72780",
       "snapshot_bytes": 14577
+    },
+    {
+      "source": "records/step7/train_contact_1.log",
+      "saved": "records/step7/snapshot/logs/train_contact_1.log.gz",
+      "uncompressed_sha256": "3bc544414ef604e6e7a133de81678360af66f3c355c4217e68ade3eafcaa99c2",
+      "snapshot_bytes": 541688
     },
     {
       "source": "records/step7/train_generation.log",
@@ -170,16 +370,28 @@
     {
       "source": "records/step7/train_generic_0.log",
       "saved": "records/step7/snapshot/logs/train_generic_0.log.gz",
-      "uncompressed_sha256": "a112a7bf362d6c1ad376b68e4bdb978cb670540b9470f211637019f516a6068a",
-      "snapshot_bytes": 74956
+      "uncompressed_sha256": "ebae188a40ee1ca44b03e80767326b228f109f10fae21887ec73c40db8d880ac",
+      "snapshot_bytes": 1706766
+    },
+    {
+      "source": "records/step7/train_generic_1.log",
+      "saved": "records/step7/snapshot/logs/train_generic_1.log.gz",
+      "uncompressed_sha256": "8f69c6f653b095491165d51012db3785ea1854944e1b456b86ab7a8ac4a95ee6",
+      "snapshot_bytes": 481419
     },
     {
       "source": "records/step7/train_real_1.log",
       "saved": "records/step7/snapshot/logs/train_real_1.log.gz",
-      "uncompressed_sha256": "e9b8e9b9942f415cbf1ce58890d6aed0e8284cd8a9671d949c8776437a0b396f",
-      "snapshot_bytes": 522054
+      "uncompressed_sha256": "8343091edca341df9ef00a44f1481be7c2feb9175ddc2c303d402b7406a51ba1",
+      "snapshot_bytes": 1963420
+    },
+    {
+      "source": "records/step7/train_real_2.log",
+      "saved": "records/step7/snapshot/logs/train_real_2.log.gz",
+      "uncompressed_sha256": "e27a39e8807d6fad217888c143274c0f60d3bcfe6ac756bee9108d5cd95eb3ab",
+      "snapshot_bytes": 327608
     }
   ],
-  "summary_sha256": "647b63940ddb49d737342d97e1b9e7e7bb4463e1cba90591bbc6943dff6fd289",
+  "summary_sha256": "857083081ef5f9ce244a41bd0864a6a37bbc7d7bf88270f5f4fb921d2bb29433",
   "raw_data_and_weights_included": false
 }

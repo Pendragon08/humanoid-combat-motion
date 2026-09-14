@@ -1,0 +1,219 @@
+{
+  "cases": [
+    {
+      "source": "interhuman_1188",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        10,
+        21
+      ]
+    },
+    {
+      "source": "interhuman_1189",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        11,
+        20
+      ]
+    },
+    {
+      "source": "interhuman_1195",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        10,
+        20
+      ]
+    },
+    {
+      "source": "interhuman_1203",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        10,
+        20
+      ]
+    },
+    {
+      "source": "interhuman_1205",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        10,
+        19
+      ]
+    },
+    {
+      "source": "interhuman_1211",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        10,
+        20
+      ]
+    },
+    {
+      "source": "interhuman_1216",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        10,
+        20
+      ]
+    },
+    {
+      "source": "interhuman_1223",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        11,
+        20
+      ]
+    },
+    {
+      "source": "interhuman_1224",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        10,
+        20
+      ]
+    },
+    {
+      "source": "interhuman_1236",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        11,
+        21
+      ]
+    },
+    {
+      "source": "interhuman_1244",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        11,
+        20
+      ]
+    },
+    {
+      "source": "interhuman_1247",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        11,
+        20
+      ]
+    },
+    {
+      "source": "interhuman_1263",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        11
+      ]
+    },
+    {
+      "source": "interhuman_1265",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        11,
+        20
+      ]
+    },
+    {
+      "source": "interhuman_1271",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        11
+      ]
+    },
+    {
+      "source": "interhuman_1287",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        11,
+        21
+      ]
+    },
+    {
+      "source": "interhuman_1298",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        11,
+        21
+      ]
+    },
+    {
+      "source": "interhuman_1321",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        11,
+        21
+      ]
+    },
+    {
+      "source": "interhuman_1329",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        11,
+        21
+      ]
+    },
+    {
+      "source": "interhuman_1351",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        11,
+        21
+      ]
+    }
+  ],
+  "mapped_cases": 0,
+  "proxy_success_fraction": null,
+  "mapping": {
+    "0": "pelvis",
+    "4": "left_knee_link",
+    "5": "right_knee_link",
+    "7": "left_ankle_roll_link",
+    "8": "right_ankle_roll_link",
+    "9": "torso_link",
+    "18": "left_elbow_link",
+    "19": "right_elbow_link",
+    "20": "left_wrist_yaw_link",
+    "21": "right_wrist_yaw_link"
+  },
+  "scale": 0.75,
+  "physics_verified": false,
+  "scope": "human sphere radii scaled to robot links; tests geometric preservation, not robot collision meshes or contact forces"
+}

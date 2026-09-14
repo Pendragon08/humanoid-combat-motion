@@ -5,12 +5,12 @@ import json
 from pathlib import Path
 
 root=Path(__file__).resolve().parents[1];destination=root/'records/step7/snapshot';destination.mkdir(parents=True,exist_ok=True)
-names={'config.json','TRAINING_COMPLETE.json','metrics.json','manifest.json','source_manifest.json','evaluation.json','report.json','protocol.json','generic.json','contact.json','env.yaml','agent.yaml','history_seed0.json','history_seed1.json','history_seed2.json'}
+names={'config.json','TRAINING_COMPLETE.json','metrics.json','manifest.json','contact_audit.json','source_manifest.json','evaluation.json','report.json','protocol.json','generic.json','contact.json','env.yaml','agent.yaml','history_seed0.json','history_seed1.json','history_seed2.json','provenance.json'}
 entries=[]
 for directory in sorted((root/'runs').glob('step7_*')):
     if not directory.is_dir():continue
     for path in sorted(directory.iterdir()):
-        if path.name not in names or not path.is_file():continue
+        if (path.name not in names and path.name!='contact_audit_toes.json') or not path.is_file():continue
         if path.stat().st_size>8*1024**2:raise ValueError('Unexpectedly large record')
         data=path.read_bytes();out=destination/directory.name/path.name;out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes(data)
         entries.append({'source':str(path.relative_to(root)),'saved':str(out.relative_to(root)),'sha256':hashlib.sha256(data).hexdigest()})

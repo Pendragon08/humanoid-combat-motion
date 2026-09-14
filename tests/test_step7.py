@@ -7,9 +7,16 @@ from combat.protocol import validate_physics_label
 class Step7Tests(unittest.TestCase):
     def test_translation_keeps_pair_geometry(self):
         q=np.zeros((6,2,36),np.float32);q[:,:,3]=1;q[:,1,0]=2
-        shifted=q.copy();shifted[:,:,:3]+=np.array([12,-3,6])
+        shifted=q.copy();shifted[:,:,:2]+=np.array([12,-3])
         np.testing.assert_allclose(reference_features(q,50),reference_features(shifted,50))
         self.assertEqual(reference_features(q,50)[0,68],2)
+
+    def test_height_preserved_and_quaternion_sign_invariant(self):
+        q=np.zeros((6,2,36),np.float32);q[:,:,3]=1
+        sign=q.copy();sign[::2,:,3:7]*=-1
+        np.testing.assert_allclose(reference_features(q,50),reference_features(sign,50))
+        lifted=q.copy();lifted[:,:,2]+=1
+        self.assertFalse(np.allclose(reference_features(q,50),reference_features(lifted,50)))
 
     def test_padding_does_not_change_score(self):
         torch.manual_seed(7);model=ControllerCoverageCritic().eval();x=torch.randn(1,10,136)

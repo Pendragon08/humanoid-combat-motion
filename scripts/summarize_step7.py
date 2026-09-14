@@ -5,6 +5,7 @@ import html
 import json
 from pathlib import Path
 import statistics
+from datetime import datetime,timezone
 
 p=argparse.ArgumentParser();p.add_argument('--output',type=Path,default=Path('records/step7/summary.json'))
 p.add_argument('--html',type=Path);a=p.parse_args();root=Path(__file__).resolve().parents[1]
@@ -54,8 +55,14 @@ if len(completed)==9:
         diff=[lookup[treatment,s]['macro']['strict']-lookup[control,s]['macro']['strict'] for s in (0,1,2)]
         differences[treatment+' minus '+control]={'per_seed_strict_difference':diff,'mean':statistics.mean(diff),'sample_std':statistics.stdev(diff)}
 critic_path=root/'runs/step7_coverage_critic/report.json'
+if (root/'runs/step7_coverage_critic_v2/report.json').exists():critic_path=root/'runs/step7_coverage_critic_v2/report.json'
 critic=read(critic_path) if critic_path.exists() else None
-result={'rows':rows,'groups':groups,'completed_runs':len(completed),'expected_runs':9,'paired_differences':differences,
+contact_audits={}
+for arm in ('generic','contact'):
+    path=root/f'runs/step7_{arm}_g1ik/contact_audit_toes.json'
+    if path.exists():
+        audit=read(path);contact_audits[arm]={'mapped_cases':audit['mapped_cases'],'robot_proxy_contact_fraction':audit['proxy_success_fraction'],'sha256':digest(path)}
+result={'generated_at_utc':datetime.now(timezone.utc).isoformat(),'rows':rows,'groups':groups,'completed_runs':len(completed),'expected_runs':9,'paired_differences':differences,'contact_retargeting_audit':contact_audits,
         'pilot_runs_complete':len(completed)==9,'full_step7_physics_pipeline_validated':False,
         'critic':{'report_sha256':digest(critic_path),'decision':critic['deployment_decision'],'results':[{k:r[k] for k in ('seed','validation_mae_s','test_mae_s','test_constant_baseline_mae_s','retrospective_reranking')} for r in critic['results']]} if critic else None,
         'interpretation':'Development pilot; C is contact-constrained but not physics-certified; single-robot utility, one held-out video group; positive or negative results do not validate paired robot physics.'}
@@ -68,7 +75,12 @@ if a.html:
     if critic:
         section+='<h3>物理筛选门槛</h3><p>完整物理评价网络需要可靠的接触、跌倒、碰撞标签，当前尚不具备。本轮训练了三个种子的较小覆盖预测器，仅预测固定控制器何时首次失配；使用48条既有真实仿真记录，按提示词来源分组。</p><table><tr><th>种子</th><th>预测误差（秒）</th><th>常量基线误差（秒）</th></tr>'+''.join('<tr><td>'+str(r['seed'])+'</td><td>%.5f</td><td>%.5f</td></tr>'%(r['test_mae_s'],r['test_constant_baseline_mae_s']) for r in critic['results'])+'</table><p class="notice">不批准用于自动筛选可执行动作：原校准动作全都提前失败，K=6排序仍未产生完整执行成功的候选。预测失配时间不等于预测动作物理可行性。</p>'
     if differences:
+        section+='<h3>每组3个控制器种子的平均结果</h3><table><tr><th>组别</th><th>严格通过率：均值±标准差</th><th>全段未失配：均值±标准差</th><th>首次失配/完成时间</th></tr>'+''.join('<tr><td>'+html.escape(k)+'</td><td>%.2f%% ± %.2f%%</td><td>%.2f%% ± %.2f%%</td><td>%.3f 秒</td></tr>'%(100*v['metrics']['strict']['mean'],100*v['metrics']['strict']['sample_std'],100*v['metrics']['completion']['mean'],100*v['metrics']['completion']['sample_std'],v['metrics']['failure_time_s']['mean']) for k,v in groups.items())+'</table>'
         section+='<h3>三个控制器种子的配对差值</h3><table><tr><th>比较</th><th>严格通过率平均差值</th><th>种子间标准差</th></tr>'+''.join('<tr><td>'+html.escape(k)+'</td><td>%.2f 个百分点</td><td>%.2f 个百分点</td></tr>'%(100*v['mean'],100*v['sample_std']) for k,v in differences.items())+'</table><p>这是固定预算下的小规模开发结果；不把3个种子或32个环境当作独立数据来源，也不由此宣称完整双人格斗方案成功。</p>'
+    if contact_audits:
+        section+='<h3>接触经过重定向后是否保留？</h3><p>从固定版本GMR模型核对并加入已有脚尖辅助坐标后，20条训练条件均可进行几何检查；旧版不含脚尖的审计结果仍保留。普通生成组重定向后近似接触通过率为 '+str(round(100*contact_audits['generic']['robot_proxy_contact_fraction'],1))+'%，接触约束组为 '+str(round(100*contact_audits['contact']['robot_proxy_contact_fraction'],1))+'%。这只是球体及辅助坐标的几何近似，不是碰撞网格或接触力认证。训练数据没有因此改变。</p>'
+    if (a.html.parent/'media/step7_utility.mp4').exists():
+        section+='<h3>相同留出动作的实际执行对比</h3><video controls preload="metadata" poster="media/step7_utility_preview.png"><source src="media/step7_utility.mp4" type="video/mp4"></video><p>左上参考、右上A真实来源、左下B普通生成、右下C接触约束。统一控制器种子0、第一条留出动作和环境0；首次失配后冻结，4倍慢放。MuJoCo只负责渲染Isaac实际轨迹，不是跨仿真器策略部署。</p>'
     section+='<p><a href="../records/step7/summary.json">完整结果与来源校验</a> · <a href="../docs/step7_protocol.md">实验协议及范围</a></p></section>'+end
     if start in source:source=source[:source.index(start)]+section+source[source.index(end)+len(end):]
     else:source=source.replace('<section id="data">',section+'<section id="data">',1)

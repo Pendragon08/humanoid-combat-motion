@@ -1,0 +1,385 @@
+{
+  "cases": [
+    {
+      "source": "interhuman_1188",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.05764236620288858,
+        "min_swept_surface_gap_m": 0.056727162360093134,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1189",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.043950860758390595,
+        "min_swept_surface_gap_m": 0.04377170554931541,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": 57,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1195",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.008233557550198514,
+        "min_swept_surface_gap_m": 0.008233557550198514,
+        "penetration": false,
+        "first_contact_frame": 88,
+        "first_contact_time_s": 2.933333333333333,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1203",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.13963623000440023,
+        "min_swept_surface_gap_m": 0.13833146962597703,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": 62,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1205",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.3353710836132515,
+        "min_swept_surface_gap_m": 0.3353710836132515,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1211",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.02792006555604358,
+        "min_swept_surface_gap_m": 0.027851889412705208,
+        "penetration": false,
+        "first_contact_frame": 58,
+        "first_contact_time_s": 1.9333333333333333,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1216",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.0315144103148919,
+        "min_swept_surface_gap_m": 0.0071411374789988186,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": 15,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1223",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.038402230882640734,
+        "min_swept_surface_gap_m": 0.038402230882640734,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1224",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": -0.07033530177105199,
+        "min_swept_surface_gap_m": -0.07417679571421416,
+        "penetration": true,
+        "first_contact_frame": 14,
+        "first_contact_time_s": 0.4666666666666667,
+        "protected_hit_frame": 13,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1236",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.07088388624080601,
+        "min_swept_surface_gap_m": 0.07088388624080601,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": 62,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1244",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": -0.01912146602926912,
+        "min_swept_surface_gap_m": -0.025602900660702754,
+        "penetration": true,
+        "first_contact_frame": 58,
+        "first_contact_time_s": 1.9333333333333333,
+        "protected_hit_frame": 57,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1247",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.05841002958357204,
+        "min_swept_surface_gap_m": 0.058029670860023266,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1263",
+      "evaluated": true,
+      "contact": {
+        "kind": "hit",
+        "success": false,
+        "min_surface_gap_m": 0.14429494257411937,
+        "min_swept_surface_gap_m": 0.14429494257411937,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.5,
+        "provenance": "automatic_sphere_geometry_and_weak_text_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1265",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.11492518384253801,
+        "min_swept_surface_gap_m": 0.11492518384253801,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1271",
+      "evaluated": true,
+      "contact": {
+        "kind": "hit",
+        "success": false,
+        "min_surface_gap_m": 0.28198518467019085,
+        "min_swept_surface_gap_m": 0.28198518467019085,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.5,
+        "provenance": "automatic_sphere_geometry_and_weak_text_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1287",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.06485756021790752,
+        "min_swept_surface_gap_m": 0.06485756021790752,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1298",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.022556940981076565,
+        "min_swept_surface_gap_m": 0.022556940981076565,
+        "penetration": false,
+        "first_contact_frame": 41,
+        "first_contact_time_s": 1.3666666666666667,
+        "protected_hit_frame": 36,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1321",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.18077379765294926,
+        "min_swept_surface_gap_m": 0.18077337007502092,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1329",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.0063403661362834846,
+        "min_swept_surface_gap_m": 0.0063403661362834846,
+        "penetration": false,
+        "first_contact_frame": 36,
+        "first_contact_time_s": 1.2,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1351",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.01371580823174752,
+        "min_swept_surface_gap_m": 0.01371580823174752,
+        "penetration": false,
+        "first_contact_frame": 33,
+        "first_contact_time_s": 1.1,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    }
+  ],
+  "mapped_cases": 20,
+  "proxy_success_fraction": 0.2,
+  "mapping": {
+    "0": "pelvis",
+    "4": "left_knee_link",
+    "5": "right_knee_link",
+    "7": "left_ankle_roll_link",
+    "8": "right_ankle_roll_link",
+    "9": "torso_link",
+    "18": "left_elbow_link",
+    "19": "right_elbow_link",
+    "20": "left_wrist_yaw_link",
+    "21": "right_wrist_yaw_link",
+    "10": "left_toe_link",
+    "11": "right_toe_link"
+  },
+  "scale": 0.75,
+  "physics_verified": false,
+  "toe_helpers_included": true,
+  "toe_mapping_scope": "fixed helper frames in pinned GMR model; not contact sensors or physical collision certification",
+  "scope": "human sphere radii scaled to robot links; tests geometric preservation, not robot collision meshes or contact forces"
+}

@@ -88,6 +88,7 @@ for seed in (0,1,2):
     (a.output/f'history_seed{seed}.json').write_text(json.dumps(history,indent=2))
     print('COVERAGE_CRITIC_SEED',json.dumps(record),flush=True)
 report={'experiment':'retrospective controller-coverage predictor; not the full four-head physics critic',
+        'feature_protocol':'v2: preserve floor-relative z, common XY origin, temporally sign-consistent unit root quaternions',
         'records':rows,'split_counts':{k:len(v) for k,v in indices.items()},'prompt_groups':prompts,
         'split_rule':'first two prompt groups train; third validation; fourth test; all latent repeats and arms stay together',
         'controller_sha256':next(iter(controllers)),'feature_input':'reference qpos and finite-difference reference root/joint velocity; no realized state or errors',

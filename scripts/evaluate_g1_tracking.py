@@ -137,7 +137,7 @@ def main():
                 'observation_noise':False,'training_reset_and_dynamics_randomization':True,
                 'initial_reference_alignment_cache_primed':True,
                 'metric_caveat':'Errors averaged only before first termination; always interpret together with completion fraction. Termination is tracking failure, not necessarily a fall.',
-                'claim':'single-reference controller feasibility diagnostic, not paired physics labels or synthetic-data utility'}
+                'claim':'per-reference learned-policy rollout; claims require external training-data provenance and matched-budget protocol; not paired physics labels'}
         (a.output/'metrics.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
         print('G1_TRACKING_EVALUATION '+json.dumps(result),flush=True)
     finally:

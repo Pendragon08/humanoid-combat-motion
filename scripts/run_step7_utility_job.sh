@@ -4,8 +4,17 @@ cd "$(dirname "$0")/.."
 arm="$1"; seed="$2"; device="$3"
 case "$arm" in real) bundle=data/tracking_seed/kungfu_train20_bundle.npz ;; generic|contact) bundle="runs/step7_bundles/${arm}.npz" ;; *) exit 2 ;; esac
 output="runs/step7_utility_${arm}_seed${seed}"
+mkdir -p records/step7/locks
+exec 9>"records/step7/locks/${arm}_${seed}.lock"
+flock 9
 test -s "$bundle"
-test ! -e "$output"
+if [[ -d "$output" ]]; then
+  test -s "$output/TRAINING_COMPLETE.json"
+  test -s "$output/model_999.pt"
+  for index in 000 001 002 003; do test -s "runs/step7_eval_${arm}_seed${seed}_sample_${index}/metrics.json"; done
+  echo "STEP7_JOB_ALREADY_COMPLETE $arm $seed"
+  exit 0
+fi
 free_kb=$(df -Pk /data | awk 'NR==2 {print $4}')
 if ((free_kb < 8388608)); then echo 'DISK_RESERVE_GATE: need 8 GiB'; exit 3; fi
 bash scripts/run_isaaclab.sh scripts/train_multireference_tracking.py --bundle "$bundle" --output "$output" --iterations 1000 --num_envs 512 --seed "$seed" --headless --device "$device" > "records/step7/train_${arm}_${seed}.log" 2>&1
