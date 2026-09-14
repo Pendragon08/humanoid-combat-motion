@@ -1,0 +1,9 @@
+.venv/
+cache/
+data/
+assets/
+runs/
+audit/
+.aris/
+__pycache__/
+*.pyc

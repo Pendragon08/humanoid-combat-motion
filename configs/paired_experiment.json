@@ -1,0 +1,23 @@
+{
+  "protocol_version": "paired-v1",
+  "status": "preregistered_not_completed",
+  "backbone": "TIMotion-Transformer without LPA",
+  "backbone_commit": "172580fd7f2551a7cc10fde1f15ff73315742e65",
+  "seeds": [0, 1, 2],
+  "candidate_count": 4,
+  "synthetic_counts": [0, 500, 1000, 2000, 5000],
+  "groups": ["real_only", "real_intergen", "real_timotion", "real_combat_no_physics", "real_ours"],
+  "ablations": ["no_combat_condition", "no_contact", "no_physics_critic"],
+  "optional_ablation": "role_switch_if_implemented",
+  "split_unit": "original_source_sequence",
+  "official_metrics_require": ["official_test_split", "official_evaluator_checkpoint", "official_normalization", "strict_generator_checkpoint_load"],
+  "utility_require": ["same_tracker", "same_training_steps", "same_optimizer", "same_seeds", "same_test_sources", "same_synthetic_count", "same_candidate_budget"],
+  "tracker": "BeyondMimic / Isaac Lab 2.1.0",
+  "critic_targets": ["tracking_error_m", "fall", "contact_success", "invalid_collision"],
+  "contact_geometry": "sphere_proxy_linear_sweep",
+  "contact_tolerance_m": 0.03,
+  "penetration_tolerance_m": 0.02,
+  "avoid_clearance_m": 0.08,
+  "threshold_status": "engineering_defaults_to_calibrate_on_training_validation_only",
+  "claim_gate": "No synthetic-data utility claim before source-disjoint learned tracking comparisons"
+}

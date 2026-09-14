@@ -1,0 +1,9 @@
+{
+  "base": "Python 3.10.21; PyTorch 2.5.1+cu121; NVIDIA RTX A6000",
+  "borrowed_interpreter": "/data/code/ouyanghao/oyh/world-model-risk-planning/.env/bin/python",
+  "pip_phases": [["mujoco==3.3.7", "osqp==1.0.5"]],
+  "inherited": {"numpy": "1.26.4", "scipy": "1.15.3", "matplotlib": "3.9.4", "imageio": "2.33.1", "imageio-ffmpeg": "0.4.9", "torch": "2.5.1+cu121"},
+  "env": {"MUJOCO_GL": "egl", "OMP_NUM_THREADS": "4", "MKL_NUM_THREADS": "4", "OPENBLAS_NUM_THREADS": "4"},
+  "tier": {"cpus": 4, "gpus_per_run": 1, "maximum_project_gib": 2},
+  "smoke": {"command": "bash scripts/run.sh scripts/smoke.py", "expect": "KERNEL_WITNESS.*CUDA.*MUJOCO_RENDER"}
+}
