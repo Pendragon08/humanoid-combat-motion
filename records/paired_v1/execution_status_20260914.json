@@ -1,0 +1,35 @@
+{
+  "overall": "in_progress_not_validated",
+  "completed": {
+    "official_timotion_strict_checkpoint_load": true,
+    "paired_text_conditioned_inference": "4 prompts x 150 frames, seed 0",
+    "g1_isaaclab_independent_validation": "passed: exit0, 4 robots, 200 steps, 29 joints, finite GPU backward",
+    "beyondmimic_training_integration": "100 PPO iterations, 614400 environment steps, one training-source crop",
+    "actor_identity_diagnostic": "framewise identity switches found; raw samples retained; Viterbi correspondence derivative saved"
+  },
+  "running": ["1000 additional PPO iterations from model_99.pt", "official motion archive transfer"],
+  "not_completed": [
+    "official full-dataset generation benchmark",
+    "combat subset adapter training",
+    "attacker-conditioned causal reaction training",
+    "paired generated human-to-G1 retargeting",
+    "contact-guided learned generation validation",
+    "dual-robot rollout dataset",
+    "trained physics critic and K-candidate selection",
+    "equal-budget multi-seed downstream utility comparisons"
+  ],
+  "invalid_runs": {
+    "g1_tracking_eval_iter99_seed123": "Missing initial relative-reference cache priming caused false first-step termination. Exclude from all scientific comparisons.",
+    "g1_tracking_eval_iter99_diagnostic": "Diagnostic confirmed zero-initialized reference cache. Exclude from all scientific comparisons."
+  },
+  "corrected_diagnostic": {
+    "run": "g1_tracking_eval_iter99_primed",
+    "environments": 32,
+    "horizon_steps": 117,
+    "completion_fraction": 0.0,
+    "first_failure_step_range": [3, 5],
+    "scope": "training-reference diagnostic after 100 iterations; not a held-out or paired combat result"
+  },
+  "annotation_source": "Unofficial transport mirror: 50/50 annotation files byte-identical to official Drive checks. Remaining files not individually verified. Original license retained; mirror MIT tag rejected.",
+  "scientific_conclusion": "Generation and learned-control engineering paths run. No evidence yet that synthetic combat data improves imitation or generalization."
+}

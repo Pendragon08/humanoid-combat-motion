@@ -28,7 +28,9 @@ def main():
     torch.manual_seed(0)
     sim=sim_utils.SimulationContext(sim_utils.SimulationCfg(dt=.005,device=args.device))
     GroundPlane('/World/Ground',size=20,z_position=0)
-    scene=InteractiveScene(Scene(num_envs=4,env_spacing=3))
+    scene_cfg=Scene(num_envs=4,env_spacing=3)
+    scene_cfg.robot.spawn.usd_dir=str(Path(__file__).resolve().parents[1]/'cache/usd/g1_tracking')
+    scene=InteractiveScene(scene_cfg)
     sim.reset()
     robot=scene['robot']
     initial=robot.data.root_pos_w.detach().cpu().clone()
@@ -49,5 +51,22 @@ def main():
     print('G1_ISAACLAB_PHYSICS_WITNESS '+json.dumps(result),flush=True)
 
 
-try:main()
-finally:app.close()
+try:
+    main()
+except Exception:
+    import traceback
+    import sys
+    failure=traceback.format_exc()
+    args.output.parent.mkdir(parents=True,exist_ok=True)
+    args.output.with_suffix('.error.txt').write_text(failure,encoding='utf-8')
+    print(failure,file=sys.stderr,flush=True)
+    raise
+finally:
+    # Remove Isaac Lab's timeline stop callback before SimulationApp closes the
+    # stage; otherwise the callback intentionally enters its paused render loop.
+    sim_utils.SimulationContext.clear_instance()
+    # This headless witness creates no Replicator writers or render products.
+    import faulthandler
+    faulthandler.dump_traceback_later(20, repeat=False)
+    app.close(wait_for_replicator=False)
+    faulthandler.cancel_dump_traceback_later()

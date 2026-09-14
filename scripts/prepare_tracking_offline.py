@@ -33,10 +33,13 @@ def main():
     motion_path = pathlib.Path(args_cli.motion_file).resolve(strict=True)
     registry_name = None
     env_cfg.commands.motion.motion_file = str(motion_path)
+    env_cfg.scene.robot.spawn.usd_dir = os.path.abspath("cache/usd/g1_tracking")
     agent_cfg.logger = "tensorboard"
 
 ''' + result[end:]
     output = train.with_name('train_local.py')
+    result = replace_once(result, '    simulation_app.close()',
+        '    simulation_app.close(wait_for_replicator=False)  # No Replicator writers in this offline run.')
     output.write_text(result, encoding='utf-8')
     records.append({'source': str(train.relative_to(ROOT)), 'output': str(output.relative_to(ROOT)),
                     'source_sha256': hashlib.sha256(source.encode()).hexdigest(),
@@ -63,6 +66,11 @@ def main():
             break
 ''' + result[end:]
     output = replay.with_name('csv_to_npz_local.py')
+    result = replace_once(result, '    simulation_app.close()',
+        '    sim_utils.SimulationContext.clear_instance()  # Unsubscribe paused-render stop callback.\n'
+        '    simulation_app.close(wait_for_replicator=False)  # No Replicator writers in conversion.')
+    result = replace_once(result,'    scene = InteractiveScene(scene_cfg)',
+        '    import os\n    scene_cfg.robot.spawn.usd_dir = os.path.abspath("cache/usd/g1_tracking")\n    scene_cfg.ground = None  # Kinematic conversion needs no remote ground asset.\n    scene = InteractiveScene(scene_cfg)')
     output.write_text(result, encoding='utf-8')
     records.append({'source': str(replay.relative_to(ROOT)), 'output': str(output.relative_to(ROOT)),
                     'source_sha256': hashlib.sha256(source.encode()).hexdigest(),

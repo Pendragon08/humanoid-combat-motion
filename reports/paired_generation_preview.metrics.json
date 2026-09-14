@@ -1,0 +1,30 @@
+[
+  {
+    "frames": 150,
+    "fps": 30.0,
+    "minimum_foot_y_m": 0.0135,
+    "p95_joint_speed_m_s": 41.4317,
+    "minimum_root_distance_m": 0.7186
+  },
+  {
+    "frames": 150,
+    "fps": 30.0,
+    "minimum_foot_y_m": 0.0196,
+    "p95_joint_speed_m_s": 56.9692,
+    "minimum_root_distance_m": 1.009
+  },
+  {
+    "frames": 150,
+    "fps": 30.0,
+    "minimum_foot_y_m": 0.0119,
+    "p95_joint_speed_m_s": 42.384,
+    "minimum_root_distance_m": 0.7775
+  },
+  {
+    "frames": 150,
+    "fps": 30.0,
+    "minimum_foot_y_m": 0.0152,
+    "p95_joint_speed_m_s": 39.8875,
+    "minimum_root_distance_m": 0.0013
+  }
+]
