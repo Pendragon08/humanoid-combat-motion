@@ -34,17 +34,24 @@
         12
       ]
     },
-    "retarget_environment_independent_witness": "exit0, error2.24cm to2.31e-16m; no dynamics claim"
+    "retarget_environment_independent_witness": "exit0, error2.24cm to2.31e-16m; no dynamics claim",
+    "dual_reference_batch": "24 generic + 24 adapted pairs, both zero horizon completion under single-reference controller",
+    "offline_actor_conditioning": "139 train / 10 validation / 20 test weak geometric events; 1000-step adapter",
+    "history_conditioning": "1000-step prefix adapter; no future actor input; external contact goal still supplied; tactical causality not validated",
+    "contact_audit": "soft geometry60%, contact plus <=2cm bone drift15%, hard projection5%; exploratory differentiable FK interior target95%; no physical success claim",
+    "extended_single_controller": "model3097, horizon survival30/32, aligned body error0.081m, global body error0.439m, task-specific strict spatial pass0/32",
+    "multireference_interface": "20 train video-derived sources, 32 environments x300-step witness; 41 clip timeouts and zero cross-clip indexing errors",
+    "dual_positive_control": "two separated copies of learned seed199;4/4 nominal horizon survival; not combat or independent source data"
   },
   "running": [
-    "1024-environment G1 PPO, 2000 additional updates from model_1098, GPU0",
-    "48 paired-reference conversions and frozen-controller dual-G1 diagnoses, GPU1"
+    "20-source multi-reference PPO,1000 updates x512 environments,GPU1",
+    "queued:20 train +4 held-out single-reference evaluations;20 contact-refined pair evaluations"
   ],
   "not_completed": [
     "paper-default20-repetition official benchmark",
     "stable multi-reference learned tracking controller",
-    "attacker-conditioned causal reaction training",
-    "contact-guided generation validation",
+    "verified tactical causality and online reaction validation beyond offline prefix forecasting",
+    "robot physical contact success beyond exploratory human geometry optimization",
     "reliable balanced dual-robot physics-label dataset",
     "trained physics critic and candidate reranking",
     "equal-budget >=3-seed downstream utility and generalization comparisons"

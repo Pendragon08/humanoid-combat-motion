@@ -1,0 +1,233 @@
+[INFO][AppLauncher]: Using device: cuda:1
+[INFO][AppLauncher]: Loading experience file: /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/data/Kit/Isaac-Sim/4.5/user.config.json'
+[Info] [carb] Logging to file: /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/logs/Kit/Isaac-Sim/4.5/kit_20260914_131327.log
+2026-09-14 13:13:27 [0ms] [Warning] [omni.kit.app.plugin] No crash reporter present, dumps uploading isn't available.
+2026-09-14 13:13:27 [5ms] [Warning] [omni.ext.plugin] [ext: rendering_modes] Extensions config 'extension.toml' doesn't exist '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab/apps/rendering_modes' or '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab/apps/rendering_modes/config'
+2026-09-14 13:13:27 [490ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-09-14 13:13:27 [588ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-09-14 13:13:27 [801ms] [Warning] [omni.datastore] OmniHub is inaccessible
+2026-09-14 13:13:28 [974ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 570.181       | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA RTX A6000                 |        |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | f3cc20c6.. |
+|     |                                  |        |     |            | 17        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA RTX A6000                 | Yes: 0 |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | 0b41e662.. |
+|     |                                  |        |     |            | 65        |            |
+|=============================================================================================|
+| OS: 20.04.6 LTS (Focal Fossa) ubuntu, Version: 20.04.6, Kernel: 5.4.0-216-generic
+| Processor: Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz
+| Cores: 10 | Logical Cores: 20
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 257450 | Free Memory: 25899
+| Total Page/Swap (MB): 8191 | Free Page/Swap: 8186
+|---------------------------------------------------------------------------------------------|
+2026-09-14 13:13:32 [5,712ms] [Warning] [omni.kvdb.plugin] Disabling key-value database because another kit process is locking it
+[INFO]: Parsing configuration from: <class 'whole_body_tracking.tasks.tracking.config.g1.flat_env_cfg.G1FlatEnvCfg'>
+[INFO]: Parsing configuration from: whole_body_tracking.tasks.tracking.config.g1.agents.rsl_rl_ppo_cfg:G1FlatPPORunnerCfg
+Setting seed: 0
+[INFO]: Base environment:
+	Environment device    : cuda:1
+	Environment seed      : 0
+	Physics step-size     : 0.005
+	Rendering step-size   : 0.02
+	Environment step-size : 0.02
+2026-09-14 13:13:33 [6,106ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-09-14 13:13:33 [6,106ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-09-14 13:13:33 [6,108ms] [Error] [gpu.foundation.plugin] DriverShaderCacheManager::init() called without a shutdown()!
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 570.181       | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA RTX A6000                 |        |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | f3cc20c6.. |
+|     |                                  |        |     |            | 17        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA RTX A6000                 | Yes: 0 |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | 0b41e662.. |
+|     |                                  |        |     |            | 65        |            |
+|=============================================================================================|
+| OS: 20.04.6 LTS (Focal Fossa) ubuntu, Version: 20.04.6, Kernel: 5.4.0-216-generic
+| Processor: Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz
+| Cores: 10 | Logical Cores: 20
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 257450 | Free Memory: 25725
+| Total Page/Swap (MB): 8191 | Free Page/Swap: 8186
+|---------------------------------------------------------------------------------------------|
+2026-09-14 13:13:33 [6,824ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-09-14 13:13:33 [6,825ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-09-14 13:13:33 [6,843ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-09-14 13:13:33 [6,843ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-09-14 13:13:33 [6,850ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-09-14 13:13:33 [6,850ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-09-14 13:13:33 [6,859ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-09-14 13:13:33 [6,859ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-09-14 13:13:33 [6,861ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-09-14 13:13:33 [6,861ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-09-14 13:13:33 [6,863ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-09-14 13:13:33 [6,863ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-09-14 13:13:34 [7,381ms] [Warning] [omni.graph.visualization.nodes._impl.extension] No Viewport Window to add omni.graph.visualization.nodes-2.1.1 scene to
+2026-09-14 13:13:34 [7,603ms] [Warning] [isaaclab.terrains.terrain_importer] Visual material specified for ground plane but no diffuse color found. Using default color: (0.0, 0.0, 0.0)
+2026-09-14 13:13:36 [8,876ms] [Warning] [omni.usd] Warning: in GetNodeDiscoveryResults at line 136 of /builds/omniverse/usd-ci/USD/pxr/usd/usdShade/shaderDefUtils.cpp -- Unable to resolve info:sourceAsset </UsdPreviewSurface.info:mdl:sourceAsset> with value @UsdPreviewSurface.mdl@.
+
+2026-09-14 13:13:36 [8,876ms] [Warning] [omni.usd] Warning: in GetNodeDiscoveryResults at line 136 of /builds/omniverse/usd-ci/USD/pxr/usd/usdShade/shaderDefUtils.cpp -- Unable to resolve info:sourceAsset </UsdUVTexture.info:mdl:sourceAsset> with value @UsdPreviewSurface.mdl@.
+
+2026-09-14 13:13:36 [8,876ms] [Warning] [omni.usd] Warning: in GetNodeDiscoveryResults at line 136 of /builds/omniverse/usd-ci/USD/pxr/usd/usdShade/shaderDefUtils.cpp -- Unable to resolve info:sourceAsset </UsdPrimvarReader_float.info:mdl:sourceAsset> with value @UsdPreviewSurface.mdl@.
+
+2026-09-14 13:13:36 [8,877ms] [Warning] [omni.usd] Warning: in GetNodeDiscoveryResults at line 136 of /builds/omniverse/usd-ci/USD/pxr/usd/usdShade/shaderDefUtils.cpp -- Unable to resolve info:sourceAsset </UsdPrimvarReader_float2.info:mdl:sourceAsset> with value @UsdPreviewSurface.mdl@.
+
+2026-09-14 13:13:36 [8,877ms] [Warning] [omni.usd] Warning: in GetNodeDiscoveryResults at line 136 of /builds/omniverse/usd-ci/USD/pxr/usd/usdShade/shaderDefUtils.cpp -- Unable to resolve info:sourceAsset </UsdPrimvarReader_float3.info:mdl:sourceAsset> with value @UsdPreviewSurface.mdl@.
+
+2026-09-14 13:13:36 [8,877ms] [Warning] [omni.usd] Warning: in GetNodeDiscoveryResults at line 136 of /builds/omniverse/usd-ci/USD/pxr/usd/usdShade/shaderDefUtils.cpp -- Unable to resolve info:sourceAsset </UsdPrimvarReader_float4.info:mdl:sourceAsset> with value @UsdPreviewSurface.mdl@.
+
+2026-09-14 13:13:36 [8,878ms] [Warning] [omni.usd] Warning: in GetNodeDiscoveryResults at line 136 of /builds/omniverse/usd-ci/USD/pxr/usd/usdShade/shaderDefUtils.cpp -- Unable to resolve info:sourceAsset </UsdPrimvarReader_int.info:mdl:sourceAsset> with value @UsdPreviewSurface.mdl@.
+
+2026-09-14 13:13:36 [8,878ms] [Warning] [omni.usd] Warning: in GetNodeDiscoveryResults at line 136 of /builds/omniverse/usd-ci/USD/pxr/usd/usdShade/shaderDefUtils.cpp -- Unable to resolve info:sourceAsset </UsdPrimvarReader_string.info:mdl:sourceAsset> with value @UsdPreviewSurface.mdl@.
+
+2026-09-14 13:13:36 [8,878ms] [Warning] [omni.usd] Warning: in GetNodeDiscoveryResults at line 136 of /builds/omniverse/usd-ci/USD/pxr/usd/usdShade/shaderDefUtils.cpp -- Unable to resolve info:sourceAsset </UsdPrimvarReader_normal.info:mdl:sourceAsset> with value @UsdPreviewSurface.mdl@.
+
+2026-09-14 13:13:36 [8,879ms] [Warning] [omni.usd] Warning: in GetNodeDiscoveryResults at line 136 of /builds/omniverse/usd-ci/USD/pxr/usd/usdShade/shaderDefUtils.cpp -- Unable to resolve info:sourceAsset </UsdPrimvarReader_point.info:mdl:sourceAsset> with value @UsdPreviewSurface.mdl@.
+
+2026-09-14 13:13:36 [8,879ms] [Warning] [omni.usd] Warning: in GetNodeDiscoveryResults at line 136 of /builds/omniverse/usd-ci/USD/pxr/usd/usdShade/shaderDefUtils.cpp -- Unable to resolve info:sourceAsset </UsdPrimvarReader_vector.info:mdl:sourceAsset> with value @UsdPreviewSurface.mdl@.
+
+2026-09-14 13:13:36 [8,879ms] [Warning] [omni.usd] Warning: in GetNodeDiscoveryResults at line 136 of /builds/omniverse/usd-ci/USD/pxr/usd/usdShade/shaderDefUtils.cpp -- Unable to resolve info:sourceAsset </UsdPrimvarReader_matrix.info:mdl:sourceAsset> with value @UsdPreviewSurface.mdl@.
+
+2026-09-14 13:13:36 [8,879ms] [Warning] [omni.usd] Warning: in GetNodeDiscoveryResults at line 136 of /builds/omniverse/usd-ci/USD/pxr/usd/usdShade/shaderDefUtils.cpp -- Unable to resolve info:sourceAsset </UsdTransform2d.info:mdl:sourceAsset> with value @UsdPreviewSurface.mdl@.
+
+[INFO]: Time taken for scene creation : 2.890688 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 32
+	Environment spacing   : 2.5
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : ['/World/ground']
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.684066 seconds
+[INFO] Command Manager:  <CommandManager> contains 1 active terms.
++----------------------------------------------+
+|             Active Command Terms             |
++-------+--------+-----------------------------+
+| Index | Name   |             Type            |
++-------+--------+-----------------------------+
+|   0   | motion | MultiReferenceMotionCommand |
++-------+--------+-----------------------------+
+
+[INFO] Event Manager:  <EventManager> contains 2 active terms.
++---------------------------------------+
+| Active Event Terms in Mode: 'startup' |
++---------+-----------------------------+
+|  Index  | Name                        |
++---------+-----------------------------+
+|    0    | physics_material            |
+|    1    | add_joint_default_pos       |
+|    2    | base_com                    |
++---------+-----------------------------+
++----------------------------------------------+
+|    Active Event Terms in Mode: 'interval'    |
++-------+------------+-------------------------+
+| Index | Name       | Interval time range (s) |
++-------+------------+-------------------------+
+|   0   | push_robot |        (1.0, 3.0)       |
++-------+------------+-------------------------+
+
+[INFO] Recorder Manager:  <RecorderManager> contains 0 active terms.
++---------------------+
+| Active Recorder Terms |
++-----------+---------+
+|   Index   | Name    |
++-----------+---------+
++-----------+---------+
+
+[INFO] Action Manager:  <ActionManager> contains 1 active terms.
++------------------------------------+
+|  Active Action Terms (shape: 29)   |
++--------+-------------+-------------+
+| Index  | Name        |   Dimension |
++--------+-------------+-------------+
+|   0    | joint_pos   |          29 |
++--------+-------------+-------------+
+
+[INFO] Observation Manager: <ObservationManager> contains 2 groups.
++-----------------------------------------------------------+
+| Active Observation Terms in Group: 'policy' (shape: (160,)) |
++-----------+-----------------------------------+-----------+
+|   Index   | Name                              |   Shape   |
++-----------+-----------------------------------+-----------+
+|     0     | command                           |   (58,)   |
+|     1     | motion_anchor_pos_b               |    (3,)   |
+|     2     | motion_anchor_ori_b               |    (6,)   |
+|     3     | base_lin_vel                      |    (3,)   |
+|     4     | base_ang_vel                      |    (3,)   |
+|     5     | joint_pos                         |   (29,)   |
+|     6     | joint_vel                         |   (29,)   |
+|     7     | actions                           |   (29,)   |
++-----------+-----------------------------------+-----------+
++-----------------------------------------------------------+
+| Active Observation Terms in Group: 'critic' (shape: (286,)) |
++-----------+-----------------------------------+-----------+
+|   Index   | Name                              |   Shape   |
++-----------+-----------------------------------+-----------+
+|     0     | command                           |   (58,)   |
+|     1     | motion_anchor_pos_b               |    (3,)   |
+|     2     | motion_anchor_ori_b               |    (6,)   |
+|     3     | body_pos                          |   (42,)   |
+|     4     | body_ori                          |   (84,)   |
+|     5     | base_lin_vel                      |    (3,)   |
+|     6     | base_ang_vel                      |    (3,)   |
+|     7     | joint_pos                         |   (29,)   |
+|     8     | joint_vel                         |   (29,)   |
+|     9     | actions                           |   (29,)   |
++-----------+-----------------------------------+-----------+
+
+[INFO] Termination Manager:  <TerminationManager> contains 5 active terms.
++---------------------------------------+
+|        Active Termination Terms       |
++-------+--------------------+----------+
+| Index | Name               | Time Out |
++-------+--------------------+----------+
+|   0   | time_out           |   True   |
+|   1   | anchor_pos         |  False   |
+|   2   | anchor_ori         |  False   |
+|   3   | ee_body_pos        |  False   |
+|   4   | reference_clip_end |   True   |
++-------+--------------------+----------+
+
+[INFO] Reward Manager:  <RewardManager> contains 9 active terms.
++-------------------------------------------+
+|            Active Reward Terms            |
++-------+--------------------------+--------+
+| Index | Name                     | Weight |
++-------+--------------------------+--------+
+|   0   | motion_global_anchor_pos |    0.5 |
+|   1   | motion_global_anchor_ori |    0.5 |
+|   2   | motion_body_pos          |    1.0 |
+|   3   | motion_body_ori          |    1.0 |
+|   4   | motion_body_lin_vel      |    1.0 |
+|   5   | motion_body_ang_vel      |    1.0 |
+|   6   | action_rate_l2           |   -0.1 |
+|   7   | joint_limit              |  -10.0 |
+|   8   | undesired_contacts       |   -0.1 |
++-------+--------------------------+--------+
+
+[INFO] Curriculum Manager:  <CurriculumManager> contains 0 active terms.
++----------------------+
+| Active Curriculum Terms |
++-----------+----------+
+|   Index   | Name     |
++-----------+----------+
++-----------+----------+
+
+[INFO]: Completed setting up the environment...

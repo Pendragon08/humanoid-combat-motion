@@ -1,0 +1,8 @@
+{
+  "steps": 1000,
+  "baseline_validation_loss": 0.0963519960641861,
+  "best_validation_loss": 0.09387247413396835,
+  "independent_test": false,
+  "causal_correctness_verified": false,
+  "robot_utility_verified": false
+}

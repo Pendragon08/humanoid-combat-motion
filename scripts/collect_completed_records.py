@@ -10,9 +10,9 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);a=p.parse_args()
     root=Path(__file__).resolve().parents[1];out=a.output.resolve();out.mkdir(parents=True,exist_ok=True)
     allowed={'metrics.json','evaluation.json','provenance.json','manifest.json','config.json',
-             'TRAINING_COMPLETE.json','EVALUATION_COMPLETE.json','evaluation.log','loss.jsonl'}
+             'TRAINING_COMPLETE.json','EVALUATION_COMPLETE.json','evaluation.log','loss.jsonl','geometry_audit.json','contact_audit.json','smoke.json','source_manifest.json'}
     copied=[]
-    patterns=['timotion_*','g1_tracking_eval_*','dual_g1_*']
+    patterns=['timotion_*','g1_tracking_eval_*','dual_g1_*','actor_reaction_*','kungfu_*','multireference_*']
     for pattern in patterns:
         for run in sorted((root/'runs').glob(pattern)):
             if not run.is_dir():continue
@@ -22,8 +22,8 @@ def main():
                 shutil.copy2(path,dest)
                 copied.append({'origin':str(path.relative_to(root)),'file':str(dest.relative_to(out)),
                                'sha256':hashlib.sha256(path.read_bytes()).hexdigest()})
-    for group in ('interhuman_manifest','interhuman_validated_manifest'):
-        for name in ('summary.json','missing.json','excluded.json'):
+    for group in ('interhuman_manifest','interhuman_validated_manifest','pseudo_contact_events'):
+        for name in ('summary.json','missing.json','excluded.json','events.jsonl'):
             path=root/'records/paired_v1'/group/name
             if path.exists():
                 dest=out/group/name;dest.parent.mkdir(exist_ok=True);shutil.copy2(path,dest)

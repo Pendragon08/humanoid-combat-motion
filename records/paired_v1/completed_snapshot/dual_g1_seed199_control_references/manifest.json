@@ -1,0 +1,18 @@
+{
+  "reference_sha256": "ccfa783e8ece55dcc23b4f197882ae3ede0717b7536acdcbbd46a963ed454598",
+  "records": [
+    {
+      "actor": 0,
+      "x_translation_m": -1.5,
+      "sha256": "c6827f94f20cc29311a83e0f1fe0269d1176a61a7cbc89a2562de302c67763d6"
+    },
+    {
+      "actor": 1,
+      "x_translation_m": 1.5,
+      "sha256": "2c0b17f11e852e20d4ce3af0127a5ee3c40b4491cd035d48610d49fcf12cb45c"
+    }
+  ],
+  "purpose": "non-contact positive-control attempt for dual-policy interface",
+  "combat": false,
+  "independent_demonstrations": false
+}

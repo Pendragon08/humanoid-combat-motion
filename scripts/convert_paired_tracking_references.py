@@ -42,10 +42,11 @@ def main():
     a.output.mkdir(parents=True);records=[]
     for path in sorted(a.input.glob('sample_*.npz')):
         z=np.load(path,allow_pickle=False);q=z['qpos'];fps=float(z['fps'])
-        if q.ndim!=3 or q.shape[1:]!=(2,36):raise ValueError('Expected paired G1 qpos')
+        if q.ndim==2 and q.shape[1]==36:q=q[:,None,:]
+        if q.ndim!=3 or q.shape[1] not in (1,2) or q.shape[2]!=36:raise ValueError('Expected named single/paired G1 qpos')
         joint_indexes=robot.find_joints(list(z['joint_names']),preserve_order=True)[0]
         if len(joint_indexes)!=29:raise ValueError('Incomplete joint mapping')
-        for actor in range(2):
+        for actor in range(q.shape[1]):
             data=torch.tensor(q[:,actor],device=sim.device,dtype=torch.float32)
             if not torch.allclose(data[:,3:7].norm(dim=-1),torch.ones(len(data),device=sim.device),atol=1e-4):raise ValueError('Non-unit quaternion')
             motion=MotionLoader.__new__(MotionLoader)

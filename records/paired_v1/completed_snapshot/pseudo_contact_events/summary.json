@@ -1,0 +1,19 @@
+{
+  "examined": {
+    "train": 922,
+    "val": 82,
+    "test": 142
+  },
+  "counts": {
+    "train_block": 120,
+    "train_hit": 19,
+    "val_hit": 1,
+    "val_block": 9,
+    "test_block": 18,
+    "test_hit": 2
+  },
+  "events": 169,
+  "manifest_sha256": "542abb9f00a9dfaea143df0eb969ef57c0d99c4432a0b6f1a5e99d315c7db2e4",
+  "avoid_events": "not inferred: accurate counterfactual threat labels unavailable",
+  "purpose": "candidate mining for review and conditional-model pilot; not contact/causal ground truth"
+}

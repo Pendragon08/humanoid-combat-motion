@@ -1,0 +1,29 @@
+{
+  "steps": 300,
+  "clip_timeouts": 41,
+  "sample_counts": [
+    45,
+    44,
+    50,
+    44,
+    40,
+    45,
+    39,
+    49,
+    54,
+    50,
+    42,
+    43,
+    55,
+    39,
+    58,
+    46,
+    39,
+    47,
+    59,
+    44
+  ],
+  "boundary_violations": 0,
+  "finite_observations": true,
+  "learned_training": false
+}

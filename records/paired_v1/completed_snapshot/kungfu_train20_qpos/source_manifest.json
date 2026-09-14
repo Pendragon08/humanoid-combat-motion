@@ -1,0 +1,386 @@
+{
+  "records": [
+    {
+      "sample": "sample_000",
+      "source": {
+        "id": "199",
+        "title": "段位制长拳六段单练套路-Scene-007.mp4",
+        "source_group": "段位制长拳六段单练套路",
+        "split": "train",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/199.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/199/199.npz",
+        "bytes": 130972,
+        "sha256": "e4a567058d6a4e4a0b59ea1815ffec02a9dd782cc4615cbf84271f3bdbb86148"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "e9ddc0b337270e02ff1d47d8b5b7673b5d31f5fe9954074ee55388275cd172c3"
+    },
+    {
+      "sample": "sample_001",
+      "source": {
+        "id": "200",
+        "title": "段位制长拳六段单练套路-Scene-005.mp4",
+        "source_group": "段位制长拳六段单练套路",
+        "split": "train",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/200.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/200/200.npz",
+        "bytes": 99580,
+        "sha256": "d0cd845c3a3b61fe22ce7ce865487feabc11d063f613bd2a6e734c7815b2bafe"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "f825aa76dbb496d9c93e7afdfd76e49ad08d9f1494af54fa3e5597c8964e04af"
+    },
+    {
+      "sample": "sample_002",
+      "source": {
+        "id": "201",
+        "title": "段位制长拳六段单练套路-Scene-002.mp4",
+        "source_group": "段位制长拳六段单练套路",
+        "split": "train",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/201.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/201/201.npz",
+        "bytes": 221692,
+        "sha256": "94764f0921068c16b5d370d051c6982ec636f57c11363be66e89abef4b18230a"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "efe063cc19d7f51ed6be3c84120df64303f8fa2be092fa5deffed72eb50fb090"
+    },
+    {
+      "sample": "sample_003",
+      "source": {
+        "id": "202",
+        "title": "段位制长拳六段单练套路-Scene-001.mp4",
+        "source_group": "段位制长拳六段单练套路",
+        "split": "train",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/202.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/202/202.npz",
+        "bytes": 108796,
+        "sha256": "61657f3cfc6c89be36a902fbb8c1c88386d96d80afd92ffcd88ff37f5fc006b3"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "c9268c54170d23b943a0773b4078bf1f8308503742961b0f5c35697d1541056b"
+    },
+    {
+      "sample": "sample_004",
+      "source": {
+        "id": "203",
+        "title": "段位制长拳六段单练套路-Scene-008.mp4",
+        "source_group": "段位制长拳六段单练套路",
+        "split": "train",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/203.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/203/203.npz",
+        "bytes": 167836,
+        "sha256": "216f4b00ff61bd50007dc5a78dfe10e06448a4e6596bd37fe77c5367373a2747"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "48e0c5d40136fc319e25b38ad89d0846931f3027afab2d1baffac518f695ebbb"
+    },
+    {
+      "sample": "sample_005",
+      "source": {
+        "id": "204",
+        "title": "段位制长拳六段单练套路-Scene-006.mp4",
+        "source_group": "段位制长拳六段单练套路",
+        "split": "train",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/204.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/204/204.npz",
+        "bytes": 137596,
+        "sha256": "6053b1d52d402ec49a56bc6a75730d433c1eef4caf7b0f5e72d74d239e4047a0"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "3a903f69aadfdbab69312fca8037e31d1b27c7f7164f333688c4b22ede131571"
+    },
+    {
+      "sample": "sample_006",
+      "source": {
+        "id": "205",
+        "title": "段位制长拳六段单练套路-Scene-003.mp4",
+        "source_group": "段位制长拳六段单练套路",
+        "split": "train",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/205.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/205/205.npz",
+        "bytes": 67900,
+        "sha256": "50cce3fc9a761e88d5e9207737430637624d03e77c1cbcb61bdb771b95d8595c"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "b562a5ded10dfa20a42919781ee8a0793a31b735a9e4339caddae04e4aabbd76"
+    },
+    {
+      "sample": "sample_007",
+      "source": {
+        "id": "206",
+        "title": "段位制长拳六段单练套路-Scene-004.mp4",
+        "source_group": "段位制长拳六段单练套路",
+        "split": "train",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/206.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/206/206.npz",
+        "bytes": 128956,
+        "sha256": "28d5446bf497a586c268fbc7fe3ab5916c5ea47b046eafe2f06715a94ef30830"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "088cd33c9516a14294036d1afc73720736c2757aaedf0fa18e9f8ec29d41914a"
+    },
+    {
+      "sample": "sample_008",
+      "source": {
+        "id": "230",
+        "title": "第一套国际武术竞赛套路-长拳-第三段（动作名称）-Scene-002.mp4",
+        "source_group": "第一套国际武术竞赛套路-长拳-第三段（动作名称）",
+        "split": "train",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/230.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/230/230.npz",
+        "bytes": 124060,
+        "sha256": "67ae9d0512f31cfd8f6ae500477782cad1a3eb025aed2978a2e37917207950ea"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "f6b1104fcec82704e0e6c786c093ca820bb10b9364ce4cc028f84618d6bab6bb"
+    },
+    {
+      "sample": "sample_009",
+      "source": {
+        "id": "231",
+        "title": "第一套国际武术竞赛套路-长拳-第三段（动作名称）-Scene-001.mp4",
+        "source_group": "第一套国际武术竞赛套路-长拳-第三段（动作名称）",
+        "split": "train",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/231.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/231/231.npz",
+        "bytes": 179356,
+        "sha256": "4f4e0a0a146f02c6ddea4156eac70607c42719a122b13dacb011cec62bf8994a"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "41c5d19ce570b3a4ddf437cc501905de6ee8f7693fd6f531755001f03c9ab42e"
+    },
+    {
+      "sample": "sample_010",
+      "source": {
+        "id": "235",
+        "title": "第一套国际武术竞赛套路-南拳-完整版-国一南拳#桂平市竞技武术训练馆#桂平市竞技武术队-Scene-001.mp4",
+        "source_group": "第一套国际武术竞赛套路-南拳-完整版-国一南拳#桂平市竞技武术训练馆#桂平市竞技武术队",
+        "split": "train",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/235.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/235/235.npz",
+        "bytes": 307516,
+        "sha256": "b35bc3d3daa845324974a797e6cd9a25668da94ba1cb20e1db133addf05078c1"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "1c0c6a4507d505f2ca62eea022e2f72b726f89dbc0424342714c8b3a3b08a838"
+    },
+    {
+      "sample": "sample_011",
+      "source": {
+        "id": "237",
+        "title": "第一套国际武术竞赛套路-南拳-完整版-国一南拳#桂平市竞技武术训练馆#桂平市竞技武术队-Scene-006.mp4",
+        "source_group": "第一套国际武术竞赛套路-南拳-完整版-国一南拳#桂平市竞技武术训练馆#桂平市竞技武术队",
+        "split": "train",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/237.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/237/237.npz",
+        "bytes": 109372,
+        "sha256": "fefb48722bef3985918ffdbde5effbfb9683673e19778111726f769448c09c36"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "22ae8d15a3c4a62925b7320014e389a2e578435ff610f6b698e468a08a63bc46"
+    },
+    {
+      "sample": "sample_012",
+      "source": {
+        "id": "240",
+        "title": "第一套国际武术竞赛套路-南拳-完整版-国一南拳#桂平市竞技武术训练馆#桂平市竞技武术队-Scene-008.mp4",
+        "source_group": "第一套国际武术竞赛套路-南拳-完整版-国一南拳#桂平市竞技武术训练馆#桂平市竞技武术队",
+        "split": "train",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/240.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/240/240.npz",
+        "bytes": 95836,
+        "sha256": "52041cb70c1a7f4ad481b59456926f90012c190ecfbd9287ffe73bd4fd62a72e"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "af7071793e66f525d61a62ce926d4ef82065065108542168cfbb0c8e25a50fe5"
+    },
+    {
+      "sample": "sample_013",
+      "source": {
+        "id": "242",
+        "title": "第一套国际武术竞赛套路-南拳-完整版-国一南拳#桂平市竞技武术训练馆#桂平市竞技武术队-Scene-005.mp4",
+        "source_group": "第一套国际武术竞赛套路-南拳-完整版-国一南拳#桂平市竞技武术训练馆#桂平市竞技武术队",
+        "split": "train",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/242.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/242/242.npz",
+        "bytes": 72796,
+        "sha256": "3d8e5c78779b02d76efd27bad5f69752649cade7e84f207bba344b4021382a82"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "69764bd9ec278f3611ca0fe66f2841850879b89fba6fca80ebba39ab530b321a"
+    },
+    {
+      "sample": "sample_014",
+      "source": {
+        "id": "292",
+        "title": "太极拳-Scene-001.mp4",
+        "source_group": "太极拳",
+        "split": "train",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/292.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/292/292.npz",
+        "bytes": 628060,
+        "sha256": "af5577900957080bb15cecccfece7c20391f433885d1301d0f9638f572aad519"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "b89a292e987fbd12aa31398f1e9ee6977e388cb134334a1b6a035f22498344fd"
+    },
+    {
+      "sample": "sample_015",
+      "source": {
+        "id": "332",
+        "title": "42式太极拳-第三段 #桂平市竞技武术训练馆 #桂平市竞技武术队-Scene-002.mp4",
+        "source_group": "42式太极拳-第三段 #桂平市竞技武术训练馆 #桂平市竞技武术队",
+        "split": "train",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/332.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/332/332.npz",
+        "bytes": 646492,
+        "sha256": "cbccd8b3eaa0255e2388ad5a939b7e8542e0b3c648a74ce6fa9b0681fade98f8"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "30bd5a90a324b200e50ddc5c7be6de0a3d2e46af7c38093e6ff9943069825dc3"
+    },
+    {
+      "sample": "sample_016",
+      "source": {
+        "id": "333",
+        "title": "42式太极拳-第三段 #桂平市竞技武术训练馆 #桂平市竞技武术队-Scene-001.mp4",
+        "source_group": "42式太极拳-第三段 #桂平市竞技武术训练馆 #桂平市竞技武术队",
+        "split": "train",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/333.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/333/333.npz",
+        "bytes": 236380,
+        "sha256": "1b95182cebd1c5870a7610c45cf36ec6272a34faa51b1b9c72022ac38d05f8a3"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "3f6b5b2a0e6ab70bb5ae807c40329837b28e749d025010d039106b23d1edfbf7"
+    },
+    {
+      "sample": "sample_017",
+      "source": {
+        "id": "481",
+        "title": "42式太极拳-第二段 #桂平市竞技武术训练馆 #桂平市竞技武术队-Scene-001.mp4",
+        "source_group": "42式太极拳-第二段 #桂平市竞技武术训练馆 #桂平市竞技武术队",
+        "split": "train",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/481.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/481/481.npz",
+        "bytes": 484636,
+        "sha256": "296cde1760623df032908aaa2e8a46d2c550b8036e26571575f0654e56cfd187"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "6032480978fed488beeeb02f94c290011f32c47f783a6d77f8b1ef04ea47f906"
+    },
+    {
+      "sample": "sample_018",
+      "source": {
+        "id": "482",
+        "title": "42式太极拳-第二段 #桂平市竞技武术训练馆 #桂平市竞技武术队-Scene-002.mp4",
+        "source_group": "42式太极拳-第二段 #桂平市竞技武术训练馆 #桂平市竞技武术队",
+        "split": "train",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/482.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/482/482.npz",
+        "bytes": 738940,
+        "sha256": "6a8ee87643e06df3c206c729906a20bfb41ef3e7569a4cb65f8ad93c74e49b79"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "c3a230d8ecccd85901d6330f06e4831cf687efab40ed09609045c8ac69882758"
+    },
+    {
+      "sample": "sample_019",
+      "source": {
+        "id": "497",
+        "title": "第一套国际武术竞赛套路长拳-第一段（动作名称）-Scene-001.mp4",
+        "source_group": "第一套国际武术竞赛套路长拳-第一段（动作名称）",
+        "split": "train",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/497.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/497/497.npz",
+        "bytes": 406876,
+        "sha256": "1e9f89dbb7beeddea340a09b8d2d35d59f6853bd7c21750b94a0a13ae24b89d8"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "7c5ffa7947faa02a7763be9e0f6d533bc7020913f72a4cfb277b1c98c297f8f7"
+    }
+  ],
+  "selection": "sorted numeric source ID, prefix crop, no outcome selection",
+  "split": "train"
+}

@@ -72,12 +72,12 @@ def main():
         term=copy.deepcopy(getattr(cfg.terminations,name));term.params['command_name']='opponent'
         if 'asset_cfg' in term.params:term.params['asset_cfg']=SceneEntityCfg('opponent')
         setattr(cfg.terminations,'opponent_'+name,term)
-    sensor_names=[]
+    sensor_names=[];contact_targets=['torso_link','left_elbow_link','right_elbow_link']
     for actor,robot,other in [(0,'Robot','Opponent'),(1,'Opponent','Robot')]:
         for side in ('left','right'):
             name=f'pair_contact_{actor}_{side}';sensor_names.append(name)
             setattr(cfg.scene,name,ContactSensorCfg(prim_path=f'{{ENV_REGEX_NS}}/{robot}/{side}_wrist_yaw_link',
-                filter_prim_paths_expr=[f'{{ENV_REGEX_NS}}/{other}/torso_link'],history_length=1,update_period=0.))
+                filter_prim_paths_expr=[f'{{ENV_REGEX_NS}}/{other}/{target}' for target in contact_targets],history_length=1,update_period=0.))
     wrapped=gym.make('Tracking-Flat-G1-v0',cfg=cfg);env=wrapped.unwrapped
     try:
         obs,_=env.reset()
@@ -95,7 +95,7 @@ def main():
         if any(abs(float(np.asarray(cmd.motion.fps).item())-1/env.step_dt)>1e-3 for cmd in commands):raise ValueError('FPS mismatch')
         horizon=counts[0]-2;alive=torch.ones(a.num_envs,dtype=torch.bool,device=a.device)
         failure=torch.full((a.num_envs,),horizon,device=a.device,dtype=torch.long)
-        poses=[];forces=[];masks=[];errors=[];failure_reasons={}
+        poses=[];forces=[];target_forces=[];masks=[];errors=[];failure_reasons={}
         original_compute=env.termination_manager.compute
         def audit_termination():
             result=original_compute()
@@ -112,28 +112,34 @@ def main():
                     err.append((robot.data.joint_pos-cmd.joint_pos).abs().mean(-1))
                 poses.append(torch.stack(pair,dim=1).cpu().numpy());masks.append(alive.cpu().numpy().copy())
                 errors.append(torch.stack(err,dim=1).cpu().numpy())
-                contact=[]
+                contact=[];by_target=[]
                 for name in sensor_names:
                     matrix=env.scene[name].data.force_matrix_w
                     if matrix is None:raise RuntimeError('Filtered physical contact forces unavailable')
-                    contact.append(torch.linalg.vector_norm(matrix,dim=-1).flatten(1).sum(-1))
+                    magnitude=torch.linalg.vector_norm(matrix,dim=-1).sum(1)
+                    if magnitude.shape[1]!=len(contact_targets):raise RuntimeError('Unexpected contact target ordering')
+                    by_target.append(magnitude);contact.append(magnitude[:,0])
                 forces.append(torch.stack(contact,dim=-1).cpu().numpy())
+                target_forces.append(torch.stack(by_target,dim=1).cpu().numpy())
                 action=torch.cat([policy(obs['policy']),policy(obs['opponent_policy'])],dim=-1)
                 obs,reward,terminated,truncated,extra=env.step(action)
                 done=terminated|truncated;new=alive&done;failure[new]=t+1;alive&=~done
                 if not alive.any():break
         a.output.mkdir(parents=True)
         np.savez_compressed(a.output/'rollout.npz',qpos=np.asarray(poses),alive=np.asarray(masks),
-            wrist_torso_contact_force_n=np.asarray(forces),joint_error_rad=np.asarray(errors),fps=1/env.step_dt,
+            wrist_torso_contact_force_n=np.asarray(forces),wrist_target_contact_force_n=np.asarray(target_forces),
+            contact_target_names=np.array(contact_targets),joint_error_rad=np.asarray(errors),fps=1/env.step_dt,
             joint_names=np.asarray(commands[0].robot.joint_names))
         result={'robots_per_environment':2,'environments':a.num_envs,'learned_tracking':True,
             'physics_simulator':'Isaac Sim 4.5 / Isaac Lab 2.1','nominal_reset':True,
             'checkpoint_sha256':hashlib.sha256(checkpoint.read_bytes()).hexdigest(),
             'reference_sha256':[hashlib.sha256(ref.read_bytes()).hexdigest() for ref in refs],
             'completion_fraction':float(alive.float().mean()),'first_failure_steps':failure.cpu().tolist(),
-            'horizon_steps':horizon,'recorded_steps':len(poses),'termination_counts':failure_reasons,
-            'maximum_recorded_wrist_torso_force_n':float(np.max(forces)),
-            'contact_scope':'four directed wrist-body / opponent-torso physical force sensors only; not full collision audit',
+            'horizon_steps':horizon,'control_dt':env.step_dt,'recorded_steps':len(poses),'termination_counts':failure_reasons,
+            'maximum_recorded_wrist_torso_force_n':float(np.asarray(forces)[np.asarray(masks)].max()),
+            'maximum_recorded_wrist_forearm_force_n':float(np.asarray(target_forces)[np.asarray(masks)][:,:,1:].max()),
+            'contact_scope':'four wrists against opponent torso and both elbow/forearm links; forces before each step and before first pair failure; no full-body collision audit',
+            'contact_protocol_version':2,
             'critic_training_labels_approved':False,
             'claim':'two-robot frozen-controller diagnostic; single-seed controller coverage confounds feasibility'}
         (a.output/'metrics.json').write_text(json.dumps(result,indent=2));print('DUAL_G1_EVALUATION '+json.dumps(result),flush=True)
@@ -141,5 +147,9 @@ def main():
 
 
 try:main()
+except BaseException:
+    import traceback
+    traceback.print_exc();print('DUAL_G1_FAILED',flush=True)
+    raise
 finally:
     SimulationContext.clear_instance();app.close(wait_for_replicator=False)

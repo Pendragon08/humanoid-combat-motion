@@ -1,0 +1,309 @@
+{
+  "cases": [
+    {
+      "source": "interhuman_1185",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        11,
+        20
+      ]
+    },
+    {
+      "source": "interhuman_1193",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        10,
+        20
+      ]
+    },
+    {
+      "source": "interhuman_1281",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        11,
+        21
+      ]
+    },
+    {
+      "source": "interhuman_1302",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        10,
+        20
+      ]
+    },
+    {
+      "source": "interhuman_1304",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        11,
+        20
+      ]
+    },
+    {
+      "source": "interhuman_1368",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        11,
+        20
+      ]
+    },
+    {
+      "source": "interhuman_1377",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        11,
+        20
+      ]
+    },
+    {
+      "source": "interhuman_1382",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        11,
+        21
+      ]
+    },
+    {
+      "source": "interhuman_1434",
+      "evaluated": false,
+      "reason": "Unmapped human contact joint",
+      "joints": [
+        9,
+        11,
+        21
+      ]
+    },
+    {
+      "source": "interhuman_1573",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.01083855100349465,
+        "min_swept_surface_gap_m": 0.01083855100349465,
+        "penetration": false,
+        "first_contact_frame": 57,
+        "first_contact_time_s": 1.9,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1579",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": -0.0008051812331011654,
+        "min_swept_surface_gap_m": -0.0008051812331011654,
+        "penetration": false,
+        "first_contact_frame": 9,
+        "first_contact_time_s": 0.3,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_185",
+      "evaluated": true,
+      "contact": {
+        "kind": "hit",
+        "success": false,
+        "min_surface_gap_m": 0.13189571297616845,
+        "min_swept_surface_gap_m": 0.13189571297616845,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.5,
+        "provenance": "automatic_sphere_geometry_and_weak_text_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1880",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.23737118066665935,
+        "min_swept_surface_gap_m": 0.2370294528154313,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1885",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.027747938631529308,
+        "min_swept_surface_gap_m": 0.027747938631529308,
+        "penetration": false,
+        "first_contact_frame": 28,
+        "first_contact_time_s": 0.9333333333333333,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_1888",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.10744453157799187,
+        "min_swept_surface_gap_m": 0.10744453157799187,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_3017",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.002179160382730652,
+        "min_swept_surface_gap_m": 0.002179160382730652,
+        "penetration": false,
+        "first_contact_frame": 59,
+        "first_contact_time_s": 1.9666666666666666,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_3032",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.06895356354932156,
+        "min_swept_surface_gap_m": 0.06895356354932156,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_3061",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.2444928160080268,
+        "min_swept_surface_gap_m": 0.2444928160080268,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_3588",
+      "evaluated": true,
+      "contact": {
+        "kind": "hit",
+        "success": false,
+        "min_surface_gap_m": 0.1482409855588446,
+        "min_swept_surface_gap_m": 0.1482409855588446,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.5,
+        "provenance": "automatic_sphere_geometry_and_weak_text_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    },
+    {
+      "source": "interhuman_3599",
+      "evaluated": true,
+      "contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.24351032026938835,
+        "min_swept_surface_gap_m": 0.24351032026938835,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      }
+    }
+  ],
+  "mapped_cases": 11,
+  "proxy_success_fraction": 0.36363636363636365,
+  "mapping": {
+    "0": "pelvis",
+    "4": "left_knee_link",
+    "5": "right_knee_link",
+    "7": "left_ankle_roll_link",
+    "8": "right_ankle_roll_link",
+    "9": "torso_link",
+    "18": "left_elbow_link",
+    "19": "right_elbow_link",
+    "20": "left_wrist_yaw_link",
+    "21": "right_wrist_yaw_link"
+  },
+  "scale": 0.75,
+  "physics_verified": false,
+  "scope": "human sphere radii scaled to robot links; tests geometric preservation, not robot collision meshes or contact forces"
+}

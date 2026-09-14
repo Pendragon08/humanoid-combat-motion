@@ -1,0 +1,101 @@
+{
+  "g1_tracking_eval_iter1098_primed": {
+    "completion_fraction": 0.0,
+    "horizon_steps": 117,
+    "mean_alive_error": {
+      "joint_mae_rad": 0.3411858472054315,
+      "root_error_m": 0.13146836884175003,
+      "anchor_error_m": 0.13215567080251125,
+      "body_error_m": 0.17174043819330553,
+      "reward": 0.03410525589148404
+    }
+  },
+  "g1_tracking_eval_iter2000_primed": {
+    "completion_fraction": 0.59375,
+    "horizon_steps": 117,
+    "mean_alive_error": {
+      "joint_mae_rad": 0.2543586774773657,
+      "root_error_m": 0.462114063799966,
+      "anchor_error_m": 0.4613990971588324,
+      "body_error_m": 0.47864603879328566,
+      "reward": 0.0374074993744015
+    }
+  },
+  "g1_tracking_eval_iter3097_primed": {
+    "completion_fraction": 0.9375,
+    "horizon_steps": 117,
+    "mean_alive_error": {
+      "joint_mae_rad": 0.2039688510318247,
+      "root_error_m": 0.42563977219495924,
+      "anchor_error_m": 0.42603687748934355,
+      "body_error_m": 0.4391819228319904,
+      "aligned_body_error_m": 0.08114962950828461,
+      "reward": 0.05067183098604857
+    },
+    "strict_tracking_pass_fraction": 0.0
+  },
+  "g1_tracking_eval_iter99_primed": {
+    "completion_fraction": 0.0,
+    "horizon_steps": 117,
+    "mean_alive_error": {
+      "joint_mae_rad": 0.18443685896853182,
+      "root_error_m": 0.04605773661998992,
+      "anchor_error_m": 0.0464977761532398,
+      "body_error_m": 0.08013661448837173,
+      "reward": 0.032240342797962486
+    }
+  },
+  "actor_reaction_history_test_seed123": {
+    "history_only": true,
+    "arms": {
+      "inpainting_only": {
+        "contact_success": 0.05,
+        "defender_position_rmse_m": 0.780896107852459
+      },
+      "actor_conditioned": {
+        "contact_success": 0.0,
+        "defender_position_rmse_m": 0.757215678691864
+      }
+    },
+    "cases": 20
+  },
+  "actor_reaction_kinematic_contact_seed123": {
+    "method": "kinematic contact optimization with per-frame source bone lengths and fixed actor0",
+    "status": "exploratory post-hoc diagnostic; not preregistered confirmatory test",
+    "contact_success_fraction": 0.1,
+    "maximum_bone_change_m": 1.341104507446289e-07,
+    "cases": 20
+  },
+  "actor_reaction_kinematic_interior_contact_seed123": {
+    "method": "kinematic contact optimization with per-frame source bone lengths and fixed actor0",
+    "status": "exploratory post-hoc diagnostic; not preregistered confirmatory test",
+    "contact_success_fraction": 0.95,
+    "maximum_bone_change_m": 1.341104507446289e-07,
+    "optimization_surface_gap_target_m": 0.0,
+    "cases": 20
+  },
+  "actor_reaction_projected_contact_seed123": {
+    "method": "projected contact optimization with per-frame source bone lengths and fixed actor0",
+    "status": "exploratory post-hoc diagnostic; not preregistered confirmatory test",
+    "contact_success_fraction": 0.05,
+    "maximum_bone_change_m": 1.1920928955078125e-07,
+    "cases": 20
+  },
+  "actor_reaction_test_seed123": {
+    "arms": {
+      "inpainting_only": {
+        "contact_success": 0.0,
+        "defender_position_rmse_m": 0.662473501265049
+      },
+      "actor_conditioned": {
+        "contact_success": 0.0,
+        "defender_position_rmse_m": 0.6616696253418922
+      },
+      "actor_conditioned_contact": {
+        "contact_success": 0.6,
+        "defender_position_rmse_m": 0.6606299944221974
+      }
+    },
+    "cases": 20
+  }
+}

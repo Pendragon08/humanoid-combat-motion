@@ -1,0 +1,223 @@
+{
+  "cases": [
+    {
+      "source": "interhuman_1185",
+      "max_bone_length_change_m": 0.16737370193004608,
+      "p95_bone_length_change_m": 0.0017990587279200568,
+      "max_defender_joint_speed_m_s": 9.63552474975586,
+      "known_actor_max_displacement_m": 0.0,
+      "min_defender_joint_height_m": 0.06022627279162407,
+      "proxy_contact_success": false,
+      "contact_and_bone_change_below_2cm": false
+    },
+    {
+      "source": "interhuman_1193",
+      "max_bone_length_change_m": 0.10797472298145294,
+      "p95_bone_length_change_m": 0.0017262782901525514,
+      "max_defender_joint_speed_m_s": 7.454061031341553,
+      "known_actor_max_displacement_m": 0.0,
+      "min_defender_joint_height_m": 0.03686487302184105,
+      "proxy_contact_success": false,
+      "contact_and_bone_change_below_2cm": false
+    },
+    {
+      "source": "interhuman_1281",
+      "max_bone_length_change_m": 0.11610792577266693,
+      "p95_bone_length_change_m": 0.001768048107624054,
+      "max_defender_joint_speed_m_s": 7.134124755859375,
+      "known_actor_max_displacement_m": 0.0,
+      "min_defender_joint_height_m": 0.01725950464606285,
+      "proxy_contact_success": true,
+      "contact_and_bone_change_below_2cm": false
+    },
+    {
+      "source": "interhuman_1302",
+      "max_bone_length_change_m": 0.15364448726177216,
+      "p95_bone_length_change_m": 0.0018667206168174752,
+      "max_defender_joint_speed_m_s": 8.311037063598633,
+      "known_actor_max_displacement_m": 0.0,
+      "min_defender_joint_height_m": 0.06474992632865906,
+      "proxy_contact_success": false,
+      "contact_and_bone_change_below_2cm": false
+    },
+    {
+      "source": "interhuman_1304",
+      "max_bone_length_change_m": 0.14080685377120972,
+      "p95_bone_length_change_m": 0.0019739348441362397,
+      "max_defender_joint_speed_m_s": 7.584252834320068,
+      "known_actor_max_displacement_m": 0.0,
+      "min_defender_joint_height_m": 0.07248648256063461,
+      "proxy_contact_success": false,
+      "contact_and_bone_change_below_2cm": false
+    },
+    {
+      "source": "interhuman_1368",
+      "max_bone_length_change_m": 0.20359879732131958,
+      "p95_bone_length_change_m": 0.002592391148209572,
+      "max_defender_joint_speed_m_s": 12.018268585205078,
+      "known_actor_max_displacement_m": 0.0,
+      "min_defender_joint_height_m": 0.053201861679553986,
+      "proxy_contact_success": false,
+      "contact_and_bone_change_below_2cm": false
+    },
+    {
+      "source": "interhuman_1377",
+      "max_bone_length_change_m": 0.148442342877388,
+      "p95_bone_length_change_m": 0.001680265367031099,
+      "max_defender_joint_speed_m_s": 8.580376625061035,
+      "known_actor_max_displacement_m": 0.0,
+      "min_defender_joint_height_m": 0.013381225988268852,
+      "proxy_contact_success": true,
+      "contact_and_bone_change_below_2cm": false
+    },
+    {
+      "source": "interhuman_1382",
+      "max_bone_length_change_m": 0.1282651722431183,
+      "p95_bone_length_change_m": 0.0017094030976295485,
+      "max_defender_joint_speed_m_s": 7.957005977630615,
+      "known_actor_max_displacement_m": 0.0,
+      "min_defender_joint_height_m": 0.021217113360762596,
+      "proxy_contact_success": true,
+      "contact_and_bone_change_below_2cm": false
+    },
+    {
+      "source": "interhuman_1434",
+      "max_bone_length_change_m": 0.012172788381576538,
+      "p95_bone_length_change_m": 0.001599867269396784,
+      "max_defender_joint_speed_m_s": 7.158034324645996,
+      "known_actor_max_displacement_m": 0.0,
+      "min_defender_joint_height_m": 0.0541386678814888,
+      "proxy_contact_success": true,
+      "contact_and_bone_change_below_2cm": true
+    },
+    {
+      "source": "interhuman_1573",
+      "max_bone_length_change_m": 0.03808054327964783,
+      "p95_bone_length_change_m": 0.001659844815731049,
+      "max_defender_joint_speed_m_s": 3.690563917160034,
+      "known_actor_max_displacement_m": 0.0,
+      "min_defender_joint_height_m": 0.016912130638957024,
+      "proxy_contact_success": false,
+      "contact_and_bone_change_below_2cm": false
+    },
+    {
+      "source": "interhuman_1579",
+      "max_bone_length_change_m": 0.029780402779579163,
+      "p95_bone_length_change_m": 0.0033026732504367767,
+      "max_defender_joint_speed_m_s": 4.139340877532959,
+      "known_actor_max_displacement_m": 0.0,
+      "min_defender_joint_height_m": 0.017585061490535736,
+      "proxy_contact_success": false,
+      "contact_and_bone_change_below_2cm": false
+    },
+    {
+      "source": "interhuman_185",
+      "max_bone_length_change_m": 0.04189739376306534,
+      "p95_bone_length_change_m": 0.001450616493821146,
+      "max_defender_joint_speed_m_s": 4.782400608062744,
+      "known_actor_max_displacement_m": 0.0,
+      "min_defender_joint_height_m": 0.025682358071208,
+      "proxy_contact_success": true,
+      "contact_and_bone_change_below_2cm": false
+    },
+    {
+      "source": "interhuman_1880",
+      "max_bone_length_change_m": 0.0838550329208374,
+      "p95_bone_length_change_m": 0.0018196869641542437,
+      "max_defender_joint_speed_m_s": 5.360346794128418,
+      "known_actor_max_displacement_m": 0.0,
+      "min_defender_joint_height_m": 0.055362459272146225,
+      "proxy_contact_success": true,
+      "contact_and_bone_change_below_2cm": false
+    },
+    {
+      "source": "interhuman_1885",
+      "max_bone_length_change_m": 0.020662367343902588,
+      "p95_bone_length_change_m": 0.0028213880956172925,
+      "max_defender_joint_speed_m_s": 3.6091670989990234,
+      "known_actor_max_displacement_m": 0.0,
+      "min_defender_joint_height_m": 0.009423055686056614,
+      "proxy_contact_success": true,
+      "contact_and_bone_change_below_2cm": false
+    },
+    {
+      "source": "interhuman_1888",
+      "max_bone_length_change_m": 0.009402066469192505,
+      "p95_bone_length_change_m": 0.0005879849195480347,
+      "max_defender_joint_speed_m_s": 7.177265167236328,
+      "known_actor_max_displacement_m": 0.0,
+      "min_defender_joint_height_m": 0.010721681639552116,
+      "proxy_contact_success": true,
+      "contact_and_bone_change_below_2cm": true
+    },
+    {
+      "source": "interhuman_3017",
+      "max_bone_length_change_m": 0.04396328330039978,
+      "p95_bone_length_change_m": 0.0016377270221710216,
+      "max_defender_joint_speed_m_s": 5.297474384307861,
+      "known_actor_max_displacement_m": 0.0,
+      "min_defender_joint_height_m": 0.011676856316626072,
+      "proxy_contact_success": true,
+      "contact_and_bone_change_below_2cm": false
+    },
+    {
+      "source": "interhuman_3032",
+      "max_bone_length_change_m": 0.015074849128723145,
+      "p95_bone_length_change_m": 0.0012756362557411196,
+      "max_defender_joint_speed_m_s": 6.389523506164551,
+      "known_actor_max_displacement_m": 0.0,
+      "min_defender_joint_height_m": 0.011350294575095177,
+      "proxy_contact_success": true,
+      "contact_and_bone_change_below_2cm": true
+    },
+    {
+      "source": "interhuman_3061",
+      "max_bone_length_change_m": 0.030498072504997253,
+      "p95_bone_length_change_m": 0.0016727525740861907,
+      "max_defender_joint_speed_m_s": 4.961545467376709,
+      "known_actor_max_displacement_m": 0.0,
+      "min_defender_joint_height_m": 0.007858610711991787,
+      "proxy_contact_success": true,
+      "contact_and_bone_change_below_2cm": false
+    },
+    {
+      "source": "interhuman_3588",
+      "max_bone_length_change_m": 0.02595403417944908,
+      "p95_bone_length_change_m": 0.00038343146443366974,
+      "max_defender_joint_speed_m_s": 3.6929173469543457,
+      "known_actor_max_displacement_m": 0.0,
+      "min_defender_joint_height_m": 0.010317941196262836,
+      "proxy_contact_success": true,
+      "contact_and_bone_change_below_2cm": false
+    },
+    {
+      "source": "interhuman_3599",
+      "max_bone_length_change_m": 0.17957699298858643,
+      "p95_bone_length_change_m": 0.0019107244908809669,
+      "max_defender_joint_speed_m_s": 9.23986530303955,
+      "known_actor_max_displacement_m": 0.0,
+      "min_defender_joint_height_m": 0.017270905897021294,
+      "proxy_contact_success": false,
+      "contact_and_bone_change_below_2cm": false
+    }
+  ],
+  "summary": {
+    "inpainting_only": {
+      "proxy_contact_success_fraction": 0.0,
+      "defender_position_rmse_m": 0.662473501265049
+    },
+    "actor_conditioned": {
+      "proxy_contact_success_fraction": 0.0,
+      "defender_position_rmse_m": 0.6616696253418922
+    },
+    "actor_conditioned_contact": {
+      "proxy_contact_success_fraction": 0.6,
+      "defender_position_rmse_m": 0.6606299944221974
+    }
+  },
+  "strict_contact_and_bone_fraction": 0.15,
+  "maximum_bone_change_m": 0.20359879732131958,
+  "bone_tolerance": "2cm is a declared research screening threshold, not a robot specification",
+  "physics_validated": false,
+  "caveat": "Optimized geometric contact alone can be achieved by deforming bones; this check detects that failure."
+}

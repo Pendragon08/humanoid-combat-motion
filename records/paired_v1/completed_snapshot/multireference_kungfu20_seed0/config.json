@@ -1,0 +1,33 @@
+{
+  "seed": 0,
+  "environments": 512,
+  "iterations": 1000,
+  "bundle_sha256": "33ab3ed716c7b367404c40a86d6f7c39469439f7d024b8bc393b0c0f61e99193",
+  "clip_ids": [
+    "sample_000",
+    "sample_001",
+    "sample_002",
+    "sample_003",
+    "sample_004",
+    "sample_005",
+    "sample_006",
+    "sample_007",
+    "sample_008",
+    "sample_009",
+    "sample_010",
+    "sample_011",
+    "sample_012",
+    "sample_013",
+    "sample_014",
+    "sample_015",
+    "sample_016",
+    "sample_017",
+    "sample_018",
+    "sample_019"
+  ],
+  "initial_checkpoint_sha256": null,
+  "sampling": "uniform clip, uniform valid frame; explicit clip timeout; no interpolation across clips",
+  "algorithm": "upstream RSL-RL PPO, original BeyondMimic observations/rewards",
+  "world_position_control": false,
+  "evaluation_not_training": false
+}

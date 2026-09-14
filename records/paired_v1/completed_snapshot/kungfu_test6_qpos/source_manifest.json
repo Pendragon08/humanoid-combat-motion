@@ -1,0 +1,82 @@
+{
+  "records": [
+    {
+      "sample": "sample_000",
+      "source": {
+        "id": "1315",
+        "title": "段位制长拳三段单练套路-Scene-003.mp4",
+        "source_group": "段位制长拳三段单练套路",
+        "split": "test",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/1315.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/1315/1315.npz",
+        "bytes": 481180,
+        "sha256": "2f68388cf3e1aff1ded9fa0199bf1b4b8816fcb977b776c5ea1eec91a5e5a3bd"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "2e50fd537ab440059c3e1a6806649e207fdddbca25d10312cf27494310f8579f"
+    },
+    {
+      "sample": "sample_001",
+      "source": {
+        "id": "1316",
+        "title": "段位制长拳三段单练套路-Scene-004.mp4",
+        "source_group": "段位制长拳三段单练套路",
+        "split": "test",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/1316.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/1316/1316.npz",
+        "bytes": 105052,
+        "sha256": "9897a4df768b781c069cf8c7cc7bb3f7f9a36aba9ed16cc6e30191b604e66ae9"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "52d375220a46dc82187d56c56b0f2343df4af4b4f55a8a2a556bc4a1a37d546e"
+    },
+    {
+      "sample": "sample_002",
+      "source": {
+        "id": "1317",
+        "title": "段位制长拳三段单练套路-Scene-001.mp4",
+        "source_group": "段位制长拳三段单练套路",
+        "split": "test",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/1317.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/1317/1317.npz",
+        "bytes": 553180,
+        "sha256": "a32e1e5b4797e11507171ad2e57706ab383a29e444a0a6909421fa744dc5aec2"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "600245c78b3204e29cd3ee5f20bcd423d44110cf79be4ed45e1fd683f9553877"
+    },
+    {
+      "sample": "sample_003",
+      "source": {
+        "id": "1318",
+        "title": "段位制长拳三段单练套路-Scene-002.mp4",
+        "source_group": "段位制长拳三段单练套路",
+        "split": "test",
+        "kind": "video_reconstructed_and_GMR_retargeted",
+        "paired": false,
+        "path": "data/raw/1318.npz",
+        "url": "https://huggingface.co/datasets/LuluCao/KungfuAthleteBot/resolve/ff09f3795dc99bef73b21413b03fa8470917a22c/kungfu_athlete_for_g1_29dof/datasets/org_smooth/ground_smoothed/1318/1318.npz",
+        "bytes": 128380,
+        "sha256": "c9588c841065d7d6d6877b8e2a9174969a1c64cfe966b6de2433bcd948fe099e"
+      },
+      "frames": 150,
+      "start": 0,
+      "quaternion_normalized": true,
+      "sha256": "7cece4fc62fc23617a48aa1d04248b07563cfc881eb1d8ef2489696f5d63f0ac"
+    }
+  ],
+  "selection": "sorted numeric source ID, prefix crop, no outcome selection",
+  "split": "test"
+}

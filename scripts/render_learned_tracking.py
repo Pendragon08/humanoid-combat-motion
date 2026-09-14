@@ -12,6 +12,8 @@ from scripts.render_results import panel
 def main():
     p=argparse.ArgumentParser();p.add_argument('--early',type=Path,required=True)
     p.add_argument('--extended',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
+    p.add_argument('--early-label',default='PPO: 100 ITERATIONS')
+    p.add_argument('--extended-label',default='PPO: 1000 MORE ITERATIONS')
     a=p.parse_args()
     if a.output.exists():raise FileExistsError(a.output)
     z=[np.load(x/'rollout_env0.npz',allow_pickle=False) for x in [a.early,a.extended]]
@@ -34,12 +36,13 @@ def main():
                     mujoco.mj_forward(m,d)
                     camera.lookat[:]=[z[0]['reference_qpos'][0,0],z[0]['reference_qpos'][0,1],.7]
                     renderer.update_scene(d,camera)
-                    title=['REFERENCE REPLAY','PPO: 100 ITERATIONS','PPO: 1000 MORE ITERATIONS'][col]
+                    title=['REFERENCE REPLAY',a.early_label,a.extended_label][col]
                     status='FAILED: frame frozen' if actual and t>=alive_lengths[j] else f't={t/fps:.2f}s | 4x slow'
                     images.append(panel(renderer.render(),title,status+' | recorded Isaac trajectory' if actual else status))
                 frame=np.concatenate(images,axis=1);writer.append_data(frame)
                 if t==min(18,length-1):imageio.imwrite(a.output/'learned_tracking_preview.png',frame)
     (a.output/'provenance.json').write_text(json.dumps({'source_evaluations':[str(a.early),str(a.extended)],
+        'labels':[a.early_label,a.extended_label],
         'selection':'environment 0, predetermined; no success selection','alive_frames':alive_lengths,
         'completion_fraction':[x['completion_fraction'] for x in metrics],
         'rendering':'MuJoCo forward-kinematic visualization of Isaac states, not cross-simulator control',

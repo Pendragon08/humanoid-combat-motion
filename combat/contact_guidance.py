@@ -31,8 +31,9 @@ def contact_objective(x, radii, events, tolerance=.03, penetration_tolerance=.02
     return torch.stack(terms).mean() if terms else x.sum()*0
 
 
-def refine_contacts(positions,radii,fps,events,edges,steps=80,lr=.01,device='cpu'):
+def refine_contacts(positions,radii,fps,events,edges,steps=80,lr=.01,device='cpu',fixed_actor=None,hard_bone_projection=False):
     positions,radii=validate_motion(positions,radii,fps)
+    if fixed_actor not in (None,0,1):raise ValueError('Invalid fixed actor')
     # Reuse strict event validation before gradient optimization.
     for event in events:
         evaluate_event(positions,radii,fps,event)
@@ -57,7 +58,23 @@ def refine_contacts(positions,radii,fps,events,edges,steps=80,lr=.01,device='cpu
         if not torch.isfinite(loss):
             raise FloatingPointError('Nonfinite refinement objective')
         loss.backward()
+        if fixed_actor is not None:x.grad[:,fixed_actor]=0
         torch.nn.utils.clip_grad_norm_([x],1)
         optimizer.step()
+        if fixed_actor is not None:
+            with torch.no_grad():x[:,fixed_actor]=initial[:,fixed_actor]
+        if hard_bone_projection:
+            # Project in parent-before-child order; keep source per-frame bone
+            # lengths, without claiming those source lengths are noise-free.
+            with torch.no_grad():
+                for actor in (0,1):
+                    if actor==fixed_actor:continue
+                    for e,(p,c) in enumerate(edges):
+                        delta=x[:,actor,c]-x[:,actor,p]
+                        norm=torch.linalg.vector_norm(delta,dim=-1,keepdim=True)
+                        original=initial[:,actor,c]-initial[:,actor,p]
+                        direction=torch.where(norm>1e-8,delta/norm.clamp(min=1e-8),
+                            original/reference_lengths[:,actor,e,None].clamp(min=1e-8))
+                        x[:,actor,c]=x[:,actor,p]+direction*reference_lengths[:,actor,e,None]
         history.append({'step':i,'loss':float(loss.detach()),'contact':float(contact.detach()),'bone':float(bone.detach())})
     return x.detach().cpu().numpy(),history

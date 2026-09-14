@@ -73,7 +73,9 @@ def main():
         if horizon<10:raise ValueError('Reference too short')
         alive=torch.ones(a.num_envs,dtype=torch.bool,device=a.device)
         first_failure=torch.full((a.num_envs,),horizon,dtype=torch.long,device=a.device)
-        totals={k:0.0 for k in ('joint_mae_rad','root_error_m','anchor_error_m','body_error_m','reward')}
+        totals={k:0.0 for k in ('joint_mae_rad','root_error_m','anchor_error_m','body_error_m','aligned_body_error_m','reward')}
+        per_env_sums={k:torch.zeros(a.num_envs,device=a.device) for k in ('joint_mae_rad','root_error_m','body_error_m')}
+        per_env_counts=torch.zeros(a.num_envs,device=a.device)
         counts=0;poses=[];alive_record=[];actions_record=[];reference=[]
         first_step_diagnostic={}
         original_termination_compute=raw.termination_manager.compute
@@ -99,12 +101,15 @@ def main():
                 reference.append(torch.cat([cmd.motion._body_pos_w[t,0],
                     cmd.motion._body_quat_w[t,0],cmd.motion.joint_pos[t]]).cpu().numpy())
                 n=int(alive.sum());counts+=n
+                per_env_counts+=alive
                 errors={
                     'joint_mae_rad':(robot.data.joint_pos-cmd.joint_pos).abs().mean(-1),
                     'root_error_m':torch.linalg.vector_norm(robot.data.root_pos_w-cmd.body_pos_w[:,0],dim=-1),
                     'anchor_error_m':torch.linalg.vector_norm(cmd.robot_anchor_pos_w-cmd.anchor_pos_w,dim=-1),
-                    'body_error_m':torch.linalg.vector_norm(cmd.robot_body_pos_w-cmd.body_pos_w,dim=-1).mean(-1)}
+                    'body_error_m':torch.linalg.vector_norm(cmd.robot_body_pos_w-cmd.body_pos_w,dim=-1).mean(-1),
+                    'aligned_body_error_m':torch.linalg.vector_norm(cmd.robot_body_pos_w-cmd.body_pos_relative_w,dim=-1).mean(-1)}
                 for key,value in errors.items():totals[key]+=float(value[alive].sum())
+                for key in per_env_sums:per_env_sums[key]+=errors[key]*alive
                 actions=policy(obs);actions_record.append(actions[0].cpu().numpy())
                 obs,reward,done,extra=env.step(actions)
                 totals['reward']+=float(reward[alive].sum())
@@ -118,6 +123,13 @@ def main():
                 'motion_sha256':hashlib.sha256(motion_path.read_bytes()).hexdigest(),'checkpoint':str(checkpoint),
                 'seed':a.seed,'environments':a.num_envs,'control_dt':raw.step_dt,'horizon_steps':horizon,
                 'completion_fraction':float(alive.float().mean()),'first_failure_steps':first_failure.cpu().tolist(),
+                'completion_definition':'survived reference horizon under original primarily height/orientation termination rules; not accurate 3D tracking success',
+                'per_environment_mean_errors':{k:(v/per_env_counts.clamp(min=1)).cpu().tolist() for k,v in per_env_sums.items()},
+                'strict_tracking_pass_fraction':float((alive & (per_env_sums['body_error_m']/per_env_counts.clamp(min=1)<.15)
+                    & (per_env_sums['root_error_m']/per_env_counts.clamp(min=1)<.15)
+                    & (per_env_sums['joint_mae_rad']/per_env_counts.clamp(min=1)<.3)).float().mean()),
+                'strict_thresholds':{'mean_body_position_error_m':.15,'mean_root_position_error_m':.15,'mean_joint_error_rad':.3,
+                    'scope':'declared research diagnostic thresholds, not original BeyondMimic success definition'},
                 'valid_active_env_steps':counts,'mean_alive_error':{k:v/max(counts,1) for k,v in totals.items()},
                 'first_step_diagnostic':first_step_diagnostic,
                 'learned_tracking':True,'held_out_motion':False,'robots_per_environment':1,
