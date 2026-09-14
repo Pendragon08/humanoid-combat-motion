@@ -1,0 +1,120 @@
+{
+  "status": "observational_audit_not_new_experiment",
+  "groups": {
+    "real": {
+      "strict_per_seed": [
+        0.0390625,
+        0.0390625,
+        0.0234375
+      ],
+      "strict_mean": 0.033854166666666664,
+      "strict_sample_std": 0.009021097956087902,
+      "completion_mean": 0.036458333333333336,
+      "time_to_failure_or_completion_s": 1.0248958333333333
+    },
+    "generic": {
+      "strict_per_seed": [
+        0.0078125,
+        0.015625,
+        0.0
+      ],
+      "strict_mean": 0.0078125,
+      "strict_sample_std": 0.0078125,
+      "completion_mean": 0.0078125,
+      "time_to_failure_or_completion_s": 0.8760416666666667,
+      "relative_strict_change_vs_real": -0.7692307692307692
+    },
+    "contact": {
+      "strict_per_seed": [
+        0.0078125,
+        0.0078125,
+        0.0078125
+      ],
+      "strict_mean": 0.0078125,
+      "strict_sample_std": 0.0,
+      "completion_mean": 0.0078125,
+      "time_to_failure_or_completion_s": 0.8858854166666666,
+      "relative_strict_change_vs_real": -0.7692307692307692
+    }
+  },
+  "retargeting": {
+    "generic": {
+      "cases": 20,
+      "per_case_peak_speed_rad_s": [
+        35.20163814357903,
+        41.56212751993546,
+        30.566601021914256,
+        49.5871661615237,
+        31.205726122780042,
+        39.18792743643194,
+        36.2532418008666,
+        26.53497354278461,
+        36.9005242532119,
+        26.014485878674357,
+        28.608331836469716,
+        33.694190526561776,
+        31.722427257873292,
+        25.52302617297854,
+        31.72241527045365,
+        42.743600512107434,
+        36.71735070910278,
+        26.66396956225905,
+        37.027125436920855,
+        36.861278147427264
+      ],
+      "peak_speed_min_median_max_rad_s": [
+        25.52302617297854,
+        34.44791433507041,
+        49.5871661615237
+      ],
+      "hardware_velocity_violation_fraction": null,
+      "reason": "No per-joint actuator velocity certification in this audit; peak speed is not a violation label.",
+      "method": "position-only Mink IK with GMR G1 assets; not default GMR"
+    },
+    "contact": {
+      "cases": 20,
+      "per_case_peak_speed_rad_s": [
+        34.90373025925856,
+        41.56212751993546,
+        34.776896544220996,
+        40.58614467345408,
+        29.42808034618219,
+        39.18792743643194,
+        34.75466487865508,
+        25.8931853744972,
+        36.92760861994455,
+        31.317770211542978,
+        28.608331836469716,
+        28.223028371114594,
+        53.79226499396576,
+        25.52302617297854,
+        31.72241527045365,
+        42.743600512107434,
+        32.07958678604359,
+        26.834171931914213,
+        37.027125436920855,
+        32.04594300569594
+      ],
+      "peak_speed_min_median_max_rad_s": [
+        25.52302617297854,
+        33.417125832349335,
+        53.79226499396576
+      ],
+      "hardware_velocity_violation_fraction": null,
+      "reason": "No per-joint actuator velocity certification in this audit; peak speed is not a violation label.",
+      "method": "position-only Mink IK with GMR G1 assets; not default GMR"
+    }
+  },
+  "inputs_sha256": {
+    "records/step7/summary.json": "6ce7ae46afe1e08637c90b3e6aa6b23bc5ce299de6f65663c298ce146db9b1fd",
+    "records/step7/snapshot/step7_generic_g1ik/manifest.json": "8aa385faaac4ffe26259c3937ac17f59d2411720b540ad43d390d4f989fe15ad",
+    "records/step7/snapshot/step7_contact_g1ik/manifest.json": "352b2103ac520ad084f02d6728f9210da0c9d62385f0c0e02cbbaaaf313cbe0f"
+  },
+  "causal_attribution_established": false,
+  "caveats": [
+    "One development video group; three controller seeds are not three data sources.",
+    "Identical total environment steps do not match real-source exposure.",
+    "C changes adapter and contact optimization together.",
+    "A/B/C downstream tracking is single-robot, not paired interaction."
+  ]
+}
