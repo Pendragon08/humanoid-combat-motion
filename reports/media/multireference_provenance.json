@@ -1,0 +1,12 @@
+{
+  "source_evaluations": [
+    "runs/g1_tracking_eval_multiref_train20_sample_000_primed",
+    "runs/g1_tracking_eval_multiref_test4_sample_000_primed"
+  ],
+  "selection": "first sorted training source and first sorted held-out source, environment0; no success selection",
+  "alive_frames": [
+    20,
+    84
+  ],
+  "rendering": "MuJoCo rendering of recorded Isaac states; no sim2sim policy deployment"
+}

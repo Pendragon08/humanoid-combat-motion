@@ -41,12 +41,12 @@
     "contact_audit": "soft geometry60%, contact plus <=2cm bone drift15%, hard projection5%; exploratory differentiable FK interior target95%; no physical success claim",
     "extended_single_controller": "model3097, horizon survival30/32, aligned body error0.081m, global body error0.439m, task-specific strict spatial pass0/32",
     "multireference_interface": "20 train video-derived sources, 32 environments x300-step witness; 41 clip timeouts and zero cross-clip indexing errors",
-    "dual_positive_control": "two separated copies of learned seed199;4/4 nominal horizon survival; not combat or independent source data"
+    "dual_positive_control": "two separated copies of learned seed199;4/4 nominal horizon survival; not combat or independent source data",
+    "explicit_cross_attention": "1000-step masked attacker-history attention;20test sources future defender RMSE0.780896 to0.729404m; contact5% to0%; exploratory one-seed result",
+    "multireference_training_and_evaluation": "1000updates x512env=12.288Msteps;20train clips/7title groups,4test clips/1heldout group;mean horizon survival6.25%/3.90625%;20 contact-refined pairs0%",
+    "unit_tests": "33 passed including hidden future keys, boundary differences, fixed actor and bone lengths"
   },
-  "running": [
-    "20-source multi-reference PPO,1000 updates x512 environments,GPU1",
-    "queued:20 train +4 held-out single-reference evaluations;20 contact-refined pair evaluations"
-  ],
+  "running": [],
   "not_completed": [
     "paper-default20-repetition official benchmark",
     "stable multi-reference learned tracking controller",
@@ -73,7 +73,7 @@
     "scope": "training-reference diagnostic after 100 iterations; not a held-out or paired combat result"
   },
   "annotation_source": "Unofficial transport mirror: 50/50 annotation files byte-identical to official Drive checks. Remaining files not individually verified. Original license retained; mirror MIT tag rejected.",
-  "scientific_conclusion": "Engineering chain from paired generation to physical two-robot learned-policy evaluation runs. No downstream synthetic-data utility evidence; stable control and causal/contact modules remain unfinished.",
+  "scientific_conclusion": "Engineering chain plus explicit history attention and bone-preserving contact refinement executed. Twenty-source control remains weak and contact-refined robot pairs fail early. No validated physics critic or downstream synthetic-data utility; do not claim full plan completion or positive feasibility.",
   "corrected_extended_diagnostic": {
     "run": "g1_tracking_eval_iter1098_primed",
     "environments": 32,

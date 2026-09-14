@@ -16,7 +16,7 @@ import torch
 from combat.annotations import read_annotation
 from combat.checkpoint_io import load_model_state
 from combat.protocol import load_manifest
-from combat.reaction import ActorMotionAdapter,history_condition
+from combat.reaction import ActorMotionAdapter,CausalReactionResidual,history_condition
 from combat.interaction import ContactEvent,evaluate_event
 from combat.contact_guidance import refine_contacts
 
@@ -48,6 +48,8 @@ def main():
     training=set(checkpoint['provenance']['source_ids']['train']);validation=set(checkpoint['provenance']['source_ids']['val'])
     if any(c['sample_id'] in training|validation for c in cases):raise ValueError('Test-source leakage')
     adapter=ActorMotionAdapter().cuda().eval();adapter.load_state_dict(checkpoint['adapter'],strict=True)
+    reaction=CausalReactionResidual().cuda().eval() if checkpoint.get('reaction') is not None else None
+    if reaction is not None:reaction.load_state_dict(checkpoint['reaction'],strict=True)
     decoder=model.decoder;normalizer=decoder.diffusion.normalizer
     diffusion=MotionDiffusion(use_timesteps=space_timesteps(decoder.diffusion_steps,decoder.sampling_strategy),
         betas=decoder.betas,motion_rep=decoder.motion_rep,model_mean_type=ModelMeanType.START_X,
@@ -90,10 +92,13 @@ def main():
                     torch.tensor([1 if event.kind=='hit' else 2],device='cuda'),
                     torch.tensor([[event.start/length,event.end/length]],device='cuda'))
                 sample=torch.randn(1,length,524,device='cuda');known_noise=torch.randn_like(known)
+                def conditioned_denoiser(x,t,**kwargs):
+                    pred=guidance(x,t,**kwargs)
+                    return reaction(pred,known,torch.tensor([observed],device='cuda')) if reaction is not None and arm=='actor_conditioned' else pred
                 for step in reversed(range(diffusion.num_timesteps)):
                     t=torch.tensor([step],device='cuda')
                     sample[:,:observed,:262]=diffusion.q_sample(known,t,noise=known_noise)[:,:observed]
-                    sample=diffusion.ddim_sample(guidance,sample,t,clip_denoised=False,model_kwargs={'cond':cond,'mask':None})['sample']
+                    sample=diffusion.ddim_sample(conditioned_denoiser,sample,t,clip_denoised=False,model_kwargs={'cond':cond,'mask':None})['sample']
                 sample[:,:observed,:262]=known[:,:observed]
                 generated=normalizer.backward(sample.reshape(1,length,2,262))[0].cpu().numpy()
             generated[:observed,0]=truth[:observed,0]
@@ -127,6 +132,7 @@ def main():
         'test_source_disjoint':True,'selection':'first sorted test pseudo-event sources, independent of output',
         'conditions':'observed actor prefix plus caption and supplied pseudo-event contact type/time' if history_only else 'complete actor trajectory plus caption and supplied pseudo-event contact type/time',
         'history_only':history_only,'observed_frames':'min(30, length//2)' if history_only else 'all',
+        'cross_attention':reaction is not None,
         'actor_future_as_input':not history_only,
         'online_causal':False,'contact_ground_truth':'unreviewed geometry, not measured forces',
         'physics_verified':False,'utility_verified':False},indent=2))

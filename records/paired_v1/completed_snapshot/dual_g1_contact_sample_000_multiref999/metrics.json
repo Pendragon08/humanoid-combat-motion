@@ -1,0 +1,42 @@
+{
+  "robots_per_environment": 2,
+  "environments": 4,
+  "learned_tracking": true,
+  "physics_simulator": "Isaac Sim 4.5 / Isaac Lab 2.1",
+  "nominal_reset": true,
+  "checkpoint_sha256": "aa079a2d09ef5e7e6dd85e669c8dce679d9d2e631dd33c58ee4306fd913dc4b8",
+  "reference_sha256": [
+    "c5f072cca36034a286938aea367b7a55c39110ad1e57caa6a56c1b8651e3ec7e",
+    "c6da2187b0cb4c26251b4acfe403e9d3b4df43991a8a08a135e9c9494e4a55c0"
+  ],
+  "completion_fraction": 0.0,
+  "first_failure_steps": [
+    15,
+    15,
+    15,
+    15
+  ],
+  "horizon_steps": 197,
+  "control_dt": 0.02,
+  "recorded_steps": 15,
+  "termination_counts": {
+    "time_out": 0,
+    "anchor_pos": 0,
+    "anchor_ori": 0,
+    "ee_body_pos": 0,
+    "opponent_anchor_pos": 0,
+    "opponent_anchor_ori": 0,
+    "opponent_ee_body_pos": 4
+  },
+  "maximum_recorded_wrist_torso_force_n": 1064.248291015625,
+  "maximum_recorded_wrist_forearm_force_n": 0.0,
+  "contact_scope": "four wrists against opponent torso and both elbow/forearm links; forces before each step and before first pair failure; no full-body collision audit",
+  "contact_protocol_version": 2,
+  "observed_pelvis_below_035m_pair_fraction": 0.0,
+  "fall_caveat": "height threshold is a research proxy; observed only before first tracking termination; absence does not certify no later fall",
+  "soft_joint_limit_violation_robot_frame_fraction": 0.075,
+  "maximum_recorded_joint_speed_rad_s": 32.82942581176758,
+  "maximum_recorded_applied_torque_nm": 139.0,
+  "critic_training_labels_approved": false,
+  "claim": "two-robot frozen-controller diagnostic; single-seed controller coverage confounds feasibility"
+}

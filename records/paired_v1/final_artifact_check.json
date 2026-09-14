@@ -1,0 +1,26 @@
+{
+  "completed_inventory": {
+    "training_references": 20,
+    "heldout_references": 4,
+    "contact_refined_pairs": 20
+  },
+  "cross_attention_test_cases": 20,
+  "local_html_assets_checked": [
+    "reports\\media\\learned_tracking_diagnostic.mp4",
+    "reports\\media\\learned_tracking_expanded.mp4",
+    "reports\\media\\learned_tracking_expanded_preview.png",
+    "reports\\media\\learned_tracking_final.mp4",
+    "reports\\media\\learned_tracking_final_preview.png",
+    "reports\\media\\multireference_diagnostic.mp4",
+    "reports\\media\\multireference_preview.png",
+    "reports\\paired_generation_identity_corrected.html"
+  ],
+  "full_research_plan_complete": false,
+  "synthetic_data_utility_validated": false,
+  "remaining": [
+    "validated physical critic",
+    "candidate reranking",
+    "equal-budget three-seed downstream data utility"
+  ],
+  "reason": "multi-reference tracking coverage is low; contact-constrained human generation does not yet give a validated robot-executable dataset"
+}

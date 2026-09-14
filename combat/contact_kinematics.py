@@ -9,10 +9,11 @@ from combat.contact_guidance import contact_objective
 from combat.interaction import validate_motion,evaluate_event
 
 
-def refine_kinematic_contacts(positions,radii,fps,events,edges,steps=200,lr=.025,device='cpu',fixed_actor=0):
+def refine_kinematic_contacts(positions,radii,fps,events,edges,steps=200,lr=.025,device='cpu',fixed_actor=0,contact_target=0.):
     positions,radii=validate_motion(positions,radii,fps)
     for event in events:evaluate_event(positions,radii,fps,event)
     if fixed_actor not in (0,1):raise ValueError('Require an explicitly fixed actor')
+    if not 0<=contact_target<=.03:raise ValueError('Contact target must be inside evaluator tolerance')
     moving=1-fixed_actor;joints=positions.shape[2]
     seen={0}
     for parent,child in edges:
@@ -40,7 +41,7 @@ def refine_kinematic_contacts(positions,radii,fps,events,edges,steps=200,lr=.025
         # Aim at touching surfaces (0m), inside the evaluator's 3cm tolerance.
         # Optimizing to the acceptance boundary leaves a positive residual under
         # preservation regularization and can never robustly satisfy that bound.
-        contact=contact_objective(x,radius,events,tolerance=0.)
+        contact=contact_objective(x,radius,events,tolerance=contact_target)
         preservation=(x-initial).square().mean()
         velocity=(torch.diff(x-initial,dim=0)*fps).square().mean()
         loss=contact+preservation+.01*velocity

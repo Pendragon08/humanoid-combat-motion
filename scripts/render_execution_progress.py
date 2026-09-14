@@ -51,6 +51,24 @@ def main():
     if audit_path.exists():
         ra=json.loads(audit_path.read_text())
         latest.append(f'<p>重定向后仅 {ra["mapped_cases"]}/20 个案例具有已核对的接触部位对应，近似几何通过率 {ra["proxy_success_fraction"]:.1%}；未映射的案例不计分。使用缩放的人体球体半径与机器人连接部位，检验接触是否保留，尚不能代替机器人碰撞网格与接触力。这与19/20人体通过率的分母不同，不能直接计算提升或下降幅度。</p>')
+    multi=[]
+    for label,pattern,total in [('训练参考','g1_tracking_eval_multiref_train20_*/metrics.json',20),('留出参考','g1_tracking_eval_multiref_test4_*/metrics.json',4),('接触优化双人参考','dual_g1_contact_*_multiref999/metrics.json',20)]:
+        rr=[json.loads(p.read_text()) for p in sorted(SNAP.glob(pattern))]
+        if rr:
+            survival=statistics.mean(r['completion_fraction'] for r in rr)
+            seconds=statistics.mean(statistics.mean(r['first_failure_steps'])*r['control_dt'] for r in rr)
+            multi.append(f'<tr><td>{label}</td><td>{len(rr)}/{total}</td><td>{survival:.1%}</td><td>{seconds:.3f} 秒</td></tr>')
+    if multi:
+        latest.append('<h3>多参考控制器与泛化诊断</h3><p>相同原版PPO训练1,000次更新、512并行环境，共12,288,000环境步。20条训练片段来自7个视频标题组；4条测试片段来自另外1个标题组。未根据测试结果挑选数据。这里的“真实来源”是视频重建后重定向数据，不是光学MoCap。</p><table><tr><th>评价对象</th><th>已完成片段数</th><th>平均未触发终止比例</th><th>平均观测时长</th></tr>'+''.join(multi)+'</table><p>表中是一种控制器、一个训练种子的能力检查，不能当作三个数据集、三个种子的效用比较。固定起点与训练时随机片段起点也有难度差异，不能只用训练回报判断整段执行成功。</p>')
+        latest.append('<video controls preload="metadata" poster="media/multireference_preview.png"><source src="media/multireference_diagnostic.mp4" type="video/mp4"></video><p>上排：第一个训练片段；下排：第一个留出片段。每排左侧为其自己的参考、右侧为实际策略轨迹。固定展示环境0，首次失配后冻结，不挑选成功案例。该视频同样只渲染记录状态，不是跨仿真器控制测试。</p>')
+    attention_path=SNAP/'actor_reaction_crossattention_test_seed123/evaluation.json'
+    if attention_path.exists():
+        rr=json.loads(attention_path.read_text())['cases']
+        latest.append('<h3>显式跨注意力反应模块</h3><p>防守者的逐帧查询读取攻击者历史帧；屏蔽观察窗口以外和查询时刻以后的攻击帧，未来输入扰动单元测试通过。它增加显式时序交互，仍不保证战术或物理正确。</p>')
+        for arm,label in [('inpainting_only','历史固定基线'),('actor_conditioned','跨注意力条件')]:
+            err=statistics.mean(r['arms'][arm]['defender_position_rmse_m'] for r in rr)
+            contact=statistics.mean(float(r['arms'][arm]['contact']['success']) for r in rr)
+            latest.append(f'<p>{label}：未来防守位置RMSE {err:.3f} m，近似接触通过率 {contact:.0%}。20个既有测试来源、一个训练种子的探索性结果。</p>')
     reaction_rows=''.join(f'<tr><td>{label}</td><td>{geometry["summary"][key]["proxy_contact_success_fraction"]:.0%}</td><td>{geometry["summary"][key]["defender_position_rmse_m"]:.3f} m</td></tr>' for key,label in [('inpainting_only','固定攻击者的原模型'),('actor_conditioned','增加攻击者动作条件'),('actor_conditioned_contact','再做软接触优化')])
     dual_rows=[]
     for group in ('generic','adapted'):

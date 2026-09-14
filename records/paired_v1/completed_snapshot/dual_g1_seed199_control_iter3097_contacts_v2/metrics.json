@@ -1,0 +1,37 @@
+{
+  "robots_per_environment": 2,
+  "environments": 4,
+  "learned_tracking": true,
+  "physics_simulator": "Isaac Sim 4.5 / Isaac Lab 2.1",
+  "nominal_reset": true,
+  "checkpoint_sha256": "34e9058e40e05e4c682e6c6ad6f9c50f33636b49e8a9e8c7bf31ffebd38209b3",
+  "reference_sha256": [
+    "c6827f94f20cc29311a83e0f1fe0269d1176a61a7cbc89a2562de302c67763d6",
+    "2c0b17f11e852e20d4ce3af0127a5ee3c40b4491cd035d48610d49fcf12cb45c"
+  ],
+  "completion_fraction": 1.0,
+  "first_failure_steps": [
+    117,
+    117,
+    117,
+    117
+  ],
+  "horizon_steps": 117,
+  "control_dt": 0.02,
+  "recorded_steps": 117,
+  "termination_counts": {
+    "time_out": 0,
+    "anchor_pos": 0,
+    "anchor_ori": 0,
+    "ee_body_pos": 0,
+    "opponent_anchor_pos": 0,
+    "opponent_anchor_ori": 0,
+    "opponent_ee_body_pos": 0
+  },
+  "maximum_recorded_wrist_torso_force_n": 0.0,
+  "maximum_recorded_wrist_forearm_force_n": 0.0,
+  "contact_scope": "four wrists against opponent torso and both elbow/forearm links; forces before each step and before first pair failure; no full-body collision audit",
+  "contact_protocol_version": 2,
+  "critic_training_labels_approved": false,
+  "claim": "two-robot frozen-controller diagnostic; single-seed controller coverage confounds feasibility"
+}

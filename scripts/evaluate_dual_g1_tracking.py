@@ -96,6 +96,8 @@ def main():
         horizon=counts[0]-2;alive=torch.ones(a.num_envs,dtype=torch.bool,device=a.device)
         failure=torch.full((a.num_envs,),horizon,device=a.device,dtype=torch.long)
         poses=[];forces=[];target_forces=[];masks=[];errors=[];failure_reasons={}
+        observed_fall=torch.zeros(a.num_envs,dtype=torch.bool,device=a.device)
+        joint_violation_frames=0;alive_robot_frames=0;max_speed=0.;max_torque=0.
         original_compute=env.termination_manager.compute
         def audit_termination():
             result=original_compute()
@@ -108,6 +110,13 @@ def main():
                 pair=[];err=[]
                 for cmd in commands:
                     robot=cmd.robot
+                    observed_fall |= alive & (robot.data.root_pos_w[:,2]-env.scene.env_origins[:,2]<.35)
+                    q=robot.data.joint_pos;bounds=robot.data.soft_joint_pos_limits
+                    violated=((q<bounds[:,:,0]-1e-5)|(q>bounds[:,:,1]+1e-5)).any(-1)
+                    joint_violation_frames+=int((violated&alive).sum());alive_robot_frames+=int(alive.sum())
+                    if alive.any():
+                        max_speed=max(max_speed,float(robot.data.joint_vel[alive].abs().max()))
+                        max_torque=max(max_torque,float(robot.data.applied_torque[alive].abs().max()))
                     pair.append(torch.cat([robot.data.root_pos_w-env.scene.env_origins,robot.data.root_quat_w,robot.data.joint_pos],dim=-1))
                     err.append((robot.data.joint_pos-cmd.joint_pos).abs().mean(-1))
                 poses.append(torch.stack(pair,dim=1).cpu().numpy());masks.append(alive.cpu().numpy().copy())
@@ -140,6 +149,10 @@ def main():
             'maximum_recorded_wrist_forearm_force_n':float(np.asarray(target_forces)[np.asarray(masks)][:,:,1:].max()),
             'contact_scope':'four wrists against opponent torso and both elbow/forearm links; forces before each step and before first pair failure; no full-body collision audit',
             'contact_protocol_version':2,
+            'observed_pelvis_below_035m_pair_fraction':float(observed_fall.float().mean()),
+            'fall_caveat':'height threshold is a research proxy; observed only before first tracking termination; absence does not certify no later fall',
+            'soft_joint_limit_violation_robot_frame_fraction':joint_violation_frames/max(alive_robot_frames,1),
+            'maximum_recorded_joint_speed_rad_s':max_speed,'maximum_recorded_applied_torque_nm':max_torque,
             'critic_training_labels_approved':False,
             'claim':'two-robot frozen-controller diagnostic; single-seed controller coverage confounds feasibility'}
         (a.output/'metrics.json').write_text(json.dumps(result,indent=2));print('DUAL_G1_EVALUATION '+json.dumps(result),flush=True)

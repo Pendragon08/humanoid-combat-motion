@@ -45,3 +45,28 @@ def history_condition(raw_actor,cutoffs,normalizer):
         value[i,cutoff-1,66:132]=0
         value[i,cutoff-1,258:262]=0
     return normalizer.forward(value)
+
+
+class CausalReactionResidual(nn.Module):
+    """Explicit defender queries over visible attacker-frame keys and values.
+
+    This constrains information access, not strategic or physical correctness.
+    No attacker frame later than query time or the observation cutoff is visible.
+    """
+    def __init__(self,hidden=128,heads=4):
+        super().__init__();self.heads=heads
+        self.query=nn.Linear(262,hidden);self.key=nn.Linear(262,hidden)
+        self.attention=nn.MultiheadAttention(hidden,heads,batch_first=True)
+        self.norm=nn.LayerNorm(hidden);self.out=nn.Linear(hidden,262)
+        nn.init.zeros_(self.out.weight);nn.init.zeros_(self.out.bias)
+
+    def forward(self,prediction,actor,observed):
+        b,t,_=prediction.shape
+        if actor.shape!=(b,t,262) or observed.min()<1:raise ValueError('Invalid attacker history')
+        visible=torch.arange(t,device=actor.device)[None,:]<observed[:,None]
+        key=self.key(actor*visible[:,:,None]);query=self.query(prediction[...,262:])
+        # A query at time u may use k<=u, and never k>=observed.
+        causal=torch.arange(t,device=actor.device)[None,:]>torch.arange(t,device=actor.device)[:,None]
+        h,_=self.attention(query,key,key,key_padding_mask=~visible,attn_mask=causal,need_weights=False)
+        residual=self.out(self.norm(h+query))
+        return torch.cat([prediction[...,:262],prediction[...,262:]+residual],dim=-1)

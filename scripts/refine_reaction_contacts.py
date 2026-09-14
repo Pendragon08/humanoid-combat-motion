@@ -12,6 +12,7 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--run',type=Path,required=True)
     p.add_argument('--output',type=Path,required=True);p.add_argument('--device',default='cuda')
     p.add_argument('--method',choices=['projection','kinematic'],default='projection')
+    p.add_argument('--contact-target',type=float,default=0.,help='Kinematic target gap;0.03 reproduces boundary-target ablation')
     a=p.parse_args()
     if a.output.exists():raise FileExistsError(a.output)
     report=json.loads((a.run/'evaluation.json').read_text());a.output.mkdir(parents=True)
@@ -23,7 +24,7 @@ def main():
         path=a.run/'actor_conditioned'/f'sample_{index:03d}.npz'
         x=np.load(path)['positions'];event=ContactEvent(**case['pseudo_event'])
         if a.method=='kinematic':
-            y,history=refine_kinematic_contacts(x,radii,30,[event],edges,steps=200,device=a.device,fixed_actor=0)
+            y,history=refine_kinematic_contacts(x,radii,30,[event],edges,steps=200,device=a.device,fixed_actor=0,contact_target=a.contact_target)
         else:
             y,history=refine_contacts(x,radii,30,[event],edges,steps=80,device=a.device,fixed_actor=0,hard_bone_projection=True)
         bone_delta=np.abs(np.linalg.norm(y[:,:,parent]-y[:,:,child],axis=-1)-np.linalg.norm(x[:,:,parent]-x[:,:,child],axis=-1))
@@ -36,7 +37,7 @@ def main():
     result={'cases':rows,'contact_success_fraction':float(np.mean([r['contact']['success'] for r in rows])),
         'maximum_bone_change_m':max(r['max_bone_length_change_m'] for r in rows),
         'method':a.method+' contact optimization with per-frame source bone lengths and fixed actor0',
-        'optimization_surface_gap_target_m':0. if a.method=='kinematic' else .03,
+        'optimization_surface_gap_target_m':a.contact_target if a.method=='kinematic' else .03,
         'status':'exploratory post-hoc diagnostic; not preregistered confirmatory test',
         'physics_validated':False,'morphology_and_dynamics_guaranteed':False}
     (a.output/'evaluation.json').write_text(json.dumps(result,indent=2));print(json.dumps(result),flush=True)

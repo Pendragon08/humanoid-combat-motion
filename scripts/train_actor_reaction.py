@@ -16,7 +16,7 @@ import torch
 from combat.annotations import read_annotation
 from combat.protocol import load_manifest
 from combat.checkpoint_io import load_model_state
-from combat.reaction import ActorMotionAdapter,masked_defender_mse,history_condition
+from combat.reaction import ActorMotionAdapter,CausalReactionResidual,masked_defender_mse,history_condition
 from scripts.train_timotion_adapter import fixed_validation_rng
 
 
@@ -26,6 +26,7 @@ def main():
     p.add_argument('--seed',type=int,default=0);p.add_argument('--steps',type=int,default=1000)
     p.add_argument('--frames',type=int,default=120);p.add_argument('--batch-size',type=int,default=4)
     p.add_argument('--history-only',action='store_true',help='Observe actor prefix only; predict future defender')
+    p.add_argument('--cross-attention',action='store_true')
     a=p.parse_args();out=a.output.resolve();manifest=a.manifest.resolve();events_path=a.events.resolve()
     if out.exists():raise FileExistsError(out)
     records={r['sample_id']:r for r in load_manifest(manifest)}
@@ -41,7 +42,10 @@ def main():
     cfg=get_config('configs/model.yaml');cfg.NUM_HEADS=16;cfg.NUM_LAYERS=5;cfg.LATENT_DIM=512;cfg.LPA=False
     model=TIMotion(cfg);weights,sha=load_model_state(root/'data/official/timotion_weights.npz')
     model.load_state_dict(weights,strict=True);del weights;model=model.cuda().eval().requires_grad_(False)
-    adapter=ActorMotionAdapter().cuda();opt=torch.optim.AdamW(adapter.parameters(),lr=1e-4)
+    if a.cross_attention and not a.history_only:raise ValueError('Cross attention experiment requires explicit history-only protocol')
+    adapter=ActorMotionAdapter().cuda();reaction=CausalReactionResidual().cuda() if a.cross_attention else None
+    parameters=list(adapter.parameters())+(list(reaction.parameters()) if reaction else [])
+    opt=torch.optim.AdamW(parameters,lr=1e-4)
     splits={'train':[],'val':[]}
     for item in events:
         if item['split'] not in splits:continue  # Do not read test motion files.
@@ -94,10 +98,12 @@ def main():
                 # Last observed frame's forward-difference channels must not leak.
                 noisy[i,cutoff-1,66:132]=0;noisy[i,cutoff-1,258:262]=0
         prediction=model.decoder.net(noisy,times,mask=mask,cond=cond)
+        if reaction is not None:prediction=reaction(prediction,actor,cutoffs)
         return masked_defender_mse(prediction,normalized,lengths,cutoffs if a.history_only else None)
 
     def validate():
         values=[];sizes=[];adapter.eval()
+        if reaction is not None:reaction.eval()
         with fixed_validation_rng():
             rng=random.Random(1729)
             with torch.no_grad():
@@ -121,17 +127,21 @@ def main():
             floor_transform='common minimum over observed histories only',
             loss='future-defender normalized diffusion MSE; future actor input replaced by independent noise',
             caveat='prefix-conditioned offline forecast, not verified tactical causality or real-time deployment')
+    provenance['cross_attention']=bool(a.cross_attention)
+    provenance['trainable_parameters']=sum(p.numel() for p in parameters)
     (out/'config.json').write_text(json.dumps(provenance,indent=2))
     with (out/'loss.jsonl').open('w') as log:
         for step in range(1,a.steps+1):
-            adapter.train();opt.zero_grad();loss=batch(rng.choices(splits['train'],k=a.batch_size),rng)
+            adapter.train()
+            if reaction is not None:reaction.train()
+            opt.zero_grad();loss=batch(rng.choices(splits['train'],k=a.batch_size),rng)
             if not torch.isfinite(loss):raise FloatingPointError('Invalid reaction loss')
-            loss.backward();torch.nn.utils.clip_grad_norm_(adapter.parameters(),.5);opt.step()
+            loss.backward();torch.nn.utils.clip_grad_norm_(parameters,.5);opt.step()
             record={'step':step,'loss':float(loss.detach()),'elapsed_seconds':time.monotonic()-begin}
             if step%100==0 or step==a.steps:
                 score=validate();record['validation_loss']=score
                 if score<best:
-                    best=score;torch.save({'adapter':adapter.state_dict(),'provenance':provenance,'step':step},out/'best_adapter.pt')
+                    best=score;torch.save({'adapter':adapter.state_dict(),'reaction':reaction.state_dict() if reaction is not None else None,'provenance':provenance,'step':step},out/'best_adapter.pt')
             log.write(json.dumps(record)+'\n');log.flush()
             if step%50==0:print(json.dumps(record),flush=True)
     result={'steps':a.steps,'baseline_validation_loss':baseline,'best_validation_loss':best,

@@ -17,4 +17,14 @@ for path in sorted(a.root.glob('actor_reaction_*/evaluation.json')):
     summary[path.parent.name]=dict(out,cases=len(rows))
 for path in sorted(a.root.glob('multireference_*/TRAINING_COMPLETE.json')):
     summary[path.parent.name]=json.loads(path.read_text())
+for group,pattern,expected in [('training_references','g1_tracking_eval_multiref_train20_*/metrics.json',20),
+                               ('heldout_references','g1_tracking_eval_multiref_test4_*/metrics.json',4),
+                               ('contact_refined_pairs','dual_g1_contact_*_multiref999/metrics.json',20)]:
+    rows=[json.loads(p.read_text()) for p in sorted(a.root.glob(pattern))]
+    if rows:
+        summary[group]={'completed':len(rows),'expected':expected,'controller_seeds':1,
+            'mean_horizon_survival':statistics.mean(r['completion_fraction'] for r in rows),
+            'mean_first_failure_or_censored_time_s':statistics.mean(statistics.mean(r['first_failure_steps'])*r['control_dt'] for r in rows),
+            'not_equal_budget_synthetic_utility':True}
+        if 'strict_tracking_pass_fraction' in rows[0]:summary[group]['mean_strict_spatial_pass']=statistics.mean(r['strict_tracking_pass_fraction'] for r in rows)
 a.output.parent.mkdir(parents=True,exist_ok=True);a.output.write_text(json.dumps(summary,indent=2));print(json.dumps(summary,indent=2))

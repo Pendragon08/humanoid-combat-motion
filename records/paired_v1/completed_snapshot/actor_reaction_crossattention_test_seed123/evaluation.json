@@ -1,0 +1,1396 @@
+{
+  "cases": [
+    {
+      "source": "interhuman_1185",
+      "seed": 123,
+      "pseudo_event": {
+        "kind": "block",
+        "start": 57,
+        "end": 63,
+        "a_joint": 11,
+        "b_joint": 20,
+        "a_actor": 0,
+        "b_actor": 1,
+        "protected_joint": 9,
+        "threatened": false,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed"
+      },
+      "ground_truth_geometry_after_preprocessing": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": -0.0072571643042772666,
+        "min_swept_surface_gap_m": -0.013242165672847916,
+        "penetration": false,
+        "first_contact_frame": 60,
+        "first_contact_time_s": 2.0,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "arms": {
+        "inpainting_only": {
+          "defender_position_rmse_m": 1.4315619468688965,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 1.1092757300674834,
+            "min_swept_surface_gap_m": 0.773874782249732,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        },
+        "actor_conditioned": {
+          "defender_position_rmse_m": 1.3002277612686157,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 1.0192278280630953,
+            "min_swept_surface_gap_m": 0.8884995457338389,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        }
+      }
+    },
+    {
+      "source": "interhuman_1193",
+      "seed": 124,
+      "pseudo_event": {
+        "kind": "block",
+        "start": 57,
+        "end": 63,
+        "a_joint": 10,
+        "b_joint": 20,
+        "a_actor": 0,
+        "b_actor": 1,
+        "protected_joint": 9,
+        "threatened": false,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed"
+      },
+      "ground_truth_geometry_after_preprocessing": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.0009701607176281352,
+        "min_swept_surface_gap_m": 0.0009701607176281352,
+        "penetration": false,
+        "first_contact_frame": 60,
+        "first_contact_time_s": 2.0,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "arms": {
+        "inpainting_only": {
+          "defender_position_rmse_m": 0.8390047550201416,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.9710036155693957,
+            "min_swept_surface_gap_m": 0.7865347325687067,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        },
+        "actor_conditioned": {
+          "defender_position_rmse_m": 0.7054669260978699,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 1.499258381859879,
+            "min_swept_surface_gap_m": 0.925631121688772,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        }
+      }
+    },
+    {
+      "source": "interhuman_1281",
+      "seed": 125,
+      "pseudo_event": {
+        "kind": "block",
+        "start": 57,
+        "end": 63,
+        "a_joint": 11,
+        "b_joint": 21,
+        "a_actor": 0,
+        "b_actor": 1,
+        "protected_joint": 9,
+        "threatened": false,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed"
+      },
+      "ground_truth_geometry_after_preprocessing": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.007726911220128266,
+        "min_swept_surface_gap_m": -0.00024187947714762736,
+        "penetration": false,
+        "first_contact_frame": 60,
+        "first_contact_time_s": 2.0,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "arms": {
+        "inpainting_only": {
+          "defender_position_rmse_m": 0.9788917899131775,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 1.309214237676093,
+            "min_swept_surface_gap_m": 0.7455784124934683,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        },
+        "actor_conditioned": {
+          "defender_position_rmse_m": 0.7514622211456299,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.919071205659111,
+            "min_swept_surface_gap_m": 0.42276651070969296,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        }
+      }
+    },
+    {
+      "source": "interhuman_1302",
+      "seed": 126,
+      "pseudo_event": {
+        "kind": "block",
+        "start": 57,
+        "end": 63,
+        "a_joint": 10,
+        "b_joint": 20,
+        "a_actor": 0,
+        "b_actor": 1,
+        "protected_joint": 9,
+        "threatened": false,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed"
+      },
+      "ground_truth_geometry_after_preprocessing": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": -0.010072560419551915,
+        "min_swept_surface_gap_m": -0.010072560419551915,
+        "penetration": false,
+        "first_contact_frame": 59,
+        "first_contact_time_s": 1.9666666666666666,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "arms": {
+        "inpainting_only": {
+          "defender_position_rmse_m": 1.3370410203933716,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 1.3409333770367713,
+            "min_swept_surface_gap_m": 0.7293937402652684,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        },
+        "actor_conditioned": {
+          "defender_position_rmse_m": 1.4619308710098267,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 1.3999710959810654,
+            "min_swept_surface_gap_m": 0.6458971471493062,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        }
+      }
+    },
+    {
+      "source": "interhuman_1304",
+      "seed": 127,
+      "pseudo_event": {
+        "kind": "block",
+        "start": 57,
+        "end": 63,
+        "a_joint": 11,
+        "b_joint": 20,
+        "a_actor": 0,
+        "b_actor": 1,
+        "protected_joint": 9,
+        "threatened": false,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed"
+      },
+      "ground_truth_geometry_after_preprocessing": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": -0.01617840460084899,
+        "min_swept_surface_gap_m": -0.01617840460084899,
+        "penetration": false,
+        "first_contact_frame": 59,
+        "first_contact_time_s": 1.9666666666666666,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "arms": {
+        "inpainting_only": {
+          "defender_position_rmse_m": 1.3013522624969482,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.44902709927481366,
+            "min_swept_surface_gap_m": 0.44902709927481366,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        },
+        "actor_conditioned": {
+          "defender_position_rmse_m": 1.212725043296814,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.4051721043104646,
+            "min_swept_surface_gap_m": 0.40515205041152613,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        }
+      }
+    },
+    {
+      "source": "interhuman_1368",
+      "seed": 128,
+      "pseudo_event": {
+        "kind": "block",
+        "start": 74,
+        "end": 80,
+        "a_joint": 11,
+        "b_joint": 20,
+        "a_actor": 0,
+        "b_actor": 1,
+        "protected_joint": 9,
+        "threatened": false,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed"
+      },
+      "ground_truth_geometry_after_preprocessing": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.029097248926910305,
+        "min_swept_surface_gap_m": 0.02832619644683311,
+        "penetration": false,
+        "first_contact_frame": 77,
+        "first_contact_time_s": 2.566666666666667,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "arms": {
+        "inpainting_only": {
+          "defender_position_rmse_m": 0.9666141271591187,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 1.3365799685815691,
+            "min_swept_surface_gap_m": 0.746854215045593,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        },
+        "actor_conditioned": {
+          "defender_position_rmse_m": 0.8849318027496338,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 1.2788311824152059,
+            "min_swept_surface_gap_m": 0.6905325530983679,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        }
+      }
+    },
+    {
+      "source": "interhuman_1377",
+      "seed": 129,
+      "pseudo_event": {
+        "kind": "block",
+        "start": 57,
+        "end": 63,
+        "a_joint": 11,
+        "b_joint": 20,
+        "a_actor": 0,
+        "b_actor": 1,
+        "protected_joint": 9,
+        "threatened": false,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed"
+      },
+      "ground_truth_geometry_after_preprocessing": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": -0.018151663666354872,
+        "min_swept_surface_gap_m": -0.018151663666354872,
+        "penetration": false,
+        "first_contact_frame": 60,
+        "first_contact_time_s": 2.0,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "arms": {
+        "inpainting_only": {
+          "defender_position_rmse_m": 0.8392153978347778,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.45155605880743727,
+            "min_swept_surface_gap_m": 0.3252469107053113,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        },
+        "actor_conditioned": {
+          "defender_position_rmse_m": 0.8509027361869812,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.5715250981418651,
+            "min_swept_surface_gap_m": 0.31461864982411697,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        }
+      }
+    },
+    {
+      "source": "interhuman_1382",
+      "seed": 130,
+      "pseudo_event": {
+        "kind": "block",
+        "start": 57,
+        "end": 63,
+        "a_joint": 11,
+        "b_joint": 21,
+        "a_actor": 0,
+        "b_actor": 1,
+        "protected_joint": 9,
+        "threatened": false,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed"
+      },
+      "ground_truth_geometry_after_preprocessing": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.007170957460716901,
+        "min_swept_surface_gap_m": 0.007170957460716901,
+        "penetration": false,
+        "first_contact_frame": 59,
+        "first_contact_time_s": 1.9666666666666666,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "arms": {
+        "inpainting_only": {
+          "defender_position_rmse_m": 0.8522471785545349,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": true,
+            "min_surface_gap_m": 0.018467714462347504,
+            "min_swept_surface_gap_m": 0.018467714462347504,
+            "penetration": false,
+            "first_contact_frame": 59,
+            "first_contact_time_s": 1.9666666666666666,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        },
+        "actor_conditioned": {
+          "defender_position_rmse_m": 0.7979621291160583,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.325448094614794,
+            "min_swept_surface_gap_m": 0.19135216897893198,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        }
+      }
+    },
+    {
+      "source": "interhuman_1434",
+      "seed": 131,
+      "pseudo_event": {
+        "kind": "block",
+        "start": 57,
+        "end": 63,
+        "a_joint": 11,
+        "b_joint": 21,
+        "a_actor": 0,
+        "b_actor": 1,
+        "protected_joint": 9,
+        "threatened": false,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed"
+      },
+      "ground_truth_geometry_after_preprocessing": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": -0.00722991903654828,
+        "min_swept_surface_gap_m": -0.007543423529356871,
+        "penetration": false,
+        "first_contact_frame": 60,
+        "first_contact_time_s": 2.0,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "arms": {
+        "inpainting_only": {
+          "defender_position_rmse_m": 0.7310954332351685,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 1.1104160340727032,
+            "min_swept_surface_gap_m": 0.726028017769067,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        },
+        "actor_conditioned": {
+          "defender_position_rmse_m": 0.6210916638374329,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 1.176286977423314,
+            "min_swept_surface_gap_m": 0.7412059133641995,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        }
+      }
+    },
+    {
+      "source": "interhuman_1573",
+      "seed": 132,
+      "pseudo_event": {
+        "kind": "block",
+        "start": 57,
+        "end": 63,
+        "a_joint": 20,
+        "b_joint": 20,
+        "a_actor": 0,
+        "b_actor": 1,
+        "protected_joint": 9,
+        "threatened": false,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed"
+      },
+      "ground_truth_geometry_after_preprocessing": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.005036991828943099,
+        "min_swept_surface_gap_m": 0.005036991828943099,
+        "penetration": false,
+        "first_contact_frame": 60,
+        "first_contact_time_s": 2.0,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "arms": {
+        "inpainting_only": {
+          "defender_position_rmse_m": 0.545002818107605,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": -0.09910508972583965,
+            "min_swept_surface_gap_m": -0.09910508972583965,
+            "penetration": true,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": 61,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        },
+        "actor_conditioned": {
+          "defender_position_rmse_m": 0.5907672643661499,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.2107270173459288,
+            "min_swept_surface_gap_m": -0.08788772460875709,
+            "penetration": true,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        }
+      }
+    },
+    {
+      "source": "interhuman_1579",
+      "seed": 133,
+      "pseudo_event": {
+        "kind": "block",
+        "start": 5,
+        "end": 11,
+        "a_joint": 20,
+        "b_joint": 20,
+        "a_actor": 0,
+        "b_actor": 1,
+        "protected_joint": 9,
+        "threatened": false,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed"
+      },
+      "ground_truth_geometry_after_preprocessing": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.005037169670678077,
+        "min_swept_surface_gap_m": 0.005037169670678077,
+        "penetration": false,
+        "first_contact_frame": 8,
+        "first_contact_time_s": 0.26666666666666666,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "arms": {
+        "inpainting_only": {
+          "defender_position_rmse_m": 0.5917896032333374,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.25532220960331,
+            "min_swept_surface_gap_m": 0.25300277645152003,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        },
+        "actor_conditioned": {
+          "defender_position_rmse_m": 0.46086639165878296,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.23585896980715954,
+            "min_swept_surface_gap_m": 0.2337847105865718,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        }
+      }
+    },
+    {
+      "source": "interhuman_185",
+      "seed": 134,
+      "pseudo_event": {
+        "kind": "hit",
+        "start": 57,
+        "end": 63,
+        "a_joint": 21,
+        "b_joint": 9,
+        "a_actor": 0,
+        "b_actor": 1,
+        "protected_joint": null,
+        "threatened": false,
+        "confidence": 0.5,
+        "provenance": "automatic_sphere_geometry_and_weak_text_candidate; unreviewed"
+      },
+      "ground_truth_geometry_after_preprocessing": {
+        "kind": "hit",
+        "success": true,
+        "min_surface_gap_m": -0.012357067039840602,
+        "min_swept_surface_gap_m": -0.012357067039840602,
+        "penetration": false,
+        "first_contact_frame": 58,
+        "first_contact_time_s": 1.9333333333333333,
+        "protected_hit_frame": null,
+        "confidence": 0.5,
+        "provenance": "automatic_sphere_geometry_and_weak_text_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "arms": {
+        "inpainting_only": {
+          "defender_position_rmse_m": 0.5394231081008911,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "hit",
+            "success": false,
+            "min_surface_gap_m": -0.06816379048715591,
+            "min_swept_surface_gap_m": -0.06816379048715591,
+            "penetration": true,
+            "first_contact_frame": 57,
+            "first_contact_time_s": 1.9,
+            "protected_hit_frame": null,
+            "confidence": 0.5,
+            "provenance": "automatic_sphere_geometry_and_weak_text_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        },
+        "actor_conditioned": {
+          "defender_position_rmse_m": 0.49690544605255127,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "hit",
+            "success": false,
+            "min_surface_gap_m": -0.10609990607892103,
+            "min_swept_surface_gap_m": -0.11766478421280854,
+            "penetration": true,
+            "first_contact_frame": 57,
+            "first_contact_time_s": 1.9,
+            "protected_hit_frame": null,
+            "confidence": 0.5,
+            "provenance": "automatic_sphere_geometry_and_weak_text_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        }
+      }
+    },
+    {
+      "source": "interhuman_1880",
+      "seed": 135,
+      "pseudo_event": {
+        "kind": "block",
+        "start": 57,
+        "end": 63,
+        "a_joint": 20,
+        "b_joint": 19,
+        "a_actor": 0,
+        "b_actor": 1,
+        "protected_joint": 9,
+        "threatened": false,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed"
+      },
+      "ground_truth_geometry_after_preprocessing": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.000807044522201518,
+        "min_swept_surface_gap_m": 0.000807044522201518,
+        "penetration": false,
+        "first_contact_frame": 60,
+        "first_contact_time_s": 2.0,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "arms": {
+        "inpainting_only": {
+          "defender_position_rmse_m": 0.43658503890037537,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.2475848380067623,
+            "min_swept_surface_gap_m": 0.1515169985354738,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        },
+        "actor_conditioned": {
+          "defender_position_rmse_m": 0.39751285314559937,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.2806610620164527,
+            "min_swept_surface_gap_m": 0.16861155082528334,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        }
+      }
+    },
+    {
+      "source": "interhuman_1885",
+      "seed": 136,
+      "pseudo_event": {
+        "kind": "block",
+        "start": 22,
+        "end": 28,
+        "a_joint": 20,
+        "b_joint": 19,
+        "a_actor": 0,
+        "b_actor": 1,
+        "protected_joint": 9,
+        "threatened": false,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed"
+      },
+      "ground_truth_geometry_after_preprocessing": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.017287725964747237,
+        "min_swept_surface_gap_m": 0.017070652295433968,
+        "penetration": false,
+        "first_contact_frame": 24,
+        "first_contact_time_s": 0.8,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "arms": {
+        "inpainting_only": {
+          "defender_position_rmse_m": 0.541160523891449,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.34472048433674,
+            "min_swept_surface_gap_m": 0.34472048433674,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        },
+        "actor_conditioned": {
+          "defender_position_rmse_m": 0.48743441700935364,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.6221346455232816,
+            "min_swept_surface_gap_m": 0.6221346455232816,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        }
+      }
+    },
+    {
+      "source": "interhuman_1888",
+      "seed": 137,
+      "pseudo_event": {
+        "kind": "block",
+        "start": 43,
+        "end": 49,
+        "a_joint": 20,
+        "b_joint": 20,
+        "a_actor": 0,
+        "b_actor": 1,
+        "protected_joint": 9,
+        "threatened": false,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed"
+      },
+      "ground_truth_geometry_after_preprocessing": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.014548845011648756,
+        "min_swept_surface_gap_m": 0.008028241132715594,
+        "penetration": false,
+        "first_contact_frame": 46,
+        "first_contact_time_s": 1.5333333333333334,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "arms": {
+        "inpainting_only": {
+          "defender_position_rmse_m": 0.5169435143470764,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.49853329774967353,
+            "min_swept_surface_gap_m": -0.07449251501451834,
+            "penetration": true,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        },
+        "actor_conditioned": {
+          "defender_position_rmse_m": 0.3847953677177429,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.463051615089945,
+            "min_swept_surface_gap_m": -0.071918094213994,
+            "penetration": true,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        }
+      }
+    },
+    {
+      "source": "interhuman_3017",
+      "seed": 138,
+      "pseudo_event": {
+        "kind": "block",
+        "start": 57,
+        "end": 63,
+        "a_joint": 21,
+        "b_joint": 20,
+        "a_actor": 0,
+        "b_actor": 1,
+        "protected_joint": 9,
+        "threatened": false,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed"
+      },
+      "ground_truth_geometry_after_preprocessing": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": -0.017396833537037318,
+        "min_swept_surface_gap_m": -0.018478810928482983,
+        "penetration": false,
+        "first_contact_frame": 60,
+        "first_contact_time_s": 2.0,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "arms": {
+        "inpainting_only": {
+          "defender_position_rmse_m": 0.4097122251987457,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.37222634285853295,
+            "min_swept_surface_gap_m": 0.15401027039062304,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        },
+        "actor_conditioned": {
+          "defender_position_rmse_m": 0.419013112783432,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.37090447886311334,
+            "min_swept_surface_gap_m": 0.14105764242145785,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        }
+      }
+    },
+    {
+      "source": "interhuman_3032",
+      "seed": 139,
+      "pseudo_event": {
+        "kind": "block",
+        "start": 57,
+        "end": 63,
+        "a_joint": 21,
+        "b_joint": 19,
+        "a_actor": 0,
+        "b_actor": 1,
+        "protected_joint": 9,
+        "threatened": false,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed"
+      },
+      "ground_truth_geometry_after_preprocessing": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.02547110498427419,
+        "min_swept_surface_gap_m": 0.025383191966325415,
+        "penetration": false,
+        "first_contact_frame": 59,
+        "first_contact_time_s": 1.9666666666666666,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "arms": {
+        "inpainting_only": {
+          "defender_position_rmse_m": 0.8205786347389221,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.5308135550528569,
+            "min_swept_surface_gap_m": -0.08475941170210947,
+            "penetration": true,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        },
+        "actor_conditioned": {
+          "defender_position_rmse_m": 0.7643588781356812,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.48295129757295335,
+            "min_swept_surface_gap_m": -0.047650750702421224,
+            "penetration": true,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        }
+      }
+    },
+    {
+      "source": "interhuman_3061",
+      "seed": 140,
+      "pseudo_event": {
+        "kind": "block",
+        "start": 57,
+        "end": 63,
+        "a_joint": 21,
+        "b_joint": 18,
+        "a_actor": 0,
+        "b_actor": 1,
+        "protected_joint": 9,
+        "threatened": false,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed"
+      },
+      "ground_truth_geometry_after_preprocessing": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.019540775744050908,
+        "min_swept_surface_gap_m": 0.019540775744050908,
+        "penetration": false,
+        "first_contact_frame": 59,
+        "first_contact_time_s": 1.9666666666666666,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "arms": {
+        "inpainting_only": {
+          "defender_position_rmse_m": 0.474039226770401,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.6657213671743648,
+            "min_swept_surface_gap_m": 0.02386052417109253,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        },
+        "actor_conditioned": {
+          "defender_position_rmse_m": 0.5375205278396606,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.698259286324068,
+            "min_swept_surface_gap_m": 0.05285334121196326,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        }
+      }
+    },
+    {
+      "source": "interhuman_3588",
+      "seed": 141,
+      "pseudo_event": {
+        "kind": "hit",
+        "start": 16,
+        "end": 22,
+        "a_joint": 21,
+        "b_joint": 9,
+        "a_actor": 0,
+        "b_actor": 1,
+        "protected_joint": null,
+        "threatened": false,
+        "confidence": 0.5,
+        "provenance": "automatic_sphere_geometry_and_weak_text_candidate; unreviewed"
+      },
+      "ground_truth_geometry_after_preprocessing": {
+        "kind": "hit",
+        "success": true,
+        "min_surface_gap_m": 0.0001576765894571175,
+        "min_swept_surface_gap_m": 0.0001576765894571175,
+        "penetration": false,
+        "first_contact_frame": 18,
+        "first_contact_time_s": 0.6,
+        "protected_hit_frame": null,
+        "confidence": 0.5,
+        "provenance": "automatic_sphere_geometry_and_weak_text_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "arms": {
+        "inpainting_only": {
+          "defender_position_rmse_m": 0.27384066581726074,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "hit",
+            "success": false,
+            "min_surface_gap_m": 0.1459046923571807,
+            "min_swept_surface_gap_m": 0.029135368436135484,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.5,
+            "provenance": "automatic_sphere_geometry_and_weak_text_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        },
+        "actor_conditioned": {
+          "defender_position_rmse_m": 0.32232677936553955,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "hit",
+            "success": false,
+            "min_surface_gap_m": 0.23550382735418082,
+            "min_swept_surface_gap_m": 0.026121057447323653,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.5,
+            "provenance": "automatic_sphere_geometry_and_weak_text_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        }
+      }
+    },
+    {
+      "source": "interhuman_3599",
+      "seed": 142,
+      "pseudo_event": {
+        "kind": "block",
+        "start": 57,
+        "end": 63,
+        "a_joint": 21,
+        "b_joint": 19,
+        "a_actor": 0,
+        "b_actor": 1,
+        "protected_joint": 9,
+        "threatened": false,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed"
+      },
+      "ground_truth_geometry_after_preprocessing": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.009306240065770764,
+        "min_swept_surface_gap_m": 0.008636300900233075,
+        "penetration": false,
+        "first_contact_frame": 60,
+        "first_contact_time_s": 2.0,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "arms": {
+        "inpainting_only": {
+          "defender_position_rmse_m": 1.19182288646698,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.7260017187822799,
+            "min_swept_surface_gap_m": 0.08778997785737958,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        },
+        "actor_conditioned": {
+          "defender_position_rmse_m": 1.1398735046386719,
+          "known_actor_max_error_m": 0.0,
+          "contact": {
+            "kind": "block",
+            "success": false,
+            "min_surface_gap_m": 0.3713155834268434,
+            "min_swept_surface_gap_m": 0.04605260242229673,
+            "penetration": false,
+            "first_contact_frame": null,
+            "first_contact_time_s": null,
+            "protected_hit_frame": null,
+            "confidence": 0.4,
+            "provenance": "automatic_guard_geometry_candidate; unreviewed",
+            "geometry": "sphere_proxy_linear_sweep",
+            "force_verified": false
+          }
+        }
+      }
+    }
+  ],
+  "adapter_sha256": "10232366402f79453e5149acbad76d7582c393d3469f34ce36590fe5cfe5fde9",
+  "test_source_disjoint": true,
+  "selection": "first sorted test pseudo-event sources, independent of output",
+  "conditions": "observed actor prefix plus caption and supplied pseudo-event contact type/time",
+  "history_only": true,
+  "observed_frames": "min(30, length//2)",
+  "cross_attention": true,
+  "actor_future_as_input": false,
+  "online_causal": false,
+  "contact_ground_truth": "unreviewed geometry, not measured forces",
+  "physics_verified": false,
+  "utility_verified": false
+}

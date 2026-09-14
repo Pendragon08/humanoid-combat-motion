@@ -1,0 +1,20 @@
+{
+  "preserve_original_records": true,
+  "corrections": [
+    {
+      "records": ["runs/multireference_smoke_seed0_v2/config.json", "runs/multireference_kungfu20_seed0/config.json"],
+      "field": "world_position_control",
+      "original_value": false,
+      "correction": "Misleading descriptive metadata. The actual unchanged BeyondMimic reward includes global anchor position and orientation, each weight0.5, as well as relative-body rewards. It does not provide a hard guarantee of paired world-space contact.",
+      "training_algorithm_changed": false
+    },
+    {
+      "record": "records/paired_v1/multireference_smoke.log",
+      "correction": "First interface attempt produced no completion artifact. The alignment quaternion required explicit expansion over tracked bodies. Version2 passed300 steps with zero boundary violations; only version2 is accepted."
+    },
+    {
+      "record": "runs/kungfu_test6_qpos/source_manifest.json",
+      "correction": "Requested maximum6 sources but only4 test clips exist. Directory name is historical; actual count4. All four are from one held-out video-title group, not four independent videos. Training20clips cover7 title groups."
+    }
+  ]
+}

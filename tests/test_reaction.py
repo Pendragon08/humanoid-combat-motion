@@ -4,10 +4,18 @@ import numpy as np
 from combat.contact_guidance import refine_contacts
 from combat.contact_kinematics import refine_kinematic_contacts
 from combat.interaction import ContactEvent
-from combat.reaction import ActorMotionAdapter,masked_defender_mse,history_condition
+from combat.reaction import ActorMotionAdapter,CausalReactionResidual,masked_defender_mse,history_condition
 
 
 class ReactionTests(unittest.TestCase):
+    def test_cross_attention_masks_future_actor_keys(self):
+        torch.manual_seed(7);net=CausalReactionResidual();torch.nn.init.normal_(net.out.weight,std=.01)
+        x=torch.randn(1,8,524);actor=torch.randn(1,8,262);observed=torch.tensor([6])
+        before=net(x,actor,observed)
+        actor[:,3:]=1000;after=net(x,actor,observed)
+        torch.testing.assert_close(before[:,:3],after[:,:3])
+        actor=torch.randn(1,8,262);before=net(x,actor,observed);actor[:,6:]=1000
+        torch.testing.assert_close(before,net(x,actor,observed))
     def test_differentiable_fk_preserves_bones_and_reduces_gap(self):
         x=np.zeros((6,2,3,3),dtype=np.float32);x[:,:,1,1]=.2;x[:,:,2,1]=.4;x[:,1,:,0]=.45
         y,_=refine_kinematic_contacts(x,np.full(3,.05),30,[ContactEvent('hit',0,5,2,2)],[(0,1),(1,2)],steps=60)

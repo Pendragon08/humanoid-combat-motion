@@ -206,6 +206,126 @@
       "sha256": "70c82266b42cae03d68e42feadf84ff0f004b9cb87bdb603f94508d9b3a7bbb3"
     },
     {
+      "origin": "runs/g1_tracking_eval_multiref_test4_sample_000_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_test4_sample_000_primed/metrics.json",
+      "sha256": "194a10b8c0bdcf0cf00df2f5777730bc120577d73bfb020f8e8bea088134e4ee"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_test4_sample_001_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_test4_sample_001_primed/metrics.json",
+      "sha256": "c86f02891bca819f0906ca2120890d0c323a680aec8cc36172178248bd95ac8e"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_test4_sample_002_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_test4_sample_002_primed/metrics.json",
+      "sha256": "152d025a47924e144ab8cfad673329eefb448127639255093afb1788419357c3"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_test4_sample_003_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_test4_sample_003_primed/metrics.json",
+      "sha256": "a055a6398c959c7ef3b0fab4a5fc07c5703f46debad31e41d42bb5c5d31495e5"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_train20_sample_000_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_train20_sample_000_primed/metrics.json",
+      "sha256": "156c9e3ae2fd5c6ee02b2d36efca8ee707a2950da0b6d6a2a811dd90bec0218e"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_train20_sample_001_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_train20_sample_001_primed/metrics.json",
+      "sha256": "992094af3639dff528b6ea74111db1470231d860e6b1e452a1b653ffbe2bd8dd"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_train20_sample_002_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_train20_sample_002_primed/metrics.json",
+      "sha256": "90c1b2653c2658b27415b7f2312971677f2ef0d8643088bad9b78766ad5679e4"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_train20_sample_003_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_train20_sample_003_primed/metrics.json",
+      "sha256": "3a30a5d524f5738cfe657bf029363b1a09768c7e1ab3fb95b3a662a71aaca7a2"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_train20_sample_004_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_train20_sample_004_primed/metrics.json",
+      "sha256": "b290b6a26c8551e6085edc3038cb294b543692bce7ba5c5fc1bb2b8703bc2dba"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_train20_sample_005_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_train20_sample_005_primed/metrics.json",
+      "sha256": "2cf2dc9acc823a13bd26e205b3a04f904b36356559bc65c57fd1b8a5d7aae49d"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_train20_sample_006_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_train20_sample_006_primed/metrics.json",
+      "sha256": "98a49f771a02cc2a15a2da8dae055d427d8183af624cba56ba922a83a6eb95a0"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_train20_sample_007_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_train20_sample_007_primed/metrics.json",
+      "sha256": "b1857a856c21f3bdc38e6237888b6e8309aa28aed54f2fdb21b817613095d047"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_train20_sample_008_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_train20_sample_008_primed/metrics.json",
+      "sha256": "6bc17bfc9703394de7d6f5991f932c900a57bfefb3adf1703dc68c4c19ffe85b"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_train20_sample_009_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_train20_sample_009_primed/metrics.json",
+      "sha256": "3273ba652e21998c8783011776b6f2cb69a179ec44acf8374d71ae866d32f4b2"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_train20_sample_010_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_train20_sample_010_primed/metrics.json",
+      "sha256": "bebbe1623e4606c78cf9a7f7eb48502edaeaf55dd74bc2d19d6365eb91b64ec4"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_train20_sample_011_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_train20_sample_011_primed/metrics.json",
+      "sha256": "56e066694941a1579175a1d17a28f168ec90060beca7e3020c4bab0d1dc96203"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_train20_sample_012_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_train20_sample_012_primed/metrics.json",
+      "sha256": "22041224e5fc2e80c2976536f82a9597c749a7444230fa26a4bf879f07b0d343"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_train20_sample_013_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_train20_sample_013_primed/metrics.json",
+      "sha256": "b59aae7babe28ba06c34721c118ac6d794a4a362458eff46e14396356ff0700d"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_train20_sample_014_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_train20_sample_014_primed/metrics.json",
+      "sha256": "22711e949486e164845950fd111b9448e0096f2f6dc9d4758897d7cb29d940d1"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_train20_sample_015_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_train20_sample_015_primed/metrics.json",
+      "sha256": "6f4f9747cdac321fe1f4e0c969f222812812bbe46fedb8f19c4c7ba05a9ab0a4"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_train20_sample_016_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_train20_sample_016_primed/metrics.json",
+      "sha256": "18c6a0cca7fd3e2103d571eefbcfa6c691965dfafa03adbf7b66c1b3cf7b8984"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_train20_sample_017_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_train20_sample_017_primed/metrics.json",
+      "sha256": "4b27b756bde0e9de7ed0036871ca04f79c4080786ab6c4b75b19964869a1c5b0"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_train20_sample_018_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_train20_sample_018_primed/metrics.json",
+      "sha256": "4ebb28e7dc46530fb785cf7e6440590f2d987e0ccff5a884f3f7227f5a449b5e"
+    },
+    {
+      "origin": "runs/g1_tracking_eval_multiref_train20_sample_019_primed/metrics.json",
+      "file": "g1_tracking_eval_multiref_train20_sample_019_primed/metrics.json",
+      "sha256": "1324a085eaf92a10eadb2da018aa037e520f8ef7bd219d697e489197840890ad"
+    },
+    {
       "origin": "runs/dual_g1_adapted_sample_000_iter1098/metrics.json",
       "file": "dual_g1_adapted_sample_000_iter1098/metrics.json",
       "sha256": "775ced863da516d6e34f9d4a932abcd7294e158e040e38b37a9eeeb0cdb531ca"
@@ -324,6 +444,106 @@
       "origin": "runs/dual_g1_adapted_sample_023_iter1098/metrics.json",
       "file": "dual_g1_adapted_sample_023_iter1098/metrics.json",
       "sha256": "3e933cd80052d4ec23e537df4129a086ace45d3be27428161102ac0adfee9a60"
+    },
+    {
+      "origin": "runs/dual_g1_contact_sample_000_multiref999/metrics.json",
+      "file": "dual_g1_contact_sample_000_multiref999/metrics.json",
+      "sha256": "31191d860144f516cc526ec642064eb383d5d92ffb08cb7b6d256dc30b019225"
+    },
+    {
+      "origin": "runs/dual_g1_contact_sample_001_multiref999/metrics.json",
+      "file": "dual_g1_contact_sample_001_multiref999/metrics.json",
+      "sha256": "6212d3d533abd595065f605da98a1e25e6f3ae29ad9674d9baf6343b14c1eb77"
+    },
+    {
+      "origin": "runs/dual_g1_contact_sample_002_multiref999/metrics.json",
+      "file": "dual_g1_contact_sample_002_multiref999/metrics.json",
+      "sha256": "dec166181bd4a32199e9beea5b8ba6fcb56ddf0eb2a5ad819169305e4e3a3298"
+    },
+    {
+      "origin": "runs/dual_g1_contact_sample_003_multiref999/metrics.json",
+      "file": "dual_g1_contact_sample_003_multiref999/metrics.json",
+      "sha256": "befb1035c15aa973bbb36b207f84807791acc91fbdf3531a8ff55695cb52515c"
+    },
+    {
+      "origin": "runs/dual_g1_contact_sample_004_multiref999/metrics.json",
+      "file": "dual_g1_contact_sample_004_multiref999/metrics.json",
+      "sha256": "29a6c567b38da4492b4c5e2d15f2c26d4dc14ef55ee268d3acf58bac24939cc4"
+    },
+    {
+      "origin": "runs/dual_g1_contact_sample_005_multiref999/metrics.json",
+      "file": "dual_g1_contact_sample_005_multiref999/metrics.json",
+      "sha256": "d23f804a8660fec7236e9b43165de3ac10ab06763a8ec2b110528f2c4424f47c"
+    },
+    {
+      "origin": "runs/dual_g1_contact_sample_006_multiref999/metrics.json",
+      "file": "dual_g1_contact_sample_006_multiref999/metrics.json",
+      "sha256": "37b573b4c702f4e9272d73ea9b4ffc5506e656008c303e0030e66389ed0d1a82"
+    },
+    {
+      "origin": "runs/dual_g1_contact_sample_007_multiref999/metrics.json",
+      "file": "dual_g1_contact_sample_007_multiref999/metrics.json",
+      "sha256": "48f7143ff73be0f352523e52eb8e3291c2317dfdc459a92c9c9fe60942996628"
+    },
+    {
+      "origin": "runs/dual_g1_contact_sample_008_multiref999/metrics.json",
+      "file": "dual_g1_contact_sample_008_multiref999/metrics.json",
+      "sha256": "047c3c23a22b077c2df677bf9242c140a907d6b395093d28244cbfeca47e4e81"
+    },
+    {
+      "origin": "runs/dual_g1_contact_sample_009_multiref999/metrics.json",
+      "file": "dual_g1_contact_sample_009_multiref999/metrics.json",
+      "sha256": "866070a80a44a161f9b2dc3a7ae210ba8a1efa5e07184a4a4cbfd3b41089c57f"
+    },
+    {
+      "origin": "runs/dual_g1_contact_sample_010_multiref999/metrics.json",
+      "file": "dual_g1_contact_sample_010_multiref999/metrics.json",
+      "sha256": "d52e5f538a843329bc4c2fbbbe985ef31c24e27bdc9602494519e55e337fe1b2"
+    },
+    {
+      "origin": "runs/dual_g1_contact_sample_011_multiref999/metrics.json",
+      "file": "dual_g1_contact_sample_011_multiref999/metrics.json",
+      "sha256": "ffe6b4208d74a0604820ba58447c6ad1ded685f67235bd09fb4168dd7d9fbda3"
+    },
+    {
+      "origin": "runs/dual_g1_contact_sample_012_multiref999/metrics.json",
+      "file": "dual_g1_contact_sample_012_multiref999/metrics.json",
+      "sha256": "e0404f13ac9c162c919ce5e5528881d6a217a40fe7fc9f298ab2c24bc1837347"
+    },
+    {
+      "origin": "runs/dual_g1_contact_sample_013_multiref999/metrics.json",
+      "file": "dual_g1_contact_sample_013_multiref999/metrics.json",
+      "sha256": "8a950a01f04f946fb3960d9dfb642c3e5a540fdda2607dcb2b34113d027eca57"
+    },
+    {
+      "origin": "runs/dual_g1_contact_sample_014_multiref999/metrics.json",
+      "file": "dual_g1_contact_sample_014_multiref999/metrics.json",
+      "sha256": "adc8993cf11c7087409a39104f6897193ac197d245112b7df47c7ca0a011e905"
+    },
+    {
+      "origin": "runs/dual_g1_contact_sample_015_multiref999/metrics.json",
+      "file": "dual_g1_contact_sample_015_multiref999/metrics.json",
+      "sha256": "c3def259fa8d68d067f1922f4104b63c8fa071e465019e5bfac2800c7416a43a"
+    },
+    {
+      "origin": "runs/dual_g1_contact_sample_016_multiref999/metrics.json",
+      "file": "dual_g1_contact_sample_016_multiref999/metrics.json",
+      "sha256": "1df93bcaa664f2c9f1b236d111c01849f141ac81dfd4a7ae96231ff655ae24c5"
+    },
+    {
+      "origin": "runs/dual_g1_contact_sample_017_multiref999/metrics.json",
+      "file": "dual_g1_contact_sample_017_multiref999/metrics.json",
+      "sha256": "bcf622572e0fc0c531efabb85b2a11d0d889488df1d460acb564565270d9a583"
+    },
+    {
+      "origin": "runs/dual_g1_contact_sample_018_multiref999/metrics.json",
+      "file": "dual_g1_contact_sample_018_multiref999/metrics.json",
+      "sha256": "debcc50a9f5a94b7d90dbcdca5e8093032a4e990f4301550d38ba7969060c538"
+    },
+    {
+      "origin": "runs/dual_g1_contact_sample_019_multiref999/metrics.json",
+      "file": "dual_g1_contact_sample_019_multiref999/metrics.json",
+      "sha256": "c0cda1ce8604114721e19891e1e15f5ce89dce4c0c9ea9b32535543e609a4c77"
     },
     {
       "origin": "runs/dual_g1_generic_sample_000_iter1098/metrics.json",
@@ -456,9 +676,34 @@
       "sha256": "4c2cc07ffabeb9ad72f4589d99e5209145bd56a5dda49e3883b7c9ee2c40f90c"
     },
     {
+      "origin": "runs/dual_g1_seed199_control_iter3097_contacts_v2/metrics.json",
+      "file": "dual_g1_seed199_control_iter3097_contacts_v2/metrics.json",
+      "sha256": "1b96f1c8bac389f10d4ff1e73643b7c0a7015aeee3dfbb28f5d7e8fa8d9b7657"
+    },
+    {
       "origin": "runs/dual_g1_seed199_control_references/manifest.json",
       "file": "dual_g1_seed199_control_references/manifest.json",
       "sha256": "c1d5600bbb11c230770379b76ee547eef111590b8e4ea7edfcae7699d7b3a509"
+    },
+    {
+      "origin": "runs/actor_reaction_crossattention_seed0/TRAINING_COMPLETE.json",
+      "file": "actor_reaction_crossattention_seed0/TRAINING_COMPLETE.json",
+      "sha256": "3fbec09b5dab719309b068429730bae11ceb38175c4fbc304ae327c98879b0ff"
+    },
+    {
+      "origin": "runs/actor_reaction_crossattention_seed0/config.json",
+      "file": "actor_reaction_crossattention_seed0/config.json",
+      "sha256": "0eacf3614e141be85749d5eecdc70dab8aa894a3bebe3cb87a4206837660972d"
+    },
+    {
+      "origin": "runs/actor_reaction_crossattention_seed0/loss.jsonl",
+      "file": "actor_reaction_crossattention_seed0/loss.jsonl",
+      "sha256": "679a6b80735557138c5333d36eb547c01f3e91d0a249318e131d89653bd0a1e9"
+    },
+    {
+      "origin": "runs/actor_reaction_crossattention_test_seed123/evaluation.json",
+      "file": "actor_reaction_crossattention_test_seed123/evaluation.json",
+      "sha256": "e4cc4d4cbea776cf875785f2fb7efc0fff7fc85b7ffb6e78b96c83669a862bb9"
     },
     {
       "origin": "runs/actor_reaction_history_seed0/TRAINING_COMPLETE.json",
@@ -554,6 +799,11 @@
       "origin": "runs/kungfu_train20_tracking_refs/manifest.json",
       "file": "kungfu_train20_tracking_refs/manifest.json",
       "sha256": "07fd6127dbcbef33d36d4897841ac80e05b15622399552a8191c8600916b2a5d"
+    },
+    {
+      "origin": "runs/multireference_kungfu20_seed0/TRAINING_COMPLETE.json",
+      "file": "multireference_kungfu20_seed0/TRAINING_COMPLETE.json",
+      "sha256": "803eab9b1d2c2114f933ee93f7921f69a74fdd638bc67f70274056c81f4d6ac7"
     },
     {
       "origin": "runs/multireference_kungfu20_seed0/config.json",
