@@ -5,6 +5,7 @@ import html
 import json
 from pathlib import Path
 import statistics
+import math
 from datetime import datetime,timezone
 
 p=argparse.ArgumentParser();p.add_argument('--output',type=Path,default=Path('records/step7/summary.json'))
@@ -33,13 +34,16 @@ for arm in ('real','generic','contact'):
                 m=read(path)
                 if m['checkpoint_sha256']!=row['model_sha256'] or m['motion_sha256']!=expected_refs[sample]:raise ValueError('Evaluation provenance mismatch')
                 if m['environments']!=32 or m['seed']!=123:raise ValueError('Unequal evaluation protocol')
+                if not all(math.isfinite(float(v)) for v in m['mean_alive_error'].values()):raise ValueError('Nonfinite evaluation metrics')
                 row['evaluations'].append({'sample':sample,'path':str(path.relative_to(root)),'sha256':digest(path),
                     'completion':m['completion_fraction'],'strict':m['strict_tracking_pass_fraction'],
                     'failure_time_s':statistics.mean(m['first_failure_steps'])*m['control_dt'],
-                    'joint_error_rad':m['mean_alive_error']['joint_mae_rad'],'root_error_m':m['mean_alive_error']['root_error_m']})
+                    'joint_error_rad':m['mean_alive_error']['joint_mae_rad'],'root_error_m':m['mean_alive_error']['root_error_m'],
+                    'body_error_m':m['mean_alive_error']['body_error_m'],'aligned_body_error_m':m['mean_alive_error']['aligned_body_error_m'],
+                    'return_to_first_failure':m['mean_alive_error']['reward']*m['valid_active_env_steps']/m['environments']})
             if len(row['evaluations'])==4:
                 row['status']='complete'
-                row['macro']={key:statistics.mean(r[key] for r in row['evaluations']) for key in ('completion','strict','failure_time_s','joint_error_rad','root_error_m')}
+                row['macro']={key:statistics.mean(r[key] for r in row['evaluations']) for key in ('completion','strict','failure_time_s','joint_error_rad','root_error_m','body_error_m','aligned_body_error_m','return_to_first_failure')}
                 completed.append(row)
         rows.append(row)
 groups={}

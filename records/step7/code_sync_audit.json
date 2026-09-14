@@ -1,0 +1,768 @@
+{
+  "scope": "Current local and remote Python/shell source and environment specs; raw data and models excluded",
+  "files": [
+    {
+      "path": "combat/__init__.py",
+      "local_sha256": "b71214dba6c0490ff5bff663269f643e128b8c60bac63ee34af231ba9827be69",
+      "remote_sha256": "b71214dba6c0490ff5bff663269f643e128b8c60bac63ee34af231ba9827be69",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "b71214dba6c0490ff5bff663269f643e128b8c60bac63ee34af231ba9827be69"
+    },
+    {
+      "path": "combat/annotations.py",
+      "local_sha256": "cea1fb1c3b11b48f3470f2f922e602ba410df325b7108860ac5d7887ef8c92e4",
+      "remote_sha256": "cea1fb1c3b11b48f3470f2f922e602ba410df325b7108860ac5d7887ef8c92e4",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "cea1fb1c3b11b48f3470f2f922e602ba410df325b7108860ac5d7887ef8c92e4"
+    },
+    {
+      "path": "combat/checkpoint_io.py",
+      "local_sha256": "ec1e3f9db04eb9dc916c4322cdaa8c323672ed204d0899dd2f8413e5b56e2664",
+      "remote_sha256": "ec1e3f9db04eb9dc916c4322cdaa8c323672ed204d0899dd2f8413e5b56e2664",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "ec1e3f9db04eb9dc916c4322cdaa8c323672ed204d0899dd2f8413e5b56e2664"
+    },
+    {
+      "path": "combat/constraints.py",
+      "local_sha256": "149c83047185df4b1f7f10c3f7bd4d3b926458befd2b8a4fa635e46533adf7c8",
+      "remote_sha256": "149c83047185df4b1f7f10c3f7bd4d3b926458befd2b8a4fa635e46533adf7c8",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "149c83047185df4b1f7f10c3f7bd4d3b926458befd2b8a4fa635e46533adf7c8"
+    },
+    {
+      "path": "combat/contact_guidance.py",
+      "local_sha256": "b5d399a8d871ddcb18d7baa3bfec74e2d63b5aa38ebf0444e816bc595f752d4e",
+      "remote_sha256": "b5d399a8d871ddcb18d7baa3bfec74e2d63b5aa38ebf0444e816bc595f752d4e",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "b5d399a8d871ddcb18d7baa3bfec74e2d63b5aa38ebf0444e816bc595f752d4e"
+    },
+    {
+      "path": "combat/contact_kinematics.py",
+      "local_sha256": "0d4dd4416aa7ee689c59f4c2e3020e76faca8e5120d7500dcd6fdaa7ee5f9b9e",
+      "remote_sha256": "0d4dd4416aa7ee689c59f4c2e3020e76faca8e5120d7500dcd6fdaa7ee5f9b9e",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "0d4dd4416aa7ee689c59f4c2e3020e76faca8e5120d7500dcd6fdaa7ee5f9b9e"
+    },
+    {
+      "path": "combat/coverage_critic.py",
+      "local_sha256": "f09ffcfe00515b562d1784445246be6bd4aca27dd59e6c4455533dbc799e50ea",
+      "remote_sha256": "f09ffcfe00515b562d1784445246be6bd4aca27dd59e6c4455533dbc799e50ea",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "f09ffcfe00515b562d1784445246be6bd4aca27dd59e6c4455533dbc799e50ea"
+    },
+    {
+      "path": "combat/diffusion.py",
+      "local_sha256": "c3ddbf5d667607059e7bd0ab5bbf7ba7893f42a7e7b429c6a2d800d459255f11",
+      "remote_sha256": "c3ddbf5d667607059e7bd0ab5bbf7ba7893f42a7e7b429c6a2d800d459255f11",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "c3ddbf5d667607059e7bd0ab5bbf7ba7893f42a7e7b429c6a2d800d459255f11"
+    },
+    {
+      "path": "combat/identity.py",
+      "local_sha256": "7d1c3bae6ffd9494924a6d9f110f577539a4f2470e1ca9889243b392a1736378",
+      "remote_sha256": "7d1c3bae6ffd9494924a6d9f110f577539a4f2470e1ca9889243b392a1736378",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "7d1c3bae6ffd9494924a6d9f110f577539a4f2470e1ca9889243b392a1736378"
+    },
+    {
+      "path": "combat/interaction.py",
+      "local_sha256": "14faad0d6e0b0448a6252dceb878c5fbd2a780d0fae40de7377fa54fd668d006",
+      "remote_sha256": "14faad0d6e0b0448a6252dceb878c5fbd2a780d0fae40de7377fa54fd668d006",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "14faad0d6e0b0448a6252dceb878c5fbd2a780d0fae40de7377fa54fd668d006"
+    },
+    {
+      "path": "combat/multireference_tracking.py",
+      "local_sha256": "881792bbc719eb91c8bb5a6e56127785bab58520f821efc78dd002cf0e1b5ca9",
+      "remote_sha256": "881792bbc719eb91c8bb5a6e56127785bab58520f821efc78dd002cf0e1b5ca9",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "881792bbc719eb91c8bb5a6e56127785bab58520f821efc78dd002cf0e1b5ca9"
+    },
+    {
+      "path": "combat/paired_models.py",
+      "local_sha256": "f467b2827abf68ce22704dc895957dd857d1aede4ff999eaf326b9878a499b0c",
+      "remote_sha256": "f467b2827abf68ce22704dc895957dd857d1aede4ff999eaf326b9878a499b0c",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "f467b2827abf68ce22704dc895957dd857d1aede4ff999eaf326b9878a499b0c"
+    },
+    {
+      "path": "combat/protocol.py",
+      "local_sha256": "73a0cef40cd8b94476c614fd2cdfe669e56fb8421736bc2f75d3588e0e13a3d0",
+      "remote_sha256": "73a0cef40cd8b94476c614fd2cdfe669e56fb8421736bc2f75d3588e0e13a3d0",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "73a0cef40cd8b94476c614fd2cdfe669e56fb8421736bc2f75d3588e0e13a3d0"
+    },
+    {
+      "path": "combat/reaction.py",
+      "local_sha256": "20b65dff9253bf92ca0d88dae2d7b561f0111d4de6448c0776a25a1dc0c62149",
+      "remote_sha256": "20b65dff9253bf92ca0d88dae2d7b561f0111d4de6448c0776a25a1dc0c62149",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "20b65dff9253bf92ca0d88dae2d7b561f0111d4de6448c0776a25a1dc0c62149"
+    },
+    {
+      "path": "combat/reference_bundle.py",
+      "local_sha256": "6bf33372580e975041ac68f1377f83e1b0640d26a213a0269cafd5fef5c17e30",
+      "remote_sha256": "6bf33372580e975041ac68f1377f83e1b0640d26a213a0269cafd5fef5c17e30",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "6bf33372580e975041ac68f1377f83e1b0640d26a213a0269cafd5fef5c17e30"
+    },
+    {
+      "path": "combat/robot.py",
+      "local_sha256": "8d9913c6f1bee30f41bab600f63709430c3ed3e11f10c067c0e8b5bc6289bd09",
+      "remote_sha256": "8d9913c6f1bee30f41bab600f63709430c3ed3e11f10c067c0e8b5bc6289bd09",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "8d9913c6f1bee30f41bab600f63709430c3ed3e11f10c067c0e8b5bc6289bd09"
+    },
+    {
+      "path": "env-isaaclab.json",
+      "local_sha256": "4b5e8847f26a6fdc0521709b69945870ad156886d1ffc326d5b5117a51f9afb2",
+      "remote_sha256": "c6ad26e967e986203087dbf90d1f28409c5c34bd1d553e019d236966d881ef5e",
+      "match": false,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "c6ad26e967e986203087dbf90d1f28409c5c34bd1d553e019d236966d881ef5e"
+    },
+    {
+      "path": "env-retarget.json",
+      "local_sha256": "af2c93c753a455069266b91f002590a1d4454ef3e97d71e863a9f74a12949bdf",
+      "remote_sha256": "af2c93c753a455069266b91f002590a1d4454ef3e97d71e863a9f74a12949bdf",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "af2c93c753a455069266b91f002590a1d4454ef3e97d71e863a9f74a12949bdf"
+    },
+    {
+      "path": "env-spec.json",
+      "local_sha256": "2b439ae97fed011e49a795b2256e76cdc52523a3f7389f7322e69f07c829688c",
+      "remote_sha256": "2b439ae97fed011e49a795b2256e76cdc52523a3f7389f7322e69f07c829688c",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "2b439ae97fed011e49a795b2256e76cdc52523a3f7389f7322e69f07c829688c"
+    },
+    {
+      "path": "env-timotion.json",
+      "local_sha256": "3b6d29d0e4de32aebb8fcdb2af325ec229f7a01668adc0059746861046c1fbdf",
+      "remote_sha256": "3b6d29d0e4de32aebb8fcdb2af325ec229f7a01668adc0059746861046c1fbdf",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "3b6d29d0e4de32aebb8fcdb2af325ec229f7a01668adc0059746861046c1fbdf"
+    },
+    {
+      "path": "scripts/audit_reaction_geometry.py",
+      "local_sha256": "ac18cc92afcda5a25e88b3e5f91c621da718096d5ac31084380200e52c8d4c04",
+      "remote_sha256": "ac18cc92afcda5a25e88b3e5f91c621da718096d5ac31084380200e52c8d4c04",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "ac18cc92afcda5a25e88b3e5f91c621da718096d5ac31084380200e52c8d4c04"
+    },
+    {
+      "path": "scripts/audit_retargeted_contact.py",
+      "local_sha256": "ced947438112884b3d5c88c9020a11e0b195a7e7590a9b42614994fe8d462031",
+      "remote_sha256": "ced947438112884b3d5c88c9020a11e0b195a7e7590a9b42614994fe8d462031",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "ced947438112884b3d5c88c9020a11e0b195a7e7590a9b42614994fe8d462031"
+    },
+    {
+      "path": "scripts/build_interhuman_manifest.py",
+      "local_sha256": "8e53cd16342c9f593e3565f5dee53dcf0f24845d685ca8b49012d1058f28fb4d",
+      "remote_sha256": "8e53cd16342c9f593e3565f5dee53dcf0f24845d685ca8b49012d1058f28fb4d",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "8e53cd16342c9f593e3565f5dee53dcf0f24845d685ca8b49012d1058f28fb4d"
+    },
+    {
+      "path": "scripts/build_report.py",
+      "local_sha256": "ac799e7ab9616c3368b6db8b0007587c9ded6e80a5063f021549f574af938f0e",
+      "remote_sha256": "c941783c8d9262a07a3897b2b01545acdbaea4708e96a3ed28252d16fcaff708",
+      "match": false,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "c941783c8d9262a07a3897b2b01545acdbaea4708e96a3ed28252d16fcaff708"
+    },
+    {
+      "path": "scripts/build_tracking_bundle.py",
+      "local_sha256": "e358e50d2dc1a57393283c333ba8f101b8199c4e3419827492148daa8dc36e4c",
+      "remote_sha256": "e358e50d2dc1a57393283c333ba8f101b8199c4e3419827492148daa8dc36e4c",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "e358e50d2dc1a57393283c333ba8f101b8199c4e3419827492148daa8dc36e4c"
+    },
+    {
+      "path": "scripts/check_experiment_artifacts.py",
+      "local_sha256": "1e6f0527cf3dd8e00202b17bf85837e2dea94f6b43e56d4f6008277d6e604c53",
+      "remote_sha256": "1e6f0527cf3dd8e00202b17bf85837e2dea94f6b43e56d4f6008277d6e604c53",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "1e6f0527cf3dd8e00202b17bf85837e2dea94f6b43e56d4f6008277d6e604c53"
+    },
+    {
+      "path": "scripts/check_step7_artifacts.py",
+      "local_sha256": "65c71d61f52036201696da79f7e594dca396485317bf015926f902b1dd783152",
+      "remote_sha256": "65c71d61f52036201696da79f7e594dca396485317bf015926f902b1dd783152",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "65c71d61f52036201696da79f7e594dca396485317bf015926f902b1dd783152"
+    },
+    {
+      "path": "scripts/collect_completed_records.py",
+      "local_sha256": "49b752883aa5c28cc23f43d397f87e8f9e51eeea29632c2d170a3a38e387da52",
+      "remote_sha256": "49b752883aa5c28cc23f43d397f87e8f9e51eeea29632c2d170a3a38e387da52",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "49b752883aa5c28cc23f43d397f87e8f9e51eeea29632c2d170a3a38e387da52"
+    },
+    {
+      "path": "scripts/collect_step7_records.py",
+      "local_sha256": "16d7e7bc39ef8d6b2563e9d62fa9c24fc5ead9f70354a836130627c3c0d39336",
+      "remote_sha256": "16d7e7bc39ef8d6b2563e9d62fa9c24fc5ead9f70354a836130627c3c0d39336",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "16d7e7bc39ef8d6b2563e9d62fa9c24fc5ead9f70354a836130627c3c0d39336"
+    },
+    {
+      "path": "scripts/convert_paired_tracking_references.py",
+      "local_sha256": "40b75a3025443e2c5b484d87b7438ea6f6c0f9e4f4738faf22361f530e132418",
+      "remote_sha256": "40b75a3025443e2c5b484d87b7438ea6f6c0f9e4f4738faf22361f530e132418",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "40b75a3025443e2c5b484d87b7438ea6f6c0f9e4f4738faf22361f530e132418"
+    },
+    {
+      "path": "scripts/download_ranges.py",
+      "local_sha256": "1f6844b8f6ba20ffce809de93fd9184c1c72962bce8d2813ff7e71ae9c2a3c5a",
+      "remote_sha256": "1f6844b8f6ba20ffce809de93fd9184c1c72962bce8d2813ff7e71ae9c2a3c5a",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "1f6844b8f6ba20ffce809de93fd9184c1c72962bce8d2813ff7e71ae9c2a3c5a"
+    },
+    {
+      "path": "scripts/download_resources.py",
+      "local_sha256": "a2e29fecd785885ebf695dddad2fc1b75c1672f18779da30543d95950fcb6d96",
+      "remote_sha256": "a2e29fecd785885ebf695dddad2fc1b75c1672f18779da30543d95950fcb6d96",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "a2e29fecd785885ebf695dddad2fc1b75c1672f18779da30543d95950fcb6d96"
+    },
+    {
+      "path": "scripts/evaluate.py",
+      "local_sha256": "5456031d3c0232666a2eded58d33adc8015e204cb226c2f504e738a4a07e1545",
+      "remote_sha256": "5456031d3c0232666a2eded58d33adc8015e204cb226c2f504e738a4a07e1545",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "5456031d3c0232666a2eded58d33adc8015e204cb226c2f504e738a4a07e1545"
+    },
+    {
+      "path": "scripts/evaluate_dual_g1_tracking.py",
+      "local_sha256": "2050787df00d3ae1836735d5f2cab3b0e251795a21dc3a6ee2749c452c645990",
+      "remote_sha256": "2050787df00d3ae1836735d5f2cab3b0e251795a21dc3a6ee2749c452c645990",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "2050787df00d3ae1836735d5f2cab3b0e251795a21dc3a6ee2749c452c645990"
+    },
+    {
+      "path": "scripts/evaluate_g1_tracking.py",
+      "local_sha256": "cab869856869975b4051ec68da57f2a9e8af59e8a03b6413e649ce6d6d8336f2",
+      "remote_sha256": "cab869856869975b4051ec68da57f2a9e8af59e8a03b6413e649ce6d6d8336f2",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "cab869856869975b4051ec68da57f2a9e8af59e8a03b6413e649ce6d6d8336f2"
+    },
+    {
+      "path": "scripts/evaluate_timotion_offline.py",
+      "local_sha256": "2060eacbbaf8dd4db3201e0272568de38fef6ef06bc30c5fb58568cfdfa18396",
+      "remote_sha256": "2060eacbbaf8dd4db3201e0272568de38fef6ef06bc30c5fb58568cfdfa18396",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "2060eacbbaf8dd4db3201e0272568de38fef6ef06bc30c5fb58568cfdfa18396"
+    },
+    {
+      "path": "scripts/export_checkpoint_arrays.py",
+      "local_sha256": "e8322b0e348fd5f85775adc8a013225ed72fe097e0ff75f1b73c879906e4f21a",
+      "remote_sha256": "e8322b0e348fd5f85775adc8a013225ed72fe097e0ff75f1b73c879906e4f21a",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "e8322b0e348fd5f85775adc8a013225ed72fe097e0ff75f1b73c879906e4f21a"
+    },
+    {
+      "path": "scripts/export_kungfu_tracking_set.py",
+      "local_sha256": "5a54de603855cdeb682f43e55edf7504b8e3dbef3dfe2d52c33b9e5a71ef88ab",
+      "remote_sha256": "5a54de603855cdeb682f43e55edf7504b8e3dbef3dfe2d52c33b9e5a71ef88ab",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "5a54de603855cdeb682f43e55edf7504b8e3dbef3dfe2d52c33b9e5a71ef88ab"
+    },
+    {
+      "path": "scripts/export_reference.py",
+      "local_sha256": "dc2fcc8c4ace855bc4c26409ba11acc9aeb74cbdba75509c5153893cba4d5162",
+      "remote_sha256": "dc2fcc8c4ace855bc4c26409ba11acc9aeb74cbdba75509c5153893cba4d5162",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "dc2fcc8c4ace855bc4c26409ba11acc9aeb74cbdba75509c5153893cba4d5162"
+    },
+    {
+      "path": "scripts/export_seed_tracking_csv.py",
+      "local_sha256": "0b79a0568bb255e7b0d77f7ce7909d0871f52363823746c3acd3c363407f2145",
+      "remote_sha256": "0b79a0568bb255e7b0d77f7ce7909d0871f52363823746c3acd3c363407f2145",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "0b79a0568bb255e7b0d77f7ce7909d0871f52363823746c3acd3c363407f2145"
+    },
+    {
+      "path": "scripts/extract_combat_pseudo_events.py",
+      "local_sha256": "2c44751f88619811e9bf0962e3faecd6f6a3b423e72b4638616ad29466d10e45",
+      "remote_sha256": "2c44751f88619811e9bf0962e3faecd6f6a3b423e72b4638616ad29466d10e45",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "2c44751f88619811e9bf0962e3faecd6f6a3b423e72b4638616ad29466d10e45"
+    },
+    {
+      "path": "scripts/fetch_drive_resource.py",
+      "local_sha256": "82ac3362b829a497b9dfa39c6aa6a85bf936668cc05364fd0abb5a858119ec32",
+      "remote_sha256": "82ac3362b829a497b9dfa39c6aa6a85bf936668cc05364fd0abb5a858119ec32",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "82ac3362b829a497b9dfa39c6aa6a85bf936668cc05364fd0abb5a858119ec32"
+    },
+    {
+      "path": "scripts/finalize_step7.sh",
+      "local_sha256": "0bbac511bc987f67d97b6b44187c99d590a9fc62a440c9f0dfceb6587e782be1",
+      "remote_sha256": "0bbac511bc987f67d97b6b44187c99d590a9fc62a440c9f0dfceb6587e782be1",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "0bbac511bc987f67d97b6b44187c99d590a9fc62a440c9f0dfceb6587e782be1"
+    },
+    {
+      "path": "scripts/infer_actor_reaction.py",
+      "local_sha256": "7556bbbb188f10f058cd3bacc3f283f0d139ca6916440761be24414aebf988c9",
+      "remote_sha256": "7556bbbb188f10f058cd3bacc3f283f0d139ca6916440761be24414aebf988c9",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "7556bbbb188f10f058cd3bacc3f283f0d139ca6916440761be24414aebf988c9"
+    },
+    {
+      "path": "scripts/infer_timotion.py",
+      "local_sha256": "952e96144581170d78a28d9dcddae3006a99103ade6465357858e73f37bb21df",
+      "remote_sha256": "952e96144581170d78a28d9dcddae3006a99103ade6465357858e73f37bb21df",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "952e96144581170d78a28d9dcddae3006a99103ade6465357858e73f37bb21df"
+    },
+    {
+      "path": "scripts/install_isaac_binary.py",
+      "local_sha256": "1b6e8c1aadcdb497258e685a0a3ac8fed304bb2a7747c3b1a240db93d9d97d1f",
+      "remote_sha256": "1b6e8c1aadcdb497258e685a0a3ac8fed304bb2a7747c3b1a240db93d9d97d1f",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "1b6e8c1aadcdb497258e685a0a3ac8fed304bb2a7747c3b1a240db93d9d97d1f"
+    },
+    {
+      "path": "scripts/launch.py",
+      "local_sha256": "2331a0cb06d31e74407d09e25bc88b6c1d286c9e7644c5a3866b1993b3494d5d",
+      "remote_sha256": "2331a0cb06d31e74407d09e25bc88b6c1d286c9e7644c5a3866b1993b3494d5d",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "2331a0cb06d31e74407d09e25bc88b6c1d286c9e7644c5a3866b1993b3494d5d"
+    },
+    {
+      "path": "scripts/make_dual_tracking_control.py",
+      "local_sha256": "5d10046465c66c906b3bfa0a8eaaad845bd080fa2fb34e825ca5770c425d0304",
+      "remote_sha256": "5d10046465c66c906b3bfa0a8eaaad845bd080fa2fb34e825ca5770c425d0304",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "5d10046465c66c906b3bfa0a8eaaad845bd080fa2fb34e825ca5770c425d0304"
+    },
+    {
+      "path": "scripts/package_results.py",
+      "local_sha256": "73755492d41a79ce39918fd2f46085e25915ceaf4e8896331a77fd8c75354783",
+      "remote_sha256": "73755492d41a79ce39918fd2f46085e25915ceaf4e8896331a77fd8c75354783",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "73755492d41a79ce39918fd2f46085e25915ceaf4e8896331a77fd8c75354783"
+    },
+    {
+      "path": "scripts/prepare_data.py",
+      "local_sha256": "a7a602b0da4fd9155a425f50b5a6d05c90c051c14c78e40640f45a9a2ee8cc78",
+      "remote_sha256": "a7a602b0da4fd9155a425f50b5a6d05c90c051c14c78e40640f45a9a2ee8cc78",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "a7a602b0da4fd9155a425f50b5a6d05c90c051c14c78e40640f45a9a2ee8cc78"
+    },
+    {
+      "path": "scripts/prepare_g1_tracking_assets.py",
+      "local_sha256": "a0b1a951a6d55bf454c223c30adeb8c6dee50be06f745dc9a2a4347022a2e171",
+      "remote_sha256": "a0b1a951a6d55bf454c223c30adeb8c6dee50be06f745dc9a2a4347022a2e171",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "a0b1a951a6d55bf454c223c30adeb8c6dee50be06f745dc9a2a4347022a2e171"
+    },
+    {
+      "path": "scripts/prepare_interhuman_archive.py",
+      "local_sha256": "822d64987f787f3f7eac1675539dab4754e898b736e3491ebd802e4c98a4a42d",
+      "remote_sha256": "822d64987f787f3f7eac1675539dab4754e898b736e3491ebd802e4c98a4a42d",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "822d64987f787f3f7eac1675539dab4754e898b736e3491ebd802e4c98a4a42d"
+    },
+    {
+      "path": "scripts/prepare_step7_utility.py",
+      "local_sha256": "e4a2c882e0cc3f467f3fed69842ff26bd30c087beff948fb31e27c12ebad0892",
+      "remote_sha256": "e4a2c882e0cc3f467f3fed69842ff26bd30c087beff948fb31e27c12ebad0892",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "e4a2c882e0cc3f467f3fed69842ff26bd30c087beff948fb31e27c12ebad0892"
+    },
+    {
+      "path": "scripts/prepare_tracking_offline.py",
+      "local_sha256": "ed5a5b7b63a5cab44a0bc26ad865a38f7ccba8f4e26c9b611f9933d0d19ba84c",
+      "remote_sha256": "ed5a5b7b63a5cab44a0bc26ad865a38f7ccba8f4e26c9b611f9933d0d19ba84c",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "ed5a5b7b63a5cab44a0bc26ad865a38f7ccba8f4e26c9b611f9933d0d19ba84c"
+    },
+    {
+      "path": "scripts/refine_reaction_contacts.py",
+      "local_sha256": "741df39c9df99eaa864ef5b02f6986381c37e98a81757a17d3e1aec45ccf42d9",
+      "remote_sha256": "741df39c9df99eaa864ef5b02f6986381c37e98a81757a17d3e1aec45ccf42d9",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "741df39c9df99eaa864ef5b02f6986381c37e98a81757a17d3e1aec45ccf42d9"
+    },
+    {
+      "path": "scripts/refresh_step7_project_status.py",
+      "local_sha256": "a9b502c9aad66886248401ca5fbcf00c5e85e529ea40e59016263cb50fcd5909",
+      "remote_sha256": "a9b502c9aad66886248401ca5fbcf00c5e85e529ea40e59016263cb50fcd5909",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "a9b502c9aad66886248401ca5fbcf00c5e85e529ea40e59016263cb50fcd5909"
+    },
+    {
+      "path": "scripts/render_execution_progress.py",
+      "local_sha256": "a999176cf55ea1304c48a563ca8eb1d081ff7565ea10f72c33b5939c57206873",
+      "remote_sha256": "a999176cf55ea1304c48a563ca8eb1d081ff7565ea10f72c33b5939c57206873",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "a999176cf55ea1304c48a563ca8eb1d081ff7565ea10f72c33b5939c57206873"
+    },
+    {
+      "path": "scripts/render_learned_tracking.py",
+      "local_sha256": "92ffd25d429e6a5fc5ea2e4199742b7efe3c2f828362c799aa71a07afed916c0",
+      "remote_sha256": "92ffd25d429e6a5fc5ea2e4199742b7efe3c2f828362c799aa71a07afed916c0",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "92ffd25d429e6a5fc5ea2e4199742b7efe3c2f828362c799aa71a07afed916c0"
+    },
+    {
+      "path": "scripts/render_multireference_diagnostic.py",
+      "local_sha256": "2f49627efd73da49153a1477df08a63d43543333a11c8b79f8c72902677d9a37",
+      "remote_sha256": "2f49627efd73da49153a1477df08a63d43543333a11c8b79f8c72902677d9a37",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "2f49627efd73da49153a1477df08a63d43543333a11c8b79f8c72902677d9a37"
+    },
+    {
+      "path": "scripts/render_paired_report.py",
+      "local_sha256": "43cfceb128f4b406fb1b788332da426f037de99d1702dfb56f9fc798adafd266",
+      "remote_sha256": "43cfceb128f4b406fb1b788332da426f037de99d1702dfb56f9fc798adafd266",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "43cfceb128f4b406fb1b788332da426f037de99d1702dfb56f9fc798adafd266"
+    },
+    {
+      "path": "scripts/render_results.py",
+      "local_sha256": "7ce31de1b2cc20f1e9a881fae9ed8e87b918bcd442fae43218c418a0f3ad8294",
+      "remote_sha256": "7ce31de1b2cc20f1e9a881fae9ed8e87b918bcd442fae43218c418a0f3ad8294",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "7ce31de1b2cc20f1e9a881fae9ed8e87b918bcd442fae43218c418a0f3ad8294"
+    },
+    {
+      "path": "scripts/render_step7_utility.py",
+      "local_sha256": "14ea65fea69a6415d706e11362d76de0818805797d98f0e7fa28c66e71481919",
+      "remote_sha256": "14ea65fea69a6415d706e11362d76de0818805797d98f0e7fa28c66e71481919",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "14ea65fea69a6415d706e11362d76de0818805797d98f0e7fa28c66e71481919"
+    },
+    {
+      "path": "scripts/retarget_paired_positions.py",
+      "local_sha256": "d06170da938715a5d71a4472bca46b948d75bdf140d5635eaf1d2865a06c011b",
+      "remote_sha256": "d06170da938715a5d71a4472bca46b948d75bdf140d5635eaf1d2865a06c011b",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "d06170da938715a5d71a4472bca46b948d75bdf140d5635eaf1d2865a06c011b"
+    },
+    {
+      "path": "scripts/run.sh",
+      "local_sha256": "4c8b4f3cbe334e720408a3cc1a627796cf3e76f85c33fae3f7d385afdd511ac8",
+      "remote_sha256": "4c8b4f3cbe334e720408a3cc1a627796cf3e76f85c33fae3f7d385afdd511ac8",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "4c8b4f3cbe334e720408a3cc1a627796cf3e76f85c33fae3f7d385afdd511ac8"
+    },
+    {
+      "path": "scripts/run_adapter_experiments.sh",
+      "local_sha256": "a163a7455052d6960e172acb5b701cd4ee6e711cc893f4b7cc1d273484d02799",
+      "remote_sha256": "a163a7455052d6960e172acb5b701cd4ee6e711cc893f4b7cc1d273484d02799",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "a163a7455052d6960e172acb5b701cd4ee6e711cc893f4b7cc1d273484d02799"
+    },
+    {
+      "path": "scripts/run_contact_reference_followups.sh",
+      "local_sha256": "badf6824b9cfc45b0734f21f9221bb32d9325c8c8258118c7fd1357950b0dc40",
+      "remote_sha256": "badf6824b9cfc45b0734f21f9221bb32d9325c8c8258118c7fd1357950b0dc40",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "badf6824b9cfc45b0734f21f9221bb32d9325c8c8258118c7fd1357950b0dc40"
+    },
+    {
+      "path": "scripts/run_controller_followups.sh",
+      "local_sha256": "0354a370ec1e7303bc2466cdb3ec3dff6f65126fe75423a8f1b67e5013610bc0",
+      "remote_sha256": "0354a370ec1e7303bc2466cdb3ec3dff6f65126fe75423a8f1b67e5013610bc0",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "0354a370ec1e7303bc2466cdb3ec3dff6f65126fe75423a8f1b67e5013610bc0"
+    },
+    {
+      "path": "scripts/run_crossattention_followup.sh",
+      "local_sha256": "0cfae0b8798c7f3714220a013e531968d8067f9284490878aba9df05f8b1145e",
+      "remote_sha256": "0cfae0b8798c7f3714220a013e531968d8067f9284490878aba9df05f8b1145e",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "0cfae0b8798c7f3714220a013e531968d8067f9284490878aba9df05f8b1145e"
+    },
+    {
+      "path": "scripts/run_dual_diagnostics.sh",
+      "local_sha256": "35f332339396c6a936298206e0c8a8ad293d04226905fc1aab82b417525b36da",
+      "remote_sha256": "35f332339396c6a936298206e0c8a8ad293d04226905fc1aab82b417525b36da",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "35f332339396c6a936298206e0c8a8ad293d04226905fc1aab82b417525b36da"
+    },
+    {
+      "path": "scripts/run_isaaclab.sh",
+      "local_sha256": "0ac3b248af10df075a53c4d78ad176830b03531cad305a8570dac7fda7ae5a87",
+      "remote_sha256": "0ac3b248af10df075a53c4d78ad176830b03531cad305a8570dac7fda7ae5a87",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "0ac3b248af10df075a53c4d78ad176830b03531cad305a8570dac7fda7ae5a87"
+    },
+    {
+      "path": "scripts/run_multireference_evaluation.sh",
+      "local_sha256": "a5a2aa1545aa772a2b021abab03f4efc5df1f5f0ed8cd6a7fe762492f8a8cead",
+      "remote_sha256": "a5a2aa1545aa772a2b021abab03f4efc5df1f5f0ed8cd6a7fe762492f8a8cead",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "a5a2aa1545aa772a2b021abab03f4efc5df1f5f0ed8cd6a7fe762492f8a8cead"
+    },
+    {
+      "path": "scripts/run_pipeline.sh",
+      "local_sha256": "23868b8b6ddc6228831ba45764ad1df4c7aa3e9142e31d81198e78a6be3b747e",
+      "remote_sha256": "23868b8b6ddc6228831ba45764ad1df4c7aa3e9142e31d81198e78a6be3b747e",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "23868b8b6ddc6228831ba45764ad1df4c7aa3e9142e31d81198e78a6be3b747e"
+    },
+    {
+      "path": "scripts/run_reaction_after_dual.sh",
+      "local_sha256": "110ab4078931b9dc95585ca7d4fecc022d5a4c7db139bf967f7c314516a30d99",
+      "remote_sha256": "110ab4078931b9dc95585ca7d4fecc022d5a4c7db139bf967f7c314516a30d99",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "110ab4078931b9dc95585ca7d4fecc022d5a4c7db139bf967f7c314516a30d99"
+    },
+    {
+      "path": "scripts/run_retarget.sh",
+      "local_sha256": "6067436d97d7c72f9c9b47766ddab7462825df7c42f2b057fab3f3b9f121d2bc",
+      "remote_sha256": "6067436d97d7c72f9c9b47766ddab7462825df7c42f2b057fab3f3b9f121d2bc",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "6067436d97d7c72f9c9b47766ddab7462825df7c42f2b057fab3f3b9f121d2bc"
+    },
+    {
+      "path": "scripts/run_step7_extra_lane.sh",
+      "local_sha256": "ce1fe062382103aaf534e8a881c0bce70989ee7b32e592c2f95d7110c5b5ca78",
+      "remote_sha256": "ce1fe062382103aaf534e8a881c0bce70989ee7b32e592c2f95d7110c5b5ca78",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "ce1fe062382103aaf534e8a881c0bce70989ee7b32e592c2f95d7110c5b5ca78"
+    },
+    {
+      "path": "scripts/run_step7_gpu0.sh",
+      "local_sha256": "ff701068b3b6801d024177e07020cfd360ce18e96f5fd751b4a5aeeabd9e2ac9",
+      "remote_sha256": "ff701068b3b6801d024177e07020cfd360ce18e96f5fd751b4a5aeeabd9e2ac9",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "ff701068b3b6801d024177e07020cfd360ce18e96f5fd751b4a5aeeabd9e2ac9"
+    },
+    {
+      "path": "scripts/run_step7_gpu1.sh",
+      "local_sha256": "b7d1a4dbb8a3e75faf4852de62d7fc7b65624d9c2a477224d307ffac9ab3b457",
+      "remote_sha256": "b7d1a4dbb8a3e75faf4852de62d7fc7b65624d9c2a477224d307ffac9ab3b457",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "b7d1a4dbb8a3e75faf4852de62d7fc7b65624d9c2a477224d307ffac9ab3b457"
+    },
+    {
+      "path": "scripts/run_step7_utility_job.sh",
+      "local_sha256": "6f12bc84e0b97d5dc8a4c004a70260b385831ef4700f2467e0ec9a574b1f067e",
+      "remote_sha256": "6f12bc84e0b97d5dc8a4c004a70260b385831ef4700f2467e0ec9a574b1f067e",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "6f12bc84e0b97d5dc8a4c004a70260b385831ef4700f2467e0ec9a574b1f067e"
+    },
+    {
+      "path": "scripts/run_timotion.sh",
+      "local_sha256": "716460e517f80171ac2284f7d3904783ef1ff20382b15ed5ab6eec592f085d0d",
+      "remote_sha256": "716460e517f80171ac2284f7d3904783ef1ff20382b15ed5ab6eec592f085d0d",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "716460e517f80171ac2284f7d3904783ef1ff20382b15ed5ab6eec592f085d0d"
+    },
+    {
+      "path": "scripts/setup.py",
+      "local_sha256": "34c8973f4df7e0268274ad7c5e50bb4870b9c6f073523fca7cc69984d6d06952",
+      "remote_sha256": "34c8973f4df7e0268274ad7c5e50bb4870b9c6f073523fca7cc69984d6d06952",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "34c8973f4df7e0268274ad7c5e50bb4870b9c6f073523fca7cc69984d6d06952"
+    },
+    {
+      "path": "scripts/smoke.py",
+      "local_sha256": "e47ebcba3553e8d6467f4126be923b3fc8ec8b89d0fe3e6d16dbfacdbe54f0c5",
+      "remote_sha256": "e47ebcba3553e8d6467f4126be923b3fc8ec8b89d0fe3e6d16dbfacdbe54f0c5",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "e47ebcba3553e8d6467f4126be923b3fc8ec8b89d0fe3e6d16dbfacdbe54f0c5"
+    },
+    {
+      "path": "scripts/smoke_g1_isaaclab.py",
+      "local_sha256": "3d35c391600b851943f6a6089c85a05dc2f7a5f5ece187f26180f47c86ec88d3",
+      "remote_sha256": "3d35c391600b851943f6a6089c85a05dc2f7a5f5ece187f26180f47c86ec88d3",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "3d35c391600b851943f6a6089c85a05dc2f7a5f5ece187f26180f47c86ec88d3"
+    },
+    {
+      "path": "scripts/smoke_isaac.py",
+      "local_sha256": "1470c51db82d14611967a77bdbda87cf7ac1484772a1e00dc9eab3d5a70da39c",
+      "remote_sha256": "1470c51db82d14611967a77bdbda87cf7ac1484772a1e00dc9eab3d5a70da39c",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "1470c51db82d14611967a77bdbda87cf7ac1484772a1e00dc9eab3d5a70da39c"
+    },
+    {
+      "path": "scripts/smoke_retarget.py",
+      "local_sha256": "4b15e52ab8ac4e142f67f78bb2a22756977c9e03aa994b6ffec03d94e5adb88f",
+      "remote_sha256": "4b15e52ab8ac4e142f67f78bb2a22756977c9e03aa994b6ffec03d94e5adb88f",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "4b15e52ab8ac4e142f67f78bb2a22756977c9e03aa994b6ffec03d94e5adb88f"
+    },
+    {
+      "path": "scripts/smoke_timotion.py",
+      "local_sha256": "9792973549a9666ad4429dfe2681a138d43b574f290e872bc5ca62ecaa0e064c",
+      "remote_sha256": "9792973549a9666ad4429dfe2681a138d43b574f290e872bc5ca62ecaa0e064c",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "9792973549a9666ad4429dfe2681a138d43b574f290e872bc5ca62ecaa0e064c"
+    },
+    {
+      "path": "scripts/stabilize_generated_identity.py",
+      "local_sha256": "afdedd4d9eb4cfee92bae9aff847d0702f995cde1bb11181f7fe4a6d868fc996",
+      "remote_sha256": "afdedd4d9eb4cfee92bae9aff847d0702f995cde1bb11181f7fe4a6d868fc996",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "afdedd4d9eb4cfee92bae9aff847d0702f995cde1bb11181f7fe4a6d868fc996"
+    },
+    {
+      "path": "scripts/summarize_completed_experiments.py",
+      "local_sha256": "8c0ca9d9d35d51041bf8be8c7f94ad7f8a9bbc8a1fc5a7b7876e9d76d73bf003",
+      "remote_sha256": "8c0ca9d9d35d51041bf8be8c7f94ad7f8a9bbc8a1fc5a7b7876e9d76d73bf003",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "8c0ca9d9d35d51041bf8be8c7f94ad7f8a9bbc8a1fc5a7b7876e9d76d73bf003"
+    },
+    {
+      "path": "scripts/summarize_step7.py",
+      "local_sha256": "b4455de5455da06b422c5d37e33aa79ada171a0b30fc85c32b66b50d349a942c",
+      "remote_sha256": "b4455de5455da06b422c5d37e33aa79ada171a0b30fc85c32b66b50d349a942c",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "b4455de5455da06b422c5d37e33aa79ada171a0b30fc85c32b66b50d349a942c"
+    },
+    {
+      "path": "scripts/train.py",
+      "local_sha256": "9168b92918f9ae7236ff861ddf52199b40b543546ac658973171d8ff3e8cb6ca",
+      "remote_sha256": "9168b92918f9ae7236ff861ddf52199b40b543546ac658973171d8ff3e8cb6ca",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "9168b92918f9ae7236ff861ddf52199b40b543546ac658973171d8ff3e8cb6ca"
+    },
+    {
+      "path": "scripts/train_actor_reaction.py",
+      "local_sha256": "23afb968821a0a688184b676967c67f3e0e2b0196eb77ce659b660caa841eb26",
+      "remote_sha256": "23afb968821a0a688184b676967c67f3e0e2b0196eb77ce659b660caa841eb26",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "23afb968821a0a688184b676967c67f3e0e2b0196eb77ce659b660caa841eb26"
+    },
+    {
+      "path": "scripts/train_coverage_critic.py",
+      "local_sha256": "aee8e690550ac350e1ec23208de782dfd2ab568ceaeb870c28efe950775b8165",
+      "remote_sha256": "aee8e690550ac350e1ec23208de782dfd2ab568ceaeb870c28efe950775b8165",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "aee8e690550ac350e1ec23208de782dfd2ab568ceaeb870c28efe950775b8165"
+    },
+    {
+      "path": "scripts/train_multireference_tracking.py",
+      "local_sha256": "11322be0bb191b1508bc79cf698cfda9946c2ba8feadc28285408c9170567902",
+      "remote_sha256": "11322be0bb191b1508bc79cf698cfda9946c2ba8feadc28285408c9170567902",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "11322be0bb191b1508bc79cf698cfda9946c2ba8feadc28285408c9170567902"
+    },
+    {
+      "path": "scripts/train_physics_critic.py",
+      "local_sha256": "adab91a501bd4ef19772c5429bae00f08183d79c26f5ef760015ada02db16c94",
+      "remote_sha256": "adab91a501bd4ef19772c5429bae00f08183d79c26f5ef760015ada02db16c94",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "adab91a501bd4ef19772c5429bae00f08183d79c26f5ef760015ada02db16c94"
+    },
+    {
+      "path": "scripts/train_timotion_adapter.py",
+      "local_sha256": "9cac58c12b1c0c2a93726b030a8668579f6516910a09cf62b898f12a01d94c6a",
+      "remote_sha256": "9cac58c12b1c0c2a93726b030a8668579f6516910a09cf62b898f12a01d94c6a",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "9cac58c12b1c0c2a93726b030a8668579f6516910a09cf62b898f12a01d94c6a"
+    },
+    {
+      "path": "scripts/validate_interhuman_manifest.py",
+      "local_sha256": "43753fff0dc59d8e8f171d32db6814ab803709d0491fcb149806d6c2622e5f2a",
+      "remote_sha256": "43753fff0dc59d8e8f171d32db6814ab803709d0491fcb149806d6c2622e5f2a",
+      "match": true,
+      "lf_normalized_match": true,
+      "lf_normalized_sha256": "43753fff0dc59d8e8f171d32db6814ab803709d0491fcb149806d6c2622e5f2a"
+    }
+  ],
+  "all_raw_bytes_match": false,
+  "all_lf_normalized_match": true,
+  "explanation": "Only env-isaaclab.json and scripts/build_report.py differ in CRLF/LF line endings. All 95 normalized source files agree; canonical Isaac environment hash remains 072cb4cb."
+}

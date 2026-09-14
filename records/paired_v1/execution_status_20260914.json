@@ -44,9 +44,26 @@
     "dual_positive_control": "two separated copies of learned seed199;4/4 nominal horizon survival; not combat or independent source data",
     "explicit_cross_attention": "1000-step masked attacker-history attention;20test sources future defender RMSE0.780896 to0.729404m; contact5% to0%; exploratory one-seed result",
     "multireference_training_and_evaluation": "1000updates x512env=12.288Msteps;20train clips/7title groups,4test clips/1heldout group;mean horizon survival6.25%/3.90625%;20 contact-refined pairs0%",
-    "unit_tests": "33 passed including hidden future keys, boundary differences, fixed actor and bone lengths"
+    "unit_tests": "38 passed, including coverage feature height/sign integrity and physics-label refusal",
+    "step7_coverage_diagnostic": "Three predictor seeds and K=6 retrospective ranking completed; not approved as a physics feasibility filter"
   },
-  "running": [],
+  "running": [
+    {
+      "pid": 2107819,
+      "output": "runs/step7_utility_contact_seed0",
+      "kind": "training"
+    },
+    {
+      "pid": 2110600,
+      "output": "runs/step7_utility_contact_seed2",
+      "kind": "training"
+    },
+    {
+      "pid": 2112343,
+      "output": "runs/step7_utility_generic_seed2",
+      "kind": "training"
+    }
+  ],
   "not_completed": [
     "paper-default20-repetition official benchmark",
     "stable multi-reference learned tracking controller",
@@ -84,5 +101,13 @@
       30
     ],
     "scope": "single training-reference diagnostic; controller coverage insufficient"
+  },
+  "step7": {
+    "completed_policy_runs": 6,
+    "expected_policy_runs": 9,
+    "component_utility_pilot_complete": false,
+    "full_physics_pipeline_validated": false,
+    "report": "records/step7/summary.json",
+    "contact_retargeting": "20 train cases; geometric contact 19/20 in humans and 4/20 with toe helper robot proxy; not force certification"
   }
 }
