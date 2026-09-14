@@ -29,6 +29,8 @@ def main():
     p.add_argument('--heads',type=int,default=16)
     p.add_argument('--layers',type=int,default=5)
     p.add_argument('--latent',type=int,default=512)
+    p.add_argument('--adapter',type=Path,help='Trained adapter checkpoint, optional')
+    p.add_argument('--conditions',type=Path,help='JSON array of explicit categorical conditions, one per prompt')
     args=p.parse_args()
     root=Path(__file__).resolve().parents[1]
     checkpoint=args.checkpoint.resolve(); prompts=args.prompts.resolve(); output=args.output.resolve()
@@ -37,6 +39,11 @@ def main():
     if not 15<=args.frames<=300:
         raise ValueError('Use the supported 15..300-frame range')
     texts=json.loads(prompts.read_text(encoding='utf-8'))
+    if bool(args.adapter)!=bool(args.conditions):
+        raise ValueError('Adapter and explicit condition file must be supplied together')
+    adapter_path=args.adapter.resolve() if args.adapter else None
+    conditions=json.loads(args.conditions.resolve().read_text(encoding='utf-8')) if args.conditions else None
+    if conditions is not None and len(conditions)!=len(texts):raise ValueError('Condition/prompt count mismatch')
     clip.load=functools.partial(clip.load,download_root=str(root/'cache/clip'))
     os.chdir(root/'third_party/TIMotion')
     from configs import get_config
@@ -47,21 +54,33 @@ def main():
     cfg=get_config('configs/model.yaml')
     cfg.NUM_HEADS=args.heads; cfg.NUM_LAYERS=args.layers; cfg.LATENT_DIM=args.latent; cfg.LPA=False
     model=TIMotion(cfg)
-    checkpoint_hash=sha(checkpoint)
-    # The user-authorized official Lightning checkpoint includes training metadata.
-    state=torch.load(checkpoint,map_location='cpu',weights_only=False)
-    raw=state['state_dict']
-    keys={k.removeprefix('model.'):v for k,v in raw.items()}
+    from combat.checkpoint_io import load_model_state
+    keys,checkpoint_hash=load_model_state(checkpoint)
     model.load_state_dict(keys,strict=True)
-    del state,raw,keys
+    del keys
     model=model.cuda().eval()
+    adapter=None
+    if adapter_path:
+        from combat.paired_models import CombatConditionAdapter
+        adapted=torch.load(adapter_path,map_location='cpu',weights_only=False)
+        if adapted['provenance']['checkpoint_sha256']!=checkpoint_hash:
+            raise ValueError('Adapter was trained against a different backbone')
+        adapter=CombatConditionAdapter(adapted['cardinalities']).cuda().eval()
+        adapter.load_state_dict(adapted['adapter'],strict=True)
     normalizer=MotionNormalizer()
     output.mkdir(parents=True)
     records=[]
     for index,text in enumerate(texts):
         start=time.monotonic()
         with torch.no_grad():
-            batch=model.forward_test({'text':[text],'motion_lens':torch.tensor([args.frames],device='cuda')})
+            batch={'text':[text],'motion_lens':torch.tensor([args.frames],device='cuda')}
+            if adapter is None:
+                batch=model.forward_test(batch)
+            else:
+                batch=model.text_process(batch)
+                cond={key:torch.tensor([value],device='cuda',dtype=torch.long) for key,value in conditions[index].items()}
+                batch['cond']=adapter(batch['cond'],cond)
+                batch=model.decode_motion(batch)
         normalized=batch['output'].reshape(1,args.frames,2,262).cpu().numpy()
         features=normalizer.backward(normalized)[0].astype(np.float32)
         if not np.isfinite(features).all():raise FloatingPointError('Nonfinite generated motion')
@@ -75,6 +94,7 @@ def main():
     report={'checkpoint_sha256':checkpoint_hash,'source_commit':'172580fd7f2551a7cc10fde1f15ff73315742e65',
             'architecture':'TIMotion-Transformer-no-LPA','cfg':dict(heads=args.heads,layers=args.layers,latent=args.latent),
             'strict_load':True,'torch':torch.__version__,'seed':args.seed,'frames':args.frames,'samples':records,
+            'adapter_sha256':sha(adapter_path) if adapter_path else None,'conditions':conditions,
             'claim':'qualitative inference only; not official FID or robot tracking evaluation'}
     (output/'manifest.json').write_text(json.dumps(report,indent=2,ensure_ascii=False),encoding='utf-8')
 

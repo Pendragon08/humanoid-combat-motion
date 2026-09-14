@@ -38,6 +38,14 @@ class PairedModelTests(unittest.TestCase):
         self.assertLess(x.grad[:,0,0,0].sum(),0)
         self.assertGreater(x.grad[:,1,0,0].sum(),0)
 
+    def test_critic_independent_of_batch_padding_length(self):
+        model=DualRobotPhysicsCritic(12).eval()
+        x=torch.randn(1,6,12)
+        lengths=torch.tensor([6])
+        short=model(x,lengths)
+        padded=model(torch.cat([x,torch.randn(1,9,12)],dim=1),lengths)
+        for key in short:torch.testing.assert_close(short[key],padded[key],atol=1e-6,rtol=1e-5)
+
     def test_avoid_gradient_increases_clearance(self):
         x=torch.zeros(5,2,2,3);x[:,1,:,0]=.15;x.requires_grad_(True)
         loss=contact_objective(x,torch.tensor([.05,.05]),[ContactEvent('avoid',0,4,0,0,threatened=True)])

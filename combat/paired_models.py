@@ -41,7 +41,11 @@ Training requires independently recorded learned-controller simulation labels.
             raise ValueError('Invalid sequence lengths')
         mask=torch.arange(x.shape[1],device=x.device)[None,:]<lengths[:,None]
         # Zero padding before convolution so padded values cannot leak inward.
-        h=self.encoder((x*mask[:,:,None]).transpose(1,2))
+        h=(x*mask[:,:,None]).transpose(1,2)
+        # Mask every layer: convolution biases in padded positions otherwise
+        # flow back into valid boundary frames in the next convolution.
+        for layer in self.encoder:
+            h=layer(h)*mask[:,None,:]
         pooled=(h*mask[:,None,:]).sum(-1)/lengths[:,None]
         y=self.head(pooled)
         return {'tracking_error_m':torch.nn.functional.softplus(y[:,0]),'fall_logit':y[:,1],

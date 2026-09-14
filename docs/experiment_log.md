@@ -15,3 +15,9 @@
 8. Isaac Sim 4.5 官方包 CRC 与大小校验通过；默认无界面配置卡在 _wait_for_viewport，按堆栈定位后改用 Isaac Lab 官方 headless experience。实际方块重力碰撞240步通过，最终 z=0.050010327m。该测试不是机器人跟踪。
 9. 清理已验证的临时 Isaac 安装压缩包，回收7,208,817,125字节；安装和验证记录保留。
 10. 创建私有 GitHub 仓库 Pendragon08/humanoid-combat-motion 并完成推送。
+
+11. 官方 TIMotion 检查点 1,279,098,261 bytes，SHA256 2ee7335f688699362d7d5786a398d6ca0c768dcef7f94acd1c81a0bb88e93fea；ZIP CRC通过。为减少服务器传输，将246个模型张量无损导出NPZ并逐项校验，省略优化器；模型尚未完成服务器推理。
+12. 官方 InterHuman evaluator 检查点1,513,626,777 bytes，SHA256 4e14b8ee5c2d965778fe003fb37d98ed8e5c7e0940668515fc7dcfa2831c17f8；CRC通过。
+13. 修复critic在不同批次补零长度下的卷积边界泄漏；服务器19/19测试通过，1.496秒。
+14. Isaac Lab/G1训练依赖和70个G1资源文件已安装。GPU编号映射与启动退出问题仍在诊断，不能标记G1跟踪环境就绪。
+15. 新增本地文件训练/转换入口，保留上游PPO及奖励定义；新增TIMotion条件适配器训练入口，尚未运行。弱关键词标签仅表示粗粒度动作候选，不冒充攻击角色或接触真值。

@@ -40,7 +40,7 @@
       "-e third_party/whole_body_tracking/source/whole_body_tracking --no-deps"
     ]
   ],
-  "state": "G1 tracking dependencies being resolved; binary physics witness passed",
+  "state": "pip and editable G1 dependencies installed; articulated G1 witness under diagnosis",
   "storage": {
     "new_persistent_budget_gib": 30,
     "minimum_free_gib_after_stage": 8
@@ -48,7 +48,8 @@
   "env": {
     "OMP_NUM_THREADS": "4",
     "MKL_NUM_THREADS": "4",
-    "OPENBLAS_NUM_THREADS": "4"
+    "OPENBLAS_NUM_THREADS": "4",
+    "CUDA_VISIBLE_DEVICES": "unset; select physical GPU with --device cuda:N"
   },
   "smoke": {
     "command": "third_party/isaacsim-4.5.0/python.sh -u scripts/smoke_isaac.py",
@@ -56,5 +57,11 @@
     "status": "binary physics passed; fresh dependency validation pending"
   },
   "isaaclab_commit": "21f7136325136ca3f6ca4e0a8125edffe5c24f7e",
-  "deviation": "G1-only task subset. Optional pink/dex-retargeting controllers omitted; must not claim all Isaac Lab tasks supported."
+  "deviation": "G1-only task subset. Optional pink/dex-retargeting controllers omitted; must not claim all Isaac Lab tasks supported.",
+  "build_tools": [
+    "setuptools==70.3.0",
+    "wheel==0.45.1"
+  ],
+  "pip_build_isolation": false,
+  "build_note": "flatdict 4.0.1 imports pkg_resources; use pinned existing setuptools with no build isolation, rather than newest isolated setuptools."
 }
