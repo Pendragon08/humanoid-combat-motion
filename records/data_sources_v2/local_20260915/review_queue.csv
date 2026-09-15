@@ -1,0 +1,54 @@
+sample_id,split,source_group,structural_valid,peak_joint_speed_rad_s,semantic_label,contact_label,review_status
+kungfu_1305,train,第一套国际武术竞赛套路-长拳-第二段（动作名称）,False,22.83825943903559,,,not_reviewed
+kungfu_1306,train,第一套国际武术竞赛套路-南拳-第三段-国一南拳#桂平市竞技武术训练馆#桂平市竞技武术队,False,22.49133668744128,,,not_reviewed
+kungfu_237,train,第一套国际武术竞赛套路-南拳-完整版-国一南拳#桂平市竞技武术训练馆#桂平市竞技武术队,False,21.42518844507226,,,not_reviewed
+kungfu_203,train,段位制长拳六段单练套路,False,20.475525529827976,,,not_reviewed
+kungfu_1022,train,长拳类单拍脚组合,False,20.099948027052132,,,not_reviewed
+kungfu_1080,train,第一套国际武术竞赛套路-长拳（完整版）国一长拳,False,19.306445730805738,,,not_reviewed
+kungfu_242,train,第一套国际武术竞赛套路-南拳-完整版-国一南拳#桂平市竞技武术训练馆#桂平市竞技武术队,False,17.71278332620172,,,not_reviewed
+kungfu_1082,train,第一套国际武术竞赛套路-长拳（完整版）国一长拳,False,17.36910257249406,,,not_reviewed
+kungfu_1081,train,第一套国际武术竞赛套路-长拳（完整版）国一长拳,False,17.362203704333172,,,not_reviewed
+kungfu_811,train,42式太极拳-第四段 #桂平市竞技武术训练馆 #桂平市竞技武术队,False,16.37390735333854,,,not_reviewed
+kungfu_240,train,第一套国际武术竞赛套路-南拳-完整版-国一南拳#桂平市竞技武术训练馆#桂平市竞技武术队,False,15.908060751030973,,,not_reviewed
+kungfu_1717,val,段位制长拳五段单练套路,False,15.707436155487514,,,not_reviewed
+kungfu_205,train,段位制长拳六段单练套路,False,15.548029649295758,,,not_reviewed
+kungfu_235,train,第一套国际武术竞赛套路-南拳-完整版-国一南拳#桂平市竞技武术训练馆#桂平市竞技武术队,False,15.026251502244095,,,not_reviewed
+kungfu_1088,train,第一套国际武术竞赛套路-长拳（完整版）国一长拳,False,14.88953255703711,,,not_reviewed
+kungfu_202,train,段位制长拳六段单练套路,False,14.823707296081484,,,not_reviewed
+kungfu_1315,test,段位制长拳三段单练套路,False,14.44771537842145,,,not_reviewed
+kungfu_1084,train,第一套国际武术竞赛套路-长拳（完整版）国一长拳,False,13.79113255346317,,,not_reviewed
+kungfu_918,train,段位制长拳二段,False,13.789543870163886,,,not_reviewed
+kungfu_1245,train,段位制长拳一段,False,13.773716501032162,,,not_reviewed
+kungfu_201,train,段位制长拳六段单练套路,False,13.63594549803967,,,not_reviewed
+kungfu_231,train,第一套国际武术竞赛套路-长拳-第三段（动作名称）,False,13.598425740582215,,,not_reviewed
+kungfu_199,train,段位制长拳六段单练套路,False,13.518907628249883,,,not_reviewed
+kungfu_1244,train,段位制长拳一段,False,13.478933034316636,,,not_reviewed
+kungfu_498,train,第一套国际武术竞赛套路长拳-第一段（动作名称）,False,13.29128593229012,,,not_reviewed
+kungfu_1317,test,段位制长拳三段单练套路,False,13.230952719591482,,,not_reviewed
+kungfu_497,train,第一套国际武术竞赛套路长拳-第一段（动作名称）,False,13.058106260582496,,,not_reviewed
+kungfu_1086,train,第一套国际武术竞赛套路-长拳（完整版）国一长拳,False,12.905454749409817,,,not_reviewed
+kungfu_1318,test,段位制长拳三段单练套路,False,12.887787470467885,,,not_reviewed
+kungfu_200,train,段位制长拳六段单练套路,False,12.86745090742561,,,not_reviewed
+kungfu_1439,train,第一套国际武术竞赛套路-南拳-第一段-国一南拳#桂平市竞技武术训练馆#桂平市竞技武术队,False,12.653921710470293,,,not_reviewed
+kungfu_1021,train,长拳类单拍脚组合,False,12.461170082364536,,,not_reviewed
+kungfu_1719,val,段位制长拳五段单练套路,False,12.438483464451933,,,not_reviewed
+kungfu_204,train,段位制长拳六段单练套路,False,12.367420026787102,,,not_reviewed
+kungfu_292,train,太极拳,False,11.983746501605047,,,not_reviewed
+kungfu_1316,test,段位制长拳三段单练套路,False,11.907276700203118,,,not_reviewed
+kungfu_916,train,第一套国际武术竞赛套路-长拳-第四段（动作名称）,False,11.782126754442213,,,not_reviewed
+kungfu_1307,train,42式太极拳,False,11.472476334500975,,,not_reviewed
+kungfu_1423,train,42式太极拳-完整版 #桂平市竞技武术训练馆 #桂平市竞技武术队,False,11.13340193460542,,,not_reviewed
+kungfu_332,train,42式太极拳-第三段 #桂平市竞技武术训练馆 #桂平市竞技武术队,False,10.631254194859158,,,not_reviewed
+kungfu_1420,train,42式太极拳-完整版 #桂平市竞技武术训练馆 #桂平市竞技武术队,False,10.624322871451714,,,not_reviewed
+kungfu_1707,val,段位制长拳五段单练套路,False,10.570068703847063,,,not_reviewed
+kungfu_1714,val,段位制长拳五段单练套路,False,9.943296408189974,,,not_reviewed
+kungfu_482,train,42式太极拳-第二段 #桂平市竞技武术训练馆 #桂平市竞技武术队,False,9.755861745450744,,,not_reviewed
+kungfu_230,train,第一套国际武术竞赛套路-长拳-第三段（动作名称）,False,9.479538104947366,,,not_reviewed
+kungfu_206,train,段位制长拳六段单练套路,False,9.452411254904838,,,not_reviewed
+kungfu_1421,train,42式太极拳-完整版 #桂平市竞技武术训练馆 #桂平市竞技武术队,False,9.227414521105704,,,not_reviewed
+kungfu_812,train,42式太极拳-第四段 #桂平市竞技武术训练馆 #桂平市竞技武术队,False,7.009562970424405,,,not_reviewed
+kungfu_1422,train,42式太极拳-完整版 #桂平市竞技武术训练馆 #桂平市竞技武术队,False,6.916276923752173,,,not_reviewed
+kungfu_481,train,42式太极拳-第二段 #桂平市竞技武术训练馆 #桂平市竞技武术队,False,6.682211238229469,,,not_reviewed
+kungfu_333,train,42式太极拳-第三段 #桂平市竞技武术训练馆 #桂平市竞技武术队,False,4.74330980165335,,,not_reviewed
+kungfu_1308,train,42式太极拳,False,3.650773531416279,,,not_reviewed
+kungfu_810,train,42式太极拳-第四段 #桂平市竞技武术训练馆 #桂平市竞技武术队,False,2.809555497327032,,,not_reviewed

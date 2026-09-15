@@ -1,0 +1,32 @@
+{
+  "host": "nlp03",
+  "seed_audit": "completed_observed_in_remote_stdout",
+  "server_output": "records/data_sources_v2/server_20260915",
+  "original_remote_artifacts_downloaded": false,
+  "input_files": 53,
+  "structural_valid_files": 53,
+  "paired_files": 0,
+  "manifest_sha256": "fb2def00552855d9833962a14d594ca7100fb54380a6bd8616132c8ca96a3e14",
+  "script_sha256": "53ad623c973e4bc1933a04163ebe8e356c55098304631de30bab661c65fb4bd6",
+  "tests_passed": 7,
+  "server_python": "3.10.21",
+  "server_numpy": "1.26.4",
+  "environment_specs": {
+    "base": "457e8491",
+    "timotion": "bbd2963d"
+  },
+  "environment_rebuilt": false,
+  "E2_submission": "commands_sent_session_timed_out_before_PID_receipt",
+  "E2_running_or_complete": "unknown_do_not_relaunch_without_check",
+  "E2_expected_outputs": 80,
+  "E2_expected_sources": 20,
+  "E2_output_paths": [
+    "runs/data_constraint_v2/shard0",
+    "runs/data_constraint_v2/shard1"
+  ],
+  "E2_log_paths": [
+    "records/data_constraint_v2/gpu0.log",
+    "records/data_constraint_v2/gpu1.log"
+  ],
+  "limitation": "This is a contemporaneous observation note, not a downloaded server result file."
+}

@@ -1,0 +1,90 @@
+{
+  "experiment": "E1 seed source and kinematic integrity audit",
+  "status": "completed_partial_E1_not_full_quality_or_utility_validation",
+  "execution_host": "Pendragon",
+  "execution_platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "manifest_sha256": "fb2def00552855d9833962a14d594ca7100fb54380a6bd8616132c8ca96a3e14",
+  "dataset_card_sha256": "e9455fce517369597c3daba608564040265bbaf4cb3a24c644d70a37c12e397e",
+  "script_sha256": "4685007ad093509afbf719302d34bbb71fc61860a92f8d50625c4bc16639c3c5",
+  "input_files": 53,
+  "structural_valid_files": 0,
+  "split_summary": {
+    "train": {
+      "clips": 45,
+      "source_groups": 18,
+      "structural_valid_clips": 0,
+      "clip_duration_sum_s": 1327.06,
+      "groups": [
+        "42式太极拳",
+        "42式太极拳-完整版 #桂平市竞技武术训练馆 #桂平市竞技武术队",
+        "42式太极拳-第三段 #桂平市竞技武术训练馆 #桂平市竞技武术队",
+        "42式太极拳-第二段 #桂平市竞技武术训练馆 #桂平市竞技武术队",
+        "42式太极拳-第四段 #桂平市竞技武术训练馆 #桂平市竞技武术队",
+        "太极拳",
+        "段位制长拳一段",
+        "段位制长拳二段",
+        "段位制长拳六段单练套路",
+        "第一套国际武术竞赛套路-南拳-完整版-国一南拳#桂平市竞技武术训练馆#桂平市竞技武术队",
+        "第一套国际武术竞赛套路-南拳-第一段-国一南拳#桂平市竞技武术训练馆#桂平市竞技武术队",
+        "第一套国际武术竞赛套路-南拳-第三段-国一南拳#桂平市竞技武术训练馆#桂平市竞技武术队",
+        "第一套国际武术竞赛套路-长拳-第三段（动作名称）",
+        "第一套国际武术竞赛套路-长拳-第二段（动作名称）",
+        "第一套国际武术竞赛套路-长拳-第四段（动作名称）",
+        "第一套国际武术竞赛套路-长拳（完整版）国一长拳",
+        "第一套国际武术竞赛套路长拳-第一段（动作名称）",
+        "长拳类单拍脚组合"
+      ]
+    },
+    "val": {
+      "clips": 4,
+      "source_groups": 1,
+      "structural_valid_clips": 0,
+      "clip_duration_sum_s": 27.38,
+      "groups": [
+        "段位制长拳五段单练套路"
+      ]
+    },
+    "test": {
+      "clips": 4,
+      "source_groups": 1,
+      "structural_valid_clips": 0,
+      "clip_duration_sum_s": 87.82,
+      "groups": [
+        "段位制长拳三段单练套路"
+      ]
+    }
+  },
+  "source_group_overlap": {},
+  "numeric_duplicate_groups": [],
+  "numeric_cross_split_duplicates": 0,
+  "errors": {
+    "root_quaternion_norm_deviation_over_0p001": 53
+  },
+  "total_bytes": 20810732,
+  "clip_duration_sum_s": 1442.26,
+  "duration_caveat": "sum of subclip spans; not guaranteed unique original video time",
+  "sensor_mocap_files_verified": 0,
+  "paired_files": 0,
+  "manual_combat_or_contact_verified_files": 0,
+  "cost_complete_files": 0,
+  "median_clip_peak_joint_speed_rad_s": null,
+  "max_clip_peak_joint_speed_rad_s": null,
+  "runtime_s": 0.4475625000195578,
+  "next_required": [
+    "independent semantic/contact review",
+    "source cost evidence",
+    "paired human data audit",
+    "new untouched source groups",
+    "robot-model-specific limits and dynamics checks"
+  ],
+  "claims_not_supported": [
+    "sensor MoCap replacement",
+    "paired combat dataset",
+    "actuator feasibility",
+    "imitation learning improvement"
+  ],
+  "source_modified": false,
+  "new_training_jobs": 0
+}
