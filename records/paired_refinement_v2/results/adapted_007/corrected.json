@@ -1,0 +1,107 @@
+{
+  "actors": 2,
+  "frames": 248,
+  "duration_s": 4.96,
+  "seed": 123,
+  "nominal_deterministic": true,
+  "policy": "official TWIST pretrained TorchScript",
+  "checkpoint_sha256": "0ec24c54c1e1502f5c7bd27efb39ecc0630c06b5c01dc640a6d493d672fc515c",
+  "upstream_commit": "42d8c134739eee51f28d7cc0ff72a86728afb8dc",
+  "simulator": "MuJoCo 3.3.7",
+  "torch": "2.5.1+cu121",
+  "device": "cuda:0",
+  "training_steps_this_run": 0,
+  "max_commanded_torque_nm": 139.0,
+  "code_sha256": {
+    "combat/twist_tracking.py": "42a20f7f2e2561e7711bda6faaf8db52918c56601a2cbd27cf8c4ad0e7e0cdf0",
+    "scripts/evaluate_twist.py": "565e3c0c539b4962f6b178fcb2061529180f6479978899f8b99ab8d6fcd31079"
+  },
+  "joint_names": [
+    "left_hip_pitch_joint",
+    "left_hip_roll_joint",
+    "left_hip_yaw_joint",
+    "left_knee_joint",
+    "left_ankle_pitch_joint",
+    "left_ankle_roll_joint",
+    "right_hip_pitch_joint",
+    "right_hip_roll_joint",
+    "right_hip_yaw_joint",
+    "right_knee_joint",
+    "right_ankle_pitch_joint",
+    "right_ankle_roll_joint",
+    "waist_yaw_joint",
+    "waist_roll_joint",
+    "waist_pitch_joint",
+    "left_shoulder_pitch_joint",
+    "left_shoulder_roll_joint",
+    "left_shoulder_yaw_joint",
+    "left_elbow_joint",
+    "left_wrist_roll_joint",
+    "right_shoulder_pitch_joint",
+    "right_shoulder_roll_joint",
+    "right_shoulder_yaw_joint",
+    "right_elbow_joint",
+    "right_wrist_roll_joint"
+  ],
+  "dropped_reference_joints": [
+    [],
+    []
+  ],
+  "references": [
+    {
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/paired_refinement_v2/adapted_007/refinement/actor0.npz",
+      "sha256": "2ade61bb3206a51af7091066ec430ed3ad7acf22a86c394d8ff10bfafe41a96b"
+    },
+    {
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/paired_refinement_v2/adapted_007/refinement/actor1.npz",
+      "sha256": "023b3870333eaccbce17bba7b394eb3afaea5c56df171f5f93f3bdc5ef423c2d"
+    }
+  ],
+  "joint_mae_rad": [
+    0.46428234477106206,
+    0.46629224182103796
+  ],
+  "root_error_m": [
+    1.190557275721403,
+    2.077017356982702
+  ],
+  "tracked_body_error_m": [
+    1.1771915362224132,
+    2.0657953250355865
+  ],
+  "no_fall_complete": [
+    false,
+    false
+  ],
+  "strict_complete": [
+    false,
+    false
+  ],
+  "first_fall_s": [
+    1.32,
+    1.32
+  ],
+  "joint_mae_before_fall_rad": [
+    0.37112320585145225,
+    0.3534252898504851
+  ],
+  "strict_prefix_s": [
+    0.06,
+    0.12
+  ],
+  "collision_geoms_per_actor": [
+    36,
+    36
+  ],
+  "initial_max_penetration_m": 0.0,
+  "initial_penetrating_contacts": [],
+  "interrobot_contact_control_frames": 8,
+  "interrobot_peak_contact_force_n": 721.9781697087373,
+  "caveats": [
+    "Nominal deployment diagnostic; not same-simulator randomized BeyondMimic comparison.",
+    "Unqualified mean errors cover the full rollout including any post-fall frames; first-fall and strict prefix separately reported.",
+    "Four wrist pitch/yaw reference DOFs omitted in official 25-DOF model; metrics cover retained joints.",
+    "Any interrobot contact is not semantic attack/block success; no force/contact correctness claim.",
+    "Pretrained data overlap unknown; not a zero-shot generalization or synthetic-data utility result."
+  ]
+}

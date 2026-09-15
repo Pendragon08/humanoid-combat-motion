@@ -1,0 +1,65 @@
+{
+  "frames": 249,
+  "fps": 50,
+  "duration_changed": false,
+  "config": {
+    "version": "paired_refinement_v1",
+    "iterations": 10,
+    "collision_weight": 30000.0,
+    "clearance_m": 0.001,
+    "posture_joint_weight": 8.0,
+    "root_xy_weight": 3000.0,
+    "root_z_weight": 120.0,
+    "root_rotation_weight": 80.0,
+    "correction_temporal_weight": 20.0,
+    "support_z_weight": 800.0,
+    "support_xy_weight": 300.0,
+    "support_speed_threshold_m_s": 0.35,
+    "support_relative_height_m": 0.06,
+    "max_joint_change_rad": 0.65,
+    "max_root_xy_change_m": 0.06,
+    "max_root_z_change_m": 0.25,
+    "max_root_rotation_change_rad": 0.3,
+    "scope": "kinematic geometry correction; not dynamics or contact-force certification",
+    "evaluation": "same frozen TWIST, original frame rate/duration, all existing 48 paired clips; preserve original inputs"
+  },
+  "inputs": [
+    {
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/timotion_generic_24_seed2026_tracking_refs/sample_006_actor0.npz",
+      "sha256": "bbd3a56c5c1343882c90e87dbdd0ab5d8e4ba84e122939e756009a8021c31296"
+    },
+    {
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/timotion_generic_24_seed2026_tracking_refs/sample_006_actor1.npz",
+      "sha256": "afcd4bcfcddb45f78255bc226f8438d09d5493684e7d4060eee8fada9c57cf10"
+    }
+  ],
+  "code_sha256": "b57b079cc64512bde8d212cdc493b1d7e0d59f4c92c4985b7a1e865a1c8d3bca",
+  "penetration_kinds": [
+    "ground",
+    "self",
+    "interrobot"
+  ],
+  "max_penetration_before_m": [
+    0.11453828283190638,
+    0.11095406669523018,
+    0.0
+  ],
+  "max_penetration_after_m": [
+    0.009257424351770276,
+    0.04073218925897365,
+    0.0
+  ],
+  "frames_over_1cm_before": 249,
+  "frames_over_1cm_after": 8,
+  "mean_joint_change_rad": 0.06559924859456161,
+  "max_joint_change_rad": 0.6500002994215375,
+  "max_pair_root_relation_change_m": 0.05287146703443422,
+  "support_frame_fraction": 0.7238955823293173,
+  "max_joint_speed_rad_s": 42.41331965341829,
+  "dynamic_feasibility_verified": false,
+  "limitations": [
+    "Soft geometry constraints can remain violated.",
+    "Support is a velocity/height heuristic, not labeled contact.",
+    "Joint change is bounded; no semantic correctness certificate."
+  ]
+}

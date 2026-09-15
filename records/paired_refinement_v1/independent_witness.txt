@@ -1,0 +1,27 @@
+Independent agent-follows-doc numerical witness
+Task: paired_refinement_v1
+Date: 2026-09-15
+Skill: C:\Users\Pende\.codex\skills\run-experiment\SKILL.md
+Environment ledger: D:\具身智能\humanoid-combat-motion\.aris\compute\twist.md
+Invocation document: D:\具身智能\humanoid-combat-motion\docs\paired_refinement_execution.md
+
+Executed verbatim PowerShell invocation:
+ssh -i C:\Users\Pende\.ssh\id_ed25519 ouyanghao@10.147.17.32 "cd /data/code/ouyanghao/oyh/humanoid-combat-motion && bash scripts/run.sh scripts/smoke_paired_refinement.py"
+
+Exit code: 0
+Exact stdout:
+PAIRED_QP_WITNESS {"frames": 4, "ground_before_m": 0.0661744842897637, "ground_after_m": 0.0, "normal_jacobian_verified": true, "dynamics_certified": false}
+
+Checks:
+PASS exit code = 0
+PASS PAIRED_QP_WITNESS present
+PASS frames = 4
+PASS original floor penetration = 0.0661744842897637 m > 0.04 m
+PASS corrected floor penetration = 0.0 m < original / 4 = 0.016543621072440925 m
+PASS normal_jacobian_verified = true
+PASS dynamics_certified = false
+
+Document-versus-reality divergence: None for invocation, exit code or documented numerical expectations.
+Supplementary setup observation: project-root AGENTS.md does not exist. Its read attempt failed; environment was explicitly supplied by the task and confirmed in the environment ledger and execution document.
+Persistence observation: requested local records directory was absent; created it to save this witness after the first write attempt failed. This did not change experiment code or invocation.
+No script or invocation modified; no other experiment started.

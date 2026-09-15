@@ -1,0 +1,228 @@
+{
+  "actors": 2,
+  "frames": 248,
+  "duration_s": 4.96,
+  "seed": 123,
+  "nominal_deterministic": true,
+  "policy": "official TWIST pretrained TorchScript",
+  "checkpoint_sha256": "0ec24c54c1e1502f5c7bd27efb39ecc0630c06b5c01dc640a6d493d672fc515c",
+  "upstream_commit": "42d8c134739eee51f28d7cc0ff72a86728afb8dc",
+  "simulator": "MuJoCo 3.3.7",
+  "torch": "2.5.1+cu121",
+  "device": "cuda:0",
+  "training_steps_this_run": 0,
+  "max_commanded_torque_nm": 139.0,
+  "code_sha256": {
+    "combat/twist_tracking.py": "42a20f7f2e2561e7711bda6faaf8db52918c56601a2cbd27cf8c4ad0e7e0cdf0",
+    "scripts/evaluate_twist.py": "565e3c0c539b4962f6b178fcb2061529180f6479978899f8b99ab8d6fcd31079"
+  },
+  "joint_names": [
+    "left_hip_pitch_joint",
+    "left_hip_roll_joint",
+    "left_hip_yaw_joint",
+    "left_knee_joint",
+    "left_ankle_pitch_joint",
+    "left_ankle_roll_joint",
+    "right_hip_pitch_joint",
+    "right_hip_roll_joint",
+    "right_hip_yaw_joint",
+    "right_knee_joint",
+    "right_ankle_pitch_joint",
+    "right_ankle_roll_joint",
+    "waist_yaw_joint",
+    "waist_roll_joint",
+    "waist_pitch_joint",
+    "left_shoulder_pitch_joint",
+    "left_shoulder_roll_joint",
+    "left_shoulder_yaw_joint",
+    "left_elbow_joint",
+    "left_wrist_roll_joint",
+    "right_shoulder_pitch_joint",
+    "right_shoulder_roll_joint",
+    "right_shoulder_yaw_joint",
+    "right_elbow_joint",
+    "right_wrist_roll_joint"
+  ],
+  "dropped_reference_joints": [
+    [],
+    []
+  ],
+  "references": [
+    {
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/paired_refinement_v2/generic_018/refinement/original_export/actor0.npz",
+      "sha256": "49a694a9d9ab7b9b09e161ed7f6c2c5c5ee1f780eea793b7d9b43f5ea6395051"
+    },
+    {
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/paired_refinement_v2/generic_018/refinement/original_export/actor1.npz",
+      "sha256": "40b0aa303e2d9c735ac856c4fb65cbf2278bd590a6ba8bfe5efb06c902c4a721"
+    }
+  ],
+  "joint_mae_rad": [
+    0.4643277491675053,
+    0.5654076742509024
+  ],
+  "root_error_m": [
+    1.3889843937650754,
+    0.910182819416353
+  ],
+  "tracked_body_error_m": [
+    1.3625661127410598,
+    0.9511417959475327
+  ],
+  "no_fall_complete": [
+    false,
+    false
+  ],
+  "strict_complete": [
+    false,
+    false
+  ],
+  "first_fall_s": [
+    3.2,
+    0.42
+  ],
+  "joint_mae_before_fall_rad": [
+    0.3987248075993289,
+    0.521475803573434
+  ],
+  "strict_prefix_s": [
+    0.08,
+    0.04
+  ],
+  "collision_geoms_per_actor": [
+    36,
+    36
+  ],
+  "initial_max_penetration_m": 0.13034584106922936,
+  "initial_penetrating_contacts": [
+    {
+      "body1": "world",
+      "body2": "a1_right_ankle_roll_link",
+      "kind": "ground",
+      "penetration_m": 0.13034584106922936
+    },
+    {
+      "body1": "world",
+      "body2": "a1_right_ankle_roll_link",
+      "kind": "ground",
+      "penetration_m": 0.12452007914924226
+    },
+    {
+      "body1": "world",
+      "body2": "a0_left_ankle_roll_link",
+      "kind": "ground",
+      "penetration_m": 0.10291187620631638
+    },
+    {
+      "body1": "world",
+      "body2": "a1_left_ankle_roll_link",
+      "kind": "ground",
+      "penetration_m": 0.08617490699599174
+    },
+    {
+      "body1": "world",
+      "body2": "a1_left_ankle_roll_link",
+      "kind": "ground",
+      "penetration_m": 0.08538859764984086
+    },
+    {
+      "body1": "world",
+      "body2": "a0_left_ankle_roll_link",
+      "kind": "ground",
+      "penetration_m": 0.07699320469891828
+    },
+    {
+      "body1": "a1_torso_link",
+      "body2": "a1_left_shoulder_yaw_link",
+      "kind": "self",
+      "penetration_m": 0.07032716949806338
+    },
+    {
+      "body1": "world",
+      "body2": "a0_right_ankle_roll_link",
+      "kind": "ground",
+      "penetration_m": 0.05321160370559937
+    },
+    {
+      "body1": "world",
+      "body2": "a1_left_ankle_pitch_link",
+      "kind": "ground",
+      "penetration_m": 0.049018319727565235
+    },
+    {
+      "body1": "world",
+      "body2": "a1_left_ankle_pitch_link",
+      "kind": "ground",
+      "penetration_m": 0.048072050208385356
+    },
+    {
+      "body1": "world",
+      "body2": "a1_left_ankle_pitch_link",
+      "kind": "ground",
+      "penetration_m": 0.04695126811910812
+    },
+    {
+      "body1": "world",
+      "body2": "a0_right_ankle_roll_link",
+      "kind": "ground",
+      "penetration_m": 0.03728596179953772
+    },
+    {
+      "body1": "world",
+      "body2": "a1_right_knee_link",
+      "kind": "ground",
+      "penetration_m": 0.0371995392582873
+    },
+    {
+      "body1": "a0_left_hip_yaw_link",
+      "body2": "a0_right_hip_yaw_link",
+      "kind": "self",
+      "penetration_m": 0.03408750067924159
+    },
+    {
+      "body1": "a1_torso_link",
+      "body2": "a1_right_shoulder_yaw_link",
+      "kind": "self",
+      "penetration_m": 0.03111982269044771
+    },
+    {
+      "body1": "world",
+      "body2": "a1_left_knee_link",
+      "kind": "ground",
+      "penetration_m": 0.03033595714894563
+    },
+    {
+      "body1": "world",
+      "body2": "a1_right_ankle_pitch_link",
+      "kind": "ground",
+      "penetration_m": 0.028830322296683968
+    },
+    {
+      "body1": "world",
+      "body2": "a1_right_ankle_pitch_link",
+      "kind": "ground",
+      "penetration_m": 0.027156300705053864
+    },
+    {
+      "body1": "world",
+      "body2": "a1_right_ankle_pitch_link",
+      "kind": "ground",
+      "penetration_m": 0.027084529089387008
+    },
+    {
+      "body1": "world",
+      "body2": "a1_left_ankle_roll_link",
+      "kind": "ground",
+      "penetration_m": 0.022978555175921064
+    }
+  ],
+  "interrobot_contact_control_frames": 17,
+  "interrobot_peak_contact_force_n": 920.9514617330292,
+  "caveats": [
+    "Nominal deployment diagnostic; not same-simulator randomized BeyondMimic comparison.",
+    "Unqualified mean errors cover the full rollout including any post-fall frames; first-fall and strict prefix separately reported.",
+    "Four wrist pitch/yaw reference DOFs omitted in official 25-DOF model; metrics cover retained joints.",
+    "Any interrobot contact is not semantic attack/block success; no force/contact correctness claim.",
+    "Pretrained data overlap unknown; not a zero-shot generalization or synthetic-data utility result."
+  ]
+}

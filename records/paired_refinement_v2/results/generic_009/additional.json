@@ -1,0 +1,12 @@
+{
+  "max_joint_speed_before_rad_s": 31.009868621826172,
+  "max_joint_speed_after_rad_s": 35.28040453696463,
+  "p95_joint_speed_before_rad_s": 5.804480123519894,
+  "p95_joint_speed_after_rad_s": 5.859861755079265,
+  "stance_xy_speed_m_s": {
+    "original": 0.18987391711077545,
+    "corrected": 0.18863035835327194
+  },
+  "wrist_opponent_torso_distance_mae_change_m": 0.030407463563430256,
+  "proxy_note": "Stance mask heuristic. Wrist/torso distance is not an attack or contact label."
+}

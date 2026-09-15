@@ -1,0 +1,29 @@
+Independent final v2 document execution witness
+Date: 2026-09-15
+Witness agent: paired_refinement_final_witness (fresh independent agent)
+Read-only inputs: run-experiment/SKILL.md; .aris/compute/twist.md; docs/paired_refinement_execution.md
+
+Exact documented PowerShell invocation (executed unchanged):
+ssh -i C:\Users\Pende\.ssh\id_ed25519 ouyanghao@10.147.17.32 "cd /data/code/ouyanghao/oyh/humanoid-combat-motion && bash scripts/run.sh scripts/smoke_paired_refinement.py"
+
+Exit code: 0
+Captured output:
+PAIRED_QP_WITNESS {"frames": 4, "ground_before_m": 0.0661744842897637, "ground_after_m": 0.0, "normal_jacobian_verified": true, "dynamics_certified": false}
+
+Verification:
+PASS: exit code == 0
+PASS: PAIRED_QP_WITNESS marker present
+PASS: frames == 4
+PASS: ground_before_m = 0.0661744842897637 > 0.04
+PASS: ground_after_m = 0.0 < ground_before_m / 4 = 0.016543621072440925
+PASS: normal_jacobian_verified == true
+PASS: dynamics_certified == false
+Document-versus-reality divergence: NONE for all specified witness expectations.
+Scope: numerical geometric witness only; no dynamic feasibility certification.
+No command/code changes, no additional experiments, and no intentional server file writes.
+
+Additional read-only server version identification:
+Command: ssh -i C:\Users\Pende\.ssh\id_ed25519 ouyanghao@10.147.17.32 "cd /data/code/ouyanghao/oyh/humanoid-combat-motion && sha256sum combat/paired_refinement.py"
+Exit code: 0
+SHA256: b57b079cc64512bde8d212cdc493b1d7e0d59f4c92c4985b7a1e865a1c8d3bca
+Server file: /data/code/ouyanghao/oyh/humanoid-combat-motion/combat/paired_refinement.py
