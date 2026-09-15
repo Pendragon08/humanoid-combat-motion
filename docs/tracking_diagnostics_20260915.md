@@ -1,6 +1,6 @@
-# 第一批优化诊断：等待归档清理后启动
+# 第一批优化诊断：归档清理完成，首两项已启动
 
-用户要求先归档ACS-OMI-AMI实验结果并释放数据盘空间。本批次由 `scripts/start_diagnostics_after_archive.sh` 等待归档、远端校验及清理全部完成的 `FINALIZED.json`；任何归档失败标记都会阻止启动。控制进程PID记录为2124886，实际训练启动以 `records/tracking_diagnostics_20260915/launch.json` 和训练日志为准。当前不能把等待进程称为正在训练。
+用户要求先归档ACS-OMI-AMI实验结果并释放数据盘空间。本批次由 `scripts/start_diagnostics_after_archive.sh` 等待归档、远端校验及清理全部完成的 `FINALIZED.json`；任何归档失败标记都会阻止启动。控制进程PID记录为2124886，实际训练启动以 `records/tracking_diagnostics_20260915/launch.json` 和训练日志为准。更新：归档清理已经完成，正式队列PID为2130860和2130861。single_upstream与single_uniform的短验证均通过，正式训练均已记录超过49,152环境步；four_uniform与four_adaptive在各自队列等待。这里只记录启动，不代表实验完成。
 
 ## 四个诊断
 
