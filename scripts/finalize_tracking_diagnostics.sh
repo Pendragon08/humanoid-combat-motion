@@ -27,6 +27,7 @@ for comparison in interface sampling; do
  cp "$output/comparison.mp4" "reports/media/tracking_diagnostic_${comparison}.mp4"
  cp "$output/preview.png" "reports/media/tracking_diagnostic_${comparison}.png"
 done
+python3 scripts/summarize_tracking_diagnostics.py --html reports/experiment_progress_20260914.html
 python3 scripts/collect_tracking_diagnostic_records.py
 date -u +%FT%TZ > "$record/FINAL_REPORT_READY"
 echo TRACKING_DIAGNOSTICS_FINAL_REPORT_READY

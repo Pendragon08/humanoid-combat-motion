@@ -141,13 +141,20 @@ def update_html(path, result):
     section += '<table><tr><th>实验</th><th>状态</th><th>共同第一条：严格通过</th><th>四条选定参考：严格通过</th><th>开发留出：严格通过</th><th>开发留出：观察覆盖秒数</th></tr>'
     labels = {'single_upstream': '单参考／上游接口', 'single_uniform': '单参考／现有均匀接口',
               'four_uniform': '四参考／均匀采样', 'four_adaptive': '四参考／自适应采样'}
+    states = {'queued': '排队中', 'training_or_incomplete': '训练中或尚未完整结束',
+              'awaiting_evaluation': '训练完成，等待完整评价', 'complete': '训练和评价完成'}
     for row in result['rows']:
-        section += '<tr><td>' + labels[row['job']] + '</td><td>' + html.escape(row['status']) + '</td>'
+        section += '<tr><td>' + labels[row['job']] + '</td><td>' + states[row['status']] + '</td>'
         for group in ('shared_first', 'selected_four', 'development'):
             section += '<td>' + ('%.2f%%' % (100 * row['macro'][group]['strict']) if 'macro' in row else '待完整评价') + '</td>'
         section += '<td>' + ('%.3f' % row['macro']['development']['coverage_s'] if 'macro' in row else '—') + '</td></tr>'
     section += '</table><p>严格通过：全段未触发失配，且平均身体位置误差&lt;0.15米、根部位置误差&lt;0.15米、关节角误差&lt;0.3弧度。覆盖秒数是首次失配或全段完成前的时长；不是单独标注的跌倒时间。</p>'
     section += '<p class="notice">每个条件只有一个训练种子；开发留出来自同一个视频来源组，不能据此宣称统计显著或普遍泛化。单参考实验只有第一条是训练动作，其余三条是迁移检查。上游和现有接口还改变了重置、对齐及参考结束处理，差异不能全部归因于采样。这批实验未添加合成数据，不能证明合成数据效用。</p>'
+    for comparison, title in [('interface', '单参考接口对比'), ('sampling', '四参考采样对比')]:
+        stem = 'tracking_diagnostic_' + comparison
+        if (path.parent / 'media' / (stem + '.mp4')).exists():
+            section += '<h3>' + title + '</h3><video controls preload="metadata" poster="media/' + stem + '.png"><source src="media/' + stem + '.mp4" type="video/mp4"></video>'
+    section += '<p>视频使用共同第一条训练参考和第一条开发留出参考，固定环境0，上排训练参考、下排开发参考；每排从左到右为参考与两种策略。首次失配后冻结，4倍慢放。MuJoCo仅渲染已记录的Isaac轨迹，不是跨仿真器策略测试。</p>'
     section += '<p><a href="../records/tracking_diagnostics_20260915/summary.json">详细结果、实际采样次数与来源校验</a></p></section>' + end
     source = path.read_text(encoding='utf-8')
     if start in source:
