@@ -1,0 +1,22 @@
+{
+  "mode": "upstream",
+  "seed": 0,
+  "iterations": 1000,
+  "environments": 32,
+  "steps_per_env": 24,
+  "clip_ids": [
+    "sample_000"
+  ],
+  "fps": 50.0,
+  "bundle_sha256": "ea1575d631650c5e7450e94f943bcd665e6e7cce8bf22532086927f4cf1e7a22",
+  "initialization": "random; no checkpoint",
+  "environment_spec_unchanged": true,
+  "sampling": "upstream single-reference",
+  "adaptive_parameters": {
+    "ema": 0.1,
+    "initial_failure_rate": 0.5,
+    "uniform_mixture": 0.2,
+    "weight_formula": ".5+clamp(failure_rate,0,1)"
+  },
+  "upstream_vs_uniform_caveat": "also changes reset alignment and reference-end handling; not pure sampling ablation"
+}

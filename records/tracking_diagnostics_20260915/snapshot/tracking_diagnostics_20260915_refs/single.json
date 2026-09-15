@@ -1,0 +1,18 @@
+{
+  "clips": [
+    {
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/kungfu_train20_tracking_refs/sample_000_actor0.npz",
+      "clip_id": "sample_000",
+      "source_id": "199",
+      "source_group": "段位制长拳六段单练套路",
+      "split": "train",
+      "kind": "video_reconstructed_and_GMR_retargeted",
+      "sha256": "a4f3aa10ad1b17ad11508b5ea3b22664beb724ce7ea9148054d137cc8da6bd1b",
+      "frames": 149
+    }
+  ],
+  "frames": 149,
+  "fps": 50.0,
+  "boundary_interpolation": false,
+  "sha256": "ea1575d631650c5e7450e94f943bcd665e6e7cce8bf22532086927f4cf1e7a22"
+}

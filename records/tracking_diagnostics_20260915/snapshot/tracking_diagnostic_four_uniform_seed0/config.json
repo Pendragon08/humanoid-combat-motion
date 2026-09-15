@@ -1,0 +1,25 @@
+{
+  "mode": "uniform",
+  "seed": 0,
+  "iterations": 1000,
+  "environments": 512,
+  "steps_per_env": 24,
+  "clip_ids": [
+    "sample_000",
+    "sample_008",
+    "sample_010",
+    "sample_014"
+  ],
+  "fps": 50.0,
+  "bundle_sha256": "3bd6614344fd7a3880672c32e9676fc933c541c9ef05b8dd166e554763c96447",
+  "initialization": "random; no checkpoint",
+  "environment_spec_unchanged": true,
+  "sampling": "uniform clip; uniform valid frame",
+  "adaptive_parameters": {
+    "ema": 0.1,
+    "initial_failure_rate": 0.5,
+    "uniform_mixture": 0.2,
+    "weight_formula": ".5+clamp(failure_rate,0,1)"
+  },
+  "upstream_vs_uniform_caveat": "also changes reset alignment and reference-end handling; not pure sampling ablation"
+}

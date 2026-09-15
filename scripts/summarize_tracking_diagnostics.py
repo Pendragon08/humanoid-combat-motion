@@ -150,6 +150,22 @@ def update_html(path, result):
         section += '<td>' + ('%.3f' % row['macro']['development']['coverage_s'] if 'macro' in row else '—') + '</td></tr>'
     section += '</table><p>严格通过：全段未触发失配，且平均身体位置误差&lt;0.15米、根部位置误差&lt;0.15米、关节角误差&lt;0.3弧度。覆盖秒数是首次失配或全段完成前的时长；不是单独标注的跌倒时间。</p>'
     section += '<p class="notice">每个条件只有一个训练种子；开发留出来自同一个视频来源组，不能据此宣称统计显著或普遍泛化。单参考实验只有第一条是训练动作，其余三条是迁移检查。上游和现有接口还改变了重置、对齐及参考结束处理，差异不能全部归因于采样。这批实验未添加合成数据，不能证明合成数据效用。</p>'
+    if result['complete_jobs'] == 4:
+        rows = {r['job']: r for r in result['rows']}
+        uniform, adaptive = rows['four_uniform'], rows['four_adaptive']
+        dev_delta = 100 * (adaptive['macro']['development']['strict'] - uniform['macro']['development']['strict'])
+        train_delta = 100 * (adaptive['macro']['selected_four']['strict'] - uniform['macro']['selected_four']['strict'])
+        section += '<h3>每条训练参考的差异</h3><table><tr><th>参考编号</th><th>均匀采样严格通过</th><th>自适应严格通过</th><th>均匀：实际训练步数占比</th><th>自适应：实际训练步数占比</th></tr>'
+        by_sample = {e['sample']: e for e in adaptive['evaluations'] if e['split'] == 'eval'}
+        for i, e in enumerate(x for x in uniform['evaluations'] if x['split'] == 'eval'):
+            section += '<tr><td>' + html.escape(e['sample']) + '</td><td>%.2f%%</td><td>%.2f%%</td><td>%.2f%%</td><td>%.2f%%</td></tr>' % (100*e['strict'], 100*by_sample[e['sample']]['strict'],
+                100*uniform['exposure']['per_clip_steps'][i]/12288000, 100*adaptive['exposure']['per_clip_steps'][i]/12288000)
+        section += '</table><p>均匀采样让四条动作被抽到的次数接近相同，但困难动作提前失配，实际交互步数仍明显较少。自适应提高了部分困难动作的训练占比；这不等于已解决完整动作执行问题。</p>'
+        section += '<h3>本轮结论与下一步</h3><p>相较四参考均匀采样，自适应的开发严格通过率变化为%+.2f个百分点，训练参考平均变化为%+.2f个百分点。结果有动作依赖性，不能由单个种子确认稳定收益。</p>' % (dev_delta, train_delta)
+        section += '<p class="notice"><b>本轮尚未建立足够可靠的基础跟踪能力，暂不扩大合成数据效用实验。</b>先用人工确认的站立、慢速摆臂、重心转移等简单参考做校准，再逐项检查初始状态对齐、根部速度、足底接触、动力学可执行性与训练时随机起点／评价时固定起点的差异。这些是下一轮待验证假设，不是已经确认的唯一失败原因。原方案的简单训练参考≥80%、匹配验证来源≥60%为建议工程门槛；本批参考尚未人工认证为简单基准，不能声称已完成该校准。</p>'
+    all_video = 'tracking_diagnostic_sampling_all'
+    if (path.parent / 'media' / (all_video + '.mp4')).exists():
+        section += '<h3>完整展示四条选定训练参考</h3><video controls preload="metadata" poster="media/' + all_video + '.png"><source src="media/' + all_video + '.mp4" type="video/mp4"></video><p>按冻结清单展示全部四条参考；从上到下为000、008、010、014，每排左侧是参考，中间是均匀采样策略，右侧是自适应策略。固定环境0，未按成功率挑选展示动作。</p>'
     for comparison, title in [('interface', '单参考接口对比'), ('sampling', '四参考采样对比')]:
         stem = 'tracking_diagnostic_' + comparison
         if (path.parent / 'media' / (stem + '.mp4')).exists():

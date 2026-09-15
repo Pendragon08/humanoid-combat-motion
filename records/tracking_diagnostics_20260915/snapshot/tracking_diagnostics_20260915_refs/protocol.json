@@ -1,0 +1,93 @@
+{
+  "selection": "first training clip of first four distinct title groups, original manifest order",
+  "scope": "interface and clip-sampling diagnosis; not manually verified punch/block classes or a low-dynamic benchmark",
+  "references": [
+    {
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/kungfu_train20_tracking_refs/sample_000_actor0.npz",
+      "clip_id": "sample_000",
+      "source_id": "199",
+      "source_group": "段位制长拳六段单练套路",
+      "split": "train",
+      "kind": "video_reconstructed_and_GMR_retargeted",
+      "sha256": "a4f3aa10ad1b17ad11508b5ea3b22664beb724ce7ea9148054d137cc8da6bd1b",
+      "frames": 149
+    },
+    {
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/kungfu_train20_tracking_refs/sample_008_actor0.npz",
+      "clip_id": "sample_008",
+      "source_id": "230",
+      "source_group": "第一套国际武术竞赛套路-长拳-第三段（动作名称）",
+      "split": "train",
+      "kind": "video_reconstructed_and_GMR_retargeted",
+      "sha256": "7e138cc51787f54884e3c4d363bacf5466682947af3f4ea063448a8c90daf16d",
+      "frames": 149
+    },
+    {
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/kungfu_train20_tracking_refs/sample_010_actor0.npz",
+      "clip_id": "sample_010",
+      "source_id": "235",
+      "source_group": "第一套国际武术竞赛套路-南拳-完整版-国一南拳#桂平市竞技武术训练馆#桂平市竞技武术队",
+      "split": "train",
+      "kind": "video_reconstructed_and_GMR_retargeted",
+      "sha256": "0fb4aa8ce0a50597d3f0f06f30c86210f2d0c1092930884d367c546cfeb9e646",
+      "frames": 149
+    },
+    {
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/kungfu_train20_tracking_refs/sample_014_actor0.npz",
+      "clip_id": "sample_014",
+      "source_id": "292",
+      "source_group": "太极拳",
+      "split": "train",
+      "kind": "video_reconstructed_and_GMR_retargeted",
+      "sha256": "16211f9d2ce768fba45e13ac76f0d5341242b110070df829b9c5656b496a1e1a",
+      "frames": 149
+    }
+  ],
+  "audits": [
+    {
+      "clip_id": "sample_000",
+      "frames": 149,
+      "duration_s": 2.98,
+      "peak_joint_speed_rad_s": 13.51890754699707,
+      "source_group": "段位制长拳六段单练套路",
+      "semantics_manually_verified": false
+    },
+    {
+      "clip_id": "sample_008",
+      "frames": 149,
+      "duration_s": 2.98,
+      "peak_joint_speed_rad_s": 8.426007270812988,
+      "source_group": "第一套国际武术竞赛套路-长拳-第三段（动作名称）",
+      "semantics_manually_verified": false
+    },
+    {
+      "clip_id": "sample_010",
+      "frames": 149,
+      "duration_s": 2.98,
+      "peak_joint_speed_rad_s": 8.445914268493652,
+      "source_group": "第一套国际武术竞赛套路-南拳-完整版-国一南拳#桂平市竞技武术训练馆#桂平市竞技武术队",
+      "semantics_manually_verified": false
+    },
+    {
+      "clip_id": "sample_014",
+      "frames": 149,
+      "duration_s": 2.98,
+      "peak_joint_speed_rad_s": 2.696558952331543,
+      "source_group": "太极拳",
+      "semantics_manually_verified": false
+    }
+  ],
+  "seed": 0,
+  "updates": 1000,
+  "envs": 512,
+  "steps_per_env": 24,
+  "jobs": [
+    "single_upstream",
+    "single_uniform",
+    "four_uniform",
+    "four_adaptive"
+  ],
+  "evaluation": "32 environments per reference, reset seed 123; all four selected training references and four existing development holdouts",
+  "changes": "upstream-vs-single_uniform includes reset/termination/alignment differences, not isolated sampling effect",
+  "environment_spec_sha256_8": "072cb4cb"
+}

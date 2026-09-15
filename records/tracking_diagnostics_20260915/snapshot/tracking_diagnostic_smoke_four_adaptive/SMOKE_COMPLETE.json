@@ -1,0 +1,29 @@
+{
+  "environment_steps": 9600,
+  "per_clip_steps": [
+    2125,
+    1141,
+    3838,
+    2496
+  ],
+  "reset_counts": [
+    185,
+    180,
+    182,
+    178
+  ],
+  "termination_counts": {
+    "time_out": 0,
+    "anchor_pos": 23,
+    "anchor_ori": 6,
+    "ee_body_pos": 610,
+    "reference_clip_end": 30
+  },
+  "termination_counts_may_overlap": true,
+  "failure_rates": [
+    0.9676591157913208,
+    0.8969514966011047,
+    0.9948816299438477,
+    0.8913357257843018
+  ]
+}

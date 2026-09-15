@@ -1,0 +1,29 @@
+{
+  "comparison": "interface",
+  "source_evaluations": [
+    "runs/tracking_diagnostic_eval_single_upstream_sample_000",
+    "runs/tracking_diagnostic_eval_single_uniform_sample_000",
+    "runs/tracking_diagnostic_dev_single_upstream_sample_000",
+    "runs/tracking_diagnostic_dev_single_uniform_sample_000"
+  ],
+  "source_rollout_sha256": [
+    "e7c71f2cffc81f79cc484e163c88370fd87ba428f012d5fbca1d239042e8b18a",
+    "5daee6c9cf242df1feab046f7ed201a20014535838efa99483da39c74781f4a5",
+    "08fcbf77210ada3b29a882fc3fea1cba660e4623675ffcecb4182fbc688e6cf1",
+    "282c03b2b16170ecbe8f6ec79ac8ccff3a20cb9ea44f7e9dccc510acb52e665a"
+  ],
+  "selection": "first selected training reference and first development reference; environment0; seed0; no success selection",
+  "alive_frames": [
+    [
+      6,
+      28
+    ],
+    [
+      9,
+      11
+    ]
+  ],
+  "playback_speed": 0.25,
+  "freeze_after_first_failure": true,
+  "rendering": "MuJoCo rendering of recorded Isaac states, not cross-simulator policy execution"
+}

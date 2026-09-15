@@ -1,0 +1,813 @@
+{
+  "generated_at_utc": "2026-09-15T01:34:46.089066+00:00",
+  "protocol_sha256": "1a66bb41a6dc77cd1fab14cd6b2534b15f165f2ad66e545e1a5ef44d2fa9a357",
+  "rows": [
+    {
+      "job": "single_upstream",
+      "status": "complete",
+      "evaluations": [
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.109375,
+          "joint_error_rad": 0.18207337941442217,
+          "root_error_m": 0.04406886058194297,
+          "body_error_m": 0.0808303850037711,
+          "sample": "sample_000",
+          "split": "eval",
+          "seen_in_training": true,
+          "path": "runs/tracking_diagnostic_eval_single_upstream_sample_000/metrics.json",
+          "sha256": "d88bdbab08ddd7ef16e6e3cdcaed9feef9e7b3d4e73403c53ad54cb720f154ab"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.76875,
+          "joint_error_rad": 0.33797237514480344,
+          "root_error_m": 0.23805589511142514,
+          "body_error_m": 0.2569562105628533,
+          "sample": "sample_008",
+          "split": "eval",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_eval_single_upstream_sample_008/metrics.json",
+          "sha256": "ca8b1e8924e63f5a213cd28c1e43c4461e072050bf008658a4db679149624d3b"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.245625,
+          "joint_error_rad": 0.1922425289493784,
+          "root_error_m": 0.09237512817212946,
+          "body_error_m": 0.10192932419801183,
+          "sample": "sample_010",
+          "split": "eval",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_eval_single_upstream_sample_010/metrics.json",
+          "sha256": "90fd0bf4706ecda6d9e9ddc9539c4c76feb8805872cc3cbd3ae30fbb3c286692"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.38,
+          "joint_error_rad": 0.2648026120701903,
+          "root_error_m": 0.13447795695576228,
+          "body_error_m": 0.166041069762095,
+          "sample": "sample_014",
+          "split": "eval",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_eval_single_upstream_sample_014/metrics.json",
+          "sha256": "4b9858c883067892aad65296d057bd65d9b8f710ee8822682a806be3a5df92e0"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.178125,
+          "joint_error_rad": 0.16367279353894684,
+          "root_error_m": 0.05917672190749854,
+          "body_error_m": 0.07844753453606053,
+          "sample": "sample_000",
+          "split": "dev",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_dev_single_upstream_sample_000/metrics.json",
+          "sha256": "9fe89f35de92c989614c1d8c56b30c9ad6111350732280421a1e0ffba1cd021e"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.240625,
+          "joint_error_rad": 0.3330785022153483,
+          "root_error_m": 0.15643963457702043,
+          "body_error_m": 0.19418226023773094,
+          "sample": "sample_001",
+          "split": "dev",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_dev_single_upstream_sample_001/metrics.json",
+          "sha256": "2019ff40e6f6321f24078234a6e04871a024e8e96cc51b838e0345d13d75cd3b"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.170625,
+          "joint_error_rad": 0.16129690539705885,
+          "root_error_m": 0.05872637994123466,
+          "body_error_m": 0.07655277902826721,
+          "sample": "sample_002",
+          "split": "dev",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_dev_single_upstream_sample_002/metrics.json",
+          "sha256": "a8e56a2b69f48427b0b04ed83726a9e73ab13d4f02ffb6bc4a168757a537870b"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.17875,
+          "joint_error_rad": 0.24640815241353495,
+          "root_error_m": 0.10434171401120566,
+          "body_error_m": 0.12010359159716359,
+          "sample": "sample_003",
+          "split": "dev",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_dev_single_upstream_sample_003/metrics.json",
+          "sha256": "f12aa47724974304218b5a72080356ea9127f95c3851834833034ef41fdb0832"
+        }
+      ],
+      "training_clip_ids": [
+        "sample_000"
+      ],
+      "smoke_passed": true,
+      "config_sha256": "af59eb6a2db45c52d1c67dcc046655128ccdffd07bc5ae6af6ec27f5386d1a01",
+      "last_logged_steps": 12288000,
+      "exposure": {
+        "environment_steps": 12288000,
+        "per_clip_steps": [
+          12288000
+        ],
+        "reset_counts": null,
+        "termination_counts": {
+          "time_out": 1,
+          "anchor_pos": 12289,
+          "anchor_ori": 85,
+          "ee_body_pos": 971559
+        },
+        "termination_counts_may_overlap": true,
+        "failure_rates": null
+      },
+      "model_sha256": "86af4f8285aceb62fdd9f54915ffdb6be33fe6919beecac5effa3cd40773e3a9",
+      "macro": {
+        "shared_first": {
+          "references": 1,
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.109375,
+          "joint_error_rad": 0.18207337941442217,
+          "root_error_m": 0.04406886058194297,
+          "body_error_m": 0.0808303850037711
+        },
+        "selected_four": {
+          "references": 4,
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.37593750000000004,
+          "joint_error_rad": 0.24427272389469856,
+          "root_error_m": 0.12724446020531496,
+          "body_error_m": 0.1514392473816828
+        },
+        "seen_training": {
+          "references": 1,
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.109375,
+          "joint_error_rad": 0.18207337941442217,
+          "root_error_m": 0.04406886058194297,
+          "body_error_m": 0.0808303850037711
+        },
+        "selected_transfer": {
+          "references": 3,
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.4647916666666667,
+          "joint_error_rad": 0.2650058387214574,
+          "root_error_m": 0.1549696600797723,
+          "body_error_m": 0.1749755348409867
+        },
+        "development": {
+          "references": 4,
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.19203125,
+          "joint_error_rad": 0.22611408839122224,
+          "root_error_m": 0.09467111260923983,
+          "body_error_m": 0.11732154134980557
+        }
+      }
+    },
+    {
+      "job": "single_uniform",
+      "status": "complete",
+      "evaluations": [
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.7375,
+          "joint_error_rad": 0.35982438147825707,
+          "root_error_m": 0.1656397880512779,
+          "body_error_m": 0.2130700978560973,
+          "sample": "sample_000",
+          "split": "eval",
+          "seen_in_training": true,
+          "path": "runs/tracking_diagnostic_eval_single_uniform_sample_000/metrics.json",
+          "sha256": "2a91bc798022bcce7bdc1bb5fccc4fe782451fc197efd2f3fbf52e5a1423e791"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.699375,
+          "joint_error_rad": 0.25209989224937585,
+          "root_error_m": 0.1683303695421756,
+          "body_error_m": 0.20069735706971095,
+          "sample": "sample_008",
+          "split": "eval",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_eval_single_uniform_sample_008/metrics.json",
+          "sha256": "7c8708a6cef8101578c03b6147ca39e6e040d1d3a35d0d9e281494cd05fda8ec"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.34,
+          "joint_error_rad": 0.21751161456546364,
+          "root_error_m": 0.10330909819287412,
+          "body_error_m": 0.13023709253791502,
+          "sample": "sample_010",
+          "split": "eval",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_eval_single_uniform_sample_010/metrics.json",
+          "sha256": "9b7de519c84b350a0d51d2c29daf08749ec1d18f098502486c0a7c9e907222f4"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.203125,
+          "joint_error_rad": 0.2066145398066594,
+          "root_error_m": 0.08673741377316989,
+          "body_error_m": 0.10604211953970102,
+          "sample": "sample_014",
+          "split": "eval",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_eval_single_uniform_sample_014/metrics.json",
+          "sha256": "a5108b297231c01fbcdde9791577b7352e015978926f77b5c9f22229db8d0bc1"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.25875,
+          "joint_error_rad": 0.17709290513381865,
+          "root_error_m": 0.0660066229565708,
+          "body_error_m": 0.09331829579556046,
+          "sample": "sample_000",
+          "split": "dev",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_dev_single_uniform_sample_000/metrics.json",
+          "sha256": "5cffd5efecc780c561c2587548ab43b89deed9e398341230b87b3de2b1400cff"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.205625,
+          "joint_error_rad": 0.2722563883091541,
+          "root_error_m": 0.08756484267921795,
+          "body_error_m": 0.12607943173780992,
+          "sample": "sample_001",
+          "split": "dev",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_dev_single_uniform_sample_001/metrics.json",
+          "sha256": "70c23519c3b7e64b99d9f7810be26a39449ced61d8f520fcde8229f737c1d87e"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.245625,
+          "joint_error_rad": 0.17172883538192768,
+          "root_error_m": 0.06217966041037144,
+          "body_error_m": 0.08892080688294564,
+          "sample": "sample_002",
+          "split": "dev",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_dev_single_uniform_sample_002/metrics.json",
+          "sha256": "063d08143cc5d780a200de432d0f50d7abb58ef79b5465247281964b0a0d4de6"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.245,
+          "joint_error_rad": 0.2947787545165237,
+          "root_error_m": 0.12760906419431678,
+          "body_error_m": 0.13718366524090572,
+          "sample": "sample_003",
+          "split": "dev",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_dev_single_uniform_sample_003/metrics.json",
+          "sha256": "d7518960bad74b2f62c6cfb9b97c78c82a5f2ae23627ce7a3d9f030803e7a2f9"
+        }
+      ],
+      "training_clip_ids": [
+        "sample_000"
+      ],
+      "smoke_passed": true,
+      "config_sha256": "325decb09a5d936f046b847980d68f7f63352fd4da0a910f781cc6b859bbbf6d",
+      "last_logged_steps": 12288000,
+      "exposure": {
+        "environment_steps": 12288000,
+        "per_clip_steps": [
+          12288000
+        ],
+        "reset_counts": [
+          1099262
+        ],
+        "termination_counts": {
+          "time_out": 10,
+          "anchor_pos": 14945,
+          "anchor_ori": 64,
+          "ee_body_pos": 1011817,
+          "reference_clip_end": 90064
+        },
+        "termination_counts_may_overlap": true,
+        "failure_rates": null
+      },
+      "model_sha256": "0d912868d9d2cc23f71c52d89f77f4e6b8da6a0c361a743ba3a5045a605df082",
+      "macro": {
+        "shared_first": {
+          "references": 1,
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.7375,
+          "joint_error_rad": 0.35982438147825707,
+          "root_error_m": 0.1656397880512779,
+          "body_error_m": 0.2130700978560973
+        },
+        "selected_four": {
+          "references": 4,
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.495,
+          "joint_error_rad": 0.259012607024939,
+          "root_error_m": 0.1310041673898744,
+          "body_error_m": 0.16251166675085607
+        },
+        "seen_training": {
+          "references": 1,
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.7375,
+          "joint_error_rad": 0.35982438147825707,
+          "root_error_m": 0.1656397880512779,
+          "body_error_m": 0.2130700978560973
+        },
+        "selected_transfer": {
+          "references": 3,
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.4141666666666667,
+          "joint_error_rad": 0.22540868220716628,
+          "root_error_m": 0.11945896050273987,
+          "body_error_m": 0.14565885638244233
+        },
+        "development": {
+          "references": 4,
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.23875,
+          "joint_error_rad": 0.22896422083535603,
+          "root_error_m": 0.08584004756011925,
+          "body_error_m": 0.11137554991430543
+        }
+      }
+    },
+    {
+      "job": "four_uniform",
+      "status": "complete",
+      "evaluations": [
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.09625,
+          "joint_error_rad": 0.16020765126525582,
+          "root_error_m": 0.04352386102273867,
+          "body_error_m": 0.08190708520350518,
+          "sample": "sample_000",
+          "split": "eval",
+          "seen_in_training": true,
+          "path": "runs/tracking_diagnostic_eval_four_uniform_sample_000/metrics.json",
+          "sha256": "60f2cf553fd747c387c9845ac88d75a82205e0eec632fe62620af4f8e6635834"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 1.115625,
+          "joint_error_rad": 0.1574146701758649,
+          "root_error_m": 0.19171376447884642,
+          "body_error_m": 0.2095242929558794,
+          "sample": "sample_008",
+          "split": "eval",
+          "seen_in_training": true,
+          "path": "runs/tracking_diagnostic_eval_four_uniform_sample_008/metrics.json",
+          "sha256": "296e43bbf58b204b69b3f0f74f4a4f7d961a29d81330184e6a89f38dfceb2e57"
+        },
+        {
+          "strict": 0.375,
+          "completion": 0.65625,
+          "coverage_s": 2.290625,
+          "joint_error_rad": 0.1109291143339295,
+          "root_error_m": 0.16515003587506802,
+          "body_error_m": 0.17080746666308477,
+          "sample": "sample_010",
+          "split": "eval",
+          "seen_in_training": true,
+          "path": "runs/tracking_diagnostic_eval_four_uniform_sample_010/metrics.json",
+          "sha256": "206b3bda3a306567102d56ac982116cc7f0c489363bff348c1b6f2a0f45a8ca5"
+        },
+        {
+          "strict": 0.6875,
+          "completion": 0.71875,
+          "coverage_s": 2.496875,
+          "joint_error_rad": 0.15246983938133613,
+          "root_error_m": 0.12447279603669283,
+          "body_error_m": 0.12514589176010876,
+          "sample": "sample_014",
+          "split": "eval",
+          "seen_in_training": true,
+          "path": "runs/tracking_diagnostic_eval_four_uniform_sample_014/metrics.json",
+          "sha256": "e71936d19cc8a698e859af3b559ddb03df295708a4a222bbb871f940bdbf1a5a"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 1.883125,
+          "joint_error_rad": 0.16625281864727132,
+          "root_error_m": 0.3844115667235523,
+          "body_error_m": 0.3876624976207836,
+          "sample": "sample_000",
+          "split": "dev",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_dev_four_uniform_sample_000/metrics.json",
+          "sha256": "4466300e325bc90d6c3cc31546da69dfe9c88f66b6f11fcfd95db9c491d298e5"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.246875,
+          "joint_error_rad": 0.19194608036475846,
+          "root_error_m": 0.08551316314105746,
+          "body_error_m": 0.11713296186320389,
+          "sample": "sample_001",
+          "split": "dev",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_dev_four_uniform_sample_001/metrics.json",
+          "sha256": "70ba37a4a8d4c2220d6660d04b2efb9e4ced01cfa280520badd2feed51c804e5"
+        },
+        {
+          "strict": 0.03125,
+          "completion": 0.625,
+          "coverage_s": 2.2,
+          "joint_error_rad": 0.14887226576154883,
+          "root_error_m": 0.34710813913155686,
+          "body_error_m": 0.3606595175848766,
+          "sample": "sample_002",
+          "split": "dev",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_dev_four_uniform_sample_002/metrics.json",
+          "sha256": "c43149ad0d0182aa5287a8890e6347e585937b8515e26009f0c76a27f780d0ae"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.24625,
+          "joint_error_rad": 0.24587987507055253,
+          "root_error_m": 0.08462655956521252,
+          "body_error_m": 0.10499820491384129,
+          "sample": "sample_003",
+          "split": "dev",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_dev_four_uniform_sample_003/metrics.json",
+          "sha256": "406690aeb2618a0d2ec032d8bf644f8444dd0bdca0d9ab9d4dc538ce15ab39a8"
+        }
+      ],
+      "training_clip_ids": [
+        "sample_000",
+        "sample_008",
+        "sample_010",
+        "sample_014"
+      ],
+      "smoke_passed": true,
+      "config_sha256": "18b97a17f777967bbffb2ecbd5bf70064c282f9b3a81929fef8f7a122a4af4cc",
+      "last_logged_steps": 12288000,
+      "exposure": {
+        "environment_steps": 12288000,
+        "per_clip_steps": [
+          1521102,
+          2395698,
+          4476217,
+          3894983
+        ],
+        "reset_counts": [
+          177379,
+          177385,
+          178522,
+          177469
+        ],
+        "termination_counts": {
+          "time_out": 12,
+          "anchor_pos": 35617,
+          "anchor_ori": 446,
+          "ee_body_pos": 593714,
+          "reference_clip_end": 94630
+        },
+        "termination_counts_may_overlap": true,
+        "failure_rates": null
+      },
+      "model_sha256": "432e125c0e6d88619977693dc9253d729d4961185a13872d1cc8dcbaed1bccc3",
+      "macro": {
+        "shared_first": {
+          "references": 1,
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.09625,
+          "joint_error_rad": 0.16020765126525582,
+          "root_error_m": 0.04352386102273867,
+          "body_error_m": 0.08190708520350518
+        },
+        "selected_four": {
+          "references": 4,
+          "strict": 0.265625,
+          "completion": 0.34375,
+          "coverage_s": 1.4998437500000001,
+          "joint_error_rad": 0.1452553187890966,
+          "root_error_m": 0.1312151143533365,
+          "body_error_m": 0.14684618414564454
+        },
+        "seen_training": {
+          "references": 4,
+          "strict": 0.265625,
+          "completion": 0.34375,
+          "coverage_s": 1.4998437500000001,
+          "joint_error_rad": 0.1452553187890966,
+          "root_error_m": 0.1312151143533365,
+          "body_error_m": 0.14684618414564454
+        },
+        "development": {
+          "references": 4,
+          "strict": 0.0078125,
+          "completion": 0.15625,
+          "coverage_s": 1.1440625,
+          "joint_error_rad": 0.18823775996103279,
+          "root_error_m": 0.2254148571403448,
+          "body_error_m": 0.24261329549567634
+        }
+      }
+    },
+    {
+      "job": "four_adaptive",
+      "status": "complete",
+      "evaluations": [
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.096875,
+          "joint_error_rad": 0.1537681548826156,
+          "root_error_m": 0.044146312821295955,
+          "body_error_m": 0.08028312556205257,
+          "sample": "sample_000",
+          "split": "eval",
+          "seen_in_training": true,
+          "path": "runs/tracking_diagnostic_eval_four_adaptive_sample_000/metrics.json",
+          "sha256": "31551fc4c8481e456d76b59d5702f9cc973b829fc9777ed5bb79290917b683aa"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 1.2281250000000001,
+          "joint_error_rad": 0.14935559647835545,
+          "root_error_m": 0.20752122581156762,
+          "body_error_m": 0.22569730755027015,
+          "sample": "sample_008",
+          "split": "eval",
+          "seen_in_training": true,
+          "path": "runs/tracking_diagnostic_eval_four_adaptive_sample_008/metrics.json",
+          "sha256": "4d4cf925b50c8ba8dd3fd4642e671ae2eb1b04c96cca2addcb4031f1a2e72db9"
+        },
+        {
+          "strict": 0.34375,
+          "completion": 0.53125,
+          "coverage_s": 2.195625,
+          "joint_error_rad": 0.10626927119118516,
+          "root_error_m": 0.16214509886484557,
+          "body_error_m": 0.16510206455862694,
+          "sample": "sample_010",
+          "split": "eval",
+          "seen_in_training": true,
+          "path": "runs/tracking_diagnostic_eval_four_adaptive_sample_010/metrics.json",
+          "sha256": "63682ffe37ade829215e01ee610b2b653b7251b513a2bee081a222d673cb87d5"
+        },
+        {
+          "strict": 0.65625,
+          "completion": 0.71875,
+          "coverage_s": 2.4525,
+          "joint_error_rad": 0.17202906697897372,
+          "root_error_m": 0.10634909362117329,
+          "body_error_m": 0.11219647165224579,
+          "sample": "sample_014",
+          "split": "eval",
+          "seen_in_training": true,
+          "path": "runs/tracking_diagnostic_eval_four_adaptive_sample_014/metrics.json",
+          "sha256": "9030d976b0a6839e04b30ebb9f576070570e6b04154932c5eb3a991c3c30fab2"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 1.840625,
+          "joint_error_rad": 0.1696912425685617,
+          "root_error_m": 0.3271778560251453,
+          "body_error_m": 0.3324084647847355,
+          "sample": "sample_000",
+          "split": "dev",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_dev_four_adaptive_sample_000/metrics.json",
+          "sha256": "de48c57af1724c3ad245f392b90c5e18f943810aca0e0a31d3a63222ca711ffa"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.2325,
+          "joint_error_rad": 0.18483173318447604,
+          "root_error_m": 0.0933984864943771,
+          "body_error_m": 0.1182687226482617,
+          "sample": "sample_001",
+          "split": "dev",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_dev_four_adaptive_sample_001/metrics.json",
+          "sha256": "a21ef00925ade1df71b9567f8deaafa33bafdfac6b43667aeacced3ea966b55b"
+        },
+        {
+          "strict": 0.125,
+          "completion": 0.5625,
+          "coverage_s": 2.134375,
+          "joint_error_rad": 0.1563865666508151,
+          "root_error_m": 0.2678407228534079,
+          "body_error_m": 0.2742644142790385,
+          "sample": "sample_002",
+          "split": "dev",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_dev_four_adaptive_sample_002/metrics.json",
+          "sha256": "5fb67a2a3a068e1ee0f9200022b934575f95556051a14bf87425d9158ff677ba"
+        },
+        {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.20625000000000002,
+          "joint_error_rad": 0.23733508162426226,
+          "root_error_m": 0.07824253485058293,
+          "body_error_m": 0.10327406471425837,
+          "sample": "sample_003",
+          "split": "dev",
+          "seen_in_training": false,
+          "path": "runs/tracking_diagnostic_dev_four_adaptive_sample_003/metrics.json",
+          "sha256": "415aec14ee11565e9176057b68e50d8ca34fd38764b13d57687dfe315bdef364"
+        }
+      ],
+      "training_clip_ids": [
+        "sample_000",
+        "sample_008",
+        "sample_010",
+        "sample_014"
+      ],
+      "smoke_passed": true,
+      "config_sha256": "032a6e867f4dd957b6bb872d03bd7c0642fcfe2b0e4f49072992499e11c345f0",
+      "last_logged_steps": 12288000,
+      "exposure": {
+        "environment_steps": 12288000,
+        "per_clip_steps": [
+          1764605,
+          2606880,
+          4215437,
+          3701078
+        ],
+        "reset_counts": [
+          195693,
+          188187,
+          177022,
+          177272
+        ],
+        "termination_counts": {
+          "time_out": 13,
+          "anchor_pos": 38716,
+          "anchor_ori": 763,
+          "ee_body_pos": 620860,
+          "reference_clip_end": 91497
+        },
+        "termination_counts_may_overlap": true,
+        "failure_rates": [
+          0.9400154948234558,
+          0.6638611555099487,
+          0.26138171553611755,
+          0.2233855128288269
+        ]
+      },
+      "model_sha256": "364b626769bc4f5581f209ebbe0e55b73121694187c93a0b39212e1f3b7fd5b5",
+      "macro": {
+        "shared_first": {
+          "references": 1,
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.096875,
+          "joint_error_rad": 0.1537681548826156,
+          "root_error_m": 0.044146312821295955,
+          "body_error_m": 0.08028312556205257
+        },
+        "selected_four": {
+          "references": 4,
+          "strict": 0.25,
+          "completion": 0.3125,
+          "coverage_s": 1.4932812500000001,
+          "joint_error_rad": 0.1453555223827825,
+          "root_error_m": 0.1300404327797206,
+          "body_error_m": 0.14581974233079886
+        },
+        "seen_training": {
+          "references": 4,
+          "strict": 0.25,
+          "completion": 0.3125,
+          "coverage_s": 1.4932812500000001,
+          "joint_error_rad": 0.1453555223827825,
+          "root_error_m": 0.1300404327797206,
+          "body_error_m": 0.14581974233079886
+        },
+        "development": {
+          "references": 4,
+          "strict": 0.03125,
+          "completion": 0.140625,
+          "coverage_s": 1.1034375,
+          "joint_error_rad": 0.18706115600702877,
+          "root_error_m": 0.1916649000558783,
+          "body_error_m": 0.20705391660657352
+        }
+      }
+    }
+  ],
+  "differences": [
+    {
+      "treatment": "single_uniform",
+      "control": "single_upstream",
+      "comparison": "interface package; reset/alignment/end handling also differ",
+      "macro_deltas": {
+        "shared_first": {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.628125,
+          "joint_error_rad": 0.1777510020638349,
+          "root_error_m": 0.12157092746933494,
+          "body_error_m": 0.1322397128523262
+        },
+        "selected_four": {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.11906249999999996,
+          "joint_error_rad": 0.014739883130240439,
+          "root_error_m": 0.0037597071845594243,
+          "body_error_m": 0.011072419369173275
+        },
+        "development": {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.04671875,
+          "joint_error_rad": 0.0028501324441337905,
+          "root_error_m": -0.008831065049120582,
+          "body_error_m": -0.0059459914355001475
+        }
+      }
+    },
+    {
+      "treatment": "four_adaptive",
+      "control": "four_uniform",
+      "comparison": "bounded clip failure sampling; same four references",
+      "macro_deltas": {
+        "shared_first": {
+          "strict": 0.0,
+          "completion": 0.0,
+          "coverage_s": 0.0006250000000000006,
+          "joint_error_rad": -0.006439496382640214,
+          "root_error_m": 0.0006224517985572858,
+          "body_error_m": -0.0016239596414526075
+        },
+        "selected_four": {
+          "strict": -0.015625,
+          "completion": -0.03125,
+          "coverage_s": -0.006562500000000027,
+          "joint_error_rad": 0.00010020359368589915,
+          "root_error_m": -0.0011746815736158878,
+          "body_error_m": -0.00102644181484568
+        },
+        "development": {
+          "strict": 0.0234375,
+          "completion": -0.015625,
+          "coverage_s": -0.04062499999999991,
+          "joint_error_rad": -0.001176603954004013,
+          "root_error_m": -0.033749957084466486,
+          "body_error_m": -0.03555937888910282
+        }
+      }
+    }
+  ],
+  "complete_jobs": 4,
+  "expected_jobs": 4,
+  "expected_evaluations": 32,
+  "evaluation_count": 32,
+  "limitations": [
+    "One training seed per condition; no seed-level uncertainty estimate.",
+    "Four development references share one source group and have been used previously.",
+    "Single-reference transfer to the other three selected references is not training-set performance.",
+    "Errors are censored at first termination; compare coverage and strict success together.",
+    "Tracking termination is not a separately measured fall/contact failure.",
+    "No generated motion is added in these four diagnostics; no synthetic-data utility claim.",
+    "References are not manually certified low-dynamic combat classes."
+  ]
+}

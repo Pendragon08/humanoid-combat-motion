@@ -1,0 +1,632 @@
+{
+  "files": [
+    {
+      "source": "runs/tracking_diagnostic_dev_four_adaptive_sample_000/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_dev_four_adaptive_sample_000/metrics.json",
+      "sha256": "de48c57af1724c3ad245f392b90c5e18f943810aca0e0a31d3a63222ca711ffa"
+    },
+    {
+      "source": "runs/tracking_diagnostic_dev_four_adaptive_sample_001/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_dev_four_adaptive_sample_001/metrics.json",
+      "sha256": "a21ef00925ade1df71b9567f8deaafa33bafdfac6b43667aeacced3ea966b55b"
+    },
+    {
+      "source": "runs/tracking_diagnostic_dev_four_adaptive_sample_002/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_dev_four_adaptive_sample_002/metrics.json",
+      "sha256": "5fb67a2a3a068e1ee0f9200022b934575f95556051a14bf87425d9158ff677ba"
+    },
+    {
+      "source": "runs/tracking_diagnostic_dev_four_adaptive_sample_003/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_dev_four_adaptive_sample_003/metrics.json",
+      "sha256": "415aec14ee11565e9176057b68e50d8ca34fd38764b13d57687dfe315bdef364"
+    },
+    {
+      "source": "runs/tracking_diagnostic_dev_four_uniform_sample_000/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_dev_four_uniform_sample_000/metrics.json",
+      "sha256": "4466300e325bc90d6c3cc31546da69dfe9c88f66b6f11fcfd95db9c491d298e5"
+    },
+    {
+      "source": "runs/tracking_diagnostic_dev_four_uniform_sample_001/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_dev_four_uniform_sample_001/metrics.json",
+      "sha256": "70ba37a4a8d4c2220d6660d04b2efb9e4ced01cfa280520badd2feed51c804e5"
+    },
+    {
+      "source": "runs/tracking_diagnostic_dev_four_uniform_sample_002/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_dev_four_uniform_sample_002/metrics.json",
+      "sha256": "c43149ad0d0182aa5287a8890e6347e585937b8515e26009f0c76a27f780d0ae"
+    },
+    {
+      "source": "runs/tracking_diagnostic_dev_four_uniform_sample_003/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_dev_four_uniform_sample_003/metrics.json",
+      "sha256": "406690aeb2618a0d2ec032d8bf644f8444dd0bdca0d9ab9d4dc538ce15ab39a8"
+    },
+    {
+      "source": "runs/tracking_diagnostic_dev_single_uniform_sample_000/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_dev_single_uniform_sample_000/metrics.json",
+      "sha256": "5cffd5efecc780c561c2587548ab43b89deed9e398341230b87b3de2b1400cff"
+    },
+    {
+      "source": "runs/tracking_diagnostic_dev_single_uniform_sample_001/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_dev_single_uniform_sample_001/metrics.json",
+      "sha256": "70c23519c3b7e64b99d9f7810be26a39449ced61d8f520fcde8229f737c1d87e"
+    },
+    {
+      "source": "runs/tracking_diagnostic_dev_single_uniform_sample_002/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_dev_single_uniform_sample_002/metrics.json",
+      "sha256": "063d08143cc5d780a200de432d0f50d7abb58ef79b5465247281964b0a0d4de6"
+    },
+    {
+      "source": "runs/tracking_diagnostic_dev_single_uniform_sample_003/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_dev_single_uniform_sample_003/metrics.json",
+      "sha256": "d7518960bad74b2f62c6cfb9b97c78c82a5f2ae23627ce7a3d9f030803e7a2f9"
+    },
+    {
+      "source": "runs/tracking_diagnostic_dev_single_upstream_sample_000/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_dev_single_upstream_sample_000/metrics.json",
+      "sha256": "9fe89f35de92c989614c1d8c56b30c9ad6111350732280421a1e0ffba1cd021e"
+    },
+    {
+      "source": "runs/tracking_diagnostic_dev_single_upstream_sample_001/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_dev_single_upstream_sample_001/metrics.json",
+      "sha256": "2019ff40e6f6321f24078234a6e04871a024e8e96cc51b838e0345d13d75cd3b"
+    },
+    {
+      "source": "runs/tracking_diagnostic_dev_single_upstream_sample_002/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_dev_single_upstream_sample_002/metrics.json",
+      "sha256": "a8e56a2b69f48427b0b04ed83726a9e73ab13d4f02ffb6bc4a168757a537870b"
+    },
+    {
+      "source": "runs/tracking_diagnostic_dev_single_upstream_sample_003/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_dev_single_upstream_sample_003/metrics.json",
+      "sha256": "f12aa47724974304218b5a72080356ea9127f95c3851834833034ef41fdb0832"
+    },
+    {
+      "source": "runs/tracking_diagnostic_eval_four_adaptive_sample_000/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_eval_four_adaptive_sample_000/metrics.json",
+      "sha256": "31551fc4c8481e456d76b59d5702f9cc973b829fc9777ed5bb79290917b683aa"
+    },
+    {
+      "source": "runs/tracking_diagnostic_eval_four_adaptive_sample_008/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_eval_four_adaptive_sample_008/metrics.json",
+      "sha256": "4d4cf925b50c8ba8dd3fd4642e671ae2eb1b04c96cca2addcb4031f1a2e72db9"
+    },
+    {
+      "source": "runs/tracking_diagnostic_eval_four_adaptive_sample_010/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_eval_four_adaptive_sample_010/metrics.json",
+      "sha256": "63682ffe37ade829215e01ee610b2b653b7251b513a2bee081a222d673cb87d5"
+    },
+    {
+      "source": "runs/tracking_diagnostic_eval_four_adaptive_sample_014/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_eval_four_adaptive_sample_014/metrics.json",
+      "sha256": "9030d976b0a6839e04b30ebb9f576070570e6b04154932c5eb3a991c3c30fab2"
+    },
+    {
+      "source": "runs/tracking_diagnostic_eval_four_uniform_sample_000/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_eval_four_uniform_sample_000/metrics.json",
+      "sha256": "60f2cf553fd747c387c9845ac88d75a82205e0eec632fe62620af4f8e6635834"
+    },
+    {
+      "source": "runs/tracking_diagnostic_eval_four_uniform_sample_008/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_eval_four_uniform_sample_008/metrics.json",
+      "sha256": "296e43bbf58b204b69b3f0f74f4a4f7d961a29d81330184e6a89f38dfceb2e57"
+    },
+    {
+      "source": "runs/tracking_diagnostic_eval_four_uniform_sample_010/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_eval_four_uniform_sample_010/metrics.json",
+      "sha256": "206b3bda3a306567102d56ac982116cc7f0c489363bff348c1b6f2a0f45a8ca5"
+    },
+    {
+      "source": "runs/tracking_diagnostic_eval_four_uniform_sample_014/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_eval_four_uniform_sample_014/metrics.json",
+      "sha256": "e71936d19cc8a698e859af3b559ddb03df295708a4a222bbb871f940bdbf1a5a"
+    },
+    {
+      "source": "runs/tracking_diagnostic_eval_single_uniform_sample_000/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_eval_single_uniform_sample_000/metrics.json",
+      "sha256": "2a91bc798022bcce7bdc1bb5fccc4fe782451fc197efd2f3fbf52e5a1423e791"
+    },
+    {
+      "source": "runs/tracking_diagnostic_eval_single_uniform_sample_008/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_eval_single_uniform_sample_008/metrics.json",
+      "sha256": "7c8708a6cef8101578c03b6147ca39e6e040d1d3a35d0d9e281494cd05fda8ec"
+    },
+    {
+      "source": "runs/tracking_diagnostic_eval_single_uniform_sample_010/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_eval_single_uniform_sample_010/metrics.json",
+      "sha256": "9b7de519c84b350a0d51d2c29daf08749ec1d18f098502486c0a7c9e907222f4"
+    },
+    {
+      "source": "runs/tracking_diagnostic_eval_single_uniform_sample_014/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_eval_single_uniform_sample_014/metrics.json",
+      "sha256": "a5108b297231c01fbcdde9791577b7352e015978926f77b5c9f22229db8d0bc1"
+    },
+    {
+      "source": "runs/tracking_diagnostic_eval_single_upstream_sample_000/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_eval_single_upstream_sample_000/metrics.json",
+      "sha256": "d88bdbab08ddd7ef16e6e3cdcaed9feef9e7b3d4e73403c53ad54cb720f154ab"
+    },
+    {
+      "source": "runs/tracking_diagnostic_eval_single_upstream_sample_008/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_eval_single_upstream_sample_008/metrics.json",
+      "sha256": "ca8b1e8924e63f5a213cd28c1e43c4461e072050bf008658a4db679149624d3b"
+    },
+    {
+      "source": "runs/tracking_diagnostic_eval_single_upstream_sample_010/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_eval_single_upstream_sample_010/metrics.json",
+      "sha256": "90fd0bf4706ecda6d9e9ddc9539c4c76feb8805872cc3cbd3ae30fbb3c286692"
+    },
+    {
+      "source": "runs/tracking_diagnostic_eval_single_upstream_sample_014/metrics.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_eval_single_upstream_sample_014/metrics.json",
+      "sha256": "4b9858c883067892aad65296d057bd65d9b8f710ee8822682a806be3a5df92e0"
+    },
+    {
+      "source": "runs/tracking_diagnostic_four_adaptive_seed0/TRAINING_COMPLETE.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_four_adaptive_seed0/TRAINING_COMPLETE.json",
+      "sha256": "89fd06dc03b0c441ecce2d88448eb2c70e21e3ff6408faf5a5c2324ce84863a8"
+    },
+    {
+      "source": "runs/tracking_diagnostic_four_adaptive_seed0/agent.yaml",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_four_adaptive_seed0/agent.yaml",
+      "sha256": "a5a8691c5e98e47342122688a8f12ecf5d36149872b0de1d65e40c037df3c191"
+    },
+    {
+      "source": "runs/tracking_diagnostic_four_adaptive_seed0/config.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_four_adaptive_seed0/config.json",
+      "sha256": "032a6e867f4dd957b6bb872d03bd7c0642fcfe2b0e4f49072992499e11c345f0"
+    },
+    {
+      "source": "runs/tracking_diagnostic_four_adaptive_seed0/env.yaml",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_four_adaptive_seed0/env.yaml",
+      "sha256": "045a76875106493cd696b1502655e5429c8af1960975ac3db9c3903edccf4b41"
+    },
+    {
+      "source": "runs/tracking_diagnostic_four_uniform_seed0/TRAINING_COMPLETE.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_four_uniform_seed0/TRAINING_COMPLETE.json",
+      "sha256": "931ca2eb638b4748ce6b38552b46c8eb1d3c1d8f2604ff6fb2d1c7f1f2a63ff5"
+    },
+    {
+      "source": "runs/tracking_diagnostic_four_uniform_seed0/agent.yaml",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_four_uniform_seed0/agent.yaml",
+      "sha256": "09dd27e421ccfdcd07b77636723df00f39716f8c2e906c3ee614fcd92d69c243"
+    },
+    {
+      "source": "runs/tracking_diagnostic_four_uniform_seed0/config.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_four_uniform_seed0/config.json",
+      "sha256": "18b97a17f777967bbffb2ecbd5bf70064c282f9b3a81929fef8f7a122a4af4cc"
+    },
+    {
+      "source": "runs/tracking_diagnostic_four_uniform_seed0/env.yaml",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_four_uniform_seed0/env.yaml",
+      "sha256": "10c052fe4e28629afa0b3fe1747a8c1eb4f24e0e9ff53220bac4d07d5c4d3c41"
+    },
+    {
+      "source": "runs/tracking_diagnostic_single_uniform_seed0/TRAINING_COMPLETE.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_single_uniform_seed0/TRAINING_COMPLETE.json",
+      "sha256": "5a8013d2d7412a824d48c26c3873345b70ea095af6aaad2b2fb85d672ed58642"
+    },
+    {
+      "source": "runs/tracking_diagnostic_single_uniform_seed0/agent.yaml",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_single_uniform_seed0/agent.yaml",
+      "sha256": "a5a8691c5e98e47342122688a8f12ecf5d36149872b0de1d65e40c037df3c191"
+    },
+    {
+      "source": "runs/tracking_diagnostic_single_uniform_seed0/config.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_single_uniform_seed0/config.json",
+      "sha256": "325decb09a5d936f046b847980d68f7f63352fd4da0a910f781cc6b859bbbf6d"
+    },
+    {
+      "source": "runs/tracking_diagnostic_single_uniform_seed0/env.yaml",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_single_uniform_seed0/env.yaml",
+      "sha256": "cf374b944e8608572106be3ca971ca2950974a87118c2241428acdb8ad6b0734"
+    },
+    {
+      "source": "runs/tracking_diagnostic_single_upstream_seed0/TRAINING_COMPLETE.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_single_upstream_seed0/TRAINING_COMPLETE.json",
+      "sha256": "886870bd68cc517da02c530ab658db96f9cf8952354bfa1791f897eee9867ec9"
+    },
+    {
+      "source": "runs/tracking_diagnostic_single_upstream_seed0/agent.yaml",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_single_upstream_seed0/agent.yaml",
+      "sha256": "09dd27e421ccfdcd07b77636723df00f39716f8c2e906c3ee614fcd92d69c243"
+    },
+    {
+      "source": "runs/tracking_diagnostic_single_upstream_seed0/config.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_single_upstream_seed0/config.json",
+      "sha256": "af59eb6a2db45c52d1c67dcc046655128ccdffd07bc5ae6af6ec27f5386d1a01"
+    },
+    {
+      "source": "runs/tracking_diagnostic_single_upstream_seed0/env.yaml",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_single_upstream_seed0/env.yaml",
+      "sha256": "d4be067531408631f41429a29673a41bf700f1ac83342fa96463ca6761325b85"
+    },
+    {
+      "source": "runs/tracking_diagnostic_smoke_four_adaptive/SMOKE_COMPLETE.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_smoke_four_adaptive/SMOKE_COMPLETE.json",
+      "sha256": "b9045f6159f7a125075a00f8385b289d8dd73d1729aea45af02ff17849719d5e"
+    },
+    {
+      "source": "runs/tracking_diagnostic_smoke_four_adaptive/agent.yaml",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_smoke_four_adaptive/agent.yaml",
+      "sha256": "a5a8691c5e98e47342122688a8f12ecf5d36149872b0de1d65e40c037df3c191"
+    },
+    {
+      "source": "runs/tracking_diagnostic_smoke_four_adaptive/config.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_smoke_four_adaptive/config.json",
+      "sha256": "1648128b0f3ea49db8f362327f2f55d825f24a1fcc83a2d6332eba7f967daca4"
+    },
+    {
+      "source": "runs/tracking_diagnostic_smoke_four_adaptive/env.yaml",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_smoke_four_adaptive/env.yaml",
+      "sha256": "7049e27dc3878fdf79dbca5611a55366fa9b2ef4e13f7546c58475905192a233"
+    },
+    {
+      "source": "runs/tracking_diagnostic_smoke_four_uniform/SMOKE_COMPLETE.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_smoke_four_uniform/SMOKE_COMPLETE.json",
+      "sha256": "c317862ec78d8b770961a3434f82ad8f1ddf71643db22e08a84d1f38910bc08e"
+    },
+    {
+      "source": "runs/tracking_diagnostic_smoke_four_uniform/agent.yaml",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_smoke_four_uniform/agent.yaml",
+      "sha256": "09dd27e421ccfdcd07b77636723df00f39716f8c2e906c3ee614fcd92d69c243"
+    },
+    {
+      "source": "runs/tracking_diagnostic_smoke_four_uniform/config.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_smoke_four_uniform/config.json",
+      "sha256": "f0415bd40563d5a50cc062f4980404823cd70211d0beb323182118e4a9da10d2"
+    },
+    {
+      "source": "runs/tracking_diagnostic_smoke_four_uniform/env.yaml",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_smoke_four_uniform/env.yaml",
+      "sha256": "58923d3d1a9e7e2922abfab6fab8665f180da1ce220827023f3ff60ac60b5e8e"
+    },
+    {
+      "source": "runs/tracking_diagnostic_smoke_single_uniform/SMOKE_COMPLETE.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_smoke_single_uniform/SMOKE_COMPLETE.json",
+      "sha256": "0c2b0babcd95af2e2479db2cd52000d62c27e6cadc8c269ff32af35db0c291c1"
+    },
+    {
+      "source": "runs/tracking_diagnostic_smoke_single_uniform/agent.yaml",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_smoke_single_uniform/agent.yaml",
+      "sha256": "a5a8691c5e98e47342122688a8f12ecf5d36149872b0de1d65e40c037df3c191"
+    },
+    {
+      "source": "runs/tracking_diagnostic_smoke_single_uniform/config.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_smoke_single_uniform/config.json",
+      "sha256": "50388f4eb879783e588dc8c1b13d2e9f8a185d8df1efd387a1e20119b7865ae3"
+    },
+    {
+      "source": "runs/tracking_diagnostic_smoke_single_uniform/env.yaml",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_smoke_single_uniform/env.yaml",
+      "sha256": "f12518abbcf9bc59564330f48a9b953ace89673f6353997c02eb21da267d2154"
+    },
+    {
+      "source": "runs/tracking_diagnostic_smoke_single_upstream/SMOKE_COMPLETE.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_smoke_single_upstream/SMOKE_COMPLETE.json",
+      "sha256": "208aabfd5b856a24207415bafb4e3c62b71dcd12820bbd48dfdd80416a72dac7"
+    },
+    {
+      "source": "runs/tracking_diagnostic_smoke_single_upstream/agent.yaml",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_smoke_single_upstream/agent.yaml",
+      "sha256": "09dd27e421ccfdcd07b77636723df00f39716f8c2e906c3ee614fcd92d69c243"
+    },
+    {
+      "source": "runs/tracking_diagnostic_smoke_single_upstream/config.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_smoke_single_upstream/config.json",
+      "sha256": "732b09dcb3b1de43d90158e9f02f5740cbbace8b450edfb848403f8e87d4b95e"
+    },
+    {
+      "source": "runs/tracking_diagnostic_smoke_single_upstream/env.yaml",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_smoke_single_upstream/env.yaml",
+      "sha256": "0a992858284fa4a8e49ef743f7826a9ca9dc6fecb60b0a10b79941a7f6884b1d"
+    },
+    {
+      "source": "runs/tracking_diagnostic_video_interface/provenance.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_video_interface/provenance.json",
+      "sha256": "6225c0886be313f944cce4bb1cef80ea4b036523c3ecc47ba9d0e4e5cad6e4fd"
+    },
+    {
+      "source": "runs/tracking_diagnostic_video_sampling/provenance.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_video_sampling/provenance.json",
+      "sha256": "a97bf929a26b084bd8bffe0882f13eca04a61d9e6fda971dc7225093fc311f7f"
+    },
+    {
+      "source": "runs/tracking_diagnostic_video_sampling_all/provenance.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostic_video_sampling_all/provenance.json",
+      "sha256": "d82283345f9fb9e350004ab9aab339967f0f0ff606388f28b89f2323f94ebe23"
+    },
+    {
+      "source": "runs/tracking_diagnostics_20260915_refs/four.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostics_20260915_refs/four.json",
+      "sha256": "bcc9edeb51adf919959f4f85effcc499404fdfa93b9b2ac688e71fb1dd55e40b"
+    },
+    {
+      "source": "runs/tracking_diagnostics_20260915_refs/protocol.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostics_20260915_refs/protocol.json",
+      "sha256": "1a66bb41a6dc77cd1fab14cd6b2534b15f165f2ad66e545e1a5ef44d2fa9a357"
+    },
+    {
+      "source": "runs/tracking_diagnostics_20260915_refs/single.json",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/tracking_diagnostics_20260915_refs/single.json",
+      "sha256": "75e2ffa7033823617c33080ad72c949b800b4c76ce41d18d6c110fc06b016036"
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/dev_four_adaptive_sample_000.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/dev_four_adaptive_sample_000.log.gz",
+      "uncompressed_sha256": "d2238871e4a19f1acfe1ae90666978d20e3b2ff4182a56231636e96ccaf752aa",
+      "snapshot_bytes": 23256
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/dev_four_adaptive_sample_001.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/dev_four_adaptive_sample_001.log.gz",
+      "uncompressed_sha256": "0d703ecb09ab8c190e19990d978458e883e43c4b7e4108adc986e57499acc50c",
+      "snapshot_bytes": 23261
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/dev_four_adaptive_sample_002.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/dev_four_adaptive_sample_002.log.gz",
+      "uncompressed_sha256": "3a48fa8e71f555c55a808e18a266ac9a06b53c5c19db1cacb947ee5e96c97ea2",
+      "snapshot_bytes": 23268
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/dev_four_adaptive_sample_003.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/dev_four_adaptive_sample_003.log.gz",
+      "uncompressed_sha256": "fb2d6743cbfe02488b1c167591e903edefa7249b5aa079e047a91dca6639b6cd",
+      "snapshot_bytes": 23249
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/dev_four_uniform_sample_000.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/dev_four_uniform_sample_000.log.gz",
+      "uncompressed_sha256": "78179508ceb207f0d2f2857f9ce76a0a42799592f19ddde7f1e69883f165d7e8",
+      "snapshot_bytes": 23123
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/dev_four_uniform_sample_001.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/dev_four_uniform_sample_001.log.gz",
+      "uncompressed_sha256": "54bc3d6abcffb3a663c0ce09bb9548023c37f711244828b99dc860d4ef88e630",
+      "snapshot_bytes": 23134
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/dev_four_uniform_sample_002.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/dev_four_uniform_sample_002.log.gz",
+      "uncompressed_sha256": "8c1437ed9b5dfa14b484216219e9f4276b2b18e4b269d8d0ef4f195a30bfa495",
+      "snapshot_bytes": 23129
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/dev_four_uniform_sample_003.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/dev_four_uniform_sample_003.log.gz",
+      "uncompressed_sha256": "4b55394bde0f51ead2bc6800c25e554d7144693346ef6301f2280cd55f8d7eaa",
+      "snapshot_bytes": 23118
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/dev_single_uniform_sample_000.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/dev_single_uniform_sample_000.log.gz",
+      "uncompressed_sha256": "c99ed634516b36c65a89363504d544ace82ace200cbc2c4d0a5f3103edcef37c",
+      "snapshot_bytes": 23272
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/dev_single_uniform_sample_001.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/dev_single_uniform_sample_001.log.gz",
+      "uncompressed_sha256": "db59f1209200939f3de01fcbf53eb1c14af13c78a31a13b731e676aefddca615",
+      "snapshot_bytes": 23258
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/dev_single_uniform_sample_002.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/dev_single_uniform_sample_002.log.gz",
+      "uncompressed_sha256": "48b0481be343180298bd6c311ff6bf0866ff39598a1880acd32abe0b0dcda9e7",
+      "snapshot_bytes": 23272
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/dev_single_uniform_sample_003.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/dev_single_uniform_sample_003.log.gz",
+      "uncompressed_sha256": "2adb72f98a4705b454bb2a64b5dd577edb3e77bf10713dd26354eb88e0da980e",
+      "snapshot_bytes": 23239
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/dev_single_upstream_sample_000.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/dev_single_upstream_sample_000.log.gz",
+      "uncompressed_sha256": "05e82d05a21d6cc0cdb010c240fb042c29c14a1bcf534a689a33b76b7b88be0e",
+      "snapshot_bytes": 23115
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/dev_single_upstream_sample_001.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/dev_single_upstream_sample_001.log.gz",
+      "uncompressed_sha256": "2495d38d7b442c090dedcf7e714a637fc2ebe639846600d49e79c1f64d346e65",
+      "snapshot_bytes": 23127
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/dev_single_upstream_sample_002.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/dev_single_upstream_sample_002.log.gz",
+      "uncompressed_sha256": "7e282544ca2cd39626055a055aeca9d6f35aaa135f30427b6335b547fb7dd2ef",
+      "snapshot_bytes": 23119
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/dev_single_upstream_sample_003.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/dev_single_upstream_sample_003.log.gz",
+      "uncompressed_sha256": "a107b284c08e28ab61dad3a2adfc9137a4d5deee4516e16b2f84d6c56da9a5bf",
+      "snapshot_bytes": 23104
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/eval_four_adaptive_sample_000.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/eval_four_adaptive_sample_000.log.gz",
+      "uncompressed_sha256": "6664f56fd9dbe45e28c5594eaab5596678bbbc96c508d2f528c124221ccd4ea3",
+      "snapshot_bytes": 23266
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/eval_four_adaptive_sample_008.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/eval_four_adaptive_sample_008.log.gz",
+      "uncompressed_sha256": "58d6c673ae42b5215013d276c3981d987199dbec7efeedc84ceb1184fcf260a9",
+      "snapshot_bytes": 23271
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/eval_four_adaptive_sample_010.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/eval_four_adaptive_sample_010.log.gz",
+      "uncompressed_sha256": "ec7d6fde0ab195b4b4886070b06c57c65d4ccfb1b2c2a7a6cc69c070df190409",
+      "snapshot_bytes": 23296
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/eval_four_adaptive_sample_014.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/eval_four_adaptive_sample_014.log.gz",
+      "uncompressed_sha256": "d204701b600611a33f9de4b3e15416fa3a974bcf28e8f2c19fb9099c11fc590e",
+      "snapshot_bytes": 23311
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/eval_four_uniform_sample_000.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/eval_four_uniform_sample_000.log.gz",
+      "uncompressed_sha256": "086b73f2b3554c660803931bae83fa32eea6a68e3bed78d3a5aa9b3ae41c99df",
+      "snapshot_bytes": 23137
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/eval_four_uniform_sample_008.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/eval_four_uniform_sample_008.log.gz",
+      "uncompressed_sha256": "fe4dd5bc961a7251e96949c117206d2fa9f6a32114a7cb09a17eaeb26bd42f44",
+      "snapshot_bytes": 23123
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/eval_four_uniform_sample_010.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/eval_four_uniform_sample_010.log.gz",
+      "uncompressed_sha256": "f233e156b483a85927e117bff08654f9febff594aa6028430fa13bdd650af22d",
+      "snapshot_bytes": 23171
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/eval_four_uniform_sample_014.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/eval_four_uniform_sample_014.log.gz",
+      "uncompressed_sha256": "6f6670b3704ce0ec90183b8846999f7003d379df105825ebd087e284d3d7cfc4",
+      "snapshot_bytes": 23181
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/eval_single_uniform_sample_000.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/eval_single_uniform_sample_000.log.gz",
+      "uncompressed_sha256": "5ab489e643294b87dbf538e5bc3e4693e70ec7a82399353a9bea77fa0db1568c",
+      "snapshot_bytes": 23249
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/eval_single_uniform_sample_008.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/eval_single_uniform_sample_008.log.gz",
+      "uncompressed_sha256": "f9b6d4cfde1c203828048fd4645bd37ffc2db0491d9289b6aebc4f4ddae6b929",
+      "snapshot_bytes": 23260
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/eval_single_uniform_sample_010.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/eval_single_uniform_sample_010.log.gz",
+      "uncompressed_sha256": "d9d9c419bce26a9db9d1eef9a32e9fda889d6652a57172852dd1a7e5d774509d",
+      "snapshot_bytes": 23278
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/eval_single_uniform_sample_014.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/eval_single_uniform_sample_014.log.gz",
+      "uncompressed_sha256": "64cd3fac344f35fbee385f36ec1614bfe17dd9b6b0e6de23585c3277bf05341a",
+      "snapshot_bytes": 23276
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/eval_single_upstream_sample_000.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/eval_single_upstream_sample_000.log.gz",
+      "uncompressed_sha256": "e8e270d24bafb0d093aebcdcc55087945adcbb29a19786852ea65d7ebc867b63",
+      "snapshot_bytes": 23133
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/eval_single_upstream_sample_008.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/eval_single_upstream_sample_008.log.gz",
+      "uncompressed_sha256": "5752d15f693cc792248ef02ecb34098223f5c3f45f69adcea97a7fd94c06e54d",
+      "snapshot_bytes": 23120
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/eval_single_upstream_sample_010.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/eval_single_upstream_sample_010.log.gz",
+      "uncompressed_sha256": "99df23cd9559b161411950b98b47bfea8a55c2c1c561f6ab5f39aa284e531b55",
+      "snapshot_bytes": 23158
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/eval_single_upstream_sample_014.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/eval_single_upstream_sample_014.log.gz",
+      "uncompressed_sha256": "fc63366d1fe90004fb45c091dd84bb0c5159f5239cd337c47cc97b4f456f4d0a",
+      "snapshot_bytes": 23138
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/finalizer.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/finalizer.log.gz",
+      "uncompressed_sha256": "37f74537f32558bf75dfe9b29f1e5a5667677d91fc362ea5d2c402a65e4f531b",
+      "snapshot_bytes": 3901
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/gpu0_queue.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/gpu0_queue.log.gz",
+      "uncompressed_sha256": "7b5054537823985f31f457fc9a881969f92bbfc5c328e6f24290fc39b576d23c",
+      "snapshot_bytes": 95
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/gpu1_queue.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/gpu1_queue.log.gz",
+      "uncompressed_sha256": "ca289dfea084e5b3704cfdd281ea1bed21e50b3ccf3a054a42e9dedff0a85b46",
+      "snapshot_bytes": 95
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/orchestrator.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/orchestrator.log.gz",
+      "uncompressed_sha256": "486bbe6eb33b8de99e16e5fcd167b033fc54309cdc855864a9d32f1c1e560cad",
+      "snapshot_bytes": 83
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/prepare.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/prepare.log.gz",
+      "uncompressed_sha256": "bf0e51807cd96abf2fc4c08407cff0530c80992c147eb657e6cf3a51125e22e9",
+      "snapshot_bytes": 1290
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/sampling_tests.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/sampling_tests.log.gz",
+      "uncompressed_sha256": "ad73b3528986a64d3a44e7001831a8a850235154ee4fdeec16d9498e3bcc4bb2",
+      "snapshot_bytes": 411
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/smoke_four_adaptive.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/smoke_four_adaptive.log.gz",
+      "uncompressed_sha256": "8ef2b6e6f4e0e4acd9b019fe0cb5f98ef0a6a595191c133f244251e12f6455b7",
+      "snapshot_bytes": 18506
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/smoke_four_uniform.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/smoke_four_uniform.log.gz",
+      "uncompressed_sha256": "c1ff41fb8fe2d1403b80855ea827f717a9a844ef3c8e3e966953735cf1f2ac69",
+      "snapshot_bytes": 18396
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/smoke_single_uniform.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/smoke_single_uniform.log.gz",
+      "uncompressed_sha256": "5c07ae9fa0e61fa1bee1e4b40be9e4e169558eba5e9baae21587a8dbe492c0b0",
+      "snapshot_bytes": 18526
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/smoke_single_upstream.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/smoke_single_upstream.log.gz",
+      "uncompressed_sha256": "58442b113de61ea571249346ed5c1fe457823ae076e959cad58a002188cb56ba",
+      "snapshot_bytes": 18187
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/train_four_adaptive.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/train_four_adaptive.log.gz",
+      "uncompressed_sha256": "7321640548019eaedf1c21948a7cb910eea98989c82d55d110f322472e1a8a08",
+      "snapshot_bytes": 1963236
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/train_four_uniform.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/train_four_uniform.log.gz",
+      "uncompressed_sha256": "613959adc642d634b6a903eee6bf042903995e33371dab133e55726a774c79b9",
+      "snapshot_bytes": 1963065
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/train_single_uniform.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/train_single_uniform.log.gz",
+      "uncompressed_sha256": "267a10b39d2cfa8ba77108645e0e6db87da3d0ce44b3e95d31e4a9390e48fc9c",
+      "snapshot_bytes": 1963801
+    },
+    {
+      "source": "records/tracking_diagnostics_20260915/train_single_upstream.log",
+      "saved": "records/tracking_diagnostics_20260915/snapshot/logs/train_single_upstream.log.gz",
+      "uncompressed_sha256": "5de2ec4018eafea6b50018a810de606a49d012d18abaaa6a459481df7122ec28",
+      "snapshot_bytes": 1916368
+    }
+  ],
+  "summary_sha256": "b501f3ae1119343a0ec7863ec55a213eb7aa78345a2b6a18e7180524d52dc739",
+  "raw_motion_and_weights_included": false
+}

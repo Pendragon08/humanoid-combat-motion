@@ -1,0 +1,45 @@
+{
+  "comparison": "sampling",
+  "source_evaluations": [
+    "runs/tracking_diagnostic_eval_four_uniform_sample_000",
+    "runs/tracking_diagnostic_eval_four_adaptive_sample_000",
+    "runs/tracking_diagnostic_eval_four_uniform_sample_008",
+    "runs/tracking_diagnostic_eval_four_adaptive_sample_008",
+    "runs/tracking_diagnostic_eval_four_uniform_sample_010",
+    "runs/tracking_diagnostic_eval_four_adaptive_sample_010",
+    "runs/tracking_diagnostic_eval_four_uniform_sample_014",
+    "runs/tracking_diagnostic_eval_four_adaptive_sample_014"
+  ],
+  "source_rollout_sha256": [
+    "1012849a39f5282f2cb825eb27215068a985b67ac019d9b6409d7f3a43ba7856",
+    "f20d5537bfc5229c20f38edaa3a63057dd6978109092f6e3a6d4861202f7853f",
+    "c91b6588429e823b0dc183e925b6e3da0dff8c600ec58c08516ca89cbcac5c25",
+    "41ec12782fd2be981ec2834d384113ccc529eca40c91e0fc7d4ada40352c7c67",
+    "30050bee847bf444ca6d8259d5e37c8f0e572f0146a3439d05d5bfd8a26b6ec3",
+    "8c3c560640d33ada4444f6a947f1808ed5e7241c6834285231525dcfd9405548",
+    "daa41a968a0ce3c37cc6c812c62ffd18f9f78402dc0457a37e51ba0d6f577d2e",
+    "b26f9554d5493b09d6fa42fe5cfe74987ec9ebec61e7b3d7a8df3f37e65c37f0"
+  ],
+  "selection": "all four selected training references in frozen order; environment0; seed0; no success selection",
+  "alive_frames": [
+    [
+      5,
+      5
+    ],
+    [
+      62,
+      65
+    ],
+    [
+      147,
+      117
+    ],
+    [
+      47,
+      48
+    ]
+  ],
+  "playback_speed": 0.25,
+  "freeze_after_first_failure": true,
+  "rendering": "MuJoCo rendering of recorded Isaac states, not cross-simulator policy execution"
+}
