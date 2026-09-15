@@ -1,5 +1,7 @@
 # Paired geometry refinement: reproducible bounded experiment
 
+> 研究定位修订：本文件记录已完成的几何后处理及固定控制器诊断，不作为本文主创新或数据效用证明。当前实验决策以 `docs/step7_protocol.md` 顶部为准；不因本轮失败启动无限跟踪优化。
+
 Environment: warm reuse of existing project .venv on
 ouyanghao@10.147.17.32. No package changes. NumPy1.26.4, SciPy1.15.3,
 MuJoCo3.3.7, OSQP1.0.5, Torch2.5.1+cu121. Existing TWIST env ledger

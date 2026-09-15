@@ -1,0 +1,97 @@
+{
+  "protocol_id": "data_utility_v2_20260915",
+  "status": "planned_not_executed",
+  "title_zh": "面向人形机器人模仿学习的物理约束格斗示范数据生成方法",
+  "canonical_document": "docs/step7_protocol.md",
+  "purpose": "demonstration_data_construction_and_downstream_training_utility",
+  "tracking_role": "fixed_learning_baseline_not_method_contribution",
+  "launch_enabled": false,
+  "primary_claims": [
+    "At a fixed source-data and candidate-generation budget, improve combat semantics, interaction/contact correctness and reference quality without collapsing diversity.",
+    "Under the same downstream learning protocol, improve held-out learning or reduce verified sensor-MoCap requirements at a prespecified performance target."
+  ],
+  "source_types": {
+    "M": "verified_sensor_mocap",
+    "V": "video_reconstructed_motion",
+    "G": "generated_motion",
+    "R": "robot_reference_derived_from_M_V_or_G"
+  },
+  "current_source_status": {
+    "KungFuAthlete": "V_not_M",
+    "verified_sensor_mocap_training_arm": "not_ready",
+    "untouched_multi_source_test_set": "not_ready",
+    "adequate_fixed_tracking_baseline": "not_accepted",
+    "reliable_dynamic_feasibility_labels": "not_ready"
+  },
+  "arms": [
+    {"id": "A", "data": "M", "label_zh": "经核实的真人传感器MoCap"},
+    {"id": "B", "data": "M+V", "label_zh": "真人MoCap加视频恢复"},
+    {"id": "C", "data": "M+G_generic", "label_zh": "真人MoCap加普通生成"},
+    {"id": "D", "data": "M+G_ours", "label_zh": "真人MoCap加接触与物理约束生成"}
+  ],
+  "pilot": {
+    "arms": ["V", "V+G_generic", "V+G_ours"],
+    "claim_limit": "video_seed_augmentation_only_not_mocap_substitution",
+    "next_action": "audit_source_lineage_and_build_quality_manifest",
+    "training_launch_gate": "baseline_acceptance_and_frozen_split_and_budget"
+  },
+  "split": {
+    "unit": "original_recording_session_or_video_source_group",
+    "must_group": ["performer_identity_when_available", "paired_actors", "overlapping_windows", "near_duplicates", "all_generated_descendants"],
+    "generation_conditions": "train_only",
+    "selection_and_tuning": "validation_only",
+    "existing_four_development_clips": "development_only_not_final_test",
+    "final_test_requirement": "untouched_multiple_source_groups_with_combat_and_pair_labels"
+  },
+  "training": {
+    "seeds": [0, 1, 2],
+    "same_across_arms": ["robot", "simulator_version", "tracker_architecture", "reward", "optimizer", "training_steps", "initialization_per_seed", "evaluation_tasks", "evaluation_seeds"],
+    "policy_weights": "retrain_separately_per_arm_and_seed",
+    "preferred_initialization": "scratch_for_mocap_dose_claim",
+    "pretrained_initialization_requires": "audit_and_disclose_all_motion_priors_and_overlap",
+    "primary_budget": "fixed_total_environment_steps",
+    "secondary_control": "matched_M_or_V_actual_environment_step_exposure_with_extra_compute_disclosed",
+    "required_logs": ["per_source_resets", "per_source_actual_environment_steps", "unique_source_seconds", "generated_candidate_seconds", "accepted_seconds", "rejected_seconds", "annotation_minutes", "cleaning_minutes", "gpu_hours", "storage_bytes", "artifact_hashes"],
+    "steps_per_run": null,
+    "steps_reason": "freeze_after_bounded_baseline_pilot_do_not_reuse_failed_budget_as_validated_setting"
+  },
+  "mocap_dose": {
+    "fractions": [0.1, 0.25, 0.5, 1.0],
+    "arms": ["A", "D"],
+    "nested_by": "source_group",
+    "generator_training_data": "same_fraction_only_or_external_prior_separately_disclosed",
+    "performance_target": null,
+    "target_rule": "set_on_validation_and_freeze_before_final_test",
+    "claim": "observed_tested_dose_reduction_only_no_unsupported_interpolation"
+  },
+  "core_blocks": [
+    {"id": "E1", "name_zh": "来源、成本与数据质量", "status": "planned", "primary_metric": "usable_combat_seconds_per_audited_cost", "comparison": "M,V,G_generic,G_ours", "gate": "source_and_license_audit"},
+    {"id": "E2", "name_zh": "生成机制与约束消融", "status": "planned", "primary_metric": "contact_and_semantic_correctness_at_matched_diversity", "comparison": "generic,+contact,+physics,+contact+physics", "gate": "fixed_conditions_candidate_budget_and_independent_labels"},
+    {"id": "E3", "name_zh": "相同学习方法下的数据效用", "status": "planned", "primary_metric": "heldout_task_success_and_fall_rate", "comparison": "A,B,C,D", "gate": "adequate_fixed_baseline_and_verified_M_and_final_test"},
+    {"id": "E4", "name_zh": "真人MoCap用量递减", "status": "planned", "primary_metric": "minimum_tested_M_dose_reaching_fixed_target", "comparison": "A,D_at_nested_10_25_50_100_percent", "gate": "E3_and_no_generator_or_pretraining_dose_leakage"},
+    {"id": "E5", "name_zh": "未见交互与失败分析", "status": "planned", "primary_metric": "heldout_paired_contact_reaction_success", "comparison": "E3_models_without_retraining_on_test", "gate": "independent_paired_test_and_complete_contact_observation"}
+  ],
+  "controller_diagnostic": {
+    "scope": "interface_and_representative_seed_reference_compatibility",
+    "engineering_budget_gpu_hours": 12,
+    "budget_type": "proposed_cap_not_measured_cost",
+    "maximum_corrective_passes": 1,
+    "development_gate": {"minimum_independent_source_groups": 5, "minimum_clips": 20, "whole_clip_tracking_success": 0.8, "threshold_status": "proposed_engineering_gate_not_paper_result"},
+    "on_failure": "mark_downstream_inconclusive_and_continue_data_quality_work_no_unbounded_controller_optimization",
+    "frozen_controller_failure_label": "controller_dependent_failure_not_proven_infeasible"
+  },
+  "compute": {
+    "gpus": 2,
+    "vram_gib_per_gpu": 48,
+    "shared_96gib_pool_assumed": false,
+    "initial_schedule": "one_run_per_gpu",
+    "E3_runs": 12,
+    "E4_runs": 24,
+    "E3_E4_shared_runs": 6,
+    "unique_E3_E4_runs": 30,
+    "sharing_requires": "identical_100_percent_data_hashes_initialization_config_budget_and_seeds",
+    "runtime_rule": "estimate_from_30_minute_pilot_and_measured_throughput_before_launch",
+    "scope_note": "30 excludes generator training, diagnostic pilot, video acquisition, and optional video-only pilot; E5 reuses policies"
+  },
+  "nonclaims": ["new_tracking_algorithm", "frozen_tracker_success_proves_training_utility", "video_reconstruction_is_sensor_mocap", "kinematic_repair_certifies_dynamics", "single_robot_success_proves_paired_combat", "new_protocol_is_already_executed"]
+}
