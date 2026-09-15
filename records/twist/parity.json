@@ -1,0 +1,8 @@
+{
+  "original_run_executed": true,
+  "policy_calls": 10,
+  "physics_steps": 200,
+  "max_observation_difference": 0.0,
+  "max_qpos_difference": 0.0,
+  "modifications": "GUI/Redis/time I/O stubbed; initial quaternion explicitly wxyz identity; physics/controller logic unchanged"
+}

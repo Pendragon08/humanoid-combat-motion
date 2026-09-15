@@ -1,0 +1,79 @@
+Independent agent-follows-doc TWIST witness
+Date: 2026-09-15 (Asia/Shanghai)
+Scope: Only the documented Independent seeded physical witness was executed.
+No code, dependency, documentation, or invocation changes were made. No other experiments ran.
+
+Documented PowerShell command executed verbatim:
+ssh -i C:\Users\Pende\.ssh\id_ed25519 ouyanghao@10.147.17.32 "cd /data/code/ouyanghao/oyh/humanoid-combat-motion && bash scripts/run.sh scripts/evaluate_twist.py --standing --seconds 5 --output runs/twist_independent_witness --device cuda:0"
+
+Preflight:
+GPU 0: 362 MiB / 49140 MiB; GPU 1: 38 MiB / 49140 MiB.
+Project AGENTS.md was absent. Deployment document supplied the explicit remote endpoint and environment.
+Provider ledger identifies warm reuse with no dependency changes, but does not contain the canonical spec hash required by compute-env-contract.md; hash-based warm-reuse provenance cannot be independently established from that ledger alone.
+
+Witness exit code: 0
+Execution wall time reported by tool: 5.734193 seconds.
+TWIST_PHYSICS_WITNESS: PRESENT.
+Actual: 250 frames, 5.0 seconds, seed 123, cuda:0; MuJoCo 3.3.7; Torch 2.5.1+cu121.
+strict_complete: [true]
+no_fall_complete: [true]
+first_fall_s: [null]
+joint_mae_rad: [0.09743288826667351]
+root_error_m: [0.036630413278028906]
+tracked_body_error_m: [0.03874630033205936]
+strict_prefix_s: [5.0]
+training_steps_this_run: 0
+
+Readonly artifact inspection:
+metrics.json exists and matches the witness output.
+rollout.npz exists, 68270 bytes.
+qpos shape (250,1,32); all qpos values finite.
+Actuated joint qpos (indices 7 onward) maximum adjacent-frame change: 0.19007600545687525 rad.
+Maximum joint temporal range: 1.3733792869934331 rad.
+Reference maximum adjacent-frame change: 0.0.
+Therefore the saved simulated robot state has confirmed nonzero joint motion despite a static standing reference.
+
+Doc-versus-reality:
+- Documented invocation succeeds unchanged; exit code, sentinel, frame count, duration, completion flags, simulator/torch versions match.
+- Nonzero joint movement is confirmed in saved arrays.
+- The documentation expects nonzero torque, but neither metrics.json nor rollout.npz saves torque/action arrays or torque summary statistics. Nonzero torque is therefore NOT independently verified by this output-only validation. This is an observability gap, not evidence of zero torque.
+- Ledger canonical spec hash is missing, as noted above.
+- The ledger says independent verification is pending; this report now supplies that verification, with the above limitation.
+
+Inspection note:
+An initial ancillary readonly numpy inspection failed with a PowerShell/SSH quoting SyntaxError (exit 1). A subsequent stdin-based readonly inspection succeeded (exit 0). The documented experiment command itself was not changed or rerun, and no repairs were performed.
+
+Raw witness stdout:
+TWIST_PHYSICS_WITNESS {"actors": 1, "frames": 250, "duration_s": 5.0, "seed": 123, "nominal_deterministic": true, "policy": "official TWIST pretrained TorchScript", "checkpoint_sha256": "0ec24c54c1e1502f5c7bd27efb39ecc0630c06b5c01dc640a6d493d672fc515c", "upstream_commit": "42d8c134739eee51f28d7cc0ff72a86728afb8dc", "simulator": "MuJoCo 3.3.7", "torch": "2.5.1+cu121", "device": "cuda:0", "training_steps_this_run": 0, "joint_names": ["left_hip_pitch_joint", "left_hip_roll_joint", "left_hip_yaw_joint", "left_knee_joint", "left_ankle_pitch_joint", "left_ankle_roll_joint", "right_hip_pitch_joint", "right_hip_roll_joint", "right_hip_yaw_joint", "right_knee_joint", "right_ankle_pitch_joint", "right_ankle_roll_joint", "waist_yaw_joint", "waist_roll_joint", "waist_pitch_joint", "left_shoulder_pitch_joint", "left_shoulder_roll_joint", "left_shoulder_yaw_joint", "left_elbow_joint", "left_wrist_roll_joint", "right_shoulder_pitch_joint", "right_shoulder_roll_joint", "right_shoulder_yaw_joint", "right_elbow_joint", "right_wrist_roll_joint"], "dropped_reference_joints": [[]], "references": [{"path": "official DEFAULT_MIMIC_OBS standing command", "sha256": null}], "joint_mae_rad": [0.09743288826667351], "root_error_m": [0.036630413278028906], "tracked_body_error_m": [0.03874630033205936], "no_fall_complete": [true], "strict_complete": [true], "first_fall_s": [null], "joint_mae_before_fall_rad": [0.09743288826667351], "strict_prefix_s": [5.0], "collision_geoms_per_actor": [36], "initial_max_penetration_m": 0.0, "initial_penetrating_contacts": [], "interrobot_contact_control_frames": 0, "interrobot_peak_contact_force_n": 0.0, "caveats": ["Nominal deployment diagnostic; not same-simulator randomized BeyondMimic comparison.", "Unqualified mean errors cover the full rollout including any post-fall frames; first-fall and strict prefix separately reported.", "Four wrist pitch/yaw reference DOFs omitted in official 25-DOF model; metrics cover retained joints.", "Any interrobot contact is not semantic attack/block success; no force/contact correctness claim.", "Pretrained data overlap unknown; not a zero-shot generalization or synthetic-data utility result."]}
+
+Raw readonly NPZ inspection:
+NPZ_BYTES 68270
+NPZ_KEYS ['qpos', 'reference', 'joint_error', 'root_error', 'body_error', 'falls', 'strict', 'contacts', 'fps']
+qpos (250, 1, 32) float64
+ maxabs 1.64305401320463
+ temporal_delta_max 0.19007600545687525
+reference (250, 1, 32) float64
+ maxabs 1.2
+ temporal_delta_max 0.0
+joint_error (250, 1) float64
+ maxabs 0.14846527366715193
+ temporal_delta_max 0.03933827701886285
+root_error (250, 1) float64
+ maxabs 0.05239621687627475
+ temporal_delta_max 0.0049678251373558545
+body_error (250, 1) float64
+ maxabs 0.05257467389139265
+ temporal_delta_max 0.008273382684023918
+falls (250, 1) bool
+strict (250, 1) bool
+contacts (250, 2) float64
+ maxabs 0.0
+ temporal_delta_max 0.0
+fps () int64
+ maxabs 50.0
+
+Raw readonly detailed inspection:
+JOINT_QPOS_FRAME_DELTA_MAX_RAD 0.19007600545687525
+JOINT_QPOS_RANGE_MAX_RAD 1.3733792869934331
+ALL_QPOS_FINITE True
+METRICS_FILE {"actors": 1, "frames": 250, "duration_s": 5.0, "seed": 123, "nominal_deterministic": true, "policy": "official TWIST pretrained TorchScript", "checkpoint_sha256": "0ec24c54c1e1502f5c7bd27efb39ecc0630c06b5c01dc640a6d493d672fc515c", "upstream_commit": "42d8c134739eee51f28d7cc0ff72a86728afb8dc", "simulator": "MuJoCo 3.3.7", "torch": "2.5.1+cu121", "device": "cuda:0", "training_steps_this_run": 0, "joint_names": ["left_hip_pitch_joint", "left_hip_roll_joint", "left_hip_yaw_joint", "left_knee_joint", "left_ankle_pitch_joint", "left_ankle_roll_joint", "right_hip_pitch_joint", "right_hip_roll_joint", "right_hip_yaw_joint", "right_knee_joint", "right_ankle_pitch_joint", "right_ankle_roll_joint", "waist_yaw_joint", "waist_roll_joint", "waist_pitch_joint", "left_shoulder_pitch_joint", "left_shoulder_roll_joint", "left_shoulder_yaw_joint", "left_elbow_joint", "left_wrist_roll_joint", "right_shoulder_pitch_joint", "right_shoulder_roll_joint", "right_shoulder_yaw_joint", "right_elbow_joint", "right_wrist_roll_joint"], "dropped_reference_joints": [[]], "references": [{"path": "official DEFAULT_MIMIC_OBS standing command", "sha256": null}], "joint_mae_rad": [0.09743288826667351], "root_error_m": [0.036630413278028906], "tracked_body_error_m": [0.03874630033205936], "no_fall_complete": [true], "strict_complete": [true], "first_fall_s": [null], "joint_mae_before_fall_rad": [0.09743288826667351], "strict_prefix_s": [5.0], "collision_geoms_per_actor": [36], "initial_max_penetration_m": 0.0, "initial_penetrating_contacts": [], "interrobot_contact_control_frames": 0, "interrobot_peak_contact_force_n": 0.0, "caveats": ["Nominal deployment diagnostic; not same-simulator randomized BeyondMimic comparison.", "Unqualified mean errors cover the full rollout including any post-fall frames; first-fall and strict prefix separately reported.", "Four wrist pitch/yaw reference DOFs omitted in official 25-DOF model; metrics cover retained joints.", "Any interrobot contact is not semantic attack/block success; no force/contact correctness claim.", "Pretrained data overlap unknown; not a zero-shot generalization or synthetic-data utility result."]}

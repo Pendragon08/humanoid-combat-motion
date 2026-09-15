@@ -1,0 +1,10 @@
+{
+  "mode": "warm-reuse existing .venv; no package installation",
+  "packages": {"torch": "2.5.1+cu121", "mujoco": "3.3.7", "numpy": "1.26.4"},
+  "source": "https://github.com/YanjieZe/TWIST",
+  "commit": "42d8c134739eee51f28d7cc0ff72a86728afb8dc",
+  "checkpoint": "assets/twist_general_motion_tracker.pt",
+  "simulator": "official g1_sim2sim_with_wrist_roll.xml; 1ms physics, 20ms policy",
+  "limits": {"download_gib": 0.5, "cpus": 4, "gpus": 1},
+  "witness": "bash scripts/run.sh scripts/evaluate_twist.py --standing --seconds 5 --output runs/twist_witness --device cuda:0"
+}
