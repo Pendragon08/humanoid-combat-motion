@@ -1,0 +1,10 @@
+{
+  "predecessor_metrics": 16,
+  "new_metrics": 12,
+  "videos": 4,
+  "all_metric_hashes_verified": true,
+  "all_video_hashes_verified": true,
+  "archive_sha256": "fc8cc856e19fb5066215b4c84d9cb69b9bba3ec851b93b21c5edfc53a22cd275",
+  "private_archive_path": "C:\\Users\\Pende\\Documents\\ChatGPT\\\u673a\u5668\u4eba\u683c\u6597\u52a8\u4f5c\u6355\u6349\u6570\u636e\u751f\u6210\\pbhc_followup_20260917\\rollouts_and_videos.tar.gz",
+  "queue_phase": "complete"
+}

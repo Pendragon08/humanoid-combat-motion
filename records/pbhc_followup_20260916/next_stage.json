@@ -1,0 +1,7 @@
+{
+  "stage": "awaiting_evidence_review",
+  "all_primary_strict_zero": true,
+  "data_utility_launched": false,
+  "policy_training_added": false,
+  "next": "Review disturbance ablation and failure times; fix demonstrated causes before data-utility experiments; keep all four sources and original metrics"
+}

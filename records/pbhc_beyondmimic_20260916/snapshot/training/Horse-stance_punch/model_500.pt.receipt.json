@@ -1,0 +1,9 @@
+{
+  "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Horse-stance_punch/model_500.pt",
+  "environment_steps": 12312576,
+  "completed_updates": 501,
+  "elapsed_s": 874.5080370903015,
+  "position_feedback": true,
+  "bundle_sha256": "9fc5874fa33aa28eb9dc6b4373ce3f255909f1fb546a52cc2defb77c35164c16",
+  "seed": 0
+}

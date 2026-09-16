@@ -1,0 +1,25 @@
+{
+  "mode": "upstream",
+  "seed": 0,
+  "iterations": 2000,
+  "environments": 1024,
+  "steps_per_env": 24,
+  "clip_ids": [
+    "Side_kick"
+  ],
+  "fps": 50.0,
+  "bundle_sha256": "ed59859cca3ede38e5de7cac15b0d1823495439437d06a6ab6bec78864b8c357",
+  "initialization": "random; no checkpoint",
+  "scope": "complete PBHC single-reference development calibration, not independent test or data utility",
+  "position_feedback": true,
+  "task": "Tracking-Flat-G1-v0",
+  "environment_spec_unchanged": true,
+  "sampling": "upstream single-reference",
+  "adaptive_parameters": {
+    "ema": 0.1,
+    "initial_failure_rate": 0.5,
+    "uniform_mixture": 0.2,
+    "weight_formula": ".5+clamp(failure_rate,0,1)"
+  },
+  "upstream_vs_uniform_caveat": "also changes reset alignment and reference-end handling; not pure sampling ablation"
+}

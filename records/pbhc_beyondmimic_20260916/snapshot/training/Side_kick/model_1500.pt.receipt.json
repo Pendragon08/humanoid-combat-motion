@@ -1,0 +1,9 @@
+{
+  "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Side_kick/model_1500.pt",
+  "environment_steps": 36888576,
+  "completed_updates": 1501,
+  "elapsed_s": 2285.2152905464172,
+  "position_feedback": true,
+  "bundle_sha256": "ed59859cca3ede38e5de7cac15b0d1823495439437d06a6ab6bec78864b8c357",
+  "seed": 0
+}

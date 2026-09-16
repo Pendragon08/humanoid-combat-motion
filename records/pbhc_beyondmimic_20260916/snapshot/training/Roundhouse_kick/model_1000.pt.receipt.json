@@ -1,0 +1,9 @@
+{
+  "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Roundhouse_kick/model_1000.pt",
+  "environment_steps": 24600576,
+  "completed_updates": 1001,
+  "elapsed_s": 1550.1619579792023,
+  "position_feedback": true,
+  "bundle_sha256": "221cf28d769abfcad31f1647395ab6ae186f9ddccebeb274cef4cd78c47cff72",
+  "seed": 0
+}

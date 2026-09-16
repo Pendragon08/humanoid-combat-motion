@@ -1,8 +1,8 @@
 {
-  "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Roundhouse_kick/model_0.pt",
-  "environment_steps": 24576,
-  "completed_updates": 1,
-  "elapsed_s": 5.472778558731079,
+  "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Roundhouse_kick/model_1999.pt",
+  "environment_steps": 49152000,
+  "completed_updates": 2000,
+  "elapsed_s": 3029.0830078125,
   "position_feedback": true,
   "bundle_sha256": "221cf28d769abfcad31f1647395ab6ae186f9ddccebeb274cef4cd78c47cff72",
   "seed": 0

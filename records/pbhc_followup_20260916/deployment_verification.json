@@ -1,0 +1,7 @@
+{
+  "manifest_jobs": 12,
+  "all_frozen_code_hashes_verified": true,
+  "predecessor_complete": true,
+  "active_automation_id": "automation",
+  "scope": "Deployment and actual first jobs; not final success certification"
+}

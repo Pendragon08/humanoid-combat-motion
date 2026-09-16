@@ -1,48 +1,404 @@
 {
-  "observed_at_utc": "2026-09-16T14:00:36.655245+00:00",
-  "all_complete": false,
+  "observed_at_utc": "2026-09-16T15:57:44.330034+00:00",
+  "all_complete": true,
   "scope": "Development-only fixed-budget calibration, not generated-data utility",
-  "gpu_snapshot": "0, 3938 MiB, 49140 MiB, 50 %\n1, 3854 MiB, 49140 MiB, 46 %\n",
+  "gpu_snapshot": "0, 19 MiB, 49140 MiB, 0 %\n1, 38 MiB, 49140 MiB, 0 %\n",
   "jobs": [
     {
       "name": "Horse-stance_punch",
       "gpu": 0,
-      "observed_environment_steps": 2039808,
-      "observed_updates": 83,
+      "observed_environment_steps": 49152000,
+      "observed_updates": 2000,
       "target_updates": 2000,
-      "training_log_eta": "00:58:59",
-      "training_complete": false,
-      "evaluations": []
+      "training_log_eta": "00:00:01",
+      "training_complete": true,
+      "evaluations": [
+        {
+          "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Horse-stance_punch/initial_random.pt",
+          "training_receipt": {
+            "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Horse-stance_punch/initial_random.pt",
+            "environment_steps": 0,
+            "completed_updates": 0,
+            "elapsed_s": 0.005146503448486328,
+            "position_feedback": true,
+            "bundle_sha256": "9fc5874fa33aa28eb9dc6b4373ce3f255909f1fb546a52cc2defb77c35164c16",
+            "seed": 0
+          },
+          "completion_fraction": 0.0,
+          "strict_every_frame_pass_fraction": 0.0,
+          "common23_strict_every_frame_pass_fraction": 0.0,
+          "trajectory_mean_pass_fraction": 0.0,
+          "mean_active_errors": [
+            0.12672585248947144,
+            0.15570123493671417,
+            0.2052738517522812,
+            0.18853949010372162
+          ]
+        },
+        {
+          "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Horse-stance_punch/model_1000.pt",
+          "training_receipt": {
+            "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Horse-stance_punch/model_1000.pt",
+            "environment_steps": 24600576,
+            "completed_updates": 1001,
+            "elapsed_s": 1670.159637928009,
+            "position_feedback": true,
+            "bundle_sha256": "9fc5874fa33aa28eb9dc6b4373ce3f255909f1fb546a52cc2defb77c35164c16",
+            "seed": 0
+          },
+          "completion_fraction": 0.6875,
+          "strict_every_frame_pass_fraction": 0.0,
+          "common23_strict_every_frame_pass_fraction": 0.0,
+          "trajectory_mean_pass_fraction": 0.0,
+          "mean_active_errors": [
+            0.13674156367778778,
+            0.14483879506587982,
+            0.3289463520050049,
+            0.3375290334224701
+          ]
+        },
+        {
+          "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Horse-stance_punch/model_1999.pt",
+          "training_receipt": {
+            "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Horse-stance_punch/model_1999.pt",
+            "environment_steps": 49152000,
+            "completed_updates": 2000,
+            "elapsed_s": 3206.4047317504883,
+            "position_feedback": true,
+            "bundle_sha256": "9fc5874fa33aa28eb9dc6b4373ce3f255909f1fb546a52cc2defb77c35164c16",
+            "seed": 0
+          },
+          "completion_fraction": 0.84375,
+          "strict_every_frame_pass_fraction": 0.0,
+          "common23_strict_every_frame_pass_fraction": 0.0,
+          "trajectory_mean_pass_fraction": 0.09375,
+          "mean_active_errors": [
+            0.10398299247026443,
+            0.11052487790584564,
+            0.265622615814209,
+            0.274901419878006
+          ]
+        },
+        {
+          "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Horse-stance_punch/model_500.pt",
+          "training_receipt": {
+            "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Horse-stance_punch/model_500.pt",
+            "environment_steps": 12312576,
+            "completed_updates": 501,
+            "elapsed_s": 874.5080370903015,
+            "position_feedback": true,
+            "bundle_sha256": "9fc5874fa33aa28eb9dc6b4373ce3f255909f1fb546a52cc2defb77c35164c16",
+            "seed": 0
+          },
+          "completion_fraction": 0.1875,
+          "strict_every_frame_pass_fraction": 0.0,
+          "common23_strict_every_frame_pass_fraction": 0.0,
+          "trajectory_mean_pass_fraction": 0.0,
+          "mean_active_errors": [
+            0.1502559930086136,
+            0.1626267433166504,
+            0.2658360004425049,
+            0.2757122218608856
+          ]
+        }
+      ]
     },
     {
       "name": "Hooks_punch",
       "gpu": 0,
-      "observed_environment_steps": 0,
-      "observed_updates": 0,
+      "observed_environment_steps": 49152000,
+      "observed_updates": 2000,
       "target_updates": 2000,
-      "training_log_eta": null,
-      "training_complete": false,
-      "evaluations": []
+      "training_log_eta": "00:00:01",
+      "training_complete": true,
+      "evaluations": [
+        {
+          "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Hooks_punch/initial_random.pt",
+          "training_receipt": {
+            "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Hooks_punch/initial_random.pt",
+            "environment_steps": 0,
+            "completed_updates": 0,
+            "elapsed_s": 0.005013227462768555,
+            "position_feedback": true,
+            "bundle_sha256": "13cd27f9f3c9b21b6ff2c8694bc3b6d6fe0e1426c3806d499930d57de2f8309d",
+            "seed": 0
+          },
+          "completion_fraction": 0.0,
+          "strict_every_frame_pass_fraction": 0.0,
+          "common23_strict_every_frame_pass_fraction": 0.0,
+          "trajectory_mean_pass_fraction": 0.0,
+          "mean_active_errors": [
+            0.14124943315982819,
+            0.17382608354091644,
+            0.12994393706321716,
+            0.13143029808998108
+          ]
+        },
+        {
+          "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Hooks_punch/model_1000.pt",
+          "training_receipt": {
+            "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Hooks_punch/model_1000.pt",
+            "environment_steps": 24600576,
+            "completed_updates": 1001,
+            "elapsed_s": 1549.4137704372406,
+            "position_feedback": true,
+            "bundle_sha256": "13cd27f9f3c9b21b6ff2c8694bc3b6d6fe0e1426c3806d499930d57de2f8309d",
+            "seed": 0
+          },
+          "completion_fraction": 0.8125,
+          "strict_every_frame_pass_fraction": 0.0,
+          "common23_strict_every_frame_pass_fraction": 0.0,
+          "trajectory_mean_pass_fraction": 0.1875,
+          "mean_active_errors": [
+            0.11075986176729202,
+            0.11578016728162766,
+            0.28457707166671753,
+            0.2917919456958771
+          ]
+        },
+        {
+          "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Hooks_punch/model_1999.pt",
+          "training_receipt": {
+            "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Hooks_punch/model_1999.pt",
+            "environment_steps": 49152000,
+            "completed_updates": 2000,
+            "elapsed_s": 3016.4835414886475,
+            "position_feedback": true,
+            "bundle_sha256": "13cd27f9f3c9b21b6ff2c8694bc3b6d6fe0e1426c3806d499930d57de2f8309d",
+            "seed": 0
+          },
+          "completion_fraction": 0.84375,
+          "strict_every_frame_pass_fraction": 0.0,
+          "common23_strict_every_frame_pass_fraction": 0.0,
+          "trajectory_mean_pass_fraction": 0.15625,
+          "mean_active_errors": [
+            0.11159608513116837,
+            0.11581946164369583,
+            0.25861626863479614,
+            0.2686518430709839
+          ]
+        },
+        {
+          "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Hooks_punch/model_500.pt",
+          "training_receipt": {
+            "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Hooks_punch/model_500.pt",
+            "environment_steps": 12312576,
+            "completed_updates": 501,
+            "elapsed_s": 801.1277618408203,
+            "position_feedback": true,
+            "bundle_sha256": "13cd27f9f3c9b21b6ff2c8694bc3b6d6fe0e1426c3806d499930d57de2f8309d",
+            "seed": 0
+          },
+          "completion_fraction": 0.65625,
+          "strict_every_frame_pass_fraction": 0.0,
+          "common23_strict_every_frame_pass_fraction": 0.0,
+          "trajectory_mean_pass_fraction": 0.09375,
+          "mean_active_errors": [
+            0.11928844451904297,
+            0.12616698443889618,
+            0.23226036131381989,
+            0.23897221684455872
+          ]
+        }
+      ]
     },
     {
       "name": "Roundhouse_kick",
       "gpu": 1,
-      "observed_environment_steps": 2260992,
-      "observed_updates": 92,
+      "observed_environment_steps": 49152000,
+      "observed_updates": 2000,
       "target_updates": 2000,
-      "training_log_eta": "00:53:11",
-      "training_complete": false,
-      "evaluations": []
+      "training_log_eta": "00:00:01",
+      "training_complete": true,
+      "evaluations": [
+        {
+          "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Roundhouse_kick/initial_random.pt",
+          "training_receipt": {
+            "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Roundhouse_kick/initial_random.pt",
+            "environment_steps": 0,
+            "completed_updates": 0,
+            "elapsed_s": 0.004942893981933594,
+            "position_feedback": true,
+            "bundle_sha256": "221cf28d769abfcad31f1647395ab6ae186f9ddccebeb274cef4cd78c47cff72",
+            "seed": 0
+          },
+          "completion_fraction": 0.0,
+          "strict_every_frame_pass_fraction": 0.0,
+          "common23_strict_every_frame_pass_fraction": 0.0,
+          "trajectory_mean_pass_fraction": 0.0,
+          "mean_active_errors": [
+            0.14870183169841766,
+            0.18322353065013885,
+            0.1592017263174057,
+            0.1538371443748474
+          ]
+        },
+        {
+          "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Roundhouse_kick/model_1000.pt",
+          "training_receipt": {
+            "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Roundhouse_kick/model_1000.pt",
+            "environment_steps": 24600576,
+            "completed_updates": 1001,
+            "elapsed_s": 1550.1619579792023,
+            "position_feedback": true,
+            "bundle_sha256": "221cf28d769abfcad31f1647395ab6ae186f9ddccebeb274cef4cd78c47cff72",
+            "seed": 0
+          },
+          "completion_fraction": 0.0,
+          "strict_every_frame_pass_fraction": 0.0,
+          "common23_strict_every_frame_pass_fraction": 0.0,
+          "trajectory_mean_pass_fraction": 0.0,
+          "mean_active_errors": [
+            0.14827993512153625,
+            0.15451793372631073,
+            0.2670457661151886,
+            0.26763156056404114
+          ]
+        },
+        {
+          "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Roundhouse_kick/model_1999.pt",
+          "training_receipt": {
+            "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Roundhouse_kick/model_1999.pt",
+            "environment_steps": 49152000,
+            "completed_updates": 2000,
+            "elapsed_s": 3029.0830078125,
+            "position_feedback": true,
+            "bundle_sha256": "221cf28d769abfcad31f1647395ab6ae186f9ddccebeb274cef4cd78c47cff72",
+            "seed": 0
+          },
+          "completion_fraction": 0.0,
+          "strict_every_frame_pass_fraction": 0.0,
+          "common23_strict_every_frame_pass_fraction": 0.0,
+          "trajectory_mean_pass_fraction": 0.0,
+          "mean_active_errors": [
+            0.14298805594444275,
+            0.14358122646808624,
+            0.2374289482831955,
+            0.24353773891925812
+          ]
+        },
+        {
+          "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Roundhouse_kick/model_500.pt",
+          "training_receipt": {
+            "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Roundhouse_kick/model_500.pt",
+            "environment_steps": 12312576,
+            "completed_updates": 501,
+            "elapsed_s": 797.1253471374512,
+            "position_feedback": true,
+            "bundle_sha256": "221cf28d769abfcad31f1647395ab6ae186f9ddccebeb274cef4cd78c47cff72",
+            "seed": 0
+          },
+          "completion_fraction": 0.0,
+          "strict_every_frame_pass_fraction": 0.0,
+          "common23_strict_every_frame_pass_fraction": 0.0,
+          "trajectory_mean_pass_fraction": 0.0,
+          "mean_active_errors": [
+            0.1162656769156456,
+            0.1266881823539734,
+            0.22073978185653687,
+            0.20972780883312225
+          ]
+        }
+      ]
     },
     {
       "name": "Side_kick",
       "gpu": 1,
-      "observed_environment_steps": 0,
-      "observed_updates": 0,
+      "observed_environment_steps": 49152000,
+      "observed_updates": 2000,
       "target_updates": 2000,
-      "training_log_eta": null,
-      "training_complete": false,
-      "evaluations": []
+      "training_log_eta": "00:00:01",
+      "training_complete": true,
+      "evaluations": [
+        {
+          "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Side_kick/initial_random.pt",
+          "training_receipt": {
+            "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Side_kick/initial_random.pt",
+            "environment_steps": 0,
+            "completed_updates": 0,
+            "elapsed_s": 0.004640102386474609,
+            "position_feedback": true,
+            "bundle_sha256": "ed59859cca3ede38e5de7cac15b0d1823495439437d06a6ab6bec78864b8c357",
+            "seed": 0
+          },
+          "completion_fraction": 0.0,
+          "strict_every_frame_pass_fraction": 0.0,
+          "common23_strict_every_frame_pass_fraction": 0.0,
+          "trajectory_mean_pass_fraction": 0.0,
+          "mean_active_errors": [
+            0.14388088881969452,
+            0.1773231327533722,
+            0.1621362268924713,
+            0.15479718148708344
+          ]
+        },
+        {
+          "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Side_kick/model_1000.pt",
+          "training_receipt": {
+            "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Side_kick/model_1000.pt",
+            "environment_steps": 24600576,
+            "completed_updates": 1001,
+            "elapsed_s": 1546.3732941150665,
+            "position_feedback": true,
+            "bundle_sha256": "ed59859cca3ede38e5de7cac15b0d1823495439437d06a6ab6bec78864b8c357",
+            "seed": 0
+          },
+          "completion_fraction": 0.21875,
+          "strict_every_frame_pass_fraction": 0.0,
+          "common23_strict_every_frame_pass_fraction": 0.0,
+          "trajectory_mean_pass_fraction": 0.0,
+          "mean_active_errors": [
+            0.12963345646858215,
+            0.13832400739192963,
+            0.4934538006782532,
+            0.4977661073207855
+          ]
+        },
+        {
+          "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Side_kick/model_1999.pt",
+          "training_receipt": {
+            "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Side_kick/model_1999.pt",
+            "environment_steps": 49152000,
+            "completed_updates": 2000,
+            "elapsed_s": 3016.657695055008,
+            "position_feedback": true,
+            "bundle_sha256": "ed59859cca3ede38e5de7cac15b0d1823495439437d06a6ab6bec78864b8c357",
+            "seed": 0
+          },
+          "completion_fraction": 0.90625,
+          "strict_every_frame_pass_fraction": 0.0,
+          "common23_strict_every_frame_pass_fraction": 0.0,
+          "trajectory_mean_pass_fraction": 0.0,
+          "mean_active_errors": [
+            0.10656289756298065,
+            0.10964301228523254,
+            0.47931522130966187,
+            0.4834412634372711
+          ]
+        },
+        {
+          "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Side_kick/model_500.pt",
+          "training_receipt": {
+            "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Side_kick/model_500.pt",
+            "environment_steps": 12312576,
+            "completed_updates": 501,
+            "elapsed_s": 795.8182561397552,
+            "position_feedback": true,
+            "bundle_sha256": "ed59859cca3ede38e5de7cac15b0d1823495439437d06a6ab6bec78864b8c357",
+            "seed": 0
+          },
+          "completion_fraction": 0.0,
+          "strict_every_frame_pass_fraction": 0.0,
+          "common23_strict_every_frame_pass_fraction": 0.0,
+          "trajectory_mean_pass_fraction": 0.0,
+          "mean_active_errors": [
+            0.13339953124523163,
+            0.14181043207645416,
+            0.21573767066001892,
+            0.21797093749046326
+          ]
+        }
+      ]
     }
   ]
 }

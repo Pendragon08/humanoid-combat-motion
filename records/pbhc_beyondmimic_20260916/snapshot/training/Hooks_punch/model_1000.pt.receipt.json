@@ -1,0 +1,9 @@
+{
+  "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Hooks_punch/model_1000.pt",
+  "environment_steps": 24600576,
+  "completed_updates": 1001,
+  "elapsed_s": 1549.4137704372406,
+  "position_feedback": true,
+  "bundle_sha256": "13cd27f9f3c9b21b6ff2c8694bc3b6d6fe0e1426c3806d499930d57de2f8309d",
+  "seed": 0
+}
