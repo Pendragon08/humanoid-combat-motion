@@ -1,0 +1,24 @@
+[
+  {
+    "lane": 0,
+    "pid": 2231851,
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "scripts/run_pbhc_beyondmimic_queue.py",
+      "--lane",
+      "0"
+    ],
+    "started": 1789567054.476905
+  },
+  {
+    "lane": 1,
+    "pid": 2231852,
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "scripts/run_pbhc_beyondmimic_queue.py",
+      "--lane",
+      "1"
+    ],
+    "started": 1789567054.4777231
+  }
+]

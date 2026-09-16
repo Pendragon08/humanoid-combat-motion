@@ -1,0 +1,28 @@
+[
+  {
+    "motion": "Horse-stance_punch",
+    "stage": "train",
+    "command": [
+      "bash",
+      "scripts/run_isaaclab.sh",
+      "scripts/train_pbhc_beyondmimic.py",
+      "--bundle",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/bundles/Horse-stance_punch.npz",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Horse-stance_punch",
+      "--mode",
+      "upstream",
+      "--num_envs",
+      "1024",
+      "--iterations",
+      "2000",
+      "--seed",
+      "0",
+      "--headless",
+      "--device",
+      "cuda:0"
+    ],
+    "status": "running",
+    "started": 1789567054.5119119
+  }
+]

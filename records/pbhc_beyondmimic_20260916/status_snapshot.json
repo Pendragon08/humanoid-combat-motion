@@ -1,0 +1,48 @@
+{
+  "observed_at_utc": "2026-09-16T14:00:36.655245+00:00",
+  "all_complete": false,
+  "scope": "Development-only fixed-budget calibration, not generated-data utility",
+  "gpu_snapshot": "0, 3938 MiB, 49140 MiB, 50 %\n1, 3854 MiB, 49140 MiB, 46 %\n",
+  "jobs": [
+    {
+      "name": "Horse-stance_punch",
+      "gpu": 0,
+      "observed_environment_steps": 2039808,
+      "observed_updates": 83,
+      "target_updates": 2000,
+      "training_log_eta": "00:58:59",
+      "training_complete": false,
+      "evaluations": []
+    },
+    {
+      "name": "Hooks_punch",
+      "gpu": 0,
+      "observed_environment_steps": 0,
+      "observed_updates": 0,
+      "target_updates": 2000,
+      "training_log_eta": null,
+      "training_complete": false,
+      "evaluations": []
+    },
+    {
+      "name": "Roundhouse_kick",
+      "gpu": 1,
+      "observed_environment_steps": 2260992,
+      "observed_updates": 92,
+      "target_updates": 2000,
+      "training_log_eta": "00:53:11",
+      "training_complete": false,
+      "evaluations": []
+    },
+    {
+      "name": "Side_kick",
+      "gpu": 1,
+      "observed_environment_steps": 0,
+      "observed_updates": 0,
+      "target_updates": 2000,
+      "training_log_eta": null,
+      "training_complete": false,
+      "evaluations": []
+    }
+  ]
+}

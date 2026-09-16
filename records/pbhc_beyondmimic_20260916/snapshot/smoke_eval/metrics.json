@@ -1,0 +1,89 @@
+{
+  "scope": "Single-motion training-reference calibration; no generalization/data-utility claim",
+  "checkpoint": "runs/pbhc_beyondmimic_20260916/smoke_v2/model_4.pt",
+  "checkpoint_sha256": "4edab98c21b5e22ec1d69b4c8ee753f0b38491b876d853990d551720a468f057",
+  "training_receipt": {
+    "checkpoint": "runs/pbhc_beyondmimic_20260916/smoke_v2/model_4.pt",
+    "environment_steps": 3840,
+    "completed_updates": 5,
+    "elapsed_s": 8.866210222244263,
+    "position_feedback": true,
+    "bundle_sha256": "9fc5874fa33aa28eb9dc6b4373ce3f255909f1fb546a52cc2defb77c35164c16",
+    "seed": 0
+  },
+  "reference_sha256": "b727970fddcde23c6184a36945dd4dfc49a6fda922c98f10270856e27e53559f",
+  "seed": 123,
+  "environments": 4,
+  "frames": 331,
+  "duration_s": 6.62,
+  "completion_fraction": 0.0,
+  "strict_every_frame_pass_fraction": 0.0,
+  "common23_strict_every_frame_pass_fraction": 0.0,
+  "trajectory_mean_pass_fraction": 0.0,
+  "per_environment_mean_errors": [
+    [
+      0.12945295870304108,
+      0.15990900993347168,
+      0.25178027153015137,
+      0.23706071078777313
+    ],
+    [
+      0.1599859595298767,
+      0.19746650755405426,
+      0.12639091908931732,
+      0.1318453848361969
+    ],
+    [
+      0.14654381573200226,
+      0.17975544929504395,
+      0.21647779643535614,
+      0.1680619716644287
+    ],
+    [
+      0.12464573979377747,
+      0.15305007994174957,
+      0.2251269370317459,
+      0.2110254466533661
+    ]
+  ],
+  "error_columns": [
+    "joint29_rad",
+    "joint23_rad",
+    "root_m",
+    "body8_m"
+  ],
+  "first_failure_steps": [
+    35,
+    58,
+    38,
+    33
+  ],
+  "first_strict_failure_steps": [
+    13,
+    42,
+    17,
+    10
+  ],
+  "no_observed_height_fall_fraction": 1.0,
+  "mean_active_errors": [
+    0.14324398338794708,
+    0.17640995979309082,
+    0.193892240524292,
+    0.17862410843372345
+  ],
+  "position_feedback": true,
+  "observation_noise": false,
+  "training_randomization": true,
+  "thresholds": {
+    "joint_mae_rad": 0.3,
+    "root_error_m": 0.15,
+    "body8_error_m": 0.15,
+    "minimum_root_height_m": 0.35
+  },
+  "caveats": [
+    "Error metrics include first termination frame; later resets excluded.",
+    "No observed height fall is censored by other terminations; use completion.",
+    "IsaacLab training randomization retained; no head-to-head ranking against MuJoCo pretrained policies.",
+    "Body8 metric differs from historical BeyondMimic body14; both every-frame and mean definitions labeled."
+  ]
+}

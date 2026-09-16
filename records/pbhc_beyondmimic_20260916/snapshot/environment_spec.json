@@ -1,0 +1,71 @@
+{
+  "base": "Isaac Sim standalone 4.5.0 Linux x86_64 bundled Python; Ubuntu20.04 binary installation route",
+  "isaacsim_url": "https://download.isaacsim.omniverse.nvidia.com/isaac-sim-standalone-4.5.0-linux-x86_64.zip",
+  "isaacsim_uncompressed_bytes": 14672513444,
+  "isaacsim_file_count": 104057,
+  "isaaclab_ref": "v2.1.0",
+  "isaaclab_repository": "https://github.com/isaac-sim/IsaacLab.git",
+  "tracking_repository": "https://github.com/HybridRobotics/whole_body_tracking.git",
+  "tracking_commit": "cd65172032893724b445448818c34165846d847d",
+  "pip_phases": [
+    [
+      "onnx==1.16.1",
+      "prettytable==3.3.0",
+      "toml==0.10.2",
+      "hidapi==0.14.0.post2",
+      "trimesh==4.6.8",
+      "pyglet==1.5.31",
+      "transformers==4.48.3",
+      "einops==0.8.1",
+      "warp-lang==1.7.0",
+      "pillow==11.0.0",
+      "starlette==0.46.0",
+      "flatdict==4.0.1",
+      "protobuf==4.25.6",
+      "hydra-core==1.3.2",
+      "h5py==3.12.1",
+      "tensorboard==2.18.0",
+      "moviepy==1.0.3",
+      "gymnasium==0.29.1",
+      "numpy==1.26.0",
+      "wandb==0.19.11",
+      "onnxscript==0.2.5",
+      "rsl-rl-lib==2.3.1"
+    ],
+    [
+      "-e third_party/IsaacLab/source/isaaclab --no-deps",
+      "-e third_party/IsaacLab/source/isaaclab_assets --no-deps",
+      "-e third_party/IsaacLab/source/isaaclab_tasks --no-deps",
+      "-e third_party/IsaacLab/source/isaaclab_rl --no-deps",
+      "-e third_party/whole_body_tracking/source/whole_body_tracking --no-deps"
+    ]
+  ],
+  "state": "G1 articulated physics and GPU backward witness passed; independent documentation validation pending",
+  "storage": {
+    "new_persistent_budget_gib": 30,
+    "minimum_free_gib_after_stage": 8
+  },
+  "env": {
+    "OMP_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "CUDA_VISIBLE_DEVICES": "unset; select physical GPU with --device cuda:N"
+  },
+  "smoke": {
+    "command": "bash scripts/run_isaaclab.sh scripts/smoke_g1_isaaclab.py --headless --device cuda:1 --output records/paired_v1/g1_independent_validation.json",
+    "expect": "G1_ISAACLAB_PHYSICS_WITNESS",
+    "status": "primary witness passed; independent pending"
+  },
+  "isaaclab_commit": "21f7136325136ca3f6ca4e0a8125edffe5c24f7e",
+  "deviation": "G1-only task subset. Optional pink/dex-retargeting controllers omitted; must not claim all Isaac Lab tasks supported.",
+  "build_tools": [
+    "setuptools==70.3.0",
+    "wheel==0.45.1"
+  ],
+  "pip_build_isolation": false,
+  "build_note": "flatdict 4.0.1 imports pkg_resources; use pinned existing setuptools with no build isolation, rather than newest isolated setuptools.",
+  "cache_paths": {
+    "g1_usd": "cache/usd/g1_tracking",
+    "reason": "Shared /tmp/IsaacLab belongs to another account; no permission changes made."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "checkpoint": "runs/pbhc_beyondmimic_20260916/smoke_v2/model_4.pt",
+  "environment_steps": 3840,
+  "completed_updates": 5,
+  "elapsed_s": 8.866210222244263,
+  "position_feedback": true,
+  "bundle_sha256": "9fc5874fa33aa28eb9dc6b4373ce3f255909f1fb546a52cc2defb77c35164c16",
+  "seed": 0
+}

@@ -1,0 +1,28 @@
+{
+  "scope": "Complete single-motion development calibration, not test generalization or demonstration-data utility",
+  "task": "Tracking-Flat-G1-v0",
+  "environment_spec_hash": "072cb4cb",
+  "position_feedback": "Existing upstream motion_anchor_pos_b and base_lin_vel; these were also present in earlier BeyondMimic runs",
+  "source": "All four existing complete PBHC combat examples; original 23 joint trajectories retained with six neutral wrist joints in 29DOF target",
+  "reference_modifications": "Same-rate FK preserves all original 50Hz frames; no root correction or speed scaling",
+  "num_envs": 1024,
+  "iterations": 2000,
+  "steps_per_env": 24,
+  "steps_per_motion": 49152000,
+  "total_training_steps": 196608000,
+  "seed": 0,
+  "initialization": "Random per-motion policy, no checkpoint selection from test results",
+  "lanes": {
+    "0": ["Horse-stance_punch", "Hooks_punch"],
+    "1": ["Roundhouse_kick", "Side_kick"]
+  },
+  "evaluate_checkpoints": ["initial_random.pt", "model_500.pt", "model_1000.pt", "model_1999.pt"],
+  "evaluation": "All fixed checkpoints, full horizon from frame zero; 32 training-randomized environments, seed123, observation noise disabled; pre-reset physics recording",
+  "checkpoint_index_caveat": "Intermediate model_500 and model_1000 correspond to 501 and 1001 updates; use saved receipts for exact exposure",
+  "strict_criterion": "Every frame joint29MAE<0.3rad, root error<0.15m, body8 mean error<0.15m, root height>=0.35m, no original environment termination",
+  "secondary_metrics": "Common23 joint strict score and trajectory-mean score explicitly separate; neither replaces primary strict criterion",
+  "convergence": "Finite budget diagnostic; inspect all saved learning-curve points; no claim of convergence merely from training completion",
+  "unchanged": ["upstream actor/critic architecture", "PPO algorithm", "rewards", "physics parameters", "randomization", "original thresholds"],
+  "caveats": ["Not a new controller innovation", "Not universal multi-motion tracking", "Not a controlled ranking against pretrained MuJoCo deployment", "No paired combat or real robot validation", "No claim that sources are MoCap-free", "Full data-utility protocol remains disabled"],
+  "stop_conditions": ["nonfinite tensors", "process error or missing receipt", "less than 12GiB disk reserve before each motion"]
+}

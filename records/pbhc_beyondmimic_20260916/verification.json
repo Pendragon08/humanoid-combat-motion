@@ -1,0 +1,20 @@
+{
+  "launch_hash_matches": [
+    "scripts/prepare_pbhc_beyondmimic.py",
+    "scripts/convert_full_tracking_references.py",
+    "scripts/finalize_pbhc_beyondmimic_refs.py",
+    "scripts/train_pbhc_beyondmimic.py",
+    "scripts/evaluate_pbhc_beyondmimic.py",
+    "scripts/run_pbhc_beyondmimic_queue.py",
+    "scripts/launch_pbhc_beyondmimic.py",
+    "scripts/run_isaaclab.sh",
+    "records/pbhc_beyondmimic_20260916/protocol.json"
+  ],
+  "env_canonical_hash": "072cb4cb",
+  "env_byte_difference": "CRLF vs LF only; JSON equal",
+  "full_reference_count": 4,
+  "smoke_training_steps": 3840,
+  "full_horizon_evaluation_steps": 331,
+  "active_training_jobs": 2,
+  "formal_results_complete": false
+}

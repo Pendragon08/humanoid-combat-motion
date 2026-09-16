@@ -1,0 +1,41 @@
+{
+  "records": [
+    {
+      "name": "Hooks_punch",
+      "frames": 291,
+      "duration_s": 5.8,
+      "joint_conversion_max_error_rad": 4.768371630881063e-08,
+      "root_conversion_max_error_m": 8.344650270775134e-08,
+      "peak_joint_speed_rad_s": 9.16621208190918,
+      "reference_sha256": "af6760c1be4d0485b31b5beb0de98410b6030e13c8673e0e20bbd2506675e76a"
+    },
+    {
+      "name": "Horse-stance_punch",
+      "frames": 332,
+      "duration_s": 6.62,
+      "joint_conversion_max_error_rad": 5.9604644331301415e-08,
+      "root_conversion_max_error_m": 8.344650270775134e-08,
+      "peak_joint_speed_rad_s": 6.740755558013916,
+      "reference_sha256": "b727970fddcde23c6184a36945dd4dfc49a6fda922c98f10270856e27e53559f"
+    },
+    {
+      "name": "Roundhouse_kick",
+      "frames": 262,
+      "duration_s": 5.22,
+      "joint_conversion_max_error_rad": 9.536743172944284e-08,
+      "root_conversion_max_error_m": 8.344650270775134e-08,
+      "peak_joint_speed_rad_s": 7.052300930023193,
+      "reference_sha256": "b82dea7dbb3ca1e959c88c716ae6128499da4344c24e5e05755cee587dd28d82"
+    },
+    {
+      "name": "Side_kick",
+      "frames": 297,
+      "duration_s": 5.92,
+      "joint_conversion_max_error_rad": 5.960464455334602e-08,
+      "root_conversion_max_error_m": 8.344650270775134e-08,
+      "peak_joint_speed_rad_s": 12.867057800292969,
+      "reference_sha256": "6dc82426c94ad8d4294ae3319fc3441dac2d61bf179c3f2f37efe4d7b63c5479"
+    }
+  ],
+  "physics_validated": false
+}

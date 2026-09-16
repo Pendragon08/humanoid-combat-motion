@@ -1,0 +1,28 @@
+[
+  {
+    "motion": "Roundhouse_kick",
+    "stage": "train",
+    "command": [
+      "bash",
+      "scripts/run_isaaclab.sh",
+      "scripts/train_pbhc_beyondmimic.py",
+      "--bundle",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/bundles/Roundhouse_kick.npz",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/training/Roundhouse_kick",
+      "--mode",
+      "upstream",
+      "--num_envs",
+      "1024",
+      "--iterations",
+      "2000",
+      "--seed",
+      "0",
+      "--headless",
+      "--device",
+      "cuda:1"
+    ],
+    "status": "running",
+    "started": 1789567054.513539
+  }
+]
