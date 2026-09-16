@@ -1,0 +1,34 @@
+[INFO][AppLauncher]: Using device: cuda:1
+[INFO][AppLauncher]: Loading experience file: /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/data/Kit/Isaac-Sim/4.5/user.config.json'
+[Info] [carb] Logging to file: /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/logs/Kit/Isaac-Sim/4.5/kit_20260916_033239.log
+2026-09-16 03:32:39 [0ms] [Warning] [omni.kit.app.plugin] No crash reporter present, dumps uploading isn't available.
+2026-09-16 03:32:39 [4ms] [Warning] [omni.ext.plugin] [ext: rendering_modes] Extensions config 'extension.toml' doesn't exist '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab/apps/rendering_modes' or '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab/apps/rendering_modes/config'
+2026-09-16 03:32:40 [724ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-09-16 03:32:40 [854ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-09-16 03:32:40 [1,028ms] [Warning] [omni.datastore] OmniHub is inaccessible
+2026-09-16 03:32:41 [1,194ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 570.181       | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA RTX A6000                 |        |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | f3cc20c6.. |
+|     |                                  |        |     |            | 17        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA RTX A6000                 | Yes: 0 |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | 0b41e662.. |
+|     |                                  |        |     |            | 65        |            |
+|=============================================================================================|
+| OS: 20.04.6 LTS (Focal Fossa) ubuntu, Version: 20.04.6, Kernel: 5.4.0-216-generic
+| Processor: Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz
+| Cores: 10 | Logical Cores: 20
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 257450 | Free Memory: 144001
+| Total Page/Swap (MB): 8191 | Free Page/Swap: 8186
+|---------------------------------------------------------------------------------------------|
+{"witness": "PM01_ISAAC_PHYSICS_WITNESS", "physics_steps": 200, "joints": ["J00_HIP_PITCH_L", "J06_HIP_PITCH_R", "J12_WAIST_YAW", "J01_HIP_ROLL_L", "J07_HIP_ROLL_R", "J13_SHOULDER_PITCH_L", "J18_SHOULDER_PITCH_R", "J23_HEAD_YAW", "J02_HIP_YAW_L", "J08_HIP_YAW_R", "J14_SHOULDER_ROLL_L", "J19_SHOULDER_ROLL_R", "J03_KNEE_PITCH_L", "J09_KNEE_PITCH_R", "J15_SHOULDER_YAW_L", "J20_SHOULDER_YAW_R", "J04_ANKLE_PITCH_L", "J10_ANKLE_PITCH_R", "J16_ELBOW_PITCH_L", "J21_ELBOW_PITCH_R", "J05_ANKLE_ROLL_L", "J11_ANKLE_ROLL_R", "J17_ELBOW_YAW_L", "J22_ELBOW_YAW_R"], "bodies": ["LINK_BASE", "LINK_HIP_PITCH_L", "LINK_HIP_PITCH_R", "LINK_TORSO_YAW", "LINK_HIP_ROLL_L", "LINK_HIP_ROLL_R", "LINK_SHOULDER_PITCH_L", "LINK_SHOULDER_PITCH_R", "LINK_HEAD_YAW", "LINK_HIP_YAW_L", "LINK_HIP_YAW_R", "LINK_SHOULDER_ROLL_L", "LINK_SHOULDER_ROLL_R", "LINK_KNEE_PITCH_L", "LINK_KNEE_PITCH_R", "LINK_SHOULDER_YAW_L", "LINK_SHOULDER_YAW_R", "LINK_ANKLE_PITCH_L", "LINK_ANKLE_PITCH_R", "LINK_ELBOW_PITCH_L", "LINK_ELBOW_PITCH_R", "LINK_ANKLE_ROLL_L", "LINK_ANKLE_ROLL_R", "LINK_ELBOW_YAW_L", "LINK_ELBOW_YAW_R", "LINK_FOOT_L", "LINK_FOOT_R", "LINK_ELBOW_END_L", "LINK_ELBOW_END_R"], "root_position": [[0.41553834080696106, 0.0008146907202899456, 0.6726173162460327]], "gpu": "NVIDIA RTX A6000", "loss": 0.013342246413230896, "learned_tracking": false, "actuators": "official PM01_CYLINDER_CFG", "environment": "Isaac Lab 2.1 compatibility overlay, not official 2.3.2 reproduction"}

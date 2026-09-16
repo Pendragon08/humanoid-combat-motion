@@ -1,0 +1,151 @@
+{
+  "mode": "diagnostic",
+  "samples": [
+    {
+      "file": "sample_000_actor0_joint_constrained.npz",
+      "joint_rmse_rad": 0.21901320293467635,
+      "root_position_rmse_m": 1.7264354247798357,
+      "fell": true,
+      "first_failure_frame": 94,
+      "frames": 249,
+      "peak_abs_torque_Nm": 118.45018768310547,
+      "physics_execution": true,
+      "learned_tracking": false,
+      "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"
+    },
+    {
+      "file": "sample_000_actor0_raw_ik.npz",
+      "joint_rmse_rad": 0.2106576079871366,
+      "root_position_rmse_m": 1.259802992899551,
+      "fell": true,
+      "first_failure_frame": 46,
+      "frames": 249,
+      "peak_abs_torque_Nm": 92.17842102050781,
+      "physics_execution": true,
+      "learned_tracking": false,
+      "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"
+    },
+    {
+      "file": "sample_000_actor1_joint_constrained.npz",
+      "joint_rmse_rad": 0.320615640046945,
+      "root_position_rmse_m": 0.7680686524085141,
+      "fell": true,
+      "first_failure_frame": 19,
+      "frames": 249,
+      "peak_abs_torque_Nm": 150.73672485351562,
+      "physics_execution": true,
+      "learned_tracking": false,
+      "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"
+    },
+    {
+      "file": "sample_000_actor1_raw_ik.npz",
+      "joint_rmse_rad": 0.3250932639567268,
+      "root_position_rmse_m": 0.7339300287242567,
+      "fell": true,
+      "first_failure_frame": 20,
+      "frames": 249,
+      "peak_abs_torque_Nm": 164.0,
+      "physics_execution": true,
+      "learned_tracking": false,
+      "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"
+    },
+    {
+      "file": "sample_001_actor0_joint_constrained.npz",
+      "joint_rmse_rad": 0.42221003928951895,
+      "root_position_rmse_m": 1.419700472066945,
+      "fell": true,
+      "first_failure_frame": 30,
+      "frames": 249,
+      "peak_abs_torque_Nm": 163.4483642578125,
+      "physics_execution": true,
+      "learned_tracking": false,
+      "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"
+    },
+    {
+      "file": "sample_001_actor0_raw_ik.npz",
+      "joint_rmse_rad": 0.42725879911829245,
+      "root_position_rmse_m": 1.4283657030390526,
+      "fell": true,
+      "first_failure_frame": 25,
+      "frames": 249,
+      "peak_abs_torque_Nm": 111.82481384277344,
+      "physics_execution": true,
+      "learned_tracking": false,
+      "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"
+    },
+    {
+      "file": "sample_001_actor1_joint_constrained.npz",
+      "joint_rmse_rad": 0.24177883060769992,
+      "root_position_rmse_m": 1.4184596460360253,
+      "fell": true,
+      "first_failure_frame": 24,
+      "frames": 249,
+      "peak_abs_torque_Nm": 143.58128356933594,
+      "physics_execution": true,
+      "learned_tracking": false,
+      "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"
+    },
+    {
+      "file": "sample_001_actor1_raw_ik.npz",
+      "joint_rmse_rad": 0.24295742031873804,
+      "root_position_rmse_m": 1.4767665403505417,
+      "fell": true,
+      "first_failure_frame": 26,
+      "frames": 249,
+      "peak_abs_torque_Nm": 152.9575653076172,
+      "physics_execution": true,
+      "learned_tracking": false,
+      "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"
+    },
+    {
+      "file": "sample_002_actor0_joint_constrained.npz",
+      "joint_rmse_rad": 0.3088403305076817,
+      "root_position_rmse_m": 1.3169935029597295,
+      "fell": true,
+      "first_failure_frame": 19,
+      "frames": 249,
+      "peak_abs_torque_Nm": 99.37117767333984,
+      "physics_execution": true,
+      "learned_tracking": false,
+      "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"
+    },
+    {
+      "file": "sample_002_actor0_raw_ik.npz",
+      "joint_rmse_rad": 0.24965848345466565,
+      "root_position_rmse_m": 1.5473987988656348,
+      "fell": true,
+      "first_failure_frame": 26,
+      "frames": 249,
+      "peak_abs_torque_Nm": 64.4302749633789,
+      "physics_execution": true,
+      "learned_tracking": false,
+      "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"
+    },
+    {
+      "file": "sample_002_actor1_joint_constrained.npz",
+      "joint_rmse_rad": 0.2993526217482757,
+      "root_position_rmse_m": 1.485684231042052,
+      "fell": true,
+      "first_failure_frame": 14,
+      "frames": 249,
+      "peak_abs_torque_Nm": 158.32257080078125,
+      "physics_execution": true,
+      "learned_tracking": false,
+      "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"
+    },
+    {
+      "file": "sample_002_actor1_raw_ik.npz",
+      "joint_rmse_rad": 0.46085004297385185,
+      "root_position_rmse_m": 1.0604332814880446,
+      "fell": true,
+      "first_failure_frame": 23,
+      "frames": 249,
+      "peak_abs_torque_Nm": 160.27980041503906,
+      "physics_execution": true,
+      "learned_tracking": false,
+      "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"
+    }
+  ],
+  "environment": "official PM01 USD and actuator config on Isaac Lab 2.1 compatibility runtime",
+  "claim": "no imitation utility established"
+}

@@ -1,0 +1,48 @@
+{
+  "robot": "PM01",
+  "mode": "eval",
+  "reference": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/engineai_single_v1/tracking_references_50hz/sample_000_actor0_joint_constrained.npz",
+  "reference_sha256": "e7b360463af1cbe425afbb5923db1911f1872e68c8be516efacfeb66ae89f91a",
+  "iterations": 100,
+  "environments": 32,
+  "seed": 0,
+  "runtime": "Isaac Lab2.1/RSL-RL2.3 compatibility",
+  "agent": {
+    "seed": 0,
+    "num_steps_per_env": 24,
+    "save_interval": 100,
+    "empirical_normalization": false,
+    "logger": "tensorboard",
+    "policy": {
+      "init_noise_std": 1.0,
+      "actor_hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "critic_hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "activation": "elu"
+    },
+    "algorithm": {
+      "value_loss_coef": 1.0,
+      "use_clipped_value_loss": true,
+      "clip_param": 0.2,
+      "entropy_coef": 0.005,
+      "num_learning_epochs": 5,
+      "num_mini_batches": 4,
+      "learning_rate": 0.001,
+      "schedule": "adaptive",
+      "gamma": 0.99,
+      "lam": 0.95,
+      "desired_kl": 0.01,
+      "max_grad_norm": 1.0
+    }
+  },
+  "claim": "single-reference feasibility; not heldout data utility",
+  "warm_start_sha256": "90f0624ac80564844912d303a3731117ede876f5e0988f337106a0a656f5cb42",
+  "code_sha256": "de9c0aae7500c8824a6168ac563524e381df7acdccf95e01a48f9f5bc5806282"
+}

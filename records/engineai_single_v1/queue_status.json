@@ -1,0 +1,58 @@
+[
+  {
+    "job": "official",
+    "mode": "train",
+    "exit_code": 0,
+    "complete": true,
+    "seconds": 906.9118807315826,
+    "command": [
+      "bash",
+      "scripts/run_engineai.sh",
+      "scripts/engineai_single_tracking.py",
+      "--mode",
+      "train",
+      "--motion",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/engineai_rl_lab/datasets/tracking/pm01/dance.npz",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/engineai_single_v1/official_train",
+      "--num_envs",
+      "256",
+      "--iterations",
+      "300",
+      "--seed",
+      "0",
+      "--headless",
+      "--device",
+      "cuda:1"
+    ]
+  },
+  {
+    "job": "official",
+    "mode": "eval",
+    "exit_code": 0,
+    "complete": true,
+    "seconds": 142.54097270965576,
+    "command": [
+      "bash",
+      "scripts/run_engineai.sh",
+      "scripts/engineai_single_tracking.py",
+      "--mode",
+      "eval",
+      "--motion",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/engineai_rl_lab/datasets/tracking/pm01/dance.npz",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/engineai_single_v1/official_eval",
+      "--num_envs",
+      "32",
+      "--iterations",
+      "300",
+      "--seed",
+      "0",
+      "--headless",
+      "--device",
+      "cuda:1",
+      "--checkpoint",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/engineai_single_v1/official_train/model_299.pt"
+    ]
+  }
+]

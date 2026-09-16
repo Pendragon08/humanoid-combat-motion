@@ -1,0 +1,1 @@
+{"time": 1789530109.346875, "gpu": 1, "steps_per_training_run": 1843200, "jobs": ["official", "raw_ik", "joint_constrained"]}

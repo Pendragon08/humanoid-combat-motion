@@ -1,0 +1,46 @@
+[INFO][AppLauncher]: Using device: cuda:1
+[INFO][AppLauncher]: Loading experience file: /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/data/Kit/Isaac-Sim/4.5/user.config.json'
+[Info] [carb] Logging to file: /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/logs/Kit/Isaac-Sim/4.5/kit_20260916_034841.log
+2026-09-16 03:48:41 [0ms] [Warning] [omni.kit.app.plugin] No crash reporter present, dumps uploading isn't available.
+2026-09-16 03:48:41 [3ms] [Warning] [omni.ext.plugin] [ext: rendering_modes] Extensions config 'extension.toml' doesn't exist '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab/apps/rendering_modes' or '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab/apps/rendering_modes/config'
+2026-09-16 03:48:41 [478ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-09-16 03:48:41 [575ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-09-16 03:48:41 [759ms] [Warning] [omni.datastore] OmniHub is inaccessible
+2026-09-16 03:48:42 [933ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 570.181       | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA RTX A6000                 |        |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | f3cc20c6.. |
+|     |                                  |        |     |            | 17        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA RTX A6000                 | Yes: 0 |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | 0b41e662.. |
+|     |                                  |        |     |            | 65        |            |
+|=============================================================================================|
+| OS: 20.04.6 LTS (Focal Fossa) ubuntu, Version: 20.04.6, Kernel: 5.4.0-216-generic
+| Processor: Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz
+| Cores: 10 | Logical Cores: 20
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 257450 | Free Memory: 140861
+| Total Page/Swap (MB): 8191 | Free Page/Swap: 8186
+|---------------------------------------------------------------------------------------------|
+2026-09-16 03:48:47 [5,968ms] [Warning] [omni.kvdb.plugin] Disabling key-value database because another kit process is locking it
+{"file": "sample_000_actor0_joint_constrained.npz", "frames": 249, "sha256": "e7b360463af1cbe425afbb5923db1911f1872e68c8be516efacfeb66ae89f91a", "source_sha256": "27b1b7ce6ab4e472e6fc7c604276e57f993cb085ea99677a4a467e5d63dd0f0c", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_000_actor0_raw_ik.npz", "frames": 249, "sha256": "8aed6f14a3ecec1c1c14ef171673b0709fb39f29dba3d5df89bc5f93298ad5fc", "source_sha256": "39ffc0a0e094d40c5809b5ce1c50f39528ea5b08bc5148716ff683aa7d107c1d", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_000_actor1_joint_constrained.npz", "frames": 249, "sha256": "b65fc69e0b65c7b71619b9ff09e0c2f23975000e0f2e5da20938b4c82cbb99f2", "source_sha256": "82fe124de63f0e7a1972a2a67d2b0f8f38a23641ccabf9b07e2c19b2f7375431", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_000_actor1_raw_ik.npz", "frames": 249, "sha256": "03cfc506f5239c76db72ee295c637a66d417224f37d7d62546769a4d45cfc454", "source_sha256": "923cd3c2c525c9290163a5ad81d7908d8bf0a18ec2ff21bffd1e1fc958283665", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_001_actor0_joint_constrained.npz", "frames": 249, "sha256": "1501e16754e9d264d23124c187a13da13a3dc82ff5a2e604c858d6c1a7f378fc", "source_sha256": "5a769da72d103759e694f13b8238fae4e2ef33d7690f8dd951484f8db60ad3e8", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_001_actor0_raw_ik.npz", "frames": 249, "sha256": "eddfabb29ea6438ab1027b488a635b3f598874f1335dd89664ee02350bb3c866", "source_sha256": "9dab716aff88fdcb1c7f3a0db928116ce62d7881df3dc889d98125541211cc7b", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_001_actor1_joint_constrained.npz", "frames": 249, "sha256": "5b7c7bc96026741ff2a1e3d7128f782ac0371dd543930a2a43f8ef6983616c93", "source_sha256": "e283bb4a31f8986f8723243fadf1089e3738e341a6b57121211e657b80078d78", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_001_actor1_raw_ik.npz", "frames": 249, "sha256": "017b58df155fb968357098d650ba70aedb6e1bcdf61526c71f10cc252031d2ca", "source_sha256": "afd709dffa4b41f6a0cd582cc7f3859dbff72b8985dffde4adb7c1d6291fe2b1", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_002_actor0_joint_constrained.npz", "frames": 249, "sha256": "1a41493abbbd750f1a06632f73f80cdfa5ec38e34c4f5526d182b7d06d937b2e", "source_sha256": "669d398203620c5f93940925bdcd2a4eb87632a1b601a29b759251d00089e7fb", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_002_actor0_raw_ik.npz", "frames": 249, "sha256": "6476c6fe4f2a6f590124579ee5cff771fccb7fb8373f11b16947468fefb584e9", "source_sha256": "46ab7a6e280fce9568112373adc27a9c31088b48062ffd98ec4c6c3f5c6251a6", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_002_actor1_joint_constrained.npz", "frames": 249, "sha256": "0b5bb51a77365d122b2261fa2f10896affeb82014c0140c5cc5a8fdddeefdbd6", "source_sha256": "3e51c1c7c9bcafe87a3d96880f45119ce4f51c5be853bd7ce14ed13e0570c4a9", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_002_actor1_raw_ik.npz", "frames": 249, "sha256": "3e9ef235cde1a9b6a12b22ff2e04b5ff93d8171581c2a3652e347b9988f4539a", "source_sha256": "cdc5abfec968db83fa4782365df9f3e8d18947fa0a8f57351ad5a27b5eb08524", "state_replay_only": true, "physics_execution": false}

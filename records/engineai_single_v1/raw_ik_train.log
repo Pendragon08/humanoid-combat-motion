@@ -1,0 +1,2026 @@
+[INFO][AppLauncher]: Using device: cuda:1
+[INFO][AppLauncher]: Loading experience file: /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/data/Kit/Isaac-Sim/4.5/user.config.json'
+[Info] [carb] Logging to file: /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/logs/Kit/Isaac-Sim/4.5/kit_20260916_035918.log
+2026-09-16 03:59:18 [0ms] [Warning] [omni.kit.app.plugin] No crash reporter present, dumps uploading isn't available.
+2026-09-16 03:59:18 [12ms] [Warning] [omni.ext.plugin] [ext: rendering_modes] Extensions config 'extension.toml' doesn't exist '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab/apps/rendering_modes' or '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab/apps/rendering_modes/config'
+2026-09-16 03:59:19 [489ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-09-16 03:59:19 [587ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-09-16 03:59:19 [768ms] [Warning] [omni.datastore] OmniHub is inaccessible
+2026-09-16 03:59:19 [940ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 570.181       | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA RTX A6000                 |        |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | f3cc20c6.. |
+|     |                                  |        |     |            | 17        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA RTX A6000                 | Yes: 0 |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | 0b41e662.. |
+|     |                                  |        |     |            | 65        |            |
+|=============================================================================================|
+| OS: 20.04.6 LTS (Focal Fossa) ubuntu, Version: 20.04.6, Kernel: 5.4.0-216-generic
+| Processor: Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz
+| Cores: 10 | Logical Cores: 20
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 257450 | Free Memory: 140384
+| Total Page/Swap (MB): 8191 | Free Page/Swap: 8186
+|---------------------------------------------------------------------------------------------|
+Setting seed: 0
+[INFO]: Base environment:
+	Environment device    : cuda:1
+	Environment seed      : 0
+	Physics step-size     : 0.005
+	Rendering step-size   : 0.02
+	Environment step-size : 0.02
+[INFO]: Time taken for scene creation : 1.597685 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 256
+	Environment spacing   : 2.5
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : ['/World/ground']
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 1.131833 seconds
+[INFO] Command Manager:  <CommandManager> contains 1 active terms.
++--------------------------------+
+|      Active Command Terms      |
++-------+--------+---------------+
+| Index | Name   |      Type     |
++-------+--------+---------------+
+|   0   | motion | MotionCommand |
++-------+--------+---------------+
+
+[INFO] Event Manager:  <EventManager> contains 2 active terms.
++---------------------------------------+
+| Active Event Terms in Mode: 'startup' |
++---------+-----------------------------+
+|  Index  | Name                        |
++---------+-----------------------------+
+|    0    | physics_material            |
+|    1    | add_joint_default_pos       |
+|    2    | base_com                    |
++---------+-----------------------------+
++----------------------------------------------+
+|    Active Event Terms in Mode: 'interval'    |
++-------+------------+-------------------------+
+| Index | Name       | Interval time range (s) |
++-------+------------+-------------------------+
+|   0   | push_robot |        (1.0, 3.0)       |
++-------+------------+-------------------------+
+
+[INFO] Recorder Manager:  <RecorderManager> contains 0 active terms.
++---------------------+
+| Active Recorder Terms |
++-----------+---------+
+|   Index   | Name    |
++-----------+---------+
++-----------+---------+
+
+[INFO] Action Manager:  <ActionManager> contains 1 active terms.
++------------------------------------+
+|  Active Action Terms (shape: 24)   |
++--------+-------------+-------------+
+| Index  | Name        |   Dimension |
++--------+-------------+-------------+
+|   0    | joint_pos   |          24 |
++--------+-------------+-------------+
+
+[INFO] Observation Manager: <ObservationManager> contains 2 groups.
++-----------------------------------------------------------+
+| Active Observation Terms in Group: 'policy' (shape: (129,)) |
++-----------+-----------------------------------+-----------+
+|   Index   | Name                              |   Shape   |
++-----------+-----------------------------------+-----------+
+|     0     | command                           |   (48,)   |
+|     1     | motion_anchor_ori_b               |    (6,)   |
+|     2     | base_ang_vel                      |    (3,)   |
+|     3     | joint_pos                         |   (24,)   |
+|     4     | joint_vel                         |   (24,)   |
+|     5     | actions                           |   (24,)   |
++-----------+-----------------------------------+-----------+
++-----------------------------------------------------------+
+| Active Observation Terms in Group: 'critic' (shape: (252,)) |
++-----------+-----------------------------------+-----------+
+|   Index   | Name                              |   Shape   |
++-----------+-----------------------------------+-----------+
+|     0     | command                           |   (48,)   |
+|     1     | motion_anchor_pos_b               |    (3,)   |
+|     2     | motion_anchor_ori_b               |    (6,)   |
+|     3     | body_pos                          |   (39,)   |
+|     4     | body_ori                          |   (78,)   |
+|     5     | base_lin_vel                      |    (3,)   |
+|     6     | base_ang_vel                      |    (3,)   |
+|     7     | joint_pos                         |   (24,)   |
+|     8     | joint_vel                         |   (24,)   |
+|     9     | actions                           |   (24,)   |
++-----------+-----------------------------------+-----------+
+
+[INFO] Termination Manager:  <TerminationManager> contains 4 active terms.
++--------------------------------+
+|    Active Termination Terms    |
++-------+-------------+----------+
+| Index | Name        | Time Out |
++-------+-------------+----------+
+|   0   | time_out    |   True   |
+|   1   | anchor_pos  |  False   |
+|   2   | anchor_ori  |  False   |
+|   3   | ee_body_pos |  False   |
++-------+-------------+----------+
+
+[INFO] Reward Manager:  <RewardManager> contains 9 active terms.
++-------------------------------------------+
+|            Active Reward Terms            |
++-------+--------------------------+--------+
+| Index | Name                     | Weight |
++-------+--------------------------+--------+
+|   0   | motion_global_anchor_pos |    0.5 |
+|   1   | motion_global_anchor_ori |    0.5 |
+|   2   | motion_body_pos          |    1.0 |
+|   3   | motion_body_ori          |    1.0 |
+|   4   | motion_body_lin_vel      |    1.0 |
+|   5   | motion_body_ang_vel      |    1.0 |
+|   6   | action_rate_l2           |   -0.1 |
+|   7   | joint_limit              |  -10.0 |
+|   8   | undesired_contacts       |   -0.1 |
++-------+--------------------------+--------+
+
+[INFO] Curriculum Manager:  <CurriculumManager> contains 0 active terms.
++----------------------+
+| Active Curriculum Terms |
++-----------+----------+
+|   Index   | Name     |
++-----------+----------+
++-----------+----------+
+
+[INFO]: Completed setting up the environment...
+Actor MLP: Sequential(
+  (0): Linear(in_features=129, out_features=512, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=512, out_features=256, bias=True)
+  (3): ELU(alpha=1.0)
+  (4): Linear(in_features=256, out_features=128, bias=True)
+  (5): ELU(alpha=1.0)
+  (6): Linear(in_features=128, out_features=24, bias=True)
+)
+Critic MLP: Sequential(
+  (0): Linear(in_features=252, out_features=512, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=512, out_features=256, bias=True)
+  (3): ELU(alpha=1.0)
+  (4): Linear(in_features=256, out_features=128, bias=True)
+  (5): ELU(alpha=1.0)
+  (6): Linear(in_features=128, out_features=1, bias=True)
+)
+################################################################################
+                       [1m Learning iteration 0/300 [0m                       
+
+                       Computation: 732 steps/s (collection: 8.077s, learning 0.313s)
+             Mean action noise std: 1.00
+          Mean value_function loss: 0.0230
+               Mean surrogate loss: -0.0026
+                 Mean entropy loss: 33.9843
+                       Mean reward: -0.37
+               Mean episode length: 6.60
+Episode_Reward/motion_global_anchor_pos: 0.0054
+Episode_Reward/motion_global_anchor_ori: 0.0038
+    Episode_Reward/motion_body_pos: 0.0099
+    Episode_Reward/motion_body_ori: 0.0022
+Episode_Reward/motion_body_lin_vel: 0.0009
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0500
+        Episode_Reward/joint_limit: -0.0015
+ Episode_Reward/undesired_contacts: -0.0002
+   Metrics/motion/error_anchor_pos: 0.0603
+   Metrics/motion/error_anchor_rot: 0.2810
+Metrics/motion/error_anchor_lin_vel: 0.5410
+Metrics/motion/error_anchor_ang_vel: 4.2501
+     Metrics/motion/error_body_pos: 0.0771
+     Metrics/motion/error_body_rot: 0.4940
+    Metrics/motion/error_joint_pos: 2.2924
+    Metrics/motion/error_joint_vel: 26.8615
+   Metrics/motion/sampling_entropy: 0.9960
+ Metrics/motion/sampling_top1_prob: 0.2226
+  Metrics/motion/sampling_top1_bin: 0.0917
+      Episode_Termination/time_out: 0.1667
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 75.0833
+--------------------------------------------------------------------------------
+                   Total timesteps: 6144
+                    Iteration time: 8.39s
+                      Time elapsed: 00:00:08
+                               ETA: 00:41:56
+
+Could not find git repository in /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/python/lib/python3.10/site-packages/rsl_rl/__init__.py. Skipping.
+################################################################################
+                       [1m Learning iteration 1/300 [0m                       
+
+                       Computation: 1287 steps/s (collection: 4.535s, learning 0.238s)
+             Mean action noise std: 0.99
+          Mean value_function loss: 0.0129
+               Mean surrogate loss: -0.0261
+                 Mean entropy loss: 33.9497
+                       Mean reward: -0.34
+               Mean episode length: 6.42
+Episode_Reward/motion_global_anchor_pos: 0.0064
+Episode_Reward/motion_global_anchor_ori: 0.0045
+    Episode_Reward/motion_body_pos: 0.0119
+    Episode_Reward/motion_body_ori: 0.0026
+Episode_Reward/motion_body_lin_vel: 0.0010
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0587
+        Episode_Reward/joint_limit: -0.0018
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0692
+   Metrics/motion/error_anchor_rot: 0.3424
+Metrics/motion/error_anchor_lin_vel: 0.6738
+Metrics/motion/error_anchor_ang_vel: 5.3512
+     Metrics/motion/error_body_pos: 0.0924
+     Metrics/motion/error_body_rot: 0.5947
+    Metrics/motion/error_joint_pos: 2.7714
+    Metrics/motion/error_joint_vel: 32.4981
+   Metrics/motion/sampling_entropy: 0.9943
+ Metrics/motion/sampling_top1_prob: 0.2296
+  Metrics/motion/sampling_top1_bin: 0.2000
+ Metrics/motion/error_body_lin_vel: 1.4764
+ Metrics/motion/error_body_ang_vel: 9.2825
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 38.2500
+--------------------------------------------------------------------------------
+                   Total timesteps: 12288
+                    Iteration time: 4.77s
+                      Time elapsed: 00:00:13
+                               ETA: 00:32:47
+
+################################################################################
+                       [1m Learning iteration 2/300 [0m                       
+
+                       Computation: 1122 steps/s (collection: 5.249s, learning 0.223s)
+             Mean action noise std: 0.99
+          Mean value_function loss: 0.0128
+               Mean surrogate loss: -0.0303
+                 Mean entropy loss: 33.8918
+                       Mean reward: -0.35
+               Mean episode length: 6.85
+Episode_Reward/motion_global_anchor_pos: 0.0063
+Episode_Reward/motion_global_anchor_ori: 0.0046
+    Episode_Reward/motion_body_pos: 0.0119
+    Episode_Reward/motion_body_ori: 0.0026
+Episode_Reward/motion_body_lin_vel: 0.0010
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0580
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0689
+   Metrics/motion/error_anchor_rot: 0.3334
+Metrics/motion/error_anchor_lin_vel: 0.6602
+Metrics/motion/error_anchor_ang_vel: 4.8617
+     Metrics/motion/error_body_pos: 0.0928
+     Metrics/motion/error_body_rot: 0.5939
+    Metrics/motion/error_joint_pos: 2.7819
+    Metrics/motion/error_joint_vel: 32.7242
+   Metrics/motion/sampling_entropy: 0.9935
+ Metrics/motion/sampling_top1_prob: 0.2339
+  Metrics/motion/sampling_top1_bin: 0.2917
+ Metrics/motion/error_body_lin_vel: 1.4153
+ Metrics/motion/error_body_ang_vel: 8.9552
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 38.2917
+--------------------------------------------------------------------------------
+                   Total timesteps: 18432
+                    Iteration time: 5.47s
+                      Time elapsed: 00:00:18
+                               ETA: 00:30:51
+
+################################################################################
+                       [1m Learning iteration 3/300 [0m                       
+
+                       Computation: 1167 steps/s (collection: 5.036s, learning 0.226s)
+             Mean action noise std: 0.99
+          Mean value_function loss: 0.0091
+               Mean surrogate loss: -0.0315
+                 Mean entropy loss: 33.8218
+                       Mean reward: -0.30
+               Mean episode length: 6.37
+Episode_Reward/motion_global_anchor_pos: 0.0062
+Episode_Reward/motion_global_anchor_ori: 0.0044
+    Episode_Reward/motion_body_pos: 0.0116
+    Episode_Reward/motion_body_ori: 0.0026
+Episode_Reward/motion_body_lin_vel: 0.0009
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0556
+        Episode_Reward/joint_limit: -0.0018
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0692
+   Metrics/motion/error_anchor_rot: 0.3388
+Metrics/motion/error_anchor_lin_vel: 0.6654
+Metrics/motion/error_anchor_ang_vel: 5.2281
+     Metrics/motion/error_body_pos: 0.0922
+     Metrics/motion/error_body_rot: 0.5877
+    Metrics/motion/error_joint_pos: 2.7640
+    Metrics/motion/error_joint_vel: 32.5459
+   Metrics/motion/sampling_entropy: 0.9934
+ Metrics/motion/sampling_top1_prob: 0.2373
+  Metrics/motion/sampling_top1_bin: 0.3833
+ Metrics/motion/error_body_lin_vel: 1.4755
+ Metrics/motion/error_body_ang_vel: 9.2196
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 38.9167
+--------------------------------------------------------------------------------
+                   Total timesteps: 24576
+                    Iteration time: 5.26s
+                      Time elapsed: 00:00:23
+                               ETA: 00:29:34
+
+################################################################################
+                       [1m Learning iteration 4/300 [0m                       
+
+                       Computation: 1149 steps/s (collection: 5.131s, learning 0.215s)
+             Mean action noise std: 0.99
+          Mean value_function loss: 0.0084
+               Mean surrogate loss: -0.0289
+                 Mean entropy loss: 33.7605
+                       Mean reward: -0.31
+               Mean episode length: 6.58
+Episode_Reward/motion_global_anchor_pos: 0.0063
+Episode_Reward/motion_global_anchor_ori: 0.0044
+    Episode_Reward/motion_body_pos: 0.0117
+    Episode_Reward/motion_body_ori: 0.0026
+Episode_Reward/motion_body_lin_vel: 0.0010
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0557
+        Episode_Reward/joint_limit: -0.0018
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0697
+   Metrics/motion/error_anchor_rot: 0.3413
+Metrics/motion/error_anchor_lin_vel: 0.6773
+Metrics/motion/error_anchor_ang_vel: 5.1128
+     Metrics/motion/error_body_pos: 0.0916
+     Metrics/motion/error_body_rot: 0.5917
+    Metrics/motion/error_joint_pos: 2.7895
+    Metrics/motion/error_joint_vel: 32.8977
+   Metrics/motion/sampling_entropy: 0.9929
+ Metrics/motion/sampling_top1_prob: 0.2416
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.4709
+ Metrics/motion/error_body_ang_vel: 9.2225
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 39.4167
+--------------------------------------------------------------------------------
+                   Total timesteps: 30720
+                    Iteration time: 5.35s
+                      Time elapsed: 00:00:29
+                               ETA: 00:28:51
+
+################################################################################
+                       [1m Learning iteration 5/300 [0m                       
+
+                       Computation: 1220 steps/s (collection: 4.851s, learning 0.183s)
+             Mean action noise std: 0.98
+          Mean value_function loss: 0.0073
+               Mean surrogate loss: -0.0277
+                 Mean entropy loss: 33.6942
+                       Mean reward: -0.31
+               Mean episode length: 6.57
+Episode_Reward/motion_global_anchor_pos: 0.0061
+Episode_Reward/motion_global_anchor_ori: 0.0043
+    Episode_Reward/motion_body_pos: 0.0113
+    Episode_Reward/motion_body_ori: 0.0026
+Episode_Reward/motion_body_lin_vel: 0.0008
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0523
+        Episode_Reward/joint_limit: -0.0018
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0664
+   Metrics/motion/error_anchor_rot: 0.3352
+Metrics/motion/error_anchor_lin_vel: 0.6679
+Metrics/motion/error_anchor_ang_vel: 5.3319
+     Metrics/motion/error_body_pos: 0.0907
+     Metrics/motion/error_body_rot: 0.5844
+    Metrics/motion/error_joint_pos: 2.7331
+    Metrics/motion/error_joint_vel: 33.4024
+   Metrics/motion/sampling_entropy: 0.9930
+ Metrics/motion/sampling_top1_prob: 0.2409
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.5013
+ Metrics/motion/error_body_ang_vel: 9.3876
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 40.5833
+--------------------------------------------------------------------------------
+                   Total timesteps: 36864
+                    Iteration time: 5.03s
+                      Time elapsed: 00:00:34
+                               ETA: 00:28:05
+
+################################################################################
+                       [1m Learning iteration 6/300 [0m                       
+
+                       Computation: 1787 steps/s (collection: 3.268s, learning 0.170s)
+             Mean action noise std: 0.98
+          Mean value_function loss: 0.0070
+               Mean surrogate loss: -0.0281
+                 Mean entropy loss: 33.6321
+                       Mean reward: -0.27
+               Mean episode length: 6.22
+Episode_Reward/motion_global_anchor_pos: 0.0059
+Episode_Reward/motion_global_anchor_ori: 0.0043
+    Episode_Reward/motion_body_pos: 0.0111
+    Episode_Reward/motion_body_ori: 0.0026
+Episode_Reward/motion_body_lin_vel: 0.0008
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0503
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0644
+   Metrics/motion/error_anchor_rot: 0.3209
+Metrics/motion/error_anchor_lin_vel: 0.6794
+Metrics/motion/error_anchor_ang_vel: 5.0416
+     Metrics/motion/error_body_pos: 0.0889
+     Metrics/motion/error_body_rot: 0.5771
+    Metrics/motion/error_joint_pos: 2.7181
+    Metrics/motion/error_joint_vel: 33.5585
+   Metrics/motion/sampling_entropy: 0.9925
+ Metrics/motion/sampling_top1_prob: 0.2425
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.4923
+ Metrics/motion/error_body_ang_vel: 9.3002
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 40.9167
+--------------------------------------------------------------------------------
+                   Total timesteps: 43008
+                    Iteration time: 3.44s
+                      Time elapsed: 00:00:37
+                               ETA: 00:26:23
+
+################################################################################
+                       [1m Learning iteration 7/300 [0m                       
+
+                       Computation: 1845 steps/s (collection: 3.165s, learning 0.164s)
+             Mean action noise std: 0.98
+          Mean value_function loss: 0.0058
+               Mean surrogate loss: -0.0298
+                 Mean entropy loss: 33.5753
+                       Mean reward: -0.27
+               Mean episode length: 6.30
+Episode_Reward/motion_global_anchor_pos: 0.0059
+Episode_Reward/motion_global_anchor_ori: 0.0043
+    Episode_Reward/motion_body_pos: 0.0110
+    Episode_Reward/motion_body_ori: 0.0026
+Episode_Reward/motion_body_lin_vel: 0.0007
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0489
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0653
+   Metrics/motion/error_anchor_rot: 0.3241
+Metrics/motion/error_anchor_lin_vel: 0.6664
+Metrics/motion/error_anchor_ang_vel: 5.2359
+     Metrics/motion/error_body_pos: 0.0890
+     Metrics/motion/error_body_rot: 0.5822
+    Metrics/motion/error_joint_pos: 2.7440
+    Metrics/motion/error_joint_vel: 33.9243
+   Metrics/motion/sampling_entropy: 0.9919
+ Metrics/motion/sampling_top1_prob: 0.2451
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.5032
+ Metrics/motion/error_body_ang_vel: 9.4325
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 41.5000
+--------------------------------------------------------------------------------
+                   Total timesteps: 49152
+                    Iteration time: 3.33s
+                      Time elapsed: 00:00:41
+                               ETA: 00:25:03
+
+################################################################################
+                       [1m Learning iteration 8/300 [0m                       
+
+                       Computation: 1842 steps/s (collection: 3.159s, learning 0.176s)
+             Mean action noise std: 0.98
+          Mean value_function loss: 0.0053
+               Mean surrogate loss: -0.0289
+                 Mean entropy loss: 33.5217
+                       Mean reward: -0.26
+               Mean episode length: 6.04
+Episode_Reward/motion_global_anchor_pos: 0.0058
+Episode_Reward/motion_global_anchor_ori: 0.0043
+    Episode_Reward/motion_body_pos: 0.0109
+    Episode_Reward/motion_body_ori: 0.0026
+Episode_Reward/motion_body_lin_vel: 0.0007
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0484
+        Episode_Reward/joint_limit: -0.0018
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0646
+   Metrics/motion/error_anchor_rot: 0.3097
+Metrics/motion/error_anchor_lin_vel: 0.6743
+Metrics/motion/error_anchor_ang_vel: 5.1401
+     Metrics/motion/error_body_pos: 0.0887
+     Metrics/motion/error_body_rot: 0.5785
+    Metrics/motion/error_joint_pos: 2.6972
+    Metrics/motion/error_joint_vel: 33.8090
+   Metrics/motion/sampling_entropy: 0.9919
+ Metrics/motion/sampling_top1_prob: 0.2449
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.5084
+ Metrics/motion/error_body_ang_vel: 9.4115
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 42.6250
+--------------------------------------------------------------------------------
+                   Total timesteps: 55296
+                    Iteration time: 3.33s
+                      Time elapsed: 00:00:44
+                               ETA: 00:23:59
+
+################################################################################
+                       [1m Learning iteration 9/300 [0m                       
+
+                       Computation: 1794 steps/s (collection: 3.230s, learning 0.194s)
+             Mean action noise std: 0.97
+          Mean value_function loss: 0.0055
+               Mean surrogate loss: -0.0290
+                 Mean entropy loss: 33.4669
+                       Mean reward: -0.25
+               Mean episode length: 6.15
+Episode_Reward/motion_global_anchor_pos: 0.0057
+Episode_Reward/motion_global_anchor_ori: 0.0042
+    Episode_Reward/motion_body_pos: 0.0107
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0007
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0462
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0636
+   Metrics/motion/error_anchor_rot: 0.3130
+Metrics/motion/error_anchor_lin_vel: 0.6652
+Metrics/motion/error_anchor_ang_vel: 5.2139
+     Metrics/motion/error_body_pos: 0.0883
+     Metrics/motion/error_body_rot: 0.5783
+    Metrics/motion/error_joint_pos: 2.6910
+    Metrics/motion/error_joint_vel: 34.0209
+   Metrics/motion/sampling_entropy: 0.9911
+ Metrics/motion/sampling_top1_prob: 0.2463
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.5298
+ Metrics/motion/error_body_ang_vel: 9.5548
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 43.0417
+--------------------------------------------------------------------------------
+                   Total timesteps: 61440
+                    Iteration time: 3.42s
+                      Time elapsed: 00:00:47
+                               ETA: 00:23:11
+
+################################################################################
+                      [1m Learning iteration 10/300 [0m                       
+
+                       Computation: 1771 steps/s (collection: 3.273s, learning 0.194s)
+             Mean action noise std: 0.97
+          Mean value_function loss: 0.0050
+               Mean surrogate loss: -0.0287
+                 Mean entropy loss: 33.4126
+                       Mean reward: -0.24
+               Mean episode length: 5.96
+Episode_Reward/motion_global_anchor_pos: 0.0057
+Episode_Reward/motion_global_anchor_ori: 0.0041
+    Episode_Reward/motion_body_pos: 0.0106
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0007
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0456
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0642
+   Metrics/motion/error_anchor_rot: 0.3141
+Metrics/motion/error_anchor_lin_vel: 0.6805
+Metrics/motion/error_anchor_ang_vel: 5.3828
+     Metrics/motion/error_body_pos: 0.0877
+     Metrics/motion/error_body_rot: 0.5729
+    Metrics/motion/error_joint_pos: 2.6776
+    Metrics/motion/error_joint_vel: 34.3746
+   Metrics/motion/sampling_entropy: 0.9908
+ Metrics/motion/sampling_top1_prob: 0.2465
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.5379
+ Metrics/motion/error_body_ang_vel: 9.7497
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 43.7083
+--------------------------------------------------------------------------------
+                   Total timesteps: 67584
+                    Iteration time: 3.47s
+                      Time elapsed: 00:00:51
+                               ETA: 00:22:31
+
+################################################################################
+                      [1m Learning iteration 11/300 [0m                       
+
+                       Computation: 1808 steps/s (collection: 3.216s, learning 0.181s)
+             Mean action noise std: 0.97
+          Mean value_function loss: 0.0047
+               Mean surrogate loss: -0.0280
+                 Mean entropy loss: 33.3605
+                       Mean reward: -0.22
+               Mean episode length: 5.75
+Episode_Reward/motion_global_anchor_pos: 0.0056
+Episode_Reward/motion_global_anchor_ori: 0.0041
+    Episode_Reward/motion_body_pos: 0.0105
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0007
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0449
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0612
+   Metrics/motion/error_anchor_rot: 0.3052
+Metrics/motion/error_anchor_lin_vel: 0.6795
+Metrics/motion/error_anchor_ang_vel: 5.1138
+     Metrics/motion/error_body_pos: 0.0877
+     Metrics/motion/error_body_rot: 0.5773
+    Metrics/motion/error_joint_pos: 2.6815
+    Metrics/motion/error_joint_vel: 34.2837
+   Metrics/motion/sampling_entropy: 0.9907
+ Metrics/motion/sampling_top1_prob: 0.2455
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.5477
+ Metrics/motion/error_body_ang_vel: 9.5922
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 43.7917
+--------------------------------------------------------------------------------
+                   Total timesteps: 73728
+                    Iteration time: 3.40s
+                      Time elapsed: 00:00:54
+                               ETA: 00:21:56
+
+################################################################################
+                      [1m Learning iteration 12/300 [0m                       
+
+                       Computation: 1820 steps/s (collection: 3.196s, learning 0.179s)
+             Mean action noise std: 0.97
+          Mean value_function loss: 0.0039
+               Mean surrogate loss: -0.0284
+                 Mean entropy loss: 33.3122
+                       Mean reward: -0.22
+               Mean episode length: 5.56
+Episode_Reward/motion_global_anchor_pos: 0.0055
+Episode_Reward/motion_global_anchor_ori: 0.0040
+    Episode_Reward/motion_body_pos: 0.0103
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0006
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0428
+        Episode_Reward/joint_limit: -0.0016
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0635
+   Metrics/motion/error_anchor_rot: 0.3029
+Metrics/motion/error_anchor_lin_vel: 0.6873
+Metrics/motion/error_anchor_ang_vel: 5.0644
+     Metrics/motion/error_body_pos: 0.0873
+     Metrics/motion/error_body_rot: 0.5792
+    Metrics/motion/error_joint_pos: 2.6680
+    Metrics/motion/error_joint_vel: 34.7165
+   Metrics/motion/sampling_entropy: 0.9908
+ Metrics/motion/sampling_top1_prob: 0.2434
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.5737
+ Metrics/motion/error_body_ang_vel: 9.6925
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 44.6667
+--------------------------------------------------------------------------------
+                   Total timesteps: 79872
+                    Iteration time: 3.37s
+                      Time elapsed: 00:00:58
+                               ETA: 00:21:25
+
+################################################################################
+                      [1m Learning iteration 13/300 [0m                       
+
+                       Computation: 1850 steps/s (collection: 3.137s, learning 0.184s)
+             Mean action noise std: 0.97
+          Mean value_function loss: 0.0038
+               Mean surrogate loss: -0.0283
+                 Mean entropy loss: 33.2641
+                       Mean reward: -0.21
+               Mean episode length: 5.71
+Episode_Reward/motion_global_anchor_pos: 0.0055
+Episode_Reward/motion_global_anchor_ori: 0.0041
+    Episode_Reward/motion_body_pos: 0.0103
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0006
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0427
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0616
+   Metrics/motion/error_anchor_rot: 0.3141
+Metrics/motion/error_anchor_lin_vel: 0.6907
+Metrics/motion/error_anchor_ang_vel: 5.2772
+     Metrics/motion/error_body_pos: 0.0867
+     Metrics/motion/error_body_rot: 0.5780
+    Metrics/motion/error_joint_pos: 2.6763
+    Metrics/motion/error_joint_vel: 34.7725
+   Metrics/motion/sampling_entropy: 0.9909
+ Metrics/motion/sampling_top1_prob: 0.2418
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.5571
+ Metrics/motion/error_body_ang_vel: 9.7852
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 45.0417
+--------------------------------------------------------------------------------
+                   Total timesteps: 86016
+                    Iteration time: 3.32s
+                      Time elapsed: 00:01:01
+                               ETA: 00:20:57
+
+################################################################################
+                      [1m Learning iteration 14/300 [0m                       
+
+                       Computation: 4508 steps/s (collection: 1.244s, learning 0.119s)
+             Mean action noise std: 0.97
+          Mean value_function loss: 0.0040
+               Mean surrogate loss: -0.0272
+                 Mean entropy loss: 33.2203
+                       Mean reward: -0.21
+               Mean episode length: 5.71
+Episode_Reward/motion_global_anchor_pos: 0.0054
+Episode_Reward/motion_global_anchor_ori: 0.0040
+    Episode_Reward/motion_body_pos: 0.0101
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0006
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0409
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0603
+   Metrics/motion/error_anchor_rot: 0.2994
+Metrics/motion/error_anchor_lin_vel: 0.6824
+Metrics/motion/error_anchor_ang_vel: 5.2779
+     Metrics/motion/error_body_pos: 0.0850
+     Metrics/motion/error_body_rot: 0.5650
+    Metrics/motion/error_joint_pos: 2.6321
+    Metrics/motion/error_joint_vel: 35.0976
+   Metrics/motion/sampling_entropy: 0.9908
+ Metrics/motion/sampling_top1_prob: 0.2408
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.5945
+ Metrics/motion/error_body_ang_vel: 9.8041
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 45.7083
+--------------------------------------------------------------------------------
+                   Total timesteps: 92160
+                    Iteration time: 1.36s
+                      Time elapsed: 00:01:02
+                               ETA: 00:19:55
+
+################################################################################
+                      [1m Learning iteration 15/300 [0m                       
+
+                       Computation: 4742 steps/s (collection: 1.182s, learning 0.114s)
+             Mean action noise std: 0.96
+          Mean value_function loss: 0.0034
+               Mean surrogate loss: -0.0282
+                 Mean entropy loss: 33.1768
+                       Mean reward: -0.21
+               Mean episode length: 5.66
+Episode_Reward/motion_global_anchor_pos: 0.0054
+Episode_Reward/motion_global_anchor_ori: 0.0041
+    Episode_Reward/motion_body_pos: 0.0101
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0005
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0409
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0599
+   Metrics/motion/error_anchor_rot: 0.2834
+Metrics/motion/error_anchor_lin_vel: 0.6759
+Metrics/motion/error_anchor_ang_vel: 5.0833
+     Metrics/motion/error_body_pos: 0.0850
+     Metrics/motion/error_body_rot: 0.5668
+    Metrics/motion/error_joint_pos: 2.6180
+    Metrics/motion/error_joint_vel: 34.8608
+   Metrics/motion/sampling_entropy: 0.9902
+ Metrics/motion/sampling_top1_prob: 0.2415
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.5782
+ Metrics/motion/error_body_ang_vel: 9.6892
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 45.6250
+--------------------------------------------------------------------------------
+                   Total timesteps: 98304
+                    Iteration time: 1.30s
+                      Time elapsed: 00:01:04
+                               ETA: 00:19:00
+
+################################################################################
+                      [1m Learning iteration 16/300 [0m                       
+
+                       Computation: 4852 steps/s (collection: 1.143s, learning 0.123s)
+             Mean action noise std: 0.96
+          Mean value_function loss: 0.0034
+               Mean surrogate loss: -0.0289
+                 Mean entropy loss: 33.1294
+                       Mean reward: -0.19
+               Mean episode length: 5.47
+Episode_Reward/motion_global_anchor_pos: 0.0053
+Episode_Reward/motion_global_anchor_ori: 0.0040
+    Episode_Reward/motion_body_pos: 0.0099
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0005
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0396
+        Episode_Reward/joint_limit: -0.0016
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0606
+   Metrics/motion/error_anchor_rot: 0.2831
+Metrics/motion/error_anchor_lin_vel: 0.6877
+Metrics/motion/error_anchor_ang_vel: 4.8459
+     Metrics/motion/error_body_pos: 0.0834
+     Metrics/motion/error_body_rot: 0.5588
+    Metrics/motion/error_joint_pos: 2.6003
+    Metrics/motion/error_joint_vel: 35.3611
+   Metrics/motion/sampling_entropy: 0.9898
+ Metrics/motion/sampling_top1_prob: 0.2421
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.5763
+ Metrics/motion/error_body_ang_vel: 9.5944
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 46.5000
+--------------------------------------------------------------------------------
+                   Total timesteps: 104448
+                    Iteration time: 1.27s
+                      Time elapsed: 00:01:05
+                               ETA: 00:18:10
+
+################################################################################
+                      [1m Learning iteration 17/300 [0m                       
+
+                       Computation: 4294 steps/s (collection: 1.239s, learning 0.191s)
+             Mean action noise std: 0.96
+          Mean value_function loss: 0.0029
+               Mean surrogate loss: -0.0277
+                 Mean entropy loss: 33.0860
+                       Mean reward: -0.19
+               Mean episode length: 5.48
+Episode_Reward/motion_global_anchor_pos: 0.0052
+Episode_Reward/motion_global_anchor_ori: 0.0039
+    Episode_Reward/motion_body_pos: 0.0098
+    Episode_Reward/motion_body_ori: 0.0026
+Episode_Reward/motion_body_lin_vel: 0.0005
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0386
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0589
+   Metrics/motion/error_anchor_rot: 0.2758
+Metrics/motion/error_anchor_lin_vel: 0.6743
+Metrics/motion/error_anchor_ang_vel: 4.9305
+     Metrics/motion/error_body_pos: 0.0822
+     Metrics/motion/error_body_rot: 0.5487
+    Metrics/motion/error_joint_pos: 2.5545
+    Metrics/motion/error_joint_vel: 35.4747
+   Metrics/motion/sampling_entropy: 0.9896
+ Metrics/motion/sampling_top1_prob: 0.2431
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.5975
+ Metrics/motion/error_body_ang_vel: 9.7336
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 47.4167
+--------------------------------------------------------------------------------
+                   Total timesteps: 110592
+                    Iteration time: 1.43s
+                      Time elapsed: 00:01:06
+                               ETA: 00:17:28
+
+################################################################################
+                      [1m Learning iteration 18/300 [0m                       
+
+                       Computation: 1796 steps/s (collection: 3.256s, learning 0.165s)
+             Mean action noise std: 0.96
+          Mean value_function loss: 0.0026
+               Mean surrogate loss: -0.0303
+                 Mean entropy loss: 33.0462
+                       Mean reward: -0.18
+               Mean episode length: 5.33
+Episode_Reward/motion_global_anchor_pos: 0.0051
+Episode_Reward/motion_global_anchor_ori: 0.0039
+    Episode_Reward/motion_body_pos: 0.0097
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0005
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0376
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0592
+   Metrics/motion/error_anchor_rot: 0.2766
+Metrics/motion/error_anchor_lin_vel: 0.6909
+Metrics/motion/error_anchor_ang_vel: 5.1104
+     Metrics/motion/error_body_pos: 0.0828
+     Metrics/motion/error_body_rot: 0.5488
+    Metrics/motion/error_joint_pos: 2.5399
+    Metrics/motion/error_joint_vel: 35.7683
+   Metrics/motion/sampling_entropy: 0.9893
+ Metrics/motion/sampling_top1_prob: 0.2453
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6199
+ Metrics/motion/error_body_ang_vel: 9.9099
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 48.1667
+--------------------------------------------------------------------------------
+                   Total timesteps: 116736
+                    Iteration time: 3.42s
+                      Time elapsed: 00:01:10
+                               ETA: 00:17:20
+
+################################################################################
+                      [1m Learning iteration 19/300 [0m                       
+
+                       Computation: 1841 steps/s (collection: 3.160s, learning 0.175s)
+             Mean action noise std: 0.96
+          Mean value_function loss: 0.0027
+               Mean surrogate loss: -0.0292
+                 Mean entropy loss: 33.0039
+                       Mean reward: -0.17
+               Mean episode length: 5.38
+Episode_Reward/motion_global_anchor_pos: 0.0051
+Episode_Reward/motion_global_anchor_ori: 0.0039
+    Episode_Reward/motion_body_pos: 0.0096
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0005
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0367
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0580
+   Metrics/motion/error_anchor_rot: 0.2775
+Metrics/motion/error_anchor_lin_vel: 0.6722
+Metrics/motion/error_anchor_ang_vel: 5.0571
+     Metrics/motion/error_body_pos: 0.0823
+     Metrics/motion/error_body_rot: 0.5524
+    Metrics/motion/error_joint_pos: 2.5606
+    Metrics/motion/error_joint_vel: 35.7651
+   Metrics/motion/sampling_entropy: 0.9893
+ Metrics/motion/sampling_top1_prob: 0.2457
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6128
+ Metrics/motion/error_body_ang_vel: 9.8274
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 48.3750
+--------------------------------------------------------------------------------
+                   Total timesteps: 122880
+                    Iteration time: 3.34s
+                      Time elapsed: 00:01:13
+                               ETA: 00:17:12
+
+################################################################################
+                      [1m Learning iteration 20/300 [0m                       
+
+                       Computation: 1812 steps/s (collection: 3.219s, learning 0.171s)
+             Mean action noise std: 0.95
+          Mean value_function loss: 0.0025
+               Mean surrogate loss: -0.0283
+                 Mean entropy loss: 32.9606
+                       Mean reward: -0.19
+               Mean episode length: 5.42
+Episode_Reward/motion_global_anchor_pos: 0.0051
+Episode_Reward/motion_global_anchor_ori: 0.0039
+    Episode_Reward/motion_body_pos: 0.0096
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0005
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0366
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0569
+   Metrics/motion/error_anchor_rot: 0.2801
+Metrics/motion/error_anchor_lin_vel: 0.6658
+Metrics/motion/error_anchor_ang_vel: 5.0651
+     Metrics/motion/error_body_pos: 0.0821
+     Metrics/motion/error_body_rot: 0.5482
+    Metrics/motion/error_joint_pos: 2.5519
+    Metrics/motion/error_joint_vel: 36.1503
+   Metrics/motion/sampling_entropy: 0.9894
+ Metrics/motion/sampling_top1_prob: 0.2450
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6246
+ Metrics/motion/error_body_ang_vel: 9.9172
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 48.4167
+--------------------------------------------------------------------------------
+                   Total timesteps: 129024
+                    Iteration time: 3.39s
+                      Time elapsed: 00:01:16
+                               ETA: 00:17:04
+
+################################################################################
+                      [1m Learning iteration 21/300 [0m                       
+
+                       Computation: 1827 steps/s (collection: 3.181s, learning 0.181s)
+             Mean action noise std: 0.95
+          Mean value_function loss: 0.0023
+               Mean surrogate loss: -0.0289
+                 Mean entropy loss: 32.9182
+                       Mean reward: -0.16
+               Mean episode length: 5.26
+Episode_Reward/motion_global_anchor_pos: 0.0050
+Episode_Reward/motion_global_anchor_ori: 0.0038
+    Episode_Reward/motion_body_pos: 0.0094
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0355
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0580
+   Metrics/motion/error_anchor_rot: 0.2745
+Metrics/motion/error_anchor_lin_vel: 0.6735
+Metrics/motion/error_anchor_ang_vel: 5.0314
+     Metrics/motion/error_body_pos: 0.0813
+     Metrics/motion/error_body_rot: 0.5464
+    Metrics/motion/error_joint_pos: 2.5267
+    Metrics/motion/error_joint_vel: 36.3642
+   Metrics/motion/sampling_entropy: 0.9892
+ Metrics/motion/sampling_top1_prob: 0.2449
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6337
+ Metrics/motion/error_body_ang_vel: 10.0051
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 49.2083
+--------------------------------------------------------------------------------
+                   Total timesteps: 135168
+                    Iteration time: 3.36s
+                      Time elapsed: 00:01:20
+                               ETA: 00:16:57
+
+################################################################################
+                      [1m Learning iteration 22/300 [0m                       
+
+                       Computation: 1787 steps/s (collection: 3.249s, learning 0.189s)
+             Mean action noise std: 0.95
+          Mean value_function loss: 0.0020
+               Mean surrogate loss: -0.0291
+                 Mean entropy loss: 32.8769
+                       Mean reward: -0.15
+               Mean episode length: 5.19
+Episode_Reward/motion_global_anchor_pos: 0.0050
+Episode_Reward/motion_global_anchor_ori: 0.0038
+    Episode_Reward/motion_body_pos: 0.0094
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0348
+        Episode_Reward/joint_limit: -0.0016
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0565
+   Metrics/motion/error_anchor_rot: 0.2640
+Metrics/motion/error_anchor_lin_vel: 0.6844
+Metrics/motion/error_anchor_ang_vel: 4.8033
+     Metrics/motion/error_body_pos: 0.0805
+     Metrics/motion/error_body_rot: 0.5423
+    Metrics/motion/error_joint_pos: 2.5131
+    Metrics/motion/error_joint_vel: 36.2901
+   Metrics/motion/sampling_entropy: 0.9892
+ Metrics/motion/sampling_top1_prob: 0.2437
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6223
+ Metrics/motion/error_body_ang_vel: 9.8327
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 49.8750
+--------------------------------------------------------------------------------
+                   Total timesteps: 141312
+                    Iteration time: 3.44s
+                      Time elapsed: 00:01:23
+                               ETA: 00:16:51
+
+################################################################################
+                      [1m Learning iteration 23/300 [0m                       
+
+                       Computation: 1796 steps/s (collection: 3.230s, learning 0.191s)
+             Mean action noise std: 0.95
+          Mean value_function loss: 0.0022
+               Mean surrogate loss: -0.0293
+                 Mean entropy loss: 32.8328
+                       Mean reward: -0.15
+               Mean episode length: 5.05
+Episode_Reward/motion_global_anchor_pos: 0.0050
+Episode_Reward/motion_global_anchor_ori: 0.0038
+    Episode_Reward/motion_body_pos: 0.0094
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0349
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0578
+   Metrics/motion/error_anchor_rot: 0.2683
+Metrics/motion/error_anchor_lin_vel: 0.6793
+Metrics/motion/error_anchor_ang_vel: 4.9457
+     Metrics/motion/error_body_pos: 0.0812
+     Metrics/motion/error_body_rot: 0.5446
+    Metrics/motion/error_joint_pos: 2.5130
+    Metrics/motion/error_joint_vel: 36.3525
+   Metrics/motion/sampling_entropy: 0.9891
+ Metrics/motion/sampling_top1_prob: 0.2433
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6359
+ Metrics/motion/error_body_ang_vel: 9.9710
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 48.9167
+--------------------------------------------------------------------------------
+                   Total timesteps: 147456
+                    Iteration time: 3.42s
+                      Time elapsed: 00:01:27
+                               ETA: 00:16:45
+
+################################################################################
+                      [1m Learning iteration 24/300 [0m                       
+
+                       Computation: 1757 steps/s (collection: 3.326s, learning 0.170s)
+             Mean action noise std: 0.95
+          Mean value_function loss: 0.0020
+               Mean surrogate loss: -0.0297
+                 Mean entropy loss: 32.7897
+                       Mean reward: -0.16
+               Mean episode length: 5.11
+Episode_Reward/motion_global_anchor_pos: 0.0050
+Episode_Reward/motion_global_anchor_ori: 0.0038
+    Episode_Reward/motion_body_pos: 0.0093
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0341
+        Episode_Reward/joint_limit: -0.0016
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0561
+   Metrics/motion/error_anchor_rot: 0.2621
+Metrics/motion/error_anchor_lin_vel: 0.6780
+Metrics/motion/error_anchor_ang_vel: 4.9710
+     Metrics/motion/error_body_pos: 0.0799
+     Metrics/motion/error_body_rot: 0.5383
+    Metrics/motion/error_joint_pos: 2.5072
+    Metrics/motion/error_joint_vel: 36.5896
+   Metrics/motion/sampling_entropy: 0.9887
+ Metrics/motion/sampling_top1_prob: 0.2447
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6337
+ Metrics/motion/error_body_ang_vel: 10.0008
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 50.2917
+--------------------------------------------------------------------------------
+                   Total timesteps: 153600
+                    Iteration time: 3.50s
+                      Time elapsed: 00:01:30
+                               ETA: 00:16:39
+
+################################################################################
+                      [1m Learning iteration 25/300 [0m                       
+
+                       Computation: 1809 steps/s (collection: 3.218s, learning 0.177s)
+             Mean action noise std: 0.95
+          Mean value_function loss: 0.0019
+               Mean surrogate loss: -0.0293
+                 Mean entropy loss: 32.7475
+                       Mean reward: -0.14
+               Mean episode length: 4.93
+Episode_Reward/motion_global_anchor_pos: 0.0049
+Episode_Reward/motion_global_anchor_ori: 0.0038
+    Episode_Reward/motion_body_pos: 0.0092
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0334
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0564
+   Metrics/motion/error_anchor_rot: 0.2589
+Metrics/motion/error_anchor_lin_vel: 0.6805
+Metrics/motion/error_anchor_ang_vel: 4.9062
+     Metrics/motion/error_body_pos: 0.0797
+     Metrics/motion/error_body_rot: 0.5333
+    Metrics/motion/error_joint_pos: 2.4855
+    Metrics/motion/error_joint_vel: 36.9948
+   Metrics/motion/sampling_entropy: 0.9885
+ Metrics/motion/sampling_top1_prob: 0.2454
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6419
+ Metrics/motion/error_body_ang_vel: 10.0184
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 50.0417
+--------------------------------------------------------------------------------
+                   Total timesteps: 159744
+                    Iteration time: 3.40s
+                      Time elapsed: 00:01:33
+                               ETA: 00:16:33
+
+################################################################################
+                      [1m Learning iteration 26/300 [0m                       
+
+                       Computation: 1832 steps/s (collection: 3.176s, learning 0.176s)
+             Mean action noise std: 0.94
+          Mean value_function loss: 0.0022
+               Mean surrogate loss: -0.0287
+                 Mean entropy loss: 32.7068
+                       Mean reward: -0.14
+               Mean episode length: 5.03
+Episode_Reward/motion_global_anchor_pos: 0.0049
+Episode_Reward/motion_global_anchor_ori: 0.0038
+    Episode_Reward/motion_body_pos: 0.0092
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0331
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0564
+   Metrics/motion/error_anchor_rot: 0.2610
+Metrics/motion/error_anchor_lin_vel: 0.6985
+Metrics/motion/error_anchor_ang_vel: 5.0515
+     Metrics/motion/error_body_pos: 0.0802
+     Metrics/motion/error_body_rot: 0.5379
+    Metrics/motion/error_joint_pos: 2.4755
+    Metrics/motion/error_joint_vel: 36.9655
+   Metrics/motion/sampling_entropy: 0.9884
+ Metrics/motion/sampling_top1_prob: 0.2456
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6687
+ Metrics/motion/error_body_ang_vel: 10.0799
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 50.4167
+--------------------------------------------------------------------------------
+                   Total timesteps: 165888
+                    Iteration time: 3.35s
+                      Time elapsed: 00:01:37
+                               ETA: 00:16:27
+
+################################################################################
+                      [1m Learning iteration 27/300 [0m                       
+
+                       Computation: 1821 steps/s (collection: 3.199s, learning 0.174s)
+             Mean action noise std: 0.94
+          Mean value_function loss: 0.0019
+               Mean surrogate loss: -0.0288
+                 Mean entropy loss: 32.6687
+                       Mean reward: -0.14
+               Mean episode length: 5.34
+Episode_Reward/motion_global_anchor_pos: 0.0049
+Episode_Reward/motion_global_anchor_ori: 0.0038
+    Episode_Reward/motion_body_pos: 0.0092
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0325
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0560
+   Metrics/motion/error_anchor_rot: 0.2677
+Metrics/motion/error_anchor_lin_vel: 0.6888
+Metrics/motion/error_anchor_ang_vel: 4.8822
+     Metrics/motion/error_body_pos: 0.0807
+     Metrics/motion/error_body_rot: 0.5387
+    Metrics/motion/error_joint_pos: 2.4903
+    Metrics/motion/error_joint_vel: 36.3180
+   Metrics/motion/sampling_entropy: 0.9882
+ Metrics/motion/sampling_top1_prob: 0.2455
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6521
+ Metrics/motion/error_body_ang_vel: 9.9196
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 50.3750
+--------------------------------------------------------------------------------
+                   Total timesteps: 172032
+                    Iteration time: 3.37s
+                      Time elapsed: 00:01:40
+                               ETA: 00:16:21
+
+################################################################################
+                      [1m Learning iteration 28/300 [0m                       
+
+                       Computation: 1779 steps/s (collection: 3.259s, learning 0.194s)
+             Mean action noise std: 0.94
+          Mean value_function loss: 0.0017
+               Mean surrogate loss: -0.0289
+                 Mean entropy loss: 32.6294
+                       Mean reward: -0.13
+               Mean episode length: 5.14
+Episode_Reward/motion_global_anchor_pos: 0.0049
+Episode_Reward/motion_global_anchor_ori: 0.0037
+    Episode_Reward/motion_body_pos: 0.0092
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0323
+        Episode_Reward/joint_limit: -0.0016
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0569
+   Metrics/motion/error_anchor_rot: 0.2648
+Metrics/motion/error_anchor_lin_vel: 0.6714
+Metrics/motion/error_anchor_ang_vel: 5.0539
+     Metrics/motion/error_body_pos: 0.0794
+     Metrics/motion/error_body_rot: 0.5315
+    Metrics/motion/error_joint_pos: 2.4610
+    Metrics/motion/error_joint_vel: 36.7389
+   Metrics/motion/sampling_entropy: 0.9883
+ Metrics/motion/sampling_top1_prob: 0.2460
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6604
+ Metrics/motion/error_body_ang_vel: 10.1195
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 50.8750
+--------------------------------------------------------------------------------
+                   Total timesteps: 178176
+                    Iteration time: 3.45s
+                      Time elapsed: 00:01:44
+                               ETA: 00:16:16
+
+################################################################################
+                      [1m Learning iteration 29/300 [0m                       
+
+                       Computation: 1816 steps/s (collection: 3.189s, learning 0.193s)
+             Mean action noise std: 0.94
+          Mean value_function loss: 0.0017
+               Mean surrogate loss: -0.0286
+                 Mean entropy loss: 32.5895
+                       Mean reward: -0.13
+               Mean episode length: 5.03
+Episode_Reward/motion_global_anchor_pos: 0.0048
+Episode_Reward/motion_global_anchor_ori: 0.0037
+    Episode_Reward/motion_body_pos: 0.0091
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0316
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0565
+   Metrics/motion/error_anchor_rot: 0.2706
+Metrics/motion/error_anchor_lin_vel: 0.6973
+Metrics/motion/error_anchor_ang_vel: 5.0250
+     Metrics/motion/error_body_pos: 0.0799
+     Metrics/motion/error_body_rot: 0.5333
+    Metrics/motion/error_joint_pos: 2.4592
+    Metrics/motion/error_joint_vel: 36.5238
+   Metrics/motion/sampling_entropy: 0.9882
+ Metrics/motion/sampling_top1_prob: 0.2463
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6599
+ Metrics/motion/error_body_ang_vel: 10.0671
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 51.1667
+--------------------------------------------------------------------------------
+                   Total timesteps: 184320
+                    Iteration time: 3.38s
+                      Time elapsed: 00:01:47
+                               ETA: 00:16:11
+
+################################################################################
+                      [1m Learning iteration 30/300 [0m                       
+
+                       Computation: 1800 steps/s (collection: 3.236s, learning 0.177s)
+             Mean action noise std: 0.94
+          Mean value_function loss: 0.0021
+               Mean surrogate loss: -0.0271
+                 Mean entropy loss: 32.5531
+                       Mean reward: -0.13
+               Mean episode length: 4.96
+Episode_Reward/motion_global_anchor_pos: 0.0048
+Episode_Reward/motion_global_anchor_ori: 0.0037
+    Episode_Reward/motion_body_pos: 0.0091
+    Episode_Reward/motion_body_ori: 0.0026
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0315
+        Episode_Reward/joint_limit: -0.0016
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0558
+   Metrics/motion/error_anchor_rot: 0.2656
+Metrics/motion/error_anchor_lin_vel: 0.6738
+Metrics/motion/error_anchor_ang_vel: 4.9517
+     Metrics/motion/error_body_pos: 0.0797
+     Metrics/motion/error_body_rot: 0.5297
+    Metrics/motion/error_joint_pos: 2.4482
+    Metrics/motion/error_joint_vel: 36.8508
+   Metrics/motion/sampling_entropy: 0.9881
+ Metrics/motion/sampling_top1_prob: 0.2468
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6587
+ Metrics/motion/error_body_ang_vel: 10.0802
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 50.8333
+--------------------------------------------------------------------------------
+                   Total timesteps: 190464
+                    Iteration time: 3.41s
+                      Time elapsed: 00:01:50
+                               ETA: 00:16:06
+
+################################################################################
+                      [1m Learning iteration 31/300 [0m                       
+
+                       Computation: 1841 steps/s (collection: 3.162s, learning 0.174s)
+             Mean action noise std: 0.94
+          Mean value_function loss: 0.0016
+               Mean surrogate loss: -0.0289
+                 Mean entropy loss: 32.5159
+                       Mean reward: -0.12
+               Mean episode length: 4.96
+Episode_Reward/motion_global_anchor_pos: 0.0048
+Episode_Reward/motion_global_anchor_ori: 0.0037
+    Episode_Reward/motion_body_pos: 0.0091
+    Episode_Reward/motion_body_ori: 0.0026
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0311
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0549
+   Metrics/motion/error_anchor_rot: 0.2583
+Metrics/motion/error_anchor_lin_vel: 0.6966
+Metrics/motion/error_anchor_ang_vel: 4.8556
+     Metrics/motion/error_body_pos: 0.0793
+     Metrics/motion/error_body_rot: 0.5287
+    Metrics/motion/error_joint_pos: 2.4436
+    Metrics/motion/error_joint_vel: 37.1126
+   Metrics/motion/sampling_entropy: 0.9879
+ Metrics/motion/sampling_top1_prob: 0.2472
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6718
+ Metrics/motion/error_body_ang_vel: 10.0893
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 51.0000
+--------------------------------------------------------------------------------
+                   Total timesteps: 196608
+                    Iteration time: 3.34s
+                      Time elapsed: 00:01:54
+                               ETA: 00:16:00
+
+################################################################################
+                      [1m Learning iteration 32/300 [0m                       
+
+                       Computation: 1812 steps/s (collection: 3.214s, learning 0.175s)
+             Mean action noise std: 0.94
+          Mean value_function loss: 0.0015
+               Mean surrogate loss: -0.0290
+                 Mean entropy loss: 32.4765
+                       Mean reward: -0.12
+               Mean episode length: 4.95
+Episode_Reward/motion_global_anchor_pos: 0.0048
+Episode_Reward/motion_global_anchor_ori: 0.0037
+    Episode_Reward/motion_body_pos: 0.0090
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0307
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0561
+   Metrics/motion/error_anchor_rot: 0.2612
+Metrics/motion/error_anchor_lin_vel: 0.6980
+Metrics/motion/error_anchor_ang_vel: 4.9102
+     Metrics/motion/error_body_pos: 0.0794
+     Metrics/motion/error_body_rot: 0.5291
+    Metrics/motion/error_joint_pos: 2.4288
+    Metrics/motion/error_joint_vel: 37.1185
+   Metrics/motion/sampling_entropy: 0.9878
+ Metrics/motion/sampling_top1_prob: 0.2473
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6785
+ Metrics/motion/error_body_ang_vel: 10.0817
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 51.7083
+--------------------------------------------------------------------------------
+                   Total timesteps: 202752
+                    Iteration time: 3.39s
+                      Time elapsed: 00:01:57
+                               ETA: 00:15:55
+
+################################################################################
+                      [1m Learning iteration 33/300 [0m                       
+
+                       Computation: 1813 steps/s (collection: 3.204s, learning 0.184s)
+             Mean action noise std: 0.93
+          Mean value_function loss: 0.0015
+               Mean surrogate loss: -0.0293
+                 Mean entropy loss: 32.4373
+                       Mean reward: -0.12
+               Mean episode length: 4.96
+Episode_Reward/motion_global_anchor_pos: 0.0048
+Episode_Reward/motion_global_anchor_ori: 0.0037
+    Episode_Reward/motion_body_pos: 0.0090
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0302
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0570
+   Metrics/motion/error_anchor_rot: 0.2603
+Metrics/motion/error_anchor_lin_vel: 0.6916
+Metrics/motion/error_anchor_ang_vel: 4.9436
+     Metrics/motion/error_body_pos: 0.0793
+     Metrics/motion/error_body_rot: 0.5309
+    Metrics/motion/error_joint_pos: 2.4193
+    Metrics/motion/error_joint_vel: 37.1817
+   Metrics/motion/sampling_entropy: 0.9876
+ Metrics/motion/sampling_top1_prob: 0.2480
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6768
+ Metrics/motion/error_body_ang_vel: 10.1272
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 52.2083
+--------------------------------------------------------------------------------
+                   Total timesteps: 208896
+                    Iteration time: 3.39s
+                      Time elapsed: 00:02:01
+                               ETA: 00:15:50
+
+################################################################################
+                      [1m Learning iteration 34/300 [0m                       
+
+                       Computation: 1834 steps/s (collection: 3.178s, learning 0.170s)
+             Mean action noise std: 0.93
+          Mean value_function loss: 0.0015
+               Mean surrogate loss: -0.0277
+                 Mean entropy loss: 32.3988
+                       Mean reward: -0.11
+               Mean episode length: 4.85
+Episode_Reward/motion_global_anchor_pos: 0.0048
+Episode_Reward/motion_global_anchor_ori: 0.0037
+    Episode_Reward/motion_body_pos: 0.0090
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0300
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0546
+   Metrics/motion/error_anchor_rot: 0.2642
+Metrics/motion/error_anchor_lin_vel: 0.6917
+Metrics/motion/error_anchor_ang_vel: 4.9044
+     Metrics/motion/error_body_pos: 0.0793
+     Metrics/motion/error_body_rot: 0.5321
+    Metrics/motion/error_joint_pos: 2.4302
+    Metrics/motion/error_joint_vel: 37.2810
+   Metrics/motion/sampling_entropy: 0.9873
+ Metrics/motion/sampling_top1_prob: 0.2482
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6751
+ Metrics/motion/error_body_ang_vel: 10.1393
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 51.5000
+--------------------------------------------------------------------------------
+                   Total timesteps: 215040
+                    Iteration time: 3.35s
+                      Time elapsed: 00:02:04
+                               ETA: 00:15:45
+
+################################################################################
+                      [1m Learning iteration 35/300 [0m                       
+
+                       Computation: 1853 steps/s (collection: 3.151s, learning 0.165s)
+             Mean action noise std: 0.93
+          Mean value_function loss: 0.0017
+               Mean surrogate loss: -0.0253
+                 Mean entropy loss: 32.3665
+                       Mean reward: -0.12
+               Mean episode length: 4.85
+Episode_Reward/motion_global_anchor_pos: 0.0048
+Episode_Reward/motion_global_anchor_ori: 0.0037
+    Episode_Reward/motion_body_pos: 0.0090
+    Episode_Reward/motion_body_ori: 0.0026
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0300
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0571
+   Metrics/motion/error_anchor_rot: 0.2535
+Metrics/motion/error_anchor_lin_vel: 0.6902
+Metrics/motion/error_anchor_ang_vel: 4.9003
+     Metrics/motion/error_body_pos: 0.0791
+     Metrics/motion/error_body_rot: 0.5281
+    Metrics/motion/error_joint_pos: 2.4222
+    Metrics/motion/error_joint_vel: 37.0404
+   Metrics/motion/sampling_entropy: 0.9870
+ Metrics/motion/sampling_top1_prob: 0.2485
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6695
+ Metrics/motion/error_body_ang_vel: 10.0437
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 51.9583
+--------------------------------------------------------------------------------
+                   Total timesteps: 221184
+                    Iteration time: 3.32s
+                      Time elapsed: 00:02:07
+                               ETA: 00:15:40
+
+################################################################################
+                      [1m Learning iteration 36/300 [0m                       
+
+                       Computation: 1741 steps/s (collection: 3.341s, learning 0.186s)
+             Mean action noise std: 0.93
+          Mean value_function loss: 0.0015
+               Mean surrogate loss: -0.0258
+                 Mean entropy loss: 32.3374
+                       Mean reward: -0.11
+               Mean episode length: 4.78
+Episode_Reward/motion_global_anchor_pos: 0.0047
+Episode_Reward/motion_global_anchor_ori: 0.0036
+    Episode_Reward/motion_body_pos: 0.0088
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0291
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0538
+   Metrics/motion/error_anchor_rot: 0.2566
+Metrics/motion/error_anchor_lin_vel: 0.6877
+Metrics/motion/error_anchor_ang_vel: 5.0506
+     Metrics/motion/error_body_pos: 0.0783
+     Metrics/motion/error_body_rot: 0.5252
+    Metrics/motion/error_joint_pos: 2.4094
+    Metrics/motion/error_joint_vel: 37.7812
+   Metrics/motion/sampling_entropy: 0.9868
+ Metrics/motion/sampling_top1_prob: 0.2490
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6938
+ Metrics/motion/error_body_ang_vel: 10.3442
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 52.4583
+--------------------------------------------------------------------------------
+                   Total timesteps: 227328
+                    Iteration time: 3.53s
+                      Time elapsed: 00:02:11
+                               ETA: 00:15:36
+
+################################################################################
+                      [1m Learning iteration 37/300 [0m                       
+
+                       Computation: 1784 steps/s (collection: 3.263s, learning 0.180s)
+             Mean action noise std: 0.93
+          Mean value_function loss: 0.0015
+               Mean surrogate loss: -0.0282
+                 Mean entropy loss: 32.3051
+                       Mean reward: -0.11
+               Mean episode length: 4.88
+Episode_Reward/motion_global_anchor_pos: 0.0048
+Episode_Reward/motion_global_anchor_ori: 0.0036
+    Episode_Reward/motion_body_pos: 0.0090
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0295
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0568
+   Metrics/motion/error_anchor_rot: 0.2706
+Metrics/motion/error_anchor_lin_vel: 0.6918
+Metrics/motion/error_anchor_ang_vel: 4.9829
+     Metrics/motion/error_body_pos: 0.0796
+     Metrics/motion/error_body_rot: 0.5317
+    Metrics/motion/error_joint_pos: 2.4186
+    Metrics/motion/error_joint_vel: 37.2051
+   Metrics/motion/sampling_entropy: 0.9868
+ Metrics/motion/sampling_top1_prob: 0.2490
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6908
+ Metrics/motion/error_body_ang_vel: 10.2152
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 51.4167
+--------------------------------------------------------------------------------
+                   Total timesteps: 233472
+                    Iteration time: 3.44s
+                      Time elapsed: 00:02:14
+                               ETA: 00:15:32
+
+################################################################################
+                      [1m Learning iteration 38/300 [0m                       
+
+                       Computation: 2263 steps/s (collection: 2.583s, learning 0.131s)
+             Mean action noise std: 0.93
+          Mean value_function loss: 0.0015
+               Mean surrogate loss: -0.0263
+                 Mean entropy loss: 32.2714
+                       Mean reward: -0.11
+               Mean episode length: 4.85
+Episode_Reward/motion_global_anchor_pos: 0.0047
+Episode_Reward/motion_global_anchor_ori: 0.0037
+    Episode_Reward/motion_body_pos: 0.0089
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0288
+        Episode_Reward/joint_limit: -0.0016
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0556
+   Metrics/motion/error_anchor_rot: 0.2511
+Metrics/motion/error_anchor_lin_vel: 0.6734
+Metrics/motion/error_anchor_ang_vel: 5.0015
+     Metrics/motion/error_body_pos: 0.0787
+     Metrics/motion/error_body_rot: 0.5288
+    Metrics/motion/error_joint_pos: 2.4176
+    Metrics/motion/error_joint_vel: 37.4894
+   Metrics/motion/sampling_entropy: 0.9866
+ Metrics/motion/sampling_top1_prob: 0.2495
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6877
+ Metrics/motion/error_body_ang_vel: 10.2567
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 52.9167
+--------------------------------------------------------------------------------
+                   Total timesteps: 239616
+                    Iteration time: 2.71s
+                      Time elapsed: 00:02:17
+                               ETA: 00:15:23
+
+################################################################################
+                      [1m Learning iteration 39/300 [0m                       
+
+                       Computation: 4701 steps/s (collection: 1.189s, learning 0.118s)
+             Mean action noise std: 0.93
+          Mean value_function loss: 0.0014
+               Mean surrogate loss: -0.0263
+                 Mean entropy loss: 32.2383
+                       Mean reward: -0.11
+               Mean episode length: 5.05
+Episode_Reward/motion_global_anchor_pos: 0.0047
+Episode_Reward/motion_global_anchor_ori: 0.0036
+    Episode_Reward/motion_body_pos: 0.0089
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0289
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0557
+   Metrics/motion/error_anchor_rot: 0.2589
+Metrics/motion/error_anchor_lin_vel: 0.6779
+Metrics/motion/error_anchor_ang_vel: 5.0319
+     Metrics/motion/error_body_pos: 0.0786
+     Metrics/motion/error_body_rot: 0.5305
+    Metrics/motion/error_joint_pos: 2.4110
+    Metrics/motion/error_joint_vel: 37.5260
+   Metrics/motion/sampling_entropy: 0.9865
+ Metrics/motion/sampling_top1_prob: 0.2499
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6808
+ Metrics/motion/error_body_ang_vel: 10.3302
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 52.0417
+--------------------------------------------------------------------------------
+                   Total timesteps: 245760
+                    Iteration time: 1.31s
+                      Time elapsed: 00:02:18
+                               ETA: 00:15:05
+
+################################################################################
+                      [1m Learning iteration 40/300 [0m                       
+
+                       Computation: 4777 steps/s (collection: 1.159s, learning 0.127s)
+             Mean action noise std: 0.93
+          Mean value_function loss: 0.0014
+               Mean surrogate loss: -0.0262
+                 Mean entropy loss: 32.2044
+                       Mean reward: -0.10
+               Mean episode length: 4.81
+Episode_Reward/motion_global_anchor_pos: 0.0047
+Episode_Reward/motion_global_anchor_ori: 0.0036
+    Episode_Reward/motion_body_pos: 0.0088
+    Episode_Reward/motion_body_ori: 0.0026
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0282
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0540
+   Metrics/motion/error_anchor_rot: 0.2562
+Metrics/motion/error_anchor_lin_vel: 0.6838
+Metrics/motion/error_anchor_ang_vel: 4.8794
+     Metrics/motion/error_body_pos: 0.0782
+     Metrics/motion/error_body_rot: 0.5227
+    Metrics/motion/error_joint_pos: 2.3744
+    Metrics/motion/error_joint_vel: 37.3942
+   Metrics/motion/sampling_entropy: 0.9865
+ Metrics/motion/sampling_top1_prob: 0.2499
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6775
+ Metrics/motion/error_body_ang_vel: 10.1565
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 52.4167
+--------------------------------------------------------------------------------
+                   Total timesteps: 251904
+                    Iteration time: 1.29s
+                      Time elapsed: 00:02:19
+                               ETA: 00:14:47
+
+################################################################################
+                      [1m Learning iteration 41/300 [0m                       
+
+                       Computation: 4818 steps/s (collection: 1.143s, learning 0.132s)
+             Mean action noise std: 0.92
+          Mean value_function loss: 0.0014
+               Mean surrogate loss: -0.0270
+                 Mean entropy loss: 32.1739
+                       Mean reward: -0.09
+               Mean episode length: 4.83
+Episode_Reward/motion_global_anchor_pos: 0.0047
+Episode_Reward/motion_global_anchor_ori: 0.0037
+    Episode_Reward/motion_body_pos: 0.0089
+    Episode_Reward/motion_body_ori: 0.0025
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0284
+        Episode_Reward/joint_limit: -0.0016
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0545
+   Metrics/motion/error_anchor_rot: 0.2479
+Metrics/motion/error_anchor_lin_vel: 0.6820
+Metrics/motion/error_anchor_ang_vel: 4.9672
+     Metrics/motion/error_body_pos: 0.0786
+     Metrics/motion/error_body_rot: 0.5269
+    Metrics/motion/error_joint_pos: 2.3895
+    Metrics/motion/error_joint_vel: 37.3090
+   Metrics/motion/sampling_entropy: 0.9863
+ Metrics/motion/sampling_top1_prob: 0.2495
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6795
+ Metrics/motion/error_body_ang_vel: 10.1998
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 52.3333
+--------------------------------------------------------------------------------
+                   Total timesteps: 258048
+                    Iteration time: 1.27s
+                      Time elapsed: 00:02:21
+                               ETA: 00:14:31
+
+################################################################################
+                      [1m Learning iteration 42/300 [0m                       
+
+                       Computation: 2232 steps/s (collection: 2.577s, learning 0.176s)
+             Mean action noise std: 0.92
+          Mean value_function loss: 0.0014
+               Mean surrogate loss: -0.0273
+                 Mean entropy loss: 32.1424
+                       Mean reward: -0.09
+               Mean episode length: 4.74
+Episode_Reward/motion_global_anchor_pos: 0.0047
+Episode_Reward/motion_global_anchor_ori: 0.0036
+    Episode_Reward/motion_body_pos: 0.0089
+    Episode_Reward/motion_body_ori: 0.0026
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0282
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0558
+   Metrics/motion/error_anchor_rot: 0.2576
+Metrics/motion/error_anchor_lin_vel: 0.6794
+Metrics/motion/error_anchor_ang_vel: 4.8705
+     Metrics/motion/error_body_pos: 0.0785
+     Metrics/motion/error_body_rot: 0.5235
+    Metrics/motion/error_joint_pos: 2.3784
+    Metrics/motion/error_joint_vel: 36.9984
+   Metrics/motion/sampling_entropy: 0.9861
+ Metrics/motion/sampling_top1_prob: 0.2501
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6794
+ Metrics/motion/error_body_ang_vel: 10.1067
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 52.0000
+--------------------------------------------------------------------------------
+                   Total timesteps: 264192
+                    Iteration time: 2.75s
+                      Time elapsed: 00:02:24
+                               ETA: 00:14:24
+
+################################################################################
+                      [1m Learning iteration 43/300 [0m                       
+
+                       Computation: 1785 steps/s (collection: 3.253s, learning 0.187s)
+             Mean action noise std: 0.92
+          Mean value_function loss: 0.0013
+               Mean surrogate loss: -0.0256
+                 Mean entropy loss: 32.1093
+                       Mean reward: -0.10
+               Mean episode length: 4.91
+Episode_Reward/motion_global_anchor_pos: 0.0047
+Episode_Reward/motion_global_anchor_ori: 0.0036
+    Episode_Reward/motion_body_pos: 0.0089
+    Episode_Reward/motion_body_ori: 0.0026
+Episode_Reward/motion_body_lin_vel: 0.0004
+Episode_Reward/motion_body_ang_vel: 0.0000
+     Episode_Reward/action_rate_l2: -0.0277
+        Episode_Reward/joint_limit: -0.0017
+ Episode_Reward/undesired_contacts: -0.0003
+   Metrics/motion/error_anchor_pos: 0.0562
+   Metrics/motion/error_anchor_rot: 0.2562
+Metrics/motion/error_anchor_lin_vel: 0.6958
+Metrics/motion/error_anchor_ang_vel: 4.9770
+     Metrics/motion/error_body_pos: 0.0785
+     Metrics/motion/error_body_rot: 0.5265
+    Metrics/motion/error_joint_pos: 2.3820
+    Metrics/motion/error_joint_vel: 37.3399
+   Metrics/motion/sampling_entropy: 0.9858
+ Metrics/motion/sampling_top1_prob: 0.2504
+  Metrics/motion/sampling_top1_bin: 0.4000
+ Metrics/motion/error_body_lin_vel: 1.6793
+ Metrics/motion/error_body_ang_vel: 10.1716
+      Episode_Termination/time_out: 0.0000
+    Episode_Termination/anchor_pos: 0.0000
+    Episode_Termination/anchor_ori: 0.0000
+   Episode_Termination/ee_body_pos: 52.4583
+--------------------------------------------------------------------------------
+                   Total timesteps: 270336
+                    Iteration time: 3.44s
+                      Time elapsed: 00:02:27
+                               ETA: 00:14:21
+

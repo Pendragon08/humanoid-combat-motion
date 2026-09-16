@@ -1,0 +1,12 @@
+{
+  "reason": "30Hz projection followed by linear interpolation violates 50Hz acceleration screen; final projection now performed at50Hz",
+  "initial_kept": [
+    "references_initial30hz",
+    "tracking_references_initial30hz"
+  ],
+  "final": [
+    "references_50hz",
+    "tracking_references_50hz"
+  ],
+  "generated_training_not_started_when_switched": true
+}

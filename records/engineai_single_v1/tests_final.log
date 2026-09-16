@@ -1,0 +1,12 @@
+test_constant_valid_pose_unchanged (tests.test_engineai_single.ProjectionTests) ... /data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/lib/python3.10/site-packages/osqp/interface.py:405: PendingDeprecationWarning: The default value of raise_error will change to True in the future.
+  warnings.warn(
+ok
+test_constraints_applied_after_rate_conversion (tests.test_engineai_single.ProjectionTests) ... /data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/lib/python3.10/site-packages/osqp/interface.py:405: PendingDeprecationWarning: The default value of raise_error will change to True in the future.
+  warnings.warn(
+ok
+test_violation_correction_preserves_time_and_shape (tests.test_engineai_single.ProjectionTests) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.023s
+
+OK

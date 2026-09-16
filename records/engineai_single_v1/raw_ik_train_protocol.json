@@ -1,0 +1,46 @@
+{
+  "robot": "PM01",
+  "mode": "train",
+  "reference": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/engineai_single_v1/tracking_references/sample_000_actor0_raw_ik.npz",
+  "reference_sha256": "8aed6f14a3ecec1c1c14ef171673b0709fb39f29dba3d5df89bc5f93298ad5fc",
+  "iterations": 300,
+  "environments": 256,
+  "seed": 0,
+  "runtime": "Isaac Lab2.1/RSL-RL2.3 compatibility",
+  "agent": {
+    "seed": 0,
+    "num_steps_per_env": 24,
+    "save_interval": 100,
+    "empirical_normalization": true,
+    "logger": "tensorboard",
+    "policy": {
+      "init_noise_std": 1.0,
+      "actor_hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "critic_hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "activation": "elu"
+    },
+    "algorithm": {
+      "value_loss_coef": 1.0,
+      "use_clipped_value_loss": true,
+      "clip_param": 0.2,
+      "entropy_coef": 0.005,
+      "num_learning_epochs": 5,
+      "num_mini_batches": 4,
+      "learning_rate": 0.001,
+      "schedule": "adaptive",
+      "gamma": 0.99,
+      "lam": 0.95,
+      "desired_kl": 0.01,
+      "max_grad_norm": 1.0
+    }
+  },
+  "claim": "single-reference feasibility; not heldout data utility"
+}

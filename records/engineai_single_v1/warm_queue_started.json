@@ -1,0 +1,11 @@
+{
+  "seed": 0,
+  "iterations": 100,
+  "environments": 256,
+  "steps_per_run": 614400,
+  "prior": "official public PM01 dance actor+critic",
+  "learning_rate": 0.001,
+  "reset_std": 0.3,
+  "claim": "matched reference-fit pilot; no held-out utility",
+  "time": 1789531379.6265113
+}

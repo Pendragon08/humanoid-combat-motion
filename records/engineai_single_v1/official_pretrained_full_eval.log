@@ -1,0 +1,181 @@
+[INFO][AppLauncher]: Using device: cuda:1
+[INFO][AppLauncher]: Loading experience file: /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/data/Kit/Isaac-Sim/4.5/user.config.json'
+[Info] [carb] Logging to file: /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/logs/Kit/Isaac-Sim/4.5/kit_20260916_035756.log
+2026-09-16 03:57:56 [0ms] [Warning] [omni.kit.app.plugin] No crash reporter present, dumps uploading isn't available.
+2026-09-16 03:57:56 [3ms] [Warning] [omni.ext.plugin] [ext: rendering_modes] Extensions config 'extension.toml' doesn't exist '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab/apps/rendering_modes' or '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab/apps/rendering_modes/config'
+2026-09-16 03:57:57 [482ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-09-16 03:57:57 [574ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-09-16 03:57:57 [754ms] [Warning] [omni.datastore] OmniHub is inaccessible
+2026-09-16 03:57:57 [927ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 570.181       | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA RTX A6000                 |        |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | f3cc20c6.. |
+|     |                                  |        |     |            | 17        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA RTX A6000                 | Yes: 0 |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | 0b41e662.. |
+|     |                                  |        |     |            | 65        |            |
+|=============================================================================================|
+| OS: 20.04.6 LTS (Focal Fossa) ubuntu, Version: 20.04.6, Kernel: 5.4.0-216-generic
+| Processor: Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz
+| Cores: 10 | Logical Cores: 20
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 257450 | Free Memory: 140302
+| Total Page/Swap (MB): 8191 | Free Page/Swap: 8186
+|---------------------------------------------------------------------------------------------|
+2026-09-16 03:58:02 [6,017ms] [Warning] [omni.kvdb.plugin] Disabling key-value database because another kit process is locking it
+Setting seed: 0
+[INFO]: Base environment:
+	Environment device    : cuda:1
+	Environment seed      : 0
+	Physics step-size     : 0.005
+	Rendering step-size   : 0.02
+	Environment step-size : 0.02
+[INFO]: Time taken for scene creation : 1.296686 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 32
+	Environment spacing   : 2.5
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : ['/World/ground']
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.724768 seconds
+[INFO] Command Manager:  <CommandManager> contains 1 active terms.
++-----------------------------+
+|     Active Command Terms    |
++-------+--------+------------+
+| Index | Name   |    Type    |
++-------+--------+------------+
+|   0   | motion | FixedStart |
++-------+--------+------------+
+
+[INFO] Event Manager:  <EventManager> contains 2 active terms.
++---------------------------------------+
+| Active Event Terms in Mode: 'startup' |
++---------+-----------------------------+
+|  Index  | Name                        |
++---------+-----------------------------+
+|    0    | physics_material            |
+|    1    | add_joint_default_pos       |
+|    2    | base_com                    |
++---------+-----------------------------+
++----------------------------------------------+
+|    Active Event Terms in Mode: 'interval'    |
++-------+------------+-------------------------+
+| Index | Name       | Interval time range (s) |
++-------+------------+-------------------------+
+|   0   | push_robot |        (1.0, 3.0)       |
++-------+------------+-------------------------+
+
+[INFO] Recorder Manager:  <RecorderManager> contains 0 active terms.
++---------------------+
+| Active Recorder Terms |
++-----------+---------+
+|   Index   | Name    |
++-----------+---------+
++-----------+---------+
+
+[INFO] Action Manager:  <ActionManager> contains 1 active terms.
++------------------------------------+
+|  Active Action Terms (shape: 24)   |
++--------+-------------+-------------+
+| Index  | Name        |   Dimension |
++--------+-------------+-------------+
+|   0    | joint_pos   |          24 |
++--------+-------------+-------------+
+
+[INFO] Observation Manager: <ObservationManager> contains 2 groups.
++-----------------------------------------------------------+
+| Active Observation Terms in Group: 'policy' (shape: (129,)) |
++-----------+-----------------------------------+-----------+
+|   Index   | Name                              |   Shape   |
++-----------+-----------------------------------+-----------+
+|     0     | command                           |   (48,)   |
+|     1     | motion_anchor_ori_b               |    (6,)   |
+|     2     | base_ang_vel                      |    (3,)   |
+|     3     | joint_pos                         |   (24,)   |
+|     4     | joint_vel                         |   (24,)   |
+|     5     | actions                           |   (24,)   |
++-----------+-----------------------------------+-----------+
++-----------------------------------------------------------+
+| Active Observation Terms in Group: 'critic' (shape: (252,)) |
++-----------+-----------------------------------+-----------+
+|   Index   | Name                              |   Shape   |
++-----------+-----------------------------------+-----------+
+|     0     | command                           |   (48,)   |
+|     1     | motion_anchor_pos_b               |    (3,)   |
+|     2     | motion_anchor_ori_b               |    (6,)   |
+|     3     | body_pos                          |   (39,)   |
+|     4     | body_ori                          |   (78,)   |
+|     5     | base_lin_vel                      |    (3,)   |
+|     6     | base_ang_vel                      |    (3,)   |
+|     7     | joint_pos                         |   (24,)   |
+|     8     | joint_vel                         |   (24,)   |
+|     9     | actions                           |   (24,)   |
++-----------+-----------------------------------+-----------+
+
+[INFO] Termination Manager:  <TerminationManager> contains 4 active terms.
++--------------------------------+
+|    Active Termination Terms    |
++-------+-------------+----------+
+| Index | Name        | Time Out |
++-------+-------------+----------+
+|   0   | time_out    |   True   |
+|   1   | anchor_pos  |  False   |
+|   2   | anchor_ori  |  False   |
+|   3   | ee_body_pos |  False   |
++-------+-------------+----------+
+
+[INFO] Reward Manager:  <RewardManager> contains 9 active terms.
++-------------------------------------------+
+|            Active Reward Terms            |
++-------+--------------------------+--------+
+| Index | Name                     | Weight |
++-------+--------------------------+--------+
+|   0   | motion_global_anchor_pos |    0.5 |
+|   1   | motion_global_anchor_ori |    0.5 |
+|   2   | motion_body_pos          |    1.0 |
+|   3   | motion_body_ori          |    1.0 |
+|   4   | motion_body_lin_vel      |    1.0 |
+|   5   | motion_body_ang_vel      |    1.0 |
+|   6   | action_rate_l2           |   -0.1 |
+|   7   | joint_limit              |  -10.0 |
+|   8   | undesired_contacts       |   -0.1 |
++-------+--------------------------+--------+
+
+[INFO] Curriculum Manager:  <CurriculumManager> contains 0 active terms.
++----------------------+
+| Active Curriculum Terms |
++-----------+----------+
+|   Index   | Name     |
++-----------+----------+
++-----------+----------+
+
+[INFO]: Completed setting up the environment...
+Actor MLP: Sequential(
+  (0): Linear(in_features=129, out_features=512, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=512, out_features=256, bias=True)
+  (3): ELU(alpha=1.0)
+  (4): Linear(in_features=256, out_features=128, bias=True)
+  (5): ELU(alpha=1.0)
+  (6): Linear(in_features=128, out_features=24, bias=True)
+)
+Critic MLP: Sequential(
+  (0): Linear(in_features=252, out_features=512, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=512, out_features=256, bias=True)
+  (3): ELU(alpha=1.0)
+  (4): Linear(in_features=256, out_features=128, bias=True)
+  (5): ELU(alpha=1.0)
+  (6): Linear(in_features=128, out_features=1, bias=True)
+)
+ENGINEAI_TRACKING_RESULT {"physics_steps_per_env": 4880, "completion_fraction": 1.0, "strict_tracking_fraction": 0.0625, "first_failure_steps": [1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220, 1220], "mean_alive_errors": {"joint_mae_rad": 0.0778423324227333, "root_error_m": 0.40481066703796387, "body_error_m": 0.40483778715133667}, "per_env_errors": {"joint_mae_rad": [0.07433068007230759, 0.07609343528747559, 0.07810284197330475, 0.07944332808256149, 0.07529143989086151, 0.07709162682294846, 0.07913021743297577, 0.07833293080329895, 0.07976549118757248, 0.07662622630596161, 0.07853354513645172, 0.07836837321519852, 0.07743827253580093, 0.07896462827920914, 0.07957316190004349, 0.07460345327854156, 0.07879120111465454, 0.07918523252010345, 0.08019918948411942, 0.08137664198875427, 0.0770210549235344, 0.07830258458852768, 0.07647544890642166, 0.08122767508029938, 0.07473479956388474, 0.07672366499900818, 0.07781875133514404, 0.07670455425977707, 0.07859531790018082, 0.07747319340705872, 0.07644492387771606, 0.07819067686796188], "root_error_m": [0.2675412595272064, 0.1393604725599289, 0.22338572144508362, 0.24529993534088135, 0.32511281967163086, 0.19290819764137268, 0.3868492841720581, 0.20163235068321228, 0.35161346197128296, 0.8058795928955078, 0.5112774968147278, 0.5491174459457397, 0.4122304320335388, 0.15286971628665924, 0.662784993648529, 0.4275679290294647, 0.191219761967659, 0.5543481707572937, 0.9697333574295044, 0.15061843395233154, 0.2547565698623657, 0.44701722264289856, 0.38787057995796204, 0.9746251702308655, 0.1389639526605606, 0.7306225299835205, 0.4352562427520752, 0.25606676936149597, 0.5571823120117188, 0.4286208748817444, 0.32382598519325256, 0.2977820932865143], "body_error_m": [0.2701851725578308, 0.14222168922424316, 0.22606666386127472, 0.24582377076148987, 0.3236498534679413, 0.19393500685691833, 0.38590067625045776, 0.20438365638256073, 0.3505713939666748, 0.8014805316925049, 0.5090685486793518, 0.549065887928009, 0.4103458821773529, 0.15633328258991241, 0.6606804132461548, 0.4302516281604767, 0.19536221027374268, 0.5508193969726562, 0.9724128842353821, 0.15224573016166687, 0.2531050741672516, 0.44577306509017944, 0.3884405791759491, 0.9706004858016968, 0.14311209321022034, 0.7277246117591858, 0.4334934949874878, 0.25470244884490967, 0.5584900975227356, 0.42748284339904785, 0.3221427798271179, 0.29893749952316284]}, "horizon": 1220, "learned_policy": true, "official_pretrained_actor": true, "checkpoint_sha256": "90f0624ac80564844912d303a3731117ede876f5e0988f337106a0a656f5cb42", "randomized_dynamics_and_resets": true, "threshold_source": "research diagnostic, not official universal standard", "first_failure_censored": true, "claim": "training-reference fit only; no unseen generalization or data utility"}

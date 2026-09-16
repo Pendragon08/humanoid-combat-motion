@@ -1,0 +1,46 @@
+[INFO][AppLauncher]: Using device: cuda:1
+[INFO][AppLauncher]: Loading experience file: /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/data/Kit/Isaac-Sim/4.5/user.config.json'
+[Info] [carb] Logging to file: /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/logs/Kit/Isaac-Sim/4.5/kit_20260916_033815.log
+2026-09-16 03:38:15 [0ms] [Warning] [omni.kit.app.plugin] No crash reporter present, dumps uploading isn't available.
+2026-09-16 03:38:15 [12ms] [Warning] [omni.ext.plugin] [ext: rendering_modes] Extensions config 'extension.toml' doesn't exist '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab/apps/rendering_modes' or '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab/apps/rendering_modes/config'
+2026-09-16 03:38:15 [488ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-09-16 03:38:15 [585ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-09-16 03:38:15 [757ms] [Warning] [omni.datastore] OmniHub is inaccessible
+2026-09-16 03:38:15 [929ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 570.181       | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA RTX A6000                 |        |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | f3cc20c6.. |
+|     |                                  |        |     |            | 17        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA RTX A6000                 | Yes: 0 |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | 0b41e662.. |
+|     |                                  |        |     |            | 65        |            |
+|=============================================================================================|
+| OS: 20.04.6 LTS (Focal Fossa) ubuntu, Version: 20.04.6, Kernel: 5.4.0-216-generic
+| Processor: Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz
+| Cores: 10 | Logical Cores: 20
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 257450 | Free Memory: 143400
+| Total Page/Swap (MB): 8191 | Free Page/Swap: 8186
+|---------------------------------------------------------------------------------------------|
+2026-09-16 03:38:21 [6,786ms] [Warning] [omni.kvdb.plugin] Disabling key-value database because another kit process is locking it
+{"file": "sample_000_actor0_joint_constrained.npz", "joint_rmse_rad": 0.22269525199032383, "root_position_rmse_m": 1.4688079534162617, "fell": true, "first_failure_frame": 44, "frames": 249, "peak_abs_torque_Nm": 125.44886016845703, "physics_execution": true, "learned_tracking": false, "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"}
+{"file": "sample_000_actor0_raw_ik.npz", "joint_rmse_rad": 0.21063278261573973, "root_position_rmse_m": 1.259589911665717, "fell": true, "first_failure_frame": 46, "frames": 249, "peak_abs_torque_Nm": 92.17842102050781, "physics_execution": true, "learned_tracking": false, "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"}
+{"file": "sample_000_actor1_joint_constrained.npz", "joint_rmse_rad": 0.32272201401913464, "root_position_rmse_m": 0.7390739759941142, "fell": true, "first_failure_frame": 18, "frames": 249, "peak_abs_torque_Nm": 146.52293395996094, "physics_execution": true, "learned_tracking": false, "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"}
+{"file": "sample_000_actor1_raw_ik.npz", "joint_rmse_rad": 0.4037605673680753, "root_position_rmse_m": 0.6470217368162063, "fell": true, "first_failure_frame": 23, "frames": 249, "peak_abs_torque_Nm": 164.0, "physics_execution": true, "learned_tracking": false, "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"}
+{"file": "sample_001_actor0_joint_constrained.npz", "joint_rmse_rad": 0.41804471998411874, "root_position_rmse_m": 1.2443452832584645, "fell": true, "first_failure_frame": 31, "frames": 249, "peak_abs_torque_Nm": 164.0, "physics_execution": true, "learned_tracking": false, "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"}
+{"file": "sample_001_actor0_raw_ik.npz", "joint_rmse_rad": 0.4308587018477752, "root_position_rmse_m": 1.509320712999587, "fell": true, "first_failure_frame": 25, "frames": 249, "peak_abs_torque_Nm": 149.32763671875, "physics_execution": true, "learned_tracking": false, "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"}
+{"file": "sample_001_actor1_joint_constrained.npz", "joint_rmse_rad": 0.23566634828504815, "root_position_rmse_m": 1.4595873028070667, "fell": true, "first_failure_frame": 23, "frames": 249, "peak_abs_torque_Nm": 143.30984497070312, "physics_execution": true, "learned_tracking": false, "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"}
+{"file": "sample_001_actor1_raw_ik.npz", "joint_rmse_rad": 0.24396743516871008, "root_position_rmse_m": 1.493369513050921, "fell": true, "first_failure_frame": 26, "frames": 249, "peak_abs_torque_Nm": 152.8264617919922, "physics_execution": true, "learned_tracking": false, "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"}
+{"file": "sample_002_actor0_joint_constrained.npz", "joint_rmse_rad": 0.21629744410929308, "root_position_rmse_m": 1.5705575558037999, "fell": true, "first_failure_frame": 18, "frames": 249, "peak_abs_torque_Nm": 65.2098617553711, "physics_execution": true, "learned_tracking": false, "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"}
+{"file": "sample_002_actor0_raw_ik.npz", "joint_rmse_rad": 0.26988719171300657, "root_position_rmse_m": 1.4074224132045732, "fell": true, "first_failure_frame": 25, "frames": 249, "peak_abs_torque_Nm": 65.92596435546875, "physics_execution": true, "learned_tracking": false, "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"}
+{"file": "sample_002_actor1_joint_constrained.npz", "joint_rmse_rad": 0.29937619229547174, "root_position_rmse_m": 1.551148117573668, "fell": true, "first_failure_frame": 12, "frames": 249, "peak_abs_torque_Nm": 157.38414001464844, "physics_execution": true, "learned_tracking": false, "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"}
+{"file": "sample_002_actor1_raw_ik.npz", "joint_rmse_rad": 0.3013388257889065, "root_position_rmse_m": 1.3871002362153313, "fell": true, "first_failure_frame": 15, "frames": 249, "peak_abs_torque_Nm": 159.35305786132812, "physics_execution": true, "learned_tracking": false, "thresholds": "engineering diagnostic: root z<0.45m or upright cosine<0.5; not a standard combat success definition"}

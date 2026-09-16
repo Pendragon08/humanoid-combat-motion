@@ -1,0 +1,16 @@
+{
+  "time": 1789531326.472774,
+  "reason": "official public actor32/32 full completion;300-iteration scratch baseline0/32; preserve partial cold run and use matched public-prior warm start for feasibility",
+  "processes": [
+    {
+      "pid": 2182098,
+      "command": ".venv/bin/python -u scripts/run_engineai_single_pilot.py",
+      "signal": "TERM"
+    },
+    {
+      "pid": 2187419,
+      "command": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/python/bin/python3 -u scripts/engineai_single_tracking.py --mode train --motion /data/code/ouyanghao/oyh/humanoid-combat-motion/runs/engineai_single_v1/tracking_references/sample_000_actor0_raw_ik.npz --output /data/code/ouyanghao/oyh/humanoid-combat-motion/runs/engineai_single_v1/raw_ik_train --num_envs 256 --iterations 300 --seed 0 --headless --device cuda:1",
+      "signal": "INT"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "experiment": "single_actor_transfer_pm01_v1",
+  "robot": "PM01",
+  "engineai_rl_lab_commit": "14ec57be718586bd0ac45375aa1115bd896fbdbc",
+  "engineai_native_sdk_commit": "335c60e88772c26c7852d0abd6b3c7439037dd8f",
+  "runtime": "existing Isaac Sim 4.5.0 / Isaac Lab 2.1.0 / RSL-RL 2.3.1",
+  "compatibility": "isolated source overlay; upstream 2.3.2 compatibility not assumed",
+  "new_packages": [],
+  "source": "runs/timotion_generic_24_seed2026_identity",
+  "samples": [
+    0,
+    1,
+    2
+  ],
+  "actors": [
+    0,
+    1
+  ],
+  "arms": [
+    "raw_ik",
+    "joint_constrained"
+  ],
+  "interpretation": "single-actor marginal of paired diffusion; not independently trained single-person diffusion",
+  "contact_scope": "ground contact; no claim of opponent contact in solo execution",
+  "acceleration_screening_limit_rad_s2": 100.0,
+  "acceleration_limit_source": "research setting, not manufacturer rating",
+  "smoke": "bash scripts/run_engineai.sh scripts/engineai_single_sim.py --mode witness --headless --device cuda:1 --output records/engineai_single_v1/witness.json",
+  "storage_budget_gib": 2,
+  "training_pilot_iterations": 300,
+  "training_pilot_num_envs": 256,
+  "seed": 0,
+  "claim": "engineering feasibility pilot, not confirmation of synthetic-data utility",
+  "reference_fps": 50,
+  "projection_stage": "after resampling to50Hz",
+  "retarget_runtime": "existing .venv-retarget with .venv site packages as lower-priority OSQP fallback; no installation",
+  "compatibility_helpers": [
+    "explicit PM01 task import",
+    "ActorCritic runner schema for RSL-RL2.3",
+    "quat_apply_inverse(q,v)=quat_apply(quat_conjugate(q),v)"
+  ],
+  "execution_revision": {
+    "reason": "scratch baseline inadequate; public policy validated",
+    "warm_iterations": 100,
+    "warm_num_envs": 256,
+    "warm_steps_per_run": 614400,
+    "initial_prior": "official PM01 dance actor and critic",
+    "reset_noise_std": 0.3,
+    "observation_normalization": false,
+    "cold_generated_runs": "raw partial stopped, constrained not started; retained records"
+  }
+}

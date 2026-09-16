@@ -1,0 +1,45 @@
+[INFO][AppLauncher]: Using device: cuda:1
+[INFO][AppLauncher]: Loading experience file: /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/data/Kit/Isaac-Sim/4.5/user.config.json'
+[Info] [carb] Logging to file: /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/logs/Kit/Isaac-Sim/4.5/kit_20260916_033638.log
+2026-09-16 03:36:38 [0ms] [Warning] [omni.kit.app.plugin] No crash reporter present, dumps uploading isn't available.
+2026-09-16 03:36:38 [3ms] [Warning] [omni.ext.plugin] [ext: rendering_modes] Extensions config 'extension.toml' doesn't exist '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab/apps/rendering_modes' or '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab/apps/rendering_modes/config'
+2026-09-16 03:36:39 [487ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-09-16 03:36:39 [559ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-09-16 03:36:39 [749ms] [Warning] [omni.datastore] OmniHub is inaccessible
+2026-09-16 03:36:39 [915ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 570.181       | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA RTX A6000                 |        |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | f3cc20c6.. |
+|     |                                  |        |     |            | 17        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA RTX A6000                 | Yes: 0 |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | 0b41e662.. |
+|     |                                  |        |     |            | 65        |            |
+|=============================================================================================|
+| OS: 20.04.6 LTS (Focal Fossa) ubuntu, Version: 20.04.6, Kernel: 5.4.0-216-generic
+| Processor: Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz
+| Cores: 10 | Logical Cores: 20
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 257450 | Free Memory: 143946
+| Total Page/Swap (MB): 8191 | Free Page/Swap: 8186
+|---------------------------------------------------------------------------------------------|
+{"file": "sample_000_actor0_joint_constrained.npz", "frames": 249, "sha256": "8b104d829ff0e0f4e34544f8d493254523d1c1851169092dd93f1dcdb2e26915", "source_sha256": "bad6d34276692bf7d0fe25801d6405a34597486eaf8d53cce2aeebfde4a73847", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_000_actor0_raw_ik.npz", "frames": 249, "sha256": "800ec8fe4d408e2224716ba6d3b19d0ba0b152798f48e71bca5ad2ac5dc10305", "source_sha256": "ece28f468a712485d35d8064edf0be1c970624e9b4e8b0bc74fe96641f998a93", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_000_actor1_joint_constrained.npz", "frames": 249, "sha256": "ccd50f6eb732025e94790f0ae64406053ae64aea9e8f03f4bf37f30d2e1c6b1c", "source_sha256": "2ccdbe472269bc3a176ac6e1fa05a991e1638a30cd30b8feb318d74a0d4be18b", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_000_actor1_raw_ik.npz", "frames": 249, "sha256": "a8938247b04b9855a4cd2b03b6cafe2d9dd5c23b0a16114d4ace0390c8aeab17", "source_sha256": "54304c8b4259f995bcfa746206008ad5bcde322ee7ecda2e842e630cb78d75f1", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_001_actor0_joint_constrained.npz", "frames": 249, "sha256": "e93e0a9b2e142d90e1d413eb6e738d9d6ae5129d900346ef0d956e829e22b2b8", "source_sha256": "acadb1629a87a9c592691a940ec664c1b428d89cc964507ea8bef0f60e9f0101", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_001_actor0_raw_ik.npz", "frames": 249, "sha256": "f68ae6e5e7ff9bb93c861e6c6fd08a600b1ac7db77f84f3b87db7ea94884f544", "source_sha256": "1f9ae31b7dc7feef08511ff92018597911e01ea2344181c6148fcc4fc8fdcad4", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_001_actor1_joint_constrained.npz", "frames": 249, "sha256": "004bd244f972cf4889ebfc83770326d8cc79ea75bb28133464a3cfd6698f1c52", "source_sha256": "a7d76a878d7671139340cb1f48432bd70b251e4ffd8089a0e1065002792298bd", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_001_actor1_raw_ik.npz", "frames": 249, "sha256": "bdd107b9dd8a268f83bb0d9264dc5b38ade9e54efbc0cc54479af8bffe659823", "source_sha256": "0079faa2fd1f74dc61235bd271d223eebba754a619154ba02006f9e6e9c73fec", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_002_actor0_joint_constrained.npz", "frames": 249, "sha256": "73df86d0c0108d025a0fdeb78f3f1cf82c3581dbf8282d11c26cefbc9ce6d7f0", "source_sha256": "560c1e040d4029a262d407f80af08fd3866c93164d7f37751f30baa5619dbee6", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_002_actor0_raw_ik.npz", "frames": 249, "sha256": "9c97f9c9dec727e4630d2dc9f77badc2d8323b5d3cc9d5f2afd569a801143b46", "source_sha256": "94536ac736f651132310eef9b9163e725810eba33181daa91e6080c5ceb0a738", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_002_actor1_joint_constrained.npz", "frames": 249, "sha256": "33a3a17d14d571cfd57b95da4b7a12f081aef849abd0fd0d80975c77d19b979c", "source_sha256": "df587e9b0da0d529660824841d07e6d50c0fd4a748ed66f4c5b77f5ace52a1e7", "state_replay_only": true, "physics_execution": false}
+{"file": "sample_002_actor1_raw_ik.npz", "frames": 249, "sha256": "7c75ad0269140be4c9a141c6a46324f7c79d3380e2e3342466a8855241297845", "source_sha256": "39ad6db171b7f7fa77561a9b00d8f8417b47883ec10997b4bf9fa4341ab57ec1", "state_replay_only": true, "physics_execution": false}

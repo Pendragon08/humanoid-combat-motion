@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/data/code/ouyanghao/oyh/world-model-risk-planning/.env/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/data/code/ouyanghao/oyh/world-model-risk-planning/.env/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/prepare_engineai_single.py", line 9, in <module>
+    import osqp
+ModuleNotFoundError: No module named 'osqp'
