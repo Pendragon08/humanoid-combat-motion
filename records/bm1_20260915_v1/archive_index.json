@@ -1,0 +1,62 @@
+[
+  {
+    "archive_path": "artifacts/baseline/evaluation.log",
+    "source_path": "runs/bm1_20260915_v1/baseline/evaluation/evaluation.log",
+    "source_sha256": "5a3635664280cd8f5e41f18bee425900e1d15ab3284792b49dffcbfd469ae8de",
+    "source_bytes": 12933
+  },
+  {
+    "archive_path": "artifacts/baseline/generation_inputs.jsonl.gz",
+    "source_path": "runs/bm1_20260915_v1/baseline/evaluation/generation_inputs.jsonl",
+    "source_sha256": "7746095c5e71c0f380ccda2972ee33aefc4aba0289e2805f98f4441f0a13eb76",
+    "source_bytes": 8446450
+  },
+  {
+    "archive_path": "artifacts/baseline/frozen_inputs.json",
+    "source_path": "runs/bm1_20260915_v1/baseline/evaluation/frozen_inputs.json",
+    "source_sha256": "0a03d46d06a4006170e5147e5e721c38c3e568c0f040ee8e1560e61322680c51",
+    "source_bytes": 451627
+  },
+  {
+    "archive_path": "artifacts/baseline/provenance.json",
+    "source_path": "runs/bm1_20260915_v1/baseline/evaluation/provenance.json",
+    "source_sha256": "7da4481fccc51c0a8e02f786308b92bdc52223e651d241236c32d222266a7ab8",
+    "source_bytes": 15776
+  },
+  {
+    "archive_path": "artifacts/baseline/EVALUATION_COMPLETE.json",
+    "source_path": "runs/bm1_20260915_v1/baseline/evaluation/EVALUATION_COMPLETE.json",
+    "source_sha256": "7659f300ca46e4af7ccffcfb35b8948385811bcacd12905112187fe2c2d96a85",
+    "source_bytes": 300
+  },
+  {
+    "archive_path": "artifacts/caption_adapter/evaluation.log",
+    "source_path": "runs/bm1_20260915_v1/caption_adapter/evaluation/evaluation.log",
+    "source_sha256": "b26770c70ed1cfcb4fffea443d9f6fa6582c41a4777aa2a1732b6d39f6b96014",
+    "source_bytes": 13668
+  },
+  {
+    "archive_path": "artifacts/caption_adapter/generation_inputs.jsonl.gz",
+    "source_path": "runs/bm1_20260915_v1/caption_adapter/evaluation/generation_inputs.jsonl",
+    "source_sha256": "7746095c5e71c0f380ccda2972ee33aefc4aba0289e2805f98f4441f0a13eb76",
+    "source_bytes": 8446450
+  },
+  {
+    "archive_path": "artifacts/caption_adapter/frozen_inputs.json",
+    "source_path": "runs/bm1_20260915_v1/caption_adapter/evaluation/frozen_inputs.json",
+    "source_sha256": "0a03d46d06a4006170e5147e5e721c38c3e568c0f040ee8e1560e61322680c51",
+    "source_bytes": 451627
+  },
+  {
+    "archive_path": "artifacts/caption_adapter/provenance.json",
+    "source_path": "runs/bm1_20260915_v1/caption_adapter/evaluation/provenance.json",
+    "source_sha256": "1b479e1f833faeeb96d34aac70c8e451ee87ee0c8abfc51f63b57f8234a22288",
+    "source_bytes": 59663
+  },
+  {
+    "archive_path": "artifacts/caption_adapter/EVALUATION_COMPLETE.json",
+    "source_path": "runs/bm1_20260915_v1/caption_adapter/evaluation/EVALUATION_COMPLETE.json",
+    "source_sha256": "3341587b51d75d354b1bda7f5e74802e43976b2c71b086792c1f030ea02230cb",
+    "source_bytes": 300
+  }
+]

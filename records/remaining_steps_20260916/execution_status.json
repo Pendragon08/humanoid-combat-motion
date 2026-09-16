@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-09-16T02:00:20.343130+00:00",
+  "all_experiments_complete": false,
+  "new_training_launched": false,
+  "BM1": "complete_verified_20_repetitions_per_arm",
+  "BM2": "blocked_DuoBox_not_found_in_project_data_and_authorization_unconfirmed",
+  "BM3": "blocked_zero_confirmation_samples_zero_annotations",
+  "BM4": "blocked_independent_test_and_baseline_acceptance",
+  "regression_tests_passed": 67,
+  "benchmark_tests_passed": 14,
+  "archive_verification": "records/bm1_20260915_v1/archive_verification.json",
+  "dataset_access_source": "https://github.com/zju3dv/ready_to_react#-the-duobox-dataset",
+  "requested_user_input": "DuoBox and independent annotation paths, if already available"
+}

@@ -1,6 +1,6 @@
 {
   "protocol_id": "data_utility_v2_20260915",
-  "status": "in_progress_seed_audit_verified_E2_unconfirmed",
+  "status": "seed_audit_E2_and_BM1_complete_confirmation_tracks_blocked",
   "title_zh": "面向人形机器人模仿学习的物理约束格斗示范数据生成方法",
   "canonical_document": "docs/step7_protocol.md",
   "purpose": "demonstration_data_construction_and_downstream_training_utility",
@@ -52,7 +52,7 @@
       "V+G_ours"
     ],
     "claim_limit": "video_seed_augmentation_only_not_mocap_substitution",
-    "next_action": "review_seed_semantics_and_contact_labels_then_confirm_remote_E2_jobs_before_resuming",
+    "next_action": "prepare_DuoBox_independent_event_test_and_baseline_calibration",
     "training_launch_gate": "baseline_acceptance_and_frozen_split_and_budget"
   },
   "split": {
@@ -136,10 +136,20 @@
     {
       "id": "E2",
       "name_zh": "生成机制与约束消融",
-      "status": "component_ablation_submission_unconfirmed_after_disconnect",
+      "status": "kinematic_component_complete_verified_independent_evaluation_pending",
       "primary_metric": "contact_and_semantic_correctness_at_matched_diversity",
       "comparison": "generic,+contact,+physics,+contact+physics",
-      "gate": "fixed_conditions_candidate_budget_and_independent_labels"
+      "gate": "fixed_conditions_candidate_budget_and_independent_labels",
+      "completed_component": {
+        "record": "records/data_constraint_v2/summary.json",
+        "arms": [
+          "raw",
+          "contact",
+          "temporal",
+          "contact_temporal"
+        ],
+        "scope": "training-set kinematic proxy; not full physics generation or independent test"
+      }
     },
     {
       "id": "E3",
@@ -203,7 +213,11 @@
   ],
   "execution_progress": {
     "record": "records/data_sources_v2/remote_observation.json",
-    "server_sync": "partial_code_only_full_report_pending",
-    "main_policy_training_launched": false
-  }
+    "server_sync": "benchmark_protocol_and_results_synced_hash_verified",
+    "main_policy_training_launched": false,
+    "E2_record": "records/data_constraint_v2/summary.json",
+    "benchmark_protocol": "configs/benchmark_protocol_v1.json",
+    "server_receipt": "records/benchmark_v1/deployment_receipt.json"
+  },
+  "benchmark_extension": "configs/benchmark_protocol_v1.json"
 }

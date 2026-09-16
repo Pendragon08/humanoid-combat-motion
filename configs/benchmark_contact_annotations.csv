@@ -1,0 +1,1 @@
+annotation_id,sample_id,source_id,split,start_s,end_s,attacker,defender,attack_type,attack_target,defense_type,event_kind,part_a,part_b,window_start_s,window_end_s,approach_direction,relative_speed_mps,confidence,evidence_type,evidence_path,annotator_1,annotator_2,adjudicator,agreement,annotation_version,independent_of_generation_loss

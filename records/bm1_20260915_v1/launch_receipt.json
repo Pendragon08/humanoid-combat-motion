@@ -1,0 +1,13 @@
+{
+  "run_id": "bm1_20260915_v1",
+  "tests": "test_only_caption_information (tests.test_benchmark_conditions.BenchmarkConditions) ... ok\ntest_selection_leakage_rejected (tests.test_benchmark_conditions.BenchmarkConditions) ... ok\ntest_word_boundaries (tests.test_benchmark_conditions.BenchmarkConditions) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.001s\n\nOK\n",
+  "jobs": {
+    "baseline": {
+      "supervisor_pid": 2169177
+    },
+    "caption_adapter": {
+      "supervisor_pid": 2169178
+    }
+  },
+  "memory": "MemAvailable:   259923204 kB"
+}

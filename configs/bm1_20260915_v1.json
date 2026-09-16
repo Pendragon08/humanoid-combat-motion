@@ -1,0 +1,30 @@
+{
+  "run_id": "bm1_20260915_v1",
+  "created_utc": "2026-09-15",
+  "purpose": "BM1 available official InterHuman test, baseline vs existing caption-only combat adapter",
+  "seed": 20260915,
+  "repetitions": 20,
+  "timeout_seconds": 86400,
+  "new_training_steps": 0,
+  "baseline_and_adapter_share_input_information": true,
+  "scope": "not complete M1/M2/M3, DuoBox, independent contact, or robot utility",
+  "adapter_selection": "seed0 has lowest previous validation loss among seeds0/1/2; freeze before new test evaluation",
+  "jobs": {
+    "baseline": {
+      "gpu": 0,
+      "directory": "runs/bm1_20260915_v1/baseline",
+      "adapter": null
+    },
+    "caption_adapter": {
+      "gpu": 1,
+      "directory": "runs/bm1_20260915_v1/caption_adapter",
+      "adapter": "runs/timotion_adapter_fixedrng_seed0/best_adapter.pt"
+    }
+  },
+  "files_sha256": {
+    "combat/benchmark_conditions.py": "97cacd7a4b77eec6e8f6be3fc1873eefc631b120e0ddf15e2d2bcf19dc6d56e9",
+    "tests/test_benchmark_conditions.py": "144e329d5987e7705f5e64a50e83112860339f2efbf38b35e30d61bd96d48af3",
+    "scripts/run_bm1_generation_benchmark.py": "d9a6853c7bb230a9b698251ef8b864ca84e7151c90603cb521a42235889f7e11",
+    "scripts/run_bm1_job.py": "94d19bc2fa505d05456eca5c91eb47fbeb0ef83ee71098a111919f0e54e5194c"
+  }
+}

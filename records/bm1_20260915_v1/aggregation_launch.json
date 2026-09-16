@@ -1,0 +1,11 @@
+{
+  "aggregator_pid": 2169555,
+  "files_sha256": {
+    "combat/benchmark_results.py": "bea07ca584bff4f3208761d8232fe4b7ced58b3ec9c2350824c28b6d4c73562c",
+    "scripts/finalize_bm1_suite.py": "6a5221768a6832ead2d1be981bb71fbb6dfd0dba2da647ea20fe31a8b346b223",
+    "tests/test_benchmark_results.py": "efdc12f4d150841d90bad78cbbf299f64d9ccd8fd4c0a6f93b9b999e19a7ec0e",
+    "docs/bm1_running_20260915.md": "204ed754cc71f97d4bd295270aa18d26b5c77f79b95fcfb68b11b9af9be21a04",
+    "configs/benchmark_protocol_v1.json": "13634bb56e885ed0ce49ef8707a237d3981ecf6a704909f0b40b915f63491f7f"
+  },
+  "tests": "test_only_caption_information (tests.test_benchmark_conditions.BenchmarkConditions) ... ok\ntest_selection_leakage_rejected (tests.test_benchmark_conditions.BenchmarkConditions) ... ok\ntest_word_boundaries (tests.test_benchmark_conditions.BenchmarkConditions) ... ok\ntest_incomplete_rejected (tests.test_benchmark_results.Results) ... ok\ntest_sampling_uncertainty (tests.test_benchmark_results.Results) ... ok\ntest_summary_not_double_counted (tests.test_benchmark_results.Results) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.002s\n\nOK\n"
+}

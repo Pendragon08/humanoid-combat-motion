@@ -1,0 +1,1912 @@
+[
+  {
+    "index": 1,
+    "source": "interhuman_1189",
+    "generation_seed": 7101,
+    "arm": "raw",
+    "source_sha256": "94ccad7daa6c830d526fa5661bf60940ecdaf136c31ab0a885f4017534bb4af3",
+    "output_sha256": "998b2bf901f1ced855f778fda31b40530227f687e2b7b8bfb4606cc2f772a029",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 0.02600087784230709,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.16387651216937,
+        "min_swept_surface_gap_m": 0.16387651216937,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 0.0,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.0,
+      "defender_speed_p95_m_s": 2.483840740493181,
+      "defender_speed_max_m_s": 5.867507804420461,
+      "defender_acceleration_rms_m_s2": 8.426043753698425,
+      "defender_path_length_ratio": 1.0,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": []
+  },
+  {
+    "index": 1,
+    "source": "interhuman_1189",
+    "generation_seed": 7101,
+    "arm": "contact",
+    "source_sha256": "94ccad7daa6c830d526fa5661bf60940ecdaf136c31ab0a885f4017534bb4af3",
+    "output_sha256": "2bdf081be6440d8d2c5fc5e9340047526ceb556dabcd71b5e91bf3fe5136a74c",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 2.138363117352128,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.0010538282009674854,
+        "min_swept_surface_gap_m": 0.0010538282009674854,
+        "penetration": false,
+        "first_contact_frame": 57,
+        "first_contact_time_s": 1.9,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 1.1357138858525406e-07,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.005910923193304684,
+      "defender_speed_p95_m_s": 2.484087788077059,
+      "defender_speed_max_m_s": 5.8674130344490845,
+      "defender_acceleration_rms_m_s2": 8.616818012970079,
+      "defender_path_length_ratio": 1.009101636262404,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.010743428952991962,
+        "contact": 0.010743428952991962,
+        "acceleration_mse": 70.99821472167969
+      },
+      {
+        "step": 149,
+        "loss": 4.017732499050908e-05,
+        "contact": 1.4923039088898804e-06,
+        "acceleration_mse": 74.2900390625
+      }
+    ]
+  },
+  {
+    "index": 1,
+    "source": "interhuman_1189",
+    "generation_seed": 7101,
+    "arm": "temporal",
+    "source_sha256": "94ccad7daa6c830d526fa5661bf60940ecdaf136c31ab0a885f4017534bb4af3",
+    "output_sha256": "8be7aed3a89275383e849b30df7a4234883bc5451b9cc78e73020e376fdb440a",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 1.069392554461956,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.1656463552593201,
+        "min_swept_surface_gap_m": 0.1656463552593201,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 1.2406223748318013e-07,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.006018945860596576,
+      "defender_speed_p95_m_s": 2.307475180797941,
+      "defender_speed_max_m_s": 5.241339755265557,
+      "defender_acceleration_rms_m_s2": 5.388893834308648,
+      "defender_path_length_ratio": 0.930722504258153,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.0007099821232259274,
+        "contact": 0.010743428952991962,
+        "acceleration_mse": 70.99821472167969
+      },
+      {
+        "step": 149,
+        "loss": 0.00039010646287351847,
+        "contact": 0.010982386767864227,
+        "acceleration_mse": 29.04949378967285
+      }
+    ]
+  },
+  {
+    "index": 1,
+    "source": "interhuman_1189",
+    "generation_seed": 7101,
+    "arm": "contact_temporal",
+    "source_sha256": "94ccad7daa6c830d526fa5661bf60940ecdaf136c31ab0a885f4017534bb4af3",
+    "output_sha256": "e79454c9c430ce759cd215b40aa33b1eecce169fd8ee5675ce2f8fd7f4e1a0ec",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 1.0488459337502718,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.0007874106304739947,
+        "min_swept_surface_gap_m": 0.0007874106304739947,
+        "penetration": false,
+        "first_contact_frame": 57,
+        "first_contact_time_s": 1.9,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 1.227864593333905e-07,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.008529811654437829,
+      "defender_speed_p95_m_s": 2.3069433560312445,
+      "defender_speed_max_m_s": 5.241074556847762,
+      "defender_acceleration_rms_m_s2": 5.464425595327027,
+      "defender_path_length_ratio": 0.9385065332116947,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.011453410610556602,
+        "contact": 0.010743428952991962,
+        "acceleration_mse": 70.99821472167969
+      },
+      {
+        "step": 149,
+        "loss": 0.0004281774163246155,
+        "contact": 7.919700806269248e-07,
+        "acceleration_mse": 29.875513076782227
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "source": "interhuman_1203",
+    "generation_seed": 7103,
+    "arm": "raw",
+    "source_sha256": "8e31dab42dbcce99118f6dca2bfc3e71461d8d1860524f5a965bf24ee21d5c2d",
+    "output_sha256": "ea8ba20060e301461e102836548371be93b86a96aab02528ca9724e3128945e3",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 0.004167377948760986,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.46722067378171955,
+        "min_swept_surface_gap_m": 0.46722067378171955,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 0.0,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.0,
+      "defender_speed_p95_m_s": 2.4992819465034506,
+      "defender_speed_max_m_s": 6.2277221101658355,
+      "defender_acceleration_rms_m_s2": 8.183124222306557,
+      "defender_path_length_ratio": 1.0,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": []
+  },
+  {
+    "index": 3,
+    "source": "interhuman_1203",
+    "generation_seed": 7103,
+    "arm": "contact",
+    "source_sha256": "8e31dab42dbcce99118f6dca2bfc3e71461d8d1860524f5a965bf24ee21d5c2d",
+    "output_sha256": "8bdcedadd3db91cd7a850856c1dbb334b343945365cfa27441585866adce47ef",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 1.072465943172574,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": -0.014362959727911587,
+        "min_swept_surface_gap_m": -0.014362959727911587,
+        "penetration": false,
+        "first_contact_frame": 62,
+        "first_contact_time_s": 2.066666666666667,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 8.226050265958129e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.023071569831026192,
+      "defender_speed_p95_m_s": 2.6902920491880162,
+      "defender_speed_max_m_s": 6.2185141449654555,
+      "defender_acceleration_rms_m_s2": 11.387801280248878,
+      "defender_path_length_ratio": 1.051671572940264,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.087318055331707,
+        "contact": 0.087318055331707,
+        "acceleration_mse": 66.9635238647461
+      },
+      {
+        "step": 149,
+        "loss": 0.0005376089247874916,
+        "contact": 1.757172867655754e-06,
+        "acceleration_mse": 129.99534606933594
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "source": "interhuman_1203",
+    "generation_seed": 7103,
+    "arm": "temporal",
+    "source_sha256": "8e31dab42dbcce99118f6dca2bfc3e71461d8d1860524f5a965bf24ee21d5c2d",
+    "output_sha256": "56980f1c77241e5fb38696b98fafcd099c9a592c893c45d192ec3ea89384ca4e",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 1.0810419153422117,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.4676283653793974,
+        "min_swept_surface_gap_m": 0.4676283653793974,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 8.426219272328339e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.005874469137618565,
+      "defender_speed_p95_m_s": 2.268185574499666,
+      "defender_speed_max_m_s": 5.334638456389177,
+      "defender_acceleration_rms_m_s2": 5.208745966708647,
+      "defender_path_length_ratio": 0.9467133463495914,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.0006696352502331138,
+        "contact": 0.087318055331707,
+        "acceleration_mse": 66.9635238647461
+      },
+      {
+        "step": 149,
+        "loss": 0.00036945915780961514,
+        "contact": 0.08747943490743637,
+        "acceleration_mse": 27.139331817626953
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "source": "interhuman_1203",
+    "generation_seed": 7103,
+    "arm": "contact_temporal",
+    "source_sha256": "8e31dab42dbcce99118f6dca2bfc3e71461d8d1860524f5a965bf24ee21d5c2d",
+    "output_sha256": "735b507bb7b59e14b721845f27144d6fab746297363a785dd52464a3f4b736ba",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 1.0373368468135595,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.0028613399198397227,
+        "min_swept_surface_gap_m": 0.0028613399198397227,
+        "penetration": false,
+        "first_contact_frame": 62,
+        "first_contact_time_s": 2.066666666666667,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 8.308191840056267e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.026350275889148074,
+      "defender_speed_p95_m_s": 2.3105085880792453,
+      "defender_speed_max_m_s": 5.323569606060685,
+      "defender_acceleration_rms_m_s2": 6.037592251813954,
+      "defender_path_length_ratio": 0.9852005827595289,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.08798769116401672,
+        "contact": 0.087318055331707,
+        "acceleration_mse": 66.9635238647461
+      },
+      {
+        "step": 149,
+        "loss": 0.0009665704565122724,
+        "contact": 3.867085524689173e-06,
+        "acceleration_mse": 36.529884338378906
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "source": "interhuman_1211",
+    "generation_seed": 7105,
+    "arm": "raw",
+    "source_sha256": "0e1a7813e9fa4897ba263878b83a59a87a37d1edc78f8f518ba22de1a3d2218e",
+    "output_sha256": "04c520427b24031140a93dc4c00fb8e09fbf8dc5f3061a88db18e4f9dea697a0",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 0.004590235650539398,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.4332450795091807,
+        "min_swept_surface_gap_m": 0.4332450795091807,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 0.0,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.0,
+      "defender_speed_p95_m_s": 2.9030843409112825,
+      "defender_speed_max_m_s": 5.690109248375601,
+      "defender_acceleration_rms_m_s2": 19.084687885980664,
+      "defender_path_length_ratio": 1.0,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": []
+  },
+  {
+    "index": 5,
+    "source": "interhuman_1211",
+    "generation_seed": 7105,
+    "arm": "contact",
+    "source_sha256": "0e1a7813e9fa4897ba263878b83a59a87a37d1edc78f8f518ba22de1a3d2218e",
+    "output_sha256": "00cdf5fc5d92076dc2ac0d796b3ae63b2836d1900742dd668496abfac6127ab8",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 1.0760727617889643,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": -0.01409480093945821,
+        "min_swept_surface_gap_m": -0.018751092798133084,
+        "penetration": false,
+        "first_contact_frame": 57,
+        "first_contact_time_s": 1.9,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 8.770762532916976e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.02304906788002007,
+      "defender_speed_p95_m_s": 3.033888543261437,
+      "defender_speed_max_m_s": 5.689919862550705,
+      "defender_acceleration_rms_m_s2": 20.270981213167552,
+      "defender_path_length_ratio": 1.0267570365721235,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.0750805139541626,
+        "contact": 0.0750805139541626,
+        "acceleration_mse": 364.2253112792969
+      },
+      {
+        "step": 149,
+        "loss": 0.0005270254914648831,
+        "contact": 0.0,
+        "acceleration_mse": 411.2415771484375
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "source": "interhuman_1211",
+    "generation_seed": 7105,
+    "arm": "temporal",
+    "source_sha256": "0e1a7813e9fa4897ba263878b83a59a87a37d1edc78f8f518ba22de1a3d2218e",
+    "output_sha256": "748c89ed85e4b23bebe06da17358c30a2b1e04e7461cab5a78c96f964233c0c7",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 0.9967017117887735,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.4323896730052629,
+        "min_swept_surface_gap_m": 0.4323896730052629,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 8.317441055338826e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.009205710818344898,
+      "defender_speed_p95_m_s": 1.9665564097522183,
+      "defender_speed_max_m_s": 4.274706899311489,
+      "defender_acceleration_rms_m_s2": 6.667571607056788,
+      "defender_path_length_ratio": 0.8639590221383885,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.0036422531120479107,
+        "contact": 0.0750805139541626,
+        "acceleration_mse": 364.2253112792969
+      },
+      {
+        "step": 149,
+        "loss": 0.0009518243605270982,
+        "contact": 0.07478334754705429,
+        "acceleration_mse": 44.46461486816406
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "source": "interhuman_1211",
+    "generation_seed": 7105,
+    "arm": "contact_temporal",
+    "source_sha256": "0e1a7813e9fa4897ba263878b83a59a87a37d1edc78f8f518ba22de1a3d2218e",
+    "output_sha256": "48b03e67b52b9e7cc9c0f4efe39a3c18464a6b48e3d33eadf746535c81b9ca87",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 1.0355681590735912,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.0036223666718005337,
+        "min_swept_surface_gap_m": 0.0011136461683897703,
+        "penetration": false,
+        "first_contact_frame": 57,
+        "first_contact_time_s": 1.9,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 8.308662324818528e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.02663385207352401,
+      "defender_speed_p95_m_s": 2.0775302438568195,
+      "defender_speed_max_m_s": 4.205916721322941,
+      "defender_acceleration_rms_m_s2": 7.136543641293879,
+      "defender_path_length_ratio": 0.8829714206314577,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.0787227675318718,
+        "contact": 0.0750805139541626,
+        "acceleration_mse": 364.2253112792969
+      },
+      {
+        "step": 149,
+        "loss": 0.0014971191994845867,
+        "contact": 5.965157470200211e-06,
+        "acceleration_mse": 50.96891784667969
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "source": "interhuman_1223",
+    "generation_seed": 7107,
+    "arm": "raw",
+    "source_sha256": "544577ac12d0d78936c018a4852e3982ceeddc41be68e26eeb9237656ad71397",
+    "output_sha256": "ed3b455b05ba2f6ed4edcc695309d449e2d57848cb0f2d6e12b803b7a31401c1",
+    "fps": 30.0,
+    "frames": 83,
+    "seconds": 0.0038742516189813614,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.9535600719661286,
+        "min_swept_surface_gap_m": 0.9535600719661286,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 0.0,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.0,
+      "defender_speed_p95_m_s": 2.638927644050467,
+      "defender_speed_max_m_s": 6.901307947063568,
+      "defender_acceleration_rms_m_s2": 12.298262601677934,
+      "defender_path_length_ratio": 1.0,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": []
+  },
+  {
+    "index": 7,
+    "source": "interhuman_1223",
+    "generation_seed": 7107,
+    "arm": "contact",
+    "source_sha256": "544577ac12d0d78936c018a4852e3982ceeddc41be68e26eeb9237656ad71397",
+    "output_sha256": "80c2bbe9f1f9c03921574070b35f56231fd1980ce5b956ffe3add8947728117b",
+    "fps": 30.0,
+    "frames": 83,
+    "seconds": 1.0773234646767378,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.00818279942350307,
+        "min_swept_surface_gap_m": 0.00818279942350307,
+        "penetration": false,
+        "first_contact_frame": 51,
+        "first_contact_time_s": 1.7,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 7.504163113125628e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.05639012118451475,
+      "defender_speed_p95_m_s": 3.605849458651995,
+      "defender_speed_max_m_s": 8.444681609430463,
+      "defender_acceleration_rms_m_s2": 21.335278681141745,
+      "defender_path_length_ratio": 1.2378726672681473,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.3637106120586395,
+        "contact": 0.3637106120586395,
+        "acceleration_mse": 151.2472381591797
+      },
+      {
+        "step": 149,
+        "loss": 0.003175955731421709,
+        "contact": 2.6199839339824393e-05,
+        "acceleration_mse": 455.53759765625
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "source": "interhuman_1223",
+    "generation_seed": 7107,
+    "arm": "temporal",
+    "source_sha256": "544577ac12d0d78936c018a4852e3982ceeddc41be68e26eeb9237656ad71397",
+    "output_sha256": "09185e766f283e094d18e73d5c0d42e214b574681f9028d5f84dc3718328dedb",
+    "fps": 30.0,
+    "frames": 83,
+    "seconds": 1.0297857485711575,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.9681657867231093,
+        "min_swept_surface_gap_m": 0.9681657867231093,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 7.251591821466619e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.007500312775144961,
+      "defender_speed_p95_m_s": 2.3050480778809233,
+      "defender_speed_max_m_s": 6.28338754225341,
+      "defender_acceleration_rms_m_s2": 6.096015558058713,
+      "defender_path_length_ratio": 0.9142747903757008,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.0015124724013730884,
+        "contact": 0.3637106120586395,
+        "acceleration_mse": 151.2472381591797
+      },
+      {
+        "step": 149,
+        "loss": 0.0005935555091127753,
+        "contact": 0.374940425157547,
+        "acceleration_mse": 37.173736572265625
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "source": "interhuman_1223",
+    "generation_seed": 7107,
+    "arm": "contact_temporal",
+    "source_sha256": "544577ac12d0d78936c018a4852e3982ceeddc41be68e26eeb9237656ad71397",
+    "output_sha256": "7310e162a40a7355f11fae2b1f7c49a383b3e7073df288c00e55a1de13ce659e",
+    "fps": 30.0,
+    "frames": 83,
+    "seconds": 1.031193096190691,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.013544549500041816,
+        "min_swept_surface_gap_m": 0.013544549500041816,
+        "penetration": false,
+        "first_contact_frame": 51,
+        "first_contact_time_s": 1.7,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 7.761183506982405e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.06895125338625353,
+      "defender_speed_p95_m_s": 3.0961467385221915,
+      "defender_speed_max_m_s": 6.614175007579967,
+      "defender_acceleration_rms_m_s2": 10.457717375901815,
+      "defender_path_length_ratio": 1.1584225697926858,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.36522307991981506,
+        "contact": 0.3637106120586395,
+        "acceleration_mse": 151.2472381591797
+      },
+      {
+        "step": 149,
+        "loss": 0.004944371059536934,
+        "contact": 7.333703979384154e-05,
+        "acceleration_mse": 109.5990982055664
+      }
+    ]
+  },
+  {
+    "index": 9,
+    "source": "interhuman_1236",
+    "generation_seed": 7109,
+    "arm": "raw",
+    "source_sha256": "0ff0f2cc2bee6593b9bce29d158fe6990545a63414e8563e99a4faa52323bba8",
+    "output_sha256": "f4c23831486872f9752bbbfc5827d07d7d21a2a2787fec3821720aeaa6c8fc2e",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 0.004140520468354225,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.39774344807898987,
+        "min_swept_surface_gap_m": 0.39640757326493625,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 0.0,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.0,
+      "defender_speed_p95_m_s": 2.2090913271281947,
+      "defender_speed_max_m_s": 5.953202398904655,
+      "defender_acceleration_rms_m_s2": 9.91746969944476,
+      "defender_path_length_ratio": 1.0,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": []
+  },
+  {
+    "index": 9,
+    "source": "interhuman_1236",
+    "generation_seed": 7109,
+    "arm": "contact",
+    "source_sha256": "0ff0f2cc2bee6593b9bce29d158fe6990545a63414e8563e99a4faa52323bba8",
+    "output_sha256": "b86adb8ff75d713f3ac2fb913f7884de65938e301e9beb9b8bd833607cfa1986",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 0.9886412918567657,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.00022168127794854053,
+        "min_swept_surface_gap_m": 0.00022168127794854053,
+        "penetration": false,
+        "first_contact_frame": 62,
+        "first_contact_time_s": 2.066666666666667,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 8.827410546974335e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.018312496938227552,
+      "defender_speed_p95_m_s": 2.2879848357679466,
+      "defender_speed_max_m_s": 5.93114927052261,
+      "defender_acceleration_rms_m_s2": 10.920873755708744,
+      "defender_path_length_ratio": 1.0321782885833488,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.06327994912862778,
+        "contact": 0.06327994912862778,
+        "acceleration_mse": 98.356201171875
+      },
+      {
+        "step": 149,
+        "loss": 0.0003318828239571303,
+        "contact": 0.0,
+        "acceleration_mse": 119.37095642089844
+      }
+    ]
+  },
+  {
+    "index": 9,
+    "source": "interhuman_1236",
+    "generation_seed": 7109,
+    "arm": "temporal",
+    "source_sha256": "0ff0f2cc2bee6593b9bce29d158fe6990545a63414e8563e99a4faa52323bba8",
+    "output_sha256": "b880b20eafe45fa14c37dbff862fed11c55b2c3cb7c0e5adebef2e6bb5304c89",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 1.0423117838799953,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.3953772205113796,
+        "min_swept_surface_gap_m": 0.39436609726299376,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 7.992819839319765e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.006470538644916676,
+      "defender_speed_p95_m_s": 2.0093774816757874,
+      "defender_speed_max_m_s": 4.575634722881116,
+      "defender_acceleration_rms_m_s2": 5.4266839227923365,
+      "defender_path_length_ratio": 0.9120380600478468,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.0009835619712248445,
+        "contact": 0.06327994912862778,
+        "acceleration_mse": 98.356201171875
+      },
+      {
+        "step": 149,
+        "loss": 0.00044192737550474703,
+        "contact": 0.06252075731754303,
+        "acceleration_mse": 29.458574295043945
+      }
+    ]
+  },
+  {
+    "index": 9,
+    "source": "interhuman_1236",
+    "generation_seed": 7109,
+    "arm": "contact_temporal",
+    "source_sha256": "0ff0f2cc2bee6593b9bce29d158fe6990545a63414e8563e99a4faa52323bba8",
+    "output_sha256": "c8e0592750680352c08ff4dd3fe2960a3150bfdd6ccfee44c9c21c187c1ff6a2",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 1.0299386121332645,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.0016964216669464044,
+        "min_swept_surface_gap_m": 0.0016964216669464044,
+        "penetration": false,
+        "first_contact_frame": 62,
+        "first_contact_time_s": 2.066666666666667,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 9.452709168189521e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.021454946111341463,
+      "defender_speed_p95_m_s": 2.0857093131178286,
+      "defender_speed_max_m_s": 4.523066344692949,
+      "defender_acceleration_rms_m_s2": 5.779877073717,
+      "defender_path_length_ratio": 0.9506891044175914,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.06426350772380829,
+        "contact": 0.06327994912862778,
+        "acceleration_mse": 98.356201171875
+      },
+      {
+        "step": 149,
+        "loss": 0.0008109253831207752,
+        "contact": 1.1295280728518264e-06,
+        "acceleration_mse": 33.42952346801758
+      }
+    ]
+  },
+  {
+    "index": 11,
+    "source": "interhuman_1247",
+    "generation_seed": 7111,
+    "arm": "raw",
+    "source_sha256": "4e6ef05289b7ae1c347af074e0c665422df6e73b537e4b48a87ab056f951f9d9",
+    "output_sha256": "873573a041e0074208b9bf1306cc51368afc9bd2c77fefca43f0dcda3bfc17c2",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 0.005114708095788956,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.5894239642541195,
+        "min_swept_surface_gap_m": 0.5894239642541195,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 0.0,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.0,
+      "defender_speed_p95_m_s": 2.0250421060317563,
+      "defender_speed_max_m_s": 6.205661572972779,
+      "defender_acceleration_rms_m_s2": 8.76934359267227,
+      "defender_path_length_ratio": 1.0,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": []
+  },
+  {
+    "index": 11,
+    "source": "interhuman_1247",
+    "generation_seed": 7111,
+    "arm": "contact",
+    "source_sha256": "4e6ef05289b7ae1c347af074e0c665422df6e73b537e4b48a87ab056f951f9d9",
+    "output_sha256": "8c177c79698ea3c16dbaf58a7dc216e0bc21fc39b8c7ea1a046627a4934450ee",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 1.0792018622159958,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.006214550572484087,
+        "min_swept_surface_gap_m": 0.006214550572484087,
+        "penetration": false,
+        "first_contact_frame": 71,
+        "first_contact_time_s": 2.3666666666666667,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 8.798044989766218e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.030548810215132283,
+      "defender_speed_p95_m_s": 2.3728877633396372,
+      "defender_speed_max_m_s": 6.174515475127501,
+      "defender_acceleration_rms_m_s2": 13.030625604479138,
+      "defender_path_length_ratio": 1.0877318833446634,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.13896827399730682,
+        "contact": 0.13896827399730682,
+        "acceleration_mse": 76.90138244628906
+      },
+      {
+        "step": 149,
+        "loss": 0.0009447020711377263,
+        "contact": 1.540707853564527e-05,
+        "acceleration_mse": 169.93331909179688
+      }
+    ]
+  },
+  {
+    "index": 11,
+    "source": "interhuman_1247",
+    "generation_seed": 7111,
+    "arm": "temporal",
+    "source_sha256": "4e6ef05289b7ae1c347af074e0c665422df6e73b537e4b48a87ab056f951f9d9",
+    "output_sha256": "e9f6428bb701602bdabaabea50eaa15eb0a6d5139b9f0b37aa3eafb5d1d8044a",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 1.0388047769665718,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.5810449939960576,
+        "min_swept_surface_gap_m": 0.5810449939960576,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 9.200821146637672e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.00559752066286758,
+      "defender_speed_p95_m_s": 1.8144586349364957,
+      "defender_speed_max_m_s": 5.397003703307817,
+      "defender_acceleration_rms_m_s2": 4.835608350943453,
+      "defender_path_length_ratio": 0.9070898350151385,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.0007690138299949467,
+        "contact": 0.13896827399730682,
+        "acceleration_mse": 76.90138244628906
+      },
+      {
+        "step": 149,
+        "loss": 0.00034450169187039137,
+        "contact": 0.13505037128925323,
+        "acceleration_mse": 23.391695022583008
+      }
+    ]
+  },
+  {
+    "index": 11,
+    "source": "interhuman_1247",
+    "generation_seed": 7111,
+    "arm": "contact_temporal",
+    "source_sha256": "4e6ef05289b7ae1c347af074e0c665422df6e73b537e4b48a87ab056f951f9d9",
+    "output_sha256": "48ee82ac01b615b4a0148eadba04a72e9df52fd334e5ca41ea1d5bde18679a0c",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 1.1126243025064468,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.005822442018291948,
+        "min_swept_surface_gap_m": 0.005822442018291948,
+        "penetration": false,
+        "first_contact_frame": 71,
+        "first_contact_time_s": 2.3666666666666667,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 8.192559658448673e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.03777787801899465,
+      "defender_speed_p95_m_s": 1.991635851769374,
+      "defender_speed_max_m_s": 5.5965736814969,
+      "defender_acceleration_rms_m_s2": 6.630872307847995,
+      "defender_path_length_ratio": 0.9792212159051016,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.1397372931241989,
+        "contact": 0.13896827399730682,
+        "acceleration_mse": 76.90138244628906
+      },
+      {
+        "step": 149,
+        "loss": 0.0016129512805491686,
+        "contact": 1.3193644008424599e-05,
+        "acceleration_mse": 44.04566192626953
+      }
+    ]
+  },
+  {
+    "index": 13,
+    "source": "interhuman_1265",
+    "generation_seed": 7113,
+    "arm": "raw",
+    "source_sha256": "1d386475d0a026b34bf80feec60f4f1411835a3eaecce9cdfdd8e969128222c9",
+    "output_sha256": "a6b8e349c1601609b02efdefaae70f5511704295215c7f7e4a0571a3f8fc9c78",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 0.004959156736731529,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.8253839400870149,
+        "min_swept_surface_gap_m": 0.8202467339108146,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 0.0,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.0,
+      "defender_speed_p95_m_s": 1.77382840001842,
+      "defender_speed_max_m_s": 6.067102233789665,
+      "defender_acceleration_rms_m_s2": 6.903096431120385,
+      "defender_path_length_ratio": 1.0,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": []
+  },
+  {
+    "index": 13,
+    "source": "interhuman_1265",
+    "generation_seed": 7113,
+    "arm": "contact",
+    "source_sha256": "1d386475d0a026b34bf80feec60f4f1411835a3eaecce9cdfdd8e969128222c9",
+    "output_sha256": "5d0354ec0c8a78d6beba6f03c4b6459bc4aa6c5db83501ec2afc0170c4b3b138",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 1.1015532780438662,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.006311882215113682,
+        "min_swept_surface_gap_m": 0.006311882215113682,
+        "penetration": false,
+        "first_contact_frame": 63,
+        "first_contact_time_s": 2.1,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 9.05095837999692e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.04336189562018089,
+      "defender_speed_p95_m_s": 2.4982285736896097,
+      "defender_speed_max_m_s": 7.251888376850256,
+      "defender_acceleration_rms_m_s2": 14.434567758399135,
+      "defender_path_length_ratio": 1.1951728100866328,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.27250343561172485,
+        "contact": 0.27250343561172485,
+        "acceleration_mse": 47.65273666381836
+      },
+      {
+        "step": 149,
+        "loss": 0.0018709271680563688,
+        "contact": 1.6393654732382856e-05,
+        "acceleration_mse": 208.42494201660156
+      }
+    ]
+  },
+  {
+    "index": 13,
+    "source": "interhuman_1265",
+    "generation_seed": 7113,
+    "arm": "temporal",
+    "source_sha256": "1d386475d0a026b34bf80feec60f4f1411835a3eaecce9cdfdd8e969128222c9",
+    "output_sha256": "2e04dd5786bf1bee2be151178bd57bf0aac0f5311efaa2398cf78bb65663c8f0",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 1.0282855369150639,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.821066622285739,
+        "min_swept_surface_gap_m": 0.8168397760812653,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 8.612728122359137e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.004466878269483639,
+      "defender_speed_p95_m_s": 1.7795083613019649,
+      "defender_speed_max_m_s": 5.368528630191541,
+      "defender_acceleration_rms_m_s2": 3.8017065654174593,
+      "defender_path_length_ratio": 0.9081534542957592,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.00047652734792791307,
+        "contact": 0.27250343561172485,
+        "acceleration_mse": 47.65273666381836
+      },
+      {
+        "step": 149,
+        "loss": 0.00021452526561915874,
+        "contact": 0.2696610987186432,
+        "acceleration_mse": 14.457075119018555
+      }
+    ]
+  },
+  {
+    "index": 13,
+    "source": "interhuman_1265",
+    "generation_seed": 7113,
+    "arm": "contact_temporal",
+    "source_sha256": "1d386475d0a026b34bf80feec60f4f1411835a3eaecce9cdfdd8e969128222c9",
+    "output_sha256": "4eaf9c5d38243421941a2c7eec36a597cb1dfe772cb157ab483c0a45f9a0289e",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 0.9963383954018354,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.009407990988085216,
+        "min_swept_surface_gap_m": 0.009407990988085216,
+        "penetration": false,
+        "first_contact_frame": 63,
+        "first_contact_time_s": 2.1,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 8.415083499468956e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.05296059991191513,
+      "defender_speed_p95_m_s": 2.3731690010341246,
+      "defender_speed_max_m_s": 5.613234006073808,
+      "defender_acceleration_rms_m_s2": 7.30981616561528,
+      "defender_path_length_ratio": 1.1118493256096218,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.2729799747467041,
+        "contact": 0.27250343561172485,
+        "acceleration_mse": 47.65273666381836
+      },
+      {
+        "step": 149,
+        "loss": 0.0027844305150210857,
+        "contact": 3.539051249390468e-05,
+        "acceleration_mse": 53.55950164794922
+      }
+    ]
+  },
+  {
+    "index": 15,
+    "source": "interhuman_1287",
+    "generation_seed": 7115,
+    "arm": "raw",
+    "source_sha256": "e2139b67c20a0dae3699eda26def9709bf01385e11db7ed5902d8ab862f13e1f",
+    "output_sha256": "af86e1a61265f8e1c23c381d7e2ccba404b82f0669eba869a3dbad2ebccdf58c",
+    "fps": 30.0,
+    "frames": 71,
+    "seconds": 0.0027184896171092987,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.4933685618194013,
+        "min_swept_surface_gap_m": 0.4933685618194013,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 0.0,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.0,
+      "defender_speed_p95_m_s": 2.169632330809673,
+      "defender_speed_max_m_s": 8.258379252136706,
+      "defender_acceleration_rms_m_s2": 8.756083962259423,
+      "defender_path_length_ratio": 1.0,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": []
+  },
+  {
+    "index": 15,
+    "source": "interhuman_1287",
+    "generation_seed": 7115,
+    "arm": "contact",
+    "source_sha256": "e2139b67c20a0dae3699eda26def9709bf01385e11db7ed5902d8ab862f13e1f",
+    "output_sha256": "cfe1ea20068c6237494d51d7540107dd45e63dc6372034e6782b73a7c6eb0272",
+    "fps": 30.0,
+    "frames": 71,
+    "seconds": 1.0635249447077513,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.006170695772959409,
+        "min_swept_surface_gap_m": 0.006170695772959409,
+        "penetration": false,
+        "first_contact_frame": 54,
+        "first_contact_time_s": 1.8,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 7.894003545283468e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.03370539175411504,
+      "defender_speed_p95_m_s": 2.650292309697448,
+      "defender_speed_max_m_s": 8.274577361370143,
+      "defender_acceleration_rms_m_s2": 14.065541882449526,
+      "defender_path_length_ratio": 1.0912175866913427,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.09736501425504684,
+        "contact": 0.09736501425504684,
+        "acceleration_mse": 76.66899871826172
+      },
+      {
+        "step": 149,
+        "loss": 0.0011534211225807667,
+        "contact": 1.526712549093645e-05,
+        "acceleration_mse": 197.96176147460938
+      }
+    ]
+  },
+  {
+    "index": 15,
+    "source": "interhuman_1287",
+    "generation_seed": 7115,
+    "arm": "temporal",
+    "source_sha256": "e2139b67c20a0dae3699eda26def9709bf01385e11db7ed5902d8ab862f13e1f",
+    "output_sha256": "5c11cb153040a7aafb3be2775d07693ea505e6a2f02cbe5ca2a7814d94b7fc11",
+    "fps": 30.0,
+    "frames": 71,
+    "seconds": 1.0711106192320585,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.49301205973303347,
+        "min_swept_surface_gap_m": 0.49301205973303347,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 8.516967128779918e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.007044854753026707,
+      "defender_speed_p95_m_s": 1.9573125596694838,
+      "defender_speed_max_m_s": 7.189499564000747,
+      "defender_acceleration_rms_m_s2": 6.098158241409262,
+      "defender_path_length_ratio": 0.930572179813278,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.0007666899473406374,
+        "contact": 0.09736501425504684,
+        "acceleration_mse": 76.66899871826172
+      },
+      {
+        "step": 149,
+        "loss": 0.00048131326911970973,
+        "contact": 0.09722819179296494,
+        "acceleration_mse": 37.20030212402344
+      }
+    ]
+  },
+  {
+    "index": 15,
+    "source": "interhuman_1287",
+    "generation_seed": 7115,
+    "arm": "contact_temporal",
+    "source_sha256": "e2139b67c20a0dae3699eda26def9709bf01385e11db7ed5902d8ab862f13e1f",
+    "output_sha256": "3fc374a2ef8151a1c90d934cad0f1b52a35cc1eb26e1ffc79779817d011db543",
+    "fps": 30.0,
+    "frames": 71,
+    "seconds": 1.0410841647535563,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.008764148663555613,
+        "min_swept_surface_gap_m": 0.008764148663555613,
+        "penetration": false,
+        "first_contact_frame": 54,
+        "first_contact_time_s": 1.8,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 7.840579446805052e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.04184016477650779,
+      "defender_speed_p95_m_s": 2.2409223846398505,
+      "defender_speed_max_m_s": 7.347528698458723,
+      "defender_acceleration_rms_m_s2": 7.896489660215372,
+      "defender_path_length_ratio": 1.0093333820742822,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.0981317013502121,
+        "contact": 0.09736501425504684,
+        "acceleration_mse": 76.66899871826172
+      },
+      {
+        "step": 149,
+        "loss": 0.002027606125921011,
+        "contact": 3.073030529776588e-05,
+        "acceleration_mse": 62.45361328125
+      }
+    ]
+  },
+  {
+    "index": 17,
+    "source": "interhuman_1321",
+    "generation_seed": 7117,
+    "arm": "raw",
+    "source_sha256": "a7a3b144386e60b089672d3370ccbee3efbb13589f3160f0a97a1c3cd1c8ce47",
+    "output_sha256": "28a53ff18bbc05b2b993e1c08ac3bc5dd4f0e124c6ccc357ff1933e7300f94bb",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 0.005153816193342209,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.6831975413311422,
+        "min_swept_surface_gap_m": 0.6388369048639682,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 0.0,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.0,
+      "defender_speed_p95_m_s": 2.4419613204277955,
+      "defender_speed_max_m_s": 22.92184019933425,
+      "defender_acceleration_rms_m_s2": 62.849329527072136,
+      "defender_path_length_ratio": 1.0,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": []
+  },
+  {
+    "index": 17,
+    "source": "interhuman_1321",
+    "generation_seed": 7117,
+    "arm": "contact",
+    "source_sha256": "a7a3b144386e60b089672d3370ccbee3efbb13589f3160f0a97a1c3cd1c8ce47",
+    "output_sha256": "4c761ed3e0766e99a9291168d387b8b198539c6d5d90010de78160e5e4cd13e2",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 1.0132121164351702,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.0023056931807387687,
+        "min_swept_surface_gap_m": 0.0020889802455363454,
+        "penetration": false,
+        "first_contact_frame": 61,
+        "first_contact_time_s": 2.033333333333333,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 8.331542789008495e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.03122784742138678,
+      "defender_speed_p95_m_s": 2.6526009375290887,
+      "defender_speed_max_m_s": 22.75484658931082,
+      "defender_acceleration_rms_m_s2": 63.694450157413755,
+      "defender_path_length_ratio": 1.04944226395201,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.18670356273651123,
+        "contact": 0.18670356273651123,
+        "acceleration_mse": 3950.0380859375
+      },
+      {
+        "step": 149,
+        "loss": 0.0010088500566780567,
+        "contact": 4.0897366488934495e-06,
+        "acceleration_mse": 4058.12158203125
+      }
+    ]
+  },
+  {
+    "index": 17,
+    "source": "interhuman_1321",
+    "generation_seed": 7117,
+    "arm": "temporal",
+    "source_sha256": "a7a3b144386e60b089672d3370ccbee3efbb13589f3160f0a97a1c3cd1c8ce47",
+    "output_sha256": "23950a269adfc30d4102d521b2ed6f877853724f025f243db610d8a1008fbf7d",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 1.0658740010112524,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.5985414873369264,
+        "min_swept_surface_gap_m": 0.5985414873369264,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 7.929052367461331e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.020798472449814934,
+      "defender_speed_p95_m_s": 2.2658197399877147,
+      "defender_speed_max_m_s": 6.238650049138224,
+      "defender_acceleration_rms_m_s2": 12.964171744089425,
+      "defender_path_length_ratio": 0.7878829528480256,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.03950037807226181,
+        "contact": 0.18670356273651123,
+        "acceleration_mse": 3950.0380859375
+      },
+      {
+        "step": 149,
+        "loss": 0.00672014057636261,
+        "contact": 0.14327049255371094,
+        "acceleration_mse": 168.33001708984375
+      }
+    ]
+  },
+  {
+    "index": 17,
+    "source": "interhuman_1321",
+    "generation_seed": 7117,
+    "arm": "contact_temporal",
+    "source_sha256": "a7a3b144386e60b089672d3370ccbee3efbb13589f3160f0a97a1c3cd1c8ce47",
+    "output_sha256": "59d8bfd86085530258fd9aac65bb81b88e03c94a6aa2f530e950d1bb1358a296",
+    "fps": 30.0,
+    "frames": 120,
+    "seconds": 1.063028497621417,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.0056211014906412254,
+        "min_swept_surface_gap_m": 0.0056211014906412254,
+        "penetration": false,
+        "first_contact_frame": 61,
+        "first_contact_time_s": 2.033333333333333,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 8.328102973909068e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.04745120358804026,
+      "defender_speed_p95_m_s": 2.563298094614057,
+      "defender_speed_max_m_s": 6.810029248543688,
+      "defender_acceleration_rms_m_s2": 13.7957972698019,
+      "defender_path_length_ratio": 0.8376256256766795,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.22620394825935364,
+        "contact": 0.18670356273651123,
+        "acceleration_mse": 3950.0380859375
+      },
+      {
+        "step": 149,
+        "loss": 0.008322492241859436,
+        "contact": 1.3399386261880863e-05,
+        "acceleration_mse": 190.5903778076172
+      }
+    ]
+  },
+  {
+    "index": 19,
+    "source": "interhuman_1351",
+    "generation_seed": 7119,
+    "arm": "raw",
+    "source_sha256": "c0f820716b3779c292d8a87f9f43b6393279dd2cc3611e0bc9d7e270d1f99a00",
+    "output_sha256": "db41d15b65741f4d8671095b272633b1d497be3a372b7756d586835dc0804ef1",
+    "fps": 30.0,
+    "frames": 97,
+    "seconds": 0.0048263780772686005,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.4836224176820952,
+        "min_swept_surface_gap_m": 0.4836224176820952,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 0.0,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.0,
+      "defender_speed_p95_m_s": 2.847079857822056,
+      "defender_speed_max_m_s": 7.7905664739895055,
+      "defender_acceleration_rms_m_s2": 10.723821497965375,
+      "defender_path_length_ratio": 1.0,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": []
+  },
+  {
+    "index": 19,
+    "source": "interhuman_1351",
+    "generation_seed": 7119,
+    "arm": "contact",
+    "source_sha256": "c0f820716b3779c292d8a87f9f43b6393279dd2cc3611e0bc9d7e270d1f99a00",
+    "output_sha256": "908eb7d1a8ed37e94216084d8200e668d1879ce9da92eb30bf67156c2df77c1d",
+    "fps": 30.0,
+    "frames": 97,
+    "seconds": 1.0840826723724604,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.0016545089217729625,
+        "min_swept_surface_gap_m": 0.0016545089217729625,
+        "penetration": false,
+        "first_contact_frame": 33,
+        "first_contact_time_s": 1.1,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 7.695240805682957e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.024975207396738204,
+      "defender_speed_p95_m_s": 2.8996529993715097,
+      "defender_speed_max_m_s": 7.7821236948328005,
+      "defender_acceleration_rms_m_s2": 13.072196256049939,
+      "defender_path_length_ratio": 1.0261986600547948,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.09355626255273819,
+        "contact": 0.09355626255273819,
+        "acceleration_mse": 115.00035858154297
+      },
+      {
+        "step": 149,
+        "loss": 0.000618390622548759,
+        "contact": 1.0699091035348829e-06,
+        "acceleration_mse": 171.0392303466797
+      }
+    ]
+  },
+  {
+    "index": 19,
+    "source": "interhuman_1351",
+    "generation_seed": 7119,
+    "arm": "temporal",
+    "source_sha256": "c0f820716b3779c292d8a87f9f43b6393279dd2cc3611e0bc9d7e270d1f99a00",
+    "output_sha256": "7bb668f6bb5bd91cd526cd0bd3f7b43fe5e941751b497acc32de94f6dd7f3840",
+    "fps": 30.0,
+    "frames": 97,
+    "seconds": 1.0900846142321825,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": false,
+        "min_surface_gap_m": 0.4731939584109733,
+        "min_swept_surface_gap_m": 0.4731939584109733,
+        "penetration": false,
+        "first_contact_frame": null,
+        "first_contact_time_s": null,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 8.034560330938412e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.008383894206453127,
+      "defender_speed_p95_m_s": 2.4773941367950827,
+      "defender_speed_max_m_s": 6.881467625039437,
+      "defender_acceleration_rms_m_s2": 6.99812614029926,
+      "defender_path_length_ratio": 0.9113651205106736,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.0011500035179778934,
+        "contact": 0.09355626255273819,
+        "acceleration_mse": 115.00035858154297
+      },
+      {
+        "step": 149,
+        "loss": 0.0006628177361562848,
+        "contact": 0.08956601470708847,
+        "acceleration_mse": 48.99091339111328
+      }
+    ]
+  },
+  {
+    "index": 19,
+    "source": "interhuman_1351",
+    "generation_seed": 7119,
+    "arm": "contact_temporal",
+    "source_sha256": "c0f820716b3779c292d8a87f9f43b6393279dd2cc3611e0bc9d7e270d1f99a00",
+    "output_sha256": "1ca7136cb5fa8ef9ad9e09f820fdab154d8ea878704808b4b84aaf15509193ce",
+    "fps": 30.0,
+    "frames": 97,
+    "seconds": 1.0541521478444338,
+    "quality": {
+      "proxy_contact": {
+        "kind": "block",
+        "success": true,
+        "min_surface_gap_m": 0.0038153580837442247,
+        "min_swept_surface_gap_m": 0.0038153580837442247,
+        "penetration": false,
+        "first_contact_frame": 33,
+        "first_contact_time_s": 1.1,
+        "protected_hit_frame": null,
+        "confidence": 0.4,
+        "provenance": "automatic_guard_geometry_candidate; unreviewed",
+        "geometry": "sphere_proxy_linear_sweep",
+        "force_verified": false
+      },
+      "max_bone_length_change_m": 8.043477642272201e-08,
+      "max_attacker_change_m": 0.0,
+      "defender_displacement_rms_m": 0.03091546538030141,
+      "defender_speed_p95_m_s": 2.454167571782608,
+      "defender_speed_max_m_s": 6.889846728887559,
+      "defender_acceleration_rms_m_s2": 7.707342997223734,
+      "defender_path_length_ratio": 0.9262026099401014,
+      "robot_dynamics_verified": false,
+      "human_semantics_verified": false,
+      "contact_truth": "same supplied weak geometric condition; not independent human labels"
+    },
+    "optimization": [
+      {
+        "step": 0,
+        "loss": 0.09470626711845398,
+        "contact": 0.09355626255273819,
+        "acceleration_mse": 115.00035858154297
+      },
+      {
+        "step": 149,
+        "loss": 0.0014385510003194213,
+        "contact": 5.761426109529566e-06,
+        "acceleration_mse": 59.45052719116211
+      }
+    ]
+  }
+]

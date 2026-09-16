@@ -1,0 +1,11 @@
+{
+  "verified": true,
+  "archived_files": 10,
+  "repetitions_per_arm": 20,
+  "generation_calls_per_arm": 21980,
+  "paired_inputs_and_rng": true,
+  "metrics_recomputed_from_logs": true,
+  "frozen_execution_code_verified": true,
+  "summary_float_tolerance": 1e-12,
+  "scope": "artifact and numerical verification, not independent contact or robot utility validation"
+}

@@ -1,0 +1,45 @@
+{
+  "experiment": "E2-component contact x temporal regularization",
+  "scope": "post-generation human kinematic proxy ablation; not full physics-aware generator or downstream policy training",
+  "status": "complete",
+  "source_report_sha256": "7bbc9a6f217fd855da8d698cd465481715bc5d85e21e4cea6eb7bcaeed695aea",
+  "events_sha256": "75bf104f7080e851454ec057b2ede1eddc9de99f10c376c59fcc1851b13b7bfc",
+  "arms": {
+    "raw": [
+      0.0,
+      0.0
+    ],
+    "contact": [
+      1.0,
+      0.0
+    ],
+    "temporal": [
+      0.0,
+      1e-05
+    ],
+    "contact_temporal": [
+      1.0,
+      1e-05
+    ]
+  },
+  "steps": 150,
+  "lr": 0.01,
+  "shard_index": 0,
+  "shard_count": 2,
+  "input_arm": "inpainting_only",
+  "attacker_fixed": true,
+  "preserve_source_bone_lengths": true,
+  "conditions": "same saved full attacker, pseudo contact event, frames and original generation seed",
+  "selection": "all 20 previous training conditions, no output-based rejection",
+  "test_status": "retrospective training-set diagnostic; no untouched test evidence",
+  "host": "nlp03",
+  "torch": "2.5.1+cu121",
+  "device": "cuda",
+  "gpu": "NVIDIA RTX A6000",
+  "module_sha256": "358e9ec01e0208c8d52f59772c0c82852f599e7dd36ed4372a969a62a2afeaaf",
+  "runner_sha256": "34dd8dd695951ffc74fc7c65cf34685be9998b4beba5d856066aeb9e59bc5f8c",
+  "new_policy_training_steps": 0,
+  "cases": 10,
+  "outputs": 40,
+  "runtime_s": 33.397801514714956
+}

@@ -1,0 +1,19 @@
+test_only_caption_information (tests.test_benchmark_conditions.BenchmarkConditions) ... ok
+test_selection_leakage_rejected (tests.test_benchmark_conditions.BenchmarkConditions) ... ok
+test_word_boundaries (tests.test_benchmark_conditions.BenchmarkConditions) ... ok
+test_incomplete_rejected (tests.test_benchmark_results.Results) ... ok
+test_sampling_uncertainty (tests.test_benchmark_results.Results) ... ok
+test_summary_not_double_counted (tests.test_benchmark_results.Results) ... ok
+test_complete_provenance (tests.test_benchmark_readiness.BenchmarkReadiness) ... ok
+test_descendant_cross_split (tests.test_benchmark_readiness.BenchmarkReadiness) ... ok
+test_development_cannot_be_confirmation (tests.test_benchmark_readiness.BenchmarkReadiness) ... ok
+test_empty_not_ready (tests.test_benchmark_readiness.BenchmarkReadiness) ... ok
+test_future_test_condition_for_training_rejected (tests.test_benchmark_readiness.BenchmarkReadiness) ... ok
+test_missing_file_and_corruption_rejected (tests.test_benchmark_readiness.BenchmarkReadiness) ... ok
+test_pseudo_label_rejected (tests.test_benchmark_readiness.BenchmarkReadiness) ... ok
+test_unresolved_review_and_time_rejected (tests.test_benchmark_readiness.BenchmarkReadiness) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.009s
+
+OK

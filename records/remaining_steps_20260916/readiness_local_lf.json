@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "confirmation_manifest_ready": false,
+  "counts": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+  },
+  "annotations": 0,
+  "errors": [
+    "Real motion manifest is empty; templates are not benchmark data",
+    "No independent test samples"
+  ],
+  "meaning": "provenance consistency only; not annotation accuracy, statistical adequacy, or training authorization",
+  "training_launched": false,
+  "protocol_sha256": "25a3c448d6796613a4a7471383201a18e7e7df69ca81944088a7d8281bce504e",
+  "tracks": [
+    {
+      "id": "BM1",
+      "dataset": "InterHuman",
+      "purpose": "official_generation_replication",
+      "status": "complete_available_official_subset_baseline_vs_caption_adapter",
+      "run_id": "bm1_20260915_v1",
+      "record": "records/bm1_20260915_v1/launch_receipt.json",
+      "result": "records/bm1_20260915_v1/suite_result.json",
+      "archive_verification": "records/bm1_20260915_v1/archive_verification.json"
+    },
+    {
+      "id": "BM2",
+      "dataset": "DuoBox",
+      "purpose": "boxing_reaction",
+      "status": "authorization_and_data_unconfirmed",
+      "settings": [
+        "offline_full_attacker",
+        "online_history_only",
+        "two_character",
+        "long_horizon"
+      ]
+    },
+    {
+      "id": "BM3",
+      "dataset": "independent_combat_events",
+      "purpose": "contact_and_reference_quality",
+      "status": "annotations_not_ready",
+      "arms": [
+        "raw",
+        "contact",
+        "temporal",
+        "contact_temporal"
+      ]
+    },
+    {
+      "id": "BM4",
+      "dataset": "independent_robot_test",
+      "purpose": "downstream_utility",
+      "status": "existing_baseline_and_test_gates_pending",
+      "policy_seeds": [
+        0,
+        1,
+        2
+      ]
+    }
+  ]
+}

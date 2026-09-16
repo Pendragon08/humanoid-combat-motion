@@ -1,0 +1,94 @@
+{
+  "backup": "/data/code/ouyanghao/oyh/humanoid-combat-motion/records/benchmark_v1/backups/20260915T125056Z",
+  "files": {
+    "docs/step7_protocol.md": "5ab35145f052c83c83215c0de26990dacf2dc65adb635af9b38d53782def317e",
+    "docs/results_summary.md": "2ce692bd5f2099a7ab0c5c91f78590714f83f20e3332c669e714d86e4ac45afa",
+    "docs/benchmark_protocol_20260915.md": "16d0b8f4b99c4864719faca535a6b4625d1ce5852a80d4f9aaf5d32337c05ad2",
+    "configs/data_utility_protocol_v2.json": "61373033d98fc9dbcc0ab5d2080045e833baf3e91462182a4a18113923ac912c",
+    "configs/benchmark_protocol_v1.json": "7f30a935cf54d4a583e6f4da273e28519a0cef9a91b7b5eef22cd46b75ffadf1",
+    "configs/benchmark_manifest.example.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "configs/benchmark_contact_annotations.csv": "8b062cc9a16212f0ef5de7a809ab36f773fea5cd5e942c804cbeb2a525972a2d",
+    "combat/benchmark_readiness.py": "f49dc8fe97079c7c464054699a68821f2ae2abdaafde52ba89409feea14a17d4",
+    "scripts/check_benchmark_readiness.py": "aacc462e04651c358fc6f1037e527b5857c04b8a67461d5962d92e1264407461",
+    "tests/test_benchmark_readiness.py": "42ddaf1a449aa147639b805df50e8cda2a8a5b01e3fa57c3056f31106162392a",
+    "records/data_constraint_v2/summary.json": "24baeade3ae83f8e9a9d4b0f09bc539068b23664a102eef98ec15ebe115a70ea",
+    "records/data_constraint_v2/shard0/COMPLETE.json": "423d0ff420ca78c885c6ac99e6f936ffa3e870705846f6c066aacb3d0fb2081f",
+    "records/data_constraint_v2/shard0/protocol.json": "c188c762eebe04506777ab4c54743a67ef51dcd96417e97c2bd1629b128a65cc",
+    "records/data_constraint_v2/shard0/results.json": "ddb35af42d7fa50eee987db38029271ebc36d7ade3419f8486889a69c99b0333",
+    "records/data_constraint_v2/shard1/COMPLETE.json": "16fd65c74317214e92a7e11e15890008970d689f1f5c4d1ca63fbe440215810e",
+    "records/data_constraint_v2/shard1/protocol.json": "6e4db46713135e0b0ceb301fc636c714b517c84ed21155fd301405a963c47a1f",
+    "records/data_constraint_v2/shard1/results.json": "dc2589eeb44056148a4881e2d5ad8b44a383985c98e27c7dd6ddb73e924f4b4a"
+  },
+  "tests": {
+    "exit": 0,
+    "stdout": "",
+    "stderr": "test_complete_provenance (tests.test_benchmark_readiness.BenchmarkReadiness) ... ok\ntest_descendant_cross_split (tests.test_benchmark_readiness.BenchmarkReadiness) ... ok\ntest_development_cannot_be_confirmation (tests.test_benchmark_readiness.BenchmarkReadiness) ... ok\ntest_empty_not_ready (tests.test_benchmark_readiness.BenchmarkReadiness) ... ok\ntest_future_test_condition_for_training_rejected (tests.test_benchmark_readiness.BenchmarkReadiness) ... ok\ntest_missing_file_and_corruption_rejected (tests.test_benchmark_readiness.BenchmarkReadiness) ... ok\ntest_pseudo_label_rejected (tests.test_benchmark_readiness.BenchmarkReadiness) ... ok\ntest_unresolved_review_and_time_rejected (tests.test_benchmark_readiness.BenchmarkReadiness) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.004s\n\nOK\n"
+  },
+  "readiness": {
+    "exit": 2,
+    "stdout": "{\"schema_version\": 1, \"confirmation_manifest_ready\": false, \"counts\": {\"train\": 0, \"val\": 0, \"test\": 0}, \"annotations\": 0, \"errors\": [\"Real motion manifest is empty; templates are not benchmark data\", \"No independent test samples\"], \"meaning\": \"provenance consistency only; not annotation accuracy, statistical adequacy, or training authorization\", \"training_launched\": false, \"protocol_sha256\": \"79071ffdb662f31884366f2094fed316423139b4670d0632d36ee3483a99605d\", \"tracks\": [{\"id\": \"BM1\", \"dataset\": \"InterHuman\", \"purpose\": \"official_generation_replication\", \"status\": \"existing_integration_freeze_pending\"}, {\"id\": \"BM2\", \"dataset\": \"DuoBox\", \"purpose\": \"boxing_reaction\", \"status\": \"authorization_and_data_unconfirmed\", \"settings\": [\"offline_full_attacker\", \"online_history_only\", \"two_character\", \"long_horizon\"]}, {\"id\": \"BM3\", \"dataset\": \"independent_combat_events\", \"purpose\": \"contact_and_reference_quality\", \"status\": \"annotations_not_ready\", \"arms\": [\"raw\", \"contact\", \"temporal\", \"contact_temporal\"]}, {\"id\": \"BM4\", \"dataset\": \"independent_robot_test\", \"purpose\": \"downstream_utility\", \"status\": \"existing_baseline_and_test_gates_pending\", \"policy_seeds\": [0, 1, 2]}]}\n",
+    "stderr": ""
+  },
+  "readiness_result": {
+    "schema_version": 1,
+    "confirmation_manifest_ready": false,
+    "counts": {
+      "train": 0,
+      "val": 0,
+      "test": 0
+    },
+    "annotations": 0,
+    "errors": [
+      "Real motion manifest is empty; templates are not benchmark data",
+      "No independent test samples"
+    ],
+    "meaning": "provenance consistency only; not annotation accuracy, statistical adequacy, or training authorization",
+    "training_launched": false,
+    "protocol_sha256": "79071ffdb662f31884366f2094fed316423139b4670d0632d36ee3483a99605d",
+    "tracks": [
+      {
+        "id": "BM1",
+        "dataset": "InterHuman",
+        "purpose": "official_generation_replication",
+        "status": "existing_integration_freeze_pending"
+      },
+      {
+        "id": "BM2",
+        "dataset": "DuoBox",
+        "purpose": "boxing_reaction",
+        "status": "authorization_and_data_unconfirmed",
+        "settings": [
+          "offline_full_attacker",
+          "online_history_only",
+          "two_character",
+          "long_horizon"
+        ]
+      },
+      {
+        "id": "BM3",
+        "dataset": "independent_combat_events",
+        "purpose": "contact_and_reference_quality",
+        "status": "annotations_not_ready",
+        "arms": [
+          "raw",
+          "contact",
+          "temporal",
+          "contact_temporal"
+        ]
+      },
+      {
+        "id": "BM4",
+        "dataset": "independent_robot_test",
+        "purpose": "downstream_utility",
+        "status": "existing_baseline_and_test_gates_pending",
+        "policy_seeds": [
+          0,
+          1,
+          2
+        ]
+      }
+    ]
+  },
+  "status_update": "current execution progress synchronized after successful deployment",
+  "line_endings": "LF; text content preserved"
+}

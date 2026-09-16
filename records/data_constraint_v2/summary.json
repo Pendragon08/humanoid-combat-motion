@@ -1,0 +1,57 @@
+{
+  "status": "complete_verified",
+  "outputs": 80,
+  "paired_training_conditions": 20,
+  "verification": "server protocol hashes and every output NPZ SHA256 checked on 2026-09-15",
+  "source_receipt_sha256": "37715e86d10e65804f9f724e5dc234e205f7102691dbd9fba15bb99dc229fcbc",
+  "scope": "retrospective training-set post-generation kinematic diagnostic",
+  "independent_contact_ground_truth": false,
+  "robot_dynamics_verified": false,
+  "new_policy_training_steps": 0,
+  "arms": {
+    "raw": {
+      "n": 20,
+      "weak_geometry_success": 0,
+      "means": {
+        "defender_speed_p95_m_s": 2.4163093397957205,
+        "defender_acceleration_rms_m_s2": 15.420930846934466,
+        "defender_path_length_ratio": 1.0
+      },
+      "max_bone_length_change_m": 0.0,
+      "max_attacker_change_m": 0.0
+    },
+    "contact": {
+      "n": 20,
+      "weak_geometry_success": 19,
+      "means": {
+        "defender_speed_p95_m_s": 2.787460380648159,
+        "defender_acceleration_rms_m_s2": 19.546848827491583,
+        "defender_path_length_ratio": 1.0980935429700898
+      },
+      "max_bone_length_change_m": 1.1357138858525406e-07,
+      "max_attacker_change_m": 0.0
+    },
+    "temporal": {
+      "n": 20,
+      "weak_geometry_success": 0,
+      "means": {
+        "defender_speed_p95_m_s": 2.0738641924138204,
+        "defender_acceleration_rms_m_s2": 6.226766381762336,
+        "defender_path_length_ratio": 0.8920981621693337
+      },
+      "max_bone_length_change_m": 1.2406223748318013e-07,
+      "max_attacker_change_m": 0.0
+    },
+    "contact_temporal": {
+      "n": 20,
+      "weak_geometry_success": 19,
+      "means": {
+        "defender_speed_p95_m_s": 2.426941499686692,
+        "defender_acceleration_rms_m_s2": 8.013283473247528,
+        "defender_path_length_ratio": 0.9871610268548092
+      },
+      "max_bone_length_change_m": 1.227864593333905e-07,
+      "max_attacker_change_m": 0.0
+    }
+  }
+}

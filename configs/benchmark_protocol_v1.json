@@ -1,0 +1,70 @@
+{
+  "protocol_id": "benchmark_v1_20260915",
+  "canonical_document": "docs/benchmark_protocol_20260915.md",
+  "launch_enabled": false,
+  "manifest_path": "configs/benchmark_manifest.example.jsonl",
+  "annotation_path": "configs/benchmark_contact_annotations.csv",
+  "status": "BM1_complete_BM2_BM3_BM4_blocked",
+  "official_and_confirmation_splits_separate": true,
+  "tracks": [
+    {
+      "id": "BM1",
+      "dataset": "InterHuman",
+      "purpose": "official_generation_replication",
+      "status": "complete_available_official_subset_baseline_vs_caption_adapter",
+      "run_id": "bm1_20260915_v1",
+      "record": "records/bm1_20260915_v1/launch_receipt.json",
+      "result": "records/bm1_20260915_v1/suite_result.json",
+      "archive_verification": "records/bm1_20260915_v1/archive_verification.json"
+    },
+    {
+      "id": "BM2",
+      "dataset": "DuoBox",
+      "purpose": "boxing_reaction",
+      "status": "authorization_and_data_unconfirmed",
+      "settings": [
+        "offline_full_attacker",
+        "online_history_only",
+        "two_character",
+        "long_horizon"
+      ]
+    },
+    {
+      "id": "BM3",
+      "dataset": "independent_combat_events",
+      "purpose": "contact_and_reference_quality",
+      "status": "annotations_not_ready",
+      "arms": [
+        "raw",
+        "contact",
+        "temporal",
+        "contact_temporal"
+      ]
+    },
+    {
+      "id": "BM4",
+      "dataset": "independent_robot_test",
+      "purpose": "downstream_utility",
+      "status": "existing_baseline_and_test_gates_pending",
+      "policy_seeds": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "extension_datasets": [
+    "Inter-X",
+    "KungFuAthlete_single_person_only",
+    "GTA_Combat",
+    "Harmony4D_video_only"
+  ],
+  "old_E2": "complete_80_outputs_hash_verified_records/data_constraint_v2/summary.json_no_resubmission",
+  "generation_conditions": "training_generation_train_only_test_conditions_evaluation_only",
+  "primary_statistics": "source_group_and_training_seed_not_frames",
+  "no_new_training_results": true,
+  "evaluation_launch_enabled": true,
+  "training_launch_enabled": false,
+  "active_execution_manifest": "configs/bm1_20260915_v1.json",
+  "execution_review": "docs/remaining_steps_20260916.md"
+}

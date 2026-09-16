@@ -1,0 +1,314 @@
+==================== Replication 0 ====================
+Time: 2026-09-15 13:22:28.315950
+---> [ground truth] MM Distance: 3.7830
+---> [ground truth] R_precision: (top 1): 0.4498 (top 2): 0.6222 (top 3): 0.7159 
+---> [caption_adapter] MM Distance: 3.7832
+---> [caption_adapter] R_precision: (top 1): 0.4858 (top 2): 0.6354 (top 3): 0.7074 
+Time: 2026-09-15 13:22:37.246299
+---> [ground truth] FID: 0.2745
+---> [caption_adapter] FID: 5.6333
+Time: 2026-09-15 13:22:42.719563
+---> [ground truth] Diversity: 7.7586
+---> [caption_adapter] Diversity: 8.0450
+Time: 2026-09-15 13:22:42.721500
+---> [caption_adapter] Multimodality: 0.9288
+!!! DONE !!!
+==================== Replication 1 ====================
+Time: 2026-09-15 13:36:31.664718
+---> [ground truth] MM Distance: 3.7900
+---> [ground truth] R_precision: (top 1): 0.4195 (top 2): 0.5843 (top 3): 0.6998 
+---> [caption_adapter] MM Distance: 3.7765
+---> [caption_adapter] R_precision: (top 1): 0.4839 (top 2): 0.6525 (top 3): 0.7254 
+Time: 2026-09-15 13:36:40.118781
+---> [ground truth] FID: 0.2787
+---> [caption_adapter] FID: 5.6130
+Time: 2026-09-15 13:36:45.192595
+---> [ground truth] Diversity: 7.7722
+---> [caption_adapter] Diversity: 8.1638
+Time: 2026-09-15 13:36:45.194486
+---> [caption_adapter] Multimodality: 0.9907
+!!! DONE !!!
+==================== Replication 2 ====================
+Time: 2026-09-15 13:50:27.478903
+---> [ground truth] MM Distance: 3.7867
+---> [ground truth] R_precision: (top 1): 0.4006 (top 2): 0.6013 (top 3): 0.7064 
+---> [caption_adapter] MM Distance: 3.7803
+---> [caption_adapter] R_precision: (top 1): 0.4839 (top 2): 0.6402 (top 3): 0.7178 
+Time: 2026-09-15 13:50:35.832535
+---> [ground truth] FID: 0.2747
+---> [caption_adapter] FID: 5.6112
+Time: 2026-09-15 13:50:40.870421
+---> [ground truth] Diversity: 7.8698
+---> [caption_adapter] Diversity: 7.9236
+Time: 2026-09-15 13:50:40.872309
+---> [caption_adapter] Multimodality: 0.8433
+!!! DONE !!!
+==================== Replication 3 ====================
+Time: 2026-09-15 14:03:56.904663
+---> [ground truth] MM Distance: 3.7830
+---> [ground truth] R_precision: (top 1): 0.4366 (top 2): 0.6061 (top 3): 0.7159 
+---> [caption_adapter] MM Distance: 3.7798
+---> [caption_adapter] R_precision: (top 1): 0.5038 (top 2): 0.6506 (top 3): 0.7169 
+Time: 2026-09-15 14:04:05.248828
+---> [ground truth] FID: 0.2727
+---> [caption_adapter] FID: 5.5469
+Time: 2026-09-15 14:04:10.284672
+---> [ground truth] Diversity: 7.7837
+---> [caption_adapter] Diversity: 7.9893
+Time: 2026-09-15 14:04:10.286543
+---> [caption_adapter] Multimodality: 0.9526
+!!! DONE !!!
+==================== Replication 4 ====================
+Time: 2026-09-15 14:17:55.524771
+---> [ground truth] MM Distance: 3.7881
+---> [ground truth] R_precision: (top 1): 0.4242 (top 2): 0.5938 (top 3): 0.6979 
+---> [caption_adapter] MM Distance: 3.7771
+---> [caption_adapter] R_precision: (top 1): 0.5009 (top 2): 0.6572 (top 3): 0.7339 
+Time: 2026-09-15 14:18:03.846479
+---> [ground truth] FID: 0.2752
+---> [caption_adapter] FID: 5.6161
+Time: 2026-09-15 14:18:08.897561
+---> [ground truth] Diversity: 7.8106
+---> [caption_adapter] Diversity: 8.0887
+Time: 2026-09-15 14:18:08.899457
+---> [caption_adapter] Multimodality: 0.8501
+!!! DONE !!!
+==================== Replication 5 ====================
+Time: 2026-09-15 14:31:07.099520
+---> [ground truth] MM Distance: 3.7845
+---> [ground truth] R_precision: (top 1): 0.4205 (top 2): 0.5909 (top 3): 0.6932 
+---> [caption_adapter] MM Distance: 3.7754
+---> [caption_adapter] R_precision: (top 1): 0.4725 (top 2): 0.6449 (top 3): 0.7292 
+Time: 2026-09-15 14:31:15.369052
+---> [ground truth] FID: 0.2773
+---> [caption_adapter] FID: 5.4635
+Time: 2026-09-15 14:31:20.408631
+---> [ground truth] Diversity: 7.6975
+---> [caption_adapter] Diversity: 7.9847
+Time: 2026-09-15 14:31:20.410610
+---> [caption_adapter] Multimodality: 0.9449
+!!! DONE !!!
+==================== Replication 6 ====================
+Time: 2026-09-15 14:45:13.750330
+---> [ground truth] MM Distance: 3.7854
+---> [ground truth] R_precision: (top 1): 0.4157 (top 2): 0.6136 (top 3): 0.7159 
+---> [caption_adapter] MM Distance: 3.7823
+---> [caption_adapter] R_precision: (top 1): 0.4773 (top 2): 0.6449 (top 3): 0.7197 
+Time: 2026-09-15 14:45:22.073661
+---> [ground truth] FID: 0.2864
+---> [caption_adapter] FID: 5.1716
+Time: 2026-09-15 14:45:27.106074
+---> [ground truth] Diversity: 7.7345
+---> [caption_adapter] Diversity: 8.0600
+Time: 2026-09-15 14:45:27.108025
+---> [caption_adapter] Multimodality: 0.9040
+!!! DONE !!!
+==================== Replication 7 ====================
+Time: 2026-09-15 14:58:24.728789
+---> [ground truth] MM Distance: 3.7870
+---> [ground truth] R_precision: (top 1): 0.4233 (top 2): 0.5919 (top 3): 0.6856 
+---> [caption_adapter] MM Distance: 3.7768
+---> [caption_adapter] R_precision: (top 1): 0.4801 (top 2): 0.6392 (top 3): 0.7074 
+Time: 2026-09-15 14:58:33.033195
+---> [ground truth] FID: 0.2932
+---> [caption_adapter] FID: 5.6954
+Time: 2026-09-15 14:58:38.052510
+---> [ground truth] Diversity: 7.6566
+---> [caption_adapter] Diversity: 8.0193
+Time: 2026-09-15 14:58:38.054467
+---> [caption_adapter] Multimodality: 0.9416
+!!! DONE !!!
+==================== Replication 8 ====================
+Time: 2026-09-15 15:11:29.078467
+---> [ground truth] MM Distance: 3.7866
+---> [ground truth] R_precision: (top 1): 0.3949 (top 2): 0.5994 (top 3): 0.7121 
+---> [caption_adapter] MM Distance: 3.7782
+---> [caption_adapter] R_precision: (top 1): 0.4669 (top 2): 0.6354 (top 3): 0.7169 
+Time: 2026-09-15 15:11:37.357785
+---> [ground truth] FID: 0.3010
+---> [caption_adapter] FID: 5.4993
+Time: 2026-09-15 15:11:42.375037
+---> [ground truth] Diversity: 7.8079
+---> [caption_adapter] Diversity: 8.0030
+Time: 2026-09-15 15:11:42.377008
+---> [caption_adapter] Multimodality: 0.9550
+!!! DONE !!!
+==================== Replication 9 ====================
+Time: 2026-09-15 15:25:49.940304
+---> [ground truth] MM Distance: 3.7840
+---> [ground truth] R_precision: (top 1): 0.4479 (top 2): 0.5928 (top 3): 0.7008 
+---> [caption_adapter] MM Distance: 3.7742
+---> [caption_adapter] R_precision: (top 1): 0.4981 (top 2): 0.6610 (top 3): 0.7443 
+Time: 2026-09-15 15:25:58.258641
+---> [ground truth] FID: 0.2917
+---> [caption_adapter] FID: 5.5831
+Time: 2026-09-15 15:26:03.299795
+---> [ground truth] Diversity: 7.7337
+---> [caption_adapter] Diversity: 8.1309
+Time: 2026-09-15 15:26:03.301711
+---> [caption_adapter] Multimodality: 0.9933
+!!! DONE !!!
+==================== Replication 10 ====================
+Time: 2026-09-15 15:39:41.056539
+---> [ground truth] MM Distance: 3.7841
+---> [ground truth] R_precision: (top 1): 0.4394 (top 2): 0.6146 (top 3): 0.7074 
+---> [caption_adapter] MM Distance: 3.7788
+---> [caption_adapter] R_precision: (top 1): 0.4773 (top 2): 0.6222 (top 3): 0.7169 
+Time: 2026-09-15 15:39:49.364891
+---> [ground truth] FID: 0.3133
+---> [caption_adapter] FID: 5.5033
+Time: 2026-09-15 15:39:54.402695
+---> [ground truth] Diversity: 7.8496
+---> [caption_adapter] Diversity: 7.9611
+Time: 2026-09-15 15:39:54.404611
+---> [caption_adapter] Multimodality: 0.9129
+!!! DONE !!!
+==================== Replication 11 ====================
+Time: 2026-09-15 15:54:12.671759
+---> [ground truth] MM Distance: 3.7882
+---> [ground truth] R_precision: (top 1): 0.4119 (top 2): 0.5900 (top 3): 0.6913 
+---> [caption_adapter] MM Distance: 3.7780
+---> [caption_adapter] R_precision: (top 1): 0.4811 (top 2): 0.6506 (top 3): 0.7150 
+Time: 2026-09-15 15:54:20.971057
+---> [ground truth] FID: 0.2647
+---> [caption_adapter] FID: 5.4432
+Time: 2026-09-15 15:54:26.023202
+---> [ground truth] Diversity: 7.7619
+---> [caption_adapter] Diversity: 8.1400
+Time: 2026-09-15 15:54:26.025093
+---> [caption_adapter] Multimodality: 0.9570
+!!! DONE !!!
+==================== Replication 12 ====================
+Time: 2026-09-15 16:08:05.857950
+---> [ground truth] MM Distance: 3.7836
+---> [ground truth] R_precision: (top 1): 0.4205 (top 2): 0.6127 (top 3): 0.7159 
+---> [caption_adapter] MM Distance: 3.7791
+---> [caption_adapter] R_precision: (top 1): 0.4659 (top 2): 0.6241 (top 3): 0.7083 
+Time: 2026-09-15 16:08:14.138106
+---> [ground truth] FID: 0.2681
+---> [caption_adapter] FID: 5.7658
+Time: 2026-09-15 16:08:19.162421
+---> [ground truth] Diversity: 7.7838
+---> [caption_adapter] Diversity: 7.9903
+Time: 2026-09-15 16:08:19.164340
+---> [caption_adapter] Multimodality: 0.8426
+!!! DONE !!!
+==================== Replication 13 ====================
+Time: 2026-09-15 16:22:18.028166
+---> [ground truth] MM Distance: 3.7838
+---> [ground truth] R_precision: (top 1): 0.4347 (top 2): 0.6042 (top 3): 0.7017 
+---> [caption_adapter] MM Distance: 3.7761
+---> [caption_adapter] R_precision: (top 1): 0.5038 (top 2): 0.6515 (top 3): 0.7311 
+Time: 2026-09-15 16:22:26.341499
+---> [ground truth] FID: 0.2860
+---> [caption_adapter] FID: 5.4636
+Time: 2026-09-15 16:22:31.375611
+---> [ground truth] Diversity: 7.7409
+---> [caption_adapter] Diversity: 8.0610
+Time: 2026-09-15 16:22:31.377501
+---> [caption_adapter] Multimodality: 0.8544
+!!! DONE !!!
+==================== Replication 14 ====================
+Time: 2026-09-15 16:36:34.735263
+---> [ground truth] MM Distance: 3.7862
+---> [ground truth] R_precision: (top 1): 0.4242 (top 2): 0.6184 (top 3): 0.6989 
+---> [caption_adapter] MM Distance: 3.7755
+---> [caption_adapter] R_precision: (top 1): 0.4924 (top 2): 0.6506 (top 3): 0.7178 
+Time: 2026-09-15 16:36:43.036460
+---> [ground truth] FID: 0.2653
+---> [caption_adapter] FID: 5.2467
+Time: 2026-09-15 16:36:48.068456
+---> [ground truth] Diversity: 7.8224
+---> [caption_adapter] Diversity: 8.0468
+Time: 2026-09-15 16:36:48.070422
+---> [caption_adapter] Multimodality: 0.9257
+!!! DONE !!!
+==================== Replication 15 ====================
+Time: 2026-09-15 16:50:09.558877
+---> [ground truth] MM Distance: 3.7834
+---> [ground truth] R_precision: (top 1): 0.4280 (top 2): 0.6013 (top 3): 0.7074 
+---> [caption_adapter] MM Distance: 3.7812
+---> [caption_adapter] R_precision: (top 1): 0.4782 (top 2): 0.6307 (top 3): 0.7102 
+Time: 2026-09-15 16:50:17.857167
+---> [ground truth] FID: 0.2984
+---> [caption_adapter] FID: 5.7391
+Time: 2026-09-15 16:50:22.905092
+---> [ground truth] Diversity: 7.8374
+---> [caption_adapter] Diversity: 7.9869
+Time: 2026-09-15 16:50:22.907055
+---> [caption_adapter] Multimodality: 1.0034
+!!! DONE !!!
+==================== Replication 16 ====================
+Time: 2026-09-15 17:02:56.907113
+---> [ground truth] MM Distance: 3.7864
+---> [ground truth] R_precision: (top 1): 0.4025 (top 2): 0.5900 (top 3): 0.6894 
+---> [caption_adapter] MM Distance: 3.7740
+---> [caption_adapter] R_precision: (top 1): 0.4877 (top 2): 0.6468 (top 3): 0.7244 
+Time: 2026-09-15 17:03:05.199284
+---> [ground truth] FID: 0.3313
+---> [caption_adapter] FID: 5.6990
+Time: 2026-09-15 17:03:10.260746
+---> [ground truth] Diversity: 7.7449
+---> [caption_adapter] Diversity: 8.0532
+Time: 2026-09-15 17:03:10.262638
+---> [caption_adapter] Multimodality: 0.8615
+!!! DONE !!!
+==================== Replication 17 ====================
+Time: 2026-09-15 17:17:26.952967
+---> [ground truth] MM Distance: 3.7861
+---> [ground truth] R_precision: (top 1): 0.4290 (top 2): 0.6032 (top 3): 0.7074 
+---> [caption_adapter] MM Distance: 3.7798
+---> [caption_adapter] R_precision: (top 1): 0.4763 (top 2): 0.6383 (top 3): 0.7131 
+Time: 2026-09-15 17:17:35.317168
+---> [ground truth] FID: 0.2837
+---> [caption_adapter] FID: 5.7142
+Time: 2026-09-15 17:17:40.377045
+---> [ground truth] Diversity: 7.7811
+---> [caption_adapter] Diversity: 8.0604
+Time: 2026-09-15 17:17:40.378989
+---> [caption_adapter] Multimodality: 0.8101
+!!! DONE !!!
+==================== Replication 18 ====================
+Time: 2026-09-15 17:31:03.465700
+---> [ground truth] MM Distance: 3.7872
+---> [ground truth] R_precision: (top 1): 0.4044 (top 2): 0.5919 (top 3): 0.6960 
+---> [caption_adapter] MM Distance: 3.7757
+---> [caption_adapter] R_precision: (top 1): 0.4848 (top 2): 0.6534 (top 3): 0.7320 
+Time: 2026-09-15 17:31:11.797306
+---> [ground truth] FID: 0.2915
+---> [caption_adapter] FID: 5.3363
+Time: 2026-09-15 17:31:16.831804
+---> [ground truth] Diversity: 7.7258
+---> [caption_adapter] Diversity: 7.8043
+Time: 2026-09-15 17:31:16.833789
+---> [caption_adapter] Multimodality: 0.9896
+!!! DONE !!!
+==================== Replication 19 ====================
+Time: 2026-09-15 17:45:06.549551
+---> [ground truth] MM Distance: 3.7848
+---> [ground truth] R_precision: (top 1): 0.4328 (top 2): 0.6098 (top 3): 0.6998 
+---> [caption_adapter] MM Distance: 3.7763
+---> [caption_adapter] R_precision: (top 1): 0.5047 (top 2): 0.6402 (top 3): 0.7311 
+Time: 2026-09-15 17:45:14.802894
+---> [ground truth] FID: 0.2958
+---> [caption_adapter] FID: 5.3428
+Time: 2026-09-15 17:45:19.779395
+---> [ground truth] Diversity: 7.8449
+---> [caption_adapter] Diversity: 7.9240
+Time: 2026-09-15 17:45:19.781290
+---> [caption_adapter] Multimodality: 0.9481
+!!! DONE !!!
+========== MM Distance Summary ==========
+---> [ground truth] Mean: 3.7856 CInterval: 0.0008
+---> [caption_adapter] Mean: 3.7779 CInterval: 0.0011
+========== R_precision Summary ==========
+---> [ground truth](top 1) Mean: 0.4230 CInt: 0.0065;(top 2) Mean: 0.6016 CInt: 0.0047;(top 3) Mean: 0.7029 CInt: 0.0040;
+---> [caption_adapter](top 1) Mean: 0.4853 CInt: 0.0051;(top 2) Mean: 0.6435 CInt: 0.0045;(top 3) Mean: 0.7209 CInt: 0.0043;
+========== FID Summary ==========
+---> [ground truth] Mean: 0.2862 CInterval: 0.0071
+---> [caption_adapter] Mean: 5.5344 CInterval: 0.0709
+========== Diversity Summary ==========
+---> [ground truth] Mean: 7.7759 CInterval: 0.0233
+---> [caption_adapter] Mean: 8.0218 CInterval: 0.0356
+========== MultiModality Summary ==========
+---> [caption_adapter] Mean: 0.9205 CInterval: 0.0249

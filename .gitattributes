@@ -1,3 +1,5 @@
 *.sh text eol=lf
 *.py text eol=lf
 *.json text eol=lf
+# Raw experimental evidence must retain the bytes covered by SHA256 receipts.
+records/bm1_20260915_v1/artifacts/** -text -whitespace
