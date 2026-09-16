@@ -1,0 +1,225 @@
+{
+  "scope": "Independent kinematic audit, no force/dynamic feasibility claim",
+  "urdf_sha256": "dbc8471004e9b0b85c27a4ebc1f0d90a727c1cf7ca9ef507b805596f2004d64b",
+  "script_sha256": "2228155f560bcd2f043501bf7d72221d1d6a81f2cb9e82b2f2825759a6b5124d",
+  "limitations": [
+    "Ankle link is not a no-slip contact point; foot rolling can move it.",
+    "PBHC contact0.5 is unknown and excluded; contact1 is upstream heuristic, not measured force.",
+    "Preparation windows are coarse development annotations, not independent expert labels.",
+    "No whole-body balance or contact-force certification; no automatic relabeling of strict pass."
+  ],
+  "rows": [
+    {
+      "name": "Hooks_punch",
+      "reference_sha256": "af6760c1be4d0485b31b5beb0de98410b6030e13c8673e0e20bbd2506675e76a",
+      "frames": 291,
+      "fk_max_error_m": 5.8145737845216e-07,
+      "urdf_mass_kg": 33.341142022,
+      "reference_joint_limit_excess_rad": 0.0,
+      "support_labels_verified_as_force_ground_truth": false,
+      "preparation_window_s": [
+        0,
+        0.77
+      ],
+      "known_contact_fraction": 0.6563573883161512,
+      "unknown_contact_fraction": 0.3436426116838488,
+      "known_contact_ankle_xy_speed_mean_m_s": 0.1062257026963809,
+      "known_contact_ankle_xy_speed_p95_m_s": 0.20135147385653618,
+      "preparation_known_contact_speed_p95_m_s": null,
+      "double_support_distance_change_p95_m_s": 0.1167450819223345,
+      "first_reference_root_speed_m_s": 0.05867183208465576,
+      "reference_initial_com_world": [
+        0.0114044246696442,
+        -0.009273549908591515,
+        0.7046480252362951
+      ],
+      "reference_initial_ankles_world": [
+        [
+          0.061211073447865826,
+          0.11352299123308046,
+          0.05161356273399171
+        ],
+        [
+          -0.09326522360940057,
+          -0.08420682416975389,
+          0.05099737956102836
+        ]
+      ],
+      "nominal_1001": {
+        "valid_seconds": 5.8,
+        "root_xy_error_final_m": 0.06181233376264572,
+        "root_z_error_final_m": 0.026826918125152588,
+        "root_xy_error_max_m": 0.13816417753696442,
+        "ankle_relative_to_root_error_mean_m": 0.1304987682677476,
+        "first_root_error_over15cm_s": null
+      },
+      "nominal_2000": {
+        "valid_seconds": 5.8,
+        "root_xy_error_final_m": 0.15190951526165009,
+        "root_z_error_final_m": 0.03599339723587036,
+        "root_xy_error_max_m": 0.2068372368812561,
+        "ankle_relative_to_root_error_mean_m": 0.14538925070196432,
+        "first_root_error_over15cm_s": 1.18
+      }
+    },
+    {
+      "name": "Horse-stance_punch",
+      "reference_sha256": "b727970fddcde23c6184a36945dd4dfc49a6fda922c98f10270856e27e53559f",
+      "frames": 332,
+      "fk_max_error_m": 6.103617056187881e-07,
+      "urdf_mass_kg": 33.341142022,
+      "reference_joint_limit_excess_rad": 0.0,
+      "support_labels_verified_as_force_ground_truth": false,
+      "preparation_window_s": [
+        0,
+        1.3
+      ],
+      "known_contact_fraction": 0.6159638554216867,
+      "unknown_contact_fraction": 0.29819277108433734,
+      "known_contact_ankle_xy_speed_mean_m_s": 0.06436074494738658,
+      "known_contact_ankle_xy_speed_p95_m_s": 0.1724412633295236,
+      "preparation_known_contact_speed_p95_m_s": 0.477370312129755,
+      "double_support_distance_change_p95_m_s": 0.32755833421407604,
+      "first_reference_root_speed_m_s": 0.008174777030944824,
+      "reference_initial_com_world": [
+        -0.0008041714626070208,
+        -0.011888395183241059,
+        0.704211494720481
+      ],
+      "reference_initial_ankles_world": [
+        [
+          0.11933907333718714,
+          0.016087514668480404,
+          0.050736510504337834
+        ],
+        [
+          -0.11337940920061981,
+          0.03582363694542396,
+          0.05076153577513608
+        ]
+      ],
+      "nominal_1001": {
+        "valid_seconds": 6.62,
+        "root_xy_error_final_m": 0.3019472062587738,
+        "root_z_error_final_m": 0.02479243278503418,
+        "root_xy_error_max_m": 0.5316481590270996,
+        "ankle_relative_to_root_error_mean_m": 0.11381814069240982,
+        "first_root_error_over15cm_s": 1.56
+      },
+      "nominal_2000": {
+        "valid_seconds": 6.62,
+        "root_xy_error_final_m": 0.01816060021519661,
+        "root_z_error_final_m": 0.02527463436126709,
+        "root_xy_error_max_m": 0.13028357923030853,
+        "ankle_relative_to_root_error_mean_m": 0.0997742228862673,
+        "first_root_error_over15cm_s": null
+      }
+    },
+    {
+      "name": "Roundhouse_kick",
+      "reference_sha256": "b82dea7dbb3ca1e959c88c716ae6128499da4344c24e5e05755cee587dd28d82",
+      "frames": 262,
+      "fk_max_error_m": 7.644957714323489e-07,
+      "urdf_mass_kg": 33.341142022,
+      "reference_joint_limit_excess_rad": 0.0,
+      "support_labels_verified_as_force_ground_truth": false,
+      "preparation_window_s": [
+        0,
+        1.37
+      ],
+      "known_contact_fraction": 0.4847328244274809,
+      "unknown_contact_fraction": 0.37786259541984735,
+      "known_contact_ankle_xy_speed_mean_m_s": 0.24078762185342925,
+      "known_contact_ankle_xy_speed_p95_m_s": 0.7317789393930967,
+      "preparation_known_contact_speed_p95_m_s": 0.6226093301363246,
+      "double_support_distance_change_p95_m_s": 0.5772940946902383,
+      "first_reference_root_speed_m_s": 0.045180320739746094,
+      "reference_initial_com_world": [
+        -0.010294483312427133,
+        0.008993181503176628,
+        0.7044766361329413
+      ],
+      "reference_initial_ankles_world": [
+        [
+          -0.05968757516858882,
+          -0.11192504221913661,
+          0.05152674485136849
+        ],
+        [
+          0.09487443987029029,
+          0.07791234392937821,
+          0.05088173457273139
+        ]
+      ],
+      "nominal_1001": {
+        "valid_seconds": 1.82,
+        "root_xy_error_final_m": 0.817287027835846,
+        "root_z_error_final_m": 0.034607112407684326,
+        "root_xy_error_max_m": 0.817287027835846,
+        "ankle_relative_to_root_error_mean_m": 0.19971376269513452,
+        "first_root_error_over15cm_s": 1.04
+      },
+      "nominal_2000": {
+        "valid_seconds": 1.7,
+        "root_xy_error_final_m": 0.3964427411556244,
+        "root_z_error_final_m": 0.055515825748443604,
+        "root_xy_error_max_m": 0.3964427411556244,
+        "ankle_relative_to_root_error_mean_m": 0.1349445552417699,
+        "first_root_error_over15cm_s": 1.18
+      }
+    },
+    {
+      "name": "Side_kick",
+      "reference_sha256": "6dc82426c94ad8d4294ae3319fc3441dac2d61bf179c3f2f37efe4d7b63c5479",
+      "frames": 297,
+      "fk_max_error_m": 6.11166722760867e-07,
+      "urdf_mass_kg": 33.341142022,
+      "reference_joint_limit_excess_rad": 0.0,
+      "support_labels_verified_as_force_ground_truth": false,
+      "preparation_window_s": [
+        0,
+        1.57
+      ],
+      "known_contact_fraction": 0.5218855218855218,
+      "unknown_contact_fraction": 0.3333333333333333,
+      "known_contact_ankle_xy_speed_mean_m_s": 0.11533978102596956,
+      "known_contact_ankle_xy_speed_p95_m_s": 0.5997559685471989,
+      "preparation_known_contact_speed_p95_m_s": 0.17436771030361214,
+      "double_support_distance_change_p95_m_s": 0.31436896531344144,
+      "first_reference_root_speed_m_s": 0.08321404457092285,
+      "reference_initial_com_world": [
+        -0.014754065528652447,
+        -0.0010177028659350642,
+        0.7045701130227716
+      ],
+      "reference_initial_ankles_world": [
+        [
+          0.029253039564253423,
+          -0.1255359182638258,
+          0.05152944025478766
+        ],
+        [
+          0.010401448096703713,
+          0.12169672825212362,
+          0.05084431588568073
+        ]
+      ],
+      "nominal_1001": {
+        "valid_seconds": 5.92,
+        "root_xy_error_final_m": 1.9104890823364258,
+        "root_z_error_final_m": 0.0580483078956604,
+        "root_xy_error_max_m": 2.0210490226745605,
+        "ankle_relative_to_root_error_mean_m": 0.2086610075198311,
+        "first_root_error_over15cm_s": 0.52
+      },
+      "nominal_2000": {
+        "valid_seconds": 5.92,
+        "root_xy_error_final_m": 0.4567943215370178,
+        "root_z_error_final_m": 0.06731772422790527,
+        "root_xy_error_max_m": 0.7350476384162903,
+        "ankle_relative_to_root_error_mean_m": 0.12452471924193982,
+        "first_root_error_over15cm_s": 0.54
+      }
+    }
+  ]
+}
