@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "scripts/run_engineai_official_preflight.py", line 33, in <module>
+    if __name__=='__main__':main()
+  File "scripts/run_engineai_official_preflight.py", line 15, in main
+    if not Path(f'/proc/{pid}').exists():raise RuntimeError('Installer exited without completion marker')
+RuntimeError: Installer exited without completion marker

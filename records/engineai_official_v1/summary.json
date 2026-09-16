@@ -1,0 +1,93 @@
+{
+  "scope": "native official-framework reference-fit diagnostic; single training seed, one generated development motion",
+  "results": [
+    {
+      "condition": "official_full_eval",
+      "environments": 32,
+      "completed": 32,
+      "strict_pass": 2,
+      "reference_seconds": 24.4,
+      "first_failure_or_completion_seconds_range": [
+        24.4,
+        24.4
+      ],
+      "joint_mae_rad": 0.07766011357307434,
+      "root_error_m": 0.36027541756629944,
+      "body_error_m": 0.36032018065452576
+    },
+    {
+      "condition": "raw_ik_prior_eval",
+      "environments": 32,
+      "completed": 0,
+      "strict_pass": 0,
+      "reference_seconds": 4.94,
+      "first_failure_or_completion_seconds_range": [
+        0.18,
+        1.2
+      ],
+      "joint_mae_rad": 0.37609925866127014,
+      "root_error_m": 0.2659485340118408,
+      "body_error_m": 0.3435665965080261
+    },
+    {
+      "condition": "raw_ik_eval",
+      "environments": 32,
+      "completed": 0,
+      "strict_pass": 0,
+      "reference_seconds": 4.94,
+      "first_failure_or_completion_seconds_range": [
+        0.18,
+        0.56
+      ],
+      "joint_mae_rad": 0.4033666253089905,
+      "root_error_m": 0.19569343328475952,
+      "body_error_m": 0.2792120575904846
+    },
+    {
+      "condition": "joint_constrained_prior_eval",
+      "environments": 32,
+      "completed": 0,
+      "strict_pass": 0,
+      "reference_seconds": 4.94,
+      "first_failure_or_completion_seconds_range": [
+        0.16,
+        0.64
+      ],
+      "joint_mae_rad": 0.3876834511756897,
+      "root_error_m": 0.19544243812561035,
+      "body_error_m": 0.2845592498779297
+    },
+    {
+      "condition": "joint_constrained_eval",
+      "environments": 32,
+      "completed": 0,
+      "strict_pass": 0,
+      "reference_seconds": 4.94,
+      "first_failure_or_completion_seconds_range": [
+        0.14,
+        1.16
+      ],
+      "joint_mae_rad": 0.40970873832702637,
+      "root_error_m": 0.25401684641838074,
+      "body_error_m": 0.3261016607284546
+    }
+  ],
+  "limitations": [
+    "32 environments are not 32 independent training seeds",
+    "errors are censored at first termination; smaller error alone is not better performance",
+    "official dance and generated combat differ in content and length",
+    "constraints are post-generation joint angle, speed and acceleration processing; not full dynamic constraints",
+    "no held-out motion test, no synthetic-data utility claim",
+    "no new standalone single-person generator was trained"
+  ],
+  "storage": {
+    "system": {
+      "total_gib": 468.3797836303711,
+      "free_gib": 14.489494323730469
+    },
+    "data": {
+      "total_gib": 1832.7004623413086,
+      "free_gib": 132.78779220581055
+    }
+  }
+}

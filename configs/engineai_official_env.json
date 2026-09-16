@@ -1,0 +1,21 @@
+{
+  "name": "engineai-official-pinned",
+  "isaac_lab_commit": "c22775241e28f465fe345fa1a482ad6d29d712b0",
+  "engineai_commit": "14ec57be718586bd0ac45375aa1115bd896fbdbc",
+  "isaac_sim": "4.5.0 existing standalone, read-only reuse; officially supported by pinned Lab",
+  "python": "Isaac Sim bundled3.10 runtime; separate venv supplies packages only",
+  "torch": "2.7.0+cu128",
+  "torchvision": "0.22.0+cu128",
+  "rsl_rl": "5.0.1",
+  "numpy": "1.26.4",
+  "pinocchio": "2.7.0 (satisfies upstream pin>=2.7 while retaining numpy<2)",
+  "hpp_fcl": "2.4.4",
+  "eigenpy": "3.5.1",
+  "wheel": "0.45.1",
+  "kit_fast_importer": "enabled for simulator namespaces; declared numerical packages use standard PathFinder",
+  "installation": "isolated .venv-engineai-official; unmodified pinned upstream sources",
+  "storage": {"location": "/data/code/ouyanghao/oyh/humanoid-combat-motion", "minimum_free_gib": 60, "initial_free_gib_approx": 142, "estimated_new_gib": 20},
+  "validation": ["seeded CUDA matrix multiply and backward", "official PM01 model physics steps", "independent documented invocation", "official pretrained example full-reference evaluation", "generated references with same official runner"],
+  "old_experiments": "preserved; no mutation of old environment or results",
+  "gpu": 1
+}

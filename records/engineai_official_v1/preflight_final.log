@@ -1,0 +1,26 @@
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Requirement already satisfied: wheel==0.45.1 in ./.venv-engineai-official/lib/python3.10/site-packages (0.45.1)
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: /data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/bin/python -m pip install --upgrade pip
+PRIMARY_WITNESS_FINISHED {
+  "horizon": 200,
+  "physics_steps_per_env": 800,
+  "completion_fraction": 1.0,
+  "strict_tracking_fraction": 0.25,
+  "first_failure_steps": [
+    200,
+    200,
+    200,
+    200
+  ],
+  "mean_alive_errors": {
+    "joint_mae_rad": 0.10530726611614227,
+    "root_error_m": 0.2017688751220703,
+    "body_error_m": 0.20276832580566406
+  },
+  "gradient_loss": 24.964054107666016,
+  "gpu": "NVIDIA RTX A6000",
+  "claim": "reference-fit diagnostic; not unseen data utility",
+  "native_runner": true
+}

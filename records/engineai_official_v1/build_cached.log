@@ -1,0 +1,267 @@
+Preparing editable metadata (pyproject.toml): finished with status 'done'
+Processing ./cache/engineai-official/wheels/rsl_rl_lib-5.0.1-py3-none-any.whl
+Processing ./cache/engineai-official/wheels/onnxscript-0.7.2-py3-none-any.whl
+Processing ./cache/engineai-official/wheels/tensorboard-2.21.0-py3-none-any.whl
+Processing ./cache/engineai-official/wheels/numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Processing ./cache/engineai-official/wheels/pin-2.7.0-2-cp310-cp310-manylinux_2_28_x86_64.whl
+Processing ./cache/engineai-official/wheels/hpp_fcl-2.4.4-3-cp310-cp310-manylinux_2_28_x86_64.whl
+Requirement already satisfied: wheel==0.45.1 in ./.venv-engineai-official/lib/python3.10/site-packages (0.45.1)
+Requirement already satisfied: torch>=2.6.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from rsl-rl-lib==5.0.1) (2.7.0+cu128)
+Requirement already satisfied: torchvision>=0.5.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from rsl-rl-lib==5.0.1) (0.22.0+cu128)
+Processing ./cache/engineai-official/wheels/tensordict-0.14.2-cp310-cp310-manylinux_2_28_x86_64.whl (from rsl-rl-lib==5.0.1)
+Processing ./cache/engineai-official/wheels/gitpython-3.1.62-py3-none-any.whl (from rsl-rl-lib==5.0.1)
+Processing ./cache/engineai-official/wheels/onnx-1.22.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (from rsl-rl-lib==5.0.1)
+Processing ./cache/engineai-official/wheels/cmeel-0.61.0-py3-none-any.whl (from pin==2.7.0)
+INFO: pip is looking at multiple versions of pin to determine which version is compatible with other requirements. This could take a while.
+ERROR: Could not find a version that satisfies the requirement cmeel-boost~=1.83.0 (from pin) (from versions: 1.90.0)
+ERROR: No matching distribution found for cmeel-boost~=1.83.0
+
+FETCH ONLY cmeel-boost~=1.83.0
+Collecting cmeel-boost~=1.83.0
+  Downloading cmeel_boost-1.83.0-0-cp310-cp310-manylinux_2_28_x86_64.whl.metadata (1000 bytes)
+Downloading cmeel_boost-1.83.0-0-cp310-cp310-manylinux_2_28_x86_64.whl (34.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 34.7/34.7 MB 9.9 MB/s eta 0:00:00
+Saved ./cache/engineai-official/wheels/cmeel_boost-1.83.0-0-cp310-cp310-manylinux_2_28_x86_64.whl
+Successfully downloaded cmeel-boost
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: /data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/bin/python -m pip install --upgrade pip
+.1-py3-none-any.whl
+Processing ./cache/engineai-official/wheels/onnxscript-0.7.2-py3-none-any.whl
+Processing ./cache/engineai-official/wheels/tensorboard-2.21.0-py3-none-any.whl
+Processing ./cache/engineai-official/wheels/numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Processing ./cache/engineai-official/wheels/pin-2.7.0-2-cp310-cp310-manylinux_2_28_x86_64.whl
+Processing ./cache/engineai-official/wheels/hpp_fcl-2.4.4-3-cp310-cp310-manylinux_2_28_x86_64.whl
+Requirement already satisfied: wheel==0.45.1 in ./.venv-engineai-official/lib/python3.10/site-packages (0.45.1)
+Requirement already satisfied: torch>=2.6.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from rsl-rl-lib==5.0.1) (2.7.0+cu128)
+Requirement already satisfied: torchvision>=0.5.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from rsl-rl-lib==5.0.1) (0.22.0+cu128)
+Processing ./cache/engineai-official/wheels/tensordict-0.14.2-cp310-cp310-manylinux_2_28_x86_64.whl (from rsl-rl-lib==5.0.1)
+Processing ./cache/engineai-official/wheels/gitpython-3.1.62-py3-none-any.whl (from rsl-rl-lib==5.0.1)
+Processing ./cache/engineai-official/wheels/onnx-1.22.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (from rsl-rl-lib==5.0.1)
+Processing ./cache/engineai-official/wheels/cmeel-0.61.0-py3-none-any.whl (from pin==2.7.0)
+Processing ./cache/engineai-official/wheels/cmeel_boost-1.83.0-0-cp310-cp310-manylinux_2_28_x86_64.whl (from pin==2.7.0)
+INFO: pip is looking at multiple versions of pin to determine which version is compatible with other requirements. This could take a while.
+ERROR: Could not find a version that satisfies the requirement cmeel-urdfdom<4,>=3.1.1.1 (from pin) (from versions: 6.0.0)
+ERROR: No matching distribution found for cmeel-urdfdom<4,>=3.1.1.1
+
+FETCH ONLY cmeel-urdfdom<4,>=3.1.1.1
+Collecting cmeel-urdfdom<4,>=3.1.1.1
+  Downloading cmeel_urdfdom-3.1.1.1-0-py3-none-manylinux_2_28_x86_64.whl.metadata (2.8 kB)
+Downloading cmeel_urdfdom-3.1.1.1-0-py3-none-manylinux_2_28_x86_64.whl (405 kB)
+Saved ./cache/engineai-official/wheels/cmeel_urdfdom-3.1.1.1-0-py3-none-manylinux_2_28_x86_64.whl
+Successfully downloaded cmeel-urdfdom
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: /data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/bin/python -m pip install --upgrade pip
+eai-official/wheels/tensorboard-2.21.0-py3-none-any.whl
+Processing ./cache/engineai-official/wheels/numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Processing ./cache/engineai-official/wheels/pin-2.7.0-2-cp310-cp310-manylinux_2_28_x86_64.whl
+Processing ./cache/engineai-official/wheels/hpp_fcl-2.4.4-3-cp310-cp310-manylinux_2_28_x86_64.whl
+Requirement already satisfied: wheel==0.45.1 in ./.venv-engineai-official/lib/python3.10/site-packages (0.45.1)
+Requirement already satisfied: torch>=2.6.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from rsl-rl-lib==5.0.1) (2.7.0+cu128)
+Requirement already satisfied: torchvision>=0.5.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from rsl-rl-lib==5.0.1) (0.22.0+cu128)
+Processing ./cache/engineai-official/wheels/tensordict-0.14.2-cp310-cp310-manylinux_2_28_x86_64.whl (from rsl-rl-lib==5.0.1)
+Processing ./cache/engineai-official/wheels/gitpython-3.1.62-py3-none-any.whl (from rsl-rl-lib==5.0.1)
+Processing ./cache/engineai-official/wheels/onnx-1.22.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (from rsl-rl-lib==5.0.1)
+Processing ./cache/engineai-official/wheels/cmeel-0.61.0-py3-none-any.whl (from pin==2.7.0)
+Processing ./cache/engineai-official/wheels/cmeel_boost-1.83.0-0-cp310-cp310-manylinux_2_28_x86_64.whl (from pin==2.7.0)
+Processing ./cache/engineai-official/wheels/cmeel_urdfdom-3.1.1.1-0-py3-none-manylinux_2_28_x86_64.whl (from pin==2.7.0)
+INFO: pip is looking at multiple versions of hpp-fcl to determine which version is compatible with other requirements. This could take a while.
+ERROR: Could not find a version that satisfies the requirement cmeel-assimp<6,>=5.3.1 (from hpp-fcl) (from versions: none)
+ERROR: No matching distribution found for cmeel-assimp<6,>=5.3.1
+
+FETCH ONLY cmeel-assimp<6,>=5.3.1
+Collecting cmeel-assimp<6,>=5.3.1
+  Downloading cmeel_assimp-5.4.3.1-0-py3-none-manylinux_2_28_x86_64.whl.metadata (968 bytes)
+Downloading cmeel_assimp-5.4.3.1-0-py3-none-manylinux_2_28_x86_64.whl (14.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.4/14.4 MB 1.6 MB/s eta 0:00:00
+Saved ./cache/engineai-official/wheels/cmeel_assimp-5.4.3.1-0-py3-none-manylinux_2_28_x86_64.whl
+Successfully downloaded cmeel-assimp
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: /data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/bin/python -m pip install --upgrade pip
+inux_2_17_x86_64.manylinux2014_x86_64.whl
+Processing ./cache/engineai-official/wheels/pin-2.7.0-2-cp310-cp310-manylinux_2_28_x86_64.whl
+Processing ./cache/engineai-official/wheels/hpp_fcl-2.4.4-3-cp310-cp310-manylinux_2_28_x86_64.whl
+Requirement already satisfied: wheel==0.45.1 in ./.venv-engineai-official/lib/python3.10/site-packages (0.45.1)
+Requirement already satisfied: torch>=2.6.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from rsl-rl-lib==5.0.1) (2.7.0+cu128)
+Requirement already satisfied: torchvision>=0.5.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from rsl-rl-lib==5.0.1) (0.22.0+cu128)
+Processing ./cache/engineai-official/wheels/tensordict-0.14.2-cp310-cp310-manylinux_2_28_x86_64.whl (from rsl-rl-lib==5.0.1)
+Processing ./cache/engineai-official/wheels/gitpython-3.1.62-py3-none-any.whl (from rsl-rl-lib==5.0.1)
+Processing ./cache/engineai-official/wheels/onnx-1.22.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (from rsl-rl-lib==5.0.1)
+Processing ./cache/engineai-official/wheels/cmeel-0.61.0-py3-none-any.whl (from pin==2.7.0)
+Processing ./cache/engineai-official/wheels/cmeel_boost-1.83.0-0-cp310-cp310-manylinux_2_28_x86_64.whl (from pin==2.7.0)
+Processing ./cache/engineai-official/wheels/cmeel_urdfdom-3.1.1.1-0-py3-none-manylinux_2_28_x86_64.whl (from pin==2.7.0)
+Processing ./cache/engineai-official/wheels/cmeel_assimp-5.4.3.1-0-py3-none-manylinux_2_28_x86_64.whl (from hpp-fcl==2.4.4)
+INFO: pip is looking at multiple versions of hpp-fcl to determine which version is compatible with other requirements. This could take a while.
+ERROR: Could not find a version that satisfies the requirement cmeel-octomap<2,>=1.9.8.2 (from hpp-fcl) (from versions: none)
+ERROR: No matching distribution found for cmeel-octomap<2,>=1.9.8.2
+
+FETCH ONLY cmeel-octomap<2,>=1.9.8.2
+Collecting cmeel-octomap<2,>=1.9.8.2
+  Downloading cmeel_octomap-1.10.0-5-py3-none-manylinux_2_28_x86_64.whl.metadata (983 bytes)
+Downloading cmeel_octomap-1.10.0-5-py3-none-manylinux_2_28_x86_64.whl (1.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 1.6 MB/s eta 0:00:00
+Saved ./cache/engineai-official/wheels/cmeel_octomap-1.10.0-5-py3-none-manylinux_2_28_x86_64.whl
+Successfully downloaded cmeel-octomap
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: /data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/bin/python -m pip install --upgrade pip
+_64.whl
+Processing ./cache/engineai-official/wheels/hpp_fcl-2.4.4-3-cp310-cp310-manylinux_2_28_x86_64.whl
+Requirement already satisfied: wheel==0.45.1 in ./.venv-engineai-official/lib/python3.10/site-packages (0.45.1)
+Requirement already satisfied: torch>=2.6.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from rsl-rl-lib==5.0.1) (2.7.0+cu128)
+Requirement already satisfied: torchvision>=0.5.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from rsl-rl-lib==5.0.1) (0.22.0+cu128)
+Processing ./cache/engineai-official/wheels/tensordict-0.14.2-cp310-cp310-manylinux_2_28_x86_64.whl (from rsl-rl-lib==5.0.1)
+Processing ./cache/engineai-official/wheels/gitpython-3.1.62-py3-none-any.whl (from rsl-rl-lib==5.0.1)
+Processing ./cache/engineai-official/wheels/onnx-1.22.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (from rsl-rl-lib==5.0.1)
+Processing ./cache/engineai-official/wheels/cmeel-0.61.0-py3-none-any.whl (from pin==2.7.0)
+Processing ./cache/engineai-official/wheels/cmeel_boost-1.83.0-0-cp310-cp310-manylinux_2_28_x86_64.whl (from pin==2.7.0)
+Processing ./cache/engineai-official/wheels/cmeel_urdfdom-3.1.1.1-0-py3-none-manylinux_2_28_x86_64.whl (from pin==2.7.0)
+Processing ./cache/engineai-official/wheels/cmeel_assimp-5.4.3.1-0-py3-none-manylinux_2_28_x86_64.whl (from hpp-fcl==2.4.4)
+Processing ./cache/engineai-official/wheels/cmeel_octomap-1.10.0-5-py3-none-manylinux_2_28_x86_64.whl (from hpp-fcl==2.4.4)
+INFO: pip is looking at multiple versions of hpp-fcl to determine which version is compatible with other requirements. This could take a while.
+ERROR: Could not find a version that satisfies the requirement cmeel-qhull<8.0.3,>=8.0.2.1 (from hpp-fcl) (from versions: none)
+ERROR: No matching distribution found for cmeel-qhull<8.0.3,>=8.0.2.1
+
+FETCH ONLY cmeel-qhull<8.0.3,>=8.0.2.1
+Collecting cmeel-qhull<8.0.3,>=8.0.2.1
+  Downloading cmeel_qhull-8.0.2.1-1-py3-none-manylinux_2_28_x86_64.whl.metadata (838 bytes)
+Downloading cmeel_qhull-8.0.2.1-1-py3-none-manylinux_2_28_x86_64.whl (3.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 3.4 MB/s eta 0:00:00
+Saved ./cache/engineai-official/wheels/cmeel_qhull-8.0.2.1-1-py3-none-manylinux_2_28_x86_64.whl
+Successfully downloaded cmeel-qhull
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: /data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/bin/python -m pip install --upgrade pip
+64.whl
+Requirement already satisfied: wheel==0.45.1 in ./.venv-engineai-official/lib/python3.10/site-packages (0.45.1)
+Requirement already satisfied: torch>=2.6.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from rsl-rl-lib==5.0.1) (2.7.0+cu128)
+Requirement already satisfied: torchvision>=0.5.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from rsl-rl-lib==5.0.1) (0.22.0+cu128)
+Processing ./cache/engineai-official/wheels/tensordict-0.14.2-cp310-cp310-manylinux_2_28_x86_64.whl (from rsl-rl-lib==5.0.1)
+Processing ./cache/engineai-official/wheels/gitpython-3.1.62-py3-none-any.whl (from rsl-rl-lib==5.0.1)
+Processing ./cache/engineai-official/wheels/onnx-1.22.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (from rsl-rl-lib==5.0.1)
+Processing ./cache/engineai-official/wheels/cmeel-0.61.0-py3-none-any.whl (from pin==2.7.0)
+Processing ./cache/engineai-official/wheels/cmeel_boost-1.83.0-0-cp310-cp310-manylinux_2_28_x86_64.whl (from pin==2.7.0)
+Processing ./cache/engineai-official/wheels/cmeel_urdfdom-3.1.1.1-0-py3-none-manylinux_2_28_x86_64.whl (from pin==2.7.0)
+Processing ./cache/engineai-official/wheels/cmeel_assimp-5.4.3.1-0-py3-none-manylinux_2_28_x86_64.whl (from hpp-fcl==2.4.4)
+Processing ./cache/engineai-official/wheels/cmeel_octomap-1.10.0-5-py3-none-manylinux_2_28_x86_64.whl (from hpp-fcl==2.4.4)
+Processing ./cache/engineai-official/wheels/cmeel_qhull-8.0.2.1-1-py3-none-manylinux_2_28_x86_64.whl (from hpp-fcl==2.4.4)
+INFO: pip is looking at multiple versions of hpp-fcl to determine which version is compatible with other requirements. This could take a while.
+ERROR: Could not find a version that satisfies the requirement eigenpy<4,>=3.1 (from hpp-fcl) (from versions: none)
+ERROR: No matching distribution found for eigenpy<4,>=3.1
+
+FETCH ONLY eigenpy<4,>=3.1
+Collecting eigenpy<4,>=3.1
+  Downloading eigenpy-3.13.0-0-cp310-cp310-manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+Downloading eigenpy-3.13.0-0-cp310-cp310-manylinux_2_28_x86_64.whl (6.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.1/6.1 MB 7.1 MB/s eta 0:00:00
+Saved ./cache/engineai-official/wheels/eigenpy-3.13.0-0-cp310-cp310-manylinux_2_28_x86_64.whl
+Successfully downloaded eigenpy
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: /data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/bin/python -m pip install --upgrade pip
+ab==0.54.4) (3.32.3)
+Processing ./cache/engineai-official/wheels/huggingface_hub-0.36.2-py3-none-any.whl (from transformers==4.57.6->isaaclab==0.54.4)
+Processing ./cache/engineai-official/wheels/regex-2026.9.10-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (from transformers==4.57.6->isaaclab==0.54.4)
+Processing ./cache/engineai-official/wheels/requests-2.34.2-py3-none-any.whl (from transformers==4.57.6->isaaclab==0.54.4)
+Processing ./cache/engineai-official/wheels/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from transformers==4.57.6->isaaclab==0.54.4)
+Processing ./cache/engineai-official/wheels/safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from transformers==4.57.6->isaaclab==0.54.4)
+Processing ./cache/engineai-official/wheels/tqdm-4.70.1-py3-none-any.whl (from transformers==4.57.6->isaaclab==0.54.4)
+Processing ./cache/engineai-official/wheels/numba-0.67.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from isaaclab_tasks==0.11.16)
+Processing ./cache/engineai-official/wheels/hydra_core-1.3.7-py3-none-any.whl (from isaaclab_rl==0.5.2)
+Processing ./cache/engineai-official/wheels/h5py-3.16.0-cp310-cp310-manylinux_2_28_x86_64.whl (from isaaclab_rl==0.5.2)
+Processing ./cache/engineai-official/wheels/moviepy-2.2.1-py3-none-any.whl (from isaaclab_rl==0.5.2)
+Processing ./cache/engineai-official/wheels/packaging-23.2-py3-none-any.whl (from onnxscript>=0.5)
+INFO: pip is looking at multiple versions of cmeel-assimp to determine which version is compatible with other requirements. This could take a while.
+ERROR: Could not find a version that satisfies the requirement cmeel-zlib (from cmeel-assimp) (from versions: none)
+ERROR: No matching distribution found for cmeel-zlib
+
+FETCH ONLY cmeel-zlib
+Collecting cmeel-zlib
+  Downloading cmeel_zlib-1.3.2-0-py3-none-manylinux_2_28_x86_64.whl.metadata (707 bytes)
+Downloading cmeel_zlib-1.3.2-0-py3-none-manylinux_2_28_x86_64.whl (1.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 2.6 MB/s eta 0:00:00
+Saved ./cache/engineai-official/wheels/cmeel_zlib-1.3.2-0-py3-none-manylinux_2_28_x86_64.whl
+Successfully downloaded cmeel-zlib
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: /data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/bin/python -m pip install --upgrade pip
+che/engineai-official/wheels/regex-2026.9.10-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (from transformers==4.57.6->isaaclab==0.54.4)
+Processing ./cache/engineai-official/wheels/requests-2.34.2-py3-none-any.whl (from transformers==4.57.6->isaaclab==0.54.4)
+Processing ./cache/engineai-official/wheels/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from transformers==4.57.6->isaaclab==0.54.4)
+Processing ./cache/engineai-official/wheels/safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from transformers==4.57.6->isaaclab==0.54.4)
+Processing ./cache/engineai-official/wheels/tqdm-4.70.1-py3-none-any.whl (from transformers==4.57.6->isaaclab==0.54.4)
+Processing ./cache/engineai-official/wheels/numba-0.67.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from isaaclab_tasks==0.11.16)
+Processing ./cache/engineai-official/wheels/hydra_core-1.3.7-py3-none-any.whl (from isaaclab_rl==0.5.2)
+Processing ./cache/engineai-official/wheels/h5py-3.16.0-cp310-cp310-manylinux_2_28_x86_64.whl (from isaaclab_rl==0.5.2)
+Processing ./cache/engineai-official/wheels/moviepy-2.2.1-py3-none-any.whl (from isaaclab_rl==0.5.2)
+Processing ./cache/engineai-official/wheels/packaging-23.2-py3-none-any.whl (from onnxscript>=0.5)
+Processing ./cache/engineai-official/wheels/cmeel_zlib-1.3.2-0-py3-none-manylinux_2_28_x86_64.whl (from cmeel-assimp<6,>=5.3.1->hpp-fcl==2.4.4)
+INFO: pip is looking at multiple versions of cmeel-urdfdom to determine which version is compatible with other requirements. This could take a while.
+ERROR: Could not find a version that satisfies the requirement cmeel-console-bridge (from cmeel-urdfdom) (from versions: none)
+ERROR: No matching distribution found for cmeel-console-bridge
+
+FETCH ONLY cmeel-console-bridge
+Collecting cmeel-console-bridge
+  Downloading cmeel_console_bridge-1.0.2.3-0-py3-none-manylinux_2_28_x86_64.whl.metadata (1.0 kB)
+Downloading cmeel_console_bridge-1.0.2.3-0-py3-none-manylinux_2_28_x86_64.whl (24 kB)
+Saved ./cache/engineai-official/wheels/cmeel_console_bridge-1.0.2.3-0-py3-none-manylinux_2_28_x86_64.whl
+Successfully downloaded cmeel-console-bridge
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: /data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/bin/python -m pip install --upgrade pip
+ers==4.57.6->isaaclab==0.54.4)
+Processing ./cache/engineai-official/wheels/requests-2.34.2-py3-none-any.whl (from transformers==4.57.6->isaaclab==0.54.4)
+Processing ./cache/engineai-official/wheels/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from transformers==4.57.6->isaaclab==0.54.4)
+Processing ./cache/engineai-official/wheels/safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from transformers==4.57.6->isaaclab==0.54.4)
+Processing ./cache/engineai-official/wheels/tqdm-4.70.1-py3-none-any.whl (from transformers==4.57.6->isaaclab==0.54.4)
+Processing ./cache/engineai-official/wheels/numba-0.67.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from isaaclab_tasks==0.11.16)
+Processing ./cache/engineai-official/wheels/hydra_core-1.3.7-py3-none-any.whl (from isaaclab_rl==0.5.2)
+Processing ./cache/engineai-official/wheels/h5py-3.16.0-cp310-cp310-manylinux_2_28_x86_64.whl (from isaaclab_rl==0.5.2)
+Processing ./cache/engineai-official/wheels/moviepy-2.2.1-py3-none-any.whl (from isaaclab_rl==0.5.2)
+Processing ./cache/engineai-official/wheels/packaging-23.2-py3-none-any.whl (from onnxscript>=0.5)
+Processing ./cache/engineai-official/wheels/cmeel_zlib-1.3.2-0-py3-none-manylinux_2_28_x86_64.whl (from cmeel-assimp<6,>=5.3.1->hpp-fcl==2.4.4)
+Processing ./cache/engineai-official/wheels/cmeel_console_bridge-1.0.2.3-0-py3-none-manylinux_2_28_x86_64.whl (from cmeel-urdfdom<4,>=3.1.1.1->pin==2.7.0)
+INFO: pip is looking at multiple versions of cmeel-urdfdom to determine which version is compatible with other requirements. This could take a while.
+ERROR: Could not find a version that satisfies the requirement cmeel-tinyxml (from cmeel-urdfdom) (from versions: none)
+ERROR: No matching distribution found for cmeel-tinyxml
+
+FETCH ONLY cmeel-tinyxml
+Collecting cmeel-tinyxml
+  Downloading cmeel_tinyxml-2.6.2.3-0-py3-none-manylinux_2_28_x86_64.whl.metadata (389 bytes)
+Downloading cmeel_tinyxml-2.6.2.3-0-py3-none-manylinux_2_28_x86_64.whl (62 kB)
+Saved ./cache/engineai-official/wheels/cmeel_tinyxml-2.6.2.3-0-py3-none-manylinux_2_28_x86_64.whl
+Successfully downloaded cmeel-tinyxml
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: /data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/bin/python -m pip install --upgrade pip
+mers==4.57.6->isaaclab==0.54.4)
+Processing ./cache/engineai-official/wheels/numba-0.67.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (from isaaclab_tasks==0.11.16)
+Processing ./cache/engineai-official/wheels/hydra_core-1.3.7-py3-none-any.whl (from isaaclab_rl==0.5.2)
+Processing ./cache/engineai-official/wheels/h5py-3.16.0-cp310-cp310-manylinux_2_28_x86_64.whl (from isaaclab_rl==0.5.2)
+Processing ./cache/engineai-official/wheels/moviepy-2.2.1-py3-none-any.whl (from isaaclab_rl==0.5.2)
+Processing ./cache/engineai-official/wheels/packaging-23.2-py3-none-any.whl (from onnxscript>=0.5)
+Processing ./cache/engineai-official/wheels/cmeel_zlib-1.3.2-0-py3-none-manylinux_2_28_x86_64.whl (from cmeel-assimp<6,>=5.3.1->hpp-fcl==2.4.4)
+Processing ./cache/engineai-official/wheels/cmeel_console_bridge-1.0.2.3-0-py3-none-manylinux_2_28_x86_64.whl (from cmeel-urdfdom<4,>=3.1.1.1->pin==2.7.0)
+Processing ./cache/engineai-official/wheels/cmeel_tinyxml-2.6.2.3-0-py3-none-manylinux_2_28_x86_64.whl (from cmeel-urdfdom<4,>=3.1.1.1->pin==2.7.0)
+INFO: pip is looking at multiple versions of eigenpy to determine which version is compatible with other requirements. This could take a while.
+ERROR: Cannot install hpp-fcl, hpp-fcl==2.4.4 and pin==2.7.0 because these package versions have conflicting dependencies.
+
+The conflict is caused by:
+    pin 2.7.0 depends on cmeel-boost~=1.83.0
+    hpp-fcl 2.4.4 depends on cmeel-boost~=1.83.0
+    eigenpy 3.13.0 depends on cmeel-boost~=1.90.0
+
+To fix this you could try to:
+1. loosen the range of package versions you've specified
+2. remove package versions to allow pip to attempt to solve the dependency conflict
+
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+
+Traceback (most recent call last):
+  File "scripts/install_engineai_cached.py", line 34, in <module>
+    if __name__=='__main__':main()
+  File "scripts/install_engineai_cached.py", line 27, in main
+    if not missing:raise RuntimeError('Resolution failed without missing requirement; inspect cached log')
+RuntimeError: Resolution failed without missing requirement; inspect cached log

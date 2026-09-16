@@ -1,0 +1,38 @@
+Looking in links: /data/code/ouyanghao/oyh/humanoid-combat-motion/cache/engineai-official/wheels
+Obtaining file:///data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/source/isaaclab
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Obtaining file:///data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/source/isaaclab_assets
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Obtaining file:///data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/source/isaaclab_tasks
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Obtaining file:///data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/source/isaaclab_rl
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Processing ./cache/engineai-official/wheels/rsl_rl_lib-5.0.1-py3-none-any.whl
+Processing ./cache/engineai-official/wheels/onnxscript-0.7.2-py3-none-any.whl
+Processing ./cache/engineai-official/wheels/tensorboard-2.21.0-py3-none-any.whl
+Processing ./cache/engineai-official/wheels/numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Processing ./cache/engineai-official/wheels/pin-2.7.0-2-cp310-cp310-manylinux_2_28_x86_64.whl
+Processing ./cache/engineai-official/wheels/hpp_fcl-2.4.4-3-cp310-cp310-manylinux_2_28_x86_64.whl
+Requirement already satisfied: wheel==0.45.1 in ./.venv-engineai-official/lib/python3.10/site-packages (0.45.1)
+Requirement already satisfied: torch>=2.6.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from rsl-rl-lib==5.0.1) (2.7.0+cu128)
+Requirement already satisfied: torchvision>=0.5.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from rsl-rl-lib==5.0.1) (0.22.0+cu128)
+Processing ./cache/engineai-official/wheels/tensordict-0.14.2-cp310-cp310-manylinux_2_28_x86_64.whl (from rsl-rl-lib==5.0.1)
+Processing ./cache/engineai-official/wheels/gitpython-3.1.62-py3-none-any.whl (from rsl-rl-lib==5.0.1)
+Processing ./cache/engineai-official/wheels/onnx-1.22.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (from rsl-rl-lib==5.0.1)
+Processing ./cache/engineai-official/wheels/cmeel-0.61.0-py3-none-any.whl (from pin==2.7.0)
+Processing ./cache/engineai-official/wheels/cmeel_boost-1.83.0-0-cp310-cp310-manylinux_2_28_x86_64.whl (from pin==2.7.0)
+INFO: pip is looking at multiple versions of pin to determine which version is compatible with other requirements. This could take a while.
+ERROR: Could not find a version that satisfies the requirement cmeel-urdfdom<4,>=3.1.1.1 (from pin) (from versions: 6.0.0)
+ERROR: No matching distribution found for cmeel-urdfdom<4,>=3.1.1.1

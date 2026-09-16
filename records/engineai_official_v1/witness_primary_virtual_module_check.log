@@ -1,0 +1,41 @@
+ISOLATED_RUNTIME 3.10.15 (tags/v3.10.15-dirty:ffee63f, Oct  8 2024, 18:53:10) [GCC 7.3.1 20180303 (Red Hat 7.3.1-5)] 2.7.0+cu128 /data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/lib/python3.10/site-packages/torch/__init__.py
+[INFO][AppLauncher]: Using device: cuda:1
+[INFO][AppLauncher]: Loading experience file: /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/apps/isaacsim_4_5/isaaclab.python.headless.kit
+Loading user config located at: '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/data/Kit/Isaac-Sim/4.5/user.config.json'
+[Info] [carb] Logging to file: /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/logs/Kit/Isaac-Sim/4.5/kit_20260916_070040.log
+2026-09-16 07:00:40 [0ms] [Warning] [omni.kit.app.plugin] No crash reporter present, dumps uploading isn't available.
+2026-09-16 07:00:40 [6ms] [Warning] [omni.ext.plugin] [ext: rendering_modes] Extensions config 'extension.toml' doesn't exist '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/apps/isaacsim_4_5/rendering_modes' or '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/apps/isaacsim_4_5/rendering_modes/config'
+2026-09-16 07:00:40 [443ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-09-16 07:00:40 [545ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-09-16 07:00:41 [746ms] [Warning] [omni.datastore] OmniHub is inaccessible
+2026-09-16 07:00:41 [866ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 570.181       | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA RTX A6000                 |        |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | f3cc20c6.. |
+|     |                                  |        |     |            | 17        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA RTX A6000                 | Yes: 0 |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | 0b41e662.. |
+|     |                                  |        |     |            | 65        |            |
+|=============================================================================================|
+| OS: 20.04.6 LTS (Focal Fossa) ubuntu, Version: 20.04.6, Kernel: 5.4.0-216-generic
+| Processor: Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz
+| Cores: 10 | Logical Cores: 20
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 257450 | Free Memory: 135053
+| Total Page/Swap (MB): 8191 | Free Page/Swap: 8186
+|---------------------------------------------------------------------------------------------|
+Traceback (most recent call last):
+  File "scripts/engineai_official_validate.py", line 104, in <module>
+    try:main()
+  File "scripts/engineai_official_validate.py", line 48, in main
+    assert not wrong,wrong
+AssertionError: ['torch.ops', 'torch.classes']
+

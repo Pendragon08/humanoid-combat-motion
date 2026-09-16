@@ -1,0 +1,61 @@
+[INFO][AppLauncher]: Using device: cuda:1
+[INFO][AppLauncher]: Loading experience file: /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/apps/isaacsim_4_5/isaaclab.python.headless.kit
+Loading user config located at: '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/data/Kit/Isaac-Sim/4.5/user.config.json'
+[Info] [carb] Logging to file: /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/logs/Kit/Isaac-Sim/4.5/kit_20260916_065247.log
+2026-09-16 06:52:47 [0ms] [Warning] [omni.kit.app.plugin] No crash reporter present, dumps uploading isn't available.
+2026-09-16 06:52:47 [7ms] [Warning] [omni.ext.plugin] [ext: rendering_modes] Extensions config 'extension.toml' doesn't exist '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/apps/isaacsim_4_5/rendering_modes' or '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/apps/isaacsim_4_5/rendering_modes/config'
+2026-09-16 06:52:47 [395ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-09-16 06:52:48 [825ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-09-16 06:52:48 [989ms] [Warning] [omni.datastore] OmniHub is inaccessible
+2026-09-16 06:52:48 [1,146ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 570.181       | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA RTX A6000                 |        |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | f3cc20c6.. |
+|     |                                  |        |     |            | 17        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA RTX A6000                 | Yes: 0 |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | 0b41e662.. |
+|     |                                  |        |     |            | 65        |            |
+|=============================================================================================|
+| OS: 20.04.6 LTS (Focal Fossa) ubuntu, Version: 20.04.6, Kernel: 5.4.0-216-generic
+| Processor: Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz
+| Cores: 10 | Logical Cores: 20
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 257450 | Free Memory: 135165
+| Total Page/Swap (MB): 8191 | Free Page/Swap: 8186
+|---------------------------------------------------------------------------------------------|
+Traceback (most recent call last):
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/engineai_official_validate.py", line 27, in <module>
+    from isaaclab_rl.rsl_rl import RslRlVecEnvWrapper
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/source/isaaclab_rl/isaaclab_rl/rsl_rl/__init__.py", line 23, in <module>
+    from .vecenv_wrapper import RslRlVecEnvWrapper
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/source/isaaclab_rl/isaaclab_rl/rsl_rl/vecenv_wrapper.py", line 8, in <module>
+    from rsl_rl.env import VecEnv
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/lib/python3.10/site-packages/rsl_rl/env/__init__.py", line 8, in <module>
+    from .vec_env import VecEnv
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/lib/python3.10/site-packages/rsl_rl/env/vec_env.py", line 11, in <module>
+    from tensordict import TensorDict
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/lib/python3.10/site-packages/tensordict/__init__.py", line 91, in <module>
+    from tensordict.nn import (
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/lib/python3.10/site-packages/tensordict/nn/__init__.py", line 6, in <module>
+    from tensordict.nn.common import (
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/lib/python3.10/site-packages/tensordict/nn/common.py", line 27, in <module>
+    from cloudpickle import dumps as cloudpickle_dumps, loads as cloudpickle_loads
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/lib/python3.10/site-packages/cloudpickle/__init__.py", line 1, in <module>
+    from . import cloudpickle
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/lib/python3.10/site-packages/cloudpickle/cloudpickle.py", line 98, in <module>
+    PYPY = platform.python_implementation() == "PyPy"
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/python/lib/python3.10/platform.py", line 1106, in python_implementation
+    return _sys_version()[0]
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/python/lib/python3.10/platform.py", line 1065, in _sys_version
+    raise ValueError(
+ValueError: failed to parse CPython sys.version: '3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]'
+2026-09-16 06:52:53 [6,109ms] [Warning] [omni.fabric.plugin] gFabricState->gUsdStageToSimStageWithHistoryMap had 1 outstanding SimStageWithHistory(s) at shutdown
+2026-09-16 06:52:53 [6,183ms] [Warning] [carb] Recursive unloadAllPlugins() detected!

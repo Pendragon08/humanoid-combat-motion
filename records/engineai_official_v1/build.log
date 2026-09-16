@@ -1,0 +1,4 @@
+RUN ['git', 'init', '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official']
+Initialized empty Git repository in /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/.git/
+RUN ['git', '-C', '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official', 'remote', 'add', 'origin', 'https://github.com/isaac-sim/IsaacLab.git']
+RUN ['git', '-C', '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official', 'fetch', '--depth', '1', 'origin', 'c22775241e28f465fe345fa1a482ad6d29d712b0']

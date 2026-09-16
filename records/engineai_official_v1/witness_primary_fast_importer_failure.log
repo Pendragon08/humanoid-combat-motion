@@ -1,0 +1,86 @@
+ISOLATED_RUNTIME 3.10.15 (tags/v3.10.15-dirty:ffee63f, Oct  8 2024, 18:53:10) [GCC 7.3.1 20180303 (Red Hat 7.3.1-5)] 2.7.0+cu128 /data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/lib/python3.10/site-packages/torch/__init__.py
+[INFO][AppLauncher]: Using device: cuda:1
+[INFO][AppLauncher]: Loading experience file: /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/apps/isaacsim_4_5/isaaclab.python.headless.kit
+Loading user config located at: '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/data/Kit/Isaac-Sim/4.5/user.config.json'
+[Info] [carb] Logging to file: /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/logs/Kit/Isaac-Sim/4.5/kit_20260916_065601.log
+2026-09-16 06:56:01 [0ms] [Warning] [omni.kit.app.plugin] No crash reporter present, dumps uploading isn't available.
+2026-09-16 06:56:01 [5ms] [Warning] [omni.ext.plugin] [ext: rendering_modes] Extensions config 'extension.toml' doesn't exist '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/apps/isaacsim_4_5/rendering_modes' or '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/apps/isaacsim_4_5/rendering_modes/config'
+2026-09-16 06:56:01 [439ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-09-16 06:56:02 [563ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-09-16 06:56:02 [742ms] [Warning] [omni.datastore] OmniHub is inaccessible
+2026-09-16 06:56:02 [864ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 570.181       | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA RTX A6000                 |        |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | f3cc20c6.. |
+|     |                                  |        |     |            | 17        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA RTX A6000                 | Yes: 0 |     | 49386   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2230      | 0b41e662.. |
+|     |                                  |        |     |            | 65        |            |
+|=============================================================================================|
+| OS: 20.04.6 LTS (Focal Fossa) ubuntu, Version: 20.04.6, Kernel: 5.4.0-216-generic
+| Processor: Intel(R) Core(TM) i9-10900X CPU @ 3.70GHz
+| Cores: 10 | Logical Cores: 20
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 257450 | Free Memory: 135110
+| Total Page/Swap (MB): 8191 | Free Page/Swap: 8186
+|---------------------------------------------------------------------------------------------|
+Traceback (most recent call last):
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/engineai_official_entry.py", line 21, in <module>
+    runpy.run_path(script,run_name='__main__')
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/python/lib/python3.10/runpy.py", line 289, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/python/lib/python3.10/runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/kit/python/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "scripts/engineai_official_validate.py", line 27, in <module>
+    from isaaclab_rl.rsl_rl import RslRlVecEnvWrapper
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/source/isaaclab_rl/isaaclab_rl/rsl_rl/__init__.py", line 23, in <module>
+    from .vecenv_wrapper import RslRlVecEnvWrapper
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/source/isaaclab_rl/isaaclab_rl/rsl_rl/vecenv_wrapper.py", line 8, in <module>
+    from rsl_rl.env import VecEnv
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/lib/python3.10/site-packages/rsl_rl/env/__init__.py", line 8, in <module>
+    from .vec_env import VecEnv
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/lib/python3.10/site-packages/rsl_rl/env/vec_env.py", line 11, in <module>
+    from tensordict import TensorDict
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/lib/python3.10/site-packages/tensordict/__init__.py", line 6, in <module>
+    import tensordict._reductions
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/lib/python3.10/site-packages/tensordict/_reductions.py", line 11, in <module>
+    from tensordict._lazy import LazyStackedTensorDict
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/lib/python3.10/site-packages/tensordict/_lazy.py", line 38, in <module>
+    from tensordict._td import _SubTensorDict, _TensorDictKeysView, TensorDict
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/lib/python3.10/site-packages/tensordict/_td.py", line 35, in <module>
+    from tensordict._archive import _memmap_tensor_from_path
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/lib/python3.10/site-packages/tensordict/_archive.py", line 36, in <module>
+    from tensordict.memmap import MemoryMappedTensor
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/lib/python3.10/site-packages/tensordict/memmap.py", line 21, in <module>
+    from tensordict.utils import (
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/lib/python3.10/site-packages/tensordict/utils.py", line 2974, in <module>
+    _lock_warn = assume_constant_result(_lock_warn)
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/lib/python3.10/site-packages/torch/compiler/__init__.py", line 226, in assume_constant_result
+    import torch._dynamo
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/exts/omni.isaac.ml_archive/pip_prebundle/torch/_dynamo/__init__.py", line 3, in <module>
+    from . import convert_frame, eval_frame, resume_execution
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/exts/omni.isaac.ml_archive/pip_prebundle/torch/_dynamo/convert_frame.py", line 53, in <module>
+    from . import config, exc, trace_rules
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/exts/omni.isaac.ml_archive/pip_prebundle/torch/_dynamo/trace_rules.py", line 46, in <module>
+    from .variables import (
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/exts/omni.isaac.ml_archive/pip_prebundle/torch/_dynamo/variables/__init__.py", line 2, in <module>
+    from .builtin import BuiltinVariable
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/exts/omni.isaac.ml_archive/pip_prebundle/torch/_dynamo/variables/builtin.py", line 27, in <module>
+    from ..guards import GuardBuilder, install_guard
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/exts/omni.isaac.ml_archive/pip_prebundle/torch/_dynamo/guards.py", line 78, in <module>
+    from .eval_frame import set_guard_error_hook
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacsim-4.5.0/exts/omni.isaac.ml_archive/pip_prebundle/torch/_dynamo/eval_frame.py", line 49, in <module>
+    from torch._C._dynamo.eval_frame import (  # noqa: F401
+ImportError: cannot import name 'skip_code' from 'torch._C._dynamo.eval_frame' (unknown location)
+2026-09-16 06:56:05 [3,960ms] [Warning] [omni.fabric.plugin] gFabricState->gUsdStageToSimStageWithHistoryMap had 1 outstanding SimStageWithHistory(s) at shutdown
+2026-09-16 06:56:05 [4,030ms] [Warning] [carb] Recursive unloadAllPlugins() detected!

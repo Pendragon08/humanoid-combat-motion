@@ -1,0 +1,11 @@
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Requirement already satisfied: wheel==0.45.1 in ./.venv-engineai-official/lib/python3.10/site-packages (0.45.1)
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: /data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/bin/python -m pip install --upgrade pip
+Traceback (most recent call last):
+  File "scripts/run_engineai_official_preflight.py", line 33, in <module>
+    if __name__=='__main__':main()
+  File "scripts/run_engineai_official_preflight.py", line 30, in main
+    if code or not result.exists():raise RuntimeError('Primary witness failed')
+RuntimeError: Primary witness failed

@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "name": "engineai-official-pinned",
+    "isaac_lab_commit": "c22775241e28f465fe345fa1a482ad6d29d712b0",
+    "engineai_commit": "14ec57be718586bd0ac45375aa1115bd896fbdbc",
+    "isaac_sim": "4.5.0 existing standalone, read-only reuse; officially supported by pinned Lab",
+    "python": "Isaac Sim bundled3.10 runtime; separate venv supplies packages only",
+    "torch": "2.7.0+cu128",
+    "torchvision": "0.22.0+cu128",
+    "rsl_rl": "5.0.1",
+    "numpy": "1.26.4",
+    "pinocchio": "2.7.0 (satisfies upstream pin>=2.7 while retaining numpy<2)",
+    "hpp_fcl": "2.4.4",
+    "eigenpy": "3.5.1",
+    "wheel": "0.45.1",
+    "kit_fast_importer": "enabled for simulator namespaces; declared numerical packages use standard PathFinder",
+    "installation": "isolated .venv-engineai-official; unmodified pinned upstream sources",
+    "storage": {
+      "location": "/data/code/ouyanghao/oyh/humanoid-combat-motion",
+      "minimum_free_gib": 60,
+      "initial_free_gib_approx": 142,
+      "estimated_new_gib": 20
+    },
+    "validation": [
+      "seeded CUDA matrix multiply and backward",
+      "official PM01 model physics steps",
+      "independent documented invocation",
+      "official pretrained example full-reference evaluation",
+      "generated references with same official runner"
+    ],
+    "old_experiments": "preserved; no mutation of old environment or results",
+    "gpu": 1
+  },
+  "canonical_sha256": "d8c3940482b82bbd74d912efa313944906117efb74adcb829c0735ddd704c04f",
+  "primary_witness": {
+    "horizon": 200,
+    "physics_steps_per_env": 800,
+    "completion_fraction": 1.0,
+    "strict_tracking_fraction": 0.25,
+    "first_failure_steps": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "mean_alive_errors": {
+      "joint_mae_rad": 0.10530726611614227,
+      "root_error_m": 0.2017688751220703,
+      "body_error_m": 0.20276832580566406
+    },
+    "gradient_loss": 24.964054107666016,
+    "gpu": "NVIDIA RTX A6000",
+    "claim": "reference-fit diagnostic; not unseen data utility",
+    "native_runner": true
+  },
+  "dependency_check": "No broken requirements found.\n",
+  "free_gib": 132.81390762329102,
+  "independent": {
+    "status": "passed",
+    "path": "runs/engineai_official_v1/witness_independent_v2",
+    "versions": {
+      "isaaclab": "0.54.4",
+      "rsl-rl-lib": "5.0.1",
+      "torch": "2.7.0+cu128",
+      "gymnasium": "1.2.1"
+    },
+    "note": "independent unmodified documented invocation and output inspection"
+  },
+  "bounded_pilot_status": "all7 jobs completed; official32/32; generated both0/32 after100 iterations"
+}

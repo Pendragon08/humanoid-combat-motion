@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "scripts/engineai_official_validate.py", line 98, in <module>
+    try:main()
+  File "scripts/engineai_official_validate.py", line 42, in main
+    assert torch.__version__=='2.7.0+cu128',torch.__version__
+AssertionError: 2.5.1+cu118

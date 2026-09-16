@@ -1,0 +1,6 @@
+{
+  "time": 1789542720.4413145,
+  "gpu": 1,
+  "budget_per_train": 614400,
+  "purpose": "native runner calibration and reference-fit; not data utility"
+}

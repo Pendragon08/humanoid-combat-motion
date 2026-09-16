@@ -1,0 +1,114 @@
+RUN ['/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/bin/python', '-m', 'pip', 'install', '--no-cache-dir', 'pip==25.0.1', 'setuptools==75.8.0', 'wheel==0.45.1', 'toml']
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Requirement already satisfied: pip==25.0.1 in ./.venv-engineai-official/lib/python3.10/site-packages (25.0.1)
+Requirement already satisfied: setuptools==75.8.0 in ./.venv-engineai-official/lib/python3.10/site-packages (75.8.0)
+Collecting wheel==0.45.1
+  Downloading https://mirrors.aliyun.com/pypi/packages/0b/2c/87f3254fd8ffd29e4c02732eee68a83a1d3c346ae39bc6822dcbcb697f2b/wheel-0.45.1-py3-none-any.whl (72 kB)
+Requirement already satisfied: toml in ./.venv-engineai-official/lib/python3.10/site-packages (0.10.2)
+Installing collected packages: wheel
+  Attempting uninstall: wheel
+    Found existing installation: wheel 0.48.0
+    Uninstalling wheel-0.48.0:
+      Successfully uninstalled wheel-0.48.0
+Successfully installed wheel-0.45.1
+RUN ['/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/bin/python', '-m', 'pip', 'install', '--no-cache-dir', 'torch==2.7.0', 'torchvision==0.22.0', '--index-url', 'https://download.pytorch.org/whl/cu128']
+Looking in indexes: https://download.pytorch.org/whl/cu128
+Requirement already satisfied: torch==2.7.0 in ./.venv-engineai-official/lib/python3.10/site-packages (2.7.0+cu128)
+Requirement already satisfied: torchvision==0.22.0 in ./.venv-engineai-official/lib/python3.10/site-packages (0.22.0+cu128)
+Requirement already satisfied: filelock in ./.venv-engineai-official/lib/python3.10/site-packages (from torch==2.7.0) (3.32.3)
+Requirement already satisfied: typing-extensions>=4.10.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from torch==2.7.0) (4.16.0)
+Requirement already satisfied: sympy>=1.13.3 in ./.venv-engineai-official/lib/python3.10/site-packages (from torch==2.7.0) (1.14.0)
+Requirement already satisfied: networkx in ./.venv-engineai-official/lib/python3.10/site-packages (from torch==2.7.0) (3.4.2)
+Requirement already satisfied: jinja2 in ./.venv-engineai-official/lib/python3.10/site-packages (from torch==2.7.0) (3.1.6)
+Requirement already satisfied: fsspec in ./.venv-engineai-official/lib/python3.10/site-packages (from torch==2.7.0) (2026.7.0)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.8.61 in ./.venv-engineai-official/lib/python3.10/site-packages (from torch==2.7.0) (12.8.61)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.8.57 in ./.venv-engineai-official/lib/python3.10/site-packages (from torch==2.7.0) (12.8.57)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.8.57 in ./.venv-engineai-official/lib/python3.10/site-packages (from torch==2.7.0) (12.8.57)
+Requirement already satisfied: nvidia-cudnn-cu12==9.7.1.26 in ./.venv-engineai-official/lib/python3.10/site-packages (from torch==2.7.0) (9.7.1.26)
+Requirement already satisfied: nvidia-cublas-cu12==12.8.3.14 in ./.venv-engineai-official/lib/python3.10/site-packages (from torch==2.7.0) (12.8.3.14)
+Requirement already satisfied: nvidia-cufft-cu12==11.3.3.41 in ./.venv-engineai-official/lib/python3.10/site-packages (from torch==2.7.0) (11.3.3.41)
+Requirement already satisfied: nvidia-curand-cu12==10.3.9.55 in ./.venv-engineai-official/lib/python3.10/site-packages (from torch==2.7.0) (10.3.9.55)
+Requirement already satisfied: nvidia-cusolver-cu12==11.7.2.55 in ./.venv-engineai-official/lib/python3.10/site-packages (from torch==2.7.0) (11.7.2.55)
+Requirement already satisfied: nvidia-cusparse-cu12==12.5.7.53 in ./.venv-engineai-official/lib/python3.10/site-packages (from torch==2.7.0) (12.5.7.53)
+Requirement already satisfied: nvidia-cusparselt-cu12==0.6.3 in ./.venv-engineai-official/lib/python3.10/site-packages (from torch==2.7.0) (0.6.3)
+Requirement already satisfied: nvidia-nccl-cu12==2.26.2 in ./.venv-engineai-official/lib/python3.10/site-packages (from torch==2.7.0) (2.26.2)
+Requirement already satisfied: nvidia-nvtx-cu12==12.8.55 in ./.venv-engineai-official/lib/python3.10/site-packages (from torch==2.7.0) (12.8.55)
+Requirement already satisfied: nvidia-nvjitlink-cu12==12.8.61 in ./.venv-engineai-official/lib/python3.10/site-packages (from torch==2.7.0) (12.8.61)
+Requirement already satisfied: nvidia-cufile-cu12==1.13.0.11 in ./.venv-engineai-official/lib/python3.10/site-packages (from torch==2.7.0) (1.13.0.11)
+Requirement already satisfied: triton==3.3.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from torch==2.7.0) (3.3.0)
+Requirement already satisfied: numpy in ./.venv-engineai-official/lib/python3.10/site-packages (from torchvision==0.22.0) (2.2.6)
+Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from torchvision==0.22.0) (12.3.0)
+Requirement already satisfied: setuptools>=40.8.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from triton==3.3.0->torch==2.7.0) (75.8.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from sympy>=1.13.3->torch==2.7.0) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from jinja2->torch==2.7.0) (3.0.3)
+RUN ['/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-engineai-official/bin/python', '-m', 'pip', 'install', '--no-cache-dir', '-c', '/data/code/ouyanghao/oyh/humanoid-combat-motion/cache/engineai-official/constraints.txt', '-e', '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/source/isaaclab', '-e', '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/source/isaaclab_assets', '-e', '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/source/isaaclab_tasks', '-e', '/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/source/isaaclab_rl', 'rsl-rl-lib==5.0.1', 'onnxscript>=0.5', 'tensorboard', 'numpy==1.26.4', 'pin==2.7.0', 'hpp-fcl==2.4.4', 'wheel==0.45.1', '--find-links', '/data/code/ouyanghao/oyh/humanoid-combat-motion/cache/engineai-official/wheels']
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Looking in links: /data/code/ouyanghao/oyh/humanoid-combat-motion/cache/engineai-official/wheels
+Obtaining file:///data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/source/isaaclab
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Obtaining file:///data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/source/isaaclab_assets
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Obtaining file:///data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/source/isaaclab_tasks
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Obtaining file:///data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/source/isaaclab_rl
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Collecting rsl-rl-lib==5.0.1
+  Downloading https://mirrors.aliyun.com/pypi/packages/ad/25/293a8ffd929d40accab30057b962084601133bd8a6779c156c2f58eb93bc/rsl_rl_lib-5.0.1-py3-none-any.whl (84 kB)
+Collecting onnxscript>=0.5
+  Downloading https://mirrors.aliyun.com/pypi/packages/b9/3b/06260997cdc41138e58718588a6c87d0eb342bbe0dda8a6aae91d163c384/onnxscript-0.7.2-py3-none-any.whl (754 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 754.2/754.2 kB 611.2 kB/s eta 0:00:00
+Collecting tensorboard
+  Downloading https://mirrors.aliyun.com/pypi/packages/37/4b/cd2eec9642781a8f5b2fb9994e3933a7b259ab18e9d49aeede9b5acf6311/tensorboard-2.21.0-py3-none-any.whl (5.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 582.5 kB/s eta 0:00:00
+Collecting numpy==1.26.4
+  Downloading https://mirrors.aliyun.com/pypi/packages/4b/d7/ecf66c1cd12dc28b4040b15ab4d17b773b87fa9d29ca16125de01adb36cd/numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.2/18.2 MB 558.2 kB/s eta 0:00:00
+Collecting pin==2.7.0
+  Downloading https://mirrors.aliyun.com/pypi/packages/b6/80/87d88f1ac4c9068c6b94c6a2038ded2af02ea74d0f640f4b8d3429c34b54/pin-2.7.0-2-cp310-cp310-manylinux_2_28_x86_64.whl (6.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.1/6.1 MB 530.4 kB/s eta 0:00:00
+Collecting hpp-fcl==2.4.4
+  Downloading https://mirrors.aliyun.com/pypi/packages/9e/c6/e8b6ecd948bfd535d95bd7f4e737729da29a681394f1a86f0757414f5c26/hpp_fcl-2.4.4-3-cp310-cp310-manylinux_2_28_x86_64.whl (2.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 MB 516.1 kB/s eta 0:00:00
+Requirement already satisfied: wheel==0.45.1 in ./.venv-engineai-official/lib/python3.10/site-packages (0.45.1)
+Requirement already satisfied: torch>=2.6.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from rsl-rl-lib==5.0.1) (2.7.0+cu128)
+Requirement already satisfied: torchvision>=0.5.0 in ./.venv-engineai-official/lib/python3.10/site-packages (from rsl-rl-lib==5.0.1) (0.22.0+cu128)
+Collecting tensordict>=0.7.0 (from rsl-rl-lib==5.0.1)
+  Downloading https://mirrors.aliyun.com/pypi/packages/4f/48/c2de2ce2ca9dd4ba2dd40c0b7157a108a47ba22bf69fad85a8a4aab82678/tensordict-0.14.2-cp310-cp310-manylinux_2_28_x86_64.whl (592 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 593.0/593.0 kB 408.6 kB/s eta 0:00:00
+Collecting GitPython (from rsl-rl-lib==5.0.1)
+  Downloading https://mirrors.aliyun.com/pypi/packages/d6/0b/29d7965215f8ef830a7ca1f42997fe13e5693d85e9edb18f938d063ef5f2/gitpython-3.1.62-py3-none-any.whl (222 kB)
+Collecting onnx (from rsl-rl-lib==5.0.1)
+  Downloading https://mirrors.aliyun.com/pypi/packages/f8/0c/f41d5b89c38fb2ec410ab23c24fa110af786093b140644f7f953e436743b/onnx-1.22.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (19.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 19.1/19.1 MB 530.2 kB/s eta 0:00:00
+Collecting cmeel (from pin==2.7.0)
+  Downloading https://mirrors.aliyun.com/pypi/packages/83/7f/4fe25f742a3dc50335371515e48761207cb8d6f51e55351486dc329ae6b0/cmeel-0.61.0-py3-none-any.whl (20 kB)
+Collecting cmeel-boost~=1.83.0 (from pin==2.7.0)
+  Downloading https://mirrors.aliyun.com/pypi/packages/4c/fc/b3f36e2de23d9f2d902cb0e1a7f41312aaf36355442568599fc620e0b2f6/cmeel_boost-1.83.0-0-cp310-cp310-manylinux_2_28_x86_64.whl (34.7 MB)

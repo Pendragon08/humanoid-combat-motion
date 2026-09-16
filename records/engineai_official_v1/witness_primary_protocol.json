@@ -1,0 +1,96 @@
+{
+  "versions": {
+    "isaaclab": "0.54.4",
+    "rsl-rl-lib": "5.0.1",
+    "torch": "2.5.1+cu118",
+    "gymnasium": "0.29.1"
+  },
+  "isaaclab_file": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/IsaacLab-engineai-official/source/isaaclab/isaaclab/__init__.py",
+  "motion": "third_party/engineai_rl_lab/datasets/tracking/pm01/dance.npz",
+  "motion_sha256": "80d413491bfe3cf65d35f06e885b7a6d4656c24cbce00265ac1a6d46c766ee7f",
+  "checkpoint_sha256": "90f0624ac80564844912d303a3731117ede876f5e0988f337106a0a656f5cb42",
+  "script_sha256": "d848495a710c0380187ed2fe4b24913557e962e82696e77d172716af29fa31ae",
+  "mode": "witness",
+  "agent": {
+    "seed": 0,
+    "device": "cuda:1",
+    "num_steps_per_env": 24,
+    "max_iterations": 20000,
+    "empirical_normalization": true,
+    "obs_groups": {
+      "actor": [
+        "policy"
+      ],
+      "critic": [
+        "critic"
+      ]
+    },
+    "clip_actions": null,
+    "check_for_nan": true,
+    "save_interval": 100,
+    "experiment_name": "tracking_pm01",
+    "run_name": "",
+    "logger": "tensorboard",
+    "neptune_project": "isaaclab",
+    "wandb_project": "isaaclab",
+    "resume": false,
+    "load_run": ".*",
+    "load_checkpoint": "model_.*.pt",
+    "class_name": "OnPolicyRunner",
+    "actor": {
+      "hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "activation": "elu",
+      "obs_normalization": false,
+      "distribution_cfg": {
+        "init_std": 1.0,
+        "std_type": "scalar"
+      }
+    },
+    "critic": {
+      "hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "activation": "elu",
+      "obs_normalization": false,
+      "distribution_cfg": null
+    },
+    "algorithm": {
+      "num_learning_epochs": 5,
+      "num_mini_batches": 4,
+      "learning_rate": 0.001,
+      "schedule": "adaptive",
+      "gamma": 0.99,
+      "lam": 0.95,
+      "entropy_coef": 0.005,
+      "desired_kl": 0.01,
+      "max_grad_norm": 1.0,
+      "optimizer": "adam",
+      "value_loss_coef": 1.0,
+      "use_clipped_value_loss": true,
+      "clip_param": 0.2,
+      "normalize_advantage_per_mini_batch": false,
+      "rnd_cfg": null,
+      "symmetry_cfg": null
+    },
+    "policy": {},
+    "multi_gpu": null
+  },
+  "environments": 4,
+  "seed": 0,
+  "iterations": 100,
+  "training_changes": null,
+  "eval_changes": [
+    "fixed reference start",
+    "no observation noise",
+    "full-reference time limit",
+    "no visual material/debug markers"
+  ],
+  "upstream_task_rewards_and_terminations": "unchanged",
+  "claim": "environment validation/reference fit; not data utility"
+}
