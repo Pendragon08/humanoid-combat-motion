@@ -11,8 +11,11 @@ EDGES = [edge for chain in CHAINS for edge in zip(chain[:-1],chain[1:])]
 def refine_data(positions, radii, fps, event, contact_weight, acceleration_weight,
                 steps=150, lr=0.01, device='cpu'):
     positions,radii=validate_motion(positions,radii,fps)
-    evaluate_event(positions,radii,fps,event)
-    if positions.shape[2]!=22 or event.a_actor!=0 or event.b_actor!=1:
+    if event is not None:
+        evaluate_event(positions,radii,fps,event)
+    elif contact_weight != 0:
+        raise ValueError('Contact refinement requires an independently supplied plan')
+    if positions.shape[2]!=22 or (event is not None and (event.a_actor!=0 or event.b_actor!=1)):
         raise ValueError('Explicit attacker=0, defender=1 and 22-joint representation required')
     if min(contact_weight,acceleration_weight)<0 or steps<=0:
         raise ValueError('Invalid optimization settings')
@@ -35,7 +38,7 @@ def refine_data(positions, radii, fps, event, contact_weight, acceleration_weigh
     history=[]
     for step in range(steps):
         optimizer.zero_grad(); x=decode()
-        contact=contact_objective(x,radius,[event],tolerance=0.)
+        contact=contact_objective(x,radius,[event],tolerance=0.) if event is not None else x.new_zeros(())
         preserve=(x-initial).square().mean()
         change_velocity=(torch.diff(x-initial,dim=0)*fps).square().mean()
         acceleration=(torch.diff(x[:,1],n=2,dim=0)*fps**2).square().mean()

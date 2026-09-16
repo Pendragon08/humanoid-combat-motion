@@ -1,0 +1,9 @@
+{"step": 25, "loss": 0.36764076352119446, "elapsed_seconds": 2.4324589911848307}
+{"step": 50, "loss": 0.2819661498069763, "elapsed_seconds": 4.788357591256499}
+{"step": 75, "loss": 0.6663793325424194, "elapsed_seconds": 7.105377489700913}
+{"step": 100, "loss": 0.2831483781337738, "elapsed_seconds": 9.415673457086086, "validation_reactor_mse": 0.2821206720545888}
+{"step": 125, "loss": 0.17173869907855988, "elapsed_seconds": 20.638653026893735}
+{"step": 150, "loss": 0.6626917719841003, "elapsed_seconds": 22.846677558496594}
+{"step": 175, "loss": 0.2588021755218506, "elapsed_seconds": 25.06213920004666}
+{"step": 200, "loss": 0.4025406241416931, "elapsed_seconds": 27.350216271355748, "validation_reactor_mse": 0.19467436615377665}
+REMOCAP_TRAINING_COMPLETE {"method": "intergen-body-adapted", "seed": 0, "steps": 200, "pilot": true, "initial_val_reactor_mse": 1.1783382073044777, "best_val_reactor_mse": 0.19467436615377665, "best_step": 200, "validation_generation_mpjpe_mm": 1403.4807682037354, "validation_generation_finite": true, "generated_bone_median_m": 0.1987299770116806, "elapsed_seconds": 38.044234259054065, "peak_gpu_memory_mib": 3331.392578125, "best_checkpoint_sha256": "edefe011c095c68fd6e09b1c10935e63536aaa4faa1b5f51767dc2be3c469a6b", "training_pass": true, "test_evaluated": false, "robot_utility_verified": false}

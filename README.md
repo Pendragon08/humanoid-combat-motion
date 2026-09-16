@@ -2,9 +2,11 @@
 
 ## 当前进度（2026-09-16）
 
+**DuoBox 已按用户要求停用，BM2 改为 ReMoCap／Ninjutsu。** 官方数据已下载、CRC/SHA256 校验通过；41/10/28 段录制分别用于训练/验证/测试，实际时间戳核验后统一到20 fps。InterGen-body-adapted 与 ReMoS-body-adapted 两组200步试运行通过，正式3种子×5000步训练及后续评测队列已启动。采用同一22关节表示和主动者条件，接触组件仅从训练库检索候选，不能读取测试回应者来修正输出。这是适配基准与组件实验，不是原论文表格复现或完整机器人学习收益证明。见[执行方案](docs/remocap_execution_20260916.md)、[新协议](configs/remocap_protocol_v2.json)及[记录目录](records/remocap_20260916)。
+
 BM1: Motion Generation Benchmark Evaluation（动作生成基准评估）两组各20轮已完成。原始TIMotion与文本条件适配器的FID分别为5.5111/5.5344，Top-1文本匹配准确率49.12%/48.53%；未显示适配器整体收益。原始日志、压缩配对轨迹、数据/代码校验和统计结果已归档，见[BM1结果](records/bm1_20260915_v1/suite_result.md)。本轮是1099条可用InterHuman测试样本的评价，非完整官方数据复现，非完整方案验证。
 
-[剩余步骤与恢复条件](docs/remaining_steps_20260916.md)：BM2缺DuoBox数据；BM3缺独立事件标注；BM4缺独立测试与可靠基线。**全部实验尚未完成**，现有负结果与历史诊断均保留，不把准备检查当成实验成绩。
+[历史剩余步骤与恢复条件](docs/remaining_steps_20260916.md)：其中DuoBox要求现已由上述ReMoCap方案替代。BM3仍缺独立事件标注；BM4仍缺独立测试与可靠基线。**全部实验尚未完成**，现有负结果与历史诊断均保留，不把准备检查当成实验成绩。
 
 **研究范围已调整：高质量格斗示范数据构建为核心，动作跟踪仅作训练价值验证。** 当前执行依据是[数据主线协议](docs/step7_protocol.md)及[机器可读计划](configs/data_utility_protocol_v2.json)，报告新增[当前研究定位](reports/experiment_progress_20260914.html#data-centric-protocol)。控制器替换和双人几何修正已执行，作为历史工程诊断保留；不再以改进跟踪算法或重定向作为首篇贡献。
 

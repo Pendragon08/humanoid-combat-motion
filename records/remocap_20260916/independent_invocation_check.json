@@ -1,0 +1,52 @@
+{
+  "validation_date": "2026-09-16",
+  "role": "independent agent follows exact documented invocation",
+  "scope": "Model-integration validation only; not dataset quality, pretrained inference, or scientific performance.",
+  "documents_read": [
+    "docs/remocap_execution_20260916.md",
+    "docs/timotion_environment.md",
+    "env-timotion.json"
+  ],
+  "host": "ouyanghao@10.147.17.32",
+  "working_directory": "/data/code/ouyanghao/oyh/humanoid-combat-motion",
+  "exact_command": "bash scripts/run_timotion.sh -m scripts.smoke_remocap_models",
+  "exit_status": 0,
+  "witness": "REMOCAP_MODELS_WITNESS",
+  "models": [
+    {
+      "method": "remos",
+      "loss": 0.9956473708152771,
+      "shape": [
+        2,
+        8,
+        22,
+        3
+      ],
+      "peak_memory_mib": 155.93505859375
+    },
+    {
+      "method": "intergen",
+      "loss": 0.9896095991134644,
+      "shape": [
+        2,
+        8,
+        22,
+        3
+      ],
+      "peak_memory_mib": 1366.27001953125
+    }
+  ],
+  "doc_vs_reality_divergences": [],
+  "warm_environment": {
+    "unchanged": true,
+    "canonical_spec_hash": "bbd2963d",
+    "canonical_spec_sha256": "bbd2963defa78b754459f5a072b01e8ab257453c209d113942a5879395f62684",
+    "file_sha256_before": "3b6d29d0e4de32aebb8fcdb2af325ec229f7a01668adc0059746861046c1fbdf",
+    "file_sha256_after": "3b6d29d0e4de32aebb8fcdb2af325ec229f7a01668adc0059746861046c1fbdf",
+    "local_file_sha256_matches_remote": true,
+    "environment_rebuilt": false,
+    "note": "Spec hash uses sorted compact JSON; raw file SHA256 is expected to differ from canonical spec hash."
+  },
+  "code_or_environment_edits": false,
+  "verdict": "pass"
+}

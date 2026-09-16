@@ -1,0 +1,13 @@
+{
+  "source_url": "https://vcai.mpi-inf.mpg.de/projects/remos/ReMocap.zip",
+  "license_url": "https://raw.githubusercontent.com/anindita127/ReMoS/main/README.md",
+  "license_sha256": "cd80ccd08ea3cfe917a41a2c3ceba0f0966a3f16b97b5975f821dc5dfe37527f",
+  "terms": "noncommercial research only; no redistribution including derivatives",
+  "archive_sha256": "d79af424e1ac12a36e8afb9cf85dec9965a4c4b33a5611c6cf17d133707c7e72",
+  "archive_bytes": 1479264924,
+  "archive_entries": 809,
+  "crc_verified": true,
+  "extracted_path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/data/official/remocap/extracted",
+  "data_uploaded_to_github": false,
+  "acquisition_complete": true
+}

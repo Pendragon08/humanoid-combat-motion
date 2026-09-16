@@ -1,0 +1,21 @@
+..............E........................................................
+======================================================================
+ERROR: test_constraints (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_constraints
+Traceback (most recent call last):
+  File "/data/code/ouyanghao/oyh/world-model-risk-planning/.env/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/data/code/ouyanghao/oyh/world-model-risk-planning/.env/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/tests/test_constraints.py", line 5, in <module>
+    from combat.robot import Robot
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/combat/robot.py", line 6, in <module>
+    import mujoco
+ModuleNotFoundError: No module named 'mujoco'
+
+
+----------------------------------------------------------------------
+Ran 71 tests in 1.042s
+
+FAILED (errors=1)

@@ -1,0 +1,3 @@
+{"method": "remos", "loss": 0.9956473708152771, "shape": [2, 8, 22, 3], "peak_memory_mib": 155.93505859375}
+{"method": "intergen", "loss": 0.9896095991134644, "shape": [2, 8, 22, 3], "peak_memory_mib": 1366.27001953125}
+REMOCAP_MODELS_WITNESS

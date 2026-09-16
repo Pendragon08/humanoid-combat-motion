@@ -1,0 +1,4 @@
+{"draw": 0, "windows_done": 4, "total_windows": 4, "elapsed_seconds": 5.97467046789825}
+{"draw": 1, "windows_done": 4, "total_windows": 4, "elapsed_seconds": 11.0220552328974}
+{"draw": 2, "windows_done": 4, "total_windows": 4, "elapsed_seconds": 15.979419067502022}
+REMOCAP_EVALUATION_COMPLETE {"method": "remos-body-adapted", "training_seed": 0, "validation_smoke": true, "split": "val", "within_condition_diversity_mm": 70.46923041343689, "elapsed_seconds": 15.981010587885976, "peak_gpu_memory_mib": 375.470703125, "independent_contact_ground_truth": false, "robot_utility_verified": false, "checkpoint_sha256": "2324a504bbecb4fbd9ed5e52a798ea2e8fb54c82e80cc04be5825776761c340b", "metrics_sha256": "736ffeb6f3791f8fd8583dc0e56988ef24f6b992c7c6c03ba65e5e9f49245ad0", "generated_motion_sha256": "aa90b0f318505b1392d22c49f29d14243c1e2cbfa50693baf38474e429040673"}

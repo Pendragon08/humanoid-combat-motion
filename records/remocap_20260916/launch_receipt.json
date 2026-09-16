@@ -1,0 +1,15 @@
+{
+  "protocol": "remocap_body_reaction_v2_20260916",
+  "date": "2026-09-16",
+  "server_root": "/data/code/ouyanghao/oyh/humanoid-combat-motion",
+  "training_sessions": {"remocap_main_remos": {"gpu": 0, "seeds": [0, 1, 2], "updates_each": 5000}, "remocap_main_intergen": {"gpu": 1, "seeds": [0, 1, 2], "updates_each": 5000}},
+  "evaluation_sessions": ["remocap_eval_remos", "remocap_eval_intergen"],
+  "pilot": {"remos_peak_mib": 2421.51171875, "intergen_peak_mib": 3331.392578125, "steps_each": 200},
+  "regression": "73 tests passed in project robot environment; motion-only environment lacks unrelated MuJoCo dependency, failed attempt also retained",
+  "full_test": "378 non-overlapping windows from 28 test recordings, 3 samples each, per model seed",
+  "ablation": "first chronological window per test recording, 3 samples, raw/contact/temporal/combined",
+  "data_publication": "no raw or derived motion, weights or upstream source",
+  "complete": false,
+  "independent_contact_labels": false,
+  "robot_utility_verified": false
+}

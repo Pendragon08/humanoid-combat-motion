@@ -1,0 +1,1585 @@
+{
+  "protocol": "remocap_body_reaction_v2_20260916",
+  "fps": 20,
+  "frames": 40,
+  "joints": [
+    "Hips",
+    "LeftUpLeg",
+    "RightUpLeg",
+    "Spine",
+    "LeftLeg",
+    "RightLeg",
+    "Spine1",
+    "LeftFoot",
+    "RightFoot",
+    "Spine3",
+    "LeftToeBase",
+    "RightToeBase",
+    "Neck",
+    "LeftShoulder",
+    "RightShoulder",
+    "Head",
+    "LeftArm",
+    "RightArm",
+    "LeftForeArm",
+    "RightForeArm",
+    "LeftHand",
+    "RightHand"
+  ],
+  "parents": [
+    -1,
+    0,
+    0,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    9,
+    9,
+    12,
+    13,
+    14,
+    16,
+    17,
+    18,
+    19
+  ],
+  "units": "m",
+  "up_axis": "Y",
+  "window_counts": {
+    "train": 682,
+    "val": 186,
+    "test": 378
+  },
+  "source_counts": {
+    "train": 41,
+    "val": 10,
+    "test": 28
+  },
+  "source_audit": [
+    {
+      "source": "shot_031",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        25.000000000000046,
+        25.000000000000046
+      ],
+      "original_frames": [
+        721,
+        721
+      ],
+      "resampled_frames": 577,
+      "windows": 14,
+      "source_sha256": [
+        "9e26e4abfa70eaec7c313fe7e6683f38c5e61823223aedca60015c1929c26c02",
+        "cd55a5f7269cf72c332433a1f00b64f81e021b02426c3df5a2b781c16eb29fdc"
+      ]
+    },
+    {
+      "source": "shot_032",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        25.000000000000117,
+        25.000000000000117
+      ],
+      "original_frames": [
+        736,
+        736
+      ],
+      "resampled_frames": 589,
+      "windows": 14,
+      "source_sha256": [
+        "bbe918b868cd6758b254ccfa723e0ae361b3b989997bc19cb85c8915130aa2df",
+        "71c9e52736bc9c25924b457f3eb68a837aa4d7b28708ff8104f330286f29b9ca"
+      ]
+    },
+    {
+      "source": "shot_033",
+      "split": "val",
+      "official_split": "train",
+      "original_fps": [
+        25.000000000000533,
+        25.000000000000533
+      ],
+      "original_frames": [
+        809,
+        809
+      ],
+      "resampled_frames": 647,
+      "windows": 16,
+      "source_sha256": [
+        "5f6210e4ba66d4a6628dda1911fbd500aa7ef21f90b6d171d91f196702ef544a",
+        "c811124fb1e4cb7c207fcc1a0223faa181506b33ae90b753b00bfe97e523166e"
+      ]
+    },
+    {
+      "source": "shot_034",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        25.000000000000533,
+        25.000000000000533
+      ],
+      "original_frames": [
+        843,
+        843
+      ],
+      "resampled_frames": 674,
+      "windows": 16,
+      "source_sha256": [
+        "a19a2ca690a51d0e055910900502233fefac605ef9409e815349eb6036f0ef21",
+        "a634f4685dbe9a44a99efb782284de2c6f7afe3fb80ebbb02c53792fc56863bc"
+      ]
+    },
+    {
+      "source": "shot_035",
+      "split": "val",
+      "official_split": "train",
+      "original_fps": [
+        25.000000000000533,
+        25.000000000000533
+      ],
+      "original_frames": [
+        756,
+        756
+      ],
+      "resampled_frames": 605,
+      "windows": 15,
+      "source_sha256": [
+        "a71c37bc93ed04d8f0ef8b172a72a31f26e6e1771c8642c7820854367d940730",
+        "7cb00fef4fd5c72490e80b6d1116733c82293950d6ad295971f8e3c2664d19d0"
+      ]
+    },
+    {
+      "source": "shot_036",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        25.000000000000014,
+        25.000000000000014
+      ],
+      "original_frames": [
+        701,
+        701
+      ],
+      "resampled_frames": 561,
+      "windows": 14,
+      "source_sha256": [
+        "a403d59e6fba72579a7b54ab4a672e9c72050770c470ea84cb6a9fc29504083e",
+        "88e05ee0ef11d2661122e68cf8d13759deb991283feb6165ea6119985b69bc37"
+      ]
+    },
+    {
+      "source": "shot_037",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        24.99999999999998,
+        24.99999999999998
+      ],
+      "original_frames": [
+        664,
+        664
+      ],
+      "resampled_frames": 531,
+      "windows": 13,
+      "source_sha256": [
+        "e23a02e1d9a5f3a56da696d1b132d741f59f050ef0c36ad5713fd64cd6ae6860",
+        "b49adafb10c39e16b1c6c78037d7986b0ed49c5212efa4baa800124bb2086f4f"
+      ]
+    },
+    {
+      "source": "shot_038",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        25.000000000000533,
+        25.000000000000533
+      ],
+      "original_frames": [
+        793,
+        793
+      ],
+      "resampled_frames": 634,
+      "windows": 15,
+      "source_sha256": [
+        "845621fcb11413f729b25a504cef462989c08ea9bdbf0550214e74f6e6d707f6",
+        "96fd26b64876b417afa35595d72b57803f762457a5a80174a028203d73a48f0f"
+      ]
+    },
+    {
+      "source": "shot_039",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        25.000000000000533,
+        25.000000000000533
+      ],
+      "original_frames": [
+        770,
+        770
+      ],
+      "resampled_frames": 616,
+      "windows": 15,
+      "source_sha256": [
+        "676e9c57293264b6cb3910b2d3e39820a49db60060b8b6393a0ef62c74de801f",
+        "e68f8aec1179458f6af2ed9aa6c3705d40c146640112507ebd4bad53249e5439"
+      ]
+    },
+    {
+      "source": "shot_040",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        25.000000000000533,
+        25.000000000000533
+      ],
+      "original_frames": [
+        802,
+        802
+      ],
+      "resampled_frames": 641,
+      "windows": 16,
+      "source_sha256": [
+        "2cc4668d2ad0843e908e2a2330975812a45bd7800e995d71a351248bc31bbcf6",
+        "b3e7c58f629fbc123f200f35aebcd3043779893c1d1cc4ea64bdb6c7b0c0679b"
+      ]
+    },
+    {
+      "source": "shot_041",
+      "split": "val",
+      "official_split": "train",
+      "original_fps": [
+        25.000000000000256,
+        25.000000000000256
+      ],
+      "original_frames": [
+        751,
+        751
+      ],
+      "resampled_frames": 601,
+      "windows": 15,
+      "source_sha256": [
+        "99b034e6626d1deac80315991642688674be65f54f9e3ecdfd2191e243a60f9e",
+        "a8b2ed2d46dce94656984aba6aa2010dd3348f3200bd779d21e3a7e3d9f0dc6b"
+      ]
+    },
+    {
+      "source": "shot_042",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        25.000000000000014,
+        25.000000000000014
+      ],
+      "original_frames": [
+        708,
+        708
+      ],
+      "resampled_frames": 566,
+      "windows": 14,
+      "source_sha256": [
+        "856fb88998a514e27612b2cceb6810b413ed138c33398cb78e38d0432f2d37e4",
+        "14428209f014b5fd16ea0e79854d5679af7b7928f6878c454cd96e42f5e04970"
+      ]
+    },
+    {
+      "source": "shot_043",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1209,
+        1209
+      ],
+      "resampled_frames": 484,
+      "windows": 12,
+      "source_sha256": [
+        "0ce00e303dbee63514031bee014d9448ea40b30f777362b1b81e4470709bfbeb",
+        "bd46a2959e0c12ac43adefdb82cc7474b7fe2f0dacd5e9fa106f2384eb812bb9"
+      ]
+    },
+    {
+      "source": "shot_044",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1268,
+        1268
+      ],
+      "resampled_frames": 507,
+      "windows": 12,
+      "source_sha256": [
+        "78487d0bff0ac2bb4d88575671f3e9424d827b066bdd73c2227f6a3582be9c8d",
+        "3925347d696861b22919403562beadd03e275b230ee28cf3f1af3b7feb8675b9"
+      ]
+    },
+    {
+      "source": "shot_045",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1572,
+        1572
+      ],
+      "resampled_frames": 629,
+      "windows": 15,
+      "source_sha256": [
+        "682d104765f0d8cf735a5b7068d8c30ef022785af8c4db4df287e96e4bc2d008",
+        "896c2d9eac0425f4761bca2c8607a6bb1c2ffe63846e7befe65d7aee0544516e"
+      ]
+    },
+    {
+      "source": "shot_046",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1496,
+        1496
+      ],
+      "resampled_frames": 599,
+      "windows": 14,
+      "source_sha256": [
+        "7abe785d9e0b8beb2a15d452bb35d9bde7d0a3067cdad7860475e8b3981bc54d",
+        "f29cf7485c7f72c99e104117c8ffc4d40c53b65f76df43e1b05e937f11f2c49d"
+      ]
+    },
+    {
+      "source": "shot_047",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1274,
+        1274
+      ],
+      "resampled_frames": 510,
+      "windows": 12,
+      "source_sha256": [
+        "397db5b84386efe684b5d6ffd2a537bd7fdf2f5cfc3d486fb6ac643c76b068a9",
+        "123e30622c8454c7e845c24595fe0f2b76bcf9006d806e0a3a8d52cbe86a3498"
+      ]
+    },
+    {
+      "source": "shot_048",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1308,
+        1308
+      ],
+      "resampled_frames": 523,
+      "windows": 13,
+      "source_sha256": [
+        "9dcc940a6bc584d5bd740cc87476c81fe912ecdcf8751605787effb8a9fd5f74",
+        "a22ee853f080e6b183755e476a69b7325d842a80509a9606381f7218c1801c00"
+      ]
+    },
+    {
+      "source": "shot_049",
+      "split": "val",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1661,
+        1661
+      ],
+      "resampled_frames": 665,
+      "windows": 16,
+      "source_sha256": [
+        "9466b527a48a9866b5e0c280d65133971b70544fdba0516184c2e29442d0e5db",
+        "bb7d03a09e6fdae03f388208c424530d8e902000a975351c12dc243e3d73300b"
+      ]
+    },
+    {
+      "source": "shot_050",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1759,
+        1759
+      ],
+      "resampled_frames": 704,
+      "windows": 17,
+      "source_sha256": [
+        "864bf5b75e41a0db09a306178608b1c4c91b2660317537fbb3dc658c5a1dfd88",
+        "d14cb8d50049ae035f1beee280c69055666244fb679f5962a44a6aba052c268b"
+      ]
+    },
+    {
+      "source": "shot_051",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1614,
+        1614
+      ],
+      "resampled_frames": 646,
+      "windows": 16,
+      "source_sha256": [
+        "45f0586fface6ec346b3ed144a1d91417390e0539f5174b024b17bd862c7d8eb",
+        "d4e315cea76c01d10042bf2d884cf7547980f4e3947fa26ac3d1a9413de43ec6"
+      ]
+    },
+    {
+      "source": "shot_052",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        2061,
+        2061
+      ],
+      "resampled_frames": 825,
+      "windows": 20,
+      "source_sha256": [
+        "f42c0be6b48d330d07b23e4e64a33855f38094a1def2d42eac7200fc4193590c",
+        "b8e995291e5505edc47ecb6e323f15e5d52f6b3f943a44c7cd253c3aa185f7c3"
+      ]
+    },
+    {
+      "source": "shot_053",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1338,
+        1338
+      ],
+      "resampled_frames": 535,
+      "windows": 13,
+      "source_sha256": [
+        "831f68df9bf14f2e3a6e83a2f7cd0afce75f0c2c8b9dcce74182a6005f5ab191",
+        "abae312b08d150470053038c3461ffdf80c5a939801e2a58369ee44b3f3c7f31"
+      ]
+    },
+    {
+      "source": "shot_054",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1748,
+        1748
+      ],
+      "resampled_frames": 699,
+      "windows": 17,
+      "source_sha256": [
+        "dff1c0aca84d1c8577cba54a886beec8681128b66277913502e1870c82506f93",
+        "2618e4af14a0759deaa5ad4048d6543ed2b6eae609e1982dd5de3129b9db0cdc"
+      ]
+    },
+    {
+      "source": "shot_055",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1503,
+        1503
+      ],
+      "resampled_frames": 601,
+      "windows": 15,
+      "source_sha256": [
+        "5576a773683e67278d3d327a62563274c8599658d52db00f1abf082d4bc3b1d7",
+        "f100349115bba6b9f2b74ab39eccaf4b2597c9863d082eb893f3cc6bd95304b2"
+      ]
+    },
+    {
+      "source": "shot_056",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        803,
+        803
+      ],
+      "resampled_frames": 321,
+      "windows": 8,
+      "source_sha256": [
+        "b146ac0d2506bb599ee0689ad010ab969cb64464d2af8a37c739643ede047d69",
+        "d4f40db0a3861a21b00bda853c4d940f4f6902664503d751b94f681f40d58cf3"
+      ]
+    },
+    {
+      "source": "shot_057",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        843,
+        843
+      ],
+      "resampled_frames": 337,
+      "windows": 8,
+      "source_sha256": [
+        "b76d2cb466e9eb3bf86c7217d6df400647a51b99a04a806b77ecbf2bbb67d2a4",
+        "961c31f869fd01834d7b1b2792ba21d590872159dd838124c8dc18d5c07fd443"
+      ]
+    },
+    {
+      "source": "shot_058",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        842,
+        842
+      ],
+      "resampled_frames": 337,
+      "windows": 8,
+      "source_sha256": [
+        "10ec48da01ea2b832354aba40e7dff6fcc3ec2dddc2a75caced82c8f13800cd1",
+        "958bc8ddcc4dd7bd60b2d211554f7107f533b6b15af9983f3f1f31bb60964514"
+      ]
+    },
+    {
+      "source": "shot_059",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        828,
+        828
+      ],
+      "resampled_frames": 331,
+      "windows": 8,
+      "source_sha256": [
+        "a951d6fb27715b5b5e0a431cba29b46d6a58830c6f26949cfe00b131d17b82a5",
+        "ad4ccdfb31241b5ead7255811f784f771c4986d0854b13de1388283d673d2ec6"
+      ]
+    },
+    {
+      "source": "shot_060",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1171,
+        1171
+      ],
+      "resampled_frames": 469,
+      "windows": 11,
+      "source_sha256": [
+        "956f58e172a0571da6dbd4dd3588c4081d386ec817d4a9b1cf8ef25817051655",
+        "62298b18c2d0b7713cc08043c69c42e3b6b8eff07c9692529677a865673b3195"
+      ]
+    },
+    {
+      "source": "shot_061",
+      "split": "val",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        805,
+        805
+      ],
+      "resampled_frames": 322,
+      "windows": 8,
+      "source_sha256": [
+        "279e403144761f038e6971a896150ba938b5a6abd9e085e31bc59424e84b722b",
+        "60eece9734b1cb4ca72900b411f9dbd363d9c8124325a013d7eee2fe39576762"
+      ]
+    },
+    {
+      "source": "shot_062",
+      "split": "val",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        860,
+        860
+      ],
+      "resampled_frames": 344,
+      "windows": 8,
+      "source_sha256": [
+        "92aff449748e9c97ae69a3360806a3cb5616e685c2e3afecb39d2f9bc3255e46",
+        "8c314eee26407dcd71687d8bf7b30c712225959849d46d6ea88139752bead5ba"
+      ]
+    },
+    {
+      "source": "shot_063",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1023,
+        1023
+      ],
+      "resampled_frames": 409,
+      "windows": 10,
+      "source_sha256": [
+        "2fa5224a03d085de39b4ac6ba8d6d7a527762727549c549e144d32e86f9c21e8",
+        "d87a044a7aec020cc32cb7baa61517fb4148c86b270cc96eb9c9b2f9619cc764"
+      ]
+    },
+    {
+      "source": "shot_064",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        870,
+        870
+      ],
+      "resampled_frames": 348,
+      "windows": 8,
+      "source_sha256": [
+        "5853875c9522e6a3879b91369648e18ed74c66fbb1d66139e8973a13f46dd201",
+        "afc7dcca8c0e8a5e9e2039f65faa214dc52fdcf3edb3af82a0e165464fbbf55d"
+      ]
+    },
+    {
+      "source": "shot_065",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1004,
+        1004
+      ],
+      "resampled_frames": 402,
+      "windows": 10,
+      "source_sha256": [
+        "527f825e8a3f1f515351296ee1a5c35ee12a6ec29a823e240a30697c14dfe102",
+        "68182de029c27f7614b0725f8d22051601862a1cc688723835e96205edf2c8f2"
+      ]
+    },
+    {
+      "source": "shot_066",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        896,
+        896
+      ],
+      "resampled_frames": 359,
+      "windows": 8,
+      "source_sha256": [
+        "a62f5d5b9501b6954177c9ba63e3a69b65ad2b0662862a6ff62f34ce64ed5757",
+        "8dca019e20cc96299ddec33314da40ecd739a3699ed46035fc1e4d2ecad066e6"
+      ]
+    },
+    {
+      "source": "shot_067",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        935,
+        935
+      ],
+      "resampled_frames": 374,
+      "windows": 9,
+      "source_sha256": [
+        "f79ee3efed62821df9800bb711c3da2510964d7d353c245a4f8432e74ee5c9e5",
+        "cd580247bc09b213fc723530142a74d4721832131c5af35b9b8a5e4cc034f2a8"
+      ]
+    },
+    {
+      "source": "shot_068",
+      "split": "val",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1238,
+        1238
+      ],
+      "resampled_frames": 495,
+      "windows": 12,
+      "source_sha256": [
+        "f97ddc14c8857c8e5934fef0fcffb71959a1c818f70a35fd9852077e99457df5",
+        "6c77cd9994fe856e35feb7ff18a322fc22008e6daa2e19292d52112fd5566a52"
+      ]
+    },
+    {
+      "source": "shot_069",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1095,
+        1095
+      ],
+      "resampled_frames": 438,
+      "windows": 10,
+      "source_sha256": [
+        "bdbb14e56bc927cc490155e968425f2a6121c50e94ffc7d305ba5e0e9f988099",
+        "acd385cba12d50e10533475b0a17dadefc5baa5d1f9254cc092915a48a3ad145"
+      ]
+    },
+    {
+      "source": "shot_070",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1469,
+        1469
+      ],
+      "resampled_frames": 588,
+      "windows": 14,
+      "source_sha256": [
+        "f90a8c49b35a2d0fca4c06049a3b396ec348ecfb002c5db4b4e0d1777c297a1c",
+        "7d147edc361b0a51da4f70c420e31ab0dc76528f6e505abae13ea3d11882ffb0"
+      ]
+    },
+    {
+      "source": "shot_084",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        4116,
+        4116
+      ],
+      "resampled_frames": 1647,
+      "windows": 41,
+      "source_sha256": [
+        "66f5f17c0c330cf57160d3c5e018e8ddbb127e04ec8077234f58af1c751ef6ab",
+        "c7511464274654aabb68d73b925795ecf0427aca46ba0b2a7b3bd099f797bae5"
+      ]
+    },
+    {
+      "source": "shot_085",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        4765,
+        4765
+      ],
+      "resampled_frames": 1906,
+      "windows": 47,
+      "source_sha256": [
+        "3093f6b9b2b5fcc05108a97a62038a4cd0b3494a815445b0c008057dbb28e2da",
+        "e984b8f15fdaf301c4170e35ce40f2e5dacf79a3d3f78947368429f778ea133e"
+      ]
+    },
+    {
+      "source": "shot_086",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        4857,
+        4857
+      ],
+      "resampled_frames": 1943,
+      "windows": 48,
+      "source_sha256": [
+        "58be5734ff49ce98f17ad695a6d97f01b0d5f5fe6463648c120107b6360b3725",
+        "89195c5a087c175796fb66e25e4312058a6fc7d814d1d298ef9afba39470253e"
+      ]
+    },
+    {
+      "source": "shot_087",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        5234,
+        5234
+      ],
+      "resampled_frames": 2094,
+      "windows": 52,
+      "source_sha256": [
+        "bacc073386ca67c0f0d0e98e44aa9318ed43d64375936910531c2efa6d436a88",
+        "6c746e62231ab14bf60c71f6b3bbb99b34f1b6bd39069217420ade1aec5df7f8"
+      ]
+    },
+    {
+      "source": "shot_088",
+      "split": "val",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        4179,
+        4179
+      ],
+      "resampled_frames": 1672,
+      "windows": 41,
+      "source_sha256": [
+        "44fbafb7564064d35c2ef1030a9ba0fc990979b8c4f37fb3e77833a0c65b9b43",
+        "099bfc6b310bb4003407a5ad0ad0bd626170137cf077136002729f75c303c593"
+      ]
+    },
+    {
+      "source": "shot_089",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        3991,
+        3991
+      ],
+      "resampled_frames": 1597,
+      "windows": 39,
+      "source_sha256": [
+        "1fedd4da2095b00c62b0476611379825f49db791b7b7530fbf1f4155d6aa096d",
+        "ace449c09077809de53a61f662b7ad88af42cfad515e36c8f81cfdb12c32d1e5"
+      ]
+    },
+    {
+      "source": "shot_090",
+      "split": "val",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        4381,
+        4381
+      ],
+      "resampled_frames": 1753,
+      "windows": 43,
+      "source_sha256": [
+        "dbb3006a3f9b13d2d642c2cf4d895254d0ebb1f0ebdc05493038221c561a8922",
+        "40dea82026e27e79a7f0afa4fe4b3017c9e5a045374c3580cbe33240ef67c797"
+      ]
+    },
+    {
+      "source": "shot_091",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1328,
+        1328
+      ],
+      "resampled_frames": 531,
+      "windows": 13,
+      "source_sha256": [
+        "f6cdbf5ff3ae7f6147176d916a06fca13040084f76da08e391d0b82b3f086458",
+        "0647711168365384c9b329c1b1fab28b49dd46fe1b3247ffa4f698b274858300"
+      ]
+    },
+    {
+      "source": "shot_092",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1366,
+        1366
+      ],
+      "resampled_frames": 547,
+      "windows": 13,
+      "source_sha256": [
+        "a0cc0be4ceca3231a7b356d026f57b475e7bc3b42cfe6f1176d91454d17aba43",
+        "aa031eed3f8ce6c8917e420dfc53572fcaf4ac3a63c9c720e1cd5766afc66aea"
+      ]
+    },
+    {
+      "source": "shot_093",
+      "split": "val",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1281,
+        1281
+      ],
+      "resampled_frames": 513,
+      "windows": 12,
+      "source_sha256": [
+        "92246ab081cbeee3431bca607cdd9e53ea01c26b25bf84fd63fef60b81643751",
+        "d7a6a364ae4bb21a579396ff0b8da5f14c79a581401254c0f2fbf3b0ca8a3f20"
+      ]
+    },
+    {
+      "source": "shot_094",
+      "split": "train",
+      "official_split": "train",
+      "original_fps": [
+        50.000000000001066,
+        50.000000000001066
+      ],
+      "original_frames": [
+        1046,
+        1046
+      ],
+      "resampled_frames": 419,
+      "windows": 10,
+      "source_sha256": [
+        "0f23693a117115f0fd51a06179f6b625e8930e267743d672843f217bbc081e78",
+        "c746d7c17aabbd1b8e66ff9866bc0bdc7b12d98cce2761c567391d05cabe751d"
+      ]
+    },
+    {
+      "source": "shot_001",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        24.99999999999998,
+        24.99999999999998
+      ],
+      "original_frames": [
+        604,
+        604
+      ],
+      "resampled_frames": 483,
+      "windows": 12,
+      "source_sha256": [
+        "29f4540b812590a604a3e8490dda1b87f617a259875f8146a2a5ce8092b44b2d",
+        "7af14c70a270afa35b3493c38b2bb443b7d645ff35a417b9c8d87ef1ca0fc61e"
+      ]
+    },
+    {
+      "source": "shot_002",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        24.99999999999998,
+        24.99999999999998
+      ],
+      "original_frames": [
+        375,
+        375
+      ],
+      "resampled_frames": 300,
+      "windows": 7,
+      "source_sha256": [
+        "272f8fd1148cbc798eb36142fa23d70879b352f1995ce9bc5501427008bcf6cd",
+        "e06d7c3e90f587760a9d210b1c7dd6c05287b4f79f91a12e39d5ce23c1b257ce"
+      ]
+    },
+    {
+      "source": "shot_003",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        24.99999999999998,
+        24.99999999999998
+      ],
+      "original_frames": [
+        478,
+        478
+      ],
+      "resampled_frames": 382,
+      "windows": 9,
+      "source_sha256": [
+        "dd93fea4b879d8df6bb37e68bb62f229491aed910eafc180041f03856adbf84c",
+        "8145d0219c66f49f3d6d534e83fe85f7a662233b486a9366ee31ffaf841b4d14"
+      ]
+    },
+    {
+      "source": "shot_004",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        25.0,
+        25.0
+      ],
+      "original_frames": [
+        684,
+        684
+      ],
+      "resampled_frames": 547,
+      "windows": 13,
+      "source_sha256": [
+        "ee7d72b4125136d84fe532065064301affb563ae3c97407e51eea82562b311f6",
+        "bfc08357d275f79165c163a2fdb35bea17cea51f4e94928c0e3b0ee9a3e06ab7"
+      ]
+    },
+    {
+      "source": "shot_005",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        24.99999999999998,
+        24.99999999999998
+      ],
+      "original_frames": [
+        454,
+        454
+      ],
+      "resampled_frames": 363,
+      "windows": 9,
+      "source_sha256": [
+        "fb1624ec5cbe4954d597e4c8712f0b57ec5c3b95bc12fce86f4d129920625c3d",
+        "84acd26e73a86a0ffd0ab04f8f2897793bafedd216e1dbed5015286d685706b3"
+      ]
+    },
+    {
+      "source": "shot_007",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        24.99999999999998,
+        24.99999999999998
+      ],
+      "original_frames": [
+        615,
+        615
+      ],
+      "resampled_frames": 492,
+      "windows": 12,
+      "source_sha256": [
+        "5a622658df100326a88492ca0527868fc323a021085c0205f98fb89d50bec851",
+        "08d70ae7f0cb65602ea646f79f67a2e701e67d60728c7130723a887e44eaa259"
+      ]
+    },
+    {
+      "source": "shot_008",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        25.000000000000185,
+        25.000000000000185
+      ],
+      "original_frames": [
+        739,
+        739
+      ],
+      "resampled_frames": 591,
+      "windows": 14,
+      "source_sha256": [
+        "1913429fe34d081c5a0642853ff38a9a69a8986e6281d64cbb9110c6e95a6a2a",
+        "b974e06f198d170b66c397e9fa95f04daf3df833d3d57142273605e580d54ecc"
+      ]
+    },
+    {
+      "source": "shot_009",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        25.000000000000014,
+        25.000000000000014
+      ],
+      "original_frames": [
+        708,
+        708
+      ],
+      "resampled_frames": 566,
+      "windows": 14,
+      "source_sha256": [
+        "0567a9a7bd9972fb960dda91bf5a33d75ad58bc223e53348b80d58084d45a078",
+        "0bcd80bffc9d1f71624deb7ad904995d8b28b6e8f71a843f16acdfcd80c562fe"
+      ]
+    },
+    {
+      "source": "shot_010",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        24.99999999999998,
+        24.99999999999998
+      ],
+      "original_frames": [
+        668,
+        668
+      ],
+      "resampled_frames": 534,
+      "windows": 13,
+      "source_sha256": [
+        "d64d99f3928d8711e56e71e1e214ea869b5c2052ca5e8d8b05b0ef80595e130f",
+        "8576b796ad242169f2b6bc49cb2e4734240f8601a2a3b642d081d6e3c52c30aa"
+      ]
+    },
+    {
+      "source": "shot_011",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        25.000000000000533,
+        25.000000000000533
+      ],
+      "original_frames": [
+        924,
+        924
+      ],
+      "resampled_frames": 739,
+      "windows": 18,
+      "source_sha256": [
+        "15f1a31e040fd746fa652e1aab8bdc28dbd521a6e580e0df27927d377240ef7a",
+        "72ba1e11fa7b0815618893905565bf3893713cb54d63904bb0b4790d8283811e"
+      ]
+    },
+    {
+      "source": "shot_012",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        24.99999999999998,
+        24.99999999999998
+      ],
+      "original_frames": [
+        586,
+        586
+      ],
+      "resampled_frames": 469,
+      "windows": 11,
+      "source_sha256": [
+        "8836d2a99777d8cd09d8117ff828299b90040f86dd7a1ff0708157d8909fdfc3",
+        "2b61df02fd3e563b8703441424d1537749862b62f537444ed016de641cf3136d"
+      ]
+    },
+    {
+      "source": "shot_013",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        24.99999999999998,
+        24.99999999999998
+      ],
+      "original_frames": [
+        549,
+        549
+      ],
+      "resampled_frames": 439,
+      "windows": 10,
+      "source_sha256": [
+        "1b461c8755527ea43ec77af9aa8abf95d0d9f1157a59feb29e96c728a20dd705",
+        "93dee9f1fbb9fbc99999d8940959a0c38cd030a37436a722fa6381dac9b5f44d"
+      ]
+    },
+    {
+      "source": "shot_014",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        24.99999999999998,
+        24.99999999999998
+      ],
+      "original_frames": [
+        543,
+        543
+      ],
+      "resampled_frames": 434,
+      "windows": 10,
+      "source_sha256": [
+        "8735ba9fa10fbee4972d518a6bc1f8e8327bd4ae2fd73c271d6c0a54bf2da793",
+        "137ddde9cce0e79a445ad443d79012e1489757834fccda2352d60f790a659112"
+      ]
+    },
+    {
+      "source": "shot_015",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        24.99999999999998,
+        24.99999999999998
+      ],
+      "original_frames": [
+        549,
+        549
+      ],
+      "resampled_frames": 439,
+      "windows": 10,
+      "source_sha256": [
+        "e073d6b332f25aaae5ca95eeedd126bb399015f1678314ad06de7636c5556c9c",
+        "55ca9153c60e4e74803139c8d652682e54559d343bcf6413d310da4e281b642d"
+      ]
+    },
+    {
+      "source": "shot_016",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        24.99999999999998,
+        24.99999999999998
+      ],
+      "original_frames": [
+        613,
+        613
+      ],
+      "resampled_frames": 490,
+      "windows": 12,
+      "source_sha256": [
+        "65314bb65eac567b765b092111fd51d4f44fa6e43252e911c5c60283be2d2d71",
+        "6a73f7bde80c8993fc0ee4bf7c52841f98f944773999c69aa19c8b2ed0e200a2"
+      ]
+    },
+    {
+      "source": "shot_017",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        24.99999999999998,
+        24.99999999999998
+      ],
+      "original_frames": [
+        620,
+        620
+      ],
+      "resampled_frames": 496,
+      "windows": 12,
+      "source_sha256": [
+        "e7399218e7f3994c7a6abcce2dcf61b5fd33f35aa47a5e44c3670859ff0b9e73",
+        "b885f31ffed218dad023b42fcae094813efc631b03c3970ea417bba3a63663c3"
+      ]
+    },
+    {
+      "source": "shot_019",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        24.99999999999998,
+        24.99999999999998
+      ],
+      "original_frames": [
+        632,
+        632
+      ],
+      "resampled_frames": 505,
+      "windows": 12,
+      "source_sha256": [
+        "f00283e464526497369fa3fd4f5634628be8cd2811e8cbda2d8716d9f4b83bbc",
+        "8ddd2c863f1dd42c86165a1efd14500b18d36c9b8e5fd282e4fdd6c4cdb7bffb"
+      ]
+    },
+    {
+      "source": "shot_020",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        24.99999999999998,
+        24.99999999999998
+      ],
+      "original_frames": [
+        636,
+        636
+      ],
+      "resampled_frames": 509,
+      "windows": 12,
+      "source_sha256": [
+        "ad837e631d3c3dd1c2a1892b6b16331e5a5fc30c69c6518171e11a6dc55b1153",
+        "c71d1ecf9d0c93204675bb8bc80a110ee1de078ec5ffb1f467f71d4db214c238"
+      ]
+    },
+    {
+      "source": "shot_021",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        25.000000000000117,
+        25.000000000000117
+      ],
+      "original_frames": [
+        732,
+        732
+      ],
+      "resampled_frames": 585,
+      "windows": 14,
+      "source_sha256": [
+        "011bb8d77b49fe2ee3dee6539c712f9034fffd450a119c787a9e14c2e7157ea9",
+        "6a88040e0dffbf4ae70696033214ef1fd5be9dd8f1b1ed641dc79d3e17905f9f"
+      ]
+    },
+    {
+      "source": "shot_022",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        25.000000000000533,
+        25.000000000000533
+      ],
+      "original_frames": [
+        800,
+        800
+      ],
+      "resampled_frames": 640,
+      "windows": 16,
+      "source_sha256": [
+        "427a16ae73486422cb1925780bc7760132a6a588de7aa3e0396adb0e00f62192",
+        "b95e68873e4a1f64d27b1a6c7f3da91155f0d12feee31d7aa78d4902398aca3a"
+      ]
+    },
+    {
+      "source": "shot_023",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        25.000000000000533,
+        25.000000000000533
+      ],
+      "original_frames": [
+        1140,
+        1140
+      ],
+      "resampled_frames": 912,
+      "windows": 22,
+      "source_sha256": [
+        "3edcd3dbd0dad29d42a27796d7b408381afc1d2d62841e8f0959028ab97178db",
+        "9602c01189e02f077ff64fbaaf2416e35fd4402f292d42fabce7d6453dd60c15"
+      ]
+    },
+    {
+      "source": "shot_024",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        24.999999999999996,
+        24.999999999999996
+      ],
+      "original_frames": [
+        675,
+        675
+      ],
+      "resampled_frames": 540,
+      "windows": 13,
+      "source_sha256": [
+        "fdf445b01307e366e118247d34dfafb8e72df85563be8d7dbbb08a46704db7dd",
+        "df2265ae553911d8533e14fffe6db9f36e725bad531b4d05b6741b861cb8eeec"
+      ]
+    },
+    {
+      "source": "shot_025",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        25.000000000000533,
+        25.000000000000533
+      ],
+      "original_frames": [
+        872,
+        872
+      ],
+      "resampled_frames": 697,
+      "windows": 17,
+      "source_sha256": [
+        "d428da7d1614efa78c90f88fa51ffaaec31f60774a83038e480eac1a2e59df0b",
+        "91a3f30384e975a2977908a7677481d152e6a60ce9f728d4949143eca3ea3f4c"
+      ]
+    },
+    {
+      "source": "shot_026",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        25.000000000000533,
+        25.000000000000533
+      ],
+      "original_frames": [
+        827,
+        827
+      ],
+      "resampled_frames": 661,
+      "windows": 16,
+      "source_sha256": [
+        "3764cf24c31856220cb972df8cf56eed663e310f99b715ce2655085cca51a327",
+        "f2e0bdba442e5002f6b1c294227352b2bb99533ca8c65c7f359eb515725fd3d5"
+      ]
+    },
+    {
+      "source": "shot_027",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        25.000000000000533,
+        25.000000000000533
+      ],
+      "original_frames": [
+        891,
+        891
+      ],
+      "resampled_frames": 713,
+      "windows": 17,
+      "source_sha256": [
+        "9df2c3e6aa62181a70577f934163614b56b8f86da2d4894d0031ea7d03e064ed",
+        "56d32e463d2441ee926053137f1a785f506365c8f8228fb4424391a9d40882e4"
+      ]
+    },
+    {
+      "source": "shot_028",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        25.000000000000533,
+        25.000000000000533
+      ],
+      "original_frames": [
+        1032,
+        1032
+      ],
+      "resampled_frames": 825,
+      "windows": 20,
+      "source_sha256": [
+        "40191983e45f5a48994781733192d636caba0ca35df8a47ebbe67fbae1e46efd",
+        "5778b9383def19c9006300ef4ca4a9e1fa927464f12251aadd84bf751e284d69"
+      ]
+    },
+    {
+      "source": "shot_029",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        25.000000000000533,
+        25.000000000000533
+      ],
+      "original_frames": [
+        971,
+        971
+      ],
+      "resampled_frames": 777,
+      "windows": 19,
+      "source_sha256": [
+        "ef0a6375111e279048ec6e953b0274e40d56567c42475dfb2a0d9273b15d12d3",
+        "b999ae459ca82539c4b1da62f61a56eea1ec951224f5fff9f3262726810f4109"
+      ]
+    },
+    {
+      "source": "shot_030",
+      "split": "test",
+      "official_split": "test",
+      "original_fps": [
+        25.000000000000046,
+        25.000000000000046
+      ],
+      "original_frames": [
+        720,
+        720
+      ],
+      "resampled_frames": 576,
+      "windows": 14,
+      "source_sha256": [
+        "0070ca3f8d51df31d98052d64f90d2366c7fe38c0171f147756c68c08f07a6eb",
+        "1cb2e18d7e16af4a16e52243ae596177ab395769de15ee6bafc589a9a550f7ed"
+      ]
+    }
+  ],
+  "cross_split_exact_duplicates": false,
+  "subject_disjoint_verified": false,
+  "source_disjoint": true,
+  "normalization_fit": "train only",
+  "transformation": "actor first frame only",
+  "attack_defense_labels_available": false,
+  "measured_contact_labels_available": false,
+  "upstream_preprocessor_deviation": "Read actual CSV/BVH timestamps rather than hardcoded 25 fps; no contact-based frame deletion or sequence concatenation",
+  "output_sha256": {
+    "test.npy": "86c3b32c5b5b6b9ddeaf74b32051286dda03f628c93e9a8397fcb4315edfc6ab",
+    "val_windows.json": "baf626a137014459e7ba23803a5d00bc44d586ffdab1aa00235f4f2b5a8a7329",
+    "val.npy": "77d518b7044c6d30a9abbed9e6db3a0bf092d482b194868c7963b59970242b49",
+    "train_windows.json": "9cf73a1138d2b3cdfffbd4a9b81c917d9fec2b1226b6973c1fa0185b436ae11b",
+    "train.npy": "f4bcb4e5f83ccb9feab1e70682bc1ef173416d1ce6c0b0900f8c0ee48cf9d98f",
+    "test_windows.json": "f94def322979281ef897ae4ccc52339a0070a5f4aeeb847adb05b569f55448e0",
+    "normalization.npz": "2ec2610cfb69115a6e39b12033bb0358ea666fd1ca60e02d21f2eddc09dbaa80"
+  }
+}
