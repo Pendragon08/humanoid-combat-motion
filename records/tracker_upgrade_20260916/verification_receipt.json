@@ -1,0 +1,12 @@
+{
+  "run_count": 24,
+  "new_combat_rollouts": 20,
+  "standing_witnesses": 4,
+  "training_steps": 0,
+  "archive_sha256": "888a1387aea50021870059bf0f7cf537310fa806e49d4bc2d0da079cf753bc0f",
+  "independent_validators": [
+    "/root/twist2_doc_witness",
+    "/root/sonic_doc_witness"
+  ],
+  "validation": "Both exact documented standing invocations passed; clean pinned source and finite outputs"
+}

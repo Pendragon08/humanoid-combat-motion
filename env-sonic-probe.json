@@ -1,0 +1,11 @@
+{
+ "purpose":"SONIC published pretrained model via pinned HumanTracker observation/action code; not official C++ stack",
+ "backend":"https://github.com/GalaxyGeneralRobotics/HumanTracker",
+ "backend_commit":"79d637da5e07b8e2c588ca613d3254f9d8acc0f7",
+ "weights":"nvidia/GEAR-SONIC default release, exact HuggingFace revision recorded in model_metadata.json",
+ "environment":"warm reuse .venv-pbhc-inference without installs",
+ "packages":{"python":"3.10.21","numpy":"1.24.4","mujoco":"3.2.3","onnxruntime":"1.20.1","torch":"2.5.1+cu121"},
+ "compatibility":"Extract observation/action AST only, not the full HumanTracker Python3.11+ package or HumanScore",
+ "runtime":{"policy":"CPUExecutionProvider","threads":4,"control_hz":50,"physics_hz":1000},
+ "validation":"Standing actual physics, CUDA dispatch witness, fresh doc invocation; no training claim"
+}

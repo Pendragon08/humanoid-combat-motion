@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Hooks_punch",
+    "exit": 0,
+    "wall_s": 3.687459707260132,
+    "output": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/twist2_upgrade_20260916/Hooks_punch_20k_100",
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-pbhc-inference/bin/python",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist2_official.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Hooks_punch.npz",
+      "--checkpoint",
+      "20k",
+      "--hz",
+      "100",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/twist2_upgrade_20260916/Hooks_punch_20k_100"
+    ]
+  },
+  {
+    "name": "Horse-stance_punch",
+    "exit": 0,
+    "wall_s": 3.9463367462158203,
+    "output": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/twist2_upgrade_20260916/Horse-stance_punch_20k_100",
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-pbhc-inference/bin/python",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist2_official.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Horse-stance_punch.npz",
+      "--checkpoint",
+      "20k",
+      "--hz",
+      "100",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/twist2_upgrade_20260916/Horse-stance_punch_20k_100"
+    ]
+  },
+  {
+    "name": "Roundhouse_kick",
+    "exit": 0,
+    "wall_s": 3.8255820274353027,
+    "output": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/twist2_upgrade_20260916/Roundhouse_kick_20k_100",
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-pbhc-inference/bin/python",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist2_official.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Roundhouse_kick.npz",
+      "--checkpoint",
+      "20k",
+      "--hz",
+      "100",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/twist2_upgrade_20260916/Roundhouse_kick_20k_100"
+    ]
+  },
+  {
+    "name": "Side_kick",
+    "exit": 0,
+    "wall_s": 3.7410247325897217,
+    "output": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/twist2_upgrade_20260916/Side_kick_20k_100",
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-pbhc-inference/bin/python",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist2_official.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Side_kick.npz",
+      "--checkpoint",
+      "20k",
+      "--hz",
+      "100",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/twist2_upgrade_20260916/Side_kick_20k_100"
+    ]
+  }
+]

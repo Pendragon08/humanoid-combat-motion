@@ -1,0 +1,146 @@
+{
+  "selection": "All4 existing complete combat development examples, unchanged",
+  "training": false,
+  "backend": "HumanTracker SONIC observation/action adaptation",
+  "cases": [
+    {
+      "name": "Hooks_punch",
+      "category": "combat_candidate",
+      "source_path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/PBHC/example/motion_data/Hooks_punch.pkl",
+      "source_sha256": "fd61b565e88dd909553b806eaff1c85c458f8ebeae468e3e10904f6faa9b2303",
+      "upstream_source_key": "/home/bai/ASAP/lafan/ASAP-motion/mocap/blender_take_001_inter0.5_S475-30_E590-30",
+      "source_frames": 175,
+      "source_fps": 30.0,
+      "duration_s": 5.8,
+      "target_frames": 291,
+      "target_fps": 50,
+      "target_reference": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Hooks_punch.npz",
+      "target_sha256": "c4a07a2ce73a6c7b13e6cabbde584946fce27d5507a31aa748ea52e72f617cbb",
+      "resample_duration_loss_s": 0.0,
+      "target_added_joints": [
+        "left_wrist_roll_joint",
+        "right_wrist_roll_joint"
+      ],
+      "motion_dependencies": "Processed upstream motion; origin hints retained, original human recordings and licences not reconstructed from path names",
+      "has_corresponding_bundled_policy": false,
+      "contact_shape": [
+        175,
+        2
+      ],
+      "contact_unique_values": [
+        0.5,
+        1.0
+      ],
+      "contact_label_ground_truth_verified": false,
+      "joint_limit_excess_max_rad": 0.0,
+      "semantic_label_source": "upstream filename; contact sheet supplied for review",
+      "independent_recording_verified": false,
+      "assigned_split": "development_only"
+    },
+    {
+      "name": "Horse-stance_punch",
+      "category": "combat_candidate",
+      "source_path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/PBHC/example/motion_data/Horse-stance_punch.pkl",
+      "source_sha256": "802ffd509925bd188ebaab0b3bcbf2336f1bafd519466c2469a78ba7cf3a7beb",
+      "upstream_source_key": "/home/bai/ASAP/lafan/ASAP-motion/mocap/blender_take_043_edit_cont_inter0.5_S995-30_E1135-30",
+      "source_frames": 200,
+      "source_fps": 30.0,
+      "duration_s": 6.633333333333334,
+      "target_frames": 332,
+      "target_fps": 50,
+      "target_reference": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Horse-stance_punch.npz",
+      "target_sha256": "e59f85dfe266c562f9661f0f99d5da70e6e776a276e9958278c052c0a49479ff",
+      "resample_duration_loss_s": 0.013333333333333641,
+      "target_added_joints": [
+        "left_wrist_roll_joint",
+        "right_wrist_roll_joint"
+      ],
+      "motion_dependencies": "Processed upstream motion; origin hints retained, original human recordings and licences not reconstructed from path names",
+      "has_corresponding_bundled_policy": true,
+      "contact_shape": [
+        200,
+        2
+      ],
+      "contact_unique_values": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "contact_label_ground_truth_verified": false,
+      "joint_limit_excess_max_rad": 0.0,
+      "semantic_label_source": "upstream filename; contact sheet supplied for review",
+      "independent_recording_verified": false,
+      "assigned_split": "development_only"
+    },
+    {
+      "name": "Roundhouse_kick",
+      "category": "combat_candidate",
+      "source_path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/PBHC/example/motion_data/Roundhouse_kick.pkl",
+      "source_sha256": "d44883742e173d7db5839f0f92cb8409433f5a23cb47d0a81bfeb916ee4d6417",
+      "upstream_source_key": "/home/bai/ASAP/SharedMotions/Rspin_inter0.5_S0-30_E98-30",
+      "source_frames": 158,
+      "source_fps": 30.0,
+      "duration_s": 5.233333333333333,
+      "target_frames": 262,
+      "target_fps": 50,
+      "target_reference": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Roundhouse_kick.npz",
+      "target_sha256": "cf1da348dfa3d4f34963c0972743878e8836e9c8fcdc01baa7b52f4d8ff1526b",
+      "resample_duration_loss_s": 0.013333333333333641,
+      "target_added_joints": [
+        "left_wrist_roll_joint",
+        "right_wrist_roll_joint"
+      ],
+      "motion_dependencies": "Processed upstream motion; origin hints retained, original human recordings and licences not reconstructed from path names",
+      "has_corresponding_bundled_policy": false,
+      "contact_shape": [
+        158,
+        2
+      ],
+      "contact_unique_values": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "contact_label_ground_truth_verified": false,
+      "joint_limit_excess_max_rad": 0.0,
+      "semantic_label_source": "upstream filename; contact sheet supplied for review",
+      "independent_recording_verified": false,
+      "assigned_split": "development_only"
+    },
+    {
+      "name": "Side_kick",
+      "category": "combat_candidate",
+      "source_path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/PBHC/example/motion_data/Side_kick.pkl",
+      "source_sha256": "3152b3b53537e426bba57c5c3e04bd5dff74b00a38ee3a33a9c8dc1de7228821",
+      "upstream_source_key": "/home/jrhan/projects/ASAP/SharedMotions/side_double_kick_poses_inter0.5_S0-30_E119-30",
+      "source_frames": 179,
+      "source_fps": 30.0,
+      "duration_s": 5.933333333333334,
+      "target_frames": 297,
+      "target_fps": 50,
+      "target_reference": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Side_kick.npz",
+      "target_sha256": "7611375a9be4fae69b764a39eb0380990d283be7979f8f3712e9e5f37deb4c87",
+      "resample_duration_loss_s": 0.013333333333333641,
+      "target_added_joints": [
+        "left_wrist_roll_joint",
+        "right_wrist_roll_joint"
+      ],
+      "motion_dependencies": "Processed upstream motion; origin hints retained, original human recordings and licences not reconstructed from path names",
+      "has_corresponding_bundled_policy": false,
+      "contact_shape": [
+        179,
+        2
+      ],
+      "contact_unique_values": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "contact_label_ground_truth_verified": false,
+      "joint_limit_excess_max_rad": 0.0,
+      "semantic_label_source": "upstream filename; contact sheet supplied for review",
+      "independent_recording_verified": false,
+      "assigned_split": "development_only"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "purpose": "TWIST2 official inference fragment in bounded offline MuJoCo evaluation",
+  "upstream": "https://github.com/amazon-far/TWIST2",
+  "commit": "d5c7108e9ef82d1b8770e5b692f27a1294f3aa8a",
+  "environment": "warm reuse .venv-pbhc-inference, no installation or mutation",
+  "python": "3.10.21",
+  "packages": {"numpy":"1.24.4","mujoco":"3.2.3","onnxruntime":"1.20.1","torch":"2.5.1+cu121"},
+  "runtime": "Explicit CPU ONNX using upstream ORT thread defaults; OMP and Torch threads4; MuJoCo CPU; CUDA witness separately",
+  "weights": ["assets/ckpts/twist2_1017_20k.onnx","assets/ckpts/twist2_1017_25k.onnx"],
+  "validation": "Extract official policy/PD AST, finite standing physics, fresh independent doc invocation",
+  "scope": "Official20k100Hz and benchmark25k50Hz configurations reported separately; not retrained, not data utility"
+}
