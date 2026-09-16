@@ -1,0 +1,1390 @@
+{
+  "scope": "Four development motions, fixed final policies, nominal condition, no training. Force observations diagnose execution, not reference truth.",
+  "geometry_caveat": "URDF cylinder-to-capsule lower-envelope proxy; not ground-truth foot-ground contact. No correction from policy output.",
+  "telemetry_caveat": "Contact sensor reports aggregate normal contact forces, not isolated foot-ground friction. Implicit-actuator applied_torque is an estimated telemetry quantity, not independently measured joint torque.",
+  "supersedes": "support_analysis.json: successful horizon sentinel was incorrectly printed as first strict failure; v2 uses per-frame predicates and null for no failure. Evaluation metrics unchanged.",
+  "script_sha256": "271e4113477f4f95812773ae314609fccd5c978651f14c1e868898e45a907332",
+  "rows": [
+    {
+      "name": "Horse-stance_punch",
+      "checkpoint_sha256": "bc6125e3b6469f7ebfac3f3b645334ecce14161c68f27fc5811522ade4c85145",
+      "reference_sha256": "b727970fddcde23c6184a36945dd4dfc49a6fda922c98f10270856e27e53559f",
+      "trace_sha256": "e84e143f77ac5b04662448cada78fcca1977de838446179a5c2dcf6ba41bfd77",
+      "telemetry_reproduction": {
+        "completion_fraction": {
+          "old": 1.0,
+          "new": 1.0
+        },
+        "strict_every_frame_pass_fraction": {
+          "old": 1.0,
+          "new": 1.0
+        },
+        "mean_active_errors": {
+          "old": [
+            0.10044921934604645,
+            0.10579392313957214,
+            0.06185462325811386,
+            0.08009109646081924
+          ],
+          "new": [
+            0.10044921934604645,
+            0.10579392313957214,
+            0.06185462325811386,
+            0.08009109646081924
+          ]
+        }
+      },
+      "first_strict_failure_env0_s": null,
+      "env0_valid_duration_s": 6.62,
+      "first_root_over15cm_env0_s": null,
+      "first_joint_mae_over03_env0_s": null,
+      "initial_root_error_m": 4.479628907400057e-12,
+      "initial_joint_max_error_rad": 0.0,
+      "initial_reference_foot_min_z_m": [
+        0.014297967097487914,
+        0.01444647216387202
+      ],
+      "reference_min_foot_z_range_m": [
+        -0.061094503595757035,
+        0.01503496228601378
+      ],
+      "initial_reference_com_world": [
+        -0.0008041714626070208,
+        -0.011888395183241059,
+        0.704211494720481
+      ],
+      "mass_kg": 33.341142022,
+      "torque_near_limit_fraction": 0.0,
+      "velocity_exceedance_fraction": 0.0,
+      "termination_counts": {
+        "time_out": 0,
+        "anchor_pos": 0,
+        "anchor_ori": 0,
+        "ee_body_pos": 0
+      },
+      "support": [
+        {
+          "side": "left",
+          "contact_fraction": 0.9939577039274925,
+          "mean_force_N": 160.69993591308594,
+          "pre_strict_failure_or_end_contact_fraction": 0.9939577039274925
+        },
+        {
+          "side": "right",
+          "contact_fraction": 0.9788519637462235,
+          "mean_force_N": 165.49241638183594,
+          "pre_strict_failure_or_end_contact_fraction": 0.9788519637462235
+        }
+      ],
+      "snapshots": [
+        {
+          "time_s": 0.02,
+          "root_xyz_error_m": [
+            0.00038909912109375,
+            6.34193274891004e-05,
+            -0.002922356128692627
+          ],
+          "root_error_m": 0.0029488278087228537,
+          "joint_mae_rad": 0.02013525739312172,
+          "top_joint_errors": [
+            {
+              "joint": "right_ankle_pitch_joint",
+              "error_rad": 0.0941765308380127
+            },
+            {
+              "joint": "left_ankle_pitch_joint",
+              "error_rad": 0.0796685516834259
+            },
+            {
+              "joint": "right_hip_yaw_joint",
+              "error_rad": 0.05494600906968117
+            },
+            {
+              "joint": "left_hip_yaw_joint",
+              "error_rad": 0.042566705495119095
+            },
+            {
+              "joint": "right_hip_pitch_joint",
+              "error_rad": 0.0355401486158371
+            }
+          ],
+          "foot_force_xyz_N": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "reference_foot_capsule_min_z_m": [
+            0.013217900960990412,
+            0.013594206565460438
+          ],
+          "actual_foot_capsule_min_z_m": [
+            0.011119671950790633,
+            0.011276676776190096
+          ],
+          "foot_position_error_m": [
+            0.006159526761621237,
+            0.006852566264569759
+          ],
+          "termination_terms": []
+        },
+        {
+          "time_s": 0.2,
+          "root_xyz_error_m": [
+            0.007812023162841797,
+            -0.01390838623046875,
+            -0.015650391578674316
+          ],
+          "root_error_m": 0.022347386926412582,
+          "joint_mae_rad": 0.048516832292079926,
+          "top_joint_errors": [
+            {
+              "joint": "left_wrist_pitch_joint",
+              "error_rad": 0.11670555919408798
+            },
+            {
+              "joint": "right_hip_yaw_joint",
+              "error_rad": 0.1161835640668869
+            },
+            {
+              "joint": "left_elbow_joint",
+              "error_rad": 0.11345845460891724
+            },
+            {
+              "joint": "left_ankle_pitch_joint",
+              "error_rad": 0.10174059867858887
+            },
+            {
+              "joint": "right_ankle_pitch_joint",
+              "error_rad": 0.08535157144069672
+            }
+          ],
+          "foot_force_xyz_N": [
+            [
+              2.2165013433550484e-05,
+              0.0,
+              164.96878051757812
+            ],
+            [
+              2.1362768166000023e-05,
+              0.0,
+              158.99786376953125
+            ]
+          ],
+          "reference_foot_capsule_min_z_m": [
+            0.0036291307642064494,
+            0.006127951692645626
+          ],
+          "actual_foot_capsule_min_z_m": [
+            -2.3651040013290825e-06,
+            7.029850406896354e-07
+          ],
+          "foot_position_error_m": [
+            0.03358804062008858,
+            0.03833590820431709
+          ],
+          "termination_terms": []
+        },
+        {
+          "time_s": 0.5,
+          "root_xyz_error_m": [
+            0.01174020767211914,
+            -0.03411245346069336,
+            -0.01627296209335327
+          ],
+          "root_error_m": 0.03957652673125267,
+          "joint_mae_rad": 0.06318017840385437,
+          "top_joint_errors": [
+            {
+              "joint": "left_ankle_pitch_joint",
+              "error_rad": 0.2779253423213959
+            },
+            {
+              "joint": "right_ankle_pitch_joint",
+              "error_rad": 0.2039024531841278
+            },
+            {
+              "joint": "right_hip_yaw_joint",
+              "error_rad": 0.15830887854099274
+            },
+            {
+              "joint": "left_wrist_yaw_joint",
+              "error_rad": 0.10508260875940323
+            },
+            {
+              "joint": "left_knee_joint",
+              "error_rad": 0.09149646759033203
+            }
+          ],
+          "foot_force_xyz_N": [
+            [
+              2.4502134692738764e-05,
+              0.0,
+              182.36338806152344
+            ],
+            [
+              2.0049468730576336e-05,
+              0.0,
+              149.22329711914062
+            ]
+          ],
+          "reference_foot_capsule_min_z_m": [
+            -0.011712873781801119,
+            -0.005462651323544123
+          ],
+          "actual_foot_capsule_min_z_m": [
+            -4.0746478090977756e-06,
+            -7.576817031944294e-07
+          ],
+          "foot_position_error_m": [
+            0.046657733619213104,
+            0.05345391109585762
+          ],
+          "termination_terms": []
+        },
+        {
+          "time_s": 6.62,
+          "root_xyz_error_m": [
+            0.005615234375,
+            -0.017270684242248535,
+            -0.02527463436126709
+          ],
+          "root_error_m": 0.031122572720050812,
+          "joint_mae_rad": 0.07493332028388977,
+          "top_joint_errors": [
+            {
+              "joint": "right_hip_roll_joint",
+              "error_rad": 0.22891956567764282
+            },
+            {
+              "joint": "right_ankle_roll_joint",
+              "error_rad": 0.16899675130844116
+            },
+            {
+              "joint": "right_elbow_joint",
+              "error_rad": 0.13907092809677124
+            },
+            {
+              "joint": "left_wrist_roll_joint",
+              "error_rad": 0.12433469295501709
+            },
+            {
+              "joint": "right_wrist_pitch_joint",
+              "error_rad": 0.12091513723134995
+            }
+          ],
+          "foot_force_xyz_N": [
+            [
+              2.4421347916359082e-05,
+              0.0,
+              181.7621307373047
+            ],
+            [
+              1.980578963411972e-05,
+              0.0,
+              147.40963745117188
+            ]
+          ],
+          "reference_foot_capsule_min_z_m": [
+            0.01503496228601378,
+            0.015176573421660308
+          ],
+          "actual_foot_capsule_min_z_m": [
+            -7.138880424376048e-07,
+            -7.640482528483913e-06
+          ],
+          "foot_position_error_m": [
+            0.07557530701160431,
+            0.12218300998210907
+          ],
+          "termination_terms": []
+        }
+      ]
+    },
+    {
+      "name": "Hooks_punch",
+      "checkpoint_sha256": "925ab396005fdaee0fa1f1a141dcee2d3165f48f318d658dfac5c347e3d91230",
+      "reference_sha256": "af6760c1be4d0485b31b5beb0de98410b6030e13c8673e0e20bbd2506675e76a",
+      "trace_sha256": "f4fecc8973169718f53e06025b4c5f18f9a8194dae58f167320c7b990f375055",
+      "telemetry_reproduction": {
+        "completion_fraction": {
+          "old": 1.0,
+          "new": 1.0
+        },
+        "strict_every_frame_pass_fraction": {
+          "old": 0.0,
+          "new": 0.0
+        },
+        "mean_active_errors": {
+          "old": [
+            0.11097148060798645,
+            0.11585106700658798,
+            0.13551302254199982,
+            0.1491353064775467
+          ],
+          "new": [
+            0.11097148060798645,
+            0.11585106700658798,
+            0.13551302254199982,
+            0.1491353064775467
+          ]
+        }
+      },
+      "first_strict_failure_env0_s": 1.18,
+      "env0_valid_duration_s": 5.8,
+      "first_root_over15cm_env0_s": 1.18,
+      "first_joint_mae_over03_env0_s": null,
+      "initial_root_error_m": 5.677471513754195e-12,
+      "initial_joint_max_error_rad": 0.0,
+      "initial_reference_foot_min_z_m": [
+        0.014533290130812638,
+        0.015402118694049787
+      ],
+      "reference_min_foot_z_range_m": [
+        -0.06641165619472826,
+        0.01579748946984518
+      ],
+      "initial_reference_com_world": [
+        0.0114044246696442,
+        -0.009273549908591515,
+        0.7046480252362951
+      ],
+      "mass_kg": 33.341142022,
+      "torque_near_limit_fraction": 0.0,
+      "velocity_exceedance_fraction": 0.0,
+      "termination_counts": {
+        "time_out": 0,
+        "anchor_pos": 0,
+        "anchor_ori": 0,
+        "ee_body_pos": 0
+      },
+      "support": [
+        {
+          "side": "left",
+          "contact_fraction": 0.9963362068965518,
+          "mean_force_N": 161.95468139648438,
+          "pre_strict_failure_or_end_contact_fraction": 0.9830508474576272
+        },
+        {
+          "side": "right",
+          "contact_fraction": 0.9584051724137931,
+          "mean_force_N": 163.97035217285156,
+          "pre_strict_failure_or_end_contact_fraction": 0.9830508474576272
+        }
+      ],
+      "snapshots": [
+        {
+          "time_s": 0.02,
+          "root_xyz_error_m": [
+            0.00028085705707781017,
+            0.00016117095947265625,
+            -0.0025595426559448242
+          ],
+          "root_error_m": 0.002579944906756282,
+          "joint_mae_rad": 0.013329118490219116,
+          "top_joint_errors": [
+            {
+              "joint": "left_hip_yaw_joint",
+              "error_rad": 0.0729048028588295
+            },
+            {
+              "joint": "left_elbow_joint",
+              "error_rad": 0.0336453914642334
+            },
+            {
+              "joint": "right_hip_yaw_joint",
+              "error_rad": 0.0327131524682045
+            },
+            {
+              "joint": "right_ankle_pitch_joint",
+              "error_rad": 0.027834206819534302
+            },
+            {
+              "joint": "left_ankle_roll_joint",
+              "error_rad": 0.023848820477724075
+            }
+          ],
+          "foot_force_xyz_N": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "reference_foot_capsule_min_z_m": [
+            0.012270294919546952,
+            0.014019482036993226
+          ],
+          "actual_foot_capsule_min_z_m": [
+            0.011411482358680553,
+            0.008104118628932169
+          ],
+          "foot_position_error_m": [
+            0.005455280188471079,
+            0.0034291348420083523
+          ],
+          "termination_terms": []
+        },
+        {
+          "time_s": 0.2,
+          "root_xyz_error_m": [
+            0.006773471366614103,
+            0.011864185333251953,
+            -0.0039147138595581055
+          ],
+          "root_error_m": 0.014211396686732769,
+          "joint_mae_rad": 0.08105653524398804,
+          "top_joint_errors": [
+            {
+              "joint": "left_elbow_joint",
+              "error_rad": 0.18345168232917786
+            },
+            {
+              "joint": "left_shoulder_yaw_joint",
+              "error_rad": 0.17241957783699036
+            },
+            {
+              "joint": "left_wrist_pitch_joint",
+              "error_rad": 0.17049910128116608
+            },
+            {
+              "joint": "left_wrist_yaw_joint",
+              "error_rad": 0.16266325116157532
+            },
+            {
+              "joint": "left_wrist_roll_joint",
+              "error_rad": 0.15864169597625732
+            }
+          ],
+          "foot_force_xyz_N": [
+            [
+              1.8832542991731316e-05,
+              0.0,
+              140.166015625
+            ],
+            [
+              2.4880697310436517e-05,
+              0.0,
+              185.18093872070312
+            ]
+          ],
+          "reference_foot_capsule_min_z_m": [
+            -0.0057016591458128405,
+            0.0033853539645566904
+          ],
+          "actual_foot_capsule_min_z_m": [
+            -2.12461019228824e-06,
+            -2.881652025641529e-06
+          ],
+          "foot_position_error_m": [
+            0.019163306802511215,
+            0.03999001905322075
+          ],
+          "termination_terms": []
+        },
+        {
+          "time_s": 0.5,
+          "root_xyz_error_m": [
+            -0.009419441223144531,
+            0.03896665573120117,
+            0.01098477840423584
+          ],
+          "root_error_m": 0.04156671091914177,
+          "joint_mae_rad": 0.10167764127254486,
+          "top_joint_errors": [
+            {
+              "joint": "left_wrist_pitch_joint",
+              "error_rad": 0.2498209923505783
+            },
+            {
+              "joint": "left_wrist_yaw_joint",
+              "error_rad": 0.22496730089187622
+            },
+            {
+              "joint": "left_hip_roll_joint",
+              "error_rad": 0.21496617794036865
+            },
+            {
+              "joint": "right_knee_joint",
+              "error_rad": 0.20681966841220856
+            },
+            {
+              "joint": "left_ankle_pitch_joint",
+              "error_rad": 0.20445936918258667
+            }
+          ],
+          "foot_force_xyz_N": [
+            [
+              2.260272594867274e-05,
+              0.0,
+              168.22654724121094
+            ],
+            [
+              2.0229908841429278e-05,
+              0.0,
+              150.56626892089844
+            ]
+          ],
+          "reference_foot_capsule_min_z_m": [
+            -0.026914664388682036,
+            -0.005539912908901516
+          ],
+          "actual_foot_capsule_min_z_m": [
+            -5.082256653216044e-06,
+            -1.1650245968462813e-06
+          ],
+          "foot_position_error_m": [
+            0.05887641757726669,
+            0.12012314051389694
+          ],
+          "termination_terms": []
+        },
+        {
+          "time_s": 1.18,
+          "root_xyz_error_m": [
+            -0.01211430411785841,
+            0.14917442202568054,
+            0.014088690280914307
+          ],
+          "root_error_m": 0.1503271609544754,
+          "joint_mae_rad": 0.1183791309595108,
+          "top_joint_errors": [
+            {
+              "joint": "left_ankle_pitch_joint",
+              "error_rad": 0.48797836899757385
+            },
+            {
+              "joint": "right_hip_roll_joint",
+              "error_rad": 0.30964335799217224
+            },
+            {
+              "joint": "right_knee_joint",
+              "error_rad": 0.297863632440567
+            },
+            {
+              "joint": "left_hip_yaw_joint",
+              "error_rad": 0.2549101710319519
+            },
+            {
+              "joint": "waist_yaw_joint",
+              "error_rad": 0.2460530400276184
+            }
+          ],
+          "foot_force_xyz_N": [
+            [
+              3.4633561881491914e-05,
+              0.0,
+              257.7691345214844
+            ],
+            [
+              1.047568912326824e-05,
+              0.0,
+              77.9679946899414
+            ]
+          ],
+          "reference_foot_capsule_min_z_m": [
+            -0.03472913526257341,
+            -0.021984483928930217
+          ],
+          "actual_foot_capsule_min_z_m": [
+            -1.2087203273176972e-06,
+            -6.53191951689551e-06
+          ],
+          "foot_position_error_m": [
+            0.10735687613487244,
+            0.2639555335044861
+          ],
+          "termination_terms": []
+        },
+        {
+          "time_s": 5.8,
+          "root_xyz_error_m": [
+            -0.15165528655052185,
+            -0.00878491997718811,
+            -0.03599339723587036
+          ],
+          "root_error_m": 0.15611542761325836,
+          "joint_mae_rad": 0.10195158421993256,
+          "top_joint_errors": [
+            {
+              "joint": "left_hip_roll_joint",
+              "error_rad": 0.2781173586845398
+            },
+            {
+              "joint": "left_shoulder_yaw_joint",
+              "error_rad": 0.25325387716293335
+            },
+            {
+              "joint": "left_elbow_joint",
+              "error_rad": 0.24390578269958496
+            },
+            {
+              "joint": "right_hip_roll_joint",
+              "error_rad": 0.21630124747753143
+            },
+            {
+              "joint": "right_elbow_joint",
+              "error_rad": 0.17640089988708496
+            }
+          ],
+          "foot_force_xyz_N": [
+            [
+              1.9822060494334437e-05,
+              0.0,
+              147.53074645996094
+            ],
+            [
+              2.4838374883984216e-05,
+              0.0,
+              184.86593627929688
+            ]
+          ],
+          "reference_foot_capsule_min_z_m": [
+            0.0157974894714207,
+            0.01579748946984518
+          ],
+          "actual_foot_capsule_min_z_m": [
+            -4.79137791075529e-06,
+            -1.15500602250896e-05
+          ],
+          "foot_position_error_m": [
+            0.07070489972829819,
+            0.27782225608825684
+          ],
+          "termination_terms": []
+        }
+      ]
+    },
+    {
+      "name": "Roundhouse_kick",
+      "checkpoint_sha256": "e06d946378810826828a1ef52b8c61227f7f22ee2c1bbd4850c3e7420e1dd361",
+      "reference_sha256": "b82dea7dbb3ca1e959c88c716ae6128499da4344c24e5e05755cee587dd28d82",
+      "trace_sha256": "8256cf5ab36c5144803f0532a100e9011ec5991c2e43e42997b3366331affada",
+      "telemetry_reproduction": {
+        "completion_fraction": {
+          "old": 0.0,
+          "new": 0.0
+        },
+        "strict_every_frame_pass_fraction": {
+          "old": 0.0,
+          "new": 0.0
+        },
+        "mean_active_errors": {
+          "old": [
+            0.13758374750614166,
+            0.1355065256357193,
+            0.1215420588850975,
+            0.1326497197151184
+          ],
+          "new": [
+            0.13758374750614166,
+            0.1355065256357193,
+            0.1215420588850975,
+            0.1326497197151184
+          ]
+        }
+      },
+      "first_strict_failure_env0_s": 1.18,
+      "env0_valid_duration_s": 1.7,
+      "first_root_over15cm_env0_s": 1.18,
+      "first_joint_mae_over03_env0_s": null,
+      "initial_root_error_m": 1.4639985404518718e-11,
+      "initial_joint_max_error_rad": 0.0,
+      "initial_reference_foot_min_z_m": [
+        0.01462121984188519,
+        0.015181180716382107
+      ],
+      "reference_min_foot_z_range_m": [
+        -0.08325955046388894,
+        0.02262208752832149
+      ],
+      "initial_reference_com_world": [
+        -0.010294483312427133,
+        0.008993181503176628,
+        0.7044766361329413
+      ],
+      "mass_kg": 33.341142022,
+      "torque_near_limit_fraction": 0.0,
+      "velocity_exceedance_fraction": 0.0,
+      "termination_counts": {
+        "time_out": 0,
+        "anchor_pos": 0,
+        "anchor_ori": 0,
+        "ee_body_pos": 32
+      },
+      "support": [
+        {
+          "side": "left",
+          "contact_fraction": 0.9766508573513316,
+          "mean_force_N": 227.34303283691406,
+          "pre_strict_failure_or_end_contact_fraction": 0.9661016949152542
+        },
+        {
+          "side": "right",
+          "contact_fraction": 0.8055454213790587,
+          "mean_force_N": 95.82559967041016,
+          "pre_strict_failure_or_end_contact_fraction": 0.9830508474576272
+        }
+      ],
+      "snapshots": [
+        {
+          "time_s": 0.02,
+          "root_xyz_error_m": [
+            -0.0002083778235828504,
+            0.0006132125854492188,
+            -0.0026397109031677246
+          ],
+          "root_error_m": 0.0027179999742656946,
+          "joint_mae_rad": 0.01712530106306076,
+          "top_joint_errors": [
+            {
+              "joint": "right_hip_yaw_joint",
+              "error_rad": 0.07231830060482025
+            },
+            {
+              "joint": "left_ankle_pitch_joint",
+              "error_rad": 0.06105130910873413
+            },
+            {
+              "joint": "waist_yaw_joint",
+              "error_rad": 0.035103555768728256
+            },
+            {
+              "joint": "right_shoulder_yaw_joint",
+              "error_rad": 0.03419216349720955
+            },
+            {
+              "joint": "right_wrist_roll_joint",
+              "error_rad": 0.029433095827698708
+            }
+          ],
+          "foot_force_xyz_N": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "reference_foot_capsule_min_z_m": [
+            0.012778089251695707,
+            0.014069691195543342
+          ],
+          "actual_foot_capsule_min_z_m": [
+            0.013223999781122304,
+            0.010112698618252201
+          ],
+          "foot_position_error_m": [
+            0.004162864293903112,
+            0.0059468699619174
+          ],
+          "termination_terms": []
+        },
+        {
+          "time_s": 0.2,
+          "root_xyz_error_m": [
+            -0.01090860366821289,
+            0.0020055770874023438,
+            -0.0029071569442749023
+          ],
+          "root_error_m": 0.011466103605926037,
+          "joint_mae_rad": 0.10391147434711456,
+          "top_joint_errors": [
+            {
+              "joint": "right_shoulder_yaw_joint",
+              "error_rad": 0.31813281774520874
+            },
+            {
+              "joint": "right_wrist_roll_joint",
+              "error_rad": 0.31454208493232727
+            },
+            {
+              "joint": "right_hip_yaw_joint",
+              "error_rad": 0.2905637323856354
+            },
+            {
+              "joint": "left_knee_joint",
+              "error_rad": 0.2403995394706726
+            },
+            {
+              "joint": "right_wrist_pitch_joint",
+              "error_rad": 0.20650094747543335
+            }
+          ],
+          "foot_force_xyz_N": [
+            [
+              1.8796372387441806e-05,
+              0.0,
+              139.8968048095703
+            ],
+            [
+              2.5177767383866012e-05,
+              0.0,
+              187.39198303222656
+            ]
+          ],
+          "reference_foot_capsule_min_z_m": [
+            -0.002312471046891449,
+            0.005561471091232799
+          ],
+          "actual_foot_capsule_min_z_m": [
+            -6.8947756215031325e-06,
+            -9.77846750991468e-07
+          ],
+          "foot_position_error_m": [
+            0.017049554735422134,
+            0.02402838133275509
+          ],
+          "termination_terms": []
+        },
+        {
+          "time_s": 0.5,
+          "root_xyz_error_m": [
+            -0.04356241226196289,
+            -0.029692649841308594,
+            0.011849164962768555
+          ],
+          "root_error_m": 0.05403461679816246,
+          "joint_mae_rad": 0.1340034455060959,
+          "top_joint_errors": [
+            {
+              "joint": "right_hip_yaw_joint",
+              "error_rad": 0.3433670699596405
+            },
+            {
+              "joint": "left_knee_joint",
+              "error_rad": 0.29547232389450073
+            },
+            {
+              "joint": "right_wrist_pitch_joint",
+              "error_rad": 0.29111403226852417
+            },
+            {
+              "joint": "right_wrist_roll_joint",
+              "error_rad": 0.265201598405838
+            },
+            {
+              "joint": "right_shoulder_yaw_joint",
+              "error_rad": 0.25314417481422424
+            }
+          ],
+          "foot_force_xyz_N": [
+            [
+              2.667305489012506e-05,
+              0.0,
+              198.52102661132812
+            ],
+            [
+              1.676089596003294e-05,
+              0.0,
+              124.74725341796875
+            ]
+          ],
+          "reference_foot_capsule_min_z_m": [
+            -0.02257828565292335,
+            -0.0029113790684086455
+          ],
+          "actual_foot_capsule_min_z_m": [
+            -8.523996184379642e-06,
+            4.588645498329949e-06
+          ],
+          "foot_position_error_m": [
+            0.03599727898836136,
+            0.07767359167337418
+          ],
+          "termination_terms": []
+        },
+        {
+          "time_s": 1.18,
+          "root_xyz_error_m": [
+            -0.08700332790613174,
+            -0.12332488596439362,
+            0.010152876377105713
+          ],
+          "root_error_m": 0.1512669324874878,
+          "joint_mae_rad": 0.1290736049413681,
+          "top_joint_errors": [
+            {
+              "joint": "left_ankle_pitch_joint",
+              "error_rad": 0.41272711753845215
+            },
+            {
+              "joint": "right_wrist_pitch_joint",
+              "error_rad": 0.37344977259635925
+            },
+            {
+              "joint": "left_hip_roll_joint",
+              "error_rad": 0.3416890501976013
+            },
+            {
+              "joint": "right_shoulder_pitch_joint",
+              "error_rad": 0.24642902612686157
+            },
+            {
+              "joint": "right_hip_pitch_joint",
+              "error_rad": 0.20408208668231964
+            }
+          ],
+          "foot_force_xyz_N": [
+            [
+              3.644029129645787e-05,
+              0.0,
+              271.2161865234375
+            ],
+            [
+              8.325522685481701e-06,
+              0.0,
+              61.96482849121094
+            ]
+          ],
+          "reference_foot_capsule_min_z_m": [
+            -0.037972366878204024,
+            -0.012627628011683966
+          ],
+          "actual_foot_capsule_min_z_m": [
+            -6.267050000506244e-06,
+            7.122399639722388e-06
+          ],
+          "foot_position_error_m": [
+            0.045738596469163895,
+            0.20184314250946045
+          ],
+          "termination_terms": []
+        },
+        {
+          "time_s": 1.7,
+          "root_xyz_error_m": [
+            0.07842576503753662,
+            -0.38860806822776794,
+            0.055515825748443604
+          ],
+          "root_error_m": 0.4003109335899353,
+          "joint_mae_rad": 0.2254876047372818,
+          "top_joint_errors": [
+            {
+              "joint": "waist_yaw_joint",
+              "error_rad": 0.7073705196380615
+            },
+            {
+              "joint": "right_shoulder_pitch_joint",
+              "error_rad": 0.6209124326705933
+            },
+            {
+              "joint": "right_wrist_roll_joint",
+              "error_rad": 0.6104179620742798
+            },
+            {
+              "joint": "right_elbow_joint",
+              "error_rad": 0.5393667817115784
+            },
+            {
+              "joint": "left_ankle_pitch_joint",
+              "error_rad": 0.5146784782409668
+            }
+          ],
+          "foot_force_xyz_N": [
+            [
+              2.094906994898338e-05,
+              0.0,
+              155.91880798339844
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "reference_foot_capsule_min_z_m": [
+            0.05664875108628908,
+            -0.0811720019416955
+          ],
+          "actual_foot_capsule_min_z_m": [
+            -5.319507415590605e-06,
+            0.12983731914172814
+          ],
+          "foot_position_error_m": [
+            0.1778607964515686,
+            1.0532820224761963
+          ],
+          "termination_terms": [
+            "ee_body_pos"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Side_kick",
+      "checkpoint_sha256": "cfbe57b159c2c64339e64e2e08149454493f3edc3e3fe94079dc11a86a636119",
+      "reference_sha256": "6dc82426c94ad8d4294ae3319fc3441dac2d61bf179c3f2f37efe4d7b63c5479",
+      "trace_sha256": "77ac1b279e353c3252a29de7e1f0fc02a89b43c8fe182d9e0e7a409089275c1f",
+      "telemetry_reproduction": {
+        "completion_fraction": {
+          "old": 1.0,
+          "new": 1.0
+        },
+        "strict_every_frame_pass_fraction": {
+          "old": 0.0,
+          "new": 0.0
+        },
+        "mean_active_errors": {
+          "old": [
+            0.10273348540067673,
+            0.10765083134174347,
+            0.41723695397377014,
+            0.4178292155265808
+          ],
+          "new": [
+            0.10273348540067673,
+            0.10765083134174347,
+            0.41723695397377014,
+            0.4178292155265808
+          ]
+        }
+      },
+      "first_strict_failure_env0_s": 0.44,
+      "env0_valid_duration_s": 5.92,
+      "first_root_over15cm_env0_s": 0.54,
+      "first_joint_mae_over03_env0_s": null,
+      "initial_root_error_m": 1.2295905613135538e-11,
+      "initial_joint_max_error_rad": 0.0,
+      "initial_reference_foot_min_z_m": [
+        0.015435103648321876,
+        0.01573378880942044
+      ],
+      "reference_min_foot_z_range_m": [
+        -0.05412473013450564,
+        0.015435103648321876
+      ],
+      "initial_reference_com_world": [
+        -0.014754065528652447,
+        -0.0010177028659350642,
+        0.7045701130227716
+      ],
+      "mass_kg": 33.341142022,
+      "torque_near_limit_fraction": 0.0016782677073625349,
+      "velocity_exceedance_fraction": 0.0,
+      "termination_counts": {
+        "time_out": 0,
+        "anchor_pos": 0,
+        "anchor_ori": 0,
+        "ee_body_pos": 0
+      },
+      "support": [
+        {
+          "side": "left",
+          "contact_fraction": 0.875,
+          "mean_force_N": 172.77142333984375,
+          "pre_strict_failure_or_end_contact_fraction": 0.4090909090909091
+        },
+        {
+          "side": "right",
+          "contact_fraction": 0.8274915540540541,
+          "mean_force_N": 155.54727172851562,
+          "pre_strict_failure_or_end_contact_fraction": 0.9090909090909091
+        }
+      ],
+      "snapshots": [
+        {
+          "time_s": 0.02,
+          "root_xyz_error_m": [
+            0.0003724098496604711,
+            0.00179290771484375,
+            -0.002940237522125244
+          ],
+          "root_error_m": 0.0034638422075659037,
+          "joint_mae_rad": 0.02645956724882126,
+          "top_joint_errors": [
+            {
+              "joint": "left_ankle_pitch_joint",
+              "error_rad": 0.09808924794197083
+            },
+            {
+              "joint": "right_ankle_pitch_joint",
+              "error_rad": 0.08717557787895203
+            },
+            {
+              "joint": "right_hip_yaw_joint",
+              "error_rad": 0.07095624506473541
+            },
+            {
+              "joint": "left_elbow_joint",
+              "error_rad": 0.05599719285964966
+            },
+            {
+              "joint": "left_wrist_roll_joint",
+              "error_rad": 0.04474419355392456
+            }
+          ],
+          "foot_force_xyz_N": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "reference_foot_capsule_min_z_m": [
+            0.012988446563824108,
+            0.014187295671977984
+          ],
+          "actual_foot_capsule_min_z_m": [
+            0.013802240830972515,
+            0.007924690866500219
+          ],
+          "foot_position_error_m": [
+            0.006907682400196791,
+            0.010839571245014668
+          ],
+          "termination_terms": []
+        },
+        {
+          "time_s": 0.2,
+          "root_xyz_error_m": [
+            -0.0025992391165345907,
+            -0.0423126220703125,
+            -0.029594361782073975
+          ],
+          "root_error_m": 0.05170048773288727,
+          "joint_mae_rad": 0.13521280884742737,
+          "top_joint_errors": [
+            {
+              "joint": "left_wrist_roll_joint",
+              "error_rad": 0.37571245431900024
+            },
+            {
+              "joint": "right_knee_joint",
+              "error_rad": 0.35271573066711426
+            },
+            {
+              "joint": "left_elbow_joint",
+              "error_rad": 0.31636956334114075
+            },
+            {
+              "joint": "right_ankle_pitch_joint",
+              "error_rad": 0.27579736709594727
+            },
+            {
+              "joint": "left_hip_roll_joint",
+              "error_rad": 0.2543312609195709
+            }
+          ],
+          "foot_force_xyz_N": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              3.765605288208462e-05,
+              0.0,
+              280.2648010253906
+            ]
+          ],
+          "reference_foot_capsule_min_z_m": [
+            -0.00698256784350311,
+            9.933831052206382e-05
+          ],
+          "actual_foot_capsule_min_z_m": [
+            0.023771263997646577,
+            -1.5161210825486923e-05
+          ],
+          "foot_position_error_m": [
+            0.24397152662277222,
+            0.02100546658039093
+          ],
+          "termination_terms": []
+        },
+        {
+          "time_s": 0.44,
+          "root_xyz_error_m": [
+            -0.002481459639966488,
+            -0.13110828399658203,
+            -0.03387850522994995
+          ],
+          "root_error_m": 0.13543741405010223,
+          "joint_mae_rad": 0.14352087676525116,
+          "top_joint_errors": [
+            {
+              "joint": "left_wrist_roll_joint",
+              "error_rad": 0.5177751779556274
+            },
+            {
+              "joint": "right_knee_joint",
+              "error_rad": 0.3504074215888977
+            },
+            {
+              "joint": "right_shoulder_pitch_joint",
+              "error_rad": 0.28816378116607666
+            },
+            {
+              "joint": "right_ankle_pitch_joint",
+              "error_rad": 0.2535558342933655
+            },
+            {
+              "joint": "right_wrist_roll_joint",
+              "error_rad": 0.25347378849983215
+            }
+          ],
+          "foot_force_xyz_N": [
+            [
+              2.5947309040930122e-05,
+              0.0,
+              193.11947631835938
+            ],
+            [
+              2.109150773321744e-05,
+              0.0,
+              156.97894287109375
+            ]
+          ],
+          "reference_foot_capsule_min_z_m": [
+            -0.02794919866044253,
+            -0.014937889218574675
+          ],
+          "actual_foot_capsule_min_z_m": [
+            -7.770155012014335e-07,
+            -5.279500201044174e-07
+          ],
+          "foot_position_error_m": [
+            0.2653100788593292,
+            0.05729033052921295
+          ],
+          "termination_terms": []
+        },
+        {
+          "time_s": 0.5,
+          "root_xyz_error_m": [
+            -0.007371901534497738,
+            -0.1428084373474121,
+            -0.023875296115875244
+          ],
+          "root_error_m": 0.14497801661491394,
+          "joint_mae_rad": 0.13465067744255066,
+          "top_joint_errors": [
+            {
+              "joint": "left_wrist_roll_joint",
+              "error_rad": 0.3970775008201599
+            },
+            {
+              "joint": "right_knee_joint",
+              "error_rad": 0.35281887650489807
+            },
+            {
+              "joint": "right_shoulder_pitch_joint",
+              "error_rad": 0.2950601577758789
+            },
+            {
+              "joint": "right_wrist_roll_joint",
+              "error_rad": 0.2765267491340637
+            },
+            {
+              "joint": "right_hip_yaw_joint",
+              "error_rad": 0.24695956707000732
+            }
+          ],
+          "foot_force_xyz_N": [
+            [
+              2.5357592676300555e-05,
+              0.0,
+              188.73037719726562
+            ],
+            [
+              1.992364377656486e-05,
+              0.0,
+              148.28680419921875
+            ]
+          ],
+          "reference_foot_capsule_min_z_m": [
+            -0.032209525069340016,
+            -0.018000763336907755
+          ],
+          "actual_foot_capsule_min_z_m": [
+            2.784235017387962e-06,
+            4.097912771844001e-06
+          ],
+          "foot_position_error_m": [
+            0.2595372796058655,
+            0.07003667205572128
+          ],
+          "termination_terms": []
+        },
+        {
+          "time_s": 5.92,
+          "root_xyz_error_m": [
+            0.09327737987041473,
+            -0.44716930389404297,
+            -0.06731772422790527
+          ],
+          "root_error_m": 0.46172797679901123,
+          "joint_mae_rad": 0.15839527547359467,
+          "top_joint_errors": [
+            {
+              "joint": "left_elbow_joint",
+              "error_rad": 0.603312611579895
+            },
+            {
+              "joint": "left_hip_roll_joint",
+              "error_rad": 0.4472702145576477
+            },
+            {
+              "joint": "right_knee_joint",
+              "error_rad": 0.3237747251987457
+            },
+            {
+              "joint": "right_wrist_roll_joint",
+              "error_rad": 0.29564690589904785
+            },
+            {
+              "joint": "right_hip_roll_joint",
+              "error_rad": 0.2832318842411041
+            }
+          ],
+          "foot_force_xyz_N": [
+            [
+              1.9861699911416508e-05,
+              0.0,
+              147.82577514648438
+            ],
+            [
+              2.4560307792853564e-05,
+              0.0,
+              182.79637145996094
+            ]
+          ],
+          "reference_foot_capsule_min_z_m": [
+            0.01368429497926371,
+            0.014383780147219095
+          ],
+          "actual_foot_capsule_min_z_m": [
+            3.824365948403019e-06,
+            -1.4054786514157078e-05
+          ],
+          "foot_position_error_m": [
+            0.7181997299194336,
+            0.2723451852798462
+          ],
+          "termination_terms": []
+        }
+      ]
+    }
+  ]
+}

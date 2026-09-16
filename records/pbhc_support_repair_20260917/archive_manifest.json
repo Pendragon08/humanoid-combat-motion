@@ -1,0 +1,400 @@
+{
+  "archive": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_support_pilot_artifacts_20260917.tar.gz",
+  "sha256": "e2dd9b4d52bb747f14b2f6c230cadfc9045541f87feb016fdea3a982b320cdc1",
+  "bytes": 234319511,
+  "files": {
+    "runs/pbhc_support_diagnostic_20260917/Roundhouse_kick/rollout.npz": {
+      "sha256": "f5d9d823c7d33fc9e75a6dac3644ae3357d33fbec73a277ba3c549621794d485",
+      "bytes": 173009
+    },
+    "runs/pbhc_support_diagnostic_20260917/Roundhouse_kick/metrics.json": {
+      "sha256": "334f43ee959b78394abd803b12c2c174bea8aa9c73dddd326d183a74055d52f6",
+      "bytes": 6880
+    },
+    "runs/pbhc_support_diagnostic_20260917/Roundhouse_kick/support_trace.npz": {
+      "sha256": "8256cf5ab36c5144803f0532a100e9011ec5991c2e43e42997b3366331affada",
+      "bytes": 16652126
+    },
+    "runs/pbhc_support_diagnostic_20260917/Side_kick/rollout.npz": {
+      "sha256": "ef1543e4cdc0ba6194b8a4460127503e3658b0885cf60c5e7e79e37244cc21ea",
+      "bytes": 200667
+    },
+    "runs/pbhc_support_diagnostic_20260917/Side_kick/metrics.json": {
+      "sha256": "4ec8463c375e7c498291681dfdb58040de49f2c2314db45548da74ceb0915478",
+      "bytes": 6884
+    },
+    "runs/pbhc_support_diagnostic_20260917/Side_kick/support_trace.npz": {
+      "sha256": "77ac1b279e353c3252a29de7e1f0fc02a89b43c8fe182d9e0e7a409089275c1f",
+      "bytes": 19119235
+    },
+    "runs/pbhc_support_diagnostic_20260917/Horse-stance_punch/rollout.npz": {
+      "sha256": "71d1cd5a81b1e95970d34bb97c4976f711e7cd51260d7a36a133f44c6e7ba878",
+      "bytes": 221893
+    },
+    "runs/pbhc_support_diagnostic_20260917/Horse-stance_punch/metrics.json": {
+      "sha256": "8284e0a4f3ceb620fc14763c0908f72d55b02b6ca5564dab5d9fb5d86e707b07",
+      "bytes": 6981
+    },
+    "runs/pbhc_support_diagnostic_20260917/Horse-stance_punch/support_trace.npz": {
+      "sha256": "e84e143f77ac5b04662448cada78fcca1977de838446179a5c2dcf6ba41bfd77",
+      "bytes": 21002851
+    },
+    "runs/pbhc_support_diagnostic_20260917/Hooks_punch/rollout.npz": {
+      "sha256": "d9b374948a8ce26cc3256ec91f28ebabf6fd93e6b7729232524c7d90699d51c0",
+      "bytes": 198545
+    },
+    "runs/pbhc_support_diagnostic_20260917/Hooks_punch/metrics.json": {
+      "sha256": "725b2552355aa24151f69dc7d9d20ea67ea7fa60c3eb43b9dc3dc569b96a6dd0",
+      "bytes": 6918
+    },
+    "runs/pbhc_support_diagnostic_20260917/Hooks_punch/support_trace.npz": {
+      "sha256": "f4fecc8973169718f53e06025b4c5f18f9a8194dae58f167320c7b990f375055",
+      "bytes": 18764914
+    },
+    "records/pbhc_support_diagnostic_20260917/Roundhouse_kick.log": {
+      "sha256": "feb36461c735f41f6b001357132eac1c3e21539fa14dea5053421bb89894f6ca",
+      "bytes": 22992
+    },
+    "records/pbhc_support_diagnostic_20260917/scheduler.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "records/pbhc_support_diagnostic_20260917/Hooks_punch.log": {
+      "sha256": "8443710edd75701989a62cbe9b9b18874475fb3a633de967369e04a2ee7918b7",
+      "bytes": 23030
+    },
+    "records/pbhc_support_diagnostic_20260917/state.json": {
+      "sha256": "6ee0be39ed5f01fc7523c64724026889da229729f7bb0efdd299ebb6f5bd70ac",
+      "bytes": 3296
+    },
+    "records/pbhc_support_diagnostic_20260917/COMPLETE.json": {
+      "sha256": "2151f166ea25ab94f1781ec11a48806c460dd70870369bb223467291ea77881d",
+      "bytes": 75
+    },
+    "records/pbhc_support_diagnostic_20260917/manifest.json": {
+      "sha256": "9b12ef6b943567fd441024fb6a10460b91cb0908d56490680838f04714c8d52b",
+      "bytes": 3281
+    },
+    "records/pbhc_support_diagnostic_20260917/analysis_v2.log": {
+      "sha256": "cbaafc452678d0725344e6d0bf8dbf20f30c053dc3b2543c49e87bb83c318903",
+      "bytes": 40585
+    },
+    "records/pbhc_support_diagnostic_20260917/Horse-stance_punch.log": {
+      "sha256": "c31b54d69c1f7787f01f6f24d014f8afa2ccf0e524ecb985812ad17c6780f505",
+      "bytes": 22963
+    },
+    "records/pbhc_support_diagnostic_20260917/Side_kick.log": {
+      "sha256": "8a73848290f6bbec47c5619e36d00e8349afcb052081a7ca49697a2e59db605f",
+      "bytes": 22866
+    },
+    "records/pbhc_support_diagnostic_20260917/support_analysis.json": {
+      "sha256": "09828c4075031dc94938120de08fd13c3ffb8eebfe34af18a234553d47942e5e",
+      "bytes": 40083
+    },
+    "records/pbhc_support_diagnostic_20260917/launch.json": {
+      "sha256": "efd1234ca691a09336835469abefeb9a3ac8a03c55e86b77867fb56f0f2e7f41",
+      "bytes": 49
+    },
+    "records/pbhc_support_diagnostic_20260917/support_analysis_v2.json": {
+      "sha256": "7bc357a42287c5ceec1773f92333f0961db8b942070621de6b975f5a1d9bd2fa",
+      "bytes": 40584
+    },
+    "records/pbhc_support_diagnostic_20260917/metrics/Roundhouse_kick/metrics.json": {
+      "sha256": "334f43ee959b78394abd803b12c2c174bea8aa9c73dddd326d183a74055d52f6",
+      "bytes": 6880
+    },
+    "records/pbhc_support_diagnostic_20260917/metrics/Side_kick/metrics.json": {
+      "sha256": "4ec8463c375e7c498291681dfdb58040de49f2c2314db45548da74ceb0915478",
+      "bytes": 6884
+    },
+    "records/pbhc_support_diagnostic_20260917/metrics/Horse-stance_punch/metrics.json": {
+      "sha256": "8284e0a4f3ceb620fc14763c0908f72d55b02b6ca5564dab5d9fb5d86e707b07",
+      "bytes": 6981
+    },
+    "records/pbhc_support_diagnostic_20260917/metrics/Hooks_punch/metrics.json": {
+      "sha256": "725b2552355aa24151f69dc7d9d20ea67ea7fa60c3eb43b9dc3dc569b96a6dd0",
+      "bytes": 6918
+    },
+    "runs/pbhc_support_repair_20260917/references/sample_Hooks_punch_ground_align_actor0.npz": {
+      "sha256": "3b48afbdfe9fdf2a441eb48b6ce24cc07c929dcac6a5ff9d3e6bae3635dd48d0",
+      "bytes": 430680
+    },
+    "runs/pbhc_support_repair_20260917/references/sample_Horse-stance_punch_prep_support_actor0.npz": {
+      "sha256": "bb32e0d1e394efcef94a4311f9d4b2339f1381ca331d3446732f3234b3ac8637",
+      "bytes": 494650
+    },
+    "runs/pbhc_support_repair_20260917/references/sample_Roundhouse_kick_ground_align_actor0.npz": {
+      "sha256": "66eb878a4b5b8eec4a33def4b3377cb34f7c46a569e4909e850fe34389f60e93",
+      "bytes": 374625
+    },
+    "runs/pbhc_support_repair_20260917/references/sample_Roundhouse_kick_prep_support_actor0.npz": {
+      "sha256": "aa3da33e61c78e49b379c235a5bb8952e2e13ac34712221d4cc7cffc52bbb0d6",
+      "bytes": 379680
+    },
+    "runs/pbhc_support_repair_20260917/references/sample_Hooks_punch_prep_support_actor0.npz": {
+      "sha256": "adf9f316f9fb853a533ec6fdd360ba1abb3e9469cc264cc3786987d9f08db23d",
+      "bytes": 432653
+    },
+    "runs/pbhc_support_repair_20260917/references/sample_Side_kick_ground_align_actor0.npz": {
+      "sha256": "a6c358843413a887fbe2bf036fd6a1c433be2e15fd860063d52698af4e7d118f",
+      "bytes": 440235
+    },
+    "runs/pbhc_support_repair_20260917/references/sample_Side_kick_prep_support_actor0.npz": {
+      "sha256": "bc2ebad4ce5105566c73c5bc7d5d7fc9006942376a43c1ae8398d685516d497d",
+      "bytes": 442042
+    },
+    "runs/pbhc_support_repair_20260917/references/manifest.json": {
+      "sha256": "c87fa00aafae9fc5b79cd7522dda7e51697005d626407d1ec7a952e64f845333",
+      "bytes": 3056
+    },
+    "runs/pbhc_support_repair_20260917/references/sample_Horse-stance_punch_ground_align_actor0.npz": {
+      "sha256": "5eeab705994e1bf880dc3b11177842461b1a08f1569847302ff70a11a20bf382",
+      "bytes": 492209
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Horse-stance_punch_prep_support/rollout.npz": {
+      "sha256": "59856db2acd0bcc65cb4749a5634cb53e010bb68055ca143a1ce0bfbac20488a",
+      "bytes": 228123
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Horse-stance_punch_prep_support/metrics.json": {
+      "sha256": "113f959698f595e7f686c3da850baee62a391ffb140fa0c4c27fad27792721b6",
+      "bytes": 6935
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Horse-stance_punch_prep_support/support_trace.npz": {
+      "sha256": "339a88ae389df940911aef1f19ce97d2482cbb01b7ebe6bdabe3cbc9ca175c2e",
+      "bytes": 21492156
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Side_kick_prep_support/rollout.npz": {
+      "sha256": "3904fbaf246897a1b92072dcf24878b1263b9525fa53672397052f2d06bb97fd",
+      "bytes": 202491
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Side_kick_prep_support/metrics.json": {
+      "sha256": "8e085d246e4ffbe0581da9516ffd1aebf19b1b6bf0838bb9916734a83ea57ff5",
+      "bytes": 6883
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Side_kick_prep_support/support_trace.npz": {
+      "sha256": "365101ed5d7f3b91920ad5d58347eb7b14a07124b1cfd63c57d23c3132e9b8f1",
+      "bytes": 19177584
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Hooks_punch_ground_align/rollout.npz": {
+      "sha256": "562c809fb96aa07d89e854f7e2ba88e1b7d1a021ce8a3da2ebab09b606dbcc10",
+      "bytes": 198588
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Hooks_punch_ground_align/metrics.json": {
+      "sha256": "4aed593e190186a3faf5bc36e02cfe19fd97688aa0629cdfe034add4d05de35b",
+      "bytes": 6922
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Hooks_punch_ground_align/support_trace.npz": {
+      "sha256": "fa8fc54761879e2aadc6373800ed06a6a87e1742fb7532d7a8e85cbee0840ba0",
+      "bytes": 18803872
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Roundhouse_kick_ground_align/rollout.npz": {
+      "sha256": "511f35073a66abc17855dcd16d984041ea7e74d4d76f06c34dfe27a44a893b86",
+      "bytes": 171442
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Roundhouse_kick_ground_align/metrics.json": {
+      "sha256": "760acb17e9ba19e604fb295af1cc3de6184272e6dba913d8928ada2c6fa228ad",
+      "bytes": 6872
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Roundhouse_kick_ground_align/support_trace.npz": {
+      "sha256": "05624ade605a00739d3c380899d50ed6a915c9cd54edeb14ea7f2758cfbcc3b9",
+      "bytes": 16714605
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Hooks_punch_prep_support/rollout.npz": {
+      "sha256": "44094e14444259542dfaf72a374388992fed094d5892a426bb83497aad3481c7",
+      "bytes": 196035
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Hooks_punch_prep_support/metrics.json": {
+      "sha256": "8fe7fcfaf604988a1d9b5c4b27d9ebf7dd64a83612cf11ca29f322a748c2daf9",
+      "bytes": 6920
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Hooks_punch_prep_support/support_trace.npz": {
+      "sha256": "4faf08496fea4286b02bebfac3108022ccac1cdc932f44490e9cdd966c65b202",
+      "bytes": 18690084
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Roundhouse_kick_prep_support/rollout.npz": {
+      "sha256": "dc191cc3c1291952e99a1fdb25afefdc7adc6252d6c9bf3fe95e3dc35d6ee05b",
+      "bytes": 174367
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Roundhouse_kick_prep_support/metrics.json": {
+      "sha256": "6308a7d2f1ce7fc49fb4258a5d5820e7cf83a371bbd931ee32a58dcb05426f58",
+      "bytes": 6880
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Roundhouse_kick_prep_support/support_trace.npz": {
+      "sha256": "7d8c96bb93b7c9891215a84ee67e0ebe777cad0fa28b69a434a09f39f207604f",
+      "bytes": 16758318
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Side_kick_ground_align/rollout.npz": {
+      "sha256": "454c52121acac8ca4ff9b5eba89b622112d5b6a5fcae441f42f2a75fea019872",
+      "bytes": 202369
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Side_kick_ground_align/metrics.json": {
+      "sha256": "9b5026e59de067186732ece3956d47adcf3fa44e2ac2329e41320b43273a16cd",
+      "bytes": 6889
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Side_kick_ground_align/support_trace.npz": {
+      "sha256": "85df5a7b8e59fbdfeabb9b5cb0b45ed9355d457e3f65e814643ec08cb353b4bc",
+      "bytes": 19186886
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Horse-stance_punch_ground_align/rollout.npz": {
+      "sha256": "69625ff75af8eb6b6464447b5e2c43d05f2710bb86b6e4f51165a29826695538",
+      "bytes": 227297
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Horse-stance_punch_ground_align/metrics.json": {
+      "sha256": "bd6316bf7e75f426ac2cc45091be61d31bc36e5ed297a64bf338f4c60a9d381e",
+      "bytes": 6981
+    },
+    "runs/pbhc_support_repair_20260917/evaluation/Horse-stance_punch_ground_align/support_trace.npz": {
+      "sha256": "9c9bced6deef1283ed018924615155b13a6666149dc67f9e59f31065884ec6f7",
+      "bytes": 21334086
+    },
+    "runs/pbhc_support_repair_20260917/named_qpos/sample_Side_kick_prep_support.npz": {
+      "sha256": "a3c790738016003c43ae1db0a748c53d50ef9b8d4b3a7b76313329b372e739df",
+      "bytes": 43942
+    },
+    "runs/pbhc_support_repair_20260917/named_qpos/sample_Side_kick_ground_align.npz": {
+      "sha256": "f9dca24b8813fb0735813bfc3698f382f75ab1f02198f8cda98712bf461473b1",
+      "bytes": 40350
+    },
+    "runs/pbhc_support_repair_20260917/named_qpos/sample_Horse-stance_punch_prep_support.npz": {
+      "sha256": "1629f0d50431802445bbeeb7170a38dabc179e41a0e4c19125d950787ff9aa13",
+      "bytes": 47971
+    },
+    "runs/pbhc_support_repair_20260917/named_qpos/sample_Roundhouse_kick_prep_support.npz": {
+      "sha256": "dac3dda503ae7a19ef944e13c67997a6f07b4a4eac107eab9105b0617a6103bb",
+      "bytes": 37324
+    },
+    "runs/pbhc_support_repair_20260917/named_qpos/sample_Hooks_punch_prep_support.npz": {
+      "sha256": "e42cc9092fc84222c68cb244e4f2dfe15d7f9f17efa01be717b9822d7577f441",
+      "bytes": 41567
+    },
+    "runs/pbhc_support_repair_20260917/named_qpos/sample_Horse-stance_punch_ground_align.npz": {
+      "sha256": "b7328e25593e212ee63df95c1116874b93c19fe4d904ceda2fb41cc610f84d1d",
+      "bytes": 44948
+    },
+    "runs/pbhc_support_repair_20260917/named_qpos/sample_Roundhouse_kick_ground_align.npz": {
+      "sha256": "126eac97c0c0b1bb88825cfe45e574e7048f1a774bd99200a130452361c491d8",
+      "bytes": 33677
+    },
+    "runs/pbhc_support_repair_20260917/named_qpos/sample_Hooks_punch_ground_align.npz": {
+      "sha256": "2b1a8a137bb9f68afa42e5ce3123a52cb1110471910fd37959fa373c302d69bb",
+      "bytes": 39794
+    },
+    "records/pbhc_support_repair_20260917/scheduler.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "records/pbhc_support_repair_20260917/protocol.json": {
+      "sha256": "ea3e0bb7eff1e488a886f509a718eff174670809703332e38574620d653924b2",
+      "bytes": 9890
+    },
+    "records/pbhc_support_repair_20260917/Horse-stance_punch_prep_support.log": {
+      "sha256": "fbaeb4b792e01af354d66178f99a505525f046fbf0f826543455effe86127576",
+      "bytes": 23047
+    },
+    "records/pbhc_support_repair_20260917/state.json": {
+      "sha256": "a4f21e300a456529b957f5a8868c02350dacd293ca4a7a3fb2108b270a4a0ad0",
+      "bytes": 6461
+    },
+    "records/pbhc_support_repair_20260917/COMPLETE.json": {
+      "sha256": "b0061c2b58a5d65a76c1eddabb79c677026a962f1f1c7ff868a9969356b30994",
+      "bytes": 128
+    },
+    "records/pbhc_support_repair_20260917/support_comparison.png": {
+      "sha256": "2eed11618803405e80f8b2e4ebf3ef75df1778dd02f023ab0aa84b5e6239c789",
+      "bytes": 519175
+    },
+    "records/pbhc_support_repair_20260917/manifest.json": {
+      "sha256": "ef8e374207b7424beeaf7c300b493764f74fadadfe71defabbf9e04e4ba0ceb6",
+      "bytes": 6756
+    },
+    "records/pbhc_support_repair_20260917/Side_kick_ground_align.log": {
+      "sha256": "635633981a972496c45d233647f7a6f321e177b90d668474bdf9ecd586781ca5",
+      "bytes": 22871
+    },
+    "records/pbhc_support_repair_20260917/Side_kick_prep_support.log": {
+      "sha256": "f9086973eb25450b2e996ec06cf5ec16a8b82cc0abd73309884b105b769c29e1",
+      "bytes": 22865
+    },
+    "records/pbhc_support_repair_20260917/Hooks_punch_prep_support.log": {
+      "sha256": "4ec7529b0dc405696331545bc88108217b797eca17576dfef107cc550ea77073",
+      "bytes": 23032
+    },
+    "records/pbhc_support_repair_20260917/conversion.log": {
+      "sha256": "9102def3d956e17fe5c463609fd3e18430b3dc27b8cd7475a3ec8ef9241445b2",
+      "bytes": 10244
+    },
+    "records/pbhc_support_repair_20260917/Roundhouse_kick_prep_support.log": {
+      "sha256": "3069b55a2ef826c99ad7248ee3a7f62f03fb80db58dc5f4a9792308e95e6494f",
+      "bytes": 22862
+    },
+    "records/pbhc_support_repair_20260917/Hooks_punch_ground_align.log": {
+      "sha256": "755de0518982eccd986e989241a27d59d8b86e0612ea03e0216844fba3d3ce85",
+      "bytes": 23034
+    },
+    "records/pbhc_support_repair_20260917/summary.json": {
+      "sha256": "c5e331f9859cfb56609e95ba36bbebf97635f2e196dd32dfc263a2ad75722c43",
+      "bytes": 10164
+    },
+    "records/pbhc_support_repair_20260917/analysis.log": {
+      "sha256": "099c294ad087975d73401c86ad3b1b36cef1d269a271cc1dba47e84537301d07",
+      "bytes": 10165
+    },
+    "records/pbhc_support_repair_20260917/launch.json": {
+      "sha256": "b0a30a303a86eb9d310b083e436da0ad173927979d76f080a9065863ff7521ed",
+      "bytes": 50
+    },
+    "records/pbhc_support_repair_20260917/Horse-stance_punch_ground_align.log": {
+      "sha256": "57566cef705f420a006a93eae7f4cae4297625db4a81c28cfa96f04dfaa30a50",
+      "bytes": 23093
+    },
+    "records/pbhc_support_repair_20260917/report.md": {
+      "sha256": "3a60de591d29d8c86b6ec2b8a2d2543a6cbb673593ebe8520fa08f87bdab4d7d",
+      "bytes": 1622
+    },
+    "records/pbhc_support_repair_20260917/Roundhouse_kick_ground_align.log": {
+      "sha256": "c584782e4929e5475fa339471f89266677d8e5512fec82ce3f9aa14df2c3c3b0",
+      "bytes": 22854
+    },
+    "records/pbhc_support_repair_20260917/verification.json": {
+      "sha256": "a526ece8f0e48f2efaf9676648f71b214d05c13dffd4138caa1b8397d763a15f",
+      "bytes": 2119
+    },
+    "records/pbhc_support_repair_20260917/metrics/Horse-stance_punch_prep_support/metrics.json": {
+      "sha256": "113f959698f595e7f686c3da850baee62a391ffb140fa0c4c27fad27792721b6",
+      "bytes": 6935
+    },
+    "records/pbhc_support_repair_20260917/metrics/Side_kick_prep_support/metrics.json": {
+      "sha256": "8e085d246e4ffbe0581da9516ffd1aebf19b1b6bf0838bb9916734a83ea57ff5",
+      "bytes": 6883
+    },
+    "records/pbhc_support_repair_20260917/metrics/Hooks_punch_ground_align/metrics.json": {
+      "sha256": "4aed593e190186a3faf5bc36e02cfe19fd97688aa0629cdfe034add4d05de35b",
+      "bytes": 6922
+    },
+    "records/pbhc_support_repair_20260917/metrics/Roundhouse_kick_ground_align/metrics.json": {
+      "sha256": "760acb17e9ba19e604fb295af1cc3de6184272e6dba913d8928ada2c6fa228ad",
+      "bytes": 6872
+    },
+    "records/pbhc_support_repair_20260917/metrics/Hooks_punch_prep_support/metrics.json": {
+      "sha256": "8fe7fcfaf604988a1d9b5c4b27d9ebf7dd64a83612cf11ca29f322a748c2daf9",
+      "bytes": 6920
+    },
+    "records/pbhc_support_repair_20260917/metrics/Roundhouse_kick_prep_support/metrics.json": {
+      "sha256": "6308a7d2f1ce7fc49fb4258a5d5820e7cf83a371bbd931ee32a58dcb05426f58",
+      "bytes": 6880
+    },
+    "records/pbhc_support_repair_20260917/metrics/Side_kick_ground_align/metrics.json": {
+      "sha256": "9b5026e59de067186732ece3956d47adcf3fa44e2ac2329e41320b43273a16cd",
+      "bytes": 6889
+    },
+    "records/pbhc_support_repair_20260917/metrics/Horse-stance_punch_ground_align/metrics.json": {
+      "sha256": "bd6316bf7e75f426ac2cc45091be61d31bc36e5ed297a64bf338f4c60a9d381e",
+      "bytes": 6981
+    },
+    "records/pbhc_support_repair_20260917/conversion_manifest.json": {
+      "sha256": "c87fa00aafae9fc5b79cd7522dda7e51697005d626407d1ec7a952e64f845333",
+      "bytes": 3056
+    }
+  },
+  "privacy": "Raw reference/rollout arrays stay in private archive; no checkpoints or original dataset bundle included. Compact reports/metrics can be committed."
+}

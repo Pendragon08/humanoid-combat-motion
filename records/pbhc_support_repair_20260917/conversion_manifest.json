@@ -1,0 +1,74 @@
+{
+  "records": [
+    {
+      "sample": "sample_Hooks_punch_ground_align",
+      "actor": 0,
+      "source_sha256": "2b1a8a137bb9f68afa42e5ce3123a52cb1110471910fd37959fa373c302d69bb",
+      "output": "sample_Hooks_punch_ground_align_actor0.npz",
+      "sha256": "3b48afbdfe9fdf2a441eb48b6ce24cc07c929dcac6a5ff9d3e6bae3635dd48d0",
+      "frames": 291
+    },
+    {
+      "sample": "sample_Hooks_punch_prep_support",
+      "actor": 0,
+      "source_sha256": "e42cc9092fc84222c68cb244e4f2dfe15d7f9f17efa01be717b9822d7577f441",
+      "output": "sample_Hooks_punch_prep_support_actor0.npz",
+      "sha256": "adf9f316f9fb853a533ec6fdd360ba1abb3e9469cc264cc3786987d9f08db23d",
+      "frames": 291
+    },
+    {
+      "sample": "sample_Horse-stance_punch_ground_align",
+      "actor": 0,
+      "source_sha256": "b7328e25593e212ee63df95c1116874b93c19fe4d904ceda2fb41cc610f84d1d",
+      "output": "sample_Horse-stance_punch_ground_align_actor0.npz",
+      "sha256": "5eeab705994e1bf880dc3b11177842461b1a08f1569847302ff70a11a20bf382",
+      "frames": 332
+    },
+    {
+      "sample": "sample_Horse-stance_punch_prep_support",
+      "actor": 0,
+      "source_sha256": "1629f0d50431802445bbeeb7170a38dabc179e41a0e4c19125d950787ff9aa13",
+      "output": "sample_Horse-stance_punch_prep_support_actor0.npz",
+      "sha256": "bb32e0d1e394efcef94a4311f9d4b2339f1381ca331d3446732f3234b3ac8637",
+      "frames": 332
+    },
+    {
+      "sample": "sample_Roundhouse_kick_ground_align",
+      "actor": 0,
+      "source_sha256": "126eac97c0c0b1bb88825cfe45e574e7048f1a774bd99200a130452361c491d8",
+      "output": "sample_Roundhouse_kick_ground_align_actor0.npz",
+      "sha256": "66eb878a4b5b8eec4a33def4b3377cb34f7c46a569e4909e850fe34389f60e93",
+      "frames": 262
+    },
+    {
+      "sample": "sample_Roundhouse_kick_prep_support",
+      "actor": 0,
+      "source_sha256": "dac3dda503ae7a19ef944e13c67997a6f07b4a4eac107eab9105b0617a6103bb",
+      "output": "sample_Roundhouse_kick_prep_support_actor0.npz",
+      "sha256": "aa3da33e61c78e49b379c235a5bb8952e2e13ac34712221d4cc7cffc52bbb0d6",
+      "frames": 262
+    },
+    {
+      "sample": "sample_Side_kick_ground_align",
+      "actor": 0,
+      "source_sha256": "f9dca24b8813fb0735813bfc3698f382f75ab1f02198f8cda98712bf461473b1",
+      "output": "sample_Side_kick_ground_align_actor0.npz",
+      "sha256": "a6c358843413a887fbe2bf036fd6a1c433be2e15fd860063d52698af4e7d118f",
+      "frames": 297
+    },
+    {
+      "sample": "sample_Side_kick_prep_support",
+      "actor": 0,
+      "source_sha256": "a3c790738016003c43ae1db0a748c53d50ef9b8d4b3a7b76313329b372e739df",
+      "output": "sample_Side_kick_prep_support_actor0.npz",
+      "sha256": "bc2ebad4ce5105566c73c5bc7d5d7fc9006942376a43c1ae8398d685516d497d",
+      "frames": 297
+    }
+  ],
+  "output_fps": 50,
+  "upstream_velocity_source_sha256": "98793d2d7209341fd801f1bf04c3685bd6a18a512a143c8bd03fe754bfa6f717",
+  "same_rate_all_frames_preserved": true,
+  "simulation_steps": 0,
+  "shared_world_preserved": true,
+  "purpose": "reference conversion; not dynamic validation"
+}

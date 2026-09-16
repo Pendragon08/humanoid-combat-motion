@@ -1,0 +1,109 @@
+{
+  "jobs": [
+    {
+      "name": "Hooks_punch",
+      "arm": "ground_align",
+      "gpu": 0,
+      "checkpoint": "runs/pbhc_beyondmimic_20260916/training/Hooks_punch/model_1999.pt",
+      "checkpoint_sha256": "925ab396005fdaee0fa1f1a141dcee2d3165f48f318d658dfac5c347e3d91230",
+      "reference": "runs/pbhc_support_repair_20260917/references/sample_Hooks_punch_ground_align_actor0.npz",
+      "reference_sha256": "3b48afbdfe9fdf2a441eb48b6ce24cc07c929dcac6a5ff9d3e6bae3635dd48d0",
+      "original_reference": "runs/pbhc_beyondmimic_20260916/references_full/sample_Hooks_punch_actor0.npz",
+      "original_reference_sha256": "af6760c1be4d0485b31b5beb0de98410b6030e13c8673e0e20bbd2506675e76a",
+      "output": "runs/pbhc_support_repair_20260917/evaluation/Hooks_punch_ground_align"
+    },
+    {
+      "name": "Hooks_punch",
+      "arm": "prep_support",
+      "gpu": 0,
+      "checkpoint": "runs/pbhc_beyondmimic_20260916/training/Hooks_punch/model_1999.pt",
+      "checkpoint_sha256": "925ab396005fdaee0fa1f1a141dcee2d3165f48f318d658dfac5c347e3d91230",
+      "reference": "runs/pbhc_support_repair_20260917/references/sample_Hooks_punch_prep_support_actor0.npz",
+      "reference_sha256": "adf9f316f9fb853a533ec6fdd360ba1abb3e9469cc264cc3786987d9f08db23d",
+      "original_reference": "runs/pbhc_beyondmimic_20260916/references_full/sample_Hooks_punch_actor0.npz",
+      "original_reference_sha256": "af6760c1be4d0485b31b5beb0de98410b6030e13c8673e0e20bbd2506675e76a",
+      "output": "runs/pbhc_support_repair_20260917/evaluation/Hooks_punch_prep_support"
+    },
+    {
+      "name": "Horse-stance_punch",
+      "arm": "ground_align",
+      "gpu": 0,
+      "checkpoint": "runs/pbhc_beyondmimic_20260916/training/Horse-stance_punch/model_1999.pt",
+      "checkpoint_sha256": "bc6125e3b6469f7ebfac3f3b645334ecce14161c68f27fc5811522ade4c85145",
+      "reference": "runs/pbhc_support_repair_20260917/references/sample_Horse-stance_punch_ground_align_actor0.npz",
+      "reference_sha256": "5eeab705994e1bf880dc3b11177842461b1a08f1569847302ff70a11a20bf382",
+      "original_reference": "runs/pbhc_beyondmimic_20260916/references_full/sample_Horse-stance_punch_actor0.npz",
+      "original_reference_sha256": "b727970fddcde23c6184a36945dd4dfc49a6fda922c98f10270856e27e53559f",
+      "output": "runs/pbhc_support_repair_20260917/evaluation/Horse-stance_punch_ground_align"
+    },
+    {
+      "name": "Horse-stance_punch",
+      "arm": "prep_support",
+      "gpu": 0,
+      "checkpoint": "runs/pbhc_beyondmimic_20260916/training/Horse-stance_punch/model_1999.pt",
+      "checkpoint_sha256": "bc6125e3b6469f7ebfac3f3b645334ecce14161c68f27fc5811522ade4c85145",
+      "reference": "runs/pbhc_support_repair_20260917/references/sample_Horse-stance_punch_prep_support_actor0.npz",
+      "reference_sha256": "bb32e0d1e394efcef94a4311f9d4b2339f1381ca331d3446732f3234b3ac8637",
+      "original_reference": "runs/pbhc_beyondmimic_20260916/references_full/sample_Horse-stance_punch_actor0.npz",
+      "original_reference_sha256": "b727970fddcde23c6184a36945dd4dfc49a6fda922c98f10270856e27e53559f",
+      "output": "runs/pbhc_support_repair_20260917/evaluation/Horse-stance_punch_prep_support"
+    },
+    {
+      "name": "Roundhouse_kick",
+      "arm": "ground_align",
+      "gpu": 1,
+      "checkpoint": "runs/pbhc_beyondmimic_20260916/training/Roundhouse_kick/model_1999.pt",
+      "checkpoint_sha256": "e06d946378810826828a1ef52b8c61227f7f22ee2c1bbd4850c3e7420e1dd361",
+      "reference": "runs/pbhc_support_repair_20260917/references/sample_Roundhouse_kick_ground_align_actor0.npz",
+      "reference_sha256": "66eb878a4b5b8eec4a33def4b3377cb34f7c46a569e4909e850fe34389f60e93",
+      "original_reference": "runs/pbhc_beyondmimic_20260916/references_full/sample_Roundhouse_kick_actor0.npz",
+      "original_reference_sha256": "b82dea7dbb3ca1e959c88c716ae6128499da4344c24e5e05755cee587dd28d82",
+      "output": "runs/pbhc_support_repair_20260917/evaluation/Roundhouse_kick_ground_align"
+    },
+    {
+      "name": "Roundhouse_kick",
+      "arm": "prep_support",
+      "gpu": 1,
+      "checkpoint": "runs/pbhc_beyondmimic_20260916/training/Roundhouse_kick/model_1999.pt",
+      "checkpoint_sha256": "e06d946378810826828a1ef52b8c61227f7f22ee2c1bbd4850c3e7420e1dd361",
+      "reference": "runs/pbhc_support_repair_20260917/references/sample_Roundhouse_kick_prep_support_actor0.npz",
+      "reference_sha256": "aa3da33e61c78e49b379c235a5bb8952e2e13ac34712221d4cc7cffc52bbb0d6",
+      "original_reference": "runs/pbhc_beyondmimic_20260916/references_full/sample_Roundhouse_kick_actor0.npz",
+      "original_reference_sha256": "b82dea7dbb3ca1e959c88c716ae6128499da4344c24e5e05755cee587dd28d82",
+      "output": "runs/pbhc_support_repair_20260917/evaluation/Roundhouse_kick_prep_support"
+    },
+    {
+      "name": "Side_kick",
+      "arm": "ground_align",
+      "gpu": 1,
+      "checkpoint": "runs/pbhc_beyondmimic_20260916/training/Side_kick/model_1999.pt",
+      "checkpoint_sha256": "cfbe57b159c2c64339e64e2e08149454493f3edc3e3fe94079dc11a86a636119",
+      "reference": "runs/pbhc_support_repair_20260917/references/sample_Side_kick_ground_align_actor0.npz",
+      "reference_sha256": "a6c358843413a887fbe2bf036fd6a1c433be2e15fd860063d52698af4e7d118f",
+      "original_reference": "runs/pbhc_beyondmimic_20260916/references_full/sample_Side_kick_actor0.npz",
+      "original_reference_sha256": "6dc82426c94ad8d4294ae3319fc3441dac2d61bf179c3f2f37efe4d7b63c5479",
+      "output": "runs/pbhc_support_repair_20260917/evaluation/Side_kick_ground_align"
+    },
+    {
+      "name": "Side_kick",
+      "arm": "prep_support",
+      "gpu": 1,
+      "checkpoint": "runs/pbhc_beyondmimic_20260916/training/Side_kick/model_1999.pt",
+      "checkpoint_sha256": "cfbe57b159c2c64339e64e2e08149454493f3edc3e3fe94079dc11a86a636119",
+      "reference": "runs/pbhc_support_repair_20260917/references/sample_Side_kick_prep_support_actor0.npz",
+      "reference_sha256": "bc2ebad4ce5105566c73c5bc7d5d7fc9006942376a43c1ae8398d685516d497d",
+      "original_reference": "runs/pbhc_beyondmimic_20260916/references_full/sample_Side_kick_actor0.npz",
+      "original_reference_sha256": "6dc82426c94ad8d4294ae3319fc3441dac2d61bf179c3f2f37efe4d7b63c5479",
+      "output": "runs/pbhc_support_repair_20260917/evaluation/Side_kick_prep_support"
+    }
+  ],
+  "seed": 123,
+  "num_envs": 32,
+  "regime": "nominal",
+  "training_updates": 0,
+  "frozen_code_hashes": {
+    "scripts/evaluate_pbhc_support_diagnostic.py": "2f636cee83e48006e0df6ab4eaafab53f581ab5e6843a08aecb9ffc2f03133f1",
+    "scripts/run_pbhc_support_repair.py": "469f5a2adcf5acbd7b1f926f08cd4ea2d05a064813bb46466a201856a6492bcd",
+    "scripts/summarize_pbhc_support_repair.py": "554363ce68113001c61ef4398ad69efb9a0590ec82858e4942c64fec70228001"
+  }
+}

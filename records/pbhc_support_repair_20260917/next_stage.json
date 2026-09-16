@@ -1,0 +1,18 @@
+{
+  "status": "pilot_complete_not_accepted_for_global_replacement",
+  "completed": {"instrumented_raw_evaluations": 4, "candidate_evaluations": 8, "policy_training_updates": 0},
+  "decision": "Keep all original references and all negative results. Do not promote prep_support as a universal repair or launch large data-utility training from these results.",
+  "reasons": [
+    "Hooks and Side have lower mean root error but still zero strict pass",
+    "Horse loses its nominal strict pass under prep_support",
+    "Roundhouse still terminates early",
+    "Frozen single-reference policies may fail to generalize to changed references; no learnability conclusion"
+  ],
+  "next": [
+    "Audit support-transition and velocity/acceleration fidelity before more source corrections",
+    "Develop candidate acceptance on development motions with unchanged thresholds and untouched-original target checks",
+    "Predeclare fixed data arms before a matched initialization/budget training comparison",
+    "Do not choose a different winning repair per action using this evaluation and report it as a single general method"
+  ],
+  "full_generator_and_data_utility_complete": false
+}

@@ -1,0 +1,45 @@
+{
+  "audit_skill": "experiment-audit",
+  "verdict": "WARN",
+  "reason_code": "bounded_development_simulation_with_candidate_dependent_censoring",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "reviewer_agent": "/root/support_pilot_integrity",
+  "reviewer_model": "Inherited Codex model; exact runtime identifier not exposed",
+  "date": "2026-09-17",
+  "audited_input_hashes": {
+    "scripts/evaluate_pbhc_support_diagnostic.py": "2f636cee83e48006e0df6ab4eaafab53f581ab5e6843a08aecb9ffc2f03133f1",
+    "scripts/evaluate_pbhc_followup.py": "94cce972675dc3051741da27dc460064423c3ed9281e991cc92c9f6532d73188",
+    "scripts/prepare_pbhc_support_repair.py": "a2910e609b0d62b1aa0ef2fff441e04dddad7a0610cd60c94bb7d31abb0ec370",
+    "scripts/run_pbhc_support_repair.py": "469f5a2adcf5acbd7b1f926f08cd4ea2d05a064813bb46466a201856a6492bcd",
+    "scripts/summarize_pbhc_support_repair.py": "554363ce68113001c61ef4398ad69efb9a0590ec82858e4942c64fec70228001",
+    "scripts/verify_pbhc_support_pilot.py": "83a06a5c4f7b351d409c22eb11b13011813c15d9e3738360d5ae1d7855764610",
+    "scripts/analyze_pbhc_support_diagnostics.py": "271e4113477f4f95812773ae314609fccd5c978651f14c1e868898e45a907332",
+    "records/pbhc_support_repair_20260917/protocol.json": "ea3e0bb7eff1e488a886f509a718eff174670809703332e38574620d653924b2",
+    "records/pbhc_support_repair_20260917/manifest.json": "ef8e374207b7424beeaf7c300b493764f74fadadfe71defabbf9e04e4ba0ceb6",
+    "records/pbhc_support_repair_20260917/summary.json": "c5e331f9859cfb56609e95ba36bbebf97635f2e196dd32dfc263a2ad75722c43",
+    "records/pbhc_support_repair_20260917/verification.json": "a526ece8f0e48f2efaf9676648f71b214d05c13dffd4138caa1b8397d763a15f",
+    "records/pbhc_support_repair_20260917/report.md": "3a60de591d29d8c86b6ec2b8a2d2543a6cbb673593ebe8520fa08f87bdab4d7d",
+    "records/pbhc_support_diagnostic_20260917/support_analysis_v2.json": "7bc357a42287c5ceec1773f92333f0961db8b942070621de6b975f5a1d9bd2fa",
+    "records/pbhc_followup_20260916/report.md": "40fafc1563bee1c79bd45bb68fed1091cf3cb457db5ac01c1347245f016a1ec5",
+    "docs/pbhc_support_pilot_20260917.md": "d650b49fe989758ec4341b74ae83f9782ba1afcc692f1a738d8662f6df246363"
+  },
+  "raw_score_rows_independently_recomputed": 12,
+  "candidate_invariants_independently_verified": 8,
+  "historical_28_hash_checks": "Server verifier only; not independently repeated",
+  "evaluation_type": "simulation_only",
+  "checks": {
+    "normalization": "PASS",
+    "files": "PASS current / WARN historical coverage",
+    "scope": "WARN",
+    "dead_code": "PASS",
+    "gt_provenance": "PASS bounded",
+    "evaluation_type": "simulation_only"
+  },
+  "trace_path": ".aris/traces/experiment-audit/2026-09-17_support_pilot",
+  "corrections": [
+    "Geometry before baseline clarified as height-aligned intermediate",
+    "Successful horizon sentinel interpreted by v2 predicates"
+  ],
+  "claim": "Reject uniform replacement; no training utility claim"
+}

@@ -1,0 +1,103 @@
+{
+  "status": "complete",
+  "jobs": {
+    "Horse-stance_punch": {
+      "status": "complete",
+      "command": [
+        "bash",
+        "scripts/run_isaaclab.sh",
+        "scripts/evaluate_pbhc_support_diagnostic.py",
+        "--checkpoint",
+        "runs/pbhc_beyondmimic_20260916/training/Horse-stance_punch/model_1999.pt",
+        "--motion_file",
+        "runs/pbhc_beyondmimic_20260916/references_full/sample_Horse-stance_punch_actor0.npz",
+        "--output",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_support_diagnostic_20260917/Horse-stance_punch",
+        "--num_envs",
+        "32",
+        "--seed",
+        "123",
+        "--regime",
+        "nominal",
+        "--headless",
+        "--device",
+        "cuda:0"
+      ],
+      "trace_sha256": "e84e143f77ac5b04662448cada78fcca1977de838446179a5c2dcf6ba41bfd77"
+    },
+    "Roundhouse_kick": {
+      "status": "complete",
+      "command": [
+        "bash",
+        "scripts/run_isaaclab.sh",
+        "scripts/evaluate_pbhc_support_diagnostic.py",
+        "--checkpoint",
+        "runs/pbhc_beyondmimic_20260916/training/Roundhouse_kick/model_1999.pt",
+        "--motion_file",
+        "runs/pbhc_beyondmimic_20260916/references_full/sample_Roundhouse_kick_actor0.npz",
+        "--output",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_support_diagnostic_20260917/Roundhouse_kick",
+        "--num_envs",
+        "32",
+        "--seed",
+        "123",
+        "--regime",
+        "nominal",
+        "--headless",
+        "--device",
+        "cuda:1"
+      ],
+      "trace_sha256": "8256cf5ab36c5144803f0532a100e9011ec5991c2e43e42997b3366331affada"
+    },
+    "Side_kick": {
+      "status": "complete",
+      "command": [
+        "bash",
+        "scripts/run_isaaclab.sh",
+        "scripts/evaluate_pbhc_support_diagnostic.py",
+        "--checkpoint",
+        "runs/pbhc_beyondmimic_20260916/training/Side_kick/model_1999.pt",
+        "--motion_file",
+        "runs/pbhc_beyondmimic_20260916/references_full/sample_Side_kick_actor0.npz",
+        "--output",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_support_diagnostic_20260917/Side_kick",
+        "--num_envs",
+        "32",
+        "--seed",
+        "123",
+        "--regime",
+        "nominal",
+        "--headless",
+        "--device",
+        "cuda:1"
+      ],
+      "trace_sha256": "77ac1b279e353c3252a29de7e1f0fc02a89b43c8fe182d9e0e7a409089275c1f"
+    },
+    "Hooks_punch": {
+      "status": "complete",
+      "command": [
+        "bash",
+        "scripts/run_isaaclab.sh",
+        "scripts/evaluate_pbhc_support_diagnostic.py",
+        "--checkpoint",
+        "runs/pbhc_beyondmimic_20260916/training/Hooks_punch/model_1999.pt",
+        "--motion_file",
+        "runs/pbhc_beyondmimic_20260916/references_full/sample_Hooks_punch_actor0.npz",
+        "--output",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_support_diagnostic_20260917/Hooks_punch",
+        "--num_envs",
+        "32",
+        "--seed",
+        "123",
+        "--regime",
+        "nominal",
+        "--headless",
+        "--device",
+        "cuda:0"
+      ],
+      "trace_sha256": "f4fecc8973169718f53e06025b4c5f18f9a8194dae58f167320c7b990f375055"
+    }
+  },
+  "start": 1789599999.2750654,
+  "finish": 1789600050.642169
+}

@@ -1,0 +1,64 @@
+{
+  "rows": [
+    {
+      "name": "Hooks_punch",
+      "arm": "ground_align",
+      "invariants_pass": true,
+      "max_joint_delta_rad": 0.0,
+      "converted_sha256": "3b48afbdfe9fdf2a441eb48b6ce24cc07c929dcac6a5ff9d3e6bae3635dd48d0"
+    },
+    {
+      "name": "Hooks_punch",
+      "arm": "prep_support",
+      "invariants_pass": true,
+      "max_joint_delta_rad": 0.1199999998316249,
+      "converted_sha256": "adf9f316f9fb853a533ec6fdd360ba1abb3e9469cc264cc3786987d9f08db23d"
+    },
+    {
+      "name": "Horse-stance_punch",
+      "arm": "ground_align",
+      "invariants_pass": true,
+      "max_joint_delta_rad": 0.0,
+      "converted_sha256": "5eeab705994e1bf880dc3b11177842461b1a08f1569847302ff70a11a20bf382"
+    },
+    {
+      "name": "Horse-stance_punch",
+      "arm": "prep_support",
+      "invariants_pass": true,
+      "max_joint_delta_rad": 0.11999999999864008,
+      "converted_sha256": "bb32e0d1e394efcef94a4311f9d4b2339f1381ca331d3446732f3234b3ac8637"
+    },
+    {
+      "name": "Roundhouse_kick",
+      "arm": "ground_align",
+      "invariants_pass": true,
+      "max_joint_delta_rad": 0.0,
+      "converted_sha256": "66eb878a4b5b8eec4a33def4b3377cb34f7c46a569e4909e850fe34389f60e93"
+    },
+    {
+      "name": "Roundhouse_kick",
+      "arm": "prep_support",
+      "invariants_pass": true,
+      "max_joint_delta_rad": 0.1199999999527478,
+      "converted_sha256": "aa3da33e61c78e49b379c235a5bb8952e2e13ac34712221d4cc7cffc52bbb0d6"
+    },
+    {
+      "name": "Side_kick",
+      "arm": "ground_align",
+      "invariants_pass": true,
+      "max_joint_delta_rad": 0.0,
+      "converted_sha256": "a6c358843413a887fbe2bf036fd6a1c433be2e15fd860063d52698af4e7d118f"
+    },
+    {
+      "name": "Side_kick",
+      "arm": "prep_support",
+      "invariants_pass": true,
+      "max_joint_delta_rad": 0.11999999986633947,
+      "converted_sha256": "bc2ebad4ce5105566c73c5bc7d5d7fc9006942376a43c1ae8398d685516d497d"
+    }
+  ],
+  "unchanged_prior_metric_files": 28,
+  "candidate_evaluations_verified": 8,
+  "training_updates": 0,
+  "script_sha256": "83a06a5c4f7b351d409c22eb11b13011813c15d9e3738360d5ae1d7855764610"
+}
