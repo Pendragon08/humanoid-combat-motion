@@ -1,0 +1,512 @@
+[
+  {
+    "path": "runs/pbhc_official_20260916/pose_seed123/metrics.json",
+    "bytes": 1703,
+    "sha256": "feb53b7ee734dab333ae1320da3d8f6a6a2683a775d8b49cc2fce9ec6a841758"
+  },
+  {
+    "path": "runs/pbhc_official_20260916/pose_seed123/resolved_config.yaml",
+    "bytes": 29472,
+    "sha256": "1297b77aafb5807bdc7699156859239da615d5631182f84312ad78aa97cc9c39"
+  },
+  {
+    "path": "runs/pbhc_official_20260916/pose_seed123/rollout.npz",
+    "bytes": 295242,
+    "sha256": "7791ad9ae75d092022aca72ca7e9cf6cc8031dd5e3642666bc1c914899af634b"
+  },
+  {
+    "path": "runs/pbhc_official_20260916/pose_seed123_hydra/.hydra/config.yaml",
+    "bytes": 666,
+    "sha256": "20a4fd6aedceffb1ae370db049566af3247f551fb00d56d490272b51e5e10a92"
+  },
+  {
+    "path": "runs/pbhc_official_20260916/pose_seed123_hydra/.hydra/hydra.yaml",
+    "bytes": 4238,
+    "sha256": "7496b3c11cb3b36ccb2c640ca0f629c37723a245446479a6932a66ebb5352d4e"
+  },
+  {
+    "path": "runs/pbhc_official_20260916/pose_seed123_hydra/.hydra/overrides.yaml",
+    "bytes": 329,
+    "sha256": "f06b1cc000370fa80e9c0e8c177add9043426f99fd4385cb2cfa5a7c16c34d95"
+  },
+  {
+    "path": "runs/pbhc_official_20260916/pose_seed123_hydra/config.yaml",
+    "bytes": 29472,
+    "sha256": "1297b77aafb5807bdc7699156859239da615d5631182f84312ad78aa97cc9c39"
+  },
+  {
+    "path": "runs/pbhc_official_20260916/punch_independent_seed123/metrics.json",
+    "bytes": 1708,
+    "sha256": "3e6eeb6d0362aaa684982534f3a93fa7124ca464dc6eee9fb718d30c0da5dfde"
+  },
+  {
+    "path": "runs/pbhc_official_20260916/punch_independent_seed123/resolved_config.yaml",
+    "bytes": 29390,
+    "sha256": "26e754fffe3d84764037ff6be5b1638be5804ae8d76ece6acfa7665ed4b93f49"
+  },
+  {
+    "path": "runs/pbhc_official_20260916/punch_independent_seed123/rollout.npz",
+    "bytes": 281972,
+    "sha256": "46b0f5d959ea1350c8862eae2384ad44a7969d11aeb8e1f21df6d2fc39f5aa09"
+  },
+  {
+    "path": "runs/pbhc_official_20260916/punch_independent_seed123_hydra/.hydra/config.yaml",
+    "bytes": 680,
+    "sha256": "f93e0f80bd4f528872e518cdffe50ba9ec12c861da2cd1c35d342a13169718e4"
+  },
+  {
+    "path": "runs/pbhc_official_20260916/punch_independent_seed123_hydra/.hydra/hydra.yaml",
+    "bytes": 4305,
+    "sha256": "defbed5d6c431c2c1dd53dc2f45d8bed30be14fe2f11946f47abda59e9d074b5"
+  },
+  {
+    "path": "runs/pbhc_official_20260916/punch_independent_seed123_hydra/.hydra/overrides.yaml",
+    "bytes": 343,
+    "sha256": "2919fc8d80b713730fb0f7ddc0990652aa3d353c002db8bd1d867ca70f06514d"
+  },
+  {
+    "path": "runs/pbhc_official_20260916/punch_independent_seed123_hydra/config.yaml",
+    "bytes": 29390,
+    "sha256": "26e754fffe3d84764037ff6be5b1638be5804ae8d76ece6acfa7665ed4b93f49"
+  },
+  {
+    "path": "runs/pbhc_official_20260916/punch_seed123/metrics.json",
+    "bytes": 1708,
+    "sha256": "f55edc7b8f9ad15075392bf902ba6046e15b8a12e800fbf54e93dddc7ee218d9"
+  },
+  {
+    "path": "runs/pbhc_official_20260916/punch_seed123/resolved_config.yaml",
+    "bytes": 29378,
+    "sha256": "c593d0854d68f57d74ff5340da35ac73a7caa3a65fe5f1bfb0fd628659b8f23d"
+  },
+  {
+    "path": "runs/pbhc_official_20260916/punch_seed123/rollout.npz",
+    "bytes": 281972,
+    "sha256": "46b0f5d959ea1350c8862eae2384ad44a7969d11aeb8e1f21df6d2fc39f5aa09"
+  },
+  {
+    "path": "runs/pbhc_official_20260916/punch_seed123_hydra/.hydra/config.yaml",
+    "bytes": 668,
+    "sha256": "96f53e1ff60d81f845a8dd645ab947080142660ee9bdcf86373071c95f0df786"
+  },
+  {
+    "path": "runs/pbhc_official_20260916/punch_seed123_hydra/.hydra/hydra.yaml",
+    "bytes": 4245,
+    "sha256": "65035c11d3dd42f780051cfd69f4ef98f3fac497cf56b9ae71e42b135da1b06b"
+  },
+  {
+    "path": "runs/pbhc_official_20260916/punch_seed123_hydra/.hydra/overrides.yaml",
+    "bytes": 331,
+    "sha256": "df9662963fb81bc45a0718ce63894b53ba02378f5322d1b6068c4a787bde19c6"
+  },
+  {
+    "path": "runs/pbhc_official_20260916/punch_seed123_hydra/config.yaml",
+    "bytes": 29378,
+    "sha256": "c593d0854d68f57d74ff5340da35ac73a7caa3a65fe5f1bfb0fd628659b8f23d"
+  },
+  {
+    "path": "runs/pbhc_seed_panel_20260916/inventory.json",
+    "bytes": 11451,
+    "sha256": "ae1732c5d02f56835fcd1eae46b651b3d2079660874f5b740f1afd9c4c8a060c"
+  },
+  {
+    "path": "runs/pbhc_seed_panel_20260916/references/Bruce_Lee_pose.npz",
+    "bytes": 1626994,
+    "sha256": "868acf1178eda90ad24762471d091cb69d2c158d45bad9467bf7c04d960eda7e"
+  },
+  {
+    "path": "runs/pbhc_seed_panel_20260916/references/Charleston_dance.npz",
+    "bytes": 3059003,
+    "sha256": "f4f2ad941411977ce02509b4c9e9ce0a10e4389d1dd84f6c6b403cdc8c6b3e2a"
+  },
+  {
+    "path": "runs/pbhc_seed_panel_20260916/references/Hooks_punch.npz",
+    "bytes": 862102,
+    "sha256": "c4a07a2ce73a6c7b13e6cabbde584946fce27d5507a31aa748ea52e72f617cbb"
+  },
+  {
+    "path": "runs/pbhc_seed_panel_20260916/references/Horse-stance_pose.npz",
+    "bytes": 1028923,
+    "sha256": "e04aee6999a873da0a5312d116ea6bd5f4eacdaf66d4d50b9e683b88eea58c43"
+  },
+  {
+    "path": "runs/pbhc_seed_panel_20260916/references/Horse-stance_punch.npz",
+    "bytes": 978612,
+    "sha256": "e59f85dfe266c562f9661f0f99d5da70e6e776a276e9958278c052c0a49479ff"
+  },
+  {
+    "path": "runs/pbhc_seed_panel_20260916/references/Roundhouse_kick.npz",
+    "bytes": 744105,
+    "sha256": "cf1da348dfa3d4f34963c0972743878e8836e9c8fcdc01baa7b52f4d8ff1526b"
+  },
+  {
+    "path": "runs/pbhc_seed_panel_20260916/references/Side_kick.npz",
+    "bytes": 877335,
+    "sha256": "7611375a9be4fae69b764a39eb0380990d283be7979f8f3712e9e5f37deb4c87"
+  },
+  {
+    "path": "runs/pbhc_seed_twist_20260916/Bruce_Lee_pose/metrics.json",
+    "bytes": 2860,
+    "sha256": "9d0fff6e0715be63c6a879d581523f154476d745262754c1efdbb17bcf05ad2d"
+  },
+  {
+    "path": "runs/pbhc_seed_twist_20260916/Bruce_Lee_pose/rollout.npz",
+    "bytes": 243670,
+    "sha256": "ba8cabeaa566ec115db276c563efb3396a43625d48d8a2d4d7cce3cfef73b160"
+  },
+  {
+    "path": "runs/pbhc_seed_twist_20260916/COMPLETE.json",
+    "bytes": 16,
+    "sha256": "011c99b0d0af1f6378b2d9c07611c56208858b9dce8a57ccb5472ce43cc5d81b"
+  },
+  {
+    "path": "runs/pbhc_seed_twist_20260916/Charleston_dance/metrics.json",
+    "bytes": 2846,
+    "sha256": "2601c4fbc2aec07a5b6bf33f69387ca72ed1009bfab0d885dc9f35558794fac8"
+  },
+  {
+    "path": "runs/pbhc_seed_twist_20260916/Charleston_dance/rollout.npz",
+    "bytes": 464049,
+    "sha256": "6cfd93f48a45a02bb4ab60c3497697be9e2e4d1dde887941c2a7b51be6017fc3"
+  },
+  {
+    "path": "runs/pbhc_seed_twist_20260916/Hooks_punch/metrics.json",
+    "bytes": 2839,
+    "sha256": "e72801d30460a9835b9a2dc23b07bca6d958cbb8c69eddea9a7a3b1b4a75cc71"
+  },
+  {
+    "path": "runs/pbhc_seed_twist_20260916/Hooks_punch/rollout.npz",
+    "bytes": 129814,
+    "sha256": "fed17ea3aef06a1fff0cbe60614f8e8dd46994d5d21e493b891d017976fcf65a"
+  },
+  {
+    "path": "runs/pbhc_seed_twist_20260916/Horse-stance_pose/metrics.json",
+    "bytes": 2859,
+    "sha256": "04e793c3438309d5f2a35cdbf27d95ef59c14cd435aa7cc9726d60c4635927e3"
+  },
+  {
+    "path": "runs/pbhc_seed_twist_20260916/Horse-stance_pose/rollout.npz",
+    "bytes": 153849,
+    "sha256": "d80e7d1be49d88a0e87a3610815fcfe61755c9c286110d94c733342b9d6edccd"
+  },
+  {
+    "path": "runs/pbhc_seed_twist_20260916/Horse-stance_punch/metrics.json",
+    "bytes": 2848,
+    "sha256": "2d99a351efb92d9b24a790ac4f8acb212364c0796847de0dc7aa923cbe1032bd"
+  },
+  {
+    "path": "runs/pbhc_seed_twist_20260916/Horse-stance_punch/rollout.npz",
+    "bytes": 147187,
+    "sha256": "329140351cd2d01441447a469f061eca52ea87f4ea83b5c652dcb08c36e0c83f"
+  },
+  {
+    "path": "runs/pbhc_seed_twist_20260916/Roundhouse_kick/metrics.json",
+    "bytes": 2857,
+    "sha256": "14d59b05fe199a0a58a3e9ba76994d4f5691bbe960f59b2fceb4f89d0543165e"
+  },
+  {
+    "path": "runs/pbhc_seed_twist_20260916/Roundhouse_kick/rollout.npz",
+    "bytes": 114898,
+    "sha256": "e3f2137aca47deb6e114b35e4e69e72892ceaab09ac7d4a4c9091fe390d96523"
+  },
+  {
+    "path": "runs/pbhc_seed_twist_20260916/Side_kick/metrics.json",
+    "bytes": 2839,
+    "sha256": "12901f2ec99ac4a6052a5a163ddf2157f165e7f47660e91d0166f411e239183d"
+  },
+  {
+    "path": "runs/pbhc_seed_twist_20260916/Side_kick/rollout.npz",
+    "bytes": 131960,
+    "sha256": "3ce84402a708349d4b478fad1b116e354f9b56ff23a1a6afc6b680465f25492d"
+  },
+  {
+    "path": "runs/pbhc_seed_twist_20260916/protocol.json",
+    "bytes": 553,
+    "sha256": "c8566e1068f0ab5785f517984e9c548a305c24d030174383ff5f7baf229c2194"
+  },
+  {
+    "path": "runs/pbhc_seed_twist_20260916/queue.json",
+    "bytes": 4006,
+    "sha256": "929ccce8dd074945db5b9075f9d390512a031daaa4764bab8d4e694307ab677d"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/COMPLETE_0.json",
+    "bytes": 20,
+    "sha256": "fdd4e3824a3348af335604586cadfe49fc9e3d0bfc0c7be779736300146a6bd9"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/COMPLETE_1.json",
+    "bytes": 20,
+    "sha256": "fdd4e3824a3348af335604586cadfe49fc9e3d0bfc0c7be779736300146a6bd9"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/protocol.json",
+    "bytes": 6870,
+    "sha256": "c26a06c51bcba7d9fede1cab485d207f7c71715501d8bad2b8c1493c942fd17d"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/queue_0.json",
+    "bytes": 4931,
+    "sha256": "df3c0f0ccb4c8088f3a0e68408faf31296e3a21b58f186a637189946dc32dff5"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/queue_1.json",
+    "bytes": 5060,
+    "sha256": "5d0aafd8d862d8ea28fdc5cf72445ee3c96042d46f128a1d1f1a3945a76d2165"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/reference_quality.json",
+    "bytes": 10763,
+    "sha256": "b1d25a7c801afce6d278cb5d9f200035246f7930b04eb838f6449c90ad0b7d32"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/references/Hooks_punch_bounded_plain.npz",
+    "bytes": 863867,
+    "sha256": "3528585bc0ec540fc6f6562f9ad295e41e511de9b3c904b889602023192797ee"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/references/Hooks_punch_grounding_ema.npz",
+    "bytes": 863144,
+    "sha256": "c24e7251c00d9c9d6ea33846392107dc6a7600f4f532170b7b69533caf2ab4fe"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/references/Hooks_punch_phase_fidelity.npz",
+    "bytes": 863843,
+    "sha256": "43988727349dc2d172e073eb9f482fd5973917515e15f52d9f94bd8341279404"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/references/Hooks_punch_raw.npz",
+    "bytes": 862102,
+    "sha256": "c4a07a2ce73a6c7b13e6cabbde584946fce27d5507a31aa748ea52e72f617cbb"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/references/Horse-stance_punch_bounded_plain.npz",
+    "bytes": 982318,
+    "sha256": "9f2c3ff943967794b030cb8297aa76545c93df09f28f4e79755e5df2cedfa09e"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/references/Horse-stance_punch_grounding_ema.npz",
+    "bytes": 981138,
+    "sha256": "b13905edc10a0a2ea83954969bf3046704176c6bab0dfcf43245efe124231817"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/references/Horse-stance_punch_phase_fidelity.npz",
+    "bytes": 982241,
+    "sha256": "e5bedf3d27b26d0fe6d62419649a8f0335cb424691cdf00c02ad137dcf5325f1"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/references/Horse-stance_punch_raw.npz",
+    "bytes": 978612,
+    "sha256": "e59f85dfe266c562f9661f0f99d5da70e6e776a276e9958278c052c0a49479ff"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/references/Roundhouse_kick_bounded_plain.npz",
+    "bytes": 746375,
+    "sha256": "d49972d7ecf540d2732c2f9db6d31df4a89e7faf93809d416d0370c7d45c7e20"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/references/Roundhouse_kick_grounding_ema.npz",
+    "bytes": 745622,
+    "sha256": "699b66a62d60e9b7651cb0608fdd93ba384820e89f9b57116698962435903066"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/references/Roundhouse_kick_phase_fidelity.npz",
+    "bytes": 746295,
+    "sha256": "0fd6a3cf9d173549d2eb45a1c32d30c702a4682f6589e42dc14d4fd88184333f"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/references/Roundhouse_kick_raw.npz",
+    "bytes": 744105,
+    "sha256": "cf1da348dfa3d4f34963c0972743878e8836e9c8fcdc01baa7b52f4d8ff1526b"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/references/Side_kick_bounded_plain.npz",
+    "bytes": 879736,
+    "sha256": "b612629237358eec8ce58bc22f751798aef003a5eb4646f73fc59ed699cc940c"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/references/Side_kick_grounding_ema.npz",
+    "bytes": 878602,
+    "sha256": "42be2d3625b4e2f16568a66261eb08425f938932edf1f0da93c906b6616ddb91"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/references/Side_kick_phase_fidelity.npz",
+    "bytes": 879785,
+    "sha256": "956df89cb196ec8af11aa438817be955998d65422494e6b382d6f23ec0119baf"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/references/Side_kick_raw.npz",
+    "bytes": 877335,
+    "sha256": "7611375a9be4fae69b764a39eb0380990d283be7979f8f3712e9e5f37deb4c87"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Hooks_punch_bounded_plain/metrics.json",
+    "bytes": 2860,
+    "sha256": "3e38990fa16ba62e275a6ce1883cf6ecd22040d81043abe22181f6de8d92f025"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Hooks_punch_bounded_plain/rollout.npz",
+    "bytes": 130639,
+    "sha256": "ad70f75069c1b7e060f2c29018d05121b7f769d1e505f8521534394ba7709e91"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Hooks_punch_grounding_ema/metrics.json",
+    "bytes": 2879,
+    "sha256": "26ef1bca71a996ae82420f285da10f79ed18c19f3a06b2336f688f086a61bde3"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Hooks_punch_grounding_ema/rollout.npz",
+    "bytes": 130652,
+    "sha256": "9f516ccdbcf4e83bee6f21646f99bc3379fd8e2a81e89c3875e4daa9d3a45b73"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Hooks_punch_phase_fidelity/metrics.json",
+    "bytes": 2862,
+    "sha256": "6e0e9d5e1864c4edb07b1bce4c6864dd9770e05bb4b19796547bb584b8f0acaa"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Hooks_punch_phase_fidelity/rollout.npz",
+    "bytes": 130651,
+    "sha256": "70ffd0e2b9b086a15f2c3149056cfdb6750e4c7050241ee808342bd5d45dbe68"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Hooks_punch_raw/metrics.json",
+    "bytes": 2849,
+    "sha256": "e3a177b7ce056cb3320f8bb55329430556fe04b260316d8861cfe033a287c52a"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Hooks_punch_raw/rollout.npz",
+    "bytes": 129814,
+    "sha256": "fed17ea3aef06a1fff0cbe60614f8e8dd46994d5d21e493b891d017976fcf65a"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Horse-stance_punch_bounded_plain/metrics.json",
+    "bytes": 2867,
+    "sha256": "8f279c0caa87d8cde0dd6b30c2f67b70c072910fc2b6fa4853888655edd698bf"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Horse-stance_punch_bounded_plain/rollout.npz",
+    "bytes": 148140,
+    "sha256": "bdd731ac5d9cf962fa67197935ef845b89daf684e1aea1fae14433ce83229ffc"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Horse-stance_punch_grounding_ema/metrics.json",
+    "bytes": 2869,
+    "sha256": "433651d1f61f7f077b9bbf633c416ba4ac757ebd9535c2ef470e5796106255a7"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Horse-stance_punch_grounding_ema/rollout.npz",
+    "bytes": 148211,
+    "sha256": "2b646941631525f1ebc15c57438e9d9950e62cfe34a1b172ceaa8ec45d8e03df"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Horse-stance_punch_phase_fidelity/metrics.json",
+    "bytes": 2865,
+    "sha256": "3730f6192abe5afc8f850edefcbf7133ad923b0ffb9faa7679172d1067639aba"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Horse-stance_punch_phase_fidelity/rollout.npz",
+    "bytes": 148149,
+    "sha256": "f9dd711a1f7bb522e7a3fd2cd39f1366d814489964418004f652298398358370"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Horse-stance_punch_raw/metrics.json",
+    "bytes": 2858,
+    "sha256": "cfb9f0ff2c352b76945b2a8363c9fadca50b0a97c23ee3a0df59d58d70ff8fc8"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Horse-stance_punch_raw/rollout.npz",
+    "bytes": 147187,
+    "sha256": "329140351cd2d01441447a469f061eca52ea87f4ea83b5c652dcb08c36e0c83f"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Roundhouse_kick_bounded_plain/metrics.json",
+    "bytes": 2877,
+    "sha256": "0e6caa83c2bc3d23ac00d66ebcfe694b778d649af2f23ee966f45a38afa2267b"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Roundhouse_kick_bounded_plain/rollout.npz",
+    "bytes": 115593,
+    "sha256": "5e988306589822b9daa5c34115de181aef5c1b64382efd75505072b98a963bed"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Roundhouse_kick_grounding_ema/metrics.json",
+    "bytes": 2865,
+    "sha256": "8a236c1821061599e939a24aa99a5d7b1bb169d09f92ba9f55645b2f20180dd7"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Roundhouse_kick_grounding_ema/rollout.npz",
+    "bytes": 115518,
+    "sha256": "3007da8e9860f9b80410ddf298831ef602359c8179a01db7a65f262ac4e144fe"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Roundhouse_kick_phase_fidelity/metrics.json",
+    "bytes": 2880,
+    "sha256": "5ea948465c5bb9e138b2d609378c6970d0ed55e9116cf61273e302c8d05b73f8"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Roundhouse_kick_phase_fidelity/rollout.npz",
+    "bytes": 115614,
+    "sha256": "2d9453373e680bcaa0a99fa135d5e0a9138ec882ddb540413b8359934d13048d"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Roundhouse_kick_raw/metrics.json",
+    "bytes": 2867,
+    "sha256": "2549db587c67d5a4e8a26e2d1b841a50f87c1a20c614eb3d81b6c30543043c89"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Roundhouse_kick_raw/rollout.npz",
+    "bytes": 114898,
+    "sha256": "e3f2137aca47deb6e114b35e4e69e72892ceaab09ac7d4a4c9091fe390d96523"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Side_kick_bounded_plain/metrics.json",
+    "bytes": 2858,
+    "sha256": "27b7852a601264c838e445ffd24a40820fe1937c5478334ba8231cf1d134097d"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Side_kick_bounded_plain/rollout.npz",
+    "bytes": 132836,
+    "sha256": "568c7341df929247cccff6365b421feba8f7990867d95aebd771466d864ee5eb"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Side_kick_grounding_ema/metrics.json",
+    "bytes": 2859,
+    "sha256": "dcf1820cc4260444e17d9378d187d086ccc5d8180571bc4af3027ad743e2f13f"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Side_kick_grounding_ema/rollout.npz",
+    "bytes": 132835,
+    "sha256": "f92d157c5affaa56f3a6b9a04d0827e000ffd3aef50e3e7f13d776115bbdb9a1"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Side_kick_phase_fidelity/metrics.json",
+    "bytes": 2861,
+    "sha256": "cf944a395b9d2fb5935412337b076193e074b6466fb8a3bf2880f51da9590a93"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Side_kick_phase_fidelity/rollout.npz",
+    "bytes": 132803,
+    "sha256": "a45d44d7ca62ddee6a5817a36b4f8f1cb916b249e6978a8a324ac88238b0d710"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Side_kick_raw/metrics.json",
+    "bytes": 2849,
+    "sha256": "3c874dc1a440ceca61bac327afab7e1037faee8a543f049358a659cc43a86502"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/results/Side_kick_raw/rollout.npz",
+    "bytes": 131960,
+    "sha256": "3ce84402a708349d4b478fad1b116e354f9b56ff23a1a6afc6b680465f25492d"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/summary.csv",
+    "bytes": 5440,
+    "sha256": "3f565fad61f2b31082c2027182bdfa5dc5d16f41047bd200547107b1a1b1704c"
+  },
+  {
+    "path": "runs/pbhc_refinement_pilot_20260916/summary.json",
+    "bytes": 17351,
+    "sha256": "c2f5e614bff4d66c8df4fef704c135f227291a66cd59d26f6cd705f17a438060"
+  }
+]

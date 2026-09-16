@@ -1,0 +1,17 @@
+{
+  "purpose": "Pinned official PBHC MuJoCo headless deployment; not IsaacGym training",
+  "upstream": "https://github.com/TeleHuman/PBHC",
+  "commit": "ffac5cded61fe78b39b051f09ac2ed0f6a1ccea0",
+  "python": "3.10.21 inherited; official recipe suggests 3.8",
+  "environment": ".venv-pbhc-inference; isolated overlay, existing environments read-only",
+  "borrowed_site_packages": ".venv/lib/python3.10/site-packages",
+  "packages": {
+    "numpy": "1.24.4", "mujoco": "3.2.3", "onnxruntime": "1.20.1",
+    "onnx": "1.17.0", "loguru": "0.7.3", "rich": "13.9.4",
+    "easydict": "1.13", "numpy-stl": "3.2.0", "open3d": "0.18.0",
+    "mujoco-python-viewer": "0.1.4", "ipdb": "0.13.13"
+  },
+  "limits": {"download_gib": 3, "cpus": 4, "gpus": 1},
+  "validation": "Seeded CUDA matrix backward plus official ONNX policy actual MuJoCo rollout; independent documented invocation required",
+  "changes_allowed": "Headless bounded orchestration and path relocation only; official controller remains unedited"
+}

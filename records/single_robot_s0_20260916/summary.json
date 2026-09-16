@@ -1,0 +1,40 @@
+{
+  "full": {
+    "n": 6,
+    "no_fall": 2,
+    "strict_pass": 0,
+    "mean_strict_prefix_s": 1.9266666666666665,
+    "total_seconds": 160.9
+  },
+  "prefix150": {
+    "n": 6,
+    "no_fall": 6,
+    "strict_pass": 2,
+    "mean_strict_prefix_s": 1.33,
+    "total_seconds": 17.88
+  },
+  "initial_ground_offset": {
+    "n": 6,
+    "no_fall": 1,
+    "strict_pass": 0,
+    "mean_strict_prefix_s": 1.8066666666666666,
+    "total_seconds": 160.9
+  },
+  "standing_pass": true,
+  "progression_gate_pass": false,
+  "gpu": {
+    "0": {
+      "sampled_peak_memory_mib": 628,
+      "sampled_peak_util_percent": 5
+    },
+    "1": {
+      "sampled_peak_memory_mib": 382,
+      "sampled_peak_util_percent": 8
+    }
+  },
+  "batch_wall_s": 60.20974349975586,
+  "completed_cases": 19,
+  "artifact_integrity_checked": true,
+  "training_steps": 0,
+  "scope": "S0 only; no synthetic-data-utility claim"
+}

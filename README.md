@@ -2,6 +2,8 @@
 
 ## 当前进度（2026-09-16）
 
+**单机器人路线：官方KungfuBot/PBHC马步及冲拳样例已复现，7条完整动作已审计，4条拳脚动作×4种数据修正完成16次固定TWIST对照。** 原始、有界修正和阶段保护均4/4未跌倒，但严格完成率均0/4；简单贴地组仅3/4未跌倒。踢腿缩幅和全局漂移仍未解决，未启动新增策略训练或宣称合成数据收益。详见[完整种子与修正实验报告](docs/pbhc_seed_refinement_results_20260916.md)、[此前S0负结果](docs/single_robot_s0_results_20260916.md)。
+
 **DuoBox 已按用户要求停用，BM2 改为 ReMoCap／Ninjutsu。** 官方数据已下载、CRC/SHA256 校验通过；41/10/28 段录制分别用于训练/验证/测试，实际时间戳核验后统一到20 fps。InterGen-body-adapted 与 ReMoS-body-adapted 两组200步试运行通过，正式3种子×5000步训练及后续评测队列已启动。采用同一22关节表示和主动者条件，接触组件仅从训练库检索候选，不能读取测试回应者来修正输出。这是适配基准与组件实验，不是原论文表格复现或完整机器人学习收益证明。见[执行方案](docs/remocap_execution_20260916.md)、[新协议](configs/remocap_protocol_v2.json)及[记录目录](records/remocap_20260916)。
 
 BM1: Motion Generation Benchmark Evaluation（动作生成基准评估）两组各20轮已完成。原始TIMotion与文本条件适配器的FID分别为5.5111/5.5344，Top-1文本匹配准确率49.12%/48.53%；未显示适配器整体收益。原始日志、压缩配对轨迹、数据/代码校验和统计结果已归档，见[BM1结果](records/bm1_20260915_v1/suite_result.md)。本轮是1099条可用InterHuman测试样本的评价，非完整官方数据复现，非完整方案验证。

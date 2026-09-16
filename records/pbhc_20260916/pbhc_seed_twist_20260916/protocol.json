@@ -1,0 +1,18 @@
+{
+  "scope": "Cross-controller compatibility; not PBHC reproduction or synthetic-data utility",
+  "selection": "All seven official bundled motions",
+  "seed": 123,
+  "policy": "Unchanged official pretrained TWIST",
+  "reference_conversion": "23DOF to25DOF by name with neutral wrist rolls,30Hz to50Hz,full duration",
+  "all_sources_development_only": true,
+  "training_steps": 0,
+  "cases": [
+    "Bruce_Lee_pose",
+    "Charleston_dance",
+    "Hooks_punch",
+    "Horse-stance_pose",
+    "Horse-stance_punch",
+    "Roundhouse_kick",
+    "Side_kick"
+  ]
+}

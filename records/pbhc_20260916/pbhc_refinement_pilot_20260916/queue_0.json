@@ -1,0 +1,130 @@
+[
+  {
+    "id": "Hooks_punch_raw",
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Hooks_punch_raw.npz",
+      "--device",
+      "cuda:0",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/results/Hooks_punch_raw"
+    ],
+    "exit": 0,
+    "elapsed_s": 4.200079679489136
+  },
+  {
+    "id": "Hooks_punch_bounded_plain",
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Hooks_punch_bounded_plain.npz",
+      "--device",
+      "cuda:0",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/results/Hooks_punch_bounded_plain"
+    ],
+    "exit": 0,
+    "elapsed_s": 4.16993260383606
+  },
+  {
+    "id": "Horse-stance_punch_raw",
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Horse-stance_punch_raw.npz",
+      "--device",
+      "cuda:0",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/results/Horse-stance_punch_raw"
+    ],
+    "exit": 0,
+    "elapsed_s": 4.3024585247039795
+  },
+  {
+    "id": "Horse-stance_punch_bounded_plain",
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Horse-stance_punch_bounded_plain.npz",
+      "--device",
+      "cuda:0",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/results/Horse-stance_punch_bounded_plain"
+    ],
+    "exit": 0,
+    "elapsed_s": 4.2981297969818115
+  },
+  {
+    "id": "Roundhouse_kick_raw",
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Roundhouse_kick_raw.npz",
+      "--device",
+      "cuda:0",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/results/Roundhouse_kick_raw"
+    ],
+    "exit": 0,
+    "elapsed_s": 3.9438769817352295
+  },
+  {
+    "id": "Roundhouse_kick_bounded_plain",
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Roundhouse_kick_bounded_plain.npz",
+      "--device",
+      "cuda:0",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/results/Roundhouse_kick_bounded_plain"
+    ],
+    "exit": 0,
+    "elapsed_s": 3.9764811992645264
+  },
+  {
+    "id": "Side_kick_raw",
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Side_kick_raw.npz",
+      "--device",
+      "cuda:0",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/results/Side_kick_raw"
+    ],
+    "exit": 0,
+    "elapsed_s": 4.030689239501953
+  },
+  {
+    "id": "Side_kick_bounded_plain",
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Side_kick_bounded_plain.npz",
+      "--device",
+      "cuda:0",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/results/Side_kick_bounded_plain"
+    ],
+    "exit": 0,
+    "elapsed_s": 4.051315546035767
+  }
+]

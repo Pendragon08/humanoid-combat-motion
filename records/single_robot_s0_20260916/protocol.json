@@ -1,0 +1,319 @@
+{
+  "stage": "S0 engineering acceptance; not S1-S4 or official PBHC reproduction",
+  "selection": "First training motion of first six title groups in frozen manifest order; no score-based choice",
+  "arms": [
+    "full",
+    "prefix150",
+    "initial_ground_offset"
+  ],
+  "ground_offset": "If initial ground penetration >1mm, raise every frame by penetration+2mm; no other motion change",
+  "labels": "Whole martial-arts routines; no verified jab/hook/kick labels or phase/contact truth",
+  "reference_conversion": "Original 50Hz retained, wxyz quaternion normalized, initial xy origin removed; official TWIST 25DOF FK, finite-difference velocities, no speed smoothing",
+  "evaluation": "Unchanged evaluate_twist.py frozen policy, nominal deterministic physics; full-sequence metrics including post-fall errors",
+  "strict_definition": "Every frame joint MAE<0.3rad AND root error<0.15m AND tracked body error<0.15m AND pelvis height>=0.35m",
+  "cropping_caveat": "prefix vs full has unequal duration and is not an improvement claim",
+  "source_partition": "Training-only pilot; val/test not used for tuning or claimed independent generalization",
+  "progression_gate": "Standing witness passes AND at least 5/6 unmodified full motions strict-pass before S4; semantic source audit independently required",
+  "training_steps": 0,
+  "seed": 123,
+  "env_spec_sha256_8": "86ed9bff",
+  "sources": [
+    {
+      "id": "199",
+      "source_group": "段位制长拳六段单练套路",
+      "split": "train",
+      "raw_sha256": "e4a567058d6a4e4a0b59ea1815ffec02a9dd782cc4615cbf84271f3bdbb86148",
+      "full_frames": 453,
+      "full_seconds": 9.04,
+      "prefix_seconds": 2.98,
+      "initial_ground_penetration_m": 0.0038625168308614273,
+      "constant_height_offset_m": 0.005862516830861427,
+      "joint_limit_violation_frame_fraction": 0.5805739514348786,
+      "dropped_joints": [
+        "left_wrist_pitch_joint",
+        "left_wrist_yaw_joint",
+        "right_wrist_pitch_joint",
+        "right_wrist_yaw_joint"
+      ],
+      "raw_peak_joint_speed_rad_s": 13.518907628249881
+    },
+    {
+      "id": "230",
+      "source_group": "第一套国际武术竞赛套路-长拳-第三段（动作名称）",
+      "split": "train",
+      "raw_sha256": "67ae9d0512f31cfd8f6ae500477782cad1a3eb025aed2978a2e37917207950ea",
+      "full_frames": 429,
+      "full_seconds": 8.56,
+      "prefix_seconds": 2.98,
+      "initial_ground_penetration_m": 0.04550547784673304,
+      "constant_height_offset_m": 0.04750547784673304,
+      "joint_limit_violation_frame_fraction": 0.2634032634032634,
+      "dropped_joints": [
+        "left_wrist_pitch_joint",
+        "left_wrist_yaw_joint",
+        "right_wrist_pitch_joint",
+        "right_wrist_yaw_joint"
+      ],
+      "raw_peak_joint_speed_rad_s": 9.447172486299465
+    },
+    {
+      "id": "235",
+      "source_group": "第一套国际武术竞赛套路-南拳-完整版-国一南拳#桂平市竞技武术训练馆#桂平市竞技武术队",
+      "split": "train",
+      "raw_sha256": "b35bc3d3daa845324974a797e6cd9a25668da94ba1cb20e1db133addf05078c1",
+      "full_frames": 1066,
+      "full_seconds": 21.3,
+      "prefix_seconds": 2.98,
+      "initial_ground_penetration_m": 0.023602990367745425,
+      "constant_height_offset_m": 0.025602990367745423,
+      "joint_limit_violation_frame_fraction": 0.4718574108818011,
+      "dropped_joints": [
+        "left_wrist_pitch_joint",
+        "left_wrist_yaw_joint",
+        "right_wrist_pitch_joint",
+        "right_wrist_yaw_joint"
+      ],
+      "raw_peak_joint_speed_rad_s": 13.871725220356879
+    },
+    {
+      "id": "292",
+      "source_group": "太极拳",
+      "split": "train",
+      "raw_sha256": "af5577900957080bb15cecccfece7c20391f433885d1301d0f9638f572aad519",
+      "full_frames": 2179,
+      "full_seconds": 43.56,
+      "prefix_seconds": 2.98,
+      "initial_ground_penetration_m": 0.0534623133161273,
+      "constant_height_offset_m": 0.055462313316127304,
+      "joint_limit_violation_frame_fraction": 0.43322625057365766,
+      "dropped_joints": [
+        "left_wrist_pitch_joint",
+        "left_wrist_yaw_joint",
+        "right_wrist_pitch_joint",
+        "right_wrist_yaw_joint"
+      ],
+      "raw_peak_joint_speed_rad_s": 11.895545442565647
+    },
+    {
+      "id": "332",
+      "source_group": "42式太极拳-第三段 #桂平市竞技武术训练馆 #桂平市竞技武术队",
+      "split": "train",
+      "raw_sha256": "cbccd8b3eaa0255e2388ad5a939b7e8542e0b3c648a74ce6fa9b0681fade98f8",
+      "full_frames": 2243,
+      "full_seconds": 44.84,
+      "prefix_seconds": 2.98,
+      "initial_ground_penetration_m": 0.018878972801640744,
+      "constant_height_offset_m": 0.020878972801640742,
+      "joint_limit_violation_frame_fraction": 0.4311190370040125,
+      "dropped_joints": [
+        "left_wrist_pitch_joint",
+        "left_wrist_yaw_joint",
+        "right_wrist_pitch_joint",
+        "right_wrist_yaw_joint"
+      ],
+      "raw_peak_joint_speed_rad_s": 10.560309054568556
+    },
+    {
+      "id": "481",
+      "source_group": "42式太极拳-第二段 #桂平市竞技武术训练馆 #桂平市竞技武术队",
+      "split": "train",
+      "raw_sha256": "296cde1760623df032908aaa2e8a46d2c550b8036e26571575f0654e56cfd187",
+      "full_frames": 1681,
+      "full_seconds": 33.6,
+      "prefix_seconds": 2.98,
+      "initial_ground_penetration_m": 0.03809005970692244,
+      "constant_height_offset_m": 0.04009005970692244,
+      "joint_limit_violation_frame_fraction": 0.25639500297441997,
+      "dropped_joints": [
+        "left_wrist_pitch_joint",
+        "left_wrist_yaw_joint",
+        "right_wrist_pitch_joint",
+        "right_wrist_yaw_joint"
+      ],
+      "raw_peak_joint_speed_rad_s": 6.682211238229469
+    }
+  ],
+  "code_sha256": {
+    "scripts/single_robot_s0.py": "019a9e531573cfa3a49368dbe1e7b0d6df9d2fe4af71fba79bd23aab2e18886a",
+    "scripts/evaluate_twist.py": "565e3c0c539b4962f6b178fcb2061529180f6479978899f8b99ab8d6fcd31079",
+    "combat/twist_tracking.py": "42a20f7f2e2561e7711bda6faaf8db52918c56601a2cbd27cf8c4ad0e7e0cdf0"
+  },
+  "cases": [
+    {
+      "id": "standing",
+      "options": [
+        "--standing",
+        "--seconds",
+        "5"
+      ]
+    },
+    {
+      "id": "199_full",
+      "source_id": "199",
+      "arm": "full",
+      "options": [
+        "--reference",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/199_full.npz"
+      ]
+    },
+    {
+      "id": "199_prefix150",
+      "source_id": "199",
+      "arm": "prefix150",
+      "options": [
+        "--reference",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/199_prefix150.npz"
+      ]
+    },
+    {
+      "id": "199_initial_ground_offset",
+      "source_id": "199",
+      "arm": "initial_ground_offset",
+      "options": [
+        "--reference",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/199_initial_ground_offset.npz"
+      ]
+    },
+    {
+      "id": "230_full",
+      "source_id": "230",
+      "arm": "full",
+      "options": [
+        "--reference",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/230_full.npz"
+      ]
+    },
+    {
+      "id": "230_prefix150",
+      "source_id": "230",
+      "arm": "prefix150",
+      "options": [
+        "--reference",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/230_prefix150.npz"
+      ]
+    },
+    {
+      "id": "230_initial_ground_offset",
+      "source_id": "230",
+      "arm": "initial_ground_offset",
+      "options": [
+        "--reference",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/230_initial_ground_offset.npz"
+      ]
+    },
+    {
+      "id": "235_full",
+      "source_id": "235",
+      "arm": "full",
+      "options": [
+        "--reference",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/235_full.npz"
+      ]
+    },
+    {
+      "id": "235_prefix150",
+      "source_id": "235",
+      "arm": "prefix150",
+      "options": [
+        "--reference",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/235_prefix150.npz"
+      ]
+    },
+    {
+      "id": "235_initial_ground_offset",
+      "source_id": "235",
+      "arm": "initial_ground_offset",
+      "options": [
+        "--reference",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/235_initial_ground_offset.npz"
+      ]
+    },
+    {
+      "id": "292_full",
+      "source_id": "292",
+      "arm": "full",
+      "options": [
+        "--reference",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/292_full.npz"
+      ]
+    },
+    {
+      "id": "292_prefix150",
+      "source_id": "292",
+      "arm": "prefix150",
+      "options": [
+        "--reference",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/292_prefix150.npz"
+      ]
+    },
+    {
+      "id": "292_initial_ground_offset",
+      "source_id": "292",
+      "arm": "initial_ground_offset",
+      "options": [
+        "--reference",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/292_initial_ground_offset.npz"
+      ]
+    },
+    {
+      "id": "332_full",
+      "source_id": "332",
+      "arm": "full",
+      "options": [
+        "--reference",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/332_full.npz"
+      ]
+    },
+    {
+      "id": "332_prefix150",
+      "source_id": "332",
+      "arm": "prefix150",
+      "options": [
+        "--reference",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/332_prefix150.npz"
+      ]
+    },
+    {
+      "id": "332_initial_ground_offset",
+      "source_id": "332",
+      "arm": "initial_ground_offset",
+      "options": [
+        "--reference",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/332_initial_ground_offset.npz"
+      ]
+    },
+    {
+      "id": "481_full",
+      "source_id": "481",
+      "arm": "full",
+      "options": [
+        "--reference",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/481_full.npz"
+      ]
+    },
+    {
+      "id": "481_prefix150",
+      "source_id": "481",
+      "arm": "prefix150",
+      "options": [
+        "--reference",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/481_prefix150.npz"
+      ]
+    },
+    {
+      "id": "481_initial_ground_offset",
+      "source_id": "481",
+      "arm": "initial_ground_offset",
+      "options": [
+        "--reference",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/481_initial_ground_offset.npz"
+      ]
+    }
+  ],
+  "limitations": [
+    "Policy pretraining overlap unknown",
+    "25DOF model omits four wrist joints",
+    "Not real robot",
+    "A failed frozen policy does not prove a motion is physically impossible"
+  ]
+}

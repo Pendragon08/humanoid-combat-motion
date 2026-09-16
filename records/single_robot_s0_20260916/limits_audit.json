@@ -1,0 +1,428 @@
+{
+  "tolerance_rad": 0.01,
+  "target_model": "official TWIST25DOF",
+  "source_model": "GMR29DOF; mapped by joint name",
+  "scope": "Geometric range comparison; no torque feasibility conclusion",
+  "motions": [
+    {
+      "id": "199",
+      "joints": [
+        {
+          "name": "left_ankle_pitch_joint",
+          "lower_rad": -0.87267,
+          "upper_rad": 0.5236,
+          "observed_min_rad": -0.8786062203064033,
+          "observed_max_rad": 0.5205720182580725,
+          "max_excess_rad": 0.005936220306403395,
+          "fraction_above_0p01_rad": 0.0
+        },
+        {
+          "name": "left_ankle_roll_joint",
+          "lower_rad": -0.2618,
+          "upper_rad": 0.2618,
+          "observed_min_rad": -0.28953848920229136,
+          "observed_max_rad": 0.10811946685275582,
+          "max_excess_rad": 0.027738489202291383,
+          "fraction_above_0p01_rad": 0.052980132450331126
+        },
+        {
+          "name": "right_knee_joint",
+          "lower_rad": -0.087267,
+          "upper_rad": 2.8798,
+          "observed_min_rad": -0.09085133313863812,
+          "observed_max_rad": 1.8110162938793115,
+          "max_excess_rad": 0.003584333138638124,
+          "fraction_above_0p01_rad": 0.0
+        },
+        {
+          "name": "right_ankle_pitch_joint",
+          "lower_rad": -0.87267,
+          "upper_rad": 0.5236,
+          "observed_min_rad": -0.8949792481815132,
+          "observed_max_rad": 0.2114080898566145,
+          "max_excess_rad": 0.022309248181513253,
+          "fraction_above_0p01_rad": 0.01545253863134658
+        },
+        {
+          "name": "right_ankle_roll_joint",
+          "lower_rad": -0.2618,
+          "upper_rad": 0.2618,
+          "observed_min_rad": -0.017833720186974537,
+          "observed_max_rad": 0.2813112346391844,
+          "max_excess_rad": 0.019511234639184416,
+          "fraction_above_0p01_rad": 0.013245033112582781
+        },
+        {
+          "name": "waist_roll_joint",
+          "lower_rad": -0.52,
+          "upper_rad": 0.52,
+          "observed_min_rad": -0.5279643903934846,
+          "observed_max_rad": 0.3340386528655338,
+          "max_excess_rad": 0.007964390393484622,
+          "fraction_above_0p01_rad": 0.0
+        },
+        {
+          "name": "waist_pitch_joint",
+          "lower_rad": -0.52,
+          "upper_rad": 0.52,
+          "observed_min_rad": -0.06246025831383349,
+          "observed_max_rad": 0.52173208973591,
+          "max_excess_rad": 0.0017320897359099918,
+          "fraction_above_0p01_rad": 0.0
+        },
+        {
+          "name": "left_shoulder_roll_joint",
+          "lower_rad": -1.5882,
+          "upper_rad": 2.2515,
+          "observed_min_rad": 0.6598437447466657,
+          "observed_max_rad": 2.3408737395338757,
+          "max_excess_rad": 0.08937373953387562,
+          "fraction_above_0p01_rad": 0.09271523178807947
+        },
+        {
+          "name": "right_shoulder_roll_joint",
+          "lower_rad": -2.2515,
+          "upper_rad": 1.5882,
+          "observed_min_rad": -2.365596679163365,
+          "observed_max_rad": -0.4958157197713752,
+          "max_excess_rad": 0.11409667916336508,
+          "fraction_above_0p01_rad": 0.08830022075055188
+        }
+      ],
+      "any_violation_above_0p01_rad_frame_fraction": 0.23841059602649006,
+      "peak_joint_speed_rad_s": 13.518907628249881
+    },
+    {
+      "id": "230",
+      "joints": [
+        {
+          "name": "left_ankle_pitch_joint",
+          "lower_rad": -0.87267,
+          "upper_rad": 0.5236,
+          "observed_min_rad": -0.8995240389766792,
+          "observed_max_rad": 0.18112482189242796,
+          "max_excess_rad": 0.026854038976679262,
+          "fraction_above_0p01_rad": 0.027972027972027972
+        },
+        {
+          "name": "left_ankle_roll_joint",
+          "lower_rad": -0.2618,
+          "upper_rad": 0.2618,
+          "observed_min_rad": -0.2678879743373645,
+          "observed_max_rad": 0.19387343770087295,
+          "max_excess_rad": 0.006087974337364521,
+          "fraction_above_0p01_rad": 0.0
+        },
+        {
+          "name": "right_knee_joint",
+          "lower_rad": -0.087267,
+          "upper_rad": 2.8798,
+          "observed_min_rad": -0.11884699298907872,
+          "observed_max_rad": 2.2293675790184273,
+          "max_excess_rad": 0.03157999298907872,
+          "fraction_above_0p01_rad": 0.002331002331002331
+        },
+        {
+          "name": "right_ankle_pitch_joint",
+          "lower_rad": -0.87267,
+          "upper_rad": 0.5236,
+          "observed_min_rad": -0.9140131391509616,
+          "observed_max_rad": 0.5169355407114967,
+          "max_excess_rad": 0.04134313915096166,
+          "fraction_above_0p01_rad": 0.05128205128205128
+        },
+        {
+          "name": "right_ankle_roll_joint",
+          "lower_rad": -0.2618,
+          "upper_rad": 0.2618,
+          "observed_min_rad": -0.26577144859455065,
+          "observed_max_rad": 0.2806589051060767,
+          "max_excess_rad": 0.01885890510607674,
+          "fraction_above_0p01_rad": 0.018648018648018648
+        },
+        {
+          "name": "waist_roll_joint",
+          "lower_rad": -0.52,
+          "upper_rad": 0.52,
+          "observed_min_rad": -0.37775629259874965,
+          "observed_max_rad": 0.5407971189726353,
+          "max_excess_rad": 0.020797118972635253,
+          "fraction_above_0p01_rad": 0.009324009324009324
+        },
+        {
+          "name": "waist_pitch_joint",
+          "lower_rad": -0.52,
+          "upper_rad": 0.52,
+          "observed_min_rad": -0.39429904600350363,
+          "observed_max_rad": 0.5626346497044278,
+          "max_excess_rad": 0.04263464970442776,
+          "fraction_above_0p01_rad": 0.08624708624708624
+        },
+        {
+          "name": "right_shoulder_roll_joint",
+          "lower_rad": -2.2515,
+          "upper_rad": 1.5882,
+          "observed_min_rad": -2.3039131092613925,
+          "observed_max_rad": -0.4327804413833187,
+          "max_excess_rad": 0.05241310926139242,
+          "fraction_above_0p01_rad": 0.02564102564102564
+        }
+      ],
+      "any_violation_above_0p01_rad_frame_fraction": 0.1351981351981352,
+      "peak_joint_speed_rad_s": 9.447172486299465
+    },
+    {
+      "id": "235",
+      "joints": [
+        {
+          "name": "left_ankle_pitch_joint",
+          "lower_rad": -0.87267,
+          "upper_rad": 0.5236,
+          "observed_min_rad": -0.8814950671908199,
+          "observed_max_rad": -0.2791745460679802,
+          "max_excess_rad": 0.00882506719081999,
+          "fraction_above_0p01_rad": 0.0
+        },
+        {
+          "name": "left_ankle_roll_joint",
+          "lower_rad": -0.2618,
+          "upper_rad": 0.2618,
+          "observed_min_rad": -0.2724023261719977,
+          "observed_max_rad": 0.09472008510450114,
+          "max_excess_rad": 0.010602326171997745,
+          "fraction_above_0p01_rad": 0.0028142589118198874
+        },
+        {
+          "name": "right_ankle_pitch_joint",
+          "lower_rad": -0.87267,
+          "upper_rad": 0.5236,
+          "observed_min_rad": -0.9487150777157343,
+          "observed_max_rad": -0.2440905729163833,
+          "max_excess_rad": 0.07604507771573432,
+          "fraction_above_0p01_rad": 0.010318949343339587
+        },
+        {
+          "name": "right_ankle_roll_joint",
+          "lower_rad": -0.2618,
+          "upper_rad": 0.2618,
+          "observed_min_rad": -0.039059781713648795,
+          "observed_max_rad": 0.2873608771992047,
+          "max_excess_rad": 0.025560877199204746,
+          "fraction_above_0p01_rad": 0.010318949343339587
+        },
+        {
+          "name": "waist_pitch_joint",
+          "lower_rad": -0.52,
+          "upper_rad": 0.52,
+          "observed_min_rad": -0.13082876412434655,
+          "observed_max_rad": 0.5389583014341427,
+          "max_excess_rad": 0.018958301434142677,
+          "fraction_above_0p01_rad": 0.017823639774859287
+        },
+        {
+          "name": "left_shoulder_roll_joint",
+          "lower_rad": -1.5882,
+          "upper_rad": 2.2515,
+          "observed_min_rad": 0.26519424249629653,
+          "observed_max_rad": 2.4255187042701305,
+          "max_excess_rad": 0.17401870427013044,
+          "fraction_above_0p01_rad": 0.0375234521575985
+        },
+        {
+          "name": "right_shoulder_roll_joint",
+          "lower_rad": -2.2515,
+          "upper_rad": 1.5882,
+          "observed_min_rad": -2.32518743024936,
+          "observed_max_rad": -0.3360851936734867,
+          "max_excess_rad": 0.07368743024935975,
+          "fraction_above_0p01_rad": 0.01594746716697936
+        }
+      ],
+      "any_violation_above_0p01_rad_frame_fraction": 0.08442776735459662,
+      "peak_joint_speed_rad_s": 13.871725220356879
+    },
+    {
+      "id": "292",
+      "joints": [
+        {
+          "name": "left_ankle_pitch_joint",
+          "lower_rad": -0.87267,
+          "upper_rad": 0.5236,
+          "observed_min_rad": -0.8969516722969164,
+          "observed_max_rad": 0.13893162815829124,
+          "max_excess_rad": 0.024281672296916468,
+          "fraction_above_0p01_rad": 0.004589261128958238
+        },
+        {
+          "name": "left_ankle_roll_joint",
+          "lower_rad": -0.2618,
+          "upper_rad": 0.2618,
+          "observed_min_rad": -0.28520982239050024,
+          "observed_max_rad": 0.21004767243600375,
+          "max_excess_rad": 0.023409822390500268,
+          "fraction_above_0p01_rad": 0.021569527306103717
+        },
+        {
+          "name": "right_ankle_pitch_joint",
+          "lower_rad": -0.87267,
+          "upper_rad": 0.5236,
+          "observed_min_rad": -0.9141540734943793,
+          "observed_max_rad": 0.2046452178636919,
+          "max_excess_rad": 0.041484073494379325,
+          "fraction_above_0p01_rad": 0.015603487838458009
+        },
+        {
+          "name": "right_ankle_roll_joint",
+          "lower_rad": -0.2618,
+          "upper_rad": 0.2618,
+          "observed_min_rad": -0.1281987559534357,
+          "observed_max_rad": 0.27898483644378913,
+          "max_excess_rad": 0.017184836443789153,
+          "fraction_above_0p01_rad": 0.006424965580541533
+        },
+        {
+          "name": "waist_pitch_joint",
+          "lower_rad": -0.52,
+          "upper_rad": 0.52,
+          "observed_min_rad": -0.1342372970072611,
+          "observed_max_rad": 0.5491327125576737,
+          "max_excess_rad": 0.02913271255767369,
+          "fraction_above_0p01_rad": 0.006883891693437357
+        },
+        {
+          "name": "right_shoulder_roll_joint",
+          "lower_rad": -2.2515,
+          "upper_rad": 1.5882,
+          "observed_min_rad": -2.302085309901889,
+          "observed_max_rad": -0.11898377266159071,
+          "max_excess_rad": 0.05058530990188892,
+          "fraction_above_0p01_rad": 0.006883891693437357
+        }
+      ],
+      "any_violation_above_0p01_rad_frame_fraction": 0.05736576411197797,
+      "peak_joint_speed_rad_s": 11.895545442565647
+    },
+    {
+      "id": "332",
+      "joints": [
+        {
+          "name": "left_ankle_pitch_joint",
+          "lower_rad": -0.87267,
+          "upper_rad": 0.5236,
+          "observed_min_rad": -0.892317834908793,
+          "observed_max_rad": 0.31569353059514177,
+          "max_excess_rad": 0.01964783490879307,
+          "fraction_above_0p01_rad": 0.010254123941150245
+        },
+        {
+          "name": "left_ankle_roll_joint",
+          "lower_rad": -0.2618,
+          "upper_rad": 0.2618,
+          "observed_min_rad": -0.26846183792250855,
+          "observed_max_rad": 0.2584931430940953,
+          "max_excess_rad": 0.006661837922508573,
+          "fraction_above_0p01_rad": 0.0
+        },
+        {
+          "name": "right_ankle_pitch_joint",
+          "lower_rad": -0.87267,
+          "upper_rad": 0.5236,
+          "observed_min_rad": -0.8873439081191833,
+          "observed_max_rad": 0.5423638938240561,
+          "max_excess_rad": 0.018763893824056188,
+          "fraction_above_0p01_rad": 0.008916629514043692
+        },
+        {
+          "name": "right_ankle_roll_joint",
+          "lower_rad": -0.2618,
+          "upper_rad": 0.2618,
+          "observed_min_rad": -0.19656335847744932,
+          "observed_max_rad": 0.28299937441510875,
+          "max_excess_rad": 0.021199374415108774,
+          "fraction_above_0p01_rad": 0.004458314757021846
+        },
+        {
+          "name": "waist_roll_joint",
+          "lower_rad": -0.52,
+          "upper_rad": 0.52,
+          "observed_min_rad": -0.5266266351566454,
+          "observed_max_rad": 0.5437206281381333,
+          "max_excess_rad": 0.02372062813813325,
+          "fraction_above_0p01_rad": 0.004012483281319661
+        },
+        {
+          "name": "waist_pitch_joint",
+          "lower_rad": -0.52,
+          "upper_rad": 0.52,
+          "observed_min_rad": -0.20086311021697154,
+          "observed_max_rad": 0.5333665595157131,
+          "max_excess_rad": 0.013366559515713083,
+          "fraction_above_0p01_rad": 0.0008916629514043691
+        },
+        {
+          "name": "left_shoulder_roll_joint",
+          "lower_rad": -1.5882,
+          "upper_rad": 2.2515,
+          "observed_min_rad": 0.13459218595097824,
+          "observed_max_rad": 2.2674171895911206,
+          "max_excess_rad": 0.01591718959112054,
+          "fraction_above_0p01_rad": 0.004012483281319661
+        },
+        {
+          "name": "right_shoulder_roll_joint",
+          "lower_rad": -2.2515,
+          "upper_rad": 1.5882,
+          "observed_min_rad": -2.2781452979758865,
+          "observed_max_rad": -0.027973045247484347,
+          "max_excess_rad": 0.02664529797588644,
+          "fraction_above_0p01_rad": 0.006687472135532769
+        }
+      ],
+      "any_violation_above_0p01_rad_frame_fraction": 0.03566651805617477,
+      "peak_joint_speed_rad_s": 10.560309054568556
+    },
+    {
+      "id": "481",
+      "joints": [
+        {
+          "name": "left_ankle_pitch_joint",
+          "lower_rad": -0.87267,
+          "upper_rad": 0.5236,
+          "observed_min_rad": -0.8848639619465508,
+          "observed_max_rad": 0.280032300498571,
+          "max_excess_rad": 0.012193961946550869,
+          "fraction_above_0p01_rad": 0.001784651992861392
+        },
+        {
+          "name": "left_ankle_roll_joint",
+          "lower_rad": -0.2618,
+          "upper_rad": 0.2618,
+          "observed_min_rad": -0.2661703625303715,
+          "observed_max_rad": 0.2365980982753036,
+          "max_excess_rad": 0.004370362530371541,
+          "fraction_above_0p01_rad": 0.0
+        },
+        {
+          "name": "right_ankle_pitch_joint",
+          "lower_rad": -0.87267,
+          "upper_rad": 0.5236,
+          "observed_min_rad": -0.8790608668600021,
+          "observed_max_rad": 0.39701861188793836,
+          "max_excess_rad": 0.00639086686000212,
+          "fraction_above_0p01_rad": 0.0
+        },
+        {
+          "name": "right_ankle_roll_joint",
+          "lower_rad": -0.2618,
+          "upper_rad": 0.2618,
+          "observed_min_rad": -0.2209567942755763,
+          "observed_max_rad": 0.27305742946148515,
+          "max_excess_rad": 0.011257429461485169,
+          "fraction_above_0p01_rad": 0.005353955978584176
+        }
+      ],
+      "any_violation_above_0p01_rad_frame_fraction": 0.007138607971445568,
+      "peak_joint_speed_rad_s": 6.682211238229469
+    }
+  ]
+}

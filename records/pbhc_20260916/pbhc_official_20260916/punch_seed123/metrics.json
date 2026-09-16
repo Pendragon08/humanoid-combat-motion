@@ -1,0 +1,49 @@
+{
+  "example": "punch",
+  "upstream_commit": "ffac5cded61fe78b39b051f09ac2ed0f6a1ccea0",
+  "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/PBHC/example/pretrained_horse_stance_punch/exported/model_33000.onnx",
+  "checkpoint_sha256": "09a68a247fc9fc59bb78e542c5d66e0b72f56fb277f919d3945a6fb5b8565e9b",
+  "motion": "example/motion_data/Horse-stance_punch.pkl",
+  "motion_sha256": "802ffd509925bd188ebaab0b3bcbf2336f1bafd519466c2469a78ba7cf3a7beb",
+  "seed": 123,
+  "frames": 334,
+  "duration_s": 6.68,
+  "control_dt": 0.02,
+  "physics_dt": 0.002,
+  "cuda_kernel_witness_loss": 35.83287811279297,
+  "wall_s": 4.373528003692627,
+  "joint_mae_rad": 0.10196432838103667,
+  "all_frame_joint_below_0p3": true,
+  "no_fall": true,
+  "first_fall_s": null,
+  "strict_joint_and_height_complete": true,
+  "minimum_pelvis_height_m": 0.5430789039190624,
+  "max_sampled_torque_nm": 51.51014048056945,
+  "official_random_delay_enabled": true,
+  "delay_range_ms": [
+    4,
+    20
+  ],
+  "policy_observations": [
+    "base_ang_vel",
+    "projected_gravity",
+    "dof_pos",
+    "dof_vel",
+    "actions",
+    "ref_motion_phase",
+    "history_actor"
+  ],
+  "mujoco": "3.2.3",
+  "numpy": "1.24.4",
+  "torch": "2.5.1+cu121",
+  "script_sha256": "05bfd54659117ef1f2f96df994445fbecebb9b52005bdc9ca7fb08f4e5074c06",
+  "training_steps_this_run": 0,
+  "controller_modified": false,
+  "headless": true,
+  "caveats": [
+    "Single-motion trained policy, not a universal data-utility evaluator",
+    "Joint+height acceptance is not previous TWIST root/body strict score",
+    "CPU ONNX and MuJoCo; separate CUDA kernel witness is environment validation",
+    "No real-robot or contact-force correctness claim"
+  ]
+}

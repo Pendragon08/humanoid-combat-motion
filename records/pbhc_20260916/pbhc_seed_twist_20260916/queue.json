@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Bruce_Lee_pose",
+    "exit": 0,
+    "seconds": 4.932513952255249,
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Bruce_Lee_pose.npz",
+      "--device",
+      "cuda:1",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_twist_20260916/Bruce_Lee_pose"
+    ]
+  },
+  {
+    "name": "Charleston_dance",
+    "exit": 0,
+    "seconds": 6.2618138790130615,
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Charleston_dance.npz",
+      "--device",
+      "cuda:1",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_twist_20260916/Charleston_dance"
+    ]
+  },
+  {
+    "name": "Hooks_punch",
+    "exit": 0,
+    "seconds": 4.053919315338135,
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Hooks_punch.npz",
+      "--device",
+      "cuda:1",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_twist_20260916/Hooks_punch"
+    ]
+  },
+  {
+    "name": "Horse-stance_pose",
+    "exit": 0,
+    "seconds": 4.302438259124756,
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Horse-stance_pose.npz",
+      "--device",
+      "cuda:1",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_twist_20260916/Horse-stance_pose"
+    ]
+  },
+  {
+    "name": "Horse-stance_punch",
+    "exit": 0,
+    "seconds": 4.278064250946045,
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Horse-stance_punch.npz",
+      "--device",
+      "cuda:1",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_twist_20260916/Horse-stance_punch"
+    ]
+  },
+  {
+    "name": "Roundhouse_kick",
+    "exit": 0,
+    "seconds": 3.944932222366333,
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Roundhouse_kick.npz",
+      "--device",
+      "cuda:1",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_twist_20260916/Roundhouse_kick"
+    ]
+  },
+  {
+    "name": "Side_kick",
+    "exit": 0,
+    "seconds": 4.104431629180908,
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Side_kick.npz",
+      "--device",
+      "cuda:1",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_twist_20260916/Side_kick"
+    ]
+  }
+]

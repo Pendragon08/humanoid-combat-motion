@@ -1,0 +1,150 @@
+{
+  "stage": "S2-light development component pilot; not full S1--S4",
+  "source_windows": {
+    "Horse-stance_punch": [
+      1.3,
+      4.4
+    ],
+    "Hooks_punch": [
+      0.77,
+      4.63
+    ],
+    "Side_kick": [
+      1.57,
+      3.13
+    ],
+    "Roundhouse_kick": [
+      1.37,
+      2.77
+    ]
+  },
+  "window_provenance": "Assistant inspected upstream-labelled contact sheets; coarse, not independently annotated truth",
+  "arms": [
+    "raw",
+    "grounding_ema",
+    "bounded_plain",
+    "phase_fidelity"
+  ],
+  "grounding_ema": "PBHC correct_motion/EMA idea, alpha0.3, approximated with robot foot collision spheres instead of human mesh; not original pipeline reproduction",
+  "optimization": "one root-height correction per frame, +/-4cm; known contact==1, unknown0.5 ignored; data fidelity2 and smoothness50; protected adds20 and300 inside active windows; 200iteration cap",
+  "hypothesis": "Phase-dependent penalties reduce distortion; execution gain not assumed",
+  "controller": "Same frozen TWIST25DOF policy, no training, seed123",
+  "evaluation": "Old strict global score retained; report fall, joint errors and end-effector fidelity separately",
+  "data_partition": "four development examples; no test-set or generalization claim",
+  "only_modified_quantity": "root z and derivative; full joint-space/contact-force optimization absent",
+  "script_sha256": "fafbf144bc23402dcc1515d8ad9c4633f95a796e6660a1cd6ed6ea633fc4a89c",
+  "cases": [
+    {
+      "id": "Hooks_punch_raw",
+      "name": "Hooks_punch",
+      "arm": "raw",
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Hooks_punch_raw.npz",
+      "sha256": "c4a07a2ce73a6c7b13e6cabbde584946fce27d5507a31aa748ea52e72f617cbb"
+    },
+    {
+      "id": "Hooks_punch_grounding_ema",
+      "name": "Hooks_punch",
+      "arm": "grounding_ema",
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Hooks_punch_grounding_ema.npz",
+      "sha256": "c24e7251c00d9c9d6ea33846392107dc6a7600f4f532170b7b69533caf2ab4fe"
+    },
+    {
+      "id": "Hooks_punch_bounded_plain",
+      "name": "Hooks_punch",
+      "arm": "bounded_plain",
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Hooks_punch_bounded_plain.npz",
+      "sha256": "3528585bc0ec540fc6f6562f9ad295e41e511de9b3c904b889602023192797ee"
+    },
+    {
+      "id": "Hooks_punch_phase_fidelity",
+      "name": "Hooks_punch",
+      "arm": "phase_fidelity",
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Hooks_punch_phase_fidelity.npz",
+      "sha256": "43988727349dc2d172e073eb9f482fd5973917515e15f52d9f94bd8341279404"
+    },
+    {
+      "id": "Horse-stance_punch_raw",
+      "name": "Horse-stance_punch",
+      "arm": "raw",
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Horse-stance_punch_raw.npz",
+      "sha256": "e59f85dfe266c562f9661f0f99d5da70e6e776a276e9958278c052c0a49479ff"
+    },
+    {
+      "id": "Horse-stance_punch_grounding_ema",
+      "name": "Horse-stance_punch",
+      "arm": "grounding_ema",
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Horse-stance_punch_grounding_ema.npz",
+      "sha256": "b13905edc10a0a2ea83954969bf3046704176c6bab0dfcf43245efe124231817"
+    },
+    {
+      "id": "Horse-stance_punch_bounded_plain",
+      "name": "Horse-stance_punch",
+      "arm": "bounded_plain",
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Horse-stance_punch_bounded_plain.npz",
+      "sha256": "9f2c3ff943967794b030cb8297aa76545c93df09f28f4e79755e5df2cedfa09e"
+    },
+    {
+      "id": "Horse-stance_punch_phase_fidelity",
+      "name": "Horse-stance_punch",
+      "arm": "phase_fidelity",
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Horse-stance_punch_phase_fidelity.npz",
+      "sha256": "e5bedf3d27b26d0fe6d62419649a8f0335cb424691cdf00c02ad137dcf5325f1"
+    },
+    {
+      "id": "Roundhouse_kick_raw",
+      "name": "Roundhouse_kick",
+      "arm": "raw",
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Roundhouse_kick_raw.npz",
+      "sha256": "cf1da348dfa3d4f34963c0972743878e8836e9c8fcdc01baa7b52f4d8ff1526b"
+    },
+    {
+      "id": "Roundhouse_kick_grounding_ema",
+      "name": "Roundhouse_kick",
+      "arm": "grounding_ema",
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Roundhouse_kick_grounding_ema.npz",
+      "sha256": "699b66a62d60e9b7651cb0608fdd93ba384820e89f9b57116698962435903066"
+    },
+    {
+      "id": "Roundhouse_kick_bounded_plain",
+      "name": "Roundhouse_kick",
+      "arm": "bounded_plain",
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Roundhouse_kick_bounded_plain.npz",
+      "sha256": "d49972d7ecf540d2732c2f9db6d31df4a89e7faf93809d416d0370c7d45c7e20"
+    },
+    {
+      "id": "Roundhouse_kick_phase_fidelity",
+      "name": "Roundhouse_kick",
+      "arm": "phase_fidelity",
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Roundhouse_kick_phase_fidelity.npz",
+      "sha256": "0fd6a3cf9d173549d2eb45a1c32d30c702a4682f6589e42dc14d4fd88184333f"
+    },
+    {
+      "id": "Side_kick_raw",
+      "name": "Side_kick",
+      "arm": "raw",
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Side_kick_raw.npz",
+      "sha256": "7611375a9be4fae69b764a39eb0380990d283be7979f8f3712e9e5f37deb4c87"
+    },
+    {
+      "id": "Side_kick_grounding_ema",
+      "name": "Side_kick",
+      "arm": "grounding_ema",
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Side_kick_grounding_ema.npz",
+      "sha256": "42be2d3625b4e2f16568a66261eb08425f938932edf1f0da93c906b6616ddb91"
+    },
+    {
+      "id": "Side_kick_bounded_plain",
+      "name": "Side_kick",
+      "arm": "bounded_plain",
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Side_kick_bounded_plain.npz",
+      "sha256": "b612629237358eec8ce58bc22f751798aef003a5eb4646f73fc59ed699cc940c"
+    },
+    {
+      "id": "Side_kick_phase_fidelity",
+      "name": "Side_kick",
+      "arm": "phase_fidelity",
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_refinement_pilot_20260916/references/Side_kick_phase_fidelity.npz",
+      "sha256": "956df89cb196ec8af11aa438817be955998d65422494e6b382d6f23ec0119baf"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "stage": "S0",
+  "completed_cases": 19,
+  "independent_witness_pass": true,
+  "S1_S4_complete": false,
+  "raw_archive_sha256": "f94535fb6fbb0dadef6d12b0e5bd813e6b2660e3ee334d688f6c8607d63f4f9f",
+  "report": "C:\\Users\\Pende\\Documents\\ChatGPT\\机器人格斗动作捕捉数据生成\\single_robot_execution_20260916\\单机器人首轮实验报告_20260916.md",
+  "server": "nlp03",
+  "server_run": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916",
+  "gpu_released": true
+}

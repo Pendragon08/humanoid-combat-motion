@@ -1,0 +1,263 @@
+{
+  "upstream": "https://github.com/TeleHuman/PBHC",
+  "commit": "ffac5cded61fe78b39b051f09ac2ed0f6a1ccea0",
+  "licence": "Repository CC-BY-NC-4.0; source-specific rights not inferred",
+  "source_model": "official PBHC23DOF",
+  "target_model": "TWIST25DOF, added wrists neutral",
+  "counts": {
+    "all": 7,
+    "combat_candidates": 4
+  },
+  "motions": [
+    {
+      "name": "Bruce_Lee_pose",
+      "category": "pose_control",
+      "source_path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/PBHC/example/motion_data/Bruce_Lee_pose.pkl",
+      "source_sha256": "0a8552409c0d621424af13dc3dd3641a1c9bcde8b31c39b94115f0fe2e2fcc6a",
+      "upstream_source_key": "/home/bai/ASAP/lafan/ASAP-motion/Wushu/wushu_li_3_inter0.5",
+      "source_frames": 330,
+      "source_fps": 30.0,
+      "duration_s": 10.966666666666667,
+      "target_frames": 549,
+      "target_fps": 50,
+      "target_reference": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Bruce_Lee_pose.npz",
+      "target_sha256": "868acf1178eda90ad24762471d091cb69d2c158d45bad9467bf7c04d960eda7e",
+      "resample_duration_loss_s": 0.0066666666666659324,
+      "target_added_joints": [
+        "left_wrist_roll_joint",
+        "right_wrist_roll_joint"
+      ],
+      "motion_dependencies": "Processed upstream motion; origin hints retained, original human recordings and licences not reconstructed from path names",
+      "has_corresponding_bundled_policy": false,
+      "contact_shape": [
+        330,
+        2
+      ],
+      "contact_unique_values": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "contact_label_ground_truth_verified": false,
+      "joint_limit_excess_max_rad": 0.0,
+      "semantic_label_source": "upstream filename; contact sheet supplied for review",
+      "independent_recording_verified": false,
+      "assigned_split": "development_only"
+    },
+    {
+      "name": "Charleston_dance",
+      "category": "noncombat_control",
+      "source_path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/PBHC/example/motion_data/Charleston_dance.pkl",
+      "source_sha256": "2f3b16cd4417a29276b546368994112f83fbdaaa9858b8fbf94b6b1a555a0db5",
+      "upstream_source_key": "/home/bai/ASAP/SharedMotions/dance1_subject2_150_700_cont_mask_inter0.5",
+      "source_frames": 610,
+      "source_fps": 30.0,
+      "duration_s": 20.3,
+      "target_frames": 1016,
+      "target_fps": 50,
+      "target_reference": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Charleston_dance.npz",
+      "target_sha256": "f4f2ad941411977ce02509b4c9e9ce0a10e4389d1dd84f6c6b403cdc8c6b3e2a",
+      "resample_duration_loss_s": 0.0,
+      "target_added_joints": [
+        "left_wrist_roll_joint",
+        "right_wrist_roll_joint"
+      ],
+      "motion_dependencies": "Processed upstream motion; origin hints retained, original human recordings and licences not reconstructed from path names",
+      "has_corresponding_bundled_policy": false,
+      "contact_shape": [
+        610,
+        2
+      ],
+      "contact_unique_values": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "contact_label_ground_truth_verified": false,
+      "joint_limit_excess_max_rad": 0.0,
+      "semantic_label_source": "upstream filename; contact sheet supplied for review",
+      "independent_recording_verified": false,
+      "assigned_split": "development_only"
+    },
+    {
+      "name": "Hooks_punch",
+      "category": "combat_candidate",
+      "source_path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/PBHC/example/motion_data/Hooks_punch.pkl",
+      "source_sha256": "fd61b565e88dd909553b806eaff1c85c458f8ebeae468e3e10904f6faa9b2303",
+      "upstream_source_key": "/home/bai/ASAP/lafan/ASAP-motion/mocap/blender_take_001_inter0.5_S475-30_E590-30",
+      "source_frames": 175,
+      "source_fps": 30.0,
+      "duration_s": 5.8,
+      "target_frames": 291,
+      "target_fps": 50,
+      "target_reference": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Hooks_punch.npz",
+      "target_sha256": "c4a07a2ce73a6c7b13e6cabbde584946fce27d5507a31aa748ea52e72f617cbb",
+      "resample_duration_loss_s": 0.0,
+      "target_added_joints": [
+        "left_wrist_roll_joint",
+        "right_wrist_roll_joint"
+      ],
+      "motion_dependencies": "Processed upstream motion; origin hints retained, original human recordings and licences not reconstructed from path names",
+      "has_corresponding_bundled_policy": false,
+      "contact_shape": [
+        175,
+        2
+      ],
+      "contact_unique_values": [
+        0.5,
+        1.0
+      ],
+      "contact_label_ground_truth_verified": false,
+      "joint_limit_excess_max_rad": 0.0,
+      "semantic_label_source": "upstream filename; contact sheet supplied for review",
+      "independent_recording_verified": false,
+      "assigned_split": "development_only"
+    },
+    {
+      "name": "Horse-stance_pose",
+      "category": "pose_control",
+      "source_path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/PBHC/example/motion_data/Horse-stance_pose.pkl",
+      "source_sha256": "43c918e2d5fd7d79a18dfdf280198bd4652ffe675d4f7d56c55bd1d960efbfe6",
+      "upstream_source_key": "/home/bai/ASAP/SharedMotions/fightAndSports1_subject4_150_300_cont_mask_inter0.5",
+      "source_frames": 210,
+      "source_fps": 30.0,
+      "duration_s": 6.966666666666667,
+      "target_frames": 349,
+      "target_fps": 50,
+      "target_reference": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Horse-stance_pose.npz",
+      "target_sha256": "e04aee6999a873da0a5312d116ea6bd5f4eacdaf66d4d50b9e683b88eea58c43",
+      "resample_duration_loss_s": 0.006666666666666821,
+      "target_added_joints": [
+        "left_wrist_roll_joint",
+        "right_wrist_roll_joint"
+      ],
+      "motion_dependencies": "Processed upstream motion; origin hints retained, original human recordings and licences not reconstructed from path names",
+      "has_corresponding_bundled_policy": true,
+      "contact_shape": [
+        210,
+        2
+      ],
+      "contact_unique_values": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "contact_label_ground_truth_verified": false,
+      "joint_limit_excess_max_rad": 0.0,
+      "semantic_label_source": "upstream filename; contact sheet supplied for review",
+      "independent_recording_verified": false,
+      "assigned_split": "development_only"
+    },
+    {
+      "name": "Horse-stance_punch",
+      "category": "combat_candidate",
+      "source_path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/PBHC/example/motion_data/Horse-stance_punch.pkl",
+      "source_sha256": "802ffd509925bd188ebaab0b3bcbf2336f1bafd519466c2469a78ba7cf3a7beb",
+      "upstream_source_key": "/home/bai/ASAP/lafan/ASAP-motion/mocap/blender_take_043_edit_cont_inter0.5_S995-30_E1135-30",
+      "source_frames": 200,
+      "source_fps": 30.0,
+      "duration_s": 6.633333333333334,
+      "target_frames": 332,
+      "target_fps": 50,
+      "target_reference": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Horse-stance_punch.npz",
+      "target_sha256": "e59f85dfe266c562f9661f0f99d5da70e6e776a276e9958278c052c0a49479ff",
+      "resample_duration_loss_s": 0.013333333333333641,
+      "target_added_joints": [
+        "left_wrist_roll_joint",
+        "right_wrist_roll_joint"
+      ],
+      "motion_dependencies": "Processed upstream motion; origin hints retained, original human recordings and licences not reconstructed from path names",
+      "has_corresponding_bundled_policy": true,
+      "contact_shape": [
+        200,
+        2
+      ],
+      "contact_unique_values": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "contact_label_ground_truth_verified": false,
+      "joint_limit_excess_max_rad": 0.0,
+      "semantic_label_source": "upstream filename; contact sheet supplied for review",
+      "independent_recording_verified": false,
+      "assigned_split": "development_only"
+    },
+    {
+      "name": "Roundhouse_kick",
+      "category": "combat_candidate",
+      "source_path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/PBHC/example/motion_data/Roundhouse_kick.pkl",
+      "source_sha256": "d44883742e173d7db5839f0f92cb8409433f5a23cb47d0a81bfeb916ee4d6417",
+      "upstream_source_key": "/home/bai/ASAP/SharedMotions/Rspin_inter0.5_S0-30_E98-30",
+      "source_frames": 158,
+      "source_fps": 30.0,
+      "duration_s": 5.233333333333333,
+      "target_frames": 262,
+      "target_fps": 50,
+      "target_reference": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Roundhouse_kick.npz",
+      "target_sha256": "cf1da348dfa3d4f34963c0972743878e8836e9c8fcdc01baa7b52f4d8ff1526b",
+      "resample_duration_loss_s": 0.013333333333333641,
+      "target_added_joints": [
+        "left_wrist_roll_joint",
+        "right_wrist_roll_joint"
+      ],
+      "motion_dependencies": "Processed upstream motion; origin hints retained, original human recordings and licences not reconstructed from path names",
+      "has_corresponding_bundled_policy": false,
+      "contact_shape": [
+        158,
+        2
+      ],
+      "contact_unique_values": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "contact_label_ground_truth_verified": false,
+      "joint_limit_excess_max_rad": 0.0,
+      "semantic_label_source": "upstream filename; contact sheet supplied for review",
+      "independent_recording_verified": false,
+      "assigned_split": "development_only"
+    },
+    {
+      "name": "Side_kick",
+      "category": "combat_candidate",
+      "source_path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/PBHC/example/motion_data/Side_kick.pkl",
+      "source_sha256": "3152b3b53537e426bba57c5c3e04bd5dff74b00a38ee3a33a9c8dc1de7228821",
+      "upstream_source_key": "/home/jrhan/projects/ASAP/SharedMotions/side_double_kick_poses_inter0.5_S0-30_E119-30",
+      "source_frames": 179,
+      "source_fps": 30.0,
+      "duration_s": 5.933333333333334,
+      "target_frames": 297,
+      "target_fps": 50,
+      "target_reference": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_seed_panel_20260916/references/Side_kick.npz",
+      "target_sha256": "7611375a9be4fae69b764a39eb0380990d283be7979f8f3712e9e5f37deb4c87",
+      "resample_duration_loss_s": 0.013333333333333641,
+      "target_added_joints": [
+        "left_wrist_roll_joint",
+        "right_wrist_roll_joint"
+      ],
+      "motion_dependencies": "Processed upstream motion; origin hints retained, original human recordings and licences not reconstructed from path names",
+      "has_corresponding_bundled_policy": false,
+      "contact_shape": [
+        179,
+        2
+      ],
+      "contact_unique_values": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "contact_label_ground_truth_verified": false,
+      "joint_limit_excess_max_rad": 0.0,
+      "semantic_label_source": "upstream filename; contact sheet supplied for review",
+      "independent_recording_verified": false,
+      "assigned_split": "development_only"
+    }
+  ],
+  "limitations": [
+    "Not a new independent test benchmark",
+    "No front-kick sample in bundled directory",
+    "Two checkpoints of same pose do not create two sources",
+    "Converted references test cross-controller compatibility, not a head-to-head algorithm score"
+  ]
+}

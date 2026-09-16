@@ -1,0 +1,227 @@
+[
+  {
+    "id": "199_full",
+    "source_id": "199",
+    "arm": "full",
+    "options": [
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/199_full.npz"
+    ],
+    "state": "completed",
+    "started_at": 1789553846.7674644,
+    "device": "cuda:1",
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/199_full.npz",
+      "--device",
+      "cuda:1",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/results/199_full"
+    ],
+    "elapsed_s": 4.761512994766235,
+    "returncode": 0
+  },
+  {
+    "id": "199_initial_ground_offset",
+    "source_id": "199",
+    "arm": "initial_ground_offset",
+    "options": [
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/199_initial_ground_offset.npz"
+    ],
+    "state": "completed",
+    "started_at": 1789553851.5296617,
+    "device": "cuda:1",
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/199_initial_ground_offset.npz",
+      "--device",
+      "cuda:1",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/results/199_initial_ground_offset"
+    ],
+    "elapsed_s": 4.539382219314575,
+    "returncode": 0
+  },
+  {
+    "id": "230_prefix150",
+    "source_id": "230",
+    "arm": "prefix150",
+    "options": [
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/230_prefix150.npz"
+    ],
+    "state": "completed",
+    "started_at": 1789553856.0694237,
+    "device": "cuda:1",
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/230_prefix150.npz",
+      "--device",
+      "cuda:1",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/results/230_prefix150"
+    ],
+    "elapsed_s": 3.6860034465789795,
+    "returncode": 0
+  },
+  {
+    "id": "235_full",
+    "source_id": "235",
+    "arm": "full",
+    "options": [
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/235_full.npz"
+    ],
+    "state": "completed",
+    "started_at": 1789553859.7561817,
+    "device": "cuda:1",
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/235_full.npz",
+      "--device",
+      "cuda:1",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/results/235_full"
+    ],
+    "elapsed_s": 6.57344388961792,
+    "returncode": 0
+  },
+  {
+    "id": "235_initial_ground_offset",
+    "source_id": "235",
+    "arm": "initial_ground_offset",
+    "options": [
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/235_initial_ground_offset.npz"
+    ],
+    "state": "completed",
+    "started_at": 1789553866.3304565,
+    "device": "cuda:1",
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/235_initial_ground_offset.npz",
+      "--device",
+      "cuda:1",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/results/235_initial_ground_offset"
+    ],
+    "elapsed_s": 6.580097675323486,
+    "returncode": 0
+  },
+  {
+    "id": "292_prefix150",
+    "source_id": "292",
+    "arm": "prefix150",
+    "options": [
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/292_prefix150.npz"
+    ],
+    "state": "completed",
+    "started_at": 1789553872.9114566,
+    "device": "cuda:1",
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/292_prefix150.npz",
+      "--device",
+      "cuda:1",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/results/292_prefix150"
+    ],
+    "elapsed_s": 3.770777702331543,
+    "returncode": 0
+  },
+  {
+    "id": "332_full",
+    "source_id": "332",
+    "arm": "full",
+    "options": [
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/332_full.npz"
+    ],
+    "state": "completed",
+    "started_at": 1789553876.6832094,
+    "device": "cuda:1",
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/332_full.npz",
+      "--device",
+      "cuda:1",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/results/332_full"
+    ],
+    "elapsed_s": 10.21474575996399,
+    "returncode": 0
+  },
+  {
+    "id": "332_initial_ground_offset",
+    "source_id": "332",
+    "arm": "initial_ground_offset",
+    "options": [
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/332_initial_ground_offset.npz"
+    ],
+    "state": "completed",
+    "started_at": 1789553886.8990052,
+    "device": "cuda:1",
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/332_initial_ground_offset.npz",
+      "--device",
+      "cuda:1",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/results/332_initial_ground_offset"
+    ],
+    "elapsed_s": 10.35401177406311,
+    "returncode": 0
+  },
+  {
+    "id": "481_prefix150",
+    "source_id": "481",
+    "arm": "prefix150",
+    "options": [
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/481_prefix150.npz"
+    ],
+    "state": "completed",
+    "started_at": 1789553897.2543097,
+    "device": "cuda:1",
+    "command": [
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv/bin/python",
+      "-u",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/evaluate_twist.py",
+      "--reference",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/references/481_prefix150.npz",
+      "--device",
+      "cuda:1",
+      "--output",
+      "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/single_robot_s0_20260916/results/481_prefix150"
+    ],
+    "elapsed_s": 3.761120557785034,
+    "returncode": 0
+  }
+]
