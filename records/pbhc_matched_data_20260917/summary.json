@@ -1,0 +1,260 @@
+{
+  "scope": "Two-source matched-training diagnostic after frozen-policy probes; not a final experiment or independent generalization test",
+  "training": [
+    {
+      "name": "Horse-stance_punch",
+      "arm": "raw",
+      "initialization": {
+        "actor_critic_sha256": "6ef4cf10fa3fd79badc69a244a1d68ce61aaee4907a6c9e276caac4762db025f",
+        "seed": 0,
+        "random_initialization": true,
+        "obs_normalizer_sha256": "4a7bbd2624607175ae8d4bd4e74a5bba1cdc1578d33bc0225474c101e5f37a7b",
+        "privileged_obs_normalizer_sha256": "acc68249d7bfb8e3956d675fadf8d6ea052d4780a1378ed75eb6250fc0d4f659"
+      },
+      "receipt": {
+        "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_matched_data_20260917/training/Horse-stance_punch_raw/model_999.pt",
+        "environment_steps": 12288000,
+        "completed_updates": 1000,
+        "elapsed_s": 1561.671707868576,
+        "position_feedback": true,
+        "bundle_sha256": "ed47b7f1c30c75c1f30d82013d8d0eb53274661973bbb8457c097d3f14a2a2e7",
+        "seed": 0
+      },
+      "checkpoint_sha256": "ee000f77c7db6ff3c9500cdc3b32791ad1eb8a7c8b629923603bd11bfe2a4c25"
+    },
+    {
+      "name": "Horse-stance_punch",
+      "arm": "quality_gated",
+      "initialization": {
+        "actor_critic_sha256": "6ef4cf10fa3fd79badc69a244a1d68ce61aaee4907a6c9e276caac4762db025f",
+        "seed": 0,
+        "random_initialization": true,
+        "obs_normalizer_sha256": "4a7bbd2624607175ae8d4bd4e74a5bba1cdc1578d33bc0225474c101e5f37a7b",
+        "privileged_obs_normalizer_sha256": "acc68249d7bfb8e3956d675fadf8d6ea052d4780a1378ed75eb6250fc0d4f659",
+        "matched_against": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_matched_data_20260917/training/Horse-stance_punch_raw/initialization.json"
+      },
+      "receipt": {
+        "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_matched_data_20260917/training/Horse-stance_punch_quality_gated/model_999.pt",
+        "environment_steps": 12288000,
+        "completed_updates": 1000,
+        "elapsed_s": 1550.6171369552612,
+        "position_feedback": true,
+        "bundle_sha256": "a6bfbb64b9ad6b1bf1f883da13c0b6e9a4dc676243004cd3f85f6b45c4032241",
+        "seed": 0
+      },
+      "checkpoint_sha256": "5368ca1891b7e1e8a8355491dff50ba37b0b593d714c3d4c4b88957fdcb2351b"
+    },
+    {
+      "name": "Side_kick",
+      "arm": "raw",
+      "initialization": {
+        "actor_critic_sha256": "6ef4cf10fa3fd79badc69a244a1d68ce61aaee4907a6c9e276caac4762db025f",
+        "seed": 0,
+        "random_initialization": true,
+        "obs_normalizer_sha256": "4a7bbd2624607175ae8d4bd4e74a5bba1cdc1578d33bc0225474c101e5f37a7b",
+        "privileged_obs_normalizer_sha256": "acc68249d7bfb8e3956d675fadf8d6ea052d4780a1378ed75eb6250fc0d4f659"
+      },
+      "receipt": {
+        "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_matched_data_20260917/training/Side_kick_raw/model_999.pt",
+        "environment_steps": 12288000,
+        "completed_updates": 1000,
+        "elapsed_s": 1432.7694549560547,
+        "position_feedback": true,
+        "bundle_sha256": "42ddda61c7b52236c972b88ab2c78557ee4aa76e4a4cfb304ad78950389d1a17",
+        "seed": 0
+      },
+      "checkpoint_sha256": "2431c54ed100b02cc63e620094a886cc75d70870bad79b935c28d23111f656f9"
+    },
+    {
+      "name": "Side_kick",
+      "arm": "quality_gated",
+      "initialization": {
+        "actor_critic_sha256": "6ef4cf10fa3fd79badc69a244a1d68ce61aaee4907a6c9e276caac4762db025f",
+        "seed": 0,
+        "random_initialization": true,
+        "obs_normalizer_sha256": "4a7bbd2624607175ae8d4bd4e74a5bba1cdc1578d33bc0225474c101e5f37a7b",
+        "privileged_obs_normalizer_sha256": "acc68249d7bfb8e3956d675fadf8d6ea052d4780a1378ed75eb6250fc0d4f659",
+        "matched_against": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_matched_data_20260917/training/Side_kick_raw/initialization.json"
+      },
+      "receipt": {
+        "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_matched_data_20260917/training/Side_kick_quality_gated/model_999.pt",
+        "environment_steps": 12288000,
+        "completed_updates": 1000,
+        "elapsed_s": 1428.6140222549438,
+        "position_feedback": true,
+        "bundle_sha256": "4bebe75c3bad89e4f1ead6eac49a14b972fa541ea72ca36f183d20c6d8ab6613",
+        "seed": 0
+      },
+      "checkpoint_sha256": "f8d213456e0d6d199156b824352228ecc6c2ba3fd34e3bc6f7098bafb4f4e200"
+    }
+  ],
+  "results": [
+    {
+      "name": "Horse-stance_punch",
+      "train_arm": "raw",
+      "evaluation_reference": "raw",
+      "regime": "randomized",
+      "completion": 0.1875,
+      "strict": 0.0,
+      "root_mean_m": 0.24575164914131165,
+      "metrics_sha256": "eb5a6f19cb978b9be1c048a3832292e7039f2baba52d04b467c15fc90544f0b1"
+    },
+    {
+      "name": "Horse-stance_punch",
+      "train_arm": "raw",
+      "evaluation_reference": "raw",
+      "regime": "nominal",
+      "completion": 1.0,
+      "strict": 0.0,
+      "root_mean_m": 0.21464736759662628,
+      "metrics_sha256": "f4709d5d3ab0ffbc81a90c443c2cbc3e187934f965ba157b3c1e1b22a0c534fa"
+    },
+    {
+      "name": "Horse-stance_punch",
+      "train_arm": "raw",
+      "evaluation_reference": "quality_gated",
+      "regime": "randomized",
+      "completion": 0.25,
+      "strict": 0.0,
+      "root_mean_m": 0.2546781599521637,
+      "metrics_sha256": "db2c7c5dc5d6cba63658f25b3ede635780f5c811f62b1df4a6762f9e99fc662c"
+    },
+    {
+      "name": "Horse-stance_punch",
+      "train_arm": "raw",
+      "evaluation_reference": "quality_gated",
+      "regime": "nominal",
+      "completion": 0.0,
+      "strict": 0.0,
+      "root_mean_m": 0.21839290857315063,
+      "metrics_sha256": "83fec07e1801c3e4e123c55497c2eb51e2af6fe3c19b5f535816c37a87f51a82"
+    },
+    {
+      "name": "Horse-stance_punch",
+      "train_arm": "quality_gated",
+      "evaluation_reference": "raw",
+      "regime": "randomized",
+      "completion": 0.1875,
+      "strict": 0.0,
+      "root_mean_m": 0.4607742428779602,
+      "metrics_sha256": "85b5f6673dd00a0368d2819054d57eac9085e2499f7e91f72f0f9b185cb68687"
+    },
+    {
+      "name": "Horse-stance_punch",
+      "train_arm": "quality_gated",
+      "evaluation_reference": "raw",
+      "regime": "nominal",
+      "completion": 0.96875,
+      "strict": 0.0,
+      "root_mean_m": 0.5110628008842468,
+      "metrics_sha256": "a7b9c2cef343de93a1f97dfc11013824996861b021c7a5ac9f4bcbfe8c54a8c8"
+    },
+    {
+      "name": "Horse-stance_punch",
+      "train_arm": "quality_gated",
+      "evaluation_reference": "quality_gated",
+      "regime": "randomized",
+      "completion": 0.15625,
+      "strict": 0.0,
+      "root_mean_m": 0.5316030979156494,
+      "metrics_sha256": "d9d196195fb03661842c35ddd8e869d424e28719388684864251dba5a7913b5d"
+    },
+    {
+      "name": "Horse-stance_punch",
+      "train_arm": "quality_gated",
+      "evaluation_reference": "quality_gated",
+      "regime": "nominal",
+      "completion": 0.0,
+      "strict": 0.0,
+      "root_mean_m": 0.43148073554039,
+      "metrics_sha256": "2cd930618cb344230ee397ecef22f65d29e7c5a715f528da22aae1f89f1a2495"
+    },
+    {
+      "name": "Side_kick",
+      "train_arm": "raw",
+      "evaluation_reference": "raw",
+      "regime": "randomized",
+      "completion": 0.0625,
+      "strict": 0.0,
+      "root_mean_m": 0.3249607980251312,
+      "metrics_sha256": "f3a8d1dc0c323ef2fd64b52eaef67646ca6af5820f9b067c55a425f20b496ed0"
+    },
+    {
+      "name": "Side_kick",
+      "train_arm": "raw",
+      "evaluation_reference": "raw",
+      "regime": "nominal",
+      "completion": 0.0,
+      "strict": 0.0,
+      "root_mean_m": 0.18956351280212402,
+      "metrics_sha256": "42bf5c42cdffde03cfc0ccd3e863c4007e10bf00b07b2632cc52f215e9ac47ad"
+    },
+    {
+      "name": "Side_kick",
+      "train_arm": "raw",
+      "evaluation_reference": "quality_gated",
+      "regime": "randomized",
+      "completion": 0.0,
+      "strict": 0.0,
+      "root_mean_m": 0.34430623054504395,
+      "metrics_sha256": "d0b555f8f96ce5e88b5450e8b7a046dcca4e0c6a6d23c993ea55c36d66ef6254"
+    },
+    {
+      "name": "Side_kick",
+      "train_arm": "raw",
+      "evaluation_reference": "quality_gated",
+      "regime": "nominal",
+      "completion": 0.0,
+      "strict": 0.0,
+      "root_mean_m": 0.2087719738483429,
+      "metrics_sha256": "69d70ef291cbf20ecf03241a49cbe5a7db128bf9a60a47646113ad8c8ca9c288"
+    },
+    {
+      "name": "Side_kick",
+      "train_arm": "quality_gated",
+      "evaluation_reference": "raw",
+      "regime": "randomized",
+      "completion": 0.0,
+      "strict": 0.0,
+      "root_mean_m": 0.3204953372478485,
+      "metrics_sha256": "3247f1e998bc48b4f47289bad67ada7edcafd40d069f5bb35874405e46d61b01"
+    },
+    {
+      "name": "Side_kick",
+      "train_arm": "quality_gated",
+      "evaluation_reference": "raw",
+      "regime": "nominal",
+      "completion": 0.0,
+      "strict": 0.0,
+      "root_mean_m": 0.14762724936008453,
+      "metrics_sha256": "3003eeaa916da95f7350524377ef0664b54d5a2e6416cf6a7c998f831f6a6387"
+    },
+    {
+      "name": "Side_kick",
+      "train_arm": "quality_gated",
+      "evaluation_reference": "quality_gated",
+      "regime": "randomized",
+      "completion": 0.0,
+      "strict": 0.0,
+      "root_mean_m": 0.29856064915657043,
+      "metrics_sha256": "99fa4ef4a47704866af1812cb2954f1c0b6017d186ea8eee81a149382179cac6"
+    },
+    {
+      "name": "Side_kick",
+      "train_arm": "quality_gated",
+      "evaluation_reference": "quality_gated",
+      "regime": "nominal",
+      "completion": 0.0,
+      "strict": 0.0,
+      "root_mean_m": 0.15094614028930664,
+      "metrics_sha256": "2398e7fde634d5446e802225eeb33e7c726c7533292ab8a6ad4af163872ba7d6"
+    }
+  ],
+  "primary_endpoint": "Every-frame strict pass on untouched raw reference under randomized evaluation; all cross-reference and nominal results also reported",
+  "caveats": [
+    "Two development clips; single training seed; not independent test or final data utility",
+    "Compare raw and quality models on the SAME evaluation reference and regime; own-reference success alone is insufficient",
+    "Different initial trajectories can still change environment random draws; matching weights is not identical optimization experience",
+    "Early termination censors mean errors; always interpret with completion and strict success"
+  ]
+}

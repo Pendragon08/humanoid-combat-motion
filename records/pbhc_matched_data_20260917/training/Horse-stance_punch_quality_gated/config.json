@@ -1,0 +1,25 @@
+{
+  "mode": "upstream",
+  "seed": 0,
+  "iterations": 1000,
+  "environments": 512,
+  "steps_per_env": 24,
+  "clip_ids": [
+    "Horse-stance_punch"
+  ],
+  "fps": 50.0,
+  "bundle_sha256": "a6bfbb64b9ad6b1bf1f883da13c0b6e9a4dc676243004cd3f85f6b45c4032241",
+  "initialization": "random; no checkpoint",
+  "scope": "Matched-budget two-source development data-arm calibration; not independent test or full synthetic data utility",
+  "position_feedback": true,
+  "task": "Tracking-Flat-G1-v0",
+  "environment_spec_unchanged": true,
+  "sampling": "upstream single-reference",
+  "adaptive_parameters": {
+    "ema": 0.1,
+    "initial_failure_rate": 0.5,
+    "uniform_mixture": 0.2,
+    "weight_formula": ".5+clamp(failure_rate,0,1)"
+  },
+  "upstream_vs_uniform_caveat": "also changes reset alignment and reference-end handling; not pure sampling ablation"
+}

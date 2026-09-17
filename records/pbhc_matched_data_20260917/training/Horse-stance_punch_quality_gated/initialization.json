@@ -1,0 +1,8 @@
+{
+  "actor_critic_sha256": "6ef4cf10fa3fd79badc69a244a1d68ce61aaee4907a6c9e276caac4762db025f",
+  "seed": 0,
+  "random_initialization": true,
+  "obs_normalizer_sha256": "4a7bbd2624607175ae8d4bd4e74a5bba1cdc1578d33bc0225474c101e5f37a7b",
+  "privileged_obs_normalizer_sha256": "acc68249d7bfb8e3956d675fadf8d6ea052d4780a1378ed75eb6250fc0d4f659",
+  "matched_against": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_matched_data_20260917/training/Horse-stance_punch_raw/initialization.json"
+}

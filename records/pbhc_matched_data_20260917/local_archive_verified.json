@@ -1,0 +1,8 @@
+{
+  "status": "sha256_verified",
+  "archive_path": "D:\\\u5177\u8eab\u667a\u80fd\\humanoid-combat-motion\\runs\\private_archives\\pbhc_matched_data_20260917_evaluation.tar.gz",
+  "archive_sha256": "41cddbe8088d4d3d28911c7353a067ef3680b940c55dd84bc726b4c4f1f28f11",
+  "archive_bytes": 4054765,
+  "summary_sha256": "8c83141cc36d93e27789067f310168cc7e6dc66284481775ba24e866789dedf8",
+  "scope": "Private evaluation trajectories; report and metadata may be committed; archive excluded from git"
+}

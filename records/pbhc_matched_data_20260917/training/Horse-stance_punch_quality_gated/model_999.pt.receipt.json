@@ -1,0 +1,9 @@
+{
+  "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_matched_data_20260917/training/Horse-stance_punch_quality_gated/model_999.pt",
+  "environment_steps": 12288000,
+  "completed_updates": 1000,
+  "elapsed_s": 1550.6171369552612,
+  "position_feedback": true,
+  "bundle_sha256": "a6bfbb64b9ad6b1bf1f883da13c0b6e9a4dc676243004cd3f85f6b45c4032241",
+  "seed": 0
+}
