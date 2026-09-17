@@ -1,0 +1,36 @@
+{
+  "agent": "/root/pbhc_pathfix_independent_witness",
+  "status": "pass",
+  "invocation_unmodified": true,
+  "invocation_count": 1,
+  "exit_code": 0,
+  "invocation": "ssh -b 10.147.17.250 -o BatchMode=yes -o ConnectTimeout=10 -i C:/Users/Pende/.ssh/id_ed25519 ouyanghao@10.147.17.32 'cd /data/code/ouyanghao/oyh/humanoid-combat-motion && bash scripts/run_pbhc_training.sh /data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/witness_pbhc_gym.py --gpu 0 --output /data/code/ouyanghao/oyh/humanoid-combat-motion/records/pbhc_official_reproduction_20260917/gym_independent_witness.json'",
+  "sentinel": "PBHC_GYM_PHYSICS_WITNESS",
+  "sentinel_observed": true,
+  "stdout_and_stderr": "Importing module 'gym_38' (/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacgym/python/isaacgym/_bindings/linux-x86_64/gym_38.so)\nSetting GYM_USD_PLUG_INFO_PATH to /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacgym/python/isaacgym/_bindings/linux-x86_64/usd/plugInfo.json\nPyTorch version 1.13.1+cu117\nUsing /data/code/ouyanghao/oyh/humanoid-combat-motion/cache/torch-extensions-pbhc as PyTorch extensions root...\nDevice count 2\n/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacgym/python/isaacgym/_bindings/src/gymtorch\nEmitting ninja build file /data/code/ouyanghao/oyh/humanoid-combat-motion/cache/torch-extensions-pbhc/gymtorch/build.ninja...\nBuilding extension module gymtorch...\nUsing envvar MAX_JOBS (4) as the number of workers...\nninja: no work to do.\nLoading extension module gymtorch...\nNot connected to PVD\n+++ Using GPU PhysX\nPhysics Engine: PhysX\nPhysics Device: cuda:0\nGPU Pipeline: enabled\nPBHC_GYM_PHYSICS_WITNESS {\"physics_steps\": 120, \"actors\": 4, \"root_height\": [0.10199976712465286, 0.10199949145317078, 0.10199975967407227, 0.10199949890375137], \"gradient_loss\": 33.52025604248047, \"torch\": \"1.13.1+cu117\", \"device\": \"NVIDIA RTX A6000\", \"scope\": \"Physics and kernel only; not policy or data validity\"}\n",
+  "output_absent_before_invocation": true,
+  "independent_record_absent_before_invocation": true,
+  "witness": {
+    "physics_steps": 120,
+    "actors": 4,
+    "root_height": [
+      0.10199976712465286,
+      0.10199949145317078,
+      0.10199975967407227,
+      0.10199949890375137
+    ],
+    "gradient_loss": 33.52025604248047,
+    "torch": "1.13.1+cu117",
+    "device": "NVIDIA RTX A6000",
+    "scope": "Physics and kernel only; not policy or data validity"
+  },
+  "gradient_loss_is_finite": true,
+  "gradient_tensor_finiteness_reported": null,
+  "doc_divergences": [
+    "Witness stdout and JSON report a finite gradient_loss, but do not explicitly emit gradient tensor finiteness; this independent invocation-only review does not infer all gradient entries are finite from the loss scalar.",
+    "Provider ledger still states REVALIDATION_PENDING, as expected before this independent record."
+  ],
+  "validation_scope": "Successful documented environment witness invocation only; not formal training, policy success, or data validity.",
+  "spec_hash": "dd08223a",
+  "recorded_utc": "2026-09-17T03:48:10.421414+00:00"
+}

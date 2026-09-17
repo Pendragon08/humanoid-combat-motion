@@ -1,0 +1,16 @@
+{
+  "command": [
+    "bash",
+    "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/run_pbhc_training.sh",
+    "humanoidverse/sample_eps.py",
+    "+device=cuda:0",
+    "+checkpoint=/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/PBHC/example/pretrained_horse_stance_punch/model_33000.pt",
+    "+num_envs=100",
+    "+num_episodes=100",
+    "+eps_eval_name=official_provided_accuracy",
+    "+opt=record",
+    "eval_log_dir=/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_official_reproduction_20260917/evaluation_logs/official_provided_accuracy"
+  ],
+  "exit_code": 0,
+  "finished": 1789616543.831798
+}

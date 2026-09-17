@@ -1,0 +1,19 @@
+{
+  "time": 1789616950.9855344,
+  "spec_hash": "dd08223a",
+  "independent_agent": "/root/pbhc_pathfix_independent_witness",
+  "preflight_inputs_unchanged": true,
+  "memory_before_MiB": [
+    19,
+    38
+  ],
+  "scope": "First KungfuBot official single-motion training-stage reproduction. Not full paper table, video preprocessing, KungfuBot2, real robot or data innovation validation.",
+  "gradient_evidence": "Witness script asserts all gradient entries finite before emitting sentinel; raw gradients are not serialized",
+  "command": [
+    "bash",
+    "scripts/run.sh",
+    "scripts/run_pbhc_official_reproduction.py",
+    "--stage",
+    "train"
+  ]
+}

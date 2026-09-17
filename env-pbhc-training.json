@@ -15,7 +15,7 @@
     ["-e", "third_party/PBHC"],
     ["-e", "third_party/PBHC/humanoidverse/isaac_utils"]
   ],
-  "environment": {"OMP_NUM_THREADS": "4", "MKL_NUM_THREADS": "4", "OPENBLAS_NUM_THREADS": "4", "MAX_JOBS": "4", "WANDB_MODE": "disabled"},
+  "environment": {"PATH_prepend": ".venv-pbhc-training/bin", "OMP_NUM_THREADS": "4", "MKL_NUM_THREADS": "4", "OPENBLAS_NUM_THREADS": "4", "MAX_JOBS": "4", "WANDB_MODE": "disabled"},
   "validation": ["official Gym physics and seeded Torch backward witness", "official 128-environment two-update smoke", "fresh agent follows documented invocation", "official pretrained checkpoint evaluated with sample_eps.py and ratio_eps.py"],
   "limits": "Torch and transitive dependencies are reproducibility pins, not claimed paper-exact versions. Record resolved packages and source hashes. Do not replace simulator or policy if setup fails."
 }

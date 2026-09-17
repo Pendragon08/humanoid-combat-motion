@@ -1,0 +1,8 @@
+{
+  "time": 1789616470.9747002,
+  "spec_hash": "dd08223a",
+  "reason": "Installed ninja not discoverable because venv bin missing from launcher PATH",
+  "change": "Only prepend fixed environment bin; no installation or official algorithm change",
+  "previous_failure": "/data/code/ouyanghao/oyh/humanoid-combat-motion/records/pbhc_official_reproduction_20260917/failed_attempt_01_ninja_path",
+  "attempt": 2
+}

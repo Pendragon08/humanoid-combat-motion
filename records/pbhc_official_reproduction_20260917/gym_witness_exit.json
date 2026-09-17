@@ -1,0 +1,13 @@
+{
+  "command": [
+    "bash",
+    "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/run_pbhc_training.sh",
+    "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/witness_pbhc_gym.py",
+    "--gpu",
+    "0",
+    "--output",
+    "/data/code/ouyanghao/oyh/humanoid-combat-motion/records/pbhc_official_reproduction_20260917/gym_witness.json"
+  ],
+  "exit_code": 0,
+  "finished": 1789616487.6008966
+}

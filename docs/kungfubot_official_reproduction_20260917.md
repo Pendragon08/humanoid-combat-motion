@@ -47,6 +47,7 @@
 - 环境：env-pbhc-training.json；Python3.8.20、Torch1.13.1+cu117、NumPy1.24.4、IsaacGym Preview4。Torch及依赖版本是此次工程固定值，不冒称论文全部精确版本。
 - NVIDIA官方发布包已可下载；不使用IsaacLab替代IsaacGym。已有训练环境保持独立。
 - 初次安装解析器试图升级Torch，已在安装完成前停止该步骤，加入Torch/torchvision约束后重试；日志保留。没有改动官方受版本控制代码。
+- 2026-09-17预检查首次失败于Ninja解析：固定版本Ninja已安装在独立环境中，但启动器只调用了该环境Python，没有把其bin加入PATH。修复仅在启动器前置环境bin，并更新环境规格；不重装仿真、不修改官方算法。原失败日志归档后进行一次有界预检查重试，通过后仍须新的独立见证。
 - 当前环境安装/验证和训练的真实状态，分别见records/pbhc_official_reproduction_20260917下bootstrap_state、preflight_state、train_state。缺少TRAINING_COMPLETE时不得写“训练已完成”。
 
 ## 后续示范数据实验

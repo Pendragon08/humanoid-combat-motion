@@ -1,0 +1,23 @@
+Importing module 'gym_38' (/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacgym/python/isaacgym/_bindings/linux-x86_64/gym_38.so)
+Setting GYM_USD_PLUG_INFO_PATH to /data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacgym/python/isaacgym/_bindings/linux-x86_64/usd/plugInfo.json
+PyTorch version 1.13.1+cu117
+Device count 2
+/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacgym/python/isaacgym/_bindings/src/gymtorch
+Using /data/code/ouyanghao/oyh/humanoid-combat-motion/cache/torch-extensions-pbhc as PyTorch extensions root...
+Creating extension directory /data/code/ouyanghao/oyh/humanoid-combat-motion/cache/torch-extensions-pbhc/gymtorch...
+Traceback (most recent call last):
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/witness_pbhc_gym.py", line 5, in <module>
+    from isaacgym import gymapi, gymtorch
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacgym/python/isaacgym/gymtorch.py", line 109, in <module>
+    _import_gymtorch()
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/isaacgym/python/isaacgym/gymtorch.py", line 45, in _import_gymtorch
+    gt = torch.utils.cpp_extension.load(name="gymtorch", sources=sources, extra_cflags=cflags, verbose=True)
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-pbhc-training/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1284, in load
+    return _jit_compile(
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-pbhc-training/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1508, in _jit_compile
+    _write_ninja_file_and_build_library(
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-pbhc-training/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1592, in _write_ninja_file_and_build_library
+    verify_ninja_availability()
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/.venv-pbhc-training/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1648, in verify_ninja_availability
+    raise RuntimeError("Ninja is required to load C++ extensions")
+RuntimeError: Ninja is required to load C++ extensions

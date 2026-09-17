@@ -1,0 +1,24 @@
+{
+  "observed_utc": "2026-09-17T06:02:57Z",
+  "train_state": {
+    "status": "running",
+    "stage": "train",
+    "started": 1789616951.0263426,
+    "current_job": "official_horse_punch"
+  },
+  "saved_progress": {
+    "environment_steps": 393314304,
+    "updates": 4001,
+    "learn_reset_environment_steps": 4096,
+    "started": 1789616952.4531367,
+    "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_official_reproduction_20260917/official_horse_punch/model_4000.pt",
+    "upstream_iter_field": 4000,
+    "seed": 1,
+    "explicit_launcher_seed": true,
+    "scope": "Unmodified upstream algorithm with observation-only step/save wrappers",
+    "checkpoint_sha256": "56e532bc34e9f780991e1095da47e5fd987c72425441eb31c9c5e333ec29b3d2"
+  },
+  "saved_budget_percent": 8.002,
+  "gpu_csv": "0, 8940 MiB, 49140 MiB, 38 %\n1, 38 MiB, 49140 MiB, 0 %\n",
+  "scope": "Last saved real environment-step count; training may be ahead of this receipt; not completed-policy performance"
+}

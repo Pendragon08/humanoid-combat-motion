@@ -1,0 +1,11 @@
+{
+  "pid": 2270653,
+  "time": 1789616950.9871807,
+  "spec_hash": "dd08223a",
+  "training_seed": 1,
+  "gpu": 0,
+  "num_envs": 4096,
+  "updates": 50000,
+  "environment_steps": 4915200000,
+  "post_training": "provided_full and retrained official sample_eps/ratio_eps, 1000 episodes each"
+}

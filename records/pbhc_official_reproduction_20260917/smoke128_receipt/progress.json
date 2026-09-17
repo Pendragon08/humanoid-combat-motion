@@ -1,0 +1,12 @@
+{
+  "environment_steps": 6144,
+  "updates": 2,
+  "learn_reset_environment_steps": 128,
+  "started": 1789616489.679551,
+  "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_official_reproduction_20260917/smoke128/model_0.pt",
+  "upstream_iter_field": 0,
+  "seed": 1,
+  "explicit_launcher_seed": true,
+  "scope": "Unmodified upstream algorithm with observation-only step/save wrappers",
+  "checkpoint_sha256": "0d7695af639866a4b5291484a000dc3635dbd0a4f21126b60936e1ac778888f6"
+}

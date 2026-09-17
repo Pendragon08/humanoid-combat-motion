@@ -1,0 +1,14 @@
+{
+  "physics_steps": 120,
+  "actors": 4,
+  "root_height": [
+    0.10199976712465286,
+    0.10199949145317078,
+    0.10199975967407227,
+    0.10199949890375137
+  ],
+  "gradient_loss": 33.52025604248047,
+  "torch": "1.13.1+cu117",
+  "device": "NVIDIA RTX A6000",
+  "scope": "Physics and kernel only; not policy or data validity"
+}

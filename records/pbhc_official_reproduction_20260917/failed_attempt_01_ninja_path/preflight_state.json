@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "stage": "preflight",
+  "started": 1789613054.3254144,
+  "current_job": "gym_witness",
+  "error": "RuntimeError('gym_witness failed; inspect evidence, no automatic algorithm changes')",
+  "finished": 1789613086.9070108
+}

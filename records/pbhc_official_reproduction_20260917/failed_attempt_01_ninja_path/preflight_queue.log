@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/run_pbhc_official_reproduction.py", line 106, in <module>
+    if __name__=='__main__':main()
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/run_pbhc_official_reproduction.py", line 89, in main
+    invoke('gym_witness',[str(ROOT/'scripts/witness_pbhc_gym.py'),'--gpu','0','--output',str(REC/'gym_witness.json')])
+  File "/data/code/ouyanghao/oyh/humanoid-combat-motion/scripts/run_pbhc_official_reproduction.py", line 43, in invoke
+    if result.returncode:raise RuntimeError(key+' failed; inspect evidence, no automatic algorithm changes')
+RuntimeError: gym_witness failed; inspect evidence, no automatic algorithm changes

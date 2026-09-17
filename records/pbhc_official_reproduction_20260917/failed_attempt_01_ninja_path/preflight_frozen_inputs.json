@@ -1,0 +1,12 @@
+{
+  "files": {
+    "env-pbhc-training.json": "8b6f5db98572c34d9d596e42bb4434dc058f2b5469e49dcf9c2049115e96a80e",
+    "configs/pbhc_official_reproduction_v1.json": "ce5e3e52f90f68e9528bafb88f1318adfddd77439db6de21e56c42e47e4d03a9",
+    "scripts/run_pbhc_training.sh": "0caf428c571db6b156823398551666a3438a9ab067980efc7105fc16050cf813",
+    "scripts/observe_pbhc_training.py": "32e57099c1705c5e53db5b3098162f8f43c95f0ad8130d5edb69ffd305dad75a",
+    "scripts/witness_pbhc_gym.py": "4ea470cfb24b8704c5e979acba0a83064e8d9e3c99c5f8675cb2dbad546bd2e8",
+    "third_party/PBHC/example/motion_data/Horse-stance_punch.pkl": "802ffd509925bd188ebaab0b3bcbf2336f1bafd519466c2469a78ba7cf3a7beb",
+    "third_party/PBHC/example/pretrained_horse_stance_punch/model_33000.pt": "9610b0991d9e26e6015081e2a4ec3ab4e866fad65cc15884f728253ccb7ce517"
+  },
+  "commit": "ffac5cded61fe78b39b051f09ac2ed0f6a1ccea0"
+}

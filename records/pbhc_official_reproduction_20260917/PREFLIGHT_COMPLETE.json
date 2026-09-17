@@ -1,0 +1,14 @@
+{
+  "provided_metrics": {
+    "accuracy": {
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/PBHC/example/pretrained_horse_stance_punch/metrics/ckpt_33000/official_provided_accuracy.json",
+      "sha256": "161bdd9d27736b570c2a315245a203cf3a8122786c051ef55f1c46238a192611"
+    },
+    "ratio": {
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/PBHC/example/pretrained_horse_stance_punch/metrics/ckpt_33000/official_provided_ratio_ratio.json",
+      "sha256": "55b40913128d289f6fe19ba29fdf8b1625996ecc0e0300a715ff361b96a65b0b"
+    }
+  },
+  "full_training_started": false,
+  "next_gate": "Fresh independent agent follows documented witness before --stage train"
+}
