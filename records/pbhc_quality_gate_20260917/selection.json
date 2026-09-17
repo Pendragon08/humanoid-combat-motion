@@ -1,0 +1,516 @@
+{
+  "protocol": {
+    "scales": [
+      1.0,
+      0.75,
+      0.5,
+      0.25
+    ],
+    "fallback": "raw_source",
+    "ordering": "Largest correction scale passing ALL unchanged data-only checks, never policy-score selection",
+    "development": "Backtracking added after v1 data-only foot-XY rejections; before new execution; not preregistered before all development",
+    "config_sha256": "f6567b1f6d4954fadfa3d8301ae4e0ae6b8c8e4ac005923052dea22d216ae4f3",
+    "script_sha256": "e408ab43db80028497930d7aac14fddb7c5330f5dada5c435e75900c5b696b04"
+  },
+  "records": [
+    {
+      "name": "Hooks_punch",
+      "selected_scale": 0.75,
+      "status": "eligible_for_probe",
+      "selected_input": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_quality_gate_20260917/backtracking_selected/sample_Hooks_punch.npz",
+      "selected_sha256": "d844cfefac499c02c63c16884cedc933070df8d0133f3c742728bc7f5069d91f",
+      "source": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/references_full/sample_Hooks_punch_actor0.npz",
+      "source_sha256": "af6760c1be4d0485b31b5beb0de98410b6030e13c8673e0e20bbd2506675e76a",
+      "candidate_sha256": "57c696b2e615a1118a581e8e88c6a7fb7abbb9d1cb61510d39138ce3f969ebb8",
+      "trials": [
+        {
+          "scale": 1.0,
+          "gate": {
+            "pass_gate": false,
+            "checks": {
+              "joint_delta_rad": true,
+              "joint_delta_velocity_rad_s": true,
+              "joint_delta_acceleration_rad_s2": true,
+              "joint_delta_jerk_rad_s3": true,
+              "root_lift_m": true,
+              "root_delta_velocity_m_s": true,
+              "root_delta_acceleration_m_s2": true,
+              "root_delta_jerk_m_s3": true,
+              "foot_xy_change_m": false,
+              "root_no_downshift": true,
+              "root_xy_orientation_unchanged": true,
+              "initial_final_three_frames_unchanged": true,
+              "active_and_recovery_joints_unchanged": true,
+              "upper_joints_unchanged": true,
+              "per_joint_peak_velocity": true,
+              "per_joint_peak_acceleration": true,
+              "pointwise_no_worse_penetration": true,
+              "mean_penetration_reduction": true,
+              "known_contact_gap": true
+            },
+            "metrics": {
+              "joint_delta_rad": 0.06946289072517275,
+              "joint_delta_velocity_rad_s": 0.250000000000003,
+              "joint_delta_acceleration_rad_s2": 3.6000000000009633,
+              "joint_delta_jerk_rad_s3": 60.00000000004613,
+              "root_lift_m": 0.0,
+              "root_min_lift_m": 0.0,
+              "root_delta_velocity_m_s": 0.0,
+              "root_delta_acceleration_m_s2": 0.0,
+              "root_delta_jerk_m_s3": 0.0,
+              "foot_xy_change_m": 0.01275714017777045,
+              "original_penetration_max_m": 0.06641165619472826,
+              "candidate_penetration_max_m": 0.06641165619472826,
+              "original_penetration_mean_m": 0.022462371045852306,
+              "candidate_penetration_mean_m": 0.022021485787378562,
+              "worst_penetration_regression_m": 0.0,
+              "known_contact_gap_regression_m": 0.0
+            }
+          }
+        },
+        {
+          "scale": 0.75,
+          "gate": {
+            "pass_gate": true,
+            "checks": {
+              "joint_delta_rad": true,
+              "joint_delta_velocity_rad_s": true,
+              "joint_delta_acceleration_rad_s2": true,
+              "joint_delta_jerk_rad_s3": true,
+              "root_lift_m": true,
+              "root_delta_velocity_m_s": true,
+              "root_delta_acceleration_m_s2": true,
+              "root_delta_jerk_m_s3": true,
+              "foot_xy_change_m": true,
+              "root_no_downshift": true,
+              "root_xy_orientation_unchanged": true,
+              "initial_final_three_frames_unchanged": true,
+              "active_and_recovery_joints_unchanged": true,
+              "upper_joints_unchanged": true,
+              "per_joint_peak_velocity": true,
+              "per_joint_peak_acceleration": true,
+              "pointwise_no_worse_penetration": true,
+              "mean_penetration_reduction": true,
+              "known_contact_gap": true
+            },
+            "metrics": {
+              "joint_delta_rad": 0.05209716804387954,
+              "joint_delta_velocity_rad_s": 0.18750000000000155,
+              "joint_delta_acceleration_rad_s2": 2.700000000000688,
+              "joint_delta_jerk_rad_s3": 45.000000000034596,
+              "root_lift_m": 0.0,
+              "root_min_lift_m": 0.0,
+              "root_delta_velocity_m_s": 0.0,
+              "root_delta_acceleration_m_s2": 0.0,
+              "root_delta_jerk_m_s3": 0.0,
+              "foot_xy_change_m": 0.009582616712709656,
+              "original_penetration_max_m": 0.06641165619472826,
+              "candidate_penetration_max_m": 0.06641165619472826,
+              "original_penetration_mean_m": 0.022462371045852306,
+              "candidate_penetration_mean_m": 0.022115365604376193,
+              "worst_penetration_regression_m": 0.0,
+              "known_contact_gap_regression_m": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Horse-stance_punch",
+      "selected_scale": 0.75,
+      "status": "eligible_for_probe",
+      "selected_input": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_quality_gate_20260917/backtracking_selected/sample_Horse-stance_punch.npz",
+      "selected_sha256": "e71297ed5cfd8dfe5899e33ab869e4cfecf532cdd6d1226a90db065140e14648",
+      "source": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/references_full/sample_Horse-stance_punch_actor0.npz",
+      "source_sha256": "b727970fddcde23c6184a36945dd4dfc49a6fda922c98f10270856e27e53559f",
+      "candidate_sha256": "cc6da9d0efd936fb6dc22cef48a9423a3043459103308e8b91c548dcabbe3b89",
+      "trials": [
+        {
+          "scale": 1.0,
+          "gate": {
+            "pass_gate": false,
+            "checks": {
+              "joint_delta_rad": true,
+              "joint_delta_velocity_rad_s": true,
+              "joint_delta_acceleration_rad_s2": true,
+              "joint_delta_jerk_rad_s3": true,
+              "root_lift_m": true,
+              "root_delta_velocity_m_s": true,
+              "root_delta_acceleration_m_s2": true,
+              "root_delta_jerk_m_s3": true,
+              "foot_xy_change_m": false,
+              "root_no_downshift": true,
+              "root_xy_orientation_unchanged": true,
+              "initial_final_three_frames_unchanged": true,
+              "active_and_recovery_joints_unchanged": true,
+              "upper_joints_unchanged": true,
+              "per_joint_peak_velocity": true,
+              "per_joint_peak_acceleration": true,
+              "pointwise_no_worse_penetration": true,
+              "mean_penetration_reduction": true,
+              "known_contact_gap": true
+            },
+            "metrics": {
+              "joint_delta_rad": 0.08000000000000002,
+              "joint_delta_velocity_rad_s": 0.2500000000000002,
+              "joint_delta_acceleration_rad_s2": 3.6000000000012413,
+              "joint_delta_jerk_rad_s3": 60.00000000005654,
+              "root_lift_m": 0.0,
+              "root_min_lift_m": 0.0,
+              "root_delta_velocity_m_s": 0.0,
+              "root_delta_acceleration_m_s2": 0.0,
+              "root_delta_jerk_m_s3": 0.0,
+              "foot_xy_change_m": 0.012734037673110822,
+              "original_penetration_max_m": 0.061094503595757035,
+              "candidate_penetration_max_m": 0.061094503595757035,
+              "original_penetration_mean_m": 0.029443183713597852,
+              "candidate_penetration_mean_m": 0.02875628489899003,
+              "worst_penetration_regression_m": 0.0,
+              "known_contact_gap_regression_m": -0.0001474771442693812
+            }
+          }
+        },
+        {
+          "scale": 0.75,
+          "gate": {
+            "pass_gate": true,
+            "checks": {
+              "joint_delta_rad": true,
+              "joint_delta_velocity_rad_s": true,
+              "joint_delta_acceleration_rad_s2": true,
+              "joint_delta_jerk_rad_s3": true,
+              "root_lift_m": true,
+              "root_delta_velocity_m_s": true,
+              "root_delta_acceleration_m_s2": true,
+              "root_delta_jerk_m_s3": true,
+              "foot_xy_change_m": true,
+              "root_no_downshift": true,
+              "root_xy_orientation_unchanged": true,
+              "initial_final_three_frames_unchanged": true,
+              "active_and_recovery_joints_unchanged": true,
+              "upper_joints_unchanged": true,
+              "per_joint_peak_velocity": true,
+              "per_joint_peak_acceleration": true,
+              "pointwise_no_worse_penetration": true,
+              "mean_penetration_reduction": true,
+              "known_contact_gap": true
+            },
+            "metrics": {
+              "joint_delta_rad": 0.06,
+              "joint_delta_velocity_rad_s": 0.18750000000000155,
+              "joint_delta_acceleration_rad_s2": 2.7000000000009656,
+              "joint_delta_jerk_rad_s3": 45.00000000004153,
+              "root_lift_m": 0.0,
+              "root_min_lift_m": 0.0,
+              "root_delta_velocity_m_s": 0.0,
+              "root_delta_acceleration_m_s2": 0.0,
+              "root_delta_jerk_m_s3": 0.0,
+              "foot_xy_change_m": 0.009557892300608266,
+              "original_penetration_max_m": 0.061094503595757035,
+              "candidate_penetration_max_m": 0.061094503595757035,
+              "original_penetration_mean_m": 0.029443183713597852,
+              "candidate_penetration_mean_m": 0.028920092948460496,
+              "worst_penetration_regression_m": 0.0,
+              "known_contact_gap_regression_m": -0.00010864249450711488
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Roundhouse_kick",
+      "selected_scale": 0.5,
+      "status": "eligible_for_probe",
+      "selected_input": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_quality_gate_20260917/backtracking_selected/sample_Roundhouse_kick.npz",
+      "selected_sha256": "e54bbc20e97ee388ada32a28eb3cbb803b264a650c3baf405b5763bb896dc730",
+      "source": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/references_full/sample_Roundhouse_kick_actor0.npz",
+      "source_sha256": "b82dea7dbb3ca1e959c88c716ae6128499da4344c24e5e05755cee587dd28d82",
+      "candidate_sha256": "b7cf5d42d772333d52d5895447d09c41d871a3f0e2737ecef7e5d13d22065649",
+      "trials": [
+        {
+          "scale": 1.0,
+          "gate": {
+            "pass_gate": false,
+            "checks": {
+              "joint_delta_rad": true,
+              "joint_delta_velocity_rad_s": true,
+              "joint_delta_acceleration_rad_s2": true,
+              "joint_delta_jerk_rad_s3": true,
+              "root_lift_m": true,
+              "root_delta_velocity_m_s": true,
+              "root_delta_acceleration_m_s2": true,
+              "root_delta_jerk_m_s3": true,
+              "foot_xy_change_m": false,
+              "root_no_downshift": true,
+              "root_xy_orientation_unchanged": true,
+              "initial_final_three_frames_unchanged": true,
+              "active_and_recovery_joints_unchanged": true,
+              "upper_joints_unchanged": true,
+              "per_joint_peak_velocity": true,
+              "per_joint_peak_acceleration": true,
+              "pointwise_no_worse_penetration": true,
+              "mean_penetration_reduction": true,
+              "known_contact_gap": true
+            },
+            "metrics": {
+              "joint_delta_rad": 0.08000000000000002,
+              "joint_delta_velocity_rad_s": 0.2500000000000002,
+              "joint_delta_acceleration_rad_s2": 3.60000000000138,
+              "joint_delta_jerk_rad_s3": 60.000000000060005,
+              "root_lift_m": 0.0,
+              "root_min_lift_m": 0.0,
+              "root_delta_velocity_m_s": 0.0,
+              "root_delta_acceleration_m_s2": 0.0,
+              "root_delta_jerk_m_s3": 0.0,
+              "foot_xy_change_m": 0.014170767724002836,
+              "original_penetration_max_m": 0.08325955046388894,
+              "candidate_penetration_max_m": 0.08325955046388894,
+              "original_penetration_mean_m": 0.01429920109467292,
+              "candidate_penetration_mean_m": 0.013118038657187633,
+              "worst_penetration_regression_m": 0.0,
+              "known_contact_gap_regression_m": -0.00047494642358457753
+            }
+          }
+        },
+        {
+          "scale": 0.75,
+          "gate": {
+            "pass_gate": false,
+            "checks": {
+              "joint_delta_rad": true,
+              "joint_delta_velocity_rad_s": true,
+              "joint_delta_acceleration_rad_s2": true,
+              "joint_delta_jerk_rad_s3": true,
+              "root_lift_m": true,
+              "root_delta_velocity_m_s": true,
+              "root_delta_acceleration_m_s2": true,
+              "root_delta_jerk_m_s3": true,
+              "foot_xy_change_m": false,
+              "root_no_downshift": true,
+              "root_xy_orientation_unchanged": true,
+              "initial_final_three_frames_unchanged": true,
+              "active_and_recovery_joints_unchanged": true,
+              "upper_joints_unchanged": true,
+              "per_joint_peak_velocity": true,
+              "per_joint_peak_acceleration": true,
+              "pointwise_no_worse_penetration": true,
+              "mean_penetration_reduction": true,
+              "known_contact_gap": true
+            },
+            "metrics": {
+              "joint_delta_rad": 0.06,
+              "joint_delta_velocity_rad_s": 0.18750000000000155,
+              "joint_delta_acceleration_rad_s2": 2.700000000001035,
+              "joint_delta_jerk_rad_s3": 45.000000000045006,
+              "root_lift_m": 0.0,
+              "root_min_lift_m": 0.0,
+              "root_delta_velocity_m_s": 0.0,
+              "root_delta_acceleration_m_s2": 0.0,
+              "root_delta_jerk_m_s3": 0.0,
+              "foot_xy_change_m": 0.010682923138174514,
+              "original_penetration_max_m": 0.08325955046388894,
+              "candidate_penetration_max_m": 0.08325955046388894,
+              "original_penetration_mean_m": 0.01429920109467292,
+              "candidate_penetration_mean_m": 0.013349427484925623,
+              "worst_penetration_regression_m": 0.0,
+              "known_contact_gap_regression_m": -0.00041794819744528366
+            }
+          }
+        },
+        {
+          "scale": 0.5,
+          "gate": {
+            "pass_gate": true,
+            "checks": {
+              "joint_delta_rad": true,
+              "joint_delta_velocity_rad_s": true,
+              "joint_delta_acceleration_rad_s2": true,
+              "joint_delta_jerk_rad_s3": true,
+              "root_lift_m": true,
+              "root_delta_velocity_m_s": true,
+              "root_delta_acceleration_m_s2": true,
+              "root_delta_jerk_m_s3": true,
+              "foot_xy_change_m": true,
+              "root_no_downshift": true,
+              "root_xy_orientation_unchanged": true,
+              "initial_final_three_frames_unchanged": true,
+              "active_and_recovery_joints_unchanged": true,
+              "upper_joints_unchanged": true,
+              "per_joint_peak_velocity": true,
+              "per_joint_peak_acceleration": true,
+              "pointwise_no_worse_penetration": true,
+              "mean_penetration_reduction": true,
+              "known_contact_gap": true
+            },
+            "metrics": {
+              "joint_delta_rad": 0.040000000000000036,
+              "joint_delta_velocity_rad_s": 0.1250000000000029,
+              "joint_delta_acceleration_rad_s2": 1.8000000000007592,
+              "joint_delta_jerk_rad_s3": 30.000000000030003,
+              "root_lift_m": 0.0,
+              "root_min_lift_m": 0.0,
+              "root_delta_velocity_m_s": 0.0,
+              "root_delta_acceleration_m_s2": 0.0,
+              "root_delta_jerk_m_s3": 0.0,
+              "foot_xy_change_m": 0.007157643643353418,
+              "original_penetration_max_m": 0.08325955046388894,
+              "candidate_penetration_max_m": 0.08325955046388894,
+              "original_penetration_mean_m": 0.01429920109467292,
+              "candidate_penetration_mean_m": 0.013586112436044111,
+              "worst_penetration_regression_m": 0.0,
+              "known_contact_gap_regression_m": -0.00032564008529136976
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Side_kick",
+      "selected_scale": 0.5,
+      "status": "eligible_for_probe",
+      "selected_input": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_quality_gate_20260917/backtracking_selected/sample_Side_kick.npz",
+      "selected_sha256": "9fddb4d54f92aee03ccfd33f312f401fa3e0c77c9a66aa6562d8dae581e85e5e",
+      "source": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/references_full/sample_Side_kick_actor0.npz",
+      "source_sha256": "6dc82426c94ad8d4294ae3319fc3441dac2d61bf179c3f2f37efe4d7b63c5479",
+      "candidate_sha256": "5e4b45d8ad7003aa84f86077c1484c3c526d1b6e5d7d4eeeae508a0bf2129176",
+      "trials": [
+        {
+          "scale": 1.0,
+          "gate": {
+            "pass_gate": false,
+            "checks": {
+              "joint_delta_rad": true,
+              "joint_delta_velocity_rad_s": true,
+              "joint_delta_acceleration_rad_s2": true,
+              "joint_delta_jerk_rad_s3": true,
+              "root_lift_m": true,
+              "root_delta_velocity_m_s": true,
+              "root_delta_acceleration_m_s2": true,
+              "root_delta_jerk_m_s3": true,
+              "foot_xy_change_m": false,
+              "root_no_downshift": true,
+              "root_xy_orientation_unchanged": true,
+              "initial_final_three_frames_unchanged": true,
+              "active_and_recovery_joints_unchanged": true,
+              "upper_joints_unchanged": true,
+              "per_joint_peak_velocity": true,
+              "per_joint_peak_acceleration": true,
+              "pointwise_no_worse_penetration": true,
+              "mean_penetration_reduction": true,
+              "known_contact_gap": true
+            },
+            "metrics": {
+              "joint_delta_rad": 0.08000000000000002,
+              "joint_delta_velocity_rad_s": 0.250000000000003,
+              "joint_delta_acceleration_rad_s2": 3.6000000000013106,
+              "joint_delta_jerk_rad_s3": 60.000000000060005,
+              "root_lift_m": 0.0,
+              "root_min_lift_m": 0.0,
+              "root_delta_velocity_m_s": 0.0,
+              "root_delta_acceleration_m_s2": 0.0,
+              "root_delta_jerk_m_s3": 0.0,
+              "foot_xy_change_m": 0.01768430948638857,
+              "original_penetration_max_m": 0.05412473013450564,
+              "candidate_penetration_max_m": 0.05412473013450564,
+              "original_penetration_mean_m": 0.026716211620774772,
+              "candidate_penetration_mean_m": 0.02441585567915492,
+              "worst_penetration_regression_m": 0.0,
+              "known_contact_gap_regression_m": -0.0017266417918445978
+            }
+          }
+        },
+        {
+          "scale": 0.75,
+          "gate": {
+            "pass_gate": false,
+            "checks": {
+              "joint_delta_rad": true,
+              "joint_delta_velocity_rad_s": true,
+              "joint_delta_acceleration_rad_s2": true,
+              "joint_delta_jerk_rad_s3": true,
+              "root_lift_m": true,
+              "root_delta_velocity_m_s": true,
+              "root_delta_acceleration_m_s2": true,
+              "root_delta_jerk_m_s3": true,
+              "foot_xy_change_m": false,
+              "root_no_downshift": true,
+              "root_xy_orientation_unchanged": true,
+              "initial_final_three_frames_unchanged": true,
+              "active_and_recovery_joints_unchanged": true,
+              "upper_joints_unchanged": true,
+              "per_joint_peak_velocity": true,
+              "per_joint_peak_acceleration": true,
+              "pointwise_no_worse_penetration": true,
+              "mean_penetration_reduction": true,
+              "known_contact_gap": true
+            },
+            "metrics": {
+              "joint_delta_rad": 0.06,
+              "joint_delta_velocity_rad_s": 0.18750000000000155,
+              "joint_delta_acceleration_rad_s2": 2.700000000001035,
+              "joint_delta_jerk_rad_s3": 45.000000000045006,
+              "root_lift_m": 0.0,
+              "root_min_lift_m": 0.0,
+              "root_delta_velocity_m_s": 0.0,
+              "root_delta_acceleration_m_s2": 0.0,
+              "root_delta_jerk_m_s3": 0.0,
+              "foot_xy_change_m": 0.01334775683962924,
+              "original_penetration_max_m": 0.05412473013450564,
+              "candidate_penetration_max_m": 0.05412473013450564,
+              "original_penetration_mean_m": 0.026716211620774772,
+              "candidate_penetration_mean_m": 0.024999452503541984,
+              "worst_penetration_regression_m": 0.0,
+              "known_contact_gap_regression_m": -0.0012908349031237193
+            }
+          }
+        },
+        {
+          "scale": 0.5,
+          "gate": {
+            "pass_gate": true,
+            "checks": {
+              "joint_delta_rad": true,
+              "joint_delta_velocity_rad_s": true,
+              "joint_delta_acceleration_rad_s2": true,
+              "joint_delta_jerk_rad_s3": true,
+              "root_lift_m": true,
+              "root_delta_velocity_m_s": true,
+              "root_delta_acceleration_m_s2": true,
+              "root_delta_jerk_m_s3": true,
+              "foot_xy_change_m": true,
+              "root_no_downshift": true,
+              "root_xy_orientation_unchanged": true,
+              "initial_final_three_frames_unchanged": true,
+              "active_and_recovery_joints_unchanged": true,
+              "upper_joints_unchanged": true,
+              "per_joint_peak_velocity": true,
+              "per_joint_peak_acceleration": true,
+              "pointwise_no_worse_penetration": true,
+              "mean_penetration_reduction": true,
+              "known_contact_gap": true
+            },
+            "metrics": {
+              "joint_delta_rad": 0.040000000000000036,
+              "joint_delta_velocity_rad_s": 0.1250000000000029,
+              "joint_delta_acceleration_rad_s2": 1.80000000000069,
+              "joint_delta_jerk_rad_s3": 30.000000000030003,
+              "root_lift_m": 0.0,
+              "root_min_lift_m": 0.0,
+              "root_delta_velocity_m_s": 0.0,
+              "root_delta_acceleration_m_s2": 0.0,
+              "root_delta_jerk_m_s3": 0.0,
+              "foot_xy_change_m": 0.008953671403098279,
+              "original_penetration_max_m": 0.05412473013450564,
+              "candidate_penetration_max_m": 0.05412473013450564,
+              "original_penetration_mean_m": 0.026716211620774772,
+              "candidate_penetration_mean_m": 0.025580037215737476,
+              "worst_penetration_regression_m": 0.0,
+              "known_contact_gap_regression_m": -0.0008526107510566719
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "used_execution_scores": false
+}

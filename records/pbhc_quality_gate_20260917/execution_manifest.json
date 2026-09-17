@@ -1,0 +1,70 @@
+{
+  "jobs": [
+    {
+      "name": "Hooks_punch",
+      "arm": "quality_gated",
+      "selected_scale": 0.75,
+      "gpu": 0,
+      "checkpoint": "runs/pbhc_beyondmimic_20260916/training/Hooks_punch/model_1999.pt",
+      "checkpoint_sha256": "925ab396005fdaee0fa1f1a141dcee2d3165f48f318d658dfac5c347e3d91230",
+      "reference": "runs/pbhc_quality_gate_20260917/references/sample_Hooks_punch_actor0.npz",
+      "reference_sha256": "75351a3df40681b922f1d2e262e017cb0ef15e5894b2993d0e66a0263e340b31",
+      "original_reference": "runs/pbhc_beyondmimic_20260916/references_full/sample_Hooks_punch_actor0.npz",
+      "original_reference_sha256": "af6760c1be4d0485b31b5beb0de98410b6030e13c8673e0e20bbd2506675e76a",
+      "output": "runs/pbhc_quality_gate_20260917/evaluation/Hooks_punch_quality_gated"
+    },
+    {
+      "name": "Horse-stance_punch",
+      "arm": "quality_gated",
+      "selected_scale": 0.75,
+      "gpu": 0,
+      "checkpoint": "runs/pbhc_beyondmimic_20260916/training/Horse-stance_punch/model_1999.pt",
+      "checkpoint_sha256": "bc6125e3b6469f7ebfac3f3b645334ecce14161c68f27fc5811522ade4c85145",
+      "reference": "runs/pbhc_quality_gate_20260917/references/sample_Horse-stance_punch_actor0.npz",
+      "reference_sha256": "bc2d330a8d4bf930d6e57f885f075f07ab415d9720856bcc0403c35dc8bf5f27",
+      "original_reference": "runs/pbhc_beyondmimic_20260916/references_full/sample_Horse-stance_punch_actor0.npz",
+      "original_reference_sha256": "b727970fddcde23c6184a36945dd4dfc49a6fda922c98f10270856e27e53559f",
+      "output": "runs/pbhc_quality_gate_20260917/evaluation/Horse-stance_punch_quality_gated"
+    },
+    {
+      "name": "Roundhouse_kick",
+      "arm": "quality_gated",
+      "selected_scale": 0.5,
+      "gpu": 1,
+      "checkpoint": "runs/pbhc_beyondmimic_20260916/training/Roundhouse_kick/model_1999.pt",
+      "checkpoint_sha256": "e06d946378810826828a1ef52b8c61227f7f22ee2c1bbd4850c3e7420e1dd361",
+      "reference": "runs/pbhc_quality_gate_20260917/references/sample_Roundhouse_kick_actor0.npz",
+      "reference_sha256": "4176c063ac33f96585a034e4e276af21d8e20532ab5127fbe2b129223a798b16",
+      "original_reference": "runs/pbhc_beyondmimic_20260916/references_full/sample_Roundhouse_kick_actor0.npz",
+      "original_reference_sha256": "b82dea7dbb3ca1e959c88c716ae6128499da4344c24e5e05755cee587dd28d82",
+      "output": "runs/pbhc_quality_gate_20260917/evaluation/Roundhouse_kick_quality_gated"
+    },
+    {
+      "name": "Side_kick",
+      "arm": "quality_gated",
+      "selected_scale": 0.5,
+      "gpu": 1,
+      "checkpoint": "runs/pbhc_beyondmimic_20260916/training/Side_kick/model_1999.pt",
+      "checkpoint_sha256": "cfbe57b159c2c64339e64e2e08149454493f3edc3e3fe94079dc11a86a636119",
+      "reference": "runs/pbhc_quality_gate_20260917/references/sample_Side_kick_actor0.npz",
+      "reference_sha256": "3fb7411d51655e396f6e2a438637eb83d2a39edb462857d569fa1b01fcfe70ad",
+      "original_reference": "runs/pbhc_beyondmimic_20260916/references_full/sample_Side_kick_actor0.npz",
+      "original_reference_sha256": "6dc82426c94ad8d4294ae3319fc3441dac2d61bf179c3f2f37efe4d7b63c5479",
+      "output": "runs/pbhc_quality_gate_20260917/evaluation/Side_kick_quality_gated"
+    }
+  ],
+  "seed": 123,
+  "num_envs": 32,
+  "regime": "nominal",
+  "training_updates": 0,
+  "frozen_code_hashes": {
+    "scripts/evaluate_pbhc_support_diagnostic.py": "2f636cee83e48006e0df6ab4eaafab53f581ab5e6843a08aecb9ffc2f03133f1",
+    "scripts/run_pbhc_quality_gate.py": "a8720b9bdee01716cf7a49f205206c27bd4fdb06d57f95f9de9db1e31db43f64",
+    "scripts/summarize_pbhc_quality_gate.py": "54bb89ad7140849f28f99b06755b61848d11eeb049c3869cbf32383e38a50833"
+  },
+  "frozen_data_selection_hashes": {
+    "records/pbhc_quality_gate_20260917/selection.json": "284af80f30b92709e9d3b6caad5f65b736afb93f7c0a74469e7433460abc3328",
+    "records/pbhc_quality_gate_20260917/selection_protocol.json": "d4f7f351eff120d820ca46c063018f698b067550c8133837145941f5d637c377",
+    "configs/pbhc_quality_gate_v1.json": "f6567b1f6d4954fadfa3d8301ae4e0ae6b8c8e4ac005923052dea22d216ae4f3"
+  }
+}

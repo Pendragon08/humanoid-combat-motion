@@ -1,0 +1,736 @@
+{
+  "scope": "Source-only development gate. No execution score read; original fallback retained for every rejected motion.",
+  "config_sha256": "f6567b1f6d4954fadfa3d8301ae4e0ae6b8c8e4ac005923052dea22d216ae4f3",
+  "script_sha256": "a5bea77f68fad1b63f82630030ecb0ac6d6b230431b39d639576aeeae7dd961d",
+  "records": [
+    {
+      "name": "Hooks_punch",
+      "source": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/references_full/sample_Hooks_punch_actor0.npz",
+      "source_sha256": "af6760c1be4d0485b31b5beb0de98410b6030e13c8673e0e20bbd2506675e76a",
+      "previous_candidate_sha256": "e42cc9092fc84222c68cb244e4f2dfe15d7f9f17efa01be717b9822d7577f441",
+      "source_contact_path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/PBHC/example/motion_data/Hooks_punch.pkl",
+      "source_contact_sha256": "fd61b565e88dd909553b806eaff1c85c458f8ebeae468e3e10904f6faa9b2303",
+      "onset_s": 0.77,
+      "selected": "raw_fallback",
+      "candidate": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_quality_gate_20260917/candidate/sample_Hooks_punch.npz",
+      "selected_input": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_quality_gate_20260917/selected/sample_Hooks_punch.npz",
+      "candidate_sha256": "57c696b2e615a1118a581e8e88c6a7fb7abbb9d1cb61510d39138ce3f969ebb8",
+      "selected_sha256": "269bdd4ac30f7d9a6479581373358f8ae2e56cdd6113970e031d9250bd2cda35",
+      "gate": {
+        "pass_gate": false,
+        "checks": {
+          "joint_delta_rad": true,
+          "joint_delta_velocity_rad_s": true,
+          "joint_delta_acceleration_rad_s2": true,
+          "joint_delta_jerk_rad_s3": true,
+          "root_lift_m": true,
+          "root_delta_velocity_m_s": true,
+          "root_delta_acceleration_m_s2": true,
+          "root_delta_jerk_m_s3": true,
+          "foot_xy_change_m": false,
+          "root_no_downshift": true,
+          "root_xy_orientation_unchanged": true,
+          "initial_final_three_frames_unchanged": true,
+          "active_and_recovery_joints_unchanged": true,
+          "upper_joints_unchanged": true,
+          "per_joint_peak_velocity": true,
+          "per_joint_peak_acceleration": true,
+          "pointwise_no_worse_penetration": true,
+          "mean_penetration_reduction": true,
+          "known_contact_gap": true
+        },
+        "metrics": {
+          "joint_delta_rad": 0.06946289072517275,
+          "joint_delta_velocity_rad_s": 0.250000000000003,
+          "joint_delta_acceleration_rad_s2": 3.6000000000009633,
+          "joint_delta_jerk_rad_s3": 60.00000000004613,
+          "root_lift_m": 0.0,
+          "root_min_lift_m": 0.0,
+          "root_delta_velocity_m_s": 0.0,
+          "root_delta_acceleration_m_s2": 0.0,
+          "root_delta_jerk_m_s3": 0.0,
+          "foot_xy_change_m": 0.01275714017777045,
+          "original_penetration_max_m": 0.06641165619472826,
+          "candidate_penetration_max_m": 0.06641165619472826,
+          "original_penetration_mean_m": 0.022462371045852306,
+          "candidate_penetration_mean_m": 0.022021485787378562,
+          "worst_penetration_regression_m": 0.0,
+          "known_contact_gap_regression_m": 0.0
+        }
+      },
+      "solvers": [
+        {
+          "joint": "left_hip_pitch_joint",
+          "status": "solved",
+          "iterations": 9300,
+          "constraint_violation": 1.2598429244281562e-16
+        },
+        {
+          "joint": "right_hip_pitch_joint",
+          "status": "solved",
+          "iterations": 10050,
+          "constraint_violation": 1.2999584048101198e-16
+        },
+        {
+          "joint": "left_hip_roll_joint",
+          "status": "solved",
+          "iterations": 100,
+          "constraint_violation": 4.855038351248739e-19
+        },
+        {
+          "joint": "right_hip_roll_joint",
+          "status": "solved",
+          "iterations": 100,
+          "constraint_violation": 1.8476565070545854e-19
+        },
+        {
+          "joint": "left_hip_yaw_joint",
+          "status": "solved",
+          "iterations": 1450,
+          "constraint_violation": 1.0245710529988017e-17
+        },
+        {
+          "joint": "right_hip_yaw_joint",
+          "status": "solved",
+          "iterations": 100,
+          "constraint_violation": 2.291491088823442e-19
+        },
+        {
+          "joint": "left_knee_joint",
+          "status": "solved",
+          "iterations": 16050,
+          "constraint_violation": 1.1275702593849246e-17
+        },
+        {
+          "joint": "right_knee_joint",
+          "status": "solved",
+          "iterations": 4275,
+          "constraint_violation": 7.806255641895632e-18
+        },
+        {
+          "joint": "left_ankle_pitch_joint",
+          "status": "solved",
+          "iterations": 17150,
+          "constraint_violation": 6.499792024050599e-17
+        },
+        {
+          "joint": "right_ankle_pitch_joint",
+          "status": "solved",
+          "iterations": 4425,
+          "constraint_violation": 4.336808689942018e-18
+        },
+        {
+          "joint": "left_ankle_roll_joint",
+          "status": "solved",
+          "iterations": 850,
+          "constraint_violation": 1.8973538018496328e-18
+        },
+        {
+          "joint": "right_ankle_roll_joint",
+          "status": "solved",
+          "iterations": 100,
+          "constraint_violation": 2.115892427899451e-19
+        },
+        {
+          "joint": "root_z_source_only_compensation",
+          "status": "solved",
+          "iterations": 25,
+          "constraint_violation": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Horse-stance_punch",
+      "source": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/references_full/sample_Horse-stance_punch_actor0.npz",
+      "source_sha256": "b727970fddcde23c6184a36945dd4dfc49a6fda922c98f10270856e27e53559f",
+      "previous_candidate_sha256": "1629f0d50431802445bbeeb7170a38dabc179e41a0e4c19125d950787ff9aa13",
+      "source_contact_path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/PBHC/example/motion_data/Horse-stance_punch.pkl",
+      "source_contact_sha256": "802ffd509925bd188ebaab0b3bcbf2336f1bafd519466c2469a78ba7cf3a7beb",
+      "onset_s": 1.3,
+      "selected": "raw_fallback",
+      "candidate": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_quality_gate_20260917/candidate/sample_Horse-stance_punch.npz",
+      "selected_input": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_quality_gate_20260917/selected/sample_Horse-stance_punch.npz",
+      "candidate_sha256": "cc6da9d0efd936fb6dc22cef48a9423a3043459103308e8b91c548dcabbe3b89",
+      "selected_sha256": "fc472e28a2f5c8bd86ab8f720ea91927b0aebcdd56a7b0fdd1f7d1a7976d7c34",
+      "gate": {
+        "pass_gate": false,
+        "checks": {
+          "joint_delta_rad": true,
+          "joint_delta_velocity_rad_s": true,
+          "joint_delta_acceleration_rad_s2": true,
+          "joint_delta_jerk_rad_s3": true,
+          "root_lift_m": true,
+          "root_delta_velocity_m_s": true,
+          "root_delta_acceleration_m_s2": true,
+          "root_delta_jerk_m_s3": true,
+          "foot_xy_change_m": false,
+          "root_no_downshift": true,
+          "root_xy_orientation_unchanged": true,
+          "initial_final_three_frames_unchanged": true,
+          "active_and_recovery_joints_unchanged": true,
+          "upper_joints_unchanged": true,
+          "per_joint_peak_velocity": true,
+          "per_joint_peak_acceleration": true,
+          "pointwise_no_worse_penetration": true,
+          "mean_penetration_reduction": true,
+          "known_contact_gap": true
+        },
+        "metrics": {
+          "joint_delta_rad": 0.08000000000000002,
+          "joint_delta_velocity_rad_s": 0.2500000000000002,
+          "joint_delta_acceleration_rad_s2": 3.6000000000012413,
+          "joint_delta_jerk_rad_s3": 60.00000000005654,
+          "root_lift_m": 0.0,
+          "root_min_lift_m": 0.0,
+          "root_delta_velocity_m_s": 0.0,
+          "root_delta_acceleration_m_s2": 0.0,
+          "root_delta_jerk_m_s3": 0.0,
+          "foot_xy_change_m": 0.012734037673110822,
+          "original_penetration_max_m": 0.061094503595757035,
+          "candidate_penetration_max_m": 0.061094503595757035,
+          "original_penetration_mean_m": 0.029443183713597852,
+          "candidate_penetration_mean_m": 0.02875628489899003,
+          "worst_penetration_regression_m": 0.0,
+          "known_contact_gap_regression_m": -0.0001474771442693812
+        }
+      },
+      "solvers": [
+        {
+          "joint": "left_hip_pitch_joint",
+          "status": "solved",
+          "iterations": 9225,
+          "constraint_violation": 1.6761765586625899e-16
+        },
+        {
+          "joint": "right_hip_pitch_joint",
+          "status": "solved",
+          "iterations": 4600,
+          "constraint_violation": 9.871660780480518e-17
+        },
+        {
+          "joint": "left_hip_roll_joint",
+          "status": "solved",
+          "iterations": 100,
+          "constraint_violation": 1.0400186824579769e-19
+        },
+        {
+          "joint": "right_hip_roll_joint",
+          "status": "solved",
+          "iterations": 125,
+          "constraint_violation": 2.807346705827942e-19
+        },
+        {
+          "joint": "left_hip_yaw_joint",
+          "status": "solved",
+          "iterations": 125,
+          "constraint_violation": 1.0233209369929456e-19
+        },
+        {
+          "joint": "right_hip_yaw_joint",
+          "status": "solved",
+          "iterations": 150,
+          "constraint_violation": 6.821722752520743e-19
+        },
+        {
+          "joint": "left_knee_joint",
+          "status": "solved",
+          "iterations": 9650,
+          "constraint_violation": 1.3877787807814457e-17
+        },
+        {
+          "joint": "right_knee_joint",
+          "status": "solved",
+          "iterations": 4375,
+          "constraint_violation": 1.3877787807814457e-17
+        },
+        {
+          "joint": "left_ankle_pitch_joint",
+          "status": "solved",
+          "iterations": 9600,
+          "constraint_violation": 1.5764299587939234e-16
+        },
+        {
+          "joint": "right_ankle_pitch_joint",
+          "status": "solved",
+          "iterations": 9375,
+          "constraint_violation": 1.658287222816579e-16
+        },
+        {
+          "joint": "left_ankle_roll_joint",
+          "status": "solved",
+          "iterations": 100,
+          "constraint_violation": 1.7941413162086162e-19
+        },
+        {
+          "joint": "right_ankle_roll_joint",
+          "status": "solved",
+          "iterations": 125,
+          "constraint_violation": 2.1117678819811078e-19
+        },
+        {
+          "joint": "root_z_source_only_compensation",
+          "status": "solved",
+          "iterations": 25,
+          "constraint_violation": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Roundhouse_kick",
+      "source": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/references_full/sample_Roundhouse_kick_actor0.npz",
+      "source_sha256": "b82dea7dbb3ca1e959c88c716ae6128499da4344c24e5e05755cee587dd28d82",
+      "previous_candidate_sha256": "dac3dda503ae7a19ef944e13c67997a6f07b4a4eac107eab9105b0617a6103bb",
+      "source_contact_path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/PBHC/example/motion_data/Roundhouse_kick.pkl",
+      "source_contact_sha256": "d44883742e173d7db5839f0f92cb8409433f5a23cb47d0a81bfeb916ee4d6417",
+      "onset_s": 1.37,
+      "selected": "raw_fallback",
+      "candidate": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_quality_gate_20260917/candidate/sample_Roundhouse_kick.npz",
+      "selected_input": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_quality_gate_20260917/selected/sample_Roundhouse_kick.npz",
+      "candidate_sha256": "b7cf5d42d772333d52d5895447d09c41d871a3f0e2737ecef7e5d13d22065649",
+      "selected_sha256": "4d7cb06bacc39b84278d3e9f3352496544bea50cdecfab5cede80a181340a923",
+      "gate": {
+        "pass_gate": false,
+        "checks": {
+          "joint_delta_rad": true,
+          "joint_delta_velocity_rad_s": true,
+          "joint_delta_acceleration_rad_s2": true,
+          "joint_delta_jerk_rad_s3": true,
+          "root_lift_m": true,
+          "root_delta_velocity_m_s": true,
+          "root_delta_acceleration_m_s2": true,
+          "root_delta_jerk_m_s3": true,
+          "foot_xy_change_m": false,
+          "root_no_downshift": true,
+          "root_xy_orientation_unchanged": true,
+          "initial_final_three_frames_unchanged": true,
+          "active_and_recovery_joints_unchanged": true,
+          "upper_joints_unchanged": true,
+          "per_joint_peak_velocity": true,
+          "per_joint_peak_acceleration": true,
+          "pointwise_no_worse_penetration": true,
+          "mean_penetration_reduction": true,
+          "known_contact_gap": true
+        },
+        "metrics": {
+          "joint_delta_rad": 0.08000000000000002,
+          "joint_delta_velocity_rad_s": 0.2500000000000002,
+          "joint_delta_acceleration_rad_s2": 3.60000000000138,
+          "joint_delta_jerk_rad_s3": 60.000000000060005,
+          "root_lift_m": 0.0,
+          "root_min_lift_m": 0.0,
+          "root_delta_velocity_m_s": 0.0,
+          "root_delta_acceleration_m_s2": 0.0,
+          "root_delta_jerk_m_s3": 0.0,
+          "foot_xy_change_m": 0.014170767724002836,
+          "original_penetration_max_m": 0.08325955046388894,
+          "candidate_penetration_max_m": 0.08325955046388894,
+          "original_penetration_mean_m": 0.01429920109467292,
+          "candidate_penetration_mean_m": 0.013118038657187633,
+          "worst_penetration_regression_m": 0.0,
+          "known_contact_gap_regression_m": -0.00047494642358457753
+        }
+      },
+      "solvers": [
+        {
+          "joint": "left_hip_pitch_joint",
+          "status": "solved",
+          "iterations": 10025,
+          "constraint_violation": 1.6181717424346154e-16
+        },
+        {
+          "joint": "right_hip_pitch_joint",
+          "status": "solved",
+          "iterations": 9575,
+          "constraint_violation": 1.736891880321778e-16
+        },
+        {
+          "joint": "left_hip_roll_joint",
+          "status": "solved",
+          "iterations": 125,
+          "constraint_violation": 6.633313436563496e-19
+        },
+        {
+          "joint": "right_hip_roll_joint",
+          "status": "solved",
+          "iterations": 125,
+          "constraint_violation": 8.761537447174098e-19
+        },
+        {
+          "joint": "left_hip_yaw_joint",
+          "status": "solved",
+          "iterations": 4400,
+          "constraint_violation": 8.310409652101391e-17
+        },
+        {
+          "joint": "right_hip_yaw_joint",
+          "status": "solved",
+          "iterations": 775,
+          "constraint_violation": 1.1655173354219173e-17
+        },
+        {
+          "joint": "left_knee_joint",
+          "status": "solved",
+          "iterations": 5625,
+          "constraint_violation": 1.1275702593849246e-17
+        },
+        {
+          "joint": "right_knee_joint",
+          "status": "solved",
+          "iterations": 3425,
+          "constraint_violation": 4.336808689942018e-18
+        },
+        {
+          "joint": "left_ankle_pitch_joint",
+          "status": "solved",
+          "iterations": 9500,
+          "constraint_violation": 1.588356182691264e-16
+        },
+        {
+          "joint": "right_ankle_pitch_joint",
+          "status": "solved",
+          "iterations": 8675,
+          "constraint_violation": 1.6019087098473328e-16
+        },
+        {
+          "joint": "left_ankle_roll_joint",
+          "status": "solved",
+          "iterations": 2950,
+          "constraint_violation": 1.3040376248854525e-10
+        },
+        {
+          "joint": "right_ankle_roll_joint",
+          "status": "solved",
+          "iterations": 1225,
+          "constraint_violation": 1.923412149698405e-10
+        },
+        {
+          "joint": "root_z_source_only_compensation",
+          "status": "solved",
+          "iterations": 25,
+          "constraint_violation": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Side_kick",
+      "source": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_beyondmimic_20260916/references_full/sample_Side_kick_actor0.npz",
+      "source_sha256": "6dc82426c94ad8d4294ae3319fc3441dac2d61bf179c3f2f37efe4d7b63c5479",
+      "previous_candidate_sha256": "a3c790738016003c43ae1db0a748c53d50ef9b8d4b3a7b76313329b372e739df",
+      "source_contact_path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/PBHC/example/motion_data/Side_kick.pkl",
+      "source_contact_sha256": "3152b3b53537e426bba57c5c3e04bd5dff74b00a38ee3a33a9c8dc1de7228821",
+      "onset_s": 1.57,
+      "selected": "raw_fallback",
+      "candidate": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_quality_gate_20260917/candidate/sample_Side_kick.npz",
+      "selected_input": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_quality_gate_20260917/selected/sample_Side_kick.npz",
+      "candidate_sha256": "5e4b45d8ad7003aa84f86077c1484c3c526d1b6e5d7d4eeeae508a0bf2129176",
+      "selected_sha256": "9c43209b16a685c00e38c6fab1462a26e1aea3754006bf92d0328535e5af97f0",
+      "gate": {
+        "pass_gate": false,
+        "checks": {
+          "joint_delta_rad": true,
+          "joint_delta_velocity_rad_s": true,
+          "joint_delta_acceleration_rad_s2": true,
+          "joint_delta_jerk_rad_s3": true,
+          "root_lift_m": true,
+          "root_delta_velocity_m_s": true,
+          "root_delta_acceleration_m_s2": true,
+          "root_delta_jerk_m_s3": true,
+          "foot_xy_change_m": false,
+          "root_no_downshift": true,
+          "root_xy_orientation_unchanged": true,
+          "initial_final_three_frames_unchanged": true,
+          "active_and_recovery_joints_unchanged": true,
+          "upper_joints_unchanged": true,
+          "per_joint_peak_velocity": true,
+          "per_joint_peak_acceleration": true,
+          "pointwise_no_worse_penetration": true,
+          "mean_penetration_reduction": true,
+          "known_contact_gap": true
+        },
+        "metrics": {
+          "joint_delta_rad": 0.08000000000000002,
+          "joint_delta_velocity_rad_s": 0.250000000000003,
+          "joint_delta_acceleration_rad_s2": 3.6000000000013106,
+          "joint_delta_jerk_rad_s3": 60.000000000060005,
+          "root_lift_m": 0.0,
+          "root_min_lift_m": 0.0,
+          "root_delta_velocity_m_s": 0.0,
+          "root_delta_acceleration_m_s2": 0.0,
+          "root_delta_jerk_m_s3": 0.0,
+          "foot_xy_change_m": 0.01768430948638857,
+          "original_penetration_max_m": 0.05412473013450564,
+          "candidate_penetration_max_m": 0.05412473013450564,
+          "original_penetration_mean_m": 0.026716211620774772,
+          "candidate_penetration_mean_m": 0.02441585567915492,
+          "worst_penetration_regression_m": 0.0,
+          "known_contact_gap_regression_m": -0.0017266417918445978
+        }
+      },
+      "solvers": [
+        {
+          "joint": "left_hip_pitch_joint",
+          "status": "solved",
+          "iterations": 9175,
+          "constraint_violation": 1.66045562716155e-16
+        },
+        {
+          "joint": "right_hip_pitch_joint",
+          "status": "solved",
+          "iterations": 11025,
+          "constraint_violation": 1.7976072019809664e-16
+        },
+        {
+          "joint": "left_hip_roll_joint",
+          "status": "solved",
+          "iterations": 850,
+          "constraint_violation": 1.3552527156068805e-17
+        },
+        {
+          "joint": "right_hip_roll_joint",
+          "status": "solved",
+          "iterations": 125,
+          "constraint_violation": 2.3240111900238625e-19
+        },
+        {
+          "joint": "left_hip_yaw_joint",
+          "status": "solved",
+          "iterations": 1400,
+          "constraint_violation": 2.0383000842727483e-17
+        },
+        {
+          "joint": "right_hip_yaw_joint",
+          "status": "solved",
+          "iterations": 100,
+          "constraint_violation": 6.787988843012964e-19
+        },
+        {
+          "joint": "left_knee_joint",
+          "status": "solved",
+          "iterations": 3550,
+          "constraint_violation": 1.1275702593849246e-17
+        },
+        {
+          "joint": "right_knee_joint",
+          "status": "solved",
+          "iterations": 10400,
+          "constraint_violation": 1.1275702593849246e-17
+        },
+        {
+          "joint": "left_ankle_pitch_joint",
+          "status": "solved",
+          "iterations": 9800,
+          "constraint_violation": 1.3758525568841051e-16
+        },
+        {
+          "joint": "right_ankle_pitch_joint",
+          "status": "solved",
+          "iterations": 10275,
+          "constraint_violation": 1.354168513434395e-16
+        },
+        {
+          "joint": "left_ankle_roll_joint",
+          "status": "solved",
+          "iterations": 675,
+          "constraint_violation": 1.349831704744453e-17
+        },
+        {
+          "joint": "right_ankle_roll_joint",
+          "status": "solved",
+          "iterations": 100,
+          "constraint_violation": 5.762526578500968e-19
+        },
+        {
+          "joint": "root_z_source_only_compensation",
+          "status": "solved",
+          "iterations": 25,
+          "constraint_violation": 0.0
+        }
+      ]
+    }
+  ],
+  "retrospective_prior_gate": [
+    {
+      "name": "Hooks_punch",
+      "arm": "previous_prep_support",
+      "pass_gate": false,
+      "checks": {
+        "joint_delta_rad": false,
+        "joint_delta_velocity_rad_s": false,
+        "joint_delta_acceleration_rad_s2": false,
+        "joint_delta_jerk_rad_s3": false,
+        "root_lift_m": true,
+        "root_delta_velocity_m_s": true,
+        "root_delta_acceleration_m_s2": true,
+        "root_delta_jerk_m_s3": true,
+        "foot_xy_change_m": true,
+        "root_no_downshift": false,
+        "root_xy_orientation_unchanged": true,
+        "initial_final_three_frames_unchanged": false,
+        "active_and_recovery_joints_unchanged": true,
+        "upper_joints_unchanged": true,
+        "per_joint_peak_velocity": false,
+        "per_joint_peak_acceleration": false,
+        "pointwise_no_worse_penetration": false,
+        "mean_penetration_reduction": false,
+        "known_contact_gap": false
+      },
+      "metrics": {
+        "joint_delta_rad": 0.1199999998316249,
+        "joint_delta_velocity_rad_s": 1.2008829116763875,
+        "joint_delta_acceleration_rad_s2": 23.019504437577975,
+        "joint_delta_jerk_rad_s3": 1881.2747330071913,
+        "root_lift_m": -0.014533290130812615,
+        "root_min_lift_m": -0.014533290130812615,
+        "root_delta_velocity_m_s": 0.0,
+        "root_delta_acceleration_m_s2": 0.0,
+        "root_delta_jerk_m_s3": 0.0,
+        "foot_xy_change_m": 0.007912908084120214,
+        "original_penetration_max_m": 0.06641165619472826,
+        "candidate_penetration_max_m": 0.08094494632554085,
+        "original_penetration_mean_m": 0.022462371045852306,
+        "candidate_penetration_mean_m": 0.034101816158627375,
+        "worst_penetration_regression_m": 0.014533290130812726,
+        "known_contact_gap_regression_m": 0.010108599623752962
+      }
+    },
+    {
+      "name": "Horse-stance_punch",
+      "arm": "previous_prep_support",
+      "pass_gate": false,
+      "checks": {
+        "joint_delta_rad": false,
+        "joint_delta_velocity_rad_s": false,
+        "joint_delta_acceleration_rad_s2": false,
+        "joint_delta_jerk_rad_s3": false,
+        "root_lift_m": true,
+        "root_delta_velocity_m_s": true,
+        "root_delta_acceleration_m_s2": true,
+        "root_delta_jerk_m_s3": true,
+        "foot_xy_change_m": true,
+        "root_no_downshift": false,
+        "root_xy_orientation_unchanged": true,
+        "initial_final_three_frames_unchanged": false,
+        "active_and_recovery_joints_unchanged": true,
+        "upper_joints_unchanged": true,
+        "per_joint_peak_velocity": false,
+        "per_joint_peak_acceleration": false,
+        "pointwise_no_worse_penetration": false,
+        "mean_penetration_reduction": false,
+        "known_contact_gap": false
+      },
+      "metrics": {
+        "joint_delta_rad": 0.11999999999864008,
+        "joint_delta_velocity_rad_s": 1.0223303693941284,
+        "joint_delta_acceleration_rad_s2": 29.99999996514263,
+        "joint_delta_jerk_rad_s3": 2444.4138401660125,
+        "root_lift_m": -0.014297967097487874,
+        "root_min_lift_m": -0.014297967097487874,
+        "root_delta_velocity_m_s": 0.0,
+        "root_delta_acceleration_m_s2": 0.0,
+        "root_delta_jerk_m_s3": 0.0,
+        "foot_xy_change_m": 0.0022538359482195025,
+        "original_penetration_max_m": 0.061094503595757035,
+        "candidate_penetration_max_m": 0.07539247069324491,
+        "original_penetration_mean_m": 0.029443183713597852,
+        "candidate_penetration_mean_m": 0.041536205768134965,
+        "worst_penetration_regression_m": 0.01631570279224554,
+        "known_contact_gap_regression_m": 0.014225953169143449
+      }
+    },
+    {
+      "name": "Roundhouse_kick",
+      "arm": "previous_prep_support",
+      "pass_gate": false,
+      "checks": {
+        "joint_delta_rad": false,
+        "joint_delta_velocity_rad_s": false,
+        "joint_delta_acceleration_rad_s2": false,
+        "joint_delta_jerk_rad_s3": false,
+        "root_lift_m": true,
+        "root_delta_velocity_m_s": true,
+        "root_delta_acceleration_m_s2": true,
+        "root_delta_jerk_m_s3": true,
+        "foot_xy_change_m": true,
+        "root_no_downshift": false,
+        "root_xy_orientation_unchanged": true,
+        "initial_final_three_frames_unchanged": false,
+        "active_and_recovery_joints_unchanged": true,
+        "upper_joints_unchanged": true,
+        "per_joint_peak_velocity": false,
+        "per_joint_peak_acceleration": false,
+        "pointwise_no_worse_penetration": false,
+        "mean_penetration_reduction": false,
+        "known_contact_gap": false
+      },
+      "metrics": {
+        "joint_delta_rad": 0.1199999999527478,
+        "joint_delta_velocity_rad_s": 1.170728598682108,
+        "joint_delta_acceleration_rad_s2": 27.377281862740883,
+        "joint_delta_jerk_rad_s3": 1786.4743618055124,
+        "root_lift_m": -0.014621219841885136,
+        "root_min_lift_m": -0.014621219841885136,
+        "root_delta_velocity_m_s": 0.0,
+        "root_delta_acceleration_m_s2": 0.0,
+        "root_delta_jerk_m_s3": 0.0,
+        "foot_xy_change_m": 0.006619199134830767,
+        "original_penetration_max_m": 0.08325955046388894,
+        "candidate_penetration_max_m": 0.09788077030577408,
+        "original_penetration_mean_m": 0.01429920109467292,
+        "candidate_penetration_mean_m": 0.023719131027637664,
+        "worst_penetration_regression_m": 0.01462121984188525,
+        "known_contact_gap_regression_m": 0.010070975484619854
+      }
+    },
+    {
+      "name": "Side_kick",
+      "arm": "previous_prep_support",
+      "pass_gate": false,
+      "checks": {
+        "joint_delta_rad": false,
+        "joint_delta_velocity_rad_s": false,
+        "joint_delta_acceleration_rad_s2": false,
+        "joint_delta_jerk_rad_s3": false,
+        "root_lift_m": true,
+        "root_delta_velocity_m_s": true,
+        "root_delta_acceleration_m_s2": true,
+        "root_delta_jerk_m_s3": true,
+        "foot_xy_change_m": false,
+        "root_no_downshift": false,
+        "root_xy_orientation_unchanged": true,
+        "initial_final_three_frames_unchanged": false,
+        "active_and_recovery_joints_unchanged": true,
+        "upper_joints_unchanged": true,
+        "per_joint_peak_velocity": true,
+        "per_joint_peak_acceleration": true,
+        "pointwise_no_worse_penetration": false,
+        "mean_penetration_reduction": false,
+        "known_contact_gap": false
+      },
+      "metrics": {
+        "joint_delta_rad": 0.11999999986633947,
+        "joint_delta_velocity_rad_s": 1.2021969488075657,
+        "joint_delta_acceleration_rad_s2": 32.70222145416626,
+        "joint_delta_jerk_rad_s3": 2385.105611350961,
+        "root_lift_m": -0.015435103648321902,
+        "root_min_lift_m": -0.015435103648321902,
+        "root_delta_velocity_m_s": 0.0,
+        "root_delta_acceleration_m_s2": 0.0,
+        "root_delta_jerk_m_s3": 0.0,
+        "foot_xy_change_m": 0.012604147169197654,
+        "original_penetration_max_m": 0.05412473013450564,
+        "candidate_penetration_max_m": 0.06955983378282754,
+        "original_penetration_mean_m": 0.026716211620774772,
+        "candidate_penetration_mean_m": 0.037589748110979544,
+        "worst_penetration_regression_m": 0.015435103648322124,
+        "known_contact_gap_regression_m": 0.013345734310271445
+      }
+    }
+  ],
+  "gate_pass_does_not_prove": [
+    "Correct contact labels",
+    "Dynamics feasibility",
+    "Tracking success",
+    "Training utility",
+    "Generalization"
+  ]
+}

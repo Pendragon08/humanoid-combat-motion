@@ -1,0 +1,22 @@
+{
+  "version": "development_v1_frozen_before_new_execution",
+  "scope": "Source-relative data-quality screen, not proof of robot executability or independent test performance",
+  "joint_delta_rad": 0.08,
+  "joint_delta_velocity_rad_s": 0.25,
+  "joint_delta_acceleration_rad_s2": 5.0,
+  "joint_delta_jerk_rad_s3": 60.0,
+  "joint_peak_relative_tolerance": 1.05,
+  "joint_velocity_absolute_tolerance_rad_s": 0.01,
+  "joint_acceleration_absolute_tolerance_rad_s2": 0.1,
+  "root_lift_m": 0.02,
+  "root_delta_velocity_m_s": 0.05,
+  "root_delta_acceleration_m_s2": 0.5,
+  "root_delta_jerk_m_s3": 5.0,
+  "foot_xy_change_m": 0.01,
+  "penetration_regression_tolerance_m": 0.00002,
+  "known_contact_gap_regression_tolerance_m": 0.001,
+  "minimum_full_mean_penetration_relative_reduction": 0.01,
+  "numerical_tolerance": 0.0002,
+  "fallback": "Unchanged raw source; never drop a failed source or select using execution scores",
+  "threshold_provenance": "Conservative engineering development limits; not literature-derived physical guarantees and not tuned on new execution scores"
+}

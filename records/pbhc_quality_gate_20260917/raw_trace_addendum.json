@@ -1,0 +1,154 @@
+{
+  "date": "2026-09-17",
+  "audit_skill": "experiment-audit",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "evaluation_type": "simulation_only",
+  "verdict": "PASS",
+  "verdict_scope": "Four quality-arm trajectory recomputations only; original overall integrity WARN retained",
+  "archive_path": "C:\\Users\\Pende\\Documents\\ChatGPT\\\u673a\u5668\u4eba\u683c\u6597\u52a8\u4f5c\u6355\u6349\u6570\u636e\u751f\u6210\\pbhc_quality_gate_20260917\\quality_gate_artifacts.tar.gz",
+  "archive_sha256": "b6de5461b99d89835b437cec3aa23e197bb103d72e7bb08cd4006d91b5eac85a",
+  "recompute_script_sha256": "64b5f6c82188bd4898afb34647071a9190b1d094af68bd0379157c88af75bbe4",
+  "calculation": "Independent NumPy implementation on archived body/joint arrays; no evaluator or summarizer import/execution; no alignment other than recorded environment origins; fixed strict thresholds; first-termination censoring including terminal frame.",
+  "comparison_absolute_tolerance": 1e-06,
+  "trace_error_comparison_absolute_tolerance": 2e-06,
+  "strict_and_completion_tolerance": 0,
+  "rows": [
+    {
+      "name": "Hooks_punch",
+      "status": "PASS",
+      "frames": 290,
+      "environments": 32,
+      "completion": 1.0,
+      "original": {
+        "strict": 0.0,
+        "root_mean_m": 0.13466998934745789,
+        "body8_mean_m": 0.1491168588399887,
+        "joint29_mean_rad": 0.1116739884018898
+      },
+      "repaired": {
+        "strict": 0.0,
+        "root_mean_m": 0.13466998934745789,
+        "body8_mean_m": 0.14919757843017578,
+        "joint29_mean_rad": 0.11193053424358368
+      },
+      "observed_duration_s_min": 5.8,
+      "observed_duration_s_max": 5.8,
+      "all_summary_values_match": true,
+      "alive_mask_matches_first_termination": true,
+      "source_reference_sha256": "af6760c1be4d0485b31b5beb0de98410b6030e13c8673e0e20bbd2506675e76a",
+      "quality_reference_sha256": "75351a3df40681b922f1d2e262e017cb0ef15e5894b2993d0e66a0263e340b31",
+      "trace_sha256": "8dd60e48ecc8b7171b657c4d84597750ac5da59ea958327835ef4d3810d0d024",
+      "metrics_sha256": "1ba53ae77e8aa7c8267bf9492d80640b04b8ab047d4131229512f3de307938f6"
+    },
+    {
+      "name": "Horse-stance_punch",
+      "status": "PASS",
+      "frames": 331,
+      "environments": 32,
+      "completion": 1.0,
+      "original": {
+        "strict": 0.0,
+        "root_mean_m": 0.08703592419624329,
+        "body8_mean_m": 0.10480727255344391,
+        "joint29_mean_rad": 0.10616505146026611
+      },
+      "repaired": {
+        "strict": 0.0,
+        "root_mean_m": 0.08703592419624329,
+        "body8_mean_m": 0.10490446537733078,
+        "joint29_mean_rad": 0.10503046214580536
+      },
+      "observed_duration_s_min": 6.62,
+      "observed_duration_s_max": 6.62,
+      "all_summary_values_match": true,
+      "alive_mask_matches_first_termination": true,
+      "source_reference_sha256": "b727970fddcde23c6184a36945dd4dfc49a6fda922c98f10270856e27e53559f",
+      "quality_reference_sha256": "bc2d330a8d4bf930d6e57f885f075f07ab415d9720856bcc0403c35dc8bf5f27",
+      "trace_sha256": "24affa630f3c5ed54c77c2c0efd477f9090dc80ff7a4f2a32fa6168c9366a97e",
+      "metrics_sha256": "41a8e4c8c0ec46fac520e88dcf4ee3f997d3c01dad9b4522f2f04bc8152a72cd"
+    },
+    {
+      "name": "Roundhouse_kick",
+      "status": "PASS",
+      "frames": 261,
+      "environments": 32,
+      "completion": 0.0,
+      "original": {
+        "strict": 0.0,
+        "root_mean_m": 0.11863093823194504,
+        "body8_mean_m": 0.12647420167922974,
+        "joint29_mean_rad": 0.13564367592334747
+      },
+      "repaired": {
+        "strict": 0.0,
+        "root_mean_m": 0.11863093823194504,
+        "body8_mean_m": 0.12667442858219147,
+        "joint29_mean_rad": 0.1369299590587616
+      },
+      "observed_duration_s_min": 1.66,
+      "observed_duration_s_max": 1.66,
+      "all_summary_values_match": true,
+      "alive_mask_matches_first_termination": true,
+      "source_reference_sha256": "b82dea7dbb3ca1e959c88c716ae6128499da4344c24e5e05755cee587dd28d82",
+      "quality_reference_sha256": "4176c063ac33f96585a034e4e276af21d8e20532ab5127fbe2b129223a798b16",
+      "trace_sha256": "3d9f4ba6e9765be0680a804c594055bb5298e41ed3503ee9cda40ed1cbcb1bdc",
+      "metrics_sha256": "d1ec4fba44192decba736b7ab5dfc801a944804e932281d68664ab7803ca089f"
+    },
+    {
+      "name": "Side_kick",
+      "status": "PASS",
+      "frames": 296,
+      "environments": 32,
+      "completion": 1.0,
+      "original": {
+        "strict": 0.0,
+        "root_mean_m": 0.48313605785369873,
+        "body8_mean_m": 0.48485198616981506,
+        "joint29_mean_rad": 0.1034960225224495
+      },
+      "repaired": {
+        "strict": 0.0,
+        "root_mean_m": 0.48313605785369873,
+        "body8_mean_m": 0.4847862720489502,
+        "joint29_mean_rad": 0.10335054993629456
+      },
+      "observed_duration_s_min": 5.92,
+      "observed_duration_s_max": 5.92,
+      "all_summary_values_match": true,
+      "alive_mask_matches_first_termination": true,
+      "source_reference_sha256": "6dc82426c94ad8d4294ae3319fc3441dac2d61bf179c3f2f37efe4d7b63c5479",
+      "quality_reference_sha256": "3fb7411d51655e396f6e2a438637eb83d2a39edb462857d569fa1b01fcfe70ad",
+      "trace_sha256": "b2a963d068f1426572737a28d8b6b7bcb1717e2cd1db1d75ec13cb420a721df6",
+      "metrics_sha256": "e9d5c48dc95de164a6d0a1697dfad0d4a57f676d0417e93cbc3b567a7f9a5ee6"
+    }
+  ],
+  "audited_member_hashes": {
+    "records/pbhc_quality_gate_20260917/execution_manifest.json": "a42209cc080a2a91967b294f1264bf4a97c2d3b2666cf8876a093c14e5a0cc2a",
+    "records/pbhc_quality_gate_20260917/summary.json": "6bab8b41603bf8f233ff23e7c16ea19c17d42b82a33b3075f03fff0b6eca0d1d",
+    "records/pbhc_quality_gate_20260917/COMPLETE.json": "f9d73b06cef5357bd51e0bf768a9b6d78d48ed17725b5e79a3bc76cea2827a2a",
+    "runs/pbhc_quality_gate_20260917/evaluation/Hooks_punch_quality_gated/metrics.json": "1ba53ae77e8aa7c8267bf9492d80640b04b8ab047d4131229512f3de307938f6",
+    "runs/pbhc_quality_gate_20260917/evaluation/Hooks_punch_quality_gated/support_trace.npz": "8dd60e48ecc8b7171b657c4d84597750ac5da59ea958327835ef4d3810d0d024",
+    "runs/pbhc_beyondmimic_20260916/references_full/sample_Hooks_punch_actor0.npz": "af6760c1be4d0485b31b5beb0de98410b6030e13c8673e0e20bbd2506675e76a",
+    "runs/pbhc_quality_gate_20260917/references/sample_Hooks_punch_actor0.npz": "75351a3df40681b922f1d2e262e017cb0ef15e5894b2993d0e66a0263e340b31",
+    "runs/pbhc_quality_gate_20260917/evaluation/Horse-stance_punch_quality_gated/metrics.json": "41a8e4c8c0ec46fac520e88dcf4ee3f997d3c01dad9b4522f2f04bc8152a72cd",
+    "runs/pbhc_quality_gate_20260917/evaluation/Horse-stance_punch_quality_gated/support_trace.npz": "24affa630f3c5ed54c77c2c0efd477f9090dc80ff7a4f2a32fa6168c9366a97e",
+    "runs/pbhc_beyondmimic_20260916/references_full/sample_Horse-stance_punch_actor0.npz": "b727970fddcde23c6184a36945dd4dfc49a6fda922c98f10270856e27e53559f",
+    "runs/pbhc_quality_gate_20260917/references/sample_Horse-stance_punch_actor0.npz": "bc2d330a8d4bf930d6e57f885f075f07ab415d9720856bcc0403c35dc8bf5f27",
+    "runs/pbhc_quality_gate_20260917/evaluation/Roundhouse_kick_quality_gated/metrics.json": "d1ec4fba44192decba736b7ab5dfc801a944804e932281d68664ab7803ca089f",
+    "runs/pbhc_quality_gate_20260917/evaluation/Roundhouse_kick_quality_gated/support_trace.npz": "3d9f4ba6e9765be0680a804c594055bb5298e41ed3503ee9cda40ed1cbcb1bdc",
+    "runs/pbhc_beyondmimic_20260916/references_full/sample_Roundhouse_kick_actor0.npz": "b82dea7dbb3ca1e959c88c716ae6128499da4344c24e5e05755cee587dd28d82",
+    "runs/pbhc_quality_gate_20260917/references/sample_Roundhouse_kick_actor0.npz": "4176c063ac33f96585a034e4e276af21d8e20532ab5127fbe2b129223a798b16",
+    "runs/pbhc_quality_gate_20260917/evaluation/Side_kick_quality_gated/metrics.json": "e9d5c48dc95de164a6d0a1697dfad0d4a57f676d0417e93cbc3b567a7f9a5ee6",
+    "runs/pbhc_quality_gate_20260917/evaluation/Side_kick_quality_gated/support_trace.npz": "b2a963d068f1426572737a28d8b6b7bcb1717e2cd1db1d75ec13cb420a721df6",
+    "runs/pbhc_beyondmimic_20260916/references_full/sample_Side_kick_actor0.npz": "6dc82426c94ad8d4294ae3319fc3441dac2d61bf179c3f2f37efe4d7b63c5479",
+    "runs/pbhc_quality_gate_20260917/references/sample_Side_kick_actor0.npz": "3fb7411d51655e396f6e2a438637eb83d2a39edb462857d569fa1b01fcfe70ad"
+  },
+  "limitations": [
+    "Raw/baseline-arm traces absent from this archive; those summary rows remain not independently recomputed.",
+    "Checkpoint bytes and installed simulator runtime absent; checkpoint identity checked only across recorded manifests/metrics.",
+    "Does not certify physical contact, dynamics, training utility, source-selection history, or independence beyond same-family.",
+    "Historical integrity audit preserved; this addendum resolves only the quality-arm missing-trace limitation.",
+    "Matched training queue untouched; updated launch evidence not audited in this addendum."
+  ]
+}

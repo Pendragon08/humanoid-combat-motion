@@ -1,0 +1,54 @@
+{
+  "status": "running",
+  "started": 1789609703.786144,
+  "jobs": {
+    "Horse-stance_punch_raw_train": {
+      "status": "running",
+      "command": [
+        "bash",
+        "scripts/run_isaaclab.sh",
+        "scripts/train_pbhc_matched_data.py",
+        "--bundle",
+        "runs/pbhc_matched_data_20260917/bundles/Horse-stance_punch_raw.npz",
+        "--output",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_matched_data_20260917/training/Horse-stance_punch_raw",
+        "--mode",
+        "upstream",
+        "--num_envs",
+        "512",
+        "--iterations",
+        "1000",
+        "--seed",
+        "0",
+        "--headless",
+        "--device",
+        "cuda:0"
+      ],
+      "started": 1789609703.8168159
+    },
+    "Side_kick_raw_train": {
+      "status": "running",
+      "command": [
+        "bash",
+        "scripts/run_isaaclab.sh",
+        "scripts/train_pbhc_matched_data.py",
+        "--bundle",
+        "runs/pbhc_matched_data_20260917/bundles/Side_kick_raw.npz",
+        "--output",
+        "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_matched_data_20260917/training/Side_kick_raw",
+        "--mode",
+        "upstream",
+        "--num_envs",
+        "512",
+        "--iterations",
+        "1000",
+        "--seed",
+        "0",
+        "--headless",
+        "--device",
+        "cuda:1"
+      ],
+      "started": 1789609703.8203843
+    }
+  }
+}

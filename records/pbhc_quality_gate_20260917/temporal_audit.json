@@ -1,0 +1,949 @@
+{
+  "scope": "Source-relative geometry and finite differences, all frames; no controller results used",
+  "derivative_definition": "Forward differences at dt=.02s; order2 centered on interior frames. Source coordinate convention unchanged.",
+  "caveats": [
+    "Contact labels are upstream heuristics, unknown .5 excluded from known support statistics",
+    "URDF capsule lower envelope is geometric proxy, not measured contact",
+    "Finite-difference acceleration/jerk are data regularity metrics, not torque feasibility certificates"
+  ],
+  "script_sha256": "0bb63daf615d8884d05a7e8cd3ef388b1312fc545ed14fedec1116cb6ac5d6c6",
+  "rows": [
+    {
+      "name": "Hooks_punch",
+      "arm": "raw",
+      "input_sha256": "af6760c1be4d0485b31b5beb0de98410b6030e13c8673e0e20bbd2506675e76a",
+      "source_sha256": "af6760c1be4d0485b31b5beb0de98410b6030e13c8673e0e20bbd2506675e76a",
+      "frames": 291,
+      "joint_velocity_rad_s": {
+        "max": 9.345324337482452,
+        "p99": 3.7732483502477403,
+        "rms": 0.8214004131640318
+      },
+      "joint_acceleration_rad_s2": {
+        "max": 181.09038472175598,
+        "p99": 61.264351010322926,
+        "rms": 12.068183210144465
+      },
+      "joint_jerk_rad_s3": {
+        "max": 8289.799094200134,
+        "p99": 2762.9471011459805,
+        "rms": 562.1506773489062
+      },
+      "root_velocity_m_s": {
+        "max": 0.4834957420825958,
+        "p99": 0.38763053715229034,
+        "rms": 0.12622494800387726
+      },
+      "root_acceleration_m_s2": {
+        "max": 10.841935873031616,
+        "p99": 6.192740239202979,
+        "rms": 1.421303812774441
+      },
+      "added_joint_velocity_rad_s": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_joint_acceleration_rad_s2": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_root_z_velocity_m_s": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_root_z_acceleration_m_s2": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "full_penetration_max_m": 0.06641165619472826,
+      "full_penetration_mean_m": 0.022462371045852306,
+      "framewise_penetration_worsened_fraction": 0.0,
+      "source_known_contact_gap_mean_m": 0.029329215398918584,
+      "source_unknown_contact_fraction": 0.3436426116838488,
+      "source_label_change_frames": [
+        50,
+        241
+      ],
+      "phase_boundary_frames": [
+        38,
+        232
+      ],
+      "phase_boundary_added_acceleration_max_rad_s2": 0.0,
+      "peak_leg_acceleration": {
+        "joint": "right_hip_pitch_joint",
+        "center_time_s": 2.14,
+        "value_rad_s2": -63.10462951660156
+      },
+      "maximum_foot_xy_change_m": 0.0,
+      "stored_joint_velocity_vs_central_difference_max_rad_s": 4.47325874119997e-07
+    },
+    {
+      "name": "Hooks_punch",
+      "arm": "ground_align",
+      "input_sha256": "2b1a8a137bb9f68afa42e5ce3123a52cb1110471910fd37959fa373c302d69bb",
+      "source_sha256": "af6760c1be4d0485b31b5beb0de98410b6030e13c8673e0e20bbd2506675e76a",
+      "frames": 291,
+      "joint_velocity_rad_s": {
+        "max": 9.345324337482452,
+        "p99": 3.7732483502477403,
+        "rms": 0.8214004131640318
+      },
+      "joint_acceleration_rad_s2": {
+        "max": 181.09038472175598,
+        "p99": 61.264351010322926,
+        "rms": 12.068183210144465
+      },
+      "joint_jerk_rad_s3": {
+        "max": 8289.799094200134,
+        "p99": 2762.9471011459805,
+        "rms": 562.1506773489062
+      },
+      "root_velocity_m_s": {
+        "max": 0.4834957420825958,
+        "p99": 0.38763053715229034,
+        "rms": 0.12622494800387726
+      },
+      "root_acceleration_m_s2": {
+        "max": 10.841935873031616,
+        "p99": 6.192740239202979,
+        "rms": 1.421303812774441
+      },
+      "added_joint_velocity_rad_s": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_joint_acceleration_rad_s2": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_root_z_velocity_m_s": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_root_z_acceleration_m_s2": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "full_penetration_max_m": 0.08094494632554085,
+      "full_penetration_mean_m": 0.034968716385315166,
+      "framewise_penetration_worsened_fraction": 0.9553264604810997,
+      "source_known_contact_gap_mean_m": 0.039437815022671546,
+      "source_unknown_contact_fraction": 0.3436426116838488,
+      "source_label_change_frames": [
+        50,
+        241
+      ],
+      "phase_boundary_frames": [
+        38,
+        232
+      ],
+      "phase_boundary_added_acceleration_max_rad_s2": 0.0,
+      "peak_leg_acceleration": {
+        "joint": "right_hip_pitch_joint",
+        "center_time_s": 2.14,
+        "value_rad_s2": -63.10462951660156
+      },
+      "maximum_foot_xy_change_m": 0.0
+    },
+    {
+      "name": "Hooks_punch",
+      "arm": "prep_support",
+      "input_sha256": "e42cc9092fc84222c68cb244e4f2dfe15d7f9f17efa01be717b9822d7577f441",
+      "source_sha256": "af6760c1be4d0485b31b5beb0de98410b6030e13c8673e0e20bbd2506675e76a",
+      "frames": 291,
+      "joint_velocity_rad_s": {
+        "max": 9.345324337482452,
+        "p99": 3.7732483502477403,
+        "rms": 0.8233493070715144
+      },
+      "joint_acceleration_rad_s2": {
+        "max": 181.09038472175598,
+        "p99": 61.264351010322926,
+        "rms": 12.1070164918932
+      },
+      "joint_jerk_rad_s3": {
+        "max": 8289.799094200134,
+        "p99": 2762.9471011459805,
+        "rms": 564.8999833352533
+      },
+      "root_velocity_m_s": {
+        "max": 0.4834957420825958,
+        "p99": 0.38763053715229034,
+        "rms": 0.12622494800387726
+      },
+      "root_acceleration_m_s2": {
+        "max": 10.841935873031616,
+        "p99": 6.192740239202979,
+        "rms": 1.421303812774441
+      },
+      "added_joint_velocity_rad_s": {
+        "max": 1.2008829116763875,
+        "p99": 0.2838931269284759,
+        "rms": 0.05661662654271219
+      },
+      "added_joint_acceleration_rad_s2": {
+        "max": 23.019504437577975,
+        "p99": 1.6756216811014584,
+        "rms": 0.9689181611965457
+      },
+      "added_root_z_velocity_m_s": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_root_z_acceleration_m_s2": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "full_penetration_max_m": 0.08094494632554085,
+      "full_penetration_mean_m": 0.034101816158627375,
+      "framewise_penetration_worsened_fraction": 0.9536082474226805,
+      "source_known_contact_gap_mean_m": 0.039437815022671546,
+      "source_unknown_contact_fraction": 0.3436426116838488,
+      "source_label_change_frames": [
+        50,
+        241
+      ],
+      "phase_boundary_frames": [
+        38,
+        232
+      ],
+      "phase_boundary_added_acceleration_max_rad_s2": 23.019504437577975,
+      "peak_leg_acceleration": {
+        "joint": "right_hip_pitch_joint",
+        "center_time_s": 2.14,
+        "value_rad_s2": -63.10462951660156
+      },
+      "maximum_foot_xy_change_m": 0.007912908084120214
+    },
+    {
+      "name": "Horse-stance_punch",
+      "arm": "raw",
+      "input_sha256": "b727970fddcde23c6184a36945dd4dfc49a6fda922c98f10270856e27e53559f",
+      "source_sha256": "b727970fddcde23c6184a36945dd4dfc49a6fda922c98f10270856e27e53559f",
+      "frames": 332,
+      "joint_velocity_rad_s": {
+        "max": 6.927760690450668,
+        "p99": 2.9894891679286992,
+        "rms": 0.6529519956282602
+      },
+      "joint_acceleration_rad_s2": {
+        "max": 134.3466341495514,
+        "p99": 30.53796496242279,
+        "rms": 6.597156185767948
+      },
+      "joint_jerk_rad_s3": {
+        "max": 6094.313692301512,
+        "p99": 1295.5658137798318,
+        "rms": 290.91788638165593
+      },
+      "root_velocity_m_s": {
+        "max": 0.8429989218711853,
+        "p99": 0.6944701671600346,
+        "rms": 0.1634306467072829
+      },
+      "root_acceleration_m_s2": {
+        "max": 6.7840516567230225,
+        "p99": 4.5527221634984025,
+        "rms": 1.0660081924220204
+      },
+      "added_joint_velocity_rad_s": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_joint_acceleration_rad_s2": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_root_z_velocity_m_s": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_root_z_acceleration_m_s2": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "full_penetration_max_m": 0.061094503595757035,
+      "full_penetration_mean_m": 0.029443183713597852,
+      "framewise_penetration_worsened_fraction": 0.0,
+      "source_known_contact_gap_mean_m": 0.04226802109594705,
+      "source_unknown_contact_fraction": 0.29819277108433734,
+      "source_label_change_frames": [
+        50,
+        56,
+        81,
+        193,
+        225,
+        283
+      ],
+      "phase_boundary_frames": [
+        65,
+        220
+      ],
+      "phase_boundary_added_acceleration_max_rad_s2": 0.0,
+      "peak_leg_acceleration": {
+        "joint": "left_hip_roll_joint",
+        "center_time_s": 2.8,
+        "value_rad_s2": 39.25442695617676
+      },
+      "maximum_foot_xy_change_m": 0.0,
+      "stored_joint_velocity_vs_central_difference_max_rad_s": 3.0547380447387695e-07
+    },
+    {
+      "name": "Horse-stance_punch",
+      "arm": "ground_align",
+      "input_sha256": "b7328e25593e212ee63df95c1116874b93c19fe4d904ceda2fb41cc610f84d1d",
+      "source_sha256": "b727970fddcde23c6184a36945dd4dfc49a6fda922c98f10270856e27e53559f",
+      "frames": 332,
+      "joint_velocity_rad_s": {
+        "max": 6.927760690450668,
+        "p99": 2.9894891679286992,
+        "rms": 0.6529519956282602
+      },
+      "joint_acceleration_rad_s2": {
+        "max": 134.3466341495514,
+        "p99": 30.53796496242279,
+        "rms": 6.597156185767948
+      },
+      "joint_jerk_rad_s3": {
+        "max": 6094.313692301512,
+        "p99": 1295.5658137798318,
+        "rms": 290.91788638165593
+      },
+      "root_velocity_m_s": {
+        "max": 0.8429989218711853,
+        "p99": 0.6944701671600346,
+        "rms": 0.1634306467072829
+      },
+      "root_acceleration_m_s2": {
+        "max": 6.7840516567230225,
+        "p99": 4.5527221634984025,
+        "rms": 1.0660081924220204
+      },
+      "added_joint_velocity_rad_s": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_joint_acceleration_rad_s2": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_root_z_velocity_m_s": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_root_z_acceleration_m_s2": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "full_penetration_max_m": 0.07539247069324491,
+      "full_penetration_mean_m": 0.04227182944259505,
+      "framewise_penetration_worsened_fraction": 0.947289156626506,
+      "source_known_contact_gap_mean_m": 0.056560859898651096,
+      "source_unknown_contact_fraction": 0.29819277108433734,
+      "source_label_change_frames": [
+        50,
+        56,
+        81,
+        193,
+        225,
+        283
+      ],
+      "phase_boundary_frames": [
+        65,
+        220
+      ],
+      "phase_boundary_added_acceleration_max_rad_s2": 0.0,
+      "peak_leg_acceleration": {
+        "joint": "left_hip_roll_joint",
+        "center_time_s": 2.8,
+        "value_rad_s2": 39.25442695617676
+      },
+      "maximum_foot_xy_change_m": 0.0
+    },
+    {
+      "name": "Horse-stance_punch",
+      "arm": "prep_support",
+      "input_sha256": "1629f0d50431802445bbeeb7170a38dabc179e41a0e4c19125d950787ff9aa13",
+      "source_sha256": "b727970fddcde23c6184a36945dd4dfc49a6fda922c98f10270856e27e53559f",
+      "frames": 332,
+      "joint_velocity_rad_s": {
+        "max": 6.927760690450668,
+        "p99": 2.9894891679286992,
+        "rms": 0.6543386249205557
+      },
+      "joint_acceleration_rad_s2": {
+        "max": 134.3466341495514,
+        "p99": 31.06484110467135,
+        "rms": 6.664126133486751
+      },
+      "joint_jerk_rad_s3": {
+        "max": 6094.313692301512,
+        "p99": 1343.3724641799945,
+        "rms": 297.91013132871757
+      },
+      "root_velocity_m_s": {
+        "max": 0.8429989218711853,
+        "p99": 0.6944701671600346,
+        "rms": 0.1634306467072829
+      },
+      "root_acceleration_m_s2": {
+        "max": 6.7840516567230225,
+        "p99": 4.5527221634984025,
+        "rms": 1.0660081924220204
+      },
+      "added_joint_velocity_rad_s": {
+        "max": 1.0223303693941284,
+        "p99": 0.2251028900076148,
+        "rms": 0.04748461387716153
+      },
+      "added_joint_acceleration_rad_s2": {
+        "max": 29.99999996514263,
+        "p99": 0.8848098253854242,
+        "rms": 0.864287546060532
+      },
+      "added_root_z_velocity_m_s": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_root_z_acceleration_m_s2": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "full_penetration_max_m": 0.07539247069324491,
+      "full_penetration_mean_m": 0.041536205768134965,
+      "framewise_penetration_worsened_fraction": 0.947289156626506,
+      "source_known_contact_gap_mean_m": 0.0564939742650905,
+      "source_unknown_contact_fraction": 0.29819277108433734,
+      "source_label_change_frames": [
+        50,
+        56,
+        81,
+        193,
+        225,
+        283
+      ],
+      "phase_boundary_frames": [
+        65,
+        220
+      ],
+      "phase_boundary_added_acceleration_max_rad_s2": 29.99999996514263,
+      "peak_leg_acceleration": {
+        "joint": "right_knee_joint",
+        "center_time_s": 1.1,
+        "value_rad_s2": -46.04330275127272
+      },
+      "maximum_foot_xy_change_m": 0.0022538359482195025
+    },
+    {
+      "name": "Roundhouse_kick",
+      "arm": "raw",
+      "input_sha256": "b82dea7dbb3ca1e959c88c716ae6128499da4344c24e5e05755cee587dd28d82",
+      "source_sha256": "b82dea7dbb3ca1e959c88c716ae6128499da4344c24e5e05755cee587dd28d82",
+      "frames": 262,
+      "joint_velocity_rad_s": {
+        "max": 7.055848836898804,
+        "p99": 4.05321860313415,
+        "rms": 0.92850897360099
+      },
+      "joint_acceleration_rad_s2": {
+        "max": 162.35768795013428,
+        "p99": 43.58777739107598,
+        "rms": 9.3207126146953
+      },
+      "joint_jerk_rad_s3": {
+        "max": 6687.3133182525635,
+        "p99": 1779.9703404307336,
+        "rms": 397.9526473578428
+      },
+      "root_velocity_m_s": {
+        "max": 1.413455605506897,
+        "p99": 1.1988742053508756,
+        "rms": 0.2834694787747213
+      },
+      "root_acceleration_m_s2": {
+        "max": 35.31143069267273,
+        "p99": 13.931126892566693,
+        "rms": 3.681025335632661
+      },
+      "added_joint_velocity_rad_s": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_joint_acceleration_rad_s2": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_root_z_velocity_m_s": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_root_z_acceleration_m_s2": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "full_penetration_max_m": 0.08325955046388894,
+      "full_penetration_mean_m": 0.01429920109467292,
+      "framewise_penetration_worsened_fraction": 0.0,
+      "source_known_contact_gap_mean_m": 0.024803862189709112,
+      "source_unknown_contact_fraction": 0.37786259541984735,
+      "source_label_change_frames": [
+        50,
+        63,
+        66,
+        68,
+        73,
+        76,
+        78,
+        85,
+        125,
+        130,
+        133,
+        175,
+        190,
+        213
+      ],
+      "phase_boundary_frames": [
+        68,
+        138
+      ],
+      "phase_boundary_added_acceleration_max_rad_s2": 0.0,
+      "peak_leg_acceleration": {
+        "joint": "left_hip_pitch_joint",
+        "center_time_s": 2.0,
+        "value_rad_s2": 107.71036148071289
+      },
+      "maximum_foot_xy_change_m": 0.0,
+      "stored_joint_velocity_vs_central_difference_max_rad_s": 5.513429641723633e-07
+    },
+    {
+      "name": "Roundhouse_kick",
+      "arm": "ground_align",
+      "input_sha256": "126eac97c0c0b1bb88825cfe45e574e7048f1a774bd99200a130452361c491d8",
+      "source_sha256": "b82dea7dbb3ca1e959c88c716ae6128499da4344c24e5e05755cee587dd28d82",
+      "frames": 262,
+      "joint_velocity_rad_s": {
+        "max": 7.055848836898804,
+        "p99": 4.05321860313415,
+        "rms": 0.92850897360099
+      },
+      "joint_acceleration_rad_s2": {
+        "max": 162.35768795013428,
+        "p99": 43.58777739107598,
+        "rms": 9.3207126146953
+      },
+      "joint_jerk_rad_s3": {
+        "max": 6687.3133182525635,
+        "p99": 1779.9703404307336,
+        "rms": 397.9526473578428
+      },
+      "root_velocity_m_s": {
+        "max": 1.413455605506897,
+        "p99": 1.1988742053508756,
+        "rms": 0.2834694787747213
+      },
+      "root_acceleration_m_s2": {
+        "max": 35.31143069267273,
+        "p99": 13.931126892566693,
+        "rms": 3.681025335632661
+      },
+      "added_joint_velocity_rad_s": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_joint_acceleration_rad_s2": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_root_z_velocity_m_s": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_root_z_acceleration_m_s2": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "full_penetration_max_m": 0.09788077030577408,
+      "full_penetration_mean_m": 0.02566167963067041,
+      "framewise_penetration_worsened_fraction": 0.8683206106870229,
+      "source_known_contact_gap_mean_m": 0.035818759107977736,
+      "source_unknown_contact_fraction": 0.37786259541984735,
+      "source_label_change_frames": [
+        50,
+        63,
+        66,
+        68,
+        73,
+        76,
+        78,
+        85,
+        125,
+        130,
+        133,
+        175,
+        190,
+        213
+      ],
+      "phase_boundary_frames": [
+        68,
+        138
+      ],
+      "phase_boundary_added_acceleration_max_rad_s2": 0.0,
+      "peak_leg_acceleration": {
+        "joint": "left_hip_pitch_joint",
+        "center_time_s": 2.0,
+        "value_rad_s2": 107.71036148071289
+      },
+      "maximum_foot_xy_change_m": 0.0
+    },
+    {
+      "name": "Roundhouse_kick",
+      "arm": "prep_support",
+      "input_sha256": "dac3dda503ae7a19ef944e13c67997a6f07b4a4eac107eab9105b0617a6103bb",
+      "source_sha256": "b82dea7dbb3ca1e959c88c716ae6128499da4344c24e5e05755cee587dd28d82",
+      "frames": 262,
+      "joint_velocity_rad_s": {
+        "max": 7.055848836898804,
+        "p99": 4.05321860313415,
+        "rms": 0.9283274067357703
+      },
+      "joint_acceleration_rad_s2": {
+        "max": 162.35768795013428,
+        "p99": 43.58777739107598,
+        "rms": 9.368623835635999
+      },
+      "joint_jerk_rad_s3": {
+        "max": 6687.3133182525635,
+        "p99": 1824.7802854787874,
+        "rms": 403.2220411340657
+      },
+      "root_velocity_m_s": {
+        "max": 1.413455605506897,
+        "p99": 1.1988742053508756,
+        "rms": 0.2834694787747213
+      },
+      "root_acceleration_m_s2": {
+        "max": 35.31143069267273,
+        "p99": 13.931126892566693,
+        "rms": 3.681025335632661
+      },
+      "added_joint_velocity_rad_s": {
+        "max": 1.170728598682108,
+        "p99": 0.3037654510763125,
+        "rms": 0.059115423009715
+      },
+      "added_joint_acceleration_rad_s2": {
+        "max": 27.377281862740883,
+        "p99": 2.5300942699899758,
+        "rms": 0.9721601601523455
+      },
+      "added_root_z_velocity_m_s": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_root_z_acceleration_m_s2": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "full_penetration_max_m": 0.09788077030577408,
+      "full_penetration_mean_m": 0.023719131027637664,
+      "framewise_penetration_worsened_fraction": 0.8645038167938931,
+      "source_known_contact_gap_mean_m": 0.034874837674328966,
+      "source_unknown_contact_fraction": 0.37786259541984735,
+      "source_label_change_frames": [
+        50,
+        63,
+        66,
+        68,
+        73,
+        76,
+        78,
+        85,
+        125,
+        130,
+        133,
+        175,
+        190,
+        213
+      ],
+      "phase_boundary_frames": [
+        68,
+        138
+      ],
+      "phase_boundary_added_acceleration_max_rad_s2": 27.377281862740883,
+      "peak_leg_acceleration": {
+        "joint": "left_hip_pitch_joint",
+        "center_time_s": 2.0,
+        "value_rad_s2": 107.71036148071289
+      },
+      "maximum_foot_xy_change_m": 0.006619199134830767
+    },
+    {
+      "name": "Side_kick",
+      "arm": "raw",
+      "input_sha256": "6dc82426c94ad8d4294ae3319fc3441dac2d61bf179c3f2f37efe4d7b63c5479",
+      "source_sha256": "6dc82426c94ad8d4294ae3319fc3441dac2d61bf179c3f2f37efe4d7b63c5479",
+      "frames": 297,
+      "joint_velocity_rad_s": {
+        "max": 12.875652313232422,
+        "p99": 3.550454944372178,
+        "rms": 0.8533239420193611
+      },
+      "joint_acceleration_rad_s2": {
+        "max": 357.5176000595093,
+        "p99": 53.01731377840023,
+        "rms": 14.268266153945108
+      },
+      "joint_jerk_rad_s3": {
+        "max": 15418.827533721924,
+        "p99": 2552.0181516185403,
+        "rms": 661.2323091201264
+      },
+      "root_velocity_m_s": {
+        "max": 1.0378159582614899,
+        "p99": 0.710430771112442,
+        "rms": 0.20054198748071814
+      },
+      "root_acceleration_m_s2": {
+        "max": 50.84633827209473,
+        "p99": 11.738336086273174,
+        "rms": 3.018022641535717
+      },
+      "added_joint_velocity_rad_s": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_joint_acceleration_rad_s2": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_root_z_velocity_m_s": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_root_z_acceleration_m_s2": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "full_penetration_max_m": 0.05412473013450564,
+      "full_penetration_mean_m": 0.026716211620774772,
+      "framewise_penetration_worsened_fraction": 0.0,
+      "source_known_contact_gap_mean_m": 0.035989367237759126,
+      "source_unknown_contact_fraction": 0.3333333333333333,
+      "source_label_change_frames": [
+        50,
+        86,
+        93,
+        96,
+        143,
+        150,
+        158,
+        246,
+        248
+      ],
+      "phase_boundary_frames": [
+        78,
+        156
+      ],
+      "phase_boundary_added_acceleration_max_rad_s2": 0.0,
+      "peak_leg_acceleration": {
+        "joint": "right_knee_joint",
+        "center_time_s": 2.24,
+        "value_rad_s2": -357.5176000595093
+      },
+      "maximum_foot_xy_change_m": 0.0,
+      "stored_joint_velocity_vs_central_difference_max_rad_s": 5.513429641723633e-07
+    },
+    {
+      "name": "Side_kick",
+      "arm": "ground_align",
+      "input_sha256": "f9dca24b8813fb0735813bfc3698f382f75ab1f02198f8cda98712bf461473b1",
+      "source_sha256": "6dc82426c94ad8d4294ae3319fc3441dac2d61bf179c3f2f37efe4d7b63c5479",
+      "frames": 297,
+      "joint_velocity_rad_s": {
+        "max": 12.875652313232422,
+        "p99": 3.550454944372178,
+        "rms": 0.8533239420193611
+      },
+      "joint_acceleration_rad_s2": {
+        "max": 357.5176000595093,
+        "p99": 53.01731377840023,
+        "rms": 14.268266153945108
+      },
+      "joint_jerk_rad_s3": {
+        "max": 15418.827533721924,
+        "p99": 2552.0181516185403,
+        "rms": 661.2323091201264
+      },
+      "root_velocity_m_s": {
+        "max": 1.0378159582614899,
+        "p99": 0.710430771112442,
+        "rms": 0.20054198748071814
+      },
+      "root_acceleration_m_s2": {
+        "max": 50.84633827209473,
+        "p99": 11.738336086273174,
+        "rms": 3.018022641535717
+      },
+      "added_joint_velocity_rad_s": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_joint_acceleration_rad_s2": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_root_z_velocity_m_s": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_root_z_acceleration_m_s2": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "full_penetration_max_m": 0.06955983378282754,
+      "full_penetration_mean_m": 0.04009603866218281,
+      "framewise_penetration_worsened_fraction": 0.9006734006734006,
+      "source_known_contact_gap_mean_m": 0.0513341020635016,
+      "source_unknown_contact_fraction": 0.3333333333333333,
+      "source_label_change_frames": [
+        50,
+        86,
+        93,
+        96,
+        143,
+        150,
+        158,
+        246,
+        248
+      ],
+      "phase_boundary_frames": [
+        78,
+        156
+      ],
+      "phase_boundary_added_acceleration_max_rad_s2": 0.0,
+      "peak_leg_acceleration": {
+        "joint": "right_knee_joint",
+        "center_time_s": 2.24,
+        "value_rad_s2": -357.5176000595093
+      },
+      "maximum_foot_xy_change_m": 0.0
+    },
+    {
+      "name": "Side_kick",
+      "arm": "prep_support",
+      "input_sha256": "a3c790738016003c43ae1db0a748c53d50ef9b8d4b3a7b76313329b372e739df",
+      "source_sha256": "6dc82426c94ad8d4294ae3319fc3441dac2d61bf179c3f2f37efe4d7b63c5479",
+      "frames": 297,
+      "joint_velocity_rad_s": {
+        "max": 12.875652313232422,
+        "p99": 3.550454944372178,
+        "rms": 0.8555336546659125
+      },
+      "joint_acceleration_rad_s2": {
+        "max": 357.5176000595093,
+        "p99": 53.01731377840023,
+        "rms": 14.310297735733567
+      },
+      "joint_jerk_rad_s3": {
+        "max": 15418.827533721924,
+        "p99": 2552.0181516185403,
+        "rms": 665.3808626358456
+      },
+      "root_velocity_m_s": {
+        "max": 1.0378159582614899,
+        "p99": 0.710430771112442,
+        "rms": 0.20054198748071814
+      },
+      "root_acceleration_m_s2": {
+        "max": 50.84633827209473,
+        "p99": 11.738336086273174,
+        "rms": 3.018022641535717
+      },
+      "added_joint_velocity_rad_s": {
+        "max": 1.2021969488075657,
+        "p99": 0.29021437899247454,
+        "rms": 0.05870280087317823
+      },
+      "added_joint_acceleration_rad_s2": {
+        "max": 32.70222145416626,
+        "p99": 1.81309395666228,
+        "rms": 1.124818477239978
+      },
+      "added_root_z_velocity_m_s": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "added_root_z_acceleration_m_s2": {
+        "max": 0.0,
+        "p99": 0.0,
+        "rms": 0.0
+      },
+      "full_penetration_max_m": 0.06955983378282754,
+      "full_penetration_mean_m": 0.037589748110979544,
+      "framewise_penetration_worsened_fraction": 0.8888888888888888,
+      "source_known_contact_gap_mean_m": 0.04933510154803057,
+      "source_unknown_contact_fraction": 0.3333333333333333,
+      "source_label_change_frames": [
+        50,
+        86,
+        93,
+        96,
+        143,
+        150,
+        158,
+        246,
+        248
+      ],
+      "phase_boundary_frames": [
+        78,
+        156
+      ],
+      "phase_boundary_added_acceleration_max_rad_s2": 32.70222145416626,
+      "peak_leg_acceleration": {
+        "joint": "right_knee_joint",
+        "center_time_s": 2.24,
+        "value_rad_s2": -357.5176000595093
+      },
+      "maximum_foot_xy_change_m": 0.012604147169197654
+    }
+  ]
+}

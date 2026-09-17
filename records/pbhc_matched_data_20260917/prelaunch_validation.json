@@ -1,0 +1,7 @@
+{
+  "smoke_training_steps_per_arm": 768,
+  "matched_initial_digests": true,
+  "all_references_match_prior_execution": true,
+  "protocol_sha256": "94be9e9e88e835d9f686362aaa6574bc32cb9f29db2253d2df88ce89ae38a04c",
+  "launcher_sha256": "b3c5ef9423daba7f5ae9b468e2f68c2f857e9c5477fbc5ae0ccd514b49a3d15b"
+}

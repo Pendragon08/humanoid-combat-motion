@@ -1,0 +1,13 @@
+{
+  "scales": [
+    1.0,
+    0.75,
+    0.5,
+    0.25
+  ],
+  "fallback": "raw_source",
+  "ordering": "Largest correction scale passing ALL unchanged data-only checks, never policy-score selection",
+  "development": "Backtracking added after v1 data-only foot-XY rejections; before new execution; not preregistered before all development",
+  "config_sha256": "f6567b1f6d4954fadfa3d8301ae4e0ae6b8c8e4ac005923052dea22d216ae4f3",
+  "script_sha256": "e408ab43db80028497930d7aac14fddb7c5330f5dada5c435e75900c5b696b04"
+}

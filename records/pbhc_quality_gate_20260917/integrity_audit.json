@@ -1,0 +1,105 @@
+{
+  "audit_skill": "experiment-audit",
+  "date": "2026-09-17",
+  "auditor": "fresh Codex reviewer",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "verdict": "WARN",
+  "overall_verdict": "WARN",
+  "integrity_status": "warn",
+  "reason_code": "independent_trace_verification_unavailable_and_dependency_chain_incomplete",
+  "evaluation_type": "simulation_only",
+  "training_updates": 0,
+  "checks": {
+    "gt_provenance": {
+      "status": "PASS",
+      "details": "Original reference/URDF geometry and heuristic contact provenance explicitly labeled as proxies.",
+      "evidence": [
+        "scripts/audit_pbhc_temporal_quality.py:32-38",
+        "scripts/audit_pbhc_temporal_quality.py:70-74",
+        "scripts/summarize_pbhc_quality_gate.py:22-31"
+      ]
+    },
+    "score_normalization": {
+      "status": "PASS",
+      "details": "Physical units and fixed thresholds retained; no own-output performance normalization.",
+      "evidence": [
+        "scripts/evaluate_pbhc_support_diagnostic.py:97-108",
+        "scripts/prepare_pbhc_quality_gate.py:49-76"
+      ]
+    },
+    "result_existence": {
+      "status": "WARN",
+      "details": "Summary/report consistent and ten recorded hash comparisons plus COMPLETE summary hash matched. Local raw run directories absent at review cutoff; independent trajectory recomputation unavailable.",
+      "evidence": [
+        "records/pbhc_quality_gate_20260917/report.md:9-16"
+      ]
+    },
+    "dead_code": {
+      "status": "PASS",
+      "details": "Required calls exist in scheduler, selection and verification; runtime numerical replay unavailable.",
+      "evidence": [
+        "scripts/run_pbhc_quality_gate.py:54-67",
+        "scripts/select_pbhc_quality_candidates.py:36-40",
+        "scripts/verify_pbhc_quality_gate.py:29-47"
+      ]
+    },
+    "scope": {
+      "status": "PASS",
+      "details": "Four development sources retained; one nominal evaluation seed, no training claim; termination censoring disclosed.",
+      "evidence": [
+        "records/pbhc_quality_gate_20260917/execution_manifest.json:56-59",
+        "records/pbhc_quality_gate_20260917/summary.json:3",
+        "records/pbhc_quality_gate_20260917/summary.json:79",
+        "records/pbhc_quality_gate_20260917/summary.json:95"
+      ]
+    },
+    "eval_type": "simulation_only"
+  },
+  "independent_trajectory_recomputation": {
+    "status": "UNAVAILABLE",
+    "reason": "Both local quality-gate and raw diagnostic run directories absent at original review cutoff."
+  },
+  "findings": [
+    {
+      "id": "Q1",
+      "severity": "WARN",
+      "summary": "QP guarantees discrete correction bounds conditional on feasibility, not dynamics or continuous-time regularity."
+    },
+    {
+      "id": "Q2",
+      "severity": "WARN",
+      "summary": "Finite source-only search preserves thresholds, but largest passing grid member is not largest possible correction."
+    },
+    {
+      "id": "Q3",
+      "severity": "WARN",
+      "summary": "Contact hashes and imported geometry/config dependencies not fully reasserted."
+    },
+    {
+      "id": "Q4",
+      "severity": "WARN",
+      "summary": "Modest mean penetration reduction with unchanged maxima; no dynamics or training improvement established."
+    }
+  ],
+  "report_path": "records/pbhc_quality_gate_20260917/integrity_audit.md",
+  "audited_input_hashes": {
+    "configs/pbhc_quality_gate_v1.json": "sha256:f6567b1f6d4954fadfa3d8301ae4e0ae6b8c8e4ac005923052dea22d216ae4f3",
+    "scripts/audit_pbhc_temporal_quality.py": "sha256:0bb63daf615d8884d05a7e8cd3ef388b1312fc545ed14fedec1116cb6ac5d6c6",
+    "scripts/prepare_pbhc_quality_gate.py": "sha256:a5bea77f68fad1b63f82630030ecb0ac6d6b230431b39d639576aeeae7dd961d",
+    "scripts/select_pbhc_quality_candidates.py": "sha256:e408ab43db80028497930d7aac14fddb7c5330f5dada5c435e75900c5b696b04",
+    "scripts/verify_pbhc_quality_gate.py": "sha256:40a64e068d82165d049e039ee78e51a30df0ea5027e43969bd85d99c4f5eb8db",
+    "scripts/run_pbhc_quality_gate.py": "sha256:a8720b9bdee01716cf7a49f205206c27bd4fdb06d57f95f9de9db1e31db43f64",
+    "scripts/summarize_pbhc_quality_gate.py": "sha256:54bb89ad7140849f28f99b06755b61848d11eeb049c3869cbf32383e38a50833",
+    "scripts/evaluate_pbhc_support_diagnostic.py": "sha256:2f636cee83e48006e0df6ab4eaafab53f581ab5e6843a08aecb9ffc2f03133f1",
+    "records/pbhc_quality_gate_20260917/frozen_config.json": "sha256:90f119e55170d9fa9e559b4aac26123acf70c01fc348d0e99d47a4e04e555eaf",
+    "records/pbhc_quality_gate_20260917/manifest.json": "sha256:b39c14df0524ac364b8cb88821cecf204a5fce04948893d7ba6275175d3194cb",
+    "records/pbhc_quality_gate_20260917/selection.json": "sha256:284af80f30b92709e9d3b6caad5f65b736afb93f7c0a74469e7433460abc3328",
+    "records/pbhc_quality_gate_20260917/selection_protocol.json": "sha256:d4f7f351eff120d820ca46c063018f698b067550c8133837145941f5d637c377",
+    "records/pbhc_quality_gate_20260917/temporal_audit.json": "sha256:4f01eb30496ef2cbed492490a4513977b67dfd2794b2b671ba524702bd87c06c",
+    "records/pbhc_quality_gate_20260917/verification.json": "sha256:efd2ceb09dbfb30ea5a407b5ce7388455951db1b72de183f2f9c91135c6caae0",
+    "records/pbhc_quality_gate_20260917/execution_manifest.json": "sha256:a42209cc080a2a91967b294f1264bf4a97c2d3b2666cf8876a093c14e5a0cc2a",
+    "records/pbhc_quality_gate_20260917/summary.json": "sha256:6bab8b41603bf8f233ff23e7c16ea19c17d42b82a33b3075f03fff0b6eca0d1d",
+    "records/pbhc_quality_gate_20260917/report.md": "sha256:f4bbd110881c6c2e038a2be01958adf2f6c69c3a871e152e4e38361f45749ab2"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "status": "complete",
+  "jobs": {
+    "Hooks_punch_quality_gated": {
+      "status": "complete",
+      "command": [
+        "bash",
+        "scripts/run_isaaclab.sh",
+        "scripts/evaluate_pbhc_support_diagnostic.py",
+        "--checkpoint",
+        "runs/pbhc_beyondmimic_20260916/training/Hooks_punch/model_1999.pt",
+        "--motion_file",
+        "runs/pbhc_quality_gate_20260917/references/sample_Hooks_punch_actor0.npz",
+        "--output",
+        "runs/pbhc_quality_gate_20260917/evaluation/Hooks_punch_quality_gated",
+        "--num_envs",
+        "32",
+        "--seed",
+        "123",
+        "--regime",
+        "nominal",
+        "--headless",
+        "--device",
+        "cuda:0"
+      ],
+      "trace_sha256": "8dd60e48ecc8b7171b657c4d84597750ac5da59ea958327835ef4d3810d0d024"
+    },
+    "Roundhouse_kick_quality_gated": {
+      "status": "complete",
+      "command": [
+        "bash",
+        "scripts/run_isaaclab.sh",
+        "scripts/evaluate_pbhc_support_diagnostic.py",
+        "--checkpoint",
+        "runs/pbhc_beyondmimic_20260916/training/Roundhouse_kick/model_1999.pt",
+        "--motion_file",
+        "runs/pbhc_quality_gate_20260917/references/sample_Roundhouse_kick_actor0.npz",
+        "--output",
+        "runs/pbhc_quality_gate_20260917/evaluation/Roundhouse_kick_quality_gated",
+        "--num_envs",
+        "32",
+        "--seed",
+        "123",
+        "--regime",
+        "nominal",
+        "--headless",
+        "--device",
+        "cuda:1"
+      ],
+      "trace_sha256": "3d9f4ba6e9765be0680a804c594055bb5298e41ed3503ee9cda40ed1cbcb1bdc"
+    },
+    "Horse-stance_punch_quality_gated": {
+      "status": "complete",
+      "command": [
+        "bash",
+        "scripts/run_isaaclab.sh",
+        "scripts/evaluate_pbhc_support_diagnostic.py",
+        "--checkpoint",
+        "runs/pbhc_beyondmimic_20260916/training/Horse-stance_punch/model_1999.pt",
+        "--motion_file",
+        "runs/pbhc_quality_gate_20260917/references/sample_Horse-stance_punch_actor0.npz",
+        "--output",
+        "runs/pbhc_quality_gate_20260917/evaluation/Horse-stance_punch_quality_gated",
+        "--num_envs",
+        "32",
+        "--seed",
+        "123",
+        "--regime",
+        "nominal",
+        "--headless",
+        "--device",
+        "cuda:0"
+      ],
+      "trace_sha256": "24affa630f3c5ed54c77c2c0efd477f9090dc80ff7a4f2a32fa6168c9366a97e"
+    },
+    "Side_kick_quality_gated": {
+      "status": "complete",
+      "command": [
+        "bash",
+        "scripts/run_isaaclab.sh",
+        "scripts/evaluate_pbhc_support_diagnostic.py",
+        "--checkpoint",
+        "runs/pbhc_beyondmimic_20260916/training/Side_kick/model_1999.pt",
+        "--motion_file",
+        "runs/pbhc_quality_gate_20260917/references/sample_Side_kick_actor0.npz",
+        "--output",
+        "runs/pbhc_quality_gate_20260917/evaluation/Side_kick_quality_gated",
+        "--num_envs",
+        "32",
+        "--seed",
+        "123",
+        "--regime",
+        "nominal",
+        "--headless",
+        "--device",
+        "cuda:1"
+      ],
+      "trace_sha256": "b2a963d068f1426572737a28d8b6b7bcb1717e2cd1db1d75ec13cb420a721df6"
+    }
+  },
+  "started": 1789608783.9782119,
+  "finished": 1789608836.5958128
+}

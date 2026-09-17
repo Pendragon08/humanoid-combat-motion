@@ -1,0 +1,140 @@
+{
+  "config": {
+    "scope": "Two-source matched-training diagnostic after frozen-policy probes; not a final experiment or independent generalization test",
+    "motions": [
+      "Horse-stance_punch",
+      "Side_kick"
+    ],
+    "selection_rationale": "Development positive control (Horse) and a full-horizon but inaccurate kick (Side); chosen after prior diagnostic results and not claimed outcome-independent",
+    "arms": [
+      "raw",
+      "quality_gated"
+    ],
+    "num_envs": 512,
+    "iterations": 1000,
+    "steps_per_env": 24,
+    "training_seed": 0,
+    "evaluation_seed": 123,
+    "evaluation_environments": 32,
+    "evaluation_regimes": [
+      "randomized",
+      "nominal"
+    ],
+    "evaluation_references": [
+      "raw",
+      "quality_gated"
+    ],
+    "final_checkpoint": "model_999.pt",
+    "primary_endpoint": "Every-frame strict pass on untouched raw reference under randomized evaluation; all cross-reference and nominal results also reported",
+    "initialization": "Both arms trained from random; actor/critic and normalizer initial tensor digests must match before second arm learns",
+    "same_motion_same_gpu": true,
+    "total_training_jobs": 4,
+    "total_training_steps": 49152000,
+    "total_final_evaluation_jobs": 16,
+    "fixed": [
+      "upstream actor/critic architecture",
+      "PPO",
+      "reward",
+      "training randomization",
+      "success thresholds",
+      "full clip duration",
+      "source data hashes"
+    ],
+    "forbidden": [
+      "checkpoint cherry-picking",
+      "changing thresholds after results",
+      "automatic extra training beyond 1000 updates",
+      "selecting data by new execution results"
+    ],
+    "completion_followup": "Aggregate all four training receipts and sixteen evaluations, compare per-motion initial digests and exposure, archive reports, then stop"
+  },
+  "jobs": [
+    {
+      "name": "Horse-stance_punch",
+      "arm": "raw",
+      "gpu": 0,
+      "bundle": "runs/pbhc_matched_data_20260917/bundles/Horse-stance_punch_raw.npz",
+      "bundle_sha256": "ed47b7f1c30c75c1f30d82013d8d0eb53274661973bbb8457c097d3f14a2a2e7",
+      "references": {
+        "raw": {
+          "path": "runs/pbhc_beyondmimic_20260916/references_full/sample_Horse-stance_punch_actor0.npz",
+          "sha256": "b727970fddcde23c6184a36945dd4dfc49a6fda922c98f10270856e27e53559f"
+        },
+        "quality_gated": {
+          "path": "runs/pbhc_quality_gate_20260917/references/sample_Horse-stance_punch_actor0.npz",
+          "sha256": "bc2d330a8d4bf930d6e57f885f075f07ab415d9720856bcc0403c35dc8bf5f27"
+        }
+      },
+      "training_output": "runs/pbhc_matched_data_20260917/training/Horse-stance_punch_raw"
+    },
+    {
+      "name": "Horse-stance_punch",
+      "arm": "quality_gated",
+      "gpu": 0,
+      "bundle": "runs/pbhc_matched_data_20260917/bundles/Horse-stance_punch_quality_gated.npz",
+      "bundle_sha256": "a6bfbb64b9ad6b1bf1f883da13c0b6e9a4dc676243004cd3f85f6b45c4032241",
+      "references": {
+        "raw": {
+          "path": "runs/pbhc_beyondmimic_20260916/references_full/sample_Horse-stance_punch_actor0.npz",
+          "sha256": "b727970fddcde23c6184a36945dd4dfc49a6fda922c98f10270856e27e53559f"
+        },
+        "quality_gated": {
+          "path": "runs/pbhc_quality_gate_20260917/references/sample_Horse-stance_punch_actor0.npz",
+          "sha256": "bc2d330a8d4bf930d6e57f885f075f07ab415d9720856bcc0403c35dc8bf5f27"
+        }
+      },
+      "training_output": "runs/pbhc_matched_data_20260917/training/Horse-stance_punch_quality_gated"
+    },
+    {
+      "name": "Side_kick",
+      "arm": "raw",
+      "gpu": 1,
+      "bundle": "runs/pbhc_matched_data_20260917/bundles/Side_kick_raw.npz",
+      "bundle_sha256": "42ddda61c7b52236c972b88ab2c78557ee4aa76e4a4cfb304ad78950389d1a17",
+      "references": {
+        "raw": {
+          "path": "runs/pbhc_beyondmimic_20260916/references_full/sample_Side_kick_actor0.npz",
+          "sha256": "6dc82426c94ad8d4294ae3319fc3441dac2d61bf179c3f2f37efe4d7b63c5479"
+        },
+        "quality_gated": {
+          "path": "runs/pbhc_quality_gate_20260917/references/sample_Side_kick_actor0.npz",
+          "sha256": "3fb7411d51655e396f6e2a438637eb83d2a39edb462857d569fa1b01fcfe70ad"
+        }
+      },
+      "training_output": "runs/pbhc_matched_data_20260917/training/Side_kick_raw"
+    },
+    {
+      "name": "Side_kick",
+      "arm": "quality_gated",
+      "gpu": 1,
+      "bundle": "runs/pbhc_matched_data_20260917/bundles/Side_kick_quality_gated.npz",
+      "bundle_sha256": "4bebe75c3bad89e4f1ead6eac49a14b972fa541ea72ca36f183d20c6d8ab6613",
+      "references": {
+        "raw": {
+          "path": "runs/pbhc_beyondmimic_20260916/references_full/sample_Side_kick_actor0.npz",
+          "sha256": "6dc82426c94ad8d4294ae3319fc3441dac2d61bf179c3f2f37efe4d7b63c5479"
+        },
+        "quality_gated": {
+          "path": "runs/pbhc_quality_gate_20260917/references/sample_Side_kick_actor0.npz",
+          "sha256": "3fb7411d51655e396f6e2a438637eb83d2a39edb462857d569fa1b01fcfe70ad"
+        }
+      },
+      "training_output": "runs/pbhc_matched_data_20260917/training/Side_kick_quality_gated"
+    }
+  ],
+  "environment_spec_hash": "072cb4cb",
+  "frozen_code_hashes": {
+    "scripts/train_pbhc_matched_data.py": "baad2ffd2a6de7add0616699d1e8171221ca262c2baeb358ac0c972213511de0",
+    "scripts/run_pbhc_matched_data.py": "9f2d42d2dbb18c40ec93353a0b7b2910f78ac9e77ec5416995d09294791ff26a",
+    "scripts/summarize_pbhc_matched_data.py": "513132598b2ce72cc4fc97a216b9fe90e6cf45b4bc879c7c6cfca17823c8138c",
+    "scripts/evaluate_pbhc_beyondmimic.py": "01e6c3cd4b84ee1b3cf779366e14a32d6a8ac8e1f2dafde1675ddbaf36622e72",
+    "scripts/evaluate_pbhc_followup.py": "94cce972675dc3051741da27dc460064423c3ed9281e991cc92c9f6532d73188",
+    "scripts/run_isaaclab.sh": "0ac3b248af10df075a53c4d78ad176830b03531cad305a8570dac7fda7ae5a87",
+    "combat/reference_bundle.py": "6bf33372580e975041ac68f1377f83e1b0640d26a213a0269cafd5fef5c17e30",
+    "combat/multireference_tracking.py": "881792bbc719eb91c8bb5a6e56127785bab58520f821efc78dd002cf0e1b5ca9",
+    "combat/diagnostic_tracking.py": "5b188bdeb5814776448d133a7f1386c5f508056442acf12a55278ccd59e2c998"
+  },
+  "selection_sha256": "284af80f30b92709e9d3b6caad5f65b736afb93f7c0a74469e7433460abc3328",
+  "protocol_sha256": "94be9e9e88e835d9f686362aaa6574bc32cb9f29db2253d2df88ce89ae38a04c",
+  "prelaunch_amendment": "RSL PPO uses policy, not actor_critic; include privileged normalizer. No successful training existed before fix; failed smoke artifacts retained."
+}

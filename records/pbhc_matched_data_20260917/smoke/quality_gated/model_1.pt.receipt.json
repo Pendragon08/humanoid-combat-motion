@@ -1,0 +1,9 @@
+{
+  "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_matched_data_20260917/smoke_quality_gated/model_1.pt",
+  "environment_steps": 768,
+  "completed_updates": 2,
+  "elapsed_s": 5.09572696685791,
+  "position_feedback": true,
+  "bundle_sha256": "a6bfbb64b9ad6b1bf1f883da13c0b6e9a4dc676243004cd3f85f6b45c4032241",
+  "seed": 0
+}

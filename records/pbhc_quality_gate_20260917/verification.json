@@ -1,0 +1,226 @@
+{
+  "records": [
+    {
+      "name": "Hooks_punch",
+      "scale": 0.75,
+      "gate": {
+        "pass_gate": true,
+        "checks": {
+          "joint_delta_rad": true,
+          "joint_delta_velocity_rad_s": true,
+          "joint_delta_acceleration_rad_s2": true,
+          "joint_delta_jerk_rad_s3": true,
+          "root_lift_m": true,
+          "root_delta_velocity_m_s": true,
+          "root_delta_acceleration_m_s2": true,
+          "root_delta_jerk_m_s3": true,
+          "foot_xy_change_m": true,
+          "root_no_downshift": true,
+          "root_xy_orientation_unchanged": true,
+          "initial_final_three_frames_unchanged": true,
+          "active_and_recovery_joints_unchanged": true,
+          "upper_joints_unchanged": true,
+          "per_joint_peak_velocity": true,
+          "per_joint_peak_acceleration": true,
+          "pointwise_no_worse_penetration": true,
+          "mean_penetration_reduction": true,
+          "known_contact_gap": true
+        },
+        "metrics": {
+          "joint_delta_rad": 0.05209716804387954,
+          "joint_delta_velocity_rad_s": 0.18750000000000155,
+          "joint_delta_acceleration_rad_s2": 2.700000000000688,
+          "joint_delta_jerk_rad_s3": 45.000000000034596,
+          "root_lift_m": 0.0,
+          "root_min_lift_m": 0.0,
+          "root_delta_velocity_m_s": 0.0,
+          "root_delta_acceleration_m_s2": 0.0,
+          "root_delta_jerk_m_s3": 0.0,
+          "foot_xy_change_m": 0.009582616712709656,
+          "original_penetration_max_m": 0.06641165619472826,
+          "candidate_penetration_max_m": 0.06641165619472826,
+          "original_penetration_mean_m": 0.022462371045852306,
+          "candidate_penetration_mean_m": 0.022115365604376193,
+          "worst_penetration_regression_m": 0.0,
+          "known_contact_gap_regression_m": 0.0
+        }
+      },
+      "frames": 291,
+      "input_sha256": "d844cfefac499c02c63c16884cedc933070df8d0133f3c742728bc7f5069d91f"
+    },
+    {
+      "name": "Horse-stance_punch",
+      "scale": 0.75,
+      "gate": {
+        "pass_gate": true,
+        "checks": {
+          "joint_delta_rad": true,
+          "joint_delta_velocity_rad_s": true,
+          "joint_delta_acceleration_rad_s2": true,
+          "joint_delta_jerk_rad_s3": true,
+          "root_lift_m": true,
+          "root_delta_velocity_m_s": true,
+          "root_delta_acceleration_m_s2": true,
+          "root_delta_jerk_m_s3": true,
+          "foot_xy_change_m": true,
+          "root_no_downshift": true,
+          "root_xy_orientation_unchanged": true,
+          "initial_final_three_frames_unchanged": true,
+          "active_and_recovery_joints_unchanged": true,
+          "upper_joints_unchanged": true,
+          "per_joint_peak_velocity": true,
+          "per_joint_peak_acceleration": true,
+          "pointwise_no_worse_penetration": true,
+          "mean_penetration_reduction": true,
+          "known_contact_gap": true
+        },
+        "metrics": {
+          "joint_delta_rad": 0.06,
+          "joint_delta_velocity_rad_s": 0.18750000000000155,
+          "joint_delta_acceleration_rad_s2": 2.7000000000009656,
+          "joint_delta_jerk_rad_s3": 45.00000000004153,
+          "root_lift_m": 0.0,
+          "root_min_lift_m": 0.0,
+          "root_delta_velocity_m_s": 0.0,
+          "root_delta_acceleration_m_s2": 0.0,
+          "root_delta_jerk_m_s3": 0.0,
+          "foot_xy_change_m": 0.009557892300608266,
+          "original_penetration_max_m": 0.061094503595757035,
+          "candidate_penetration_max_m": 0.061094503595757035,
+          "original_penetration_mean_m": 0.029443183713597852,
+          "candidate_penetration_mean_m": 0.028920092948460496,
+          "worst_penetration_regression_m": 0.0,
+          "known_contact_gap_regression_m": -0.00010864249450711488
+        }
+      },
+      "frames": 332,
+      "input_sha256": "e71297ed5cfd8dfe5899e33ab869e4cfecf532cdd6d1226a90db065140e14648"
+    },
+    {
+      "name": "Roundhouse_kick",
+      "scale": 0.5,
+      "gate": {
+        "pass_gate": true,
+        "checks": {
+          "joint_delta_rad": true,
+          "joint_delta_velocity_rad_s": true,
+          "joint_delta_acceleration_rad_s2": true,
+          "joint_delta_jerk_rad_s3": true,
+          "root_lift_m": true,
+          "root_delta_velocity_m_s": true,
+          "root_delta_acceleration_m_s2": true,
+          "root_delta_jerk_m_s3": true,
+          "foot_xy_change_m": true,
+          "root_no_downshift": true,
+          "root_xy_orientation_unchanged": true,
+          "initial_final_three_frames_unchanged": true,
+          "active_and_recovery_joints_unchanged": true,
+          "upper_joints_unchanged": true,
+          "per_joint_peak_velocity": true,
+          "per_joint_peak_acceleration": true,
+          "pointwise_no_worse_penetration": true,
+          "mean_penetration_reduction": true,
+          "known_contact_gap": true
+        },
+        "metrics": {
+          "joint_delta_rad": 0.040000000000000036,
+          "joint_delta_velocity_rad_s": 0.1250000000000029,
+          "joint_delta_acceleration_rad_s2": 1.8000000000007592,
+          "joint_delta_jerk_rad_s3": 30.000000000030003,
+          "root_lift_m": 0.0,
+          "root_min_lift_m": 0.0,
+          "root_delta_velocity_m_s": 0.0,
+          "root_delta_acceleration_m_s2": 0.0,
+          "root_delta_jerk_m_s3": 0.0,
+          "foot_xy_change_m": 0.007157643643353418,
+          "original_penetration_max_m": 0.08325955046388894,
+          "candidate_penetration_max_m": 0.08325955046388894,
+          "original_penetration_mean_m": 0.01429920109467292,
+          "candidate_penetration_mean_m": 0.013586112436044111,
+          "worst_penetration_regression_m": 0.0,
+          "known_contact_gap_regression_m": -0.00032564008529136976
+        }
+      },
+      "frames": 262,
+      "input_sha256": "e54bbc20e97ee388ada32a28eb3cbb803b264a650c3baf405b5763bb896dc730"
+    },
+    {
+      "name": "Side_kick",
+      "scale": 0.5,
+      "gate": {
+        "pass_gate": true,
+        "checks": {
+          "joint_delta_rad": true,
+          "joint_delta_velocity_rad_s": true,
+          "joint_delta_acceleration_rad_s2": true,
+          "joint_delta_jerk_rad_s3": true,
+          "root_lift_m": true,
+          "root_delta_velocity_m_s": true,
+          "root_delta_acceleration_m_s2": true,
+          "root_delta_jerk_m_s3": true,
+          "foot_xy_change_m": true,
+          "root_no_downshift": true,
+          "root_xy_orientation_unchanged": true,
+          "initial_final_three_frames_unchanged": true,
+          "active_and_recovery_joints_unchanged": true,
+          "upper_joints_unchanged": true,
+          "per_joint_peak_velocity": true,
+          "per_joint_peak_acceleration": true,
+          "pointwise_no_worse_penetration": true,
+          "mean_penetration_reduction": true,
+          "known_contact_gap": true
+        },
+        "metrics": {
+          "joint_delta_rad": 0.040000000000000036,
+          "joint_delta_velocity_rad_s": 0.1250000000000029,
+          "joint_delta_acceleration_rad_s2": 1.80000000000069,
+          "joint_delta_jerk_rad_s3": 30.000000000030003,
+          "root_lift_m": 0.0,
+          "root_min_lift_m": 0.0,
+          "root_delta_velocity_m_s": 0.0,
+          "root_delta_acceleration_m_s2": 0.0,
+          "root_delta_jerk_m_s3": 0.0,
+          "foot_xy_change_m": 0.008953671403098279,
+          "original_penetration_max_m": 0.05412473013450564,
+          "candidate_penetration_max_m": 0.05412473013450564,
+          "original_penetration_mean_m": 0.026716211620774772,
+          "candidate_penetration_mean_m": 0.025580037215737476,
+          "worst_penetration_regression_m": 0.0,
+          "known_contact_gap_regression_m": -0.0008526107510566719
+        }
+      },
+      "frames": 297,
+      "input_sha256": "9fddb4d54f92aee03ccfd33f312f401fa3e0c77c9a66aa6562d8dae581e85e5e"
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "Hooks_punch",
+      "one_frame_splice_rejected": true,
+      "downshift_rejected": true,
+      "upper_body_change_rejected": true
+    },
+    {
+      "name": "Horse-stance_punch",
+      "one_frame_splice_rejected": true,
+      "downshift_rejected": true,
+      "upper_body_change_rejected": true
+    },
+    {
+      "name": "Roundhouse_kick",
+      "one_frame_splice_rejected": true,
+      "downshift_rejected": true,
+      "upper_body_change_rejected": true
+    },
+    {
+      "name": "Side_kick",
+      "one_frame_splice_rejected": true,
+      "downshift_rejected": true,
+      "upper_body_change_rejected": true
+    }
+  ],
+  "unchanged_historical_metric_files": 28,
+  "selection_used_execution_scores": false,
+  "script_sha256": "40a64e068d82165d049e039ee78e51a30df0ea5027e43969bd85d99c4f5eb8db",
+  "limitations": "Shared gate implementation; deterministic verification not independent algorithm review. No dynamics/semantic guarantee."
+}

@@ -1,0 +1,6 @@
+{
+  "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_quality_gate_20260917/quality_gate_artifacts.tar.gz",
+  "sha256": "b6de5461b99d89835b437cec3aa23e197bb103d72e7bb08cd4006d91b5eac85a",
+  "bytes": 80253721,
+  "scope": "Private source/reference and evaluation trace archive; no weights; do not put third-party data in Git"
+}
