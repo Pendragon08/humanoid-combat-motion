@@ -1,0 +1,89 @@
+{
+  "time": 1789611647.8324745,
+  "upstream_commit": "ffac5cded61fe78b39b051f09ac2ed0f6a1ccea0",
+  "upstream_tracked_diff_empty": true,
+  "files": [
+    {
+      "path": "INSTALL.md",
+      "sha256": "adefa6f75312dce126b68085c7f5288b211aa2b1448b4763f37360c28fadb99f",
+      "bytes": 800
+    },
+    {
+      "path": "humanoidverse/README.md",
+      "sha256": "a70cfb268eba2cf819293b1a5f8ce70073d4910eab914b1fde0c54c26dbd0786",
+      "bytes": 7367
+    },
+    {
+      "path": "humanoidverse/train_agent.py",
+      "sha256": "cf8f9dc7525affc9495ee6391ffa38202b2d0bdc81614275187f1cab741fd7d0",
+      "bytes": 4298
+    },
+    {
+      "path": "humanoidverse/sample_eps.py",
+      "sha256": "a0c595501039d848391114cd2ead1ac3e83f65c740eafd4e4e0e45dd3aafa364",
+      "bytes": 9866
+    },
+    {
+      "path": "humanoidverse/ratio_eps.py",
+      "sha256": "4e64e45526aba7fa15378e67e7f8c903126489074f38fb272970019035795f74",
+      "bytes": 10098
+    },
+    {
+      "path": "humanoidverse/measure_traj.py",
+      "sha256": "11c5dbfe12d8eb84b091d6ea3b7ea716d32d2bdc7d26868ed2bc3ecd087caa9a",
+      "bytes": 11924
+    },
+    {
+      "path": "humanoidverse/config/exp/motion_tracking.yaml",
+      "sha256": "9c748e0cedbc27713858a6f8aa162283adc95b7eab46d807d7f1ba8d689d8b00",
+      "bytes": 130
+    },
+    {
+      "path": "humanoidverse/config/algo/mh_ppo.yaml",
+      "sha256": "c68cd953e07c38906ae764ab4cf3c4fe11b4ccbebd044cd1dcf5ee1cf933ae98",
+      "bytes": 1449
+    },
+    {
+      "path": "humanoidverse/config/rewards/motion_tracking/main.yaml",
+      "sha256": "3db36effb98425e541b458b6d96e59f0affa4552eaef51367065c7d726a76414",
+      "bytes": 3241
+    },
+    {
+      "path": "humanoidverse/config/obs/motion_tracking/main.yaml",
+      "sha256": "35dca5f5071c1f42f21eab5c7aef726db4d31b752abbb6cc7dc5446355d1cd8b",
+      "bytes": 3032
+    },
+    {
+      "path": "humanoidverse/config/robot/g1/g1_23dof_lock_wrist.yaml",
+      "sha256": "01f957403ced1af2e6c26b69ed6f4c6165f68d331058f3e1487c47823a9de971",
+      "bytes": 14538
+    },
+    {
+      "path": "example/motion_data/Horse-stance_punch.pkl",
+      "sha256": "802ffd509925bd188ebaab0b3bcbf2336f1bafd519466c2469a78ba7cf3a7beb",
+      "bytes": 157523
+    },
+    {
+      "path": "example/pretrained_horse_stance_punch/model_33000.pt",
+      "sha256": "9610b0991d9e26e6015081e2a4ec3ab4e866fad65cc15884f728253ccb7ce517",
+      "bytes": 15729841
+    },
+    {
+      "path": "example/pretrained_horse_stance_punch/config.yaml",
+      "sha256": "387d8c18f3fdc679fd03aa7f7e62cb61585895029888998bdff68e657e9139b4",
+      "bytes": 26880
+    }
+  ],
+  "official_repository": "https://github.com/TeleHuman/PBHC",
+  "paper": "https://arxiv.org/html/2506.12851v1",
+  "observed_differences": [
+    "Previously used BeyondMimic/IsaacLab, not PBHC/IsaacGym training",
+    "Original 23DOF pkl required; previous converted 29DOF NPZ is a different interface",
+    "Official README 4096 environments and 50000 updates; config default one million must be overridden",
+    "Official error/smoothness and ELR metrics differ from custom every-frame strict pass",
+    "Paper three seeds and 1000 rollouts; present first stage one seed, final 1000 rollouts",
+    "Checkpoint iter/name can lag actual final updates; observed-step receipt needed"
+  ],
+  "current_stage": "Environment installation and future preflight queue; no full PBHC training yet",
+  "source_status": "Official release containing both papers; explicit first-paper single-motion config selected"
+}

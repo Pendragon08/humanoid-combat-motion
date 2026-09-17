@@ -1,0 +1,16 @@
+{
+  "scope": "First KungfuBot official single-motion training-stage reproduction. Not full paper table, video preprocessing, KungfuBot2, real robot or data innovation validation.",
+  "commit": "ffac5cded61fe78b39b051f09ac2ed0f6a1ccea0",
+  "motion": "example/motion_data/Horse-stance_punch.pkl",
+  "provided_checkpoint": "example/pretrained_horse_stance_punch/model_33000.pt",
+  "training_seed": 1,
+  "num_envs": 4096,
+  "updates": 50000,
+  "steps_per_env": 24,
+  "total_environment_steps": 4915200000,
+  "stages": ["isolated environment installation", "GPU physics/backward witness", "official 128-env two-update smoke", "fresh independent documented witness", "provided checkpoint official metrics", "4096-env two-update capacity smoke", "one motion 50000-update official training", "trained checkpoint official metrics", "archive then stop"],
+  "training_overrides": ["+simulator=isaacgym", "+exp=motion_tracking", "+terrain=terrain_locomotion_plane", "+obs=motion_tracking/main", "+robot=g1/g1_23dof_lock_wrist", "+domain_rand=main", "+rewards=motion_tracking/main", "seed=1", "headless=True", "use_wandb=False"],
+  "official_evaluation": {"accuracy_smoothness": "humanoidverse/sample_eps.py", "episode_length_ratio": "humanoidverse/ratio_eps.py", "preflight_environments": 100, "preflight_episodes": 100, "final_environments": 1000, "final_episodes": 1000, "paper_training_seeds": 3, "current_stage_training_seeds": 1},
+  "metrics": ["E_gmpbpe", "E_mpbpe", "E_mpjpe", "E_mpjve", "E_pbve", "E_pbae", "smoothness", "episode_length_ratio"],
+  "rules": ["Keep official 23-DOF model and original pkl, no conversion to BeyondMimic", "Do not change controller, reward, adaptive sigma or curriculum", "Keep original custom strict metric separate; never delete old failures", "No full training before dependency, smoke, independent witness and provided-checkpoint evaluation pass", "No automatic lower-env fallback after OOM", "Stop after one full-motion run; no automatic sweep", "Upstream checkpoint names/iter field lag final updates; use observed actual-step receipts"]
+}

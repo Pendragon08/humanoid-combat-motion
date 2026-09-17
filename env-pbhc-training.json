@@ -1,0 +1,21 @@
+{
+  "purpose": "KungfuBot/PBHC official single-motion IsaacGym training; separate from BeyondMimic and KungfuBot2",
+  "repository": "https://github.com/TeleHuman/PBHC.git",
+  "commit": "ffac5cded61fe78b39b051f09ac2ed0f6a1ccea0",
+  "python": "3.8.20",
+  "environment_path": ".venv-pbhc-training",
+  "constraints_file": "configs/pbhc_training_constraints.txt",
+  "simulator": "NVIDIA IsaacGym Preview 4",
+  "simulator_download": "https://developer.nvidia.com/isaac-gym-preview-4",
+  "pip_phases": [
+    ["pip==24.0", "setuptools==68.2.2", "wheel==0.42.0"],
+    ["torch==1.13.1+cu117", "torchvision==0.14.1+cu117", "--extra-index-url", "https://download.pytorch.org/whl/cu117"],
+    ["numpy==1.24.4", "scipy==1.10.1", "hydra-core==1.3.2", "ninja==1.11.1.1"],
+    ["-e", "third_party/isaacgym/python"],
+    ["-e", "third_party/PBHC"],
+    ["-e", "third_party/PBHC/humanoidverse/isaac_utils"]
+  ],
+  "environment": {"OMP_NUM_THREADS": "4", "MKL_NUM_THREADS": "4", "OPENBLAS_NUM_THREADS": "4", "MAX_JOBS": "4", "WANDB_MODE": "disabled"},
+  "validation": ["official Gym physics and seeded Torch backward witness", "official 128-environment two-update smoke", "fresh agent follows documented invocation", "official pretrained checkpoint evaluated with sample_eps.py and ratio_eps.py"],
+  "limits": "Torch and transitive dependencies are reproducibility pins, not claimed paper-exact versions. Record resolved packages and source hashes. Do not replace simulator or policy if setup fails."
+}
