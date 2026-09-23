@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>KungfuBot/PBHC 马步冲拳正式训练结果</title>
+  <style>
+    :root{color-scheme:light;font-family:system-ui,"Microsoft YaHei",sans-serif;color:#172432;background:#f5f7fa}
+    body{max-width:920px;margin:2.5rem auto;padding:0 1.2rem;line-height:1.7}
+    h1{font-size:1.8rem;line-height:1.35}h2{margin-top:2rem;font-size:1.2rem}
+    .card{background:white;border:1px solid #dbe2ea;border-radius:12px;padding:1.2rem 1.4rem;margin:1.2rem 0}
+    .status{color:#17653b;font-weight:700}.muted{color:#536170}
+    table{width:100%;border-collapse:collapse}th,td{border-bottom:1px solid #e4e9ef;padding:.65rem;text-align:left}th{background:#f1f5f9}
+    a{color:#145aa4}code{background:#eef2f6;padding:.1rem .3rem;border-radius:4px}
+  </style>
+</head>
+<body>
+  <h1>KungfuBot/PBHC 马步冲拳正式训练结果</h1>
+  <p class="muted">服务器结果完成于 2026 年 9 月 18 日 14:13（北京时间）；2026 年 9 月 23 日从服务器读取并将评估记录同步到本地。</p>
+  <div class="card">
+    <p class="status">训练与官方评估均已完成</p>
+    <p>官方原始马步冲拳动作，1 个训练随机种子，4096 个并行环境，50,000 次更新，合计 4,915,200,000 环境步。训练和全部四项评估进程退出码均为 0。</p>
+    <p>最终权重保存在服务器：<code>runs/pbhc_official_reproduction_20260917/official_horse_punch/model_49000.pt</code>。文件名中的 49000 是上游保存字段；实际完成次数由训练完成回执确认，为 50,000 次。</p>
+  </div>
+  <h2>实际动作对照视频</h2>
+  <div class="card">
+    <video controls preload="metadata" poster="media/pbhc_official_20260918/preview.png" style="width:100%;border-radius:8px" src="media/pbhc_official_20260918/horse_stance_punch_provided_vs_retrained.mp4"></video>
+    <p>左侧：作者提供的权重；右侧：本次 50,000 次更新得到的权重。均取官方 1000 回合误差评估中的第 0 条轨迹，时长约 6.64 秒。<a href="media/pbhc_official_20260918/horse_stance_punch_provided_vs_retrained.mp4">单独打开视频</a>。</p>
+    <p class="muted">画面由 MuJoCo 显示已经在 Isaac Gym 中记录的实际状态；本视频不是 MuJoCo 中重新执行策略，也不是训练时的实时录屏。单条视频用于观察动作，整体成绩请看下方 1000 回合指标。</p>
+  </div>
+  <h2>与作者提供权重的同口径对比</h2>
+  <div class="card">
+    <table><thead><tr><th>官方评价指标</th><th>作者提供的权重</th><th>本次训练的权重</th></tr></thead><tbody>
+      <tr><td>ELR：平均执行时长占目标时长，越高越好</td><td>98.61%</td><td><strong>99.35%</strong></td></tr>
+      <tr><td>全局身体位置误差，越低越好</td><td>24.62 mm</td><td><strong>22.88 mm</strong></td></tr>
+      <tr><td>相对身体位置误差，越低越好</td><td>15.74 mm</td><td><strong>13.36 mm</strong></td></tr>
+      <tr><td>关节位置误差（官方数值单位为 10⁻³ rad），越低越好</td><td>753.97</td><td><strong>712.65</strong></td></tr>
+    </tbody></table>
+    <p class="muted">两组的误差评价各记录 1000 次样本；ELR 由官方独立脚本计算。误差评价与 ELR 的终止设置不同，应分别阅读。</p>
+  </div>
+  <h2>结果的适用范围</h2>
+  <p>这是单条动作、单个训练种子的官方训练阶段复现。当前训练输入为作者提供的原始参考动作；尚未使用我们生成或增强的格斗动作数据，因此不能据此判断本课题的数据构建方法是否有效。也尚未进行本次新权重的 MuJoCo 跨仿真器测试或实机验证。</p>
+  <h2>原始记录</h2>
+  <ul>
+    <li><a href="../records/pbhc_official_reproduction_20260917/COMPLETE.json">完整作业完成记录</a>；<a href="../records/pbhc_official_reproduction_20260917/official_horse_punch_receipt/TRAINING_COMPLETE.json">训练完成回执与权重校验值</a></li>
+    <li>作者权重：<a href="../records/pbhc_official_reproduction_20260917/official_provided_full_accuracy.json">误差和平滑性</a>、<a href="../records/pbhc_official_reproduction_20260917/official_provided_full_ratio.json">ELR</a></li>
+    <li>本次训练权重：<a href="../records/pbhc_official_reproduction_20260917/official_retrained_accuracy.json">误差和平滑性</a>、<a href="../records/pbhc_official_reproduction_20260917/official_retrained_ratio.json">ELR</a></li>
+  </ul>
+  <p class="muted">本地旧版 <a href="../refine-logs/SINGLE_HUMANOID_METHOD_REPORT.html">单人方案报告</a>在训练期间生成，其“训练中”状态属于历史快照，请以本页和原始完成记录为准。</p>
+</body>
+</html>

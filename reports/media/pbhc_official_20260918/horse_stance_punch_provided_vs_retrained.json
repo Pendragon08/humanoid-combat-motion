@@ -1,0 +1,22 @@
+{
+  "video": "reports/media/pbhc_official_20260918/horse_stance_punch_provided_vs_retrained.mp4",
+  "video_sha256": "4de33f646b9c3eaa2fac2cded39d802cab5e36d2cafbc16eed33df834537134b",
+  "selection": "motion0 from each of the two completed official 1000-episode SampleEps outputs, selected before viewing",
+  "sources": [
+    "third_party/PBHC/example/pretrained_horse_stance_punch/motions/SampleEps_20260918_060730_1000x332-332.pkl",
+    "runs/pbhc_official_reproduction_20260917/official_horse_punch/motions/SampleEps_20260918_061024_1000x332-332.pkl"
+  ],
+  "source_sha256": [
+    "d5496510e7f4cf52cc6adef412c5fe683db374263cfd6c3dad1fc4b77d7a92f6",
+    "f1727f422a2d08ff58f86f36e10b7f8c756dafc67b889a33f41cfc80193cd0e8"
+  ],
+  "source_fps": 50.00000111758712,
+  "video_fps": 25,
+  "frames": 166,
+  "first_termination_frame": [
+    330,
+    330
+  ],
+  "rendering": "MuJoCo forward-kinematic display of recorded Isaac Gym states; no MuJoCo policy execution",
+  "script_sha256": "ccb769ffac6319f9750ebac6b4883f3f8c592fc75da39f4b1ba3705263f35960"
+}

@@ -1,0 +1,25 @@
+{
+  "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_official_reproduction_20260917/official_horse_punch/model_49000.pt",
+  "metrics": {
+    "accuracy": {
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_official_reproduction_20260917/official_horse_punch/metrics/ckpt_49000/official_retrained_accuracy.json",
+      "sha256": "51580d457e82d29f8f015517e1fc9d7c237d8aa684dd3f58473b987ad7f4c9c3"
+    },
+    "ratio": {
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_official_reproduction_20260917/official_horse_punch/metrics/ckpt_49000/official_retrained_ratio_ratio.json",
+      "sha256": "adabceb366fff79d89759270f6d27be824a45854be25e489aebcdb01d7bcbe0b"
+    }
+  },
+  "provided_metrics": {
+    "accuracy": {
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/PBHC/example/pretrained_horse_stance_punch/metrics/ckpt_33000/official_provided_full_accuracy.json",
+      "sha256": "2fc167dabcfb3d927e6113c1149ecb2bece1a531b7ada07a3eabf82f169891b5"
+    },
+    "ratio": {
+      "path": "/data/code/ouyanghao/oyh/humanoid-combat-motion/third_party/PBHC/example/pretrained_horse_stance_punch/metrics/ckpt_33000/official_provided_full_ratio_ratio.json",
+      "sha256": "53f1d2a565f63e47781b6835032f2592075747392d1f88d4eaad2e1cebbfe6bb"
+    }
+  },
+  "scope": "First KungfuBot official single-motion training-stage reproduction. Not full paper table, video preprocessing, KungfuBot2, real robot or data innovation validation.",
+  "environment_steps": 4915200000
+}

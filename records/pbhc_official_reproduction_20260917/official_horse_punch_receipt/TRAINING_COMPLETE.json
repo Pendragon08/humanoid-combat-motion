@@ -1,0 +1,13 @@
+{
+  "environment_steps": 4915200000,
+  "updates": 50000,
+  "learn_reset_environment_steps": 4096,
+  "started": 1789616952.4531367,
+  "checkpoint": "/data/code/ouyanghao/oyh/humanoid-combat-motion/runs/pbhc_official_reproduction_20260917/official_horse_punch/model_49000.pt",
+  "upstream_iter_field": 49000,
+  "seed": 1,
+  "explicit_launcher_seed": true,
+  "scope": "Unmodified upstream algorithm with observation-only step/save wrappers",
+  "checkpoint_sha256": "64096572c96797876ed82b66bb628c0d0432ce4cb55f13d7149b67ac7a103b42",
+  "finished": 1789711647.6977258
+}
